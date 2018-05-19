@@ -4,7 +4,7 @@
 4. Jakie piwo - możemy gdzieś w pobliże się przejść na kawę/piwo i wyjaśnić trudniejsze kwestie gitowe albo cokolwiek.
 5. Dobra robota, fajne warsztaty
 6. Test 
-7.
+7. Pytanie nr 7.
 8.
 9.
 10.
