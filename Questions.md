@@ -5,7 +5,7 @@
 5. Dobra robota, fajne warsztaty
 6. Test 
 7. Pytanie nr 7.
-8.
+8. Bardzo fajne warsztaty ;D
 9.
 10.
 11.dobre szkolenie
