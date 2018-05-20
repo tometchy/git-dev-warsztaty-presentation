@@ -131,3 +131,26 @@ Czasowo: 9-17 z czego odpada:
 Przed prezentacją usunąć wszystkie aliasy z własne .gitconfig
 Skracarka linków i link do naszego pliku linki z prezentacji.html
 Może 'git diff' wcześniej pokazać.
+
+### Feedback który spisałem (Krzysiek)
+
+* wspomnieć o problem ze spolszczaniem angielskich terminów - używamy angielskich nazw gdy mówimy i to brzmi ok, ale gdy to piszemy to wygląda dziwnie, ale lepsze nie będzie
+* "gitk master" - jeszcze nie zrozumiane gdy nie było branchy
+* dlaczego korzystamy z SourceTree powiedzieć: bardzo powszechny, darmowy, dobry.
+* zasugerować na liksie edytor 'gedit' zamiast 'notepad'
+* Wytłumaczyć że w commit jest "message" i "detailed message" - przed robieniem "rebase interactive"
+* **gdy jest wytłumaczone ćwiczenie i czas na zrobienie to na rzutniku powinien być widoczne spis komend potrzebnych do zrobienia:
+  * git co branch-name
+  * git br
+  * git reset --hard branch-name
+  * git rebase master
+  * git merge branch-name
+* moze uzywać issues githubowych to trackowania feedbacku?
+* linki do guitar hero git obrazki
+* dodac .gitignore z *.orig do każdego repo
+* pytanie z sali było: 'git cherry-pick master' wzieło nam cały branch. Nie było dobrze wytłumaczone że "master" to wskaźnik. tzn było, ale to jest kolejne dobre miejsce żeby pokazać jak dziają te wskaźniki. To bylo pokazanane na learningBranching i mogło nie być jasne.
+* IMHO możemy mniej mówić o deploymencie, bardziej skupić się na takich rzeczach jak własny .gitignore, aby sami mogli własne repo utrzymywać.
+* pokazać kod naszej prezentacji i sposob w jaki pracujemy nad nią.
+* może pierwsze ćwiczenie z flow przenieść wcześniej, jako taki przerywnik między teorią.
+* ćwiczenie questions.md zrobić na osobnym branchu (nazwanym git-devwarsztaty-wroclaw)
+* w ćwiczenieach z rebase/merge nie było wprost pokazane że należy "git checkout branch-a" po sklonowaniu
