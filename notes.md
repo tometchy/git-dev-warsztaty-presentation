@@ -145,7 +145,6 @@ Może 'git diff' wcześniej pokazać.
   * git reset --hard branch-name
   * git rebase master
   * git merge branch-name
-* moze uzywać issues githubowych to trackowania feedbacku?
 * linki do guitar hero git obrazki
 * dodac .gitignore z *.orig do każdego repo
 * pytanie z sali było: 'git cherry-pick master' wzieło nam cały branch. Nie było dobrze wytłumaczone że "master" to wskaźnik. tzn było, ale to jest kolejne dobre miejsce żeby pokazać jak dziają te wskaźniki. To bylo pokazanane na learningBranching i mogło nie być jasne.
