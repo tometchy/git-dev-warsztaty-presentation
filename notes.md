@@ -150,7 +150,6 @@ Może 'git diff' wcześniej pokazać.
 * dodac .gitignore z *.orig do każdego repo
 * pytanie z sali było: 'git cherry-pick master' wzieło nam cały branch. Nie było dobrze wytłumaczone że "master" to wskaźnik. tzn było, ale to jest kolejne dobre miejsce żeby pokazać jak dziają te wskaźniki. To bylo pokazanane na learningBranching i mogło nie być jasne.
 * IMHO możemy mniej mówić o deploymencie, bardziej skupić się na takich rzeczach jak własny .gitignore, aby sami mogli własne repo utrzymywać.
-* pokazać kod naszej prezentacji i sposob w jaki pracujemy nad nią.
 * może pierwsze ćwiczenie z flow przenieść wcześniej, jako taki przerywnik między teorią.
 * ćwiczenie questions.md zrobić na osobnym branchu (nazwanym git-devwarsztaty-wroclaw)
 * w ćwiczenieach z rebase/merge nie było wprost pokazane że należy "git checkout branch-a" po sklonowaniu
