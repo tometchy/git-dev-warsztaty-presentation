@@ -136,7 +136,6 @@ Może 'git diff' wcześniej pokazać.
 
 * wspomnieć o problem ze spolszczaniem angielskich terminów - używamy angielskich nazw gdy mówimy i to brzmi ok, ale gdy to piszemy to wygląda dziwnie, ale lepsze nie będzie
 * "gitk master" - jeszcze nie zrozumiane gdy nie było branchy
-* Wytłumaczyć że w commit jest "message" i "detailed message" - przed robieniem "rebase interactive"
 * **gdy jest wytłumaczone ćwiczenie i czas na zrobienie to na rzutniku powinien być widoczne spis komend potrzebnych do zrobienia:
   * git co branch-name
   * git br
@@ -148,3 +147,7 @@ Może 'git diff' wcześniej pokazać.
 * IMHO możemy mniej mówić o deploymencie, bardziej skupić się na takich rzeczach jak własny .gitignore, aby sami mogli własne repo utrzymywać.
 * może pierwsze ćwiczenie z flow przenieść wcześniej, jako taki przerywnik między teorią.
 * w ćwiczenieach z rebase/merge nie było wprost pokazane że należy "git checkout branch-a" po sklonowaniu
+
+### Nie pamiętamy dlaczego taki feedback
+
+* Wytłumaczyć że w commit jest "message" i "detailed message" - przed robieniem "rebase interactive"
