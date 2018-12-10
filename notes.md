@@ -138,10 +138,10 @@ Może 'git diff' wcześniej pokazać.
 * "gitk master" - jeszcze nie zrozumiane gdy nie było branchy
 * linki do guitar hero git obrazki
 * pytanie z sali było: 'git cherry-pick master' wzieło nam cały branch. Nie było dobrze wytłumaczone że "master" to wskaźnik. tzn było, ale to jest kolejne dobre miejsce żeby pokazać jak dziają te wskaźniki. To bylo pokazanane na learningBranching i mogło nie być jasne.
-* IMHO możemy mniej mówić o deploymencie, bardziej skupić się na takich rzeczach jak własny .gitignore, aby sami mogli własne repo utrzymywać.
 * może pierwsze ćwiczenie z flow przenieść wcześniej, jako taki przerywnik między teorią.
 * w ćwiczenieach z rebase/merge nie było wprost pokazane że należy "git checkout branch-a" po sklonowaniu
 
 ### Nie pamiętamy dlaczego taki feedback
 
 * Wytłumaczyć że w commit jest "message" i "detailed message" - przed robieniem "rebase interactive"
+* IMHO możemy mniej mówić o deploymencie, bardziej skupić się na takich rzeczach jak własny .gitignore, aby sami mogli własne repo utrzymywać.
