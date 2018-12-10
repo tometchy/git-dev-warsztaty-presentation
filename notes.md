@@ -137,7 +137,7 @@ Może 'git diff' wcześniej pokazać.
 * wspomnieć o problem ze spolszczaniem angielskich terminów - używamy angielskich nazw gdy mówimy i to brzmi ok, ale gdy to piszemy to wygląda dziwnie, ale lepsze nie będzie
 * "gitk master" - jeszcze nie zrozumiane gdy nie było branchy
 * dlaczego korzystamy z SourceTree powiedzieć: bardzo powszechny, darmowy, dobry.
-* zasugerować na liksie edytor 'gedit' zamiast 'notepad'
+* zasugerować na linuksie edytor 'gedit' zamiast 'notepad'
 * Wytłumaczyć że w commit jest "message" i "detailed message" - przed robieniem "rebase interactive"
 * **gdy jest wytłumaczone ćwiczenie i czas na zrobienie to na rzutniku powinien być widoczne spis komend potrzebnych do zrobienia:
   * git co branch-name
