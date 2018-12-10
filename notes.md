@@ -136,12 +136,6 @@ Może 'git diff' wcześniej pokazać.
 
 * wspomnieć o problem ze spolszczaniem angielskich terminów - używamy angielskich nazw gdy mówimy i to brzmi ok, ale gdy to piszemy to wygląda dziwnie, ale lepsze nie będzie
 * "gitk master" - jeszcze nie zrozumiane gdy nie było branchy
-* **gdy jest wytłumaczone ćwiczenie i czas na zrobienie to na rzutniku powinien być widoczne spis komend potrzebnych do zrobienia:
-  * git co branch-name
-  * git br
-  * git reset --hard branch-name
-  * git rebase master
-  * git merge branch-name
 * linki do guitar hero git obrazki
 * pytanie z sali było: 'git cherry-pick master' wzieło nam cały branch. Nie było dobrze wytłumaczone że "master" to wskaźnik. tzn było, ale to jest kolejne dobre miejsce żeby pokazać jak dziają te wskaźniki. To bylo pokazanane na learningBranching i mogło nie być jasne.
 * IMHO możemy mniej mówić o deploymencie, bardziej skupić się na takich rzeczach jak własny .gitignore, aby sami mogli własne repo utrzymywać.
