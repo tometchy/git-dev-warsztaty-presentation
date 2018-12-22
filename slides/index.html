@@ -577,7 +577,35 @@
 					</ul>
 				</section>
 				<section>
-					co gdy plik juz byl w repo gdy ignorowany plik jednak chcemy -f ToDo
+                    <h3>Dodaję regułę do .gitignore, a "git status" dalej pokazuje zmiany</h3>
+                    <p class="fragment">Jest to scenariusz na który każdy prędzej czy później się natknie</p>
+					<p class="fragment">Powód jest prosty - plik już jest w repozytorium,<br/>.gitignore ignoruje tylko nie śledzone pliki</p>
+					<p class="fragment">Wystarczy plik... usunąć z repozytorium</p>
+				</section>
+                <section>
+                    <h3>Usuwanie pliku z repozytorium, żeby "posłuchał" reguł .gitignore</h3>
+					<p>
+					<ul>
+						<li class="fragment">
+							Tradycyjnie:<br/>
+                            usunięcie pliku -> git add -> git commit
+						</li>
+                        <li class="fragment" style="margin-top:17px">
+                            Za pmocą komendy:<br/>
+                            <code>
+								git rm file1.txt<br/>
+								git commit -m "remove file1.txt"
+							</code>
+                        </li>
+                        <li class="fragment" style="margin-top:17px">
+                            Zostawiając plik na dysku:<br/>
+                            <code>
+								git rm --cached file1.txt<br/>
+								git commit -m "remove file1.txt"
+                            </code>
+                        </li>
+					</ul>
+					</p>
 				</section>
 			</section>
 
