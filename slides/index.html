@@ -320,13 +320,13 @@
 						<li>gitk</li>
 					</ul>
 				</section>
-				<section data-transition=""="slide-in none-out">
+				<section data-transition="slide-in none-out">
 					<h3>git log for example with graph</h3>
 					<p>
 						<img src="img/git-log-graph.png" />
 					</p>
 				</section>
-				<section data-transition=""="none-in none-out">
+				<section data-transition="none-in none-out">
 					<h3>git log for example in one line</h3>
 					<p>
 						<img src="img/git-log-oneline.png" />
@@ -344,6 +344,26 @@
 						<img src="img/gitk.png" />
 					</p>
 				</section>
+                <section>
+                    <h3>Przygotowanie do ćwiczeń z przeglądaniem historii</h3>
+                    <ol>
+						<li>
+							Przejdź do katalogu cwiczen na pulpicie:<br/>
+							<code>cd ~/Desktop/cwiczenia</code>
+						</li>
+						<li class="fragment" style="margin-top:15px">Sklonuj przykładowe repozytorium (z projektem open source), do katalogu <code>log-demo</code>:<br/>
+                            <small><code><b>git clone https://gitlab.com/terrakok/gitlab-client log-demo</b></code></small>
+						</li>
+						<li class="fragment" style="margin-top:15px">
+							Przejdź do katalogu repo: <code>cd log-demo</code>
+						</li>
+                        <li class="fragment" style="margin-top:15px">
+							Zresetuj repozytorium do wersji: 7ad14ecda2f97a3ff7c3cca44cc7605484b578b5<br/>
+							<code>git reset --hard 7ad14</code><br/>
+							<small><em>Żeby każdy miał tę samą wersję do ćwiczeń</em></small><br/>
+						</li>
+					</ol>
+                </section>
 				<section>
 					<h3>Szybkie ćwiczenie</h3>
 					Przejrzyj historię commitów za pomocą git log i gitk
