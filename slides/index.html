@@ -316,9 +316,14 @@
 				<section>
 					<h2>Przeglądanie historii</h2>
 					<ul>
-						<li>git log</li>
-						<li>gitk</li>
+						<li><code>git log</code></li>
+						<li><code>gitk</code></li>
 					</ul>
+					<p>Git log oraz gitk domyślnie pokazują historię od <i>obecnego momentu</i> - HEAD, ale możliwe jest wskazanie dowolnego momentu w historii, np. nazwy brancha, SHA commita lub odniesienia HEAD^ lub HEAD~N</p>
+				</section>
+				<section>
+					<h2>Przełączniki do git log / gitk</h2>
+					ToDo tutaj wypisać i opisać wszystkie użyte, a potem w ćwiczeniach mają się pojawiać dopiero po spacji
 				</section>
 				<section data-transition="slide-in none-out">
 					<h3>git log for example with graph</h3>
@@ -364,28 +369,149 @@
 						</li>
 					</ol>
                 </section>
+				<section data-transition="slide-in none-out">
+					<h2>Ćwiczenie 1</h2>
+                    <p>Sprawdź datę ostatniego commita</p>
+                    <span class="fragment">
+                        <h4>Wizualnie:</h4>
+                        <code>gitk</code>
+                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <code>git log -1</code>
+					</span>
+                    <p class="fragment">Odpowiedź:<br/>Fri Dec 14 00:39:27 2018 +0300</p>
+				</section>
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 2</h2>
+					<p>Sprawdź datę przed ostatniego commita</p>
+                    <span class="fragment">
+                        <h4>Wizualnie:</h4>
+                        <code>gitk</code>
+                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <code>git log -2</code><br/>lub<br/><code>git log HEAD^ -1</code>
+					</span>
+					<p class="fragment">Odpowiedź:<br/>Thu Dec 13 23:58:11 2018 +0300</p>
+				</section>
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 3</h2>
+					<p>Sprawdź SHA ostatnich 5 commitów, wyłączając commity mergujące</p>
+                    <span class="fragment">
+                        <h4>Wizualnie:</h4>
+                        <code>gitk</code>
+                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <code>git log -5 --oneline --no-merges</code><br/>
+					</span>
+					<span class="fragment">Odpowiedź:<br/>
+                        <p align="left">
+                            <small>
+								<b>7ad14ec</b> (HEAD -> develop) Fix restore app after process death.<br/>
+                                <b>a858b81</b> Add close scope logic. Delete empty flow presenters.<br/>
+                                <b>faf172e</b> Update gradle version.<br/>
+                                <b>3fe543e</b> fix tab gravity in merge request fragment<br/>
+                                <b>158bba8</b> Delete unused "todo".
+                            </small>
+                        </p>
+					</span>
+				</section>
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 4</h2>
+					<p>Sprawdź jakie commity są lokalnie na branchu develop, a których nie ma na branchu develop na serwerze</p>
+                    <span class="fragment">
+                        <h4>Wizualnie:</h4>
+                        <small>
+                            <code>gitk develop --not origin/develop</code><br/>lub<br/><code>gitk origin/develop..develop</code>
+                        </small>
+                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <small>
+                            <code>git log develop --not origin/develop</code><br/>lub<br/><code>git log origin/develop..develop</code>
+                        </small>
+					</span>
+					<p class="fragment">Odpowiedź:<br/>Nie ma takich</p>
+				</section>
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 5</h2>
+					<p>Sprawdź jakie commity są na serwerze na branchu develop, a których nie ma na branchu develop lokalnie</p>
+                    <span class="fragment">
+                        <h4>Wizualnie:</h4>
+                        <small>
+                            <code>gitk origin/develop --not develop</code><br/>lub<br/><code>gitk develop..origin/develop</code>
+                        </small>
+                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <small>
+                            <code>git log origin/develop --not develop</code><br/>lub<br/><code>git log develop..origin/develop</code>
+                        </small>
+					</span>
+					<p class="fragment" style="font-size:85%">Odpowiedź:<br/>To zależy od momentu zrobienia <code>git fetch</code> i pracowitości autorów :)</p>
+				</section>
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 6</h2>
+					<p>Sprawdź tytuł ostatniego commita autora z nazwiskiem <i>Gulya</i></p>
+                    <span class="fragment">
+                        <h4>Wizualnie:</h4>
+                        <code>gitk --author=gulya</code>
+                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <code>git log -1 --author=gulya</code>
+					</span>
+					<p class="fragment">Odpowiedź:<br/>
+						<small>
+							<code>Upgrade Markwon to version 2.0.0. Replace ImageSizeResolver workaround with upstream one.</code>
+						</small>
+					</p>
+				</section>
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 7</h2>
+					<p>Sprawdź autora commita zawierającego w opisie frazę <i>Update Stub</i> z brancha develop na serwerze</p>
+                    <span class="fragment">
+                        <h4>Wizualnie:</h4>
+                        <small>
+                            <code>gitk --all --grep="Update Stub"</code><br/>lub<br/><code>gitk origin/develop --grep="Update Stub"</code>
+                        </small>
+                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <small>
+                            <code>git log --all --grep="Update Stub"</code><br/>lub<br/><code>git log origin/develop --grep="Update Stub"</code>
+                        </small>
+					</span>
+					<p class="fragment">Odpowiedź:<br/>
+                        <code>terrakok</code>
+					</p>
+				</section>
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 8</h2>
+					<p>Sprawdź co zmienił commit <small><code>0e02008383a59f6ab56a14df4688070aab925765</code></small></p>
+					<span class="fragment">
+                        <h4>Wizualnie:</h4>
+                        <small>
+                            <code>gitk 0e020 -1</code>
+                        </small>
+                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <small>
+                            <code>git log 0e020 -1 -p</code><br/>lub<br/><code>git log 0e020 -1 --patch</code>
+                        </small>
+					</span>
+					<p class="fragment">Odpowiedź:<br/>
+                        <small>
+							Dodane linie:<br/>
+								override val parentScopeName = DI.APP_SCOPE<br/>
+								pusta<br/>
+								Toothpick.inject(this, scope)<br/>
+							Usunięta linia: Toothpick.inject(this, Toothpick.openScope(DI.APP_SCOPE))<br/>
+						</small>
+					</p>
+				</section>
 				<section>
-					<h3>Szybkie ćwiczenie</h3>
-					Przejrzyj historię commitów za pomocą git log i gitk
-					<ul>
-						<li>różne wariacje git log
-							<ul>
-								<li>-5</li>
-								<li>--graph</li>
-								<li>--oneline</li>
-								<li>--decorate</li>
-								<li>--pretty-print</li>
-							</ul>
-						</li>
-						<li>
-							gitk
-							<ul>
-								<li>gitk</li>
-								<li>gitk --all</li>
-								<li>gitk master</li>
-							</ul>
-						</li>
-					</ul>
+					ToDo: Jakieś ćwiczenie z stat, graph, z since after
+				</section>
+                <section>
+					<h3>gitk pokazujący cały stan projektu</h3>
+					<p>
+						<img src="img/gitk-tree.png">
+					</p>
+					<small class="fragment">
+                        Przejrzeć drzewo można również w konsoli, ale to się przydaje głównie do skryptów<br/>
+                        <code> git ls-tree -r 0e020 --name-only </code>
+					</small>
+				</section>
+				<section>
+					Pytania?
 				</section>
 			</section>
 
