@@ -725,12 +725,6 @@
 			</section>
 
 			<section>
-				<h2>git reflog</h2>
-				<p>
-					<img src="img/reflog.png">
-				</p>
-			</section>
-			<section>
 				<section>
 					<h2>Ignorowanie plików</h2>
 					<p>
@@ -779,6 +773,58 @@
 				</section>
 			</section>
 
+            <section>
+				<section>
+					<h2>7 zasad dobrego <i>commit message</i></h2>
+					<ol>
+						<li class="fragment">Oddziel tytuł od ciała pustą linią</li>
+						<li class="fragment">Ogranicz tytuł do <b>50 znaków</b></li>
+						<li class="fragment">Stosuj wielkie litery w tytule</li>
+						<li class="fragment">Nie kończ tytułu commita kropką</li>
+						<li class="fragment">Zapisuj tytuł w trybie rozkazującym</li>
+						<li class="fragment">Ogranicz 'szerokość' ciała do 72 znaków</li>
+						<li class="fragment">W ciele opisz <i>co</i> i <i>dlaczego</i>, a nie <i>jak</i></li>
+					</ol>
+                    <p>
+						<small class="fragment"><i>https://chris.beams.io/posts/git-commit/</i></small>
+					</p>
+				</section>
+				<section>
+					Pytania?
+				</section>
+			</section>
+
+			<section>
+                <section>
+					<h2>git reflog</h2>
+					<p>
+						<img src="img/reflog.png">
+					</p>
+				</section>
+				<section>
+					Pytania?
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>schowek</h2>
+                        <ul>
+                            <li><code>git stash</code></li>
+							<li><code>git stash --include-untracked</code></li>
+							<li><code>git stash list</code></li>
+							<li><code>git stash apply (optional: name)</code></li>
+							<li><code>git stash pop (optional: name)</code></li>
+							<li><code>git stash drop (optional: name)</code></li>
+							<li>Różne wariacje, zachowywanie indexu, nadawnie wiadomości itd.</li>
+                        </ul>
+					<p class="fragment"><b>Uwaga</b><br/>Łatwo zapomnieć o nieśledzonych plikach</p>
+				</section>
+				<section>
+					Pytania?
+				</section>
+			</section>
+
 			<section>
 				<section>
 					<h2>Forki & Pull requesty</h2>
@@ -794,14 +840,14 @@
 			</section>
 
 			<section>
-				<h2>Przydatne narzędzia GitHuba związane z gitem</h2>
+				<h2>Przydatne narzędzia związane z gitem</h2>
 				<ul>
-					<li class="fragment">gist</li>
-					<li class="fragment">GitHub Pages
+					<li class="fragment">GitHub Pages / GitLab Pages / Netlify
 						<ul>
 							<li class="fragment">Np. prezentacja na którą właśnie patrzymy</li>
 						</ul>
 					</li>
+					<li class="fragment">GitHub gist</li>
 				</ul>
 			</section>
 
@@ -810,6 +856,9 @@
 				<ul>
 					<li>
 						<a href="https://git-scm.com/book">Pro Git book (Scott Chacon, Ben Straub)</a>
+					</li>
+					<li>
+						<a href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message <small>(The seven rules of a great Git commit message)</small></a>
 					</li>
 					<li>
 						<a href="https://www.atlassian.com/git/tutorials/">Atlassian Tutorials</a>
@@ -831,9 +880,6 @@
 					</li>
 					<li>
 						<a href="https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/">How to undo (almost) anything with git</a>
-					</li>
-					<li>
-						<a href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message</a>
 					</li>
 					<li>
 						<a href="https://illustrated-git.readthedocs.io/en/latest/#">GIT Illustrated Cheatsheet</a>
