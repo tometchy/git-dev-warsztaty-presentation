@@ -331,23 +331,36 @@
 					<p>Git log oraz gitk domyślnie pokazują historię od <i>obecnego momentu</i> - HEAD, ale możliwe jest wskazanie dowolnego momentu w historii, np. nazwy brancha, SHA commita lub odniesienia HEAD^ lub HEAD~N</p>
 				</section>
 				<section>
-					<h2>Przełączniki do git log / gitk</h2>
-					ToDo tutaj wypisać i opisać wszystkie użyte, a potem w ćwiczeniach mają się pojawiać dopiero po spacji
+					<h2 style="font-size:127%">Popularne przełączniki do git log / gitk</h2>
+                    <ul style="margin-top:0px; font-size:76%">
+						<li><code>git log -4</code></li>
+						<li><code>git log --oneline</code></li>
+						<li><code>git log --graph</code></li>
+						<li><code>git log --decorate</code></li>
+						<li><code>git log --stat</code></li>
+						<li><code>git log --<u>p</u>atch</code></li>
+						<li><code>git log --since=X</code>, <code>git log --after=X</code>, <code>git log --before=X</code></li>
+						<li><code>git log X --not Y</code>, <code>git log Y..X</code>, <code>git log X...Y</code></li>
+						<li><code>git log --author="xyz"</code></li>
+						<li><code>git log --grep="xyz"</code></li>
+						<li><code>git log --no-merges</code></li>
+						<li><code>git log --all</code></li>
+					</ul>
 				</section>
 				<section data-transition="slide-in none-out">
-					<h3>git log for example with graph</h3>
+					<h3>git log z grafem</h3>
 					<p>
 						<img src="img/git-log-graph.png" />
 					</p>
 				</section>
 				<section data-transition="none-in none-out">
-					<h3>git log for example in one line</h3>
+					<h3>git log z jednoliniowymi wynikami</h3>
 					<p>
 						<img src="img/git-log-oneline.png" />
 					</p>
 				</section>
 				<section data-transition="none-in fade-out">
-					<h3>git log for example showing stats and patch</h3>
+					<h3>git log z pokazaną statystyką i diffem</h3>
 					<p>
 						<img src="img/git-log-stat-patch.png" />
 					</p>
@@ -453,6 +466,21 @@
 				</section>
 				<section data-transition="none-in none-out">
 					<h2>Ćwiczenie 6</h2>
+					<p>Sprawdź jakie commity na branchu develop są tylko lokalnie lub tylko na serwerze</p>
+					<span class="fragment">
+                        <h4>Wizualnie:</h4>
+                        <small>
+                            <code>gitk develop...origin/develop</code>
+                        </small>
+                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <small>
+                            <code>git log develop...origin/develop --decorate</code>
+                        </small>
+					</span>
+					<p class="fragment" style="font-size:85%">Odpowiedź:<br/>To zależy od momentu zrobienia <code>git fetch</code> i pracowitości autorów :)</p>
+				</section>
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 7</h2>
 					<p>Sprawdź tytuł ostatniego commita autora z nazwiskiem <i>Gulya</i></p>
                     <span class="fragment">
                         <h4>Wizualnie:</h4>
@@ -467,7 +495,7 @@
 					</p>
 				</section>
 				<section data-transition="none-in none-out">
-					<h2>Ćwiczenie 7</h2>
+					<h2>Ćwiczenie 8</h2>
 					<p>Sprawdź autora commita zawierającego w opisie frazę <i>Update Stub</i> z brancha develop na serwerze</p>
                     <span class="fragment">
                         <h4>Wizualnie:</h4>
@@ -484,30 +512,103 @@
 					</p>
 				</section>
 				<section data-transition="none-in none-out">
-					<h2>Ćwiczenie 8</h2>
-					<p>Sprawdź co zmienił commit <small><code>0e02008383a59f6ab56a14df4688070aab925765</code></small></p>
+					<h2>Ćwiczenie 9</h2>
+					<p>Sprawdź jakie pliki modyfikował commit <small><code>b9272a3be3d4f9182e6893a0f9a2f7b9ff0b6923</code></small></p>
+					<span class="fragment">
+                        <p>
+                            <h4>Wizualnie:</h4>
+                            <small>
+                                <code>gitk b927</code>
+                            </small>
+                            <h4 style="margin-top:20px">Z konsoli:</h4>
+                            <small>
+                                <code>git log b927 -1 --stat</code>
+                            </small>
+						</p>
+					</span>
+					<span class="fragment">Odpowiedź:<br/>
+                        <p align="left">
+                            <small>
+                                .../model/repository/session/SessionRepository.kt            |  9 +++++++++<br/>
+                                .../terrakok/gitlabclient/presentation/auth/AuthPresenter.kt | 12 ++++++------
+                            </small>
+						</p>
+					</span>
+				</section>
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 10</h2>
+					<p>Sprawdź dokładnie co zmienił commit <small><code>0e02008383a59f6ab56a14df4688070aab925765</code></small></p>
 					<span class="fragment">
                         <h4>Wizualnie:</h4>
                         <small>
                             <code>gitk 0e020 -1</code>
                         </small>
-                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <h4>Z konsoli:</h4>
                         <small>
                             <code>git log 0e020 -1 -p</code><br/>lub<br/><code>git log 0e020 -1 --patch</code>
                         </small>
 					</span>
 					<p class="fragment">Odpowiedź:<br/>
                         <small>
-							Dodane linie:<br/>
+							<b>Linie dodane</b> do pliku <code>PrivacyPolicyFragment.kt</code>:<br/>
 								override val parentScopeName = DI.APP_SCOPE<br/>
 								pusta<br/>
 								Toothpick.inject(this, scope)<br/>
-							Usunięta linia: Toothpick.inject(this, Toothpick.openScope(DI.APP_SCOPE))<br/>
+							<b>Linia usunięta</b> z pliku <code>PrivacyPolicyFragment.kt</code>:<br/>Toothpick.inject(this, Toothpick.openScope(DI.APP_SCOPE))<br/>
 						</small>
 					</p>
 				</section>
-				<section>
-					ToDo: Jakieś ćwiczenie z stat, graph, z since after
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 11</h2>
+					<p>Sprawdź id commitów z drugiego grudnia 2018</p>
+					<span class="fragment">
+                        <h4>Wizualnie:</h4>
+                        <small>
+                            <code>gitk --after="2018-12-02 00:01" --before="2018-12-02 23:59"</code>
+                        </small>
+                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <small>
+                            <code>git log --after="2018-12-02 00:01" --before="2018-12-02 23:59"</code>
+                        </small>
+					</span>
+					<span class="fragment">Odpowiedź:<br/>
+                        <p align="left">
+                            <small>
+                                6167018 Merge branch 'task/upgrade-markwon-and-remove-image-loading-crutch' into 'develop'<br/>
+                                fdb2e6c Merge branch 'project_milestone_tab' into 'develop'<br/>
+                                158bba8 Delete unused "todo".<br/>
+                                6d45888 Add account id for fixing same userId for difference servers.<br/>
+                                0e02008 Fix scope for PrivacyPolicyFragment.<br/>
+                                c46c806 Merge branch 'feture/multi_account' into develop<br/>
+                                45c0836 Delete code style from git history.<br/>
+                                5752be0 Add scopes to each fragment for more powerful memory management.<br/>
+                            </small>
+                        </p>
+					</span>
+				</section>
+				<section data-transition="none-in none-out">
+					<h2>Ćwiczenie 12</h2>
+					<p>Sprawdź co zmergował(czyli jakich ma parentów) commit <small><code>6167018c5c893e99b7e12d89cfc930875dae3897</code></small></p>
+					<span class="fragment">
+                        <p>
+                            <h4>Wizualnie:</h4>
+                                <small>
+                                <code>gitk 6167</code>
+                                </small>
+                                <h4 style="margin-top:20px">Z konsoli:</h4>
+                                <small>
+                                <code>git log 6167 -3 --graph</code>
+                                </small>
+                            </p>
+					</span>
+					<span class="fragment">Odpowiedź:<br/>
+                        <p align="left">
+                            <small style="font-size:57%">
+                                <b><code>a548222</code></b> Upgrade Markwon to version 2.0.0. Replace ImageSizeResolver workaround with upstream one.<br/>
+                                <b><code>fdb2e6c</code></b> Merge branch 'project_milestone_tab' into 'develop'
+                            </small>
+                        </p>
+					</span>
 				</section>
                 <section>
 					<h3>gitk pokazujący cały stan projektu</h3>
