@@ -78,6 +78,78 @@
 					Pytania?
 				</section>
 			</section>
+
+			<section>
+				<section>
+					<h2>Working directory,</br>staging area, commit</h2>
+					<p>
+						Twoje pliki - absolutnie każdy plik który utworzysz/edytujesz/usuniesz,
+						<br>zawsze jest w którymś z 3 "obszarów" gita
+					</p>
+					<ul>
+						<li>obszarze roboczym (working directory)</li>
+						<li>'indeksie' (staged files)</li>
+						<li>repozytorium (commicie dodanym do historii)</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Obszar roboczy</h2>
+					<p>
+						Obszar roboczy (working directory) to obszar w którym jest praca którą wykonałeś, ale o której jeszcze nie powiedziałeś nic
+						gitowi
+					</p>
+					<ul>
+						<li class="fragment">nowe pliki których wcześniej nie commitowałeś</li>
+						<li class="fragment">zmiany w plikach które wcześniej commitowałeś</li>
+						<li class="fragment">zmiana nazwy pliku lub jego usunięcie</li>
+					</ul>
+					<p class="fragment">
+						<b>Git nie wie nic o Twojej pracy w working directory, uważaj żeby jej nie stracić dopóki mu o niej nie powiesz</b>
+					</p>
+					<p class="fragment">
+						<small>
+							Zmiany w working directory odnoszą się do staging area, a jeśli danego pliku nie ma w staging area, wówczas bezpośrednio
+							do obecnej wersji w lokalnym repozytorium
+						</small>
+					</p>
+				</section>
+				<section>
+					<h3>Index (staged files)</h3>
+					Staging area to obszar w którym przygotowujesz sobie które zmiany zostaną zaccomitowane, czyli doddane do Twojego lokalnego
+					repozytorium
+					<p class="fragment">
+						Po zastagowaniu zmiany, czyli przygotowaniu jej do commita, dalej można plik edytować, wówczas zmiany w working directory
+						pokazywane są względem zastagowanej wersji
+					</p>
+					<p class="fragment">
+						Co więcej, od razu można wybrać żeby zastagować tylko część zmian
+						<small>Dla przykładu na dole pliku zaczęliśmy dopisywać nowy kod, a w środku pliku zobaczyliśmy literówkę w tekście. Wówczas
+							można od razu nieprzerywając pracy na dole pliku, zastagować jedynie poprawienie literówki i dodać commita "Fix typo
+							in module A".</small>
+					</p>
+				</section>
+				<section>
+					<h3>Comimt</h3>
+					Snapshot wszystkich plików w projekcie, posiadający identyfikator SHA-1
+					<p>
+						<img src="img/commit-example.png" />
+					</p>
+				</section>
+				<section>
+					<h3>Flow</h3>
+					<img src="img/git_working.png" />
+				</section>
+				<section>
+					<h3>Przykład stagowania (git add)</h3>
+					<a href="img/git-work-example.png">git-work-example.png
+						<img src="img/git-work-example-miniature.png" />
+					</a>
+				</section>
+				<section>
+					Pytania?
+				</section>
+			</section>
+
 			<section>
 				<section>
 					<h2>Przykładowe flow </h2>
@@ -249,77 +321,6 @@
 				</section>
 			</section>
 
-			<section>
-				<section>
-					<h2>Working directory,</br>staging area, commit</h2>
-					<p>
-						Twoje pliki - absolutnie każdy plik który utworzysz/edytujesz/usuniesz,
-						<br>zawsze jest w którymś z 3 "obszarów" gita
-					</p>
-					<ul>
-						<li>obszarze roboczym (working directory)</li>
-						<li>'indeksie' (staged files)</li>
-						<li>repozytorium (commicie dodanym do historii)</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Obszar roboczy</h2>
-					<p>
-						Obszar roboczy (working directory) to obszar w którym jest praca którą wykonałeś, ale o której jeszcze nie powiedziałeś nic
-						gitowi
-					</p>
-					<ul>
-						<li class="fragment">nowe pliki których wcześniej nie commitowałeś</li>
-						<li class="fragment">zmiany w plikach które wcześniej commitowałeś</li>
-						<li class="fragment">zmiana nazwy pliku lub jego usunięcie</li>
-					</ul>
-					<p class="fragment">
-						<b>Git nie wie nic o Twojej pracy w working directory, uważaj żeby jej nie stracić dopóki mu o niej nie powiesz</b>
-					</p>
-					<p class="fragment">
-						<small>
-							Zmiany w working directory odnoszą się do staging area, a jeśli danego pliku nie ma w staging area, wówczas bezpośrednio
-							do obecnej wersji w lokalnym repozytorium
-						</small>
-					</p>
-				</section>
-				<section>
-					<h3>Index (staged files)</h3>
-					Staging area to obszar w którym przygotowujesz sobie które zmiany zostaną zaccomitowane, czyli doddane do Twojego lokalnego
-					repozytorium
-					<p class="fragment">
-						Po zastagowaniu zmiany, czyli przygotowaniu jej do commita, dalej można plik edytować, wówczas zmiany w working directory
-						pokazywane są względem zastagowanej wersji
-					</p>
-					<p class="fragment">
-						Co więcej, od razu można wybrać żeby zastagować tylko część zmian
-						<small>Dla przykładu na dole pliku zaczęliśmy dopisywać nowy kod, a w środku pliku zobaczyliśmy literówkę w tekście. Wówczas
-							można od razu nieprzerywając pracy na dole pliku, zastagować jedynie poprawienie literówki i dodać commita "Fix typo
-							in module A".</small>
-					</p>
-				</section>
-				<section>
-					<h3>Comimt</h3>
-					Snapshot wszystkich plików w projekcie, posiadający identyfikator SHA-1
-					<p>
-						<img src="img/commit-example.png" />
-					</p>
-				</section>
-				<section>
-					<h3>Flow</h3>
-					<img src="img/git_working.png" />
-				</section>
-				<section>
-					<h3>Przykład stagowania (git add)</h3>
-					<a href="img/git-work-example.png">git-work-example.png
-						<img src="img/git-work-example-miniature.png" />
-					</a>
-				</section>
-				<section>
-					Pytania?
-				</section>
-
-			</section>
 
 			<section>
 				<section>
