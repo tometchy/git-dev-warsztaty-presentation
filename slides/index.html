@@ -72,7 +72,30 @@
 					</p>
 				</section>
                 <section>
-					ToDo
+                    <h3>Trzy poziomy konfiguracji</h3> 
+					<ul>
+						<li class="fragment" style="color:#bbbbbb">
+							<code>--system</code>
+							<ul style="list-style:none">
+								<li><small>Linux: <code>/etc/gitconfig</code></small></li>
+								<li><small>Windows: <code>%ProgramFiles(x86)%\Git\etc\gitconfig</code></small></li>
+								<li><small>Windows: <code>%ProgramFiles%\Git\mingw64\etc\gitconfig</code></small></li>
+							</ul>
+						</li>
+						<li class="fragment">
+							<code>--global</code>
+							<ul style="list-style:none">
+								<li><small>Linux: <code>~/.gitconfig</code></small></li>
+								<li><small>Windows: <code>%USERPROFILE%\.gitconfig</code></small></li>
+							</ul>
+						</li>
+						<li class="fragment" style="color:#D2E0E6">
+							<code>--local</code>
+							<ul style="list-style:none">
+								<li><small><code>.git/config</code></small></li>
+							</ul>
+						</li>
+					</ul>
 				</section>
 				<section>
 					Pytania?
