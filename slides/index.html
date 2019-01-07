@@ -103,16 +103,40 @@
 						<li class="fragment">
 							<code>git config --POZIOM SEKCJA.NAZWA "TREŚĆ"</code>
                             <ul style="list-style:none">
-                                <li><small><code>git config --global user.name "John Doe"</code></small></li>
+                                <li><small>Np. <code>git config --global user.name "John Doe"</code></small></li>
                             </ul>
 						</li>
 						<li class="fragment">
 							<code>git config --POZIOM --<u>e</u>dit</code>
 							<ul style="list-style:none">
-								<li><small><code>git config --global -e</code></small></li>
+								<li><small>Np. <code>git config --global -e</code></small></li>
 							</ul>
 						</li>
 					</ul>
+				</section>
+                <section>
+					<h3>Odczytywanie konfiguracji</h3>
+                    <ul>
+						<li class="fragment">
+							W edytorze tekstowym: <code style="font-size:80%">git config (--POZIOM) --<u>e</u>dit</code>
+							<ul style="list-style:none">
+								<li><small>Np. <code>git config --global -e</code></small></li>
+							</ul>
+						</li>
+						<li class="fragment">
+							Konkretny wpis: <code style="font-size:80%">git config (--POZIOM) SEKCJA.NAZWA</code>
+							<ul style="list-style:none">
+								<li><small>Np. <code>git config --get user.email</code></small></li>
+							</ul>
+						</li>
+						<li class="fragment">
+							Listowanie wpisów: <code style="font-size:80%">git config (--POZIOM) --list</code>
+							<ul style="list-style:none">
+								<li><small>Np. <code>git config --list</code></small></li>
+							</ul>
+						</li>
+					</ul>
+					<p class="fragment"><small>Bez podania poziomu, git przyjmuje obecnie brany pod uwagę poziom.</small></p>
 				</section>
 				<section>
 					Pytania?
