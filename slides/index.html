@@ -468,6 +468,7 @@
 						<li><code>git log --no-merges</code></li>
 						<li><code>git log --all</code></li>
 						<li><code>git log --pretty="FORMAT"</code></li>
+                        <li><code>git log -S"text"</code></li>
 					</ul>
 				</section>
 				<section data-transition="slide-in none-out">
@@ -709,7 +710,7 @@
                         </p>
 					</span>
 				</section>
-				<section data-transition="none-in slide-out">
+				<section data-transition="none-in none-out">
 					<h2>Ćwiczenie 12</h2>
 					<p>Sprawdź co zmergował(czyli jakich ma parentów) commit <small><code>6167018c5c893e99b7e12d89cfc930875dae3897</code></small></p>
 					<span class="fragment">
@@ -732,6 +733,21 @@
                             </small>
                         </p>
 					</span>
+				</section>
+				<section data-transition="none-in slide-out">
+					<h2>Ćwiczenie 13</h2>
+					<p>Sprawdź kto podniósł wersję produktu z 9 na 10 <small>(text: <code>versionCode 10</code>)</small></p>
+					<span class="fragment">
+                        <p>
+                            <h4>Z konsoli:</h4>
+                            <small>
+                                <code>git log -S "versionCode 10" -p</code>
+                            </small>
+						</p>
+					</span>
+					<p class="fragment">Odpowiedź:<br/>
+						<i>terrakok</i>, w commicie<br/><small><code>6d289b10a07bb13d75a7b9767b9b0ae52b0421ce</code></small>
+					</p>
 				</section>
                 <section>
 					<h3>gitk pokazujący cały stan projektu</h3>
