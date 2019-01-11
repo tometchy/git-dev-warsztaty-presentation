@@ -1,7 +1,17 @@
-## Konfiguracja narzędzi do zainstalowania przed warsztatami wysłana przez Pawła 2 dni wcześnie (przez meetup)
-Krzysiek ma napisać blog posta o tym.
+## Przygotowanie
+osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja itp).
 
-## Wydrukować ludziom wszystkie komendy 
+### miejsce gdzie będę moje cwiczenia pokazywał, czysty pultip.
+### wywalić wszystkie aliasy
+
+### przezentacja, naciskanie "s", naciskanie "ESC".
+### jest konto https://github.com/kmorcinek-for-git-trainings
+- przerobić na organizację.
+
+## Konfiguracja narzędzi do zainstalowania przed warsztatami wysłana przez Pawła 2 dni wcześnie (przez meetup)
+- sprawdzić czy w meetupie na początku mamy tez ten link do zrobienia.
+
+## Wydrukować ludziom wszystkie komendy
 
 Wydrukować ludziom wszystkie komendy które bedziemu używali, z wszystkimi flagami, włącznie z git config editor (i pokazane jak ustawić w linuksie gedit, na macu nie wiem co i na windowsie notepada). I tak samo na wszystkich trzech systemach ustawienie kdiff3
 * windows wiemy jak zrobić. Sprawdzić jak na Mac/Unix.
