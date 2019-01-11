@@ -1163,12 +1163,49 @@
 
 				<section>
 					<h2>Wbudowane credentials helpery</h2>
-					ToDo
+                    <ul>
+						<li class="fragment">
+							<code>cache</code>
+							<ul style="list-style:none">
+								<li>
+									<small>
+										<code>git config --global credential.helper 'cache --timeout=300'</code>
+                                        <br/>Bezpieczny, ale tylko tymczasowy (in memory).
+										<br/>Opcjonalnie własny timeout w sekundach (domyślny 900 - 15minut).
+                                    </small>
+								</li>
+							</ul>
+						</li>
+						<li class="fragment" style="margin-top:20px">
+							<code>store</code>
+							<ul style="list-style:none">
+								<li>
+									<small>
+										<code>git config --global credential.helper store</code>
+										<br/>Wygodny, ale <b>niebezpieczny</b> - credentiale zapisane w <b>pliku tekstowym niezaszyfrowane</b>.
+									</small>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</section>
 
 				<section>
-					<h3>Wygodny i bezpieczny credentials helper dla Linux Mint i Ubuntu</h3>
-					ToDo
+					<h3>libsecret - wygodny i bezpieczny credentials helper dla Linux</h3>
+                    Przykładowa instalacja dla Linux Mint / Ubuntu
+                    <small>
+                        <ol>
+                            <li><code>sudo apt-get install libsecret-1-0 libsecret-1-dev</code></li>
+                            <li><code>cd /usr/share/doc/git/contrib/credential/libsecret</code></li>
+                            <li><code>sudo make</code></li>
+                        </ol>
+					</small>
+						<br/><br/>Konfiguracja (gdy już zainstalowany)
+                    <small>
+                        <ul style="list-style:none">
+                            <li><code>git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret</code></li>
+                        </ul>
+					</small>
 				</section>
 
 				<section>
@@ -1185,6 +1222,7 @@
 					<p>
 						<small>
 							Powinno ustawić: <code>git config --global credential.helper manager</code>
+							<br/>albo ścieżkę do exe
 						</small>
 					</p>
 				</section>
