@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <body>
 <section>
-    <h2>Proste flow</h2>
+    <h2>Ćwiczenie: proste flow</h2>
     Komendy potrzebne do ćwiczenia
     <ul>
         <li>git init</li>
@@ -12,13 +12,13 @@
         <li>git commit</li>
     </ul>
     <ol>
-        <li>Utwórz na pulpicie katalogi <code>cwiczenia/cars-demo</code><br/>
+        <li>Utwórz na pulpicie katalogi <code>cwiczenia/flow-demo</code><br/>
             <code>
                 cd ~/Desktop<br/>
                 mkdir cwiczenia<br/>
                 cd cwiczenia<br/>
-                mkdir cars-demo<br/>
-                cd cars-demo
+                mkdir flow-demo<br/>
+                cd flow-demo
             </code>
         </li>
         <li>Utwórz repozytorium (<code>git init</code>)</li>
@@ -42,21 +42,50 @@
     </ol>
 </section>
 
-<h2>Poprawiane commitów</h2>
+<h2>Ćwiczenie: poprawiane commitów</h2>
 Komendy potrzebne do ćwiczenia
 <ul>
     <li>git add</li>
     <li>git commit</li>
 </ul>
-<code>git clone https://github.com/SkillsTemple/git-devWarsztaty-reset-revert exercise-2</code>
 
-<h2>Zabawa z resetowaniem commitów i obserwacja 'co się dzieje'</h2>
+<ul style="list-style:none">
+    <li>
+        Sklonowanie repozytorium do ćwiczenia<br/>
+        <code>
+            cd ~/Desktop/cwiczenia<br/>
+            git clone https://github.com/SkillsTemple/git-devWarsztaty-reset-revert correcting-commits--demo 
+        </code>
+    </li>
+</ul>
+Nasze eksperymentalne zmiany, których dokonaliśmy na branchu master
+niestety okazały się niedobre i musimy je skasować. Zostały one już
+wypchnięte na repozytorium publiczne, więc chcielibyśmy zrobić to
+w taki sposób, aby nikomu z zespołu nie przysporzyć kłopotu. Dodatkowo
+zmiany do CSS są rozstrzelone na kilka commitów i chcielibyśmy połączyć
+je w jeden. Te zmiany na szczęście są tylko na naszym komputerze, więc
+nie musimy obawiać się przesuwania branchy.
+<br/><br/>
+Zadanie:<br/>
+Wycofać zmiany z commita 83bfe65 ("EXPERIMENTAL") z tagiem "already-pushed".
+Połączyć commity c42f4e2 c1ae555 6b0c679 61d2ada w jeden z lepszym opisem.
+
+<h2>Ćwiczenie: zabawa z resetowaniem commitów i obserwacja 'co się dzieje'</h2>
 Komendy potrzebne do ćwiczenia
 <ul>
     <li>git add</li>
     <li>git commit</li>
+    <li>git reset --soft/mixed/hard HEAD~LICZBA_COMMITÓW</li>
 </ul>
-<code>git clone https://github.com/material-components/material-components-android.git</code>
+<ul style="list-style:none">
+    <li>
+        Sklonowanie repozytorium do ćwiczenia<br/>
+        <code>
+            cd ~/Desktop/cwiczenia<br/>
+            git clone https://github.com/material-components/material-components-android reset-demo
+        </code>
+    </li>
+</ul>
 
 <h2>Ćwiczenie rebase vs merge</h2>
 Komendy potrzebne do ćwiczenia
@@ -64,23 +93,54 @@ Komendy potrzebne do ćwiczenia
     <li>git add</li>
     <li>git commit</li>
 </ul>
-<code>git clone https://github.com/kmorcinek-for-git-trainings/rebase-vs-merge-training</code>
+<ul style="list-style:none">
+    <li>
+        Sklonowanie repozytorium do ćwiczenia<br/>
+        <code>
+            cd ~/Desktop/cwiczenia<br/>
+            git clone https://github.com/kmorcinek-for-git-trainings/rebase-vs-merge-training rebase-and-merge-demo
+        </code>
+    </li>
+</ul>
 
-<h2>Ćwiczenie rozwiązywania konfliktów</h2>
+<h2>Ćwiczenie: rozwiązywania konfliktów</h2>
 Komendy potrzebne do ćwiczenia
 <ul>
     <li>git add</li>
     <li>git commit</li>
 </ul>
-<code>git clone https://github.com/kmorcinek-for-git-trainings/conflict-line-training</code>
+<ul style="list-style:none">
+    <li>
+        Sklonowanie repozytorium do ćwiczenia<br/>
+        <code>
+            cd ~/Desktop/cwiczenia<br/>
+            git clone https://github.com/kmorcinek-for-git-trainings/conflict-line-training conflicts-demo
+        </code>
+    </li>
+</ul>
+                        <code></code>
 
-<h2>Pull requesty</h2>
+<h2>Ćwiczenie: pull requesty</h2>
 Komendy potrzebne do ćwiczenia
 <ul>
     <li>git add</li>
     <li>git commit</li>
 </ul>
-<code>git clone https://github.com/kmorcinek/git-dev-warsztaty-presentation.git</code>
+<ol>
+    <li>Otwórz w przeglądarcę stronę projektu do którego będziesz kontrybuował <a href="https://github.com/tometchy/git-dev-warsztaty-presentation" target=”_blank”>github.com/tometchy/git-dev-warsztaty-presentation</a></li>
+    <li>Kliknij <i>fork</i></li>
+    <li>
+        <code>
+            cd ~/Desktop/cwiczenia<br/>
+            git clone https://github.com/TWOJ_NICK/git-dev-warsztaty-presentation pull-requests-demo
+        </code>
+    </li>
+    <li>Dopisz swoje pytanie w pliku Questions-from-workshops-DZISIEJSZA_DATA.md przy swoim numerku</li>
+    <li>Zacommituj swoje pytanie</li>
+    <li>Push (do swojego repozytorium)</li>
+    <li>Otwórz w przeglądarcę stronę projektu do którego kontrybuujsz <a href="https://github.com/tometchy/git-dev-warsztaty-presentation" target=”_blank”>github.com/tometchy/git-dev-warsztaty-presentation</a></li>
+    <li>Kliknij <i>New pull request</i> i wybierz jako źródło brancha master ze swojego profilu</li>
+</ol>
+
 </body>
-
 </html>
