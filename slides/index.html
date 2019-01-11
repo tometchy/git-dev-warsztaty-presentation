@@ -364,78 +364,28 @@
 				</section>
 			</section>
 
-			<!-- TOMEK -->
-			<section>
-				<section>
-					<h2>Jak działa git</h2>
-					Git w podstawowym scenariuszu jedynie dodaje kolejne snapshoty plików
-					<p>
-						<img src="img/sha-commits.jpg" />
-					</p>
-				</section>
-				<section>
-					W svn commit to diff zmienionych plików (różnica)
-					<p>
-						<img src="img/deltas.png">
-					</p>
-				</section>
-				<section>
-					W git commit to snapshot
-					<b>wszystkich </b> plików
-					<p>
-						<img src="img/snapshots.png">
-					</p>
-					reprezentowany za pomocą hasha SHA-1
-				</section>
-				<section>
-					Dzięki temu, można wskazać dowolny commit i podejrzeć cały stan systemu z ówczas, a nie tylko jakie diffy ten commit ze sobą
-					niósł.
-					<p>
-						<img src="img/sha-commits.jpg" />
-					</p>
-					<small class="fragment">Wiedząc jaka jest wersja na produkcji, zawsze można wrócić do niej w kodzie i zrobić drobną poprawkę bez wprowadzania
-						na produkcję kolejnych commitów.</small>
-				</section>
-				<section>
-					<h3>W przeciwieństwie do kryptowalut...</h3>
-					<p class="fragment">
-						w swojej 'instacji bazy' (na swoim komputerze) możesz zmieniać istniejące snapshoty (commity)
-					</p>
-					<p class="fragment">
-						<b>ALE!</b>
-					</p>
-					<p class="fragment">
-						tylko pod warunkiem, że jeszcze ich nie opublikowałeś innym bazom
-					</p>
-				</section>
-				<section>
-					<h2>Git nie śledzi plików</h2>
-					<p>W przeciwieństwie do niektórych VCS,
-						<br>git nie śledzi plików, wyłącznie ich zawartość</p>
-					<img src="img/git-doesnt-track.png">
-				</section>
+            <!-- TOMEK -->
+            <section>
 				<section>
 					<h3>Head</h3>
 					HEAD to referencja do obecnie zcheckoutowanego commita, zazwyczaj będącego ostatnim commitem w branchu
-					<p>
-						<ul>
-							<li>HEAD - ostatni commit
-								<i>(pierwszy od końca) - np. ed8ab42[...]</i>
-							</li>
-							<li>HEAD~1 - przedostatni commit
-								<i> - np. daa6b92[...]</i>
-							</li>
-							<li>HEAD^ - przedostatni commit
-								<i> - np. a6bc32b[...]</i>
-							</li>
-							<li>HEAD~3 - czwarty od końca commit
-								<i> - np. 7cb16f7[...]</i>
-							</li>
-							<li>HEAD^^^ - czwarty od końca commit
-								<i> - np. 343ebb3[...]</i>
-							</li>
-						</ul>
-					</p>
+					<ul>
+						<li>HEAD - ostatni commit
+							<i>(pierwszy od końca) - np. ed8ab42[...]</i>
+						</li>
+						<li>HEAD~1 - przedostatni commit
+							<i> - np. daa6b92[...]</i>
+						</li>
+						<li>HEAD^ - przedostatni commit
+							<i> - np. a6bc32b[...]</i>
+						</li>
+						<li>HEAD~3 - czwarty od końca commit
+							<i> - np. 7cb16f7[...]</i>
+						</li>
+						<li>HEAD^^^ - czwarty od końca commit
+							<i> - np. 343ebb3[...]</i>
+						</li>
+					</ul>
 				</section>
 				<section>
 					Pytania?
@@ -1074,6 +1024,61 @@
 				</section>
 			</section>
 
+			<!-- TOMEK -->
+			<section>
+				<section>
+					<h2>Jak działa git</h2>
+					Git w podstawowym scenariuszu jedynie dodaje kolejne snapshoty plików
+					<p>
+						<img src="img/sha-commits.jpg" />
+					</p>
+				</section>
+				<section>
+					W svn commit to diff zmienionych plików (różnica)
+					<p>
+						<img src="img/deltas.png">
+					</p>
+				</section>
+				<section>
+					W git commit to snapshot
+					<b>wszystkich </b> plików
+					<p>
+						<img src="img/snapshots.png">
+					</p>
+					reprezentowany za pomocą hasha SHA-1
+				</section>
+				<section>
+					Dzięki temu, można wskazać dowolny commit i podejrzeć cały stan systemu z ówczas, a nie tylko jakie diffy ten commit ze sobą
+					niósł.
+					<p>
+						<img src="img/sha-commits.jpg" />
+					</p>
+					<small class="fragment">Wiedząc jaka jest wersja na produkcji, zawsze można wrócić do niej w kodzie i zrobić drobną poprawkę bez wprowadzania
+						na produkcję kolejnych commitów.</small>
+				</section>
+				<section>
+					<h3>W przeciwieństwie do kryptowalut...</h3>
+					<p class="fragment">
+						w swojej 'instacji bazy' (na swoim komputerze) możesz zmieniać istniejące snapshoty (commity)
+					</p>
+					<p class="fragment">
+						<b>ALE!</b>
+					</p>
+					<p class="fragment">
+						tylko pod warunkiem, że jeszcze ich nie opublikowałeś innym bazom
+					</p>
+				</section>
+				<section>
+					<h2>Git nie śledzi plików</h2>
+					<p>W przeciwieństwie do niektórych VCS,
+						<br>git nie śledzi plików, wyłącznie ich zawartość</p>
+					<img src="img/git-doesnt-track.png">
+				</section>
+				<section>
+					Pytania?
+				</section>
+			</section>
+            
             <section>
 				<section>
 					<h2>Przydatne narzędzia związane z gitem</h2>
@@ -1091,14 +1096,20 @@
 				</section>
 			</section>
 
-			<section>
+            <section>
+                <section>
+                    <h2>Git blame</h2>
+                    Który to ?!
+                    <p>
+                        <img src="img/git-blame.png">
+                    </p>
+                </section>
 				<section>
-					<h2>Git blame</h2>
-					Który to ?!
-					<p>
-						<img src="img/git-blame.png">
-					</p>
+					Pytania?
 				</section>
+			</section>
+            
+			<section>
 				<section>
 					<h2>Aliasy</h2>
                     <p style="margin-bottom:0">
@@ -1225,12 +1236,20 @@
 						</code></small></li>
 					</ul>
 				</section>
+                
+				<section>
+					Pytania?
+				</section>
 			</section>
 			
 			<section>
 				<section>
 					<h2>Git hooks</h2>
 					<img src="img/git-hooks.png" />
+				</section>
+                
+				<section>
+					Pytania?
 				</section>
 			</section>
 
