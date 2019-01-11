@@ -673,15 +673,16 @@
 						</ul>
 					</p>
 				</section>
-				<section>
+				<section data-transition="slide-in none-out">
 				<!-- https://github.com/kmorcinek-for-git-trainings/devwarsztaty-rebase-interactive-demo -->
 					<h3>Demo rebase --interactive</h3>
 					<img src="img/rebase-interactive-example.png"> 
 				</section>
-				<section>
+				<section data-transition="none-in slide-out">
+				    <h3>Demo rebase --interactive</h3>
 					<p>
 						<ul>
-							<li class="fragment">git rebase -i HEAD~6</li>
+							<li>git rebase -i HEAD~6</li>
 							<li class="fragment">git rebase --interactive HEAD~6</li>
 							<li class="fragment">git add .</li>
 							<li class="fragment">git commit --amend</li>
