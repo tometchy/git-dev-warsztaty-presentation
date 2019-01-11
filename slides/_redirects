@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://sleepy-lamarr-36e9b2.netlify.com/* http://www.git-presentation.tk/:splat 301!
