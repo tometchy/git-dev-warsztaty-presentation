@@ -17,7 +17,7 @@ Osoba nr. 6
 Pytanie:
 
 Osoba nr. 7
-Pytanie:
+Pytanie: SVN czy Git? ;)
 
 Osoba nr. 8
 Pytanie:
