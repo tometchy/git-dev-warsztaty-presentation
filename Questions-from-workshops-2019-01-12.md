@@ -31,7 +31,7 @@ Osoba nr. 10
 Pytanie: W sumie to nie mam żadnych pytań
 
 Osoba nr. 11
-Pytanie:
+Pytanie: Pozdrawiam serdecznie!
 
 Osoba nr. 12
 Pytanie:
