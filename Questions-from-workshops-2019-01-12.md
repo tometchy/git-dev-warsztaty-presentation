@@ -14,9 +14,11 @@ Osoba nr. 5
 Pytanie:
 
 Osoba nr. 6
-Pytanie: Po własnych doświadczeniach z submodułem na githubie z adresem w formacie SSH - czy powszechne są problemy przy wyciąganiu takiego modułu na Windowsie?
+Pytanie: Po wĹ‚asnych doĹ›wiadczeniach z submoduĹ‚em na githubie z adresem w formacie SSH - czy powszechne sÄ… problemy przy wyciÄ…ganiu takiego moduĹ‚u na Windowsie?
 
 Osoba nr. 7
+Pytanie: Jak wyjsc z vima, oprocz zamykania terminala?
+&
 Pytanie: SVN czy Git? ;)
 
 Osoba nr. 8
@@ -26,7 +28,7 @@ Osoba nr. 9
 Pytanie:
 
 Osoba nr. 10
-Pytanie: W sumie to nie mam �adnych pyta�
+Pytanie: W sumie to nie mam żadnych pytań
 
 Osoba nr. 11
 Pytanie:
