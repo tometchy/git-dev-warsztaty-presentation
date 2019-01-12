@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ćwiczenia</title>
+    <title>Ćwiczenia</title>
 </head>
 <meta charset="utf-8">
 <body>
@@ -49,14 +49,13 @@
 <a href="https://github.com/kmorcinek-for-git-trainings/devwarsztaty-rebase-interactive-demo">https://github.com/kmorcinek-for-git-trainings/devwarsztaty-rebase-interactive-demo</a>
 
 
-
 <h2>Ćwiczenie: poprawiane commitów</h2>
 <ul style="list-style:none">
     <li>
         Sklonowanie repozytorium do ćwiczenia<br/>
         <code>
             cd ~/Desktop/cwiczenia<br/>
-            git clone https://github.com/SkillsTemple/git-devWarsztaty-reset-revert correcting-commits--demo 
+            git clone https://github.com/SkillsTemple/git-devWarsztaty-reset-revert correcting-commits--demo
         </code>
     </li>
 </ul>
@@ -65,8 +64,9 @@ niestety okazały się niedobre i musimy je skasować. Zostały one już
 wypchnięte na repozytorium publiczne, więc chcielibyśmy zrobić to
 w taki sposób, aby nikomu z zespołu nie przysporzyć kłopotu. Dodatkowo
 zmiany do CSS są rozstrzelone na kilka commitów i chcielibyśmy połączyć
-je w jeden. Te zmiany na szczęście są tylko na naszym komputerze, więc
-nie musimy obawiać się przesuwania branchy.
+je w jeden. Wyobrażamy sobie, że nie pobraliśmy tych zmian z serwera, tylko zakładamy, że stworzyliśmy je lokalnie, więc
+te zmiany na szczęście są tylko na naszym komputerze, więc nie musimy obawiać się przesuwania branchy.
+Po otworzeniu <code>gitk</code>, widzimy tag <i>already-pushed</i>, który jest sumulacją, że to co jest przed nim już zostało wypushowane, a to co później jest tylko lokalnie.
 <br/><br/>
 Zadanie:<br/>
 Wycofać zmiany z commita 83bfe65 ("EXPERIMENTAL") z tagiem "already-pushed".
@@ -91,7 +91,7 @@ Komendy potrzebne do ćwiczenia
 <ul>
     <li>git checkout branch-name</li>
     <li>git merge branch-name</li>
-	<li>git rebase branch-name</li>
+    <li>git rebase branch-name</li>
 </ul>
 <ul style="list-style:none">
     <li>
@@ -101,27 +101,27 @@ Komendy potrzebne do ćwiczenia
             git clone https://github.com/kmorcinek-for-git-trainings/rebase-vs-merge-training rebase-and-merge-demo
         </code>
     </li>
-	<p>
-		Merge output:
-	</p>
-	<p>
-		<img src="img/dod-merge-output.png">
-	</p>
-	<p>
-		Rebase output:
-	</p>
-	<p>
-		<img src="img/dod-rebase-output.png">
-	</p>
+    <p>
+        Merge output:
+    </p>
+    <p>
+        <img src="img/dod-merge-output.png">
+    </p>
+    <p>
+        Rebase output:
+    </p>
+    <p>
+        <img src="img/dod-rebase-output.png">
+    </p>
 </ul>
 
 <h2>Ćwiczenie: rozwiązywania konfliktów</h2>
 <ul>
     <li>git checkout branch-name</li>
     <li>git merge branch-name</li>
-	<li>git rebase --abort</li>
-	<li>git mergetool</li>
-	<li>git rebase --continue</li>
+    <li>git rebase --abort</li>
+    <li>git mergetool</li>
+    <li>git rebase --continue</li>
 </ul>
 <ul style="list-style:none">
     <li>
@@ -132,11 +132,13 @@ Komendy potrzebne do ćwiczenia
         </code>
     </li>
 </ul>
-                        <code></code>
+<code></code>
 
 <h2>Ćwiczenie: pull requesty</h2>
 <ol>
-    <li>Otwórz w przeglądarcę stronę projektu do którego będziesz kontrybuował <a href="https://github.com/tometchy/git-dev-warsztaty-presentation" target=”_blank”>github.com/tometchy/git-dev-warsztaty-presentation</a></li>
+    <li>Otwórz w przeglądarcę stronę projektu do którego będziesz kontrybuował <a
+            href="https://github.com/tometchy/git-dev-warsztaty-presentation" target=”_blank”>github.com/tometchy/git-dev-warsztaty-presentation</a>
+    </li>
     <li>Kliknij <i>fork</i></li>
     <li>
         <code>
@@ -147,7 +149,9 @@ Komendy potrzebne do ćwiczenia
     <li>Dopisz swoje pytanie w pliku Questions-from-workshops-DZISIEJSZA_DATA.md przy swoim numerku</li>
     <li>Zacommituj swoje pytanie</li>
     <li>Push (do swojego repozytorium)</li>
-    <li>Otwórz w przeglądarcę stronę projektu do którego kontrybuujsz <a href="https://github.com/tometchy/git-dev-warsztaty-presentation" target=”_blank”>github.com/tometchy/git-dev-warsztaty-presentation</a></li>
+    <li>Otwórz w przeglądarcę stronę projektu do którego kontrybuujsz <a
+            href="https://github.com/tometchy/git-dev-warsztaty-presentation" target=”_blank”>github.com/tometchy/git-dev-warsztaty-presentation</a>
+    </li>
     <li>Kliknij <i>New pull request</i> i wybierz jako źródło brancha master ze swojego profilu</li>
 </ol>
 
