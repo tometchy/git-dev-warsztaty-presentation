@@ -29,7 +29,7 @@ Osoba nr. 10
 Pytanie:
 
 Osoba nr. 11
-Pytanie:
+Pytanie: Pozdrawiam serdecznie!
 
 Osoba nr. 12
 Pytanie:
