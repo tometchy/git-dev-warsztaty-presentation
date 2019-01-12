@@ -14,7 +14,7 @@ Osoba nr. 5
 Pytanie:
 
 Osoba nr. 6
-Pytanie:
+Pytanie: Po własnych doświadczeniach z submodułem na githubie z adresem w formacie SSH - czy powszechne są problemy przy wyciąganiu takiego modułu na Windowsie?
 
 Osoba nr. 7
 Pytanie: SVN czy Git? ;)
