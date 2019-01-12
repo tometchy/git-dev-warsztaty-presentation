@@ -35,7 +35,7 @@ Osoba nr. 12
 Pytanie:
 
 Osoba nr. 13
-Pytanie:
+Pytanie: Jak długo będzie trwała zima?
 
 Osoba nr. 14
 Pytanie:
