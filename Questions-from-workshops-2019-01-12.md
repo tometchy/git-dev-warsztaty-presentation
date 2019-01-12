@@ -17,7 +17,7 @@ Osoba nr. 6
 Pytanie:
 
 Osoba nr. 7
-Pytanie:
+Pytanie: Jak wyjsc z vima, oprocz zamykania terminala?
 
 Osoba nr. 8
 Pytanie:
