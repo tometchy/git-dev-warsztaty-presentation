@@ -1,5 +1,5 @@
 Osoba nr. 1
-Pytanie:
+Pytanie: Lecimy na miasto? ;-)
 
 Osoba nr. 2
 Pytanie:
