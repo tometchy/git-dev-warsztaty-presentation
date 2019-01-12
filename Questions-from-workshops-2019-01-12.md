@@ -26,7 +26,7 @@ Osoba nr. 9
 Pytanie:
 
 Osoba nr. 10
-Pytanie:
+Pytanie: W sumie to nie mam ¿adnych pytañ
 
 Osoba nr. 11
 Pytanie:
