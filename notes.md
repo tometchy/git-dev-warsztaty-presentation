@@ -3,6 +3,7 @@ osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja i
 
 ### miejsce gdzie będę moje cwiczenia pokazywał, czysty pultip.
 ### .gitconfig: wywalić wszystkie aliasy, zmienić edytor na notepad (mam już do tego commita).
+### operować repozytoriami (demo i ćwiczenia) w katalog /Work/git-devwarsztaty/<git-devwarsztaty-katowice>
 
 ### przezentacja, naciskanie "s", naciskanie "ESC".
 ### jest konto https://github.com/kmorcinek-for-git-trainings
