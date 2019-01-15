@@ -2,7 +2,7 @@
 osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja itp).
 
 ### miejsce gdzie będę moje cwiczenia pokazywał, czysty pultip.
-### wywalić wszystkie aliasy
+### .gitconfig: wywalić wszystkie aliasy, zmienić edytor na notepad (mam już do tego commita).
 
 ### przezentacja, naciskanie "s", naciskanie "ESC".
 ### jest konto https://github.com/kmorcinek-for-git-trainings
