@@ -658,11 +658,69 @@
                 </div>
                 <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
             </section>
+            <section data-transition="none-in none-out">
+                <strong>Sprawdź jakie commity są lokalnie na branchu develop, a których nie ma na branchu develop na serwerze</strong>
+                <div class="fragment">
+                    <h4>Gitk</h4>
+                    <small>
+                        <code>gitk develop --not origin/develop</code><br/>lub<br/><code>gitk origin/develop..develop</code>
+                    </small>
+                    <h4 style="margin-top:20px">Konsola</h4>
+                    <small>
+                        <code>git log develop --not origin/develop</code><br/>lub<br/><code>git log origin/develop..develop</code>
+                    </small>
+                </div>
+                <p class="fragment">Odpowiedź:<br/>
+                    <small>Nie ma takich</small>
+                    <br/>
+                    <small><strong>Pytania?</strong></small>
+                </p>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
+            <section data-transition="none-in none-out">
+                <strong>Sprawdź jakie commity są na serwerze na branchu develop, a których nie ma na branchu develop lokalnie</strong>
+                <div class="fragment">
+                    <h4>Gitk</h4>
+                    <small>
+                        <code>gitk origin/develop --not develop</code><br/>lub<br/><code>gitk develop..origin/develop</code>
+                    </small>
+                    <h4 style="margin-top:20px">Konsola</h4>
+                    <small>
+                        <code>git log origin/develop --not develop</code><br/>lub<br/><code>git log develop..origin/develop</code>
+                    </small>
+                </div>
+                <div class="fragment" style="font-size:85%; margin-top:20px">Odpowiedź:<br/>To zależy od momentu zrobienia <code>git
+                    fetch</code> i
+                    pracowitości autorów :)<br/><br/>
+                    <small><strong>Pytania?</strong></small>
+                </div>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
+            <section data-transition="none-in none-out">
+                <strong>Sprawdź jakie commity na branchu develop są tylko lokalnie lub tylko na serwerze</strong>
+                <div class="fragment">
+                    <h4>Gitk</h4>
+                    <small>
+                        <code>gitk develop...origin/develop</code>
+                    </small>
+                    <h4 style="margin-top:20px">Konsola</h4>
+                    <small>
+                        <code>git log develop...origin/develop --decorate</code>
+                    </small>
+                </div>
+                <p class="fragment" style="font-size:85%">Odpowiedź:<br/>To zależy od momentu zrobienia <code>git fetch</code> i
+                    pracowitości autorów :)<br/><br/>
+                    <small><strong>Pytania?</strong></small>
+                </p>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
             <section data-transition="none-in slide-out">
                 <h4>Sprawdź kto podniósł wersję produktu z 9 na 10
                     <small>(text: <code>versionCode 10</code>)</small>
                 </h4>
                 <div class="fragment">
+                    <h4>Gitk</h4>
+                    <small>Da się wyklikać :)</small>
                     <h4>Konsola</h4>
                     <small>
                         <code>git log -S "versionCode 10" -p</code>
