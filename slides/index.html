@@ -447,6 +447,254 @@
         <!-- TOMEK -->
         <section>
             <section>
+                <h2>Edytowanie istniejących zmian</h2>
+                <ul>
+                    <li class="fragment">Przed opublikowaniem innym</li>
+                    <li class="fragment">Po opublikowaniu innym</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Edycja 'ostatnich' commitów przed opublikowaniem</h3>
+                <ul>
+                    <li class="fragment">git reset
+                        <ul>
+                            <li class="fragment">
+                                git reset --mixed
+                            </li>
+                            <li class="fragment">
+                                git reset --soft
+                            </li>
+                            <li class="fragment">
+                                git reset --hard
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fragment">commit --amend</li>
+                    <li class="fragment">rebase --interactive</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Ćwiczenie <i>'zabawa' z resetowaniem commitów i obserwacja 'co się dzieje'</i></h4>
+                <p>
+                    <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
+                </p>
+            </section>
+            <section>
+                <h3>Edycja 'ostatnich' commitów po opublikowaniu</h3>
+                <b>git revert</b>
+                <br>np:
+                <p>
+                <ul>
+                    <li>git revert HEAD</li>
+                    <li>git revert HEAD~4</li>
+                    <li>git revert 6e5av3a</li>
+                </ul>
+                </p>
+            </section>
+            <section data-transition="slide-in none-out">
+                <!-- https://github.com/kmorcinek-for-git-trainings/devwarsztaty-rebase-interactive-demo -->
+                <h3>Demo rebase --interactive</h3>
+                <img src="img/rebase-interactive-example.png">
+            </section>
+            <section data-transition="none-in slide-out">
+                <h3>Demo rebase --interactive</h3>
+                <p>
+                <ul>
+                    <li>git rebase -i HEAD~6</li>
+                    <li class="fragment">git rebase --interactive HEAD~6</li>
+                    <li class="fragment">git add .</li>
+                    <li class="fragment">git commit --amend</li>
+                    <li class="fragment">git rebase --continue</li>
+                    <li class="fragment">Przenoszenie linii tekstu(hashe) w edytorze tekstu</li>
+                </ul>
+                </p>
+            </section>
+            <section>
+                <h4>Ćwiczenie <i>Poprawianie commitów</i></h4>
+                <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- KRZYSIEK -->
+        <section>
+            <section>
+                <h2>Branche</h2>
+                <p>
+                    <img src="img/branches.png">
+                </p>
+                <a href="https://learngitbranching.js.org/">Learning branching</a>
+            </section>
+            <section>
+                <h3>cherry-pick</h3>
+                <p>
+                    Commity między branchami można przekładać
+                </p>
+                <p>
+                    <img src="img/cherrypick.png">
+                </p>
+            </section>
+            <section>
+                <h2>Demo</h2>
+                <p>pokazanie jak zmiana brancha wpływa na zawartość katalogów (git checkout)</p>
+                <p class="fragment">stosowanie cherry-pick w praktyce</P>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- KRZYSIEK -->
+        <section>
+            <section>
+                <h2>Merge</h2>
+                <p>
+                    <img src="img/merge-commit.png">
+                </p>
+            </section>
+            <section>
+                <h2>Rebase</h2>
+                <p>
+                    <img src="img/git-rebasing-example.png">
+                </p>
+            </section>
+            <section>
+                <h2>Merge vs rebase</h2>
+                <p>
+                    <img src="img/git-merge-vs-rebase.png">
+                </p>
+            </section>
+            <section>
+                <ol>
+                    <li>Ćwiczenie pierwsze - zrób merge lub rebase</li>
+                    <li>Ćwiczenie drugie - rozwiąż konflikty</li>
+                </ol>
+                <p>
+                    <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
+                </p>
+            </section>
+
+            <!-- TOMEK -->
+            <section>
+                <h3>Rebase to świetne narzędzie...</h3>
+                <p>
+                    Rebase to świetne narzędzie, poprawianie czytelności historii bardzo ułatatwia przeglądanie repozytorium.
+                </p>
+                <p class="fragment">
+                    Ale trzeba być ostrożnym. Czasami łatwiej przerwać rebasowanie i jednak zrobić zwykłego merge.
+                    <small>(Jeżeli flow projektu na to pozwala)</small>
+                    <br/>
+                    <a href="https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1">
+                        <small>
+                            <i>link do fajnego artykułu tłumaczącego trudności które można napotkać</i>
+                        </small>
+                    </a>
+                    <a href="https://jimmybogard.com/trunk-based-development-or-pull-requests-why-not-both/">
+                        <small>
+                            <i>Trunk-Based Development or Pull Requests - Why Not Both?</i>
+                        </small>
+                    </a>
+                <ul>
+                    <li class="fragment">rebase zakłamauje historię (z dobrą intencją, ale jednak)</li>
+                    <li class="fragment">rebase może wywołać konflikty których by nie było przy mergu</li>
+                    <ul>
+                        <li class="fragment">a w związku z tym, może wprowadzić błąd na produkcję</li>
+                        <li class="fragment">pomijając, że to dokłada dodatkowej roboty</li>
+                    </ul>
+                </ul>
+                </p>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                Git
+                <b>nie jest</b> scentralizowanym systemem kontroli wersji
+                <p>
+                    <img src="img/centralized_vcs_illustration.png"/>
+                </p>
+            </section>
+            <section data-transition="slide-in none-out">
+                Git jest
+                <b>zdecentralizowanym</b> systemem kontroli wersji
+                <p>
+                    <img src="img/distributed_vcs_illustration.png"/>
+                </p>
+            </section>
+            <section data-transition="none-in slide-out">
+                Git jest
+                <b>zdecentralizowanym</b> systemem kontroli wersji
+                <p>
+                    <img src="img/centralized-is-bad-idea.png"/>
+                </p>
+            </section>
+            <section>
+                <h3>Git to w zasadzie baza danych</h3>
+                Git to VCS na który można patrzeć, jak na rozproszoną bazę danych, opartą na streamie snapshotów plikow
+                <p>
+                    <img src="img/distributed.png"/>
+                </p>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>Pushowanie
+                    <br>&
+                    <br>pullowanie zmian</h2>
+                <p>
+                    Synchronizacja repozytoriów (np. lokalnego z wersją na GitHubie) odbywa się za pomocą 'wypychania' i 'ciągnięcia'
+                    commitów
+                <ul>
+                    <li>git push</li>
+                    <li>
+                        git pull
+                        <ul>
+                            <li>git fetch</li>
+                            <li>git merge</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+            </section>
+            <section>
+                <h3>Pull z rebase</h3>
+                Często dobrą opcją jest zastosowanie komendy która od razu za nas zrebasuje commity
+                <p>
+                    <code>git pull --rebase</code>
+                </p>
+            </section>
+            <section>
+                <h3>Push --force</h3>
+                Jeżeli jesteś pewny co robisz, możesz wymusić pusha
+                <p>
+                    git push --<u>f</u>orce
+                </p>
+                <span class="fragment">
+                        Ale jak już wymuszasz, to zawsze z zabezpieczeniem
+                        <p>
+                            <code>git push --force-with-lease</code>
+                        </p>
+					</span>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
                 <h2>Przeglądanie historii</h2>
                 <ul>
                     <li><code>git log</code></li>
@@ -744,254 +992,6 @@
                     Przejrzeć drzewo można również w konsoli, ale to się przydaje głównie do skryptów<br/>
                     <code> git ls-tree -r 0e020 --name-only </code>
                 </small>
-            </section>
-            <section>
-                Pytania?
-            </section>
-        </section>
-
-        <!-- TOMEK -->
-        <section>
-            <section>
-                <h2>Edytowanie istniejących zmian</h2>
-                <ul>
-                    <li class="fragment">Przed opublikowaniem innym</li>
-                    <li class="fragment">Po opublikowaniu innym</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Edycja 'ostatnich' commitów przed opublikowaniem</h3>
-                <ul>
-                    <li class="fragment">git reset
-                        <ul>
-                            <li class="fragment">
-                                git reset --mixed
-                            </li>
-                            <li class="fragment">
-                                git reset --soft
-                            </li>
-                            <li class="fragment">
-                                git reset --hard
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="fragment">commit --amend</li>
-                    <li class="fragment">rebase --interactive</li>
-                </ul>
-            </section>
-            <section>
-                <h4>Ćwiczenie <i>'zabawa' z resetowaniem commitów i obserwacja 'co się dzieje'</i></h4>
-                <p>
-                    <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
-                </p>
-            </section>
-            <section>
-                <h3>Edycja 'ostatnich' commitów po opublikowaniu</h3>
-                <b>git revert</b>
-                <br>np:
-                <p>
-                <ul>
-                    <li>git revert HEAD</li>
-                    <li>git revert HEAD~4</li>
-                    <li>git revert 6e5av3a</li>
-                </ul>
-                </p>
-            </section>
-            <section data-transition="slide-in none-out">
-                <!-- https://github.com/kmorcinek-for-git-trainings/devwarsztaty-rebase-interactive-demo -->
-                <h3>Demo rebase --interactive</h3>
-                <img src="img/rebase-interactive-example.png">
-            </section>
-            <section data-transition="none-in slide-out">
-                <h3>Demo rebase --interactive</h3>
-                <p>
-                <ul>
-                    <li>git rebase -i HEAD~6</li>
-                    <li class="fragment">git rebase --interactive HEAD~6</li>
-                    <li class="fragment">git add .</li>
-                    <li class="fragment">git commit --amend</li>
-                    <li class="fragment">git rebase --continue</li>
-                    <li class="fragment">Przenoszenie linii tekstu(hashe) w edytorze tekstu</li>
-                </ul>
-                </p>
-            </section>
-            <section>
-                <h4>Ćwiczenie <i>Poprawianie commitów</i></h4>
-                <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
-            </section>
-            <section>
-                Pytania?
-            </section>
-        </section>
-
-        <!-- KRZYSIEK -->
-        <section>
-            <section>
-                <h2>Branche</h2>
-                <p>
-                    <img src="img/branches.png">
-                </p>
-                <a href="https://learngitbranching.js.org/">Learning branching</a>
-            </section>
-            <section>
-                <h3>cherry-pick</h3>
-                <p>
-                    Commity między branchami można przekładać
-                </p>
-                <p>
-                    <img src="img/cherrypick.png">
-                </p>
-            </section>
-            <section>
-                <h2>Demo</h2>
-                <p>pokazanie jak zmiana brancha wpływa na zawartość katalogów (git checkout)</p>
-                <p class="fragment">stosowanie cherry-pick w praktyce</P>
-            </section>
-            <section>
-                Pytania?
-            </section>
-        </section>
-
-        <!-- KRZYSIEK -->
-        <section>
-            <section>
-                <h2>Merge</h2>
-                <p>
-                    <img src="img/merge-commit.png">
-                </p>
-            </section>
-            <section>
-                <h2>Rebase</h2>
-                <p>
-                    <img src="img/git-rebasing-example.png">
-                </p>
-            </section>
-            <section>
-                <h2>Merge vs rebase</h2>
-                <p>
-                    <img src="img/git-merge-vs-rebase.png">
-                </p>
-            </section>
-            <section>
-                <ol>
-                    <li>Ćwiczenie pierwsze - zrób merge lub rebase</li>
-                    <li>Ćwiczenie drugie - rozwiąż konflikty</li>
-                </ol>
-                <p>
-                    <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
-                </p>
-            </section>
-
-            <!-- TOMEK -->
-            <section>
-                <h3>Rebase to świetne narzędzie...</h3>
-                <p>
-                    Rebase to świetne narzędzie, poprawianie czytelności historii bardzo ułatatwia przeglądanie repozytorium.
-                </p>
-                <p class="fragment">
-                    Ale trzeba być ostrożnym. Czasami łatwiej przerwać rebasowanie i jednak zrobić zwykłego merge.
-                    <small>(Jeżeli flow projektu na to pozwala)</small>
-                    <br/>
-                    <a href="https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1">
-                        <small>
-                            <i>link do fajnego artykułu tłumaczącego trudności które można napotkać</i>
-                        </small>
-                    </a>
-                    <a href="https://jimmybogard.com/trunk-based-development-or-pull-requests-why-not-both/">
-                        <small>
-                            <i>Trunk-Based Development or Pull Requests - Why Not Both?</i>
-                        </small>
-                    </a>
-                <ul>
-                    <li class="fragment">rebase zakłamauje historię (z dobrą intencją, ale jednak)</li>
-                    <li class="fragment">rebase może wywołać konflikty których by nie było przy mergu</li>
-                    <ul>
-                        <li class="fragment">a w związku z tym, może wprowadzić błąd na produkcję</li>
-                        <li class="fragment">pomijając, że to dokłada dodatkowej roboty</li>
-                    </ul>
-                </ul>
-                </p>
-            </section>
-            <section>
-                Pytania?
-            </section>
-        </section>
-
-        <!-- TOMEK -->
-        <section>
-            <section>
-                Git
-                <b>nie jest</b> scentralizowanym systemem kontroli wersji
-                <p>
-                    <img src="img/centralized_vcs_illustration.png"/>
-                </p>
-            </section>
-            <section data-transition="slide-in none-out">
-                Git jest
-                <b>zdecentralizowanym</b> systemem kontroli wersji
-                <p>
-                    <img src="img/distributed_vcs_illustration.png"/>
-                </p>
-            </section>
-            <section data-transition="none-in slide-out">
-                Git jest
-                <b>zdecentralizowanym</b> systemem kontroli wersji
-                <p>
-                    <img src="img/centralized-is-bad-idea.png"/>
-                </p>
-            </section>
-            <section>
-                <h3>Git to w zasadzie baza danych</h3>
-                Git to VCS na który można patrzeć, jak na rozproszoną bazę danych, opartą na streamie snapshotów plikow
-                <p>
-                    <img src="img/distributed.png"/>
-                </p>
-            </section>
-            <section>
-                Pytania?
-            </section>
-        </section>
-
-        <!-- TOMEK -->
-        <section>
-            <section>
-                <h2>Pushowanie
-                    <br>&
-                    <br>pullowanie zmian</h2>
-                <p>
-                    Synchronizacja repozytoriów (np. lokalnego z wersją na GitHubie) odbywa się za pomocą 'wypychania' i 'ciągnięcia'
-                    commitów
-                <ul>
-                    <li>git push</li>
-                    <li>
-                        git pull
-                        <ul>
-                            <li>git fetch</li>
-                            <li>git merge</li>
-                        </ul>
-                    </li>
-                </ul>
-                </p>
-            </section>
-            <section>
-                <h3>Pull z rebase</h3>
-                Często dobrą opcją jest zastosowanie komendy która od razu za nas zrebasuje commity
-                <p>
-                    <code>git pull --rebase</code>
-                </p>
-            </section>
-            <section>
-                <h3>Push --force</h3>
-                Jeżeli jesteś pewny co robisz, możesz wymusić pusha
-                <p>
-                    git push --<u>f</u>orce
-                </p>
-                <span class="fragment">
-                        Ale jak już wymuszasz, to zawsze z zabezpieczeniem
-                        <p>
-                            <code>git push --force-with-lease</code>
-                        </p>
-					</span>
             </section>
             <section>
                 Pytania?
@@ -1435,13 +1435,7 @@
                         <a href="https://onlywei.github.io/explain-git-with-d3/">Visualise git with D3</a>
                     </li>
                     <li>
-                        <a href="http://nvie.com/posts/a-successful-git-branching-model/">Successful git branching model - Git flow</a>
-                    </li>
-                    <li>
                         <a href="http://ohshitgit.com/">Oh shit, git!</a>
-                    </li>
-                    <li>
-                        <a href="http://files.zeroturnaround.com/pdf/zt_git_cheat_sheet.pdf">Git cheatsheet</a>
                     </li>
                     <li>
                         <a href="https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/">How to undo (almost) anything
