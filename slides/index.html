@@ -2,1359 +2,1455 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 
-	<title>Git jest git</title>
+    <title>Git jest git</title>
 
-	<meta name="description" content="Wprowadzenie do gita, 19 maja 2018">
-	<meta name="author" content="Krzysztof Morcinek, Tomasz Rusek, inspiracja - Marcin Biegała, Michał Śliwoń">
+    <meta name="description" content="Wprowadzenie do gita, 19 maja 2018">
+    <meta name="author" content="Krzysztof Morcinek, Tomasz Rusek, inspiracja - Marcin Biegała, Michał Śliwoń">
 
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-	<!-- Code syntax highlighting -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName('head')[0].appendChild(link);
-	</script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 
-	<!--[if lt IE 9]>
-      <script src="lib/js/html5shiv.js"></script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
 </head>
 
 <body>
 
-	<div class="reveal">
-		<div class="slides">
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <!-- TOMEK -->
             <section>
-				<!-- TOMEK -->
-				<section>
-					<h2>Wprowadzenie do GIT</h2>
-					<p>
-						<a href="http://www.krzysztofmorcinek.wordpress.com" target="_blank">Krzysztof Morcinek</a> i
-						<a href="http://www.tometchy.com" target="_blank">Tomasz Skraskowski</a>
-					</p>
-					<p>
-						<b> Dev Warsztaty <br/>
-							Katowice - 12 stycznia 2019</b><br/>
-					</p>
-					<p>
-						<small style="margin-top:10px">
-							Poprzednie edycje:<br/>
-							Wrocław - 19 maja 2018
-						</small>
-					</p>
-					<p>
-						<small>
-							<i>inspiracja -
-								<a href="https://github.com/SkillsTemple/git-devWarsztaty">github.com/SkillsTemple/git-devWarsztaty</a>
-							</i>
-						</small>
-					</p>
-				</section>
-				
-                <section>
-					<h2>Kwestie organizacyjne</h2>
-					<ul>
-						<li>Prośba o zalogowanie się na kanał slackowy</li>
-						<li>Po warsztatach prośba o uzupełnienie ankiety</li>
-					</ul>
-				</section>
-                
-				<section>
-					<h2>VCS to dobra rzecz</h2>
-					
+                <h2>Wprowadzenie do GIT</h2>
+                <p>
+                    <a href="http://www.krzysztofmorcinek.wordpress.com" target="_blank">Krzysztof Morcinek</a> i
+                    <a href="http://www.tometchy.com" target="_blank">Tomasz Skraskowski</a>
+                </p>
+                <p>
+                    <b> Dev Warsztaty <br/>
+                        Katowice - 12 stycznia 2019</b><br/>
+                </p>
+                <p>
+                    <small style="margin-top:10px">
+                        Poprzednie edycje:<br/>
+                        Wrocław - 19 maja 2018
+                    </small>
+                </p>
+                <p>
+                    <small>
+                        <i>inspiracja -
+                            <a href="https://github.com/SkillsTemple/git-devWarsztaty">github.com/SkillsTemple/git-devWarsztaty</a>
+                        </i>
+                    </small>
+                </p>
+            </section>
+
+            <section>
+                <h2>Kwestie organizacyjne</h2>
+                <ul>
+                    <li>Prośba o zalogowanie się na kanał slackowy</li>
+                    <li>Po warsztatach prośba o uzupełnienie ankiety</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>VCS to dobra rzecz</h2>
+
+                <p>
+                    <img src="img/before-vcs.png" style="margin-bottom:0"/><br/>
+                    <small>Tak to się kiedyś robiło ;)</small>
+                </p>
+                <p>
+                    Polecamy korzystanie z systemu kontroli wersji nie tylko do programowania
+                </p>
+            </section>
+
+            <section data-transition="slide-in none-out">
+                <h2>Konsola & Gitk & Kdiff3</h2>
+                <img src="img/many-git-tools.png" style="border:none; box-shadow:none"/>
+            </section>
+            <section data-transition="none-in slide-out">
+                Wielu ludzi upiera się, że zarządzania gitem z konsoli nie spróbuje, że pisanie zamiast klikania to przeżytek
+                <img src="img/daj-szanse-konsoli.png"/>
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>Konfiguracja środowiska</h2>
+                <p>
+                    <img src="img/work-environment.jpg"/>
+                </p>
+            </section>
+            <section>
+                <h3>Trzy poziomy konfiguracji</h3>
+                <ul>
+                    <li class="fragment" style="color:#bbbbbb">
+                        <code>--system</code> <span style="font-size:50%">(brany pod uwagę na końcu)</span>
+                        <ul style="list-style:none">
+                            <li>
+                                <small>Linux: <code>/etc/gitconfig</code></small>
+                            </li>
+                            <li>
+                                <small>Windows: <code>%ProgramFiles(x86)%\Git\etc\gitconfig</code></small>
+                            </li>
+                            <li>
+                                <small>Windows: <code>%ProgramFiles%\Git\mingw64\etc\gitconfig</code></small>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fragment">
+                        <code>--global</code> <span style="font-size:50%">(brany pod uwagę w drugiej kolejności)</span>
+                        <ul style="list-style:none">
+                            <li>
+                                <small>Linux: <code>~/.gitconfig</code></small>
+                            </li>
+                            <li>
+                                <small>Windows: <code>%USERPROFILE%\.gitconfig</code></small>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fragment" style="color:#D2E0E6">
+                        <code>--local</code> <span style="font-size:50%">(brany pod uwagę w pierwszej kolejności)</span>
+                        <ul style="list-style:none">
+                            <li>
+                                <small><code>.git/config</code></small>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Modyfikowanie konfiguracji</h3>
+                <ul>
+                    <li class="fragment">
+                        <code>git config --POZIOM SEKCJA.NAZWA "TREŚĆ"</code>
+                        <ul style="list-style:none">
+                            <li>
+                                <small>Np. <code>git config --global user.name "John Doe"</code></small>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fragment">
+                        <code>git config --POZIOM --<u>e</u>dit</code>
+                        <ul style="list-style:none">
+                            <li>
+                                <small>Np. <code>git config --global -e</code></small>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="fragment">
+                    <small>Domyślny poziom przy zapisywaniu to <code>local</code></small>
+                </p>
+            </section>
+            <section>
+                <h3>Odczytywanie konfiguracji</h3>
+                <ul>
+                    <li class="fragment">
+                        W edytorze tekstowym: <code style="font-size:80%">git config (--POZIOM) --<u>e</u>dit</code>
+                        <ul style="list-style:none">
+                            <li>
+                                <small>Np. <code>git config --global -e</code></small>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fragment">
+                        Konkretny wpis: <code style="font-size:80%">git config (--POZIOM) SEKCJA.NAZWA</code>
+                        <ul style="list-style:none">
+                            <li>
+                                <small>Np. <code>git config --get user.email</code></small>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fragment">
+                        Listowanie wpisów: <code style="font-size:80%">git config (--POZIOM) --list</code>
+                        <ul style="list-style:none">
+                            <li>
+                                <small>Np. <code>git config --list</code></small>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="fragment">
+                    <small>Bez podania poziomu, git przyjmuje obecnie brany pod uwagę poziom</small>
+                </p>
+            </section>
+            <section>
+                <h3 style="margin-bottom:0">Różne edytory tekstowe</h3>
+                <ul>
+                    <li>vim<br/>
+                        <small><code>git config --global core.editor vim</code></small>
+                    </li>
+                    <li>Linux Mint - xed<br/>
+                        <small><code>git config --global core.editor xed</code></small>
+                    </li>
+                    <li>Ubuntu - gedit<br/>
+                        <small><code>git config --global core.editor gedit</code></small>
+                    </li>
+                    <li>Windows - notepad<br/>
+                        <small><code>git config --global core.editor notepad</code></small>
+                    </li>
+                    <li>Windows - notepad++<br/>
+                        <small><code>git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar
+                            -nosession -noPlugin"</code></small>
+                    </li>
+                    <li style="margin-top: 20px">Windows - Visual Studio Code<br/>
+                        <small><code>git config --global core.editor "'C:\Program Files\Microsoft VS Code\code.exe' -n -w"</code></small>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Przykładowa konfiguracja</h3>
+                <img src="img/example-gitconfig.png"/>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>Dlaczego GIT jest git</h2>
+                <p>
+                <ul>
+                    <li class="fragment">jest szybki</li>
+                    <li class="fragment">jest rozproszony</li>
+                    <li class="fragment">ułatwia rozwiązywanie konfliktów</li>
+                    <li class="fragment">wspiera nieliniowy development (branche)</li>
+                    <li class="fragment">działa offline</li>
+                    <li class="fragment">pozwala na pracę nad jakością commitów</li>
+                    <li class="fragment">bardzo łatwy do użytku domowego</li>
+                    <li class="fragment">jest bezpieczny</li>
+                </ul>
+                </p>
+            </section>
+            <section>
+                <h2>Jest bezpieczny - jest wiarygodny</h2>
+                <p>
+                    Suma kontrolna każdego commita opiera się na
+                <ul>
+                    <li>Zawartości i nazwach wszystkich plików</li>
+                    <li>ID parent commit(ów)</li>
+                    <li>Wiadomości (opisie) commita</li>
+                    <li>Autorze i/lub commiterze</li>
+                </ul>
+                </p>
+                Git się zorientuje przy nieprawidłowości w danych
+                <br>
+                <small>(np. po uszkodzeniu dysku albo próbie sabotażu)</small>
+                <p class="fragment">
+                    Analogicznie wiarygodne są przelewy w bitcoin
+                </p>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>Working directory,</br>staging area, commit</h2>
+                <p>
+                    Twoje pliki - absolutnie każdy plik który utworzysz/edytujesz/usuniesz,
+                    <br>zawsze jest w którymś z 3 "obszarów" gita
+                </p>
+                <ul>
+                    <li>obszarze roboczym (working directory)</li>
+                    <li>'indeksie' (staged files)</li>
+                    <li>repozytorium (commicie dodanym do historii)</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Obszar roboczy</h2>
+                <p>
+                    Obszar roboczy (working directory) to obszar w którym jest praca którą wykonałeś, ale o której jeszcze nie
+                    powiedziałeś nic
+                    gitowi
+                </p>
+                <ul>
+                    <li class="fragment">nowe pliki których wcześniej nie commitowałeś</li>
+                    <li class="fragment">zmiany w plikach które wcześniej commitowałeś</li>
+                    <li class="fragment">zmiana nazwy pliku lub jego usunięcie</li>
+                </ul>
+                <p class="fragment">
+                    <b>Git nie wie nic o Twojej pracy w working directory, uważaj żeby jej nie stracić dopóki mu o niej nie powiesz</b>
+                </p>
+                <p class="fragment">
+                    <small>
+                        Zmiany w working directory odnoszą się do staging area, a jeśli danego pliku nie ma w staging area, wówczas
+                        bezpośrednio
+                        do obecnej wersji w lokalnym repozytorium
+                    </small>
+                </p>
+            </section>
+            <section>
+                <h3>Index (staged files)</h3>
+                Staging area to obszar w którym przygotowujesz sobie które zmiany zostaną zaccomitowane, czyli doddane do Twojego lokalnego
+                repozytorium
+                <p class="fragment">
+                    Po zastagowaniu zmiany, czyli przygotowaniu jej do commita, dalej można plik edytować, wówczas zmiany w working
+                    directory
+                    pokazywane są względem zastagowanej wersji
+                </p>
+                <p class="fragment">
+                    Co więcej, od razu można wybrać żeby zastagować tylko część zmian
+                    <small>Dla przykładu na dole pliku zaczęliśmy dopisywać nowy kod, a w środku pliku zobaczyliśmy literówkę w tekście.
+                        Wówczas
+                        można od razu nieprzerywając pracy na dole pliku, zastagować jedynie poprawienie literówki i dodać commita "Fix typo
+                        in module A".
+                    </small>
+                </p>
+            </section>
+            <section>
+                <h3>Commit</h3>
+                Ukazanie różnicy pomiędzy ostatnią wersją, a jednocześnie snapshot wszystkich plików w projekcie, posiadający identyfikator
+                SHA-1.
+                <p>
+                    <img src="img/commit-example.png"/>
+                </p>
+            </section>
+            <section>
+                <h3>Flow</h3>
+                <img src="img/git_working.png"/>
+            </section>
+            <section data-transition="slide-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part1.png"/>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part2.png"/>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part3.png"/>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part4.png"/>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part5.png"/>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part6.png"/>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part7.png"/>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part8.png"/>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part9.png"/>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part10.png"/>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part11.png"/>
+            </section>
+            <section data-transition="none-in slide-out">
+                <h3>Przykład stagowania (git add)</h3>
+                <img src="img/git-work-example/git-work-example-part12.png"/>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- KRZYSIEK -->
+        <section>
+            <section>
+                <h2>Przykładowe flow </h2>
+                <ul>
+                    <li>
+                        Demo - pokazywanie statusu w SourceTree
+                    </li>
+                    <li>
+                        SourceTree - popularne, darmowe narzędzie.<br/>W czasie warsztatów czasem będzie wykorzystane do zaprezentowania
+                        efektów.
+                    </li>
+                </ul>
+            </section>
+            <section data-transition="slide-in none-out">
+                <h3>Ćwiczenie <i>Proste flow</i></h3>
+                <p>
+                    <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a><br/>
+                    Demo + samodzielna praca
+                </p>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h3>Head</h3>
+                HEAD to referencja do obecnie zcheckoutowanego commita, zazwyczaj będącego ostatnim commitem w branchu
+                <ul>
+                    <li>HEAD - ostatni commit
+                        <i>(pierwszy od końca) - np. ed8ab42[...]</i>
+                    </li>
+                    <li>HEAD~1 - przedostatni commit
+                        <i> - np. daa6b92[...]</i>
+                    </li>
+                    <li>HEAD^ - przedostatni commit
+                        <i> - np. a6bc32b[...]</i>
+                    </li>
+                    <li>HEAD~3 - czwarty od końca commit
+                        <i> - np. 7cb16f7[...]</i>
+                    </li>
+                    <li>HEAD^^^ - czwarty od końca commit
+                        <i> - np. 343ebb3[...]</i>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>Przeglądanie historii</h2>
+                <ul>
+                    <li><code>git log</code></li>
+                    <li><code>gitk</code></li>
+                </ul>
+                <p>Git log oraz gitk domyślnie pokazują historię od <i>obecnego momentu</i> - HEAD, ale możliwe jest wskazanie dowolnego
+                    momentu w historii, np. nazwy brancha, SHA commita lub odniesienia HEAD^ lub HEAD~N</p>
+            </section>
+            <section>
+                <h2 style="font-size:127%">Popularne przełączniki do git log / gitk</h2>
+                <ul style="margin-top:0px; font-size:76%">
+                    <li><code>git log -4</code></li>
+                    <li><code>git log --oneline</code></li>
+                    <li><code>git log --graph</code></li>
+                    <li><code>git log --decorate</code></li>
+                    <li><code>git log --stat</code></li>
+                    <li><code>git log --<u>p</u>atch</code></li>
+                    <li><code>git log --since=X</code>, <code>git log --after=X</code>, <code>git log --before=X</code></li>
+                    <li><code>git log X --not Y</code>, <code>git log Y..X</code>, <code>git log X...Y</code></li>
+                    <li><code>git log --author="xyz"</code></li>
+                    <li><code>git log --grep="xyz"</code></li>
+                    <li><code>git log --no-merges</code></li>
+                    <li><code>git log --all</code></li>
+                    <li><code>git log --pretty="FORMAT"</code></li>
+                    <li><code>git log -S"text"</code></li>
+                </ul>
+            </section>
+            <section data-transition="slide-in none-out">
+                <h3>git log z grafem</h3>
+                <p>
+                    <img src="img/git-log-graph.png"/>
+                </p>
+            </section>
+            <section data-transition="none-in none-out">
+                <h3>git log z jednoliniowymi wynikami</h3>
+                <p>
+                    <img src="img/git-log-oneline.png"/>
+                </p>
+            </section>
+            <section data-transition="none-in slide-out">
+                <h3>git log z pokazaną statystyką i diffem</h3>
+                <p>
+                    <img src="img/git-log-stat-patch.png"/>
+                </p>
+            </section>
+            <section>
+                <h3>gitk</h3>
+                <p>
+                    <img src="img/gitk.png"/>
+                </p>
+            </section>
+            <section>
+                <h3>Przygotowanie do ćwiczeń z przeglądaniem historii</h3>
+                <ol>
+                    <li>
+                        Przejdź do katalogu cwiczen na pulpicie:<br/>
+                        <code>cd ~/Desktop/cwiczenia</code>
+                    </li>
+                    <li class="fragment" style="margin-top:15px">Sklonuj przykładowe repozytorium (z projektem open source), do katalogu
+                        <code>log-demo</code>:<br/>
+                        <small><code><b>git clone https://gitlab.com/terrakok/gitlab-client log-demo</b></code></small>
+                    </li>
+                    <li class="fragment" style="margin-top:15px">
+                        Przejdź do katalogu repo: <code>cd log-demo</code>
+                    </li>
+                    <li class="fragment" style="margin-top:15px">
+                        Zresetuj repozytorium do wersji: 7ad14ecda2f97a3ff7c3cca44cc7605484b578b5<br/>
+                        <code>git reset --hard 7ad14</code><br/>
+                        <small><em>Żeby każdy miał tę samą wersję do ćwiczeń</em></small>
+                        <br/>
+                    </li>
+                </ol>
+            </section>
+            <section data-transition="slide-in none-out">
+                <h4>Sprawdź datę commita poprzedzającego developa o 50 commitów</h4>
+                <div class="fragment">
+                    <h4>Gitk</h4>
+                    <code>gitk develop~50 -1</code>
+                    <h4 style="margin-top:20px">Konsola</h4>
+                    <code>git log develop~50 -1</code>
+                </div>
+                <p class="fragment">Odpowiedź:<br/>Thu Sep 27 12:04:17 2018 +0300
+                    <br/>
+                    <small><br/><strong>Pytania?</strong></small>
+                </p>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
+            <section data-transition="none-in none-out">
+                <h4>Sprawdź tytuł ostatniego commita autora z nazwiskiem <i>Gulya</i></h4>
+                <div class="fragment">
+                    <h4>Gitk</h4>
+                    <code>gitk --author=gulya -1</code>
+                    <h4 style="margin-top:20px">Konsola</h4>
+                    <code>git log --author=gulya -1</code>
+                </div>
+                <p class="fragment">Odpowiedź:<br/>
+                    <small>
+                        <code>Upgrade Markwon to version 2.0.0. Replace ImageSizeResolver workaround with upstream one.</code>
+                    </small>
+                    <br/>
+                    <small><br/><strong>Pytania?</strong></small>
+                </p>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
+            <section data-transition="none-in none-out">
+                <h4>Sprawdź autora commita zawierającego w opisie frazę <i>Update Stub</i></h4>
+                <div class="fragment">
+                    <h4>Gitk</h4>
+                    <small>
+                        <code>gitk --all --grep="Update Stub" -1</code>
+                    </small>
+                    <h4 style="margin-top:20px">Konsola</h4>
+                    <small>
+                        <code>git log --all --grep="Update Stub" -1</code>
+                    </small>
+                </div>
+                <p class="fragment">Odpowiedź:<br/>
+                    <code>terrakok</code>
+                    <br/>
+                    <small><br/><strong>Pytania?</strong></small>
+                </p>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
+            <section data-transition="none-in none-out">
+                <h4>Sprawdź jakie pliki modyfikował commit
+                    <small><code>b9272a3be3d4f9182e6893a0f9a2f7b9ff0b6923</code></small>
+                </h4>
+                <div class="fragment">
                     <p>
-						<img src="img/before-vcs.png" style="margin-bottom:0"/><br/>
-                        <small>Tak to się kiedyś robiło ;)</small>
-					</p>
-					<p>
-						Polecamy korzystanie z systemu kontroli wersji nie tylko do programowania
-					</p>
-				</section>
-				
-                <section data-transition="slide-in none-out">
-					<h2>Konsola & Gitk & Kdiff3</h2>
-					<img src="img/many-git-tools.png" style="border:none; box-shadow:none"/>
-				</section>
-                <section data-transition="none-in slide-out">
-                    Wielu ludzi upiera się, że zarządzania gitem z konsoli nie spróbuje, że pisanie zamiast klikania to przeżytek
-					<img src="img/daj-szanse-konsoli.png" />
-				</section>
-			</section>
-            
-			<!-- TOMEK -->
+                    <h4>Gitk</h4>
+                    <small>
+                        <code>gitk b927 -1</code>
+                    </small>
+                    <h4 style="margin-top:20px">Konsola</h4>
+                    <small>
+                        <code>git log b927 -1 --stat</code>
+                    </small>
+                    </p>
+                </div>
+                <div class="fragment">Odpowiedź:<br/>
+                    <p align="left">
+                        <small>
+                            .../model/repository/session/SessionRepository.kt | 9 +++++++++<br/>
+                            .../terrakok/gitlabclient/presentation/auth/AuthPresenter.kt | 12 ++++++------
+                        </small>
+                    </p>
+                    <small><strong>Pytania?</strong></small>
+                </div>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
+            <section data-transition="none-in none-out">
+                <h4>Sprawdź co dokładnie zmienił commit
+                    <small><code>0e02008383a59f6ab56a14df4688070aab925765</code></small>
+                </h4>
+                <div class="fragment">
+                    <h4>Gitk</h4>
+                    <small>
+                        <code>gitk 0e020 -1</code>
+                    </small>
+                    <h4>Konsola</h4>
+                    <small>
+                        <code>git log 0e020 -1 --patch</code><br/>lub<br/><code>git show 0e020</code>
+                    </small>
+                </div>
+                <p class="fragment">Odpowiedź:<br/>
+                    <small>
+                        <small><b>Linie dodane</b> do pliku <code>PrivacyPolicyFragment.kt</code>:<br/>
+                            override val parentScopeName = DI.APP_SCOPE<br/>
+                            pusta
+                        </small>
+                        <br/>
+                        <small>Toothpick.inject(this, scope)</small>
+                        <br/>
+                        <small><b>Linia usunięta</b> z pliku <code>PrivacyPolicyFragment.kt</code>:<br/>Toothpick.inject(this,
+                            Toothpick.openScope(DI.APP_SCOPE))<br/>
+                            <br/><strong>Pytania?</strong></small>
+                    </small>
+                </p>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
+            <section data-transition="none-in none-out">
+                <h4>Sprawdź id commitów z drugiego grudnia 2018</h4>
+                <div class="fragment">
+                    <h4>Gitk</h4>
+                    <small>
+                        <code>gitk --after="2018-12-02 00:01" --before="2018-12-02 23:59"</code>
+                    </small>
+                    <h4 style="margin-top:20px">Konsola</h4>
+                    <small>
+                        <code>git log --after="2018-12-02 00:01" --before="2018-12-02 23:59"</code>
+                    </small>
+                </div>
+                <div class="fragment">Odpowiedź:<br/>
+                    <p align="left">
+                        <small>
+                            <small>
+                                6167018 Merge branch 'task/upgrade-markwon-and-remove-image-loading-crutch' into 'develop'<br/>
+                                fdb2e6c Merge branch 'project_milestone_tab' into 'develop'<br/>
+                                158bba8 Delete unused "todo".<br/>
+                                6d45888 Add account id for fixing same userId for difference servers.<br/>
+                                0e02008 Fix scope for PrivacyPolicyFragment.<br/>
+                                c46c806 Merge branch 'feture/multi_account' into develop<br/>
+                                45c0836 Delete code style from git history.<br/>
+                                5752be0 Add scopes to each fragment for more powerful memory management.<br/>
+                            </small>
+                        </small>
+                    </p>
+                    <small><strong>Pytania?</strong></small>
+                </div>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
+            <section data-transition="none-in slide-out">
+                <h4>Sprawdź kto podniósł wersję produktu z 9 na 10
+                    <small>(text: <code>versionCode 10</code>)</small>
+                </h4>
+                <div class="fragment">
+                    <h4>Konsola</h4>
+                    <small>
+                        <code>git log -S "versionCode 10" -p</code>
+                    </small>
+                </div>
+                <p class="fragment">Odpowiedź:<br/>
+                    <i>terrakok</i>, w commicie<br/>
+                    <small><code>6d289b10a07bb13d75a7b9767b9b0ae52b0421ce</code></small>
+                    <br/>
+                    <small><strong>Pytania?</strong></small>
+                </p>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
             <section>
-				<section>
-					<h2>Konfiguracja środowiska</h2>
-					<p>
-						<img src="img/work-environment.jpg" />
-					</p>
-				</section>
-                <section>
-                    <h3>Trzy poziomy konfiguracji</h3> 
-					<ul>
-						<li class="fragment" style="color:#bbbbbb">
-							<code>--system</code> <span style="font-size:50%">(brany pod uwagę na końcu)</span> 
-							<ul style="list-style:none">
-								<li><small>Linux: <code>/etc/gitconfig</code></small></li>
-								<li><small>Windows: <code>%ProgramFiles(x86)%\Git\etc\gitconfig</code></small></li>
-								<li><small>Windows: <code>%ProgramFiles%\Git\mingw64\etc\gitconfig</code></small></li>
-							</ul>
-						</li>
-						<li class="fragment">
-							<code>--global</code> <span style="font-size:50%">(brany pod uwagę w drugiej kolejności)</span> 
-							<ul style="list-style:none">
-								<li><small>Linux: <code>~/.gitconfig</code></small></li>
-								<li><small>Windows: <code>%USERPROFILE%\.gitconfig</code></small></li>
-							</ul>
-						</li>
-						<li class="fragment" style="color:#D2E0E6">
-							<code>--local</code> <span style="font-size:50%">(brany pod uwagę w pierwszej kolejności)</span> 
-							<ul style="list-style:none">
-								<li><small><code>.git/config</code></small></li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h3>Modyfikowanie konfiguracji</h3>
-                    <ul>
-						<li class="fragment">
-							<code>git config --POZIOM SEKCJA.NAZWA "TREŚĆ"</code>
-                            <ul style="list-style:none">
-                                <li><small>Np. <code>git config --global user.name "John Doe"</code></small></li>
-                            </ul>
-						</li>
-						<li class="fragment">
-							<code>git config --POZIOM --<u>e</u>dit</code>
-							<ul style="list-style:none">
-								<li><small>Np. <code>git config --global -e</code></small></li>
-							</ul>
-						</li>
-					</ul>
-					<p class="fragment"><small>Domyślny poziom przy zapisywaniu to <code>local</code></small></p>
-				</section>
-                <section>
-					<h3>Odczytywanie konfiguracji</h3>
-                    <ul>
-						<li class="fragment">
-							W edytorze tekstowym: <code style="font-size:80%">git config (--POZIOM) --<u>e</u>dit</code>
-							<ul style="list-style:none">
-								<li><small>Np. <code>git config --global -e</code></small></li>
-							</ul>
-						</li>
-						<li class="fragment">
-							Konkretny wpis: <code style="font-size:80%">git config (--POZIOM) SEKCJA.NAZWA</code>
-							<ul style="list-style:none">
-								<li><small>Np. <code>git config --get user.email</code></small></li>
-							</ul>
-						</li>
-						<li class="fragment">
-							Listowanie wpisów: <code style="font-size:80%">git config (--POZIOM) --list</code>
-							<ul style="list-style:none">
-								<li><small>Np. <code>git config --list</code></small></li>
-							</ul>
-						</li>
-					</ul>
-					<p class="fragment"><small>Bez podania poziomu, git przyjmuje obecnie brany pod uwagę poziom</small></p>
-				</section>
-				<section>
-					<h3 style="margin-bottom:0">Różne edytory tekstowe</h3>
-					<ul>
-						<li>vim<br/><small><code>git config --global core.editor vim</code></small></li>
-						<li>Linux Mint - xed<br/><small><code>git config --global core.editor xed</code></small></li>
-						<li>Ubuntu - gedit<br/><small><code>git config --global core.editor gedit</code></small></li>
-						<li>Windows - notepad<br/><small><code>git config --global core.editor notepad</code></small></li>
-						<li>Windows - notepad++<br/><small><code>git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></small></li>
-						<li style="margin-top: 20px">Windows - Visual Studio Code<br/><small><code>git config --global core.editor "'C:\Program Files\Microsoft VS Code\code.exe' -n -w"</code></small></li>
-					</ul>
-				</section>
-                <section>
-					<h3>Przykładowa konfiguracja</h3>
-					<img src="img/example-gitconfig.png" />
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
+                <h3>gitk pokazujący cały stan projektu</h3>
+                <p>
+                    <img src="img/gitk-tree.png">
+                </p>
+                <small class="fragment">
+                    Przejrzeć drzewo można również w konsoli, ale to się przydaje głównie do skryptów<br/>
+                    <code> git ls-tree -r 0e020 --name-only </code>
+                </small>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
 
-			<!-- TOMEK -->
-			<section>
-				<section>
-					<h2>Dlaczego GIT jest git</h2>
-					<p>
-					<ul>
-						<li class="fragment">jest szybki</li>
-						<li class="fragment">jest rozproszony</li>
-						<li class="fragment">ułatwia rozwiązywanie konfliktów</li>
-						<li class="fragment">wspiera nieliniowy development (branche)</li>
-						<li class="fragment">działa offline</li>
-						<li class="fragment">pozwala na pracę nad jakością commitów</li>
-						<li class="fragment">bardzo łatwy do użytku domowego</li>
-						<li class="fragment">jest bezpieczny</li>
-					</ul>
-					</p>
-				</section>
-				<section>
-					<h2>Jest bezpieczny - jest wiarygodny</h2>
-					<p>
-						Suma kontrolna każdego commita opiera się na
-					<ul>
-						<li>Zawartości i nazwach wszystkich plików</li>
-						<li>ID parent commit(ów)</li>
-						<li>Wiadomości (opisie) commita</li>
-						<li>Autorze i/lub commiterze</li>
-					</ul>
-					</p>
-					Git się zorientuje przy nieprawidłowości w danych
-					<br>
-					<small>(np. po uszkodzeniu dysku albo próbie sabotażu)</small>
-					<p class="fragment">
-						Analogicznie wiarygodne są przelewy w bitcoin
-					</p>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-            
-			<!-- TOMEK -->
-			<section>
-				<section>
-					<h2>Working directory,</br>staging area, commit</h2>
-					<p>
-						Twoje pliki - absolutnie każdy plik który utworzysz/edytujesz/usuniesz,
-						<br>zawsze jest w którymś z 3 "obszarów" gita
-					</p>
-					<ul>
-						<li>obszarze roboczym (working directory)</li>
-						<li>'indeksie' (staged files)</li>
-						<li>repozytorium (commicie dodanym do historii)</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Obszar roboczy</h2>
-					<p>
-						Obszar roboczy (working directory) to obszar w którym jest praca którą wykonałeś, ale o której jeszcze nie powiedziałeś nic
-						gitowi
-					</p>
-					<ul>
-						<li class="fragment">nowe pliki których wcześniej nie commitowałeś</li>
-						<li class="fragment">zmiany w plikach które wcześniej commitowałeś</li>
-						<li class="fragment">zmiana nazwy pliku lub jego usunięcie</li>
-					</ul>
-					<p class="fragment">
-						<b>Git nie wie nic o Twojej pracy w working directory, uważaj żeby jej nie stracić dopóki mu o niej nie powiesz</b>
-					</p>
-					<p class="fragment">
-						<small>
-							Zmiany w working directory odnoszą się do staging area, a jeśli danego pliku nie ma w staging area, wówczas bezpośrednio
-							do obecnej wersji w lokalnym repozytorium
-						</small>
-					</p>
-				</section>
-				<section>
-					<h3>Index (staged files)</h3>
-					Staging area to obszar w którym przygotowujesz sobie które zmiany zostaną zaccomitowane, czyli doddane do Twojego lokalnego
-					repozytorium
-					<p class="fragment">
-						Po zastagowaniu zmiany, czyli przygotowaniu jej do commita, dalej można plik edytować, wówczas zmiany w working directory
-						pokazywane są względem zastagowanej wersji
-					</p>
-					<p class="fragment">
-						Co więcej, od razu można wybrać żeby zastagować tylko część zmian
-						<small>Dla przykładu na dole pliku zaczęliśmy dopisywać nowy kod, a w środku pliku zobaczyliśmy literówkę w tekście. Wówczas
-							można od razu nieprzerywając pracy na dole pliku, zastagować jedynie poprawienie literówki i dodać commita "Fix typo
-							in module A".</small>
-					</p>
-				</section>
-				<section>
-					<h3>Commit</h3>
-					Ukazanie różnicy pomiędzy ostatnią wersją, a jednocześnie snapshot wszystkich plików w projekcie, posiadający identyfikator SHA-1.
-					<p>
-						<img src="img/commit-example.png" />
-					</p>
-				</section>
-				<section>
-					<h3>Flow</h3>
-					<img src="img/git_working.png" />
-				</section>
-                <section data-transition="slide-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part1.png" />
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part2.png" />
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part3.png" />
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part4.png" />
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part5.png" />
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part6.png" />
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part7.png" />
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part8.png" />
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part9.png" />
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part10.png" />
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part11.png" />
-				</section>
-				<section data-transition="none-in slide-out">
-					<h3>Przykład stagowania (git add)</h3>
-					<img src="img/git-work-example/git-work-example-part12.png" />
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>Edytowanie istniejących zmian</h2>
+                <ul>
+                    <li class="fragment">Przed opublikowaniem innym</li>
+                    <li class="fragment">Po opublikowaniu innym</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Edycja 'ostatnich' commitów przed opublikowaniem</h3>
+                <ul>
+                    <li class="fragment">git reset
+                        <ul>
+                            <li class="fragment">
+                                git reset --mixed
+                            </li>
+                            <li class="fragment">
+                                git reset --soft
+                            </li>
+                            <li class="fragment">
+                                git reset --hard
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fragment">commit --amend</li>
+                    <li class="fragment">rebase --interactive</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Ćwiczenie <i>'zabawa' z resetowaniem commitów i obserwacja 'co się dzieje'</i></h4>
+                <p>
+                    <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
+                </p>
+            </section>
+            <section>
+                <h3>Edycja 'ostatnich' commitów po opublikowaniu</h3>
+                <b>git revert</b>
+                <br>np:
+                <p>
+                <ul>
+                    <li>git revert HEAD</li>
+                    <li>git revert HEAD~4</li>
+                    <li>git revert 6e5av3a</li>
+                </ul>
+                </p>
+            </section>
+            <section data-transition="slide-in none-out">
+                <!-- https://github.com/kmorcinek-for-git-trainings/devwarsztaty-rebase-interactive-demo -->
+                <h3>Demo rebase --interactive</h3>
+                <img src="img/rebase-interactive-example.png">
+            </section>
+            <section data-transition="none-in slide-out">
+                <h3>Demo rebase --interactive</h3>
+                <p>
+                <ul>
+                    <li>git rebase -i HEAD~6</li>
+                    <li class="fragment">git rebase --interactive HEAD~6</li>
+                    <li class="fragment">git add .</li>
+                    <li class="fragment">git commit --amend</li>
+                    <li class="fragment">git rebase --continue</li>
+                    <li class="fragment">Przenoszenie linii tekstu(hashe) w edytorze tekstu</li>
+                </ul>
+                </p>
+            </section>
+            <section>
+                <h4>Ćwiczenie <i>Poprawianie commitów</i></h4>
+                <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
 
-            <!-- KRZYSIEK -->
-			<section>
-				<section>
-					<h2>Przykładowe flow </h2>
-					<ul>
-						<li>
-							Demo - pokazywanie statusu w SourceTree
-						</li>
-						<li>
-							SourceTree - popularne, darmowe narzędzie.<br/>W czasie warsztatów czasem będzie wykorzystane do zaprezentowania efektów.
-						</li>
-					</ul>
-				</section>
-				<section data-transition="slide-in none-out">
-					<h3>Ćwiczenie <i>Proste flow</i></h3>
-					<p>
-						<a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a><br/>
-						Demo + samodzielna praca
-					</p>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
+        <!-- KRZYSIEK -->
+        <section>
+            <section>
+                <h2>Branche</h2>
+                <p>
+                    <img src="img/branches.png">
+                </p>
+                <a href="https://learngitbranching.js.org/">Learning branching</a>
+            </section>
+            <section>
+                <h3>cherry-pick</h3>
+                <p>
+                    Commity między branchami można przekładać
+                </p>
+                <p>
+                    <img src="img/cherrypick.png">
+                </p>
+            </section>
+            <section>
+                <h2>Demo</h2>
+                <p>pokazanie jak zmiana brancha wpływa na zawartość katalogów (git checkout)</p>
+                <p class="fragment">stosowanie cherry-pick w praktyce</P>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- KRZYSIEK -->
+        <section>
+            <section>
+                <h2>Merge</h2>
+                <p>
+                    <img src="img/merge-commit.png">
+                </p>
+            </section>
+            <section>
+                <h2>Rebase</h2>
+                <p>
+                    <img src="img/git-rebasing-example.png">
+                </p>
+            </section>
+            <section>
+                <h2>Merge vs rebase</h2>
+                <p>
+                    <img src="img/git-merge-vs-rebase.png">
+                </p>
+            </section>
+            <section>
+                <ol>
+                    <li>Ćwiczenie pierwsze - zrób merge lub rebase</li>
+                    <li>Ćwiczenie drugie - rozwiąż konflikty</li>
+                </ol>
+                <p>
+                    <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
+                </p>
+            </section>
 
             <!-- TOMEK -->
             <section>
-				<section>
-					<h3>Head</h3>
-					HEAD to referencja do obecnie zcheckoutowanego commita, zazwyczaj będącego ostatnim commitem w branchu
-					<ul>
-						<li>HEAD - ostatni commit
-							<i>(pierwszy od końca) - np. ed8ab42[...]</i>
-						</li>
-						<li>HEAD~1 - przedostatni commit
-							<i> - np. daa6b92[...]</i>
-						</li>
-						<li>HEAD^ - przedostatni commit
-							<i> - np. a6bc32b[...]</i>
-						</li>
-						<li>HEAD~3 - czwarty od końca commit
-							<i> - np. 7cb16f7[...]</i>
-						</li>
-						<li>HEAD^^^ - czwarty od końca commit
-							<i> - np. 343ebb3[...]</i>
-						</li>
-					</ul>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
+                <h3>Rebase to świetne narzędzie...</h3>
+                <p>
+                    Rebase to świetne narzędzie, poprawianie czytelności historii bardzo ułatatwia przeglądanie repozytorium.
+                </p>
+                <p class="fragment">
+                    Ale trzeba być ostrożnym. Czasami łatwiej przerwać rebasowanie i jednak zrobić zwykłego merge.
+                    <small>(Jeżeli flow projektu na to pozwala)</small>
+                    <br/>
+                    <a href="https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1">
+                        <small>
+                            <i>link do fajnego artykułu tłumaczącego trudności które można napotkać</i>
+                        </small>
+                    </a>
+                    <a href="https://jimmybogard.com/trunk-based-development-or-pull-requests-why-not-both/">
+                        <small>
+                            <i>Trunk-Based Development or Pull Requests - Why Not Both?</i>
+                        </small>
+                    </a>
+                <ul>
+                    <li class="fragment">rebase zakłamauje historię (z dobrą intencją, ale jednak)</li>
+                    <li class="fragment">rebase może wywołać konflikty których by nie było przy mergu</li>
+                    <ul>
+                        <li class="fragment">a w związku z tym, może wprowadzić błąd na produkcję</li>
+                        <li class="fragment">pomijając, że to dokłada dodatkowej roboty</li>
+                    </ul>
+                </ul>
+                </p>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
 
-			<!-- TOMEK -->
-			<section>
-				<section>
-					<h2>Przeglądanie historii</h2>
-					<ul>
-						<li><code>git log</code></li>
-						<li><code>gitk</code></li>
-					</ul>
-					<p>Git log oraz gitk domyślnie pokazują historię od <i>obecnego momentu</i> - HEAD, ale możliwe jest wskazanie dowolnego momentu w historii, np. nazwy brancha, SHA commita lub odniesienia HEAD^ lub HEAD~N</p>
-				</section>
-				<section>
-					<h2 style="font-size:127%">Popularne przełączniki do git log / gitk</h2>
-                    <ul style="margin-top:0px; font-size:76%">
-						<li><code>git log -4</code></li>
-						<li><code>git log --oneline</code></li>
-						<li><code>git log --graph</code></li>
-						<li><code>git log --decorate</code></li>
-						<li><code>git log --stat</code></li>
-						<li><code>git log --<u>p</u>atch</code></li>
-						<li><code>git log --since=X</code>, <code>git log --after=X</code>, <code>git log --before=X</code></li>
-						<li><code>git log X --not Y</code>, <code>git log Y..X</code>, <code>git log X...Y</code></li>
-						<li><code>git log --author="xyz"</code></li>
-						<li><code>git log --grep="xyz"</code></li>
-						<li><code>git log --no-merges</code></li>
-						<li><code>git log --all</code></li>
-						<li><code>git log --pretty="FORMAT"</code></li>
-                        <li><code>git log -S"text"</code></li>
-					</ul>
-				</section>
-				<section data-transition="slide-in none-out">
-					<h3>git log z grafem</h3>
-					<p>
-						<img src="img/git-log-graph.png" />
-					</p>
-				</section>
-				<section data-transition="none-in none-out">
-					<h3>git log z jednoliniowymi wynikami</h3>
-					<p>
-						<img src="img/git-log-oneline.png" />
-					</p>
-				</section>
-				<section data-transition="none-in slide-out">
-					<h3>git log z pokazaną statystyką i diffem</h3>
-					<p>
-						<img src="img/git-log-stat-patch.png" />
-					</p>
-				</section>
-				<section>
-					<h3>gitk</h3>
-					<p>
-						<img src="img/gitk.png" />
-					</p>
-				</section>
-                <section>
-                    <h3>Przygotowanie do ćwiczeń z przeglądaniem historii</h3>
-                    <ol>
-						<li>
-							Przejdź do katalogu cwiczen na pulpicie:<br/>
-							<code>cd ~/Desktop/cwiczenia</code>
-						</li>
-						<li class="fragment" style="margin-top:15px">Sklonuj przykładowe repozytorium (z projektem open source), do katalogu <code>log-demo</code>:<br/>
-                            <small><code><b>git clone https://gitlab.com/terrakok/gitlab-client log-demo</b></code></small>
-						</li>
-						<li class="fragment" style="margin-top:15px">
-							Przejdź do katalogu repo: <code>cd log-demo</code>
-						</li>
-                        <li class="fragment" style="margin-top:15px">
-							Zresetuj repozytorium do wersji: 7ad14ecda2f97a3ff7c3cca44cc7605484b578b5<br/>
-							<code>git reset --hard 7ad14</code><br/>
-							<small><em>Żeby każdy miał tę samą wersję do ćwiczeń</em></small><br/>
-						</li>
-					</ol>
-                </section>
-				<section data-transition="slide-in none-out">
-                    <h4>Sprawdź datę commita poprzedzającego developa o 50 commitów</h4>
-                    <div class="fragment">
-                        <h4>Gitk</h4>
-                        <code>gitk develop~50 -1</code>
-                        <h4 style="margin-top:20px">Konsola</h4>
-                        <code>git log develop~50 -1</code>
-					</div>
-                    <p class="fragment">Odpowiedź:<br/>Thu Sep 27 12:04:17 2018 +0300
-					<br/><small><br/><strong>Pytania?</strong></small>
-					</p>
-					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
-				</section>
-				<section data-transition="none-in none-out">
-					<h4>Sprawdź tytuł ostatniego commita autora z nazwiskiem <i>Gulya</i></h4>
-                    <div class="fragment">
-                        <h4>Gitk</h4>
-                        <code>gitk --author=gulya -1</code>
-                        <h4 style="margin-top:20px">Konsola</h4>
-                        <code>git log --author=gulya -1</code>
-					</div>
-					<p class="fragment">Odpowiedź:<br/>
-						<small>
-							<code>Upgrade Markwon to version 2.0.0. Replace ImageSizeResolver workaround with upstream one.</code>
-						</small>
-						<br/><small><br/><strong>Pytania?</strong></small>
-					</p>
-					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
-				</section>
-				<section data-transition="none-in none-out">
-					<h4>Sprawdź autora commita zawierającego w opisie frazę <i>Update Stub</i></h4>
-                    <div class="fragment">
-                        <h4>Gitk</h4>
-                        <small>
-                            <code>gitk --all --grep="Update Stub" -1</code>
-                        </small>
-                        <h4 style="margin-top:20px">Konsola</h4>
-                        <small>
-                            <code>git log --all --grep="Update Stub" -1</code>
-                        </small>
-					</div>
-					<p class="fragment">Odpowiedź:<br/>
-                        <code>terrakok</code>
-						<br/><small><br/><strong>Pytania?</strong></small>
-					</p>
-					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
-				</section>
-				<section data-transition="none-in none-out">
-					<h4>Sprawdź jakie pliki modyfikował commit <small><code>b9272a3be3d4f9182e6893a0f9a2f7b9ff0b6923</code></small></h4>
-					<div class="fragment">
-                        <p>
-                            <h4>Gitk</h4>
-                            <small>
-                                <code>gitk b927 -1</code>
-                            </small>
-                            <h4 style="margin-top:20px">Konsola</h4>
-                            <small>
-                                <code>git log b927 -1 --stat</code>
-                            </small>
-						</p>
-					</div>
-					<div class="fragment">Odpowiedź:<br/>
-                        <p align="left">
-                            <small>
-                                .../model/repository/session/SessionRepository.kt            |  9 +++++++++<br/>
-                                .../terrakok/gitlabclient/presentation/auth/AuthPresenter.kt | 12 ++++++------
-                            </small>
-						</p>
-						<small><strong>Pytania?</strong></small>
-					</div>
-					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
-				</section>
-				<section data-transition="none-in none-out">
-					<h4>Sprawdź co dokładnie zmienił commit <small><code>0e02008383a59f6ab56a14df4688070aab925765</code></small></h4>
-					<div class="fragment">
-                        <h4>Gitk</h4>
-                        <small>
-                            <code>gitk 0e020 -1</code>
-                        </small>
-                        <h4>Konsola</h4>
-                        <small>
-                            <code>git log 0e020 -1 --patch</code><br/>lub<br/><code>git show 0e020</code>
-                        </small>
-					</div>
-					<p class="fragment">Odpowiedź:<br/>
-                        <small>
-							<small><b>Linie dodane</b> do pliku <code>PrivacyPolicyFragment.kt</code>:<br/>
-								override val parentScopeName = DI.APP_SCOPE<br/>
-								pusta</small><br/>
-								<small>Toothpick.inject(this, scope)</small><br/>
-							<small><b>Linia usunięta</b> z pliku <code>PrivacyPolicyFragment.kt</code>:<br/>Toothpick.inject(this, Toothpick.openScope(DI.APP_SCOPE))<br/>
-                                <br/><strong>Pytania?</strong></small>
-						</small>
-					</p>
-					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
-				</section>
-				<section data-transition="none-in none-out">
-					<h4>Sprawdź id commitów z drugiego grudnia 2018</h4>
-					<div class="fragment">
-                        <h4>Gitk</h4>
-                        <small>
-                            <code>gitk --after="2018-12-02 00:01" --before="2018-12-02 23:59"</code>
-                        </small>
-                        <h4 style="margin-top:20px">Konsola</h4>
-                        <small>
-                            <code>git log --after="2018-12-02 00:01" --before="2018-12-02 23:59"</code>
-                        </small>
-					</div>
-					<div class="fragment">Odpowiedź:<br/>
-                        <p align="left">
-                            <small>
-                                <small>
-									6167018 Merge branch 'task/upgrade-markwon-and-remove-image-loading-crutch' into 'develop'<br/>
-									fdb2e6c Merge branch 'project_milestone_tab' into 'develop'<br/>
-									158bba8 Delete unused "todo".<br/>
-									6d45888 Add account id for fixing same userId for difference servers.<br/>
-									0e02008 Fix scope for PrivacyPolicyFragment.<br/>
-									c46c806 Merge branch 'feture/multi_account' into develop<br/>
-									45c0836 Delete code style from git history.<br/>
-									5752be0 Add scopes to each fragment for more powerful memory management.<br/>
-								</small>
-                            </small>
-                        </p>
-						<small><strong>Pytania?</strong></small>
-					</div>
-					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
-				</section>
-				<section data-transition="none-in slide-out">
-					<h4>Sprawdź kto podniósł wersję produktu z 9 na 10 <small>(text: <code>versionCode 10</code>)</small></h4>
-					<div class="fragment">
-                        <h4>Konsola</h4>
-                        <small>
-                            <code>git log -S "versionCode 10" -p</code>
-                        </small>
-					</div>
-					<p class="fragment">Odpowiedź:<br/>
-						<i>terrakok</i>, w commicie<br/><small><code>6d289b10a07bb13d75a7b9767b9b0ae52b0421ce</code></small>
-						<br/><small><strong>Pytania?</strong></small>
-					</p>
-					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
-				</section>
-                <section>
-					<h3>gitk pokazujący cały stan projektu</h3>
-					<p>
-						<img src="img/gitk-tree.png">
-					</p>
-					<small class="fragment">
-                        Przejrzeć drzewo można również w konsoli, ale to się przydaje głównie do skryptów<br/>
-                        <code> git ls-tree -r 0e020 --name-only </code>
-					</small>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
+        <!-- TOMEK -->
+        <section>
+            <section>
+                Git
+                <b>nie jest</b> scentralizowanym systemem kontroli wersji
+                <p>
+                    <img src="img/centralized_vcs_illustration.png"/>
+                </p>
+            </section>
+            <section data-transition="slide-in none-out">
+                Git jest
+                <b>zdecentralizowanym</b> systemem kontroli wersji
+                <p>
+                    <img src="img/distributed_vcs_illustration.png"/>
+                </p>
+            </section>
+            <section data-transition="none-in slide-out">
+                Git jest
+                <b>zdecentralizowanym</b> systemem kontroli wersji
+                <p>
+                    <img src="img/centralized-is-bad-idea.png"/>
+                </p>
+            </section>
+            <section>
+                <h3>Git to w zasadzie baza danych</h3>
+                Git to VCS na który można patrzeć, jak na rozproszoną bazę danych, opartą na streamie snapshotów plikow
+                <p>
+                    <img src="img/distributed.png"/>
+                </p>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
 
-			<!-- TOMEK -->
-			<section>
-				<section>
-					<h2>Edytowanie istniejących zmian</h2>
-					<ul>
-						<li class="fragment">Przed opublikowaniem innym</li>
-						<li class="fragment">Po opublikowaniu innym</li>
-					</ul>
-				</section>
-				<section>
-					<h3>Edycja 'ostatnich' commitów przed opublikowaniem</h3>
-					<ul>
-						<li class="fragment">git reset
-							<ul>
-								<li class="fragment">
-									git reset --mixed
-								</li>
-								<li class="fragment">
-									git reset --soft
-								</li>
-								<li class="fragment">
-									git reset --hard
-								</li>
-							</ul>
-						</li>
-						<li class="fragment">commit --amend</li>
-						<li class="fragment">rebase --interactive</li>
-					</ul>
-				</section>
-				<section>
-					<h4>Ćwiczenie <i>'zabawa' z resetowaniem commitów i obserwacja 'co się dzieje'</i></h4>
-					<p>
-						<a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
-					</p>
-				</section>
-				<section>
-					<h3>Edycja 'ostatnich' commitów po opublikowaniu</h3>
-					<b>git revert</b>
-					<br>np:
-					<p>
-						<ul>
-							<li>git revert HEAD</li>
-							<li>git revert HEAD~4</li>
-							<li>git revert 6e5av3a</li>
-						</ul>
-					</p>
-				</section>
-				<section data-transition="slide-in none-out">
-				<!-- https://github.com/kmorcinek-for-git-trainings/devwarsztaty-rebase-interactive-demo -->
-					<h3>Demo rebase --interactive</h3>
-					<img src="img/rebase-interactive-example.png"> 
-				</section>
-				<section data-transition="none-in slide-out">
-				    <h3>Demo rebase --interactive</h3>
-					<p>
-						<ul>
-							<li>git rebase -i HEAD~6</li>
-							<li class="fragment">git rebase --interactive HEAD~6</li>
-							<li class="fragment">git add .</li>
-							<li class="fragment">git commit --amend</li>
-							<li class="fragment">git rebase --continue</li>
-							<li class="fragment">Przenoszenie linii tekstu(hashe) w edytorze tekstu</li>
-						</ul>
-					</p>
-				</section>
-				<section>
-					<h4>Ćwiczenie <i>Poprawianie commitów</i></h4>
-					<a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-			
-			<!-- KRZYSIEK -->
-			<section>
-				<section>
-					<h2>Branche</h2>
-					<p>
-						<img src="img/branches.png">
-					</p>
-					<a href="https://learngitbranching.js.org/">Learning branching</a>
-				</section>
-				<section>
-					<h3>cherry-pick</h3>
-					<p>
-						Commity między branchami można przekładać
-					</p>
-					<p>
-						<img src="img/cherrypick.png">
-					</p>
-				</section>
-				<section>
-					<h2>Demo</h2>
-					<p>pokazanie jak zmiana brancha wpływa na zawartość katalogów (git checkout)</p>
-					<p class="fragment">stosowanie cherry-pick w praktyce</P>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-			
-			<!-- KRZYSIEK -->
-			<section>
-				<section>
-					<h2>Merge</h2>
-					<p>
-						<img src="img/merge-commit.png">
-					</p>
-				</section>
-				<section>
-					<h2>Rebase</h2>
-					<p>
-						<img src="img/git-rebasing-example.png">
-					</p>
-				</section>
-				<section>
-					<h2>Merge vs rebase</h2>
-					<p>
-						<img src="img/git-merge-vs-rebase.png">
-					</p>
-				</section>
-				<section>
-					<ol>
-						<li>Ćwiczenie pierwsze - zrób merge lub rebase</li>
-						<li>Ćwiczenie drugie - rozwiąż konflikty</li>
-					</ol>
-					<p>
-						<a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
-					</p>
-				</section>
-				
-				<!-- TOMEK -->
-				<section>
-					<h3>Rebase to świetne narzędzie...</h3>
-					<p>
-						Rebase to świetne narzędzie, poprawianie czytelności historii bardzo ułatatwia przeglądanie repozytorium.
-					</p>
-					<p class="fragment">
-						Ale trzeba być ostrożnym. Czasami łatwiej przerwać rebasowanie i jednak zrobić zwykłego merge.<small>(Jeżeli flow projektu na to pozwala)</small>
-						<br/>
-						<a href="https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1">
-							<small>
-								<i>link do fajnego artykułu tłumaczącego trudności które można napotkać</i>
-							</small>
-						</a>		
-						<a href="https://jimmybogard.com/trunk-based-development-or-pull-requests-why-not-both/">
-							<small>
-								<i>Trunk-Based Development or Pull Requests - Why Not Both?</i>
-							</small>
-						</a>
-						<ul>
-							<li class="fragment">rebase zakłamauje historię (z dobrą intencją, ale jednak)</li>
-							<li class="fragment">rebase może wywołać konflikty których by nie było przy mergu</li>
-							<ul>
-								<li class="fragment">a w związku z tym, może wprowadzić błąd na produkcję</li>
-								<li class="fragment">pomijając, że to dokłada dodatkowej roboty</li>
-							</ul>
-						</ul>
-					</p>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-
-			<!-- TOMEK -->
-			<section>
-				<section>
-					Git
-					<b>nie jest</b> scentralizowanym systemem kontroli wersji
-					<p>
-						<img src="img/centralized_vcs_illustration.png" />
-					</p>
-				</section>
-				<section data-transition="slide-in none-out">
-					Git jest
-					<b>zdecentralizowanym</b> systemem kontroli wersji
-					<p>
-						<img src="img/distributed_vcs_illustration.png" />
-					</p>
-				</section>
-				<section data-transition="none-in slide-out">
-					Git jest
-					<b>zdecentralizowanym</b> systemem kontroli wersji
-					<p>
-						<img src="img/centralized-is-bad-idea.png" />
-					</p>
-				</section>
-				<section>
-					<h3>Git to w zasadzie baza danych</h3>
-					Git to VCS na który można patrzeć, jak na rozproszoną bazę danych, opartą na streamie snapshotów plikow
-					<p>
-						<img src="img/distributed.png" />
-					</p>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-            
-			<!-- TOMEK -->
-			<section>
-				<section>
-					<h2>Pushowanie
-						<br>&
-						<br>pullowanie zmian</h2>
-					<p>
-						Synchronizacja repozytoriów (np. lokalnego z wersją na GitHubie) odbywa się za pomocą 'wypychania' i 'ciągnięcia' commitów
-						<ul>
-							<li>git push</li>
-							<li>
-								git pull
-								<ul>
-									<li>git fetch</li>
-									<li>git merge</li>
-								</ul>
-							</li>
-						</ul>
-					</p>
-				</section>
-				<section>
-					<h3>Pull z rebase</h3>
-					Często dobrą opcją jest zastosowanie komendy która od razu za nas zrebasuje commity
-					<p>
-						<code>git pull --rebase</code>
-					</p>
-				</section>
-				<section>
-					<h3>Push --force</h3>
-					Jeżeli jesteś pewny co robisz, możesz wymusić pusha
-                    <p>
-						git push --<u>f</u>orce
-					</p>
-					<span class="fragment">
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>Pushowanie
+                    <br>&
+                    <br>pullowanie zmian</h2>
+                <p>
+                    Synchronizacja repozytoriów (np. lokalnego z wersją na GitHubie) odbywa się za pomocą 'wypychania' i 'ciągnięcia'
+                    commitów
+                <ul>
+                    <li>git push</li>
+                    <li>
+                        git pull
+                        <ul>
+                            <li>git fetch</li>
+                            <li>git merge</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+            </section>
+            <section>
+                <h3>Pull z rebase</h3>
+                Często dobrą opcją jest zastosowanie komendy która od razu za nas zrebasuje commity
+                <p>
+                    <code>git pull --rebase</code>
+                </p>
+            </section>
+            <section>
+                <h3>Push --force</h3>
+                Jeżeli jesteś pewny co robisz, możesz wymusić pusha
+                <p>
+                    git push --<u>f</u>orce
+                </p>
+                <span class="fragment">
                         Ale jak już wymuszasz, to zawsze z zabezpieczeniem
                         <p>
                             <code>git push --force-with-lease</code>
                         </p>
 					</span>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-
-			<!-- KRZYSIEK -->
-			<section>
-				<section>
-					<h2>Ignorowanie plików</h2>
-					<p>
-						Ścieżki do plików/katalogów które chcemy ignorować dla repozytorium, trzymamy w pliku .gitignore
-					</p>
-					<p class="fragment">Plik ten wersjonujemy w repozytorium</p>
-				</section>
-				<section>
-					<h2>Przykładowe reguły ignorowania</h2>
-					<ul>
-						<li>*.orig</li>
-						<li>**/[Pp]ackages/*</li>
-						<li>bin/</li>
-					</ul>
-				</section>
-				<section>
-                    <h3>Dodaję regułę do .gitignore, a "git status" dalej pokazuje zmiany</h3>
-                    <p class="fragment">Jest to scenariusz na który każdy prędzej czy później się natknie</p>
-					<p class="fragment">Powód jest prosty - plik już jest w repozytorium,<br/>.gitignore ignoruje tylko nie śledzone pliki</p>
-					<p class="fragment">Wystarczy plik... usunąć z repozytorium</p>
-				</section>
-                <section>
-                    <h3>Usuwanie pliku z repozytorium, żeby "posłuchał" reguł .gitignore</h3>
-					<p>
-					<ul>
-						<li class="fragment">
-							Tradycyjnie:<br/>
-                            usunięcie pliku -> git add -> git commit
-						</li>
-                        <li class="fragment" style="margin-top:17px">
-                            Za pmocą komendy:<br/>
-                            <code>
-								git rm file1.txt<br/>
-								git commit -m "remove file1.txt"
-							</code>
-                        </li>
-                        <li class="fragment" style="margin-top:17px">
-                            Zostawiając plik na dysku:<br/>
-                            <code>
-								git rm --cached file1.txt<br/>
-								git commit -m "remove file1.txt"
-                            </code>
-                        </li>
-					</ul>
-					</p>
-				</section>
-				<section>
-					<h3>Gotowe reguły .gitignore</h3>
-					<ul>
-						<li><a href="https://www.gitignore.io/"><i>www.gitignore.io</i></a></li>
-						<li><i>checkbox</i> przy tworzeniu nowego projektu</li>
-						<li><a href="https://gist.github.com/kmorcinek/2710267"><i>mój ;) .gitignore</i></a></li>
-					</ul>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-
-			<!-- TOMEK -->
-            <section>
-				<section>
-					<h2>7 zasad dobrego <i>commit message</i></h2>
-					<ol>
-						<li class="fragment">Oddziel tytuł od ciała pustą linią</li>
-						<li class="fragment">Ogranicz tytuł do <b>50 znaków</b></li>
-						<li class="fragment">Stosuj wielkie litery w tytule</li>
-						<li class="fragment">Nie kończ tytułu commita kropką</li>
-						<li class="fragment">Zapisuj tytuł w trybie rozkazującym</li>
-						<li class="fragment">Ogranicz 'szerokość' ciała do 72 znaków</li>
-						<li class="fragment">W ciele opisz <i>co</i> i <i>dlaczego</i>, a nie <i>jak</i></li>
-					</ol>
-                    <p>
-						<small class="fragment"><i>https://chris.beams.io/posts/git-commit/</i></small>
-					</p>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-
-			<!-- KRZYSIEK -->
-			<section>
-                <section>
-					<h2>git reflog</h2>
-					<p>
-						<img src="img/reflog.png">
-					</p>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-
-			<!-- TOMEK -->
-			<section>
-				<section>
-					<h2>schowek</h2>
-                        <ul>
-                            <li><code>git stash</code></li>
-							<li><code>git stash --include-untracked</code></li>
-							<li><code>git stash list</code></li>
-							<li><code>git stash apply (optional: name)</code></li>
-							<li><code>git stash pop (optional: name)</code></li>
-							<li><code>git stash drop (optional: name)</code></li>
-							<li>Różne wariacje, zachowywanie indexu, nadawnie wiadomości itd.</li>
-                        </ul>
-					<p class="fragment"><b>Uwaga</b><br/>Łatwo zapomnieć o nieśledzonych plikach</p>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-
-			<!--
-            <section>
-                <section>
-                    <h2>Tagi</h2>
-					<p class="fragment">
-						Lekkie(<i>lightweight</i>) - tylko wskaźnik z nazwą<br/>
-						<code>git tag v1.4</code>
-					</p>
-					<p class="fragment">
-						Opisane(<i>annotated</i>) - posiadają opis, sumę kontrolną, autora, datę itd.<br/>
-						<code>git tag -a v1.4 -m 'my version 1.4'</code>
-					</p>
-                </section>
-
-                <section>
-                    <h2>Pushowanie tagów</h2>
-					<p>Fetch pobiera wszystkie tagi z serwera, ale domyślnie tagi się nie wypushowują</p>
-                    <p>
-						Dwa sposoby pushowania tagów
-						<ul>
-                            <li>Zalecany: <code>git push origin tag_name</code></li>
-                            <li>Silnie odradzany: <code>git push --tags</code></li>
-                        </ul>
-					</p>
-                </section>
-
-				<section>
-					Pytania?
-				</section>
             </section>
-			-->
-
-			<!-- TOMEK -->
-			<section>
-				<section>
-					<h2>Forki & Pull requesty</h2>
-					<p>
-						<img src="img/forkAndPullModel.png">
-					</p>
-				</section>
-				<section>
-					<h3>
-						Pytania? - Pull requesty!
-					</h3>
-					<p>
-						<a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
-					</p>
-				</section>
-			</section>
-
-			<!-- TOMEK -->
-			<section>
-				<section>
-					<h2>Jak działa git</h2>
-					Git w podstawowym scenariuszu jedynie dodaje kolejne snapshoty plików
-					<p>
-						<img src="img/sha-commits.jpg" />
-					</p>
-				</section>
-				<section>
-					W svn commit to diff zmienionych plików (różnica)
-					<p>
-						<img src="img/deltas.png">
-					</p>
-				</section>
-				<section>
-					W git commit to snapshot
-					<b>wszystkich </b> plików
-					<p>
-						<img src="img/snapshots.png">
-					</p>
-					reprezentowany za pomocą hasha SHA-1
-				</section>
-				<section>
-					Dzięki temu, można wskazać dowolny commit i podejrzeć cały stan systemu z ówczas, a nie tylko jakie diffy ten commit ze sobą
-					niósł.
-					<p>
-						<img src="img/sha-commits.jpg" />
-					</p>
-					<small class="fragment">Wiedząc jaka jest wersja na produkcji, zawsze można wrócić do niej w kodzie i zrobić drobną poprawkę bez wprowadzania
-						na produkcję kolejnych commitów.</small>
-				</section>
-				<section>
-					<h3>W przeciwieństwie do kryptowalut...</h3>
-					<p class="fragment">
-						w swojej 'instacji bazy' (na swoim komputerze) możesz zmieniać istniejące snapshoty (commity)
-					</p>
-					<p class="fragment">
-						<b>ALE!</b>
-					</p>
-					<p class="fragment">
-						tylko pod warunkiem, że jeszcze ich nie opublikowałeś innym bazom
-					</p>
-				</section>
-				<section>
-					<h2>Git nie śledzi plików</h2>
-					<p>W przeciwieństwie do niektórych VCS,
-						<br>git nie śledzi plików, wyłącznie ich zawartość</p>
-					<img src="img/git-doesnt-track.png">
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-            
             <section>
-				<section>
-					<h2>Przydatne narzędzia związane z gitem</h2>
-					<ul>
-						<li class="fragment">GitHub Pages / GitLab Pages / Netlify
-							<ul>
-								<li class="fragment">Np. prezentacja na którą właśnie patrzymy:<br/><a href="javascript:void(0)">git-presentation.tk</a> </li>
-							</ul>
-						</li>
-						<li class="fragment">GitHub gist</li>
-					</ul>
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
+                Pytania?
+            </section>
+        </section>
 
+        <!-- KRZYSIEK -->
+        <section>
             <section>
-                <section>
-                    <h2>Git blame</h2>
-                    Który to ?!
-                    <p>
-                        <img src="img/git-blame.png">
-                    </p>
-                </section>
-				<section>
-					Pytania?
-				</section>
-			</section>
-            
-			<section>
-				<section>
-					<h2>Aliasy</h2>
-                    <p style="margin-bottom:0">
-						Modyfikacje aliasów można wykonywać w gitconfigu 
-					</p>
-						<ul style="list-style:none">
-                            <li><code>[alias]</code></li>
-                            <li><code>st = status</code></li>
-							<li><code>ci = commit -v</code></li>
-                        </ul>
-					<p style="margin-bottom:0">
-                        Albo za pomocą polecenia
-					</p>
-					<ul style="list-style:none">
-						<li><code>git config --global alias.st status</code></li>
-						<li><code>git config --global alias.ci 'commit -v'</code></li>
-					</ul>
-					<p style="margin-bottom:0">
-						Przykład użycia - skrócone wypisywanie statusu	
-					</p>
-					<ul style="list-style:none">
-						<li><code>git st</code></li>
-					</ul>
-				</section>
-				<section>
-					<h2>Inne przykłady aliasów</h2>
-                    
-					<ul style="list-style:none">
-						<li class="fragment"><code>wdiff = diff --word-diff=plain</code></li>
-						<li class="fragment"><code>rh1 = reset HEAD^ --hard</code></li>
-						<li class="fragment"><code>amend = commit --amend -aC HEAD
-</code></li>
-						<li class="fragment"><code>standup = log --since '1 day ago' --oneline --author krzysztof.morcinek@gmail.com # hack it with your email</code></li>
-						<li class="fragment"><code>cam = commit -am</code></li>
-						<li class="fragment"><code> jira = log --since '6am' --oneline --author krzysztof.morcinek@gmail.com # hack it with your email</code></li>
-						<li class="fragment"><code>ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate</code></li>
-						<li class="fragment"><code>mt = mergetool</code></li>
-					</ul>
-					
-				</section>
-				<section>
-					Pytania?
-				</section>
-			</section>
+                <h2>Ignorowanie plików</h2>
+                <p>
+                    Ścieżki do plików/katalogów które chcemy ignorować dla repozytorium, trzymamy w pliku .gitignore
+                </p>
+                <p class="fragment">Plik ten wersjonujemy w repozytorium</p>
+            </section>
+            <section>
+                <h2>Przykładowe reguły ignorowania</h2>
+                <ul>
+                    <li>*.orig</li>
+                    <li>**/[Pp]ackages/*</li>
+                    <li>bin/</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Dodaję regułę do .gitignore, a "git status" dalej pokazuje zmiany</h3>
+                <p class="fragment">Jest to scenariusz na który każdy prędzej czy później się natknie</p>
+                <p class="fragment">Powód jest prosty - plik już jest w repozytorium,<br/>.gitignore ignoruje tylko nie śledzone pliki</p>
+                <p class="fragment">Wystarczy plik... usunąć z repozytorium</p>
+            </section>
+            <section>
+                <h3>Usuwanie pliku z repozytorium, żeby "posłuchał" reguł .gitignore</h3>
+                <p>
+                <ul>
+                    <li class="fragment">
+                        Tradycyjnie:<br/>
+                        usunięcie pliku -> git add -> git commit
+                    </li>
+                    <li class="fragment" style="margin-top:17px">
+                        Za pmocą komendy:<br/>
+                        <code>
+                            git rm file1.txt<br/>
+                            git commit -m "remove file1.txt"
+                        </code>
+                    </li>
+                    <li class="fragment" style="margin-top:17px">
+                        Zostawiając plik na dysku:<br/>
+                        <code>
+                            git rm --cached file1.txt<br/>
+                            git commit -m "remove file1.txt"
+                        </code>
+                    </li>
+                </ul>
+                </p>
+            </section>
+            <section>
+                <h3>Gotowe reguły .gitignore</h3>
+                <ul>
+                    <li><a href="https://www.gitignore.io/"><i>www.gitignore.io</i></a></li>
+                    <li><i>checkbox</i> przy tworzeniu nowego projektu</li>
+                    <li><a href="https://gist.github.com/kmorcinek/2710267"><i>mój ;) .gitignore</i></a></li>
+                </ul>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>7 zasad dobrego <i>commit message</i></h2>
+                <ol>
+                    <li class="fragment">Oddziel tytuł od ciała pustą linią</li>
+                    <li class="fragment">Ogranicz tytuł do <b>50 znaków</b></li>
+                    <li class="fragment">Stosuj wielkie litery w tytule</li>
+                    <li class="fragment">Nie kończ tytułu commita kropką</li>
+                    <li class="fragment">Zapisuj tytuł w trybie rozkazującym</li>
+                    <li class="fragment">Ogranicz 'szerokość' ciała do 72 znaków</li>
+                    <li class="fragment">W ciele opisz <i>co</i> i <i>dlaczego</i>, a nie <i>jak</i></li>
+                </ol>
+                <p>
+                    <small class="fragment"><i>https://chris.beams.io/posts/git-commit/</i></small>
+                </p>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- KRZYSIEK -->
+        <section>
+            <section>
+                <h2>git reflog</h2>
+                <p>
+                    <img src="img/reflog.png">
+                </p>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>schowek</h2>
+                <ul>
+                    <li><code>git stash</code></li>
+                    <li><code>git stash --include-untracked</code></li>
+                    <li><code>git stash list</code></li>
+                    <li><code>git stash apply (optional: name)</code></li>
+                    <li><code>git stash pop (optional: name)</code></li>
+                    <li><code>git stash drop (optional: name)</code></li>
+                    <li>Różne wariacje, zachowywanie indexu, nadawnie wiadomości itd.</li>
+                </ul>
+                <p class="fragment"><b>Uwaga</b><br/>Łatwo zapomnieć o nieśledzonych plikach</p>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <!--
+        <section>
+            <section>
+                <h2>Tagi</h2>
+                <p class="fragment">
+                    Lekkie(<i>lightweight</i>) - tylko wskaźnik z nazwą<br/>
+                    <code>git tag v1.4</code>
+                </p>
+                <p class="fragment">
+                    Opisane(<i>annotated</i>) - posiadają opis, sumę kontrolną, autora, datę itd.<br/>
+                    <code>git tag -a v1.4 -m 'my version 1.4'</code>
+                </p>
+            </section>
 
             <section>
-				<section>
-					<h2>Credentials helper</h2>
-					Każdy push, fetch (czyli również pull), wymaga autoryzacji...
-					<p>
-						<img src="img/credentials.png">
-					</p>
-				</section>
-
-				<section>
-					<h2>Wbudowane credentials helpery</h2>
+                <h2>Pushowanie tagów</h2>
+                <p>Fetch pobiera wszystkie tagi z serwera, ale domyślnie tagi się nie wypushowują</p>
+                <p>
+                    Dwa sposoby pushowania tagów
                     <ul>
-						<li class="fragment">
-							<code>cache</code>
-							<ul style="list-style:none">
-								<li>
-									<small>
-										<code>git config --global credential.helper 'cache --timeout=300'</code>
-                                        <br/>Bezpieczny, ale tylko tymczasowy (in memory).
-										<br/>Opcjonalnie własny timeout w sekundach (domyślny 900 - 15minut).
-                                    </small>
-								</li>
-							</ul>
-						</li>
-						<li class="fragment" style="margin-top:20px">
-							<code>store</code>
-							<ul style="list-style:none">
-								<li>
-									<small>
-										<code>git config --global credential.helper store</code>
-										<br/>Wygodny, ale <b>niebezpieczny</b> - credentiale zapisane w <b>pliku tekstowym niezaszyfrowane</b>.
-									</small>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
+                        <li>Zalecany: <code>git push origin tag_name</code></li>
+                        <li>Silnie odradzany: <code>git push --tags</code></li>
+                    </ul>
+                </p>
+            </section>
 
-				<section>
-					<h3>libsecret - wygodny i bezpieczny credentials helper dla Linux</h3>
-                    Przykładowa instalacja dla Linux Mint / Ubuntu
-                    <small>
-                        <ol>
-                            <li><code>sudo apt-get install libsecret-1-0 libsecret-1-dev</code></li>
-                            <li><code>cd /usr/share/doc/git/contrib/credential/libsecret</code></li>
-                            <li><code>sudo make</code></li>
-                        </ol>
-					</small>
-						<br/><br/>Konfiguracja (gdy już zainstalowany)
-                    <small>
-                        <ul style="list-style:none">
-                            <li><code>git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret</code></li>
+            <section>
+                Pytania?
+            </section>
+        </section>
+        -->
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>Forki & Pull requesty</h2>
+                <p>
+                    <img src="img/forkAndPullModel.png">
+                </p>
+            </section>
+            <section>
+                <h3>
+                    Pytania? - Pull requesty!
+                </h3>
+                <p>
+                    <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
+                </p>
+            </section>
+        </section>
+
+        <!-- TOMEK -->
+        <section>
+            <section>
+                <h2>Jak działa git</h2>
+                Git w podstawowym scenariuszu jedynie dodaje kolejne snapshoty plików
+                <p>
+                    <img src="img/sha-commits.jpg"/>
+                </p>
+            </section>
+            <section>
+                W svn commit to diff zmienionych plików (różnica)
+                <p>
+                    <img src="img/deltas.png">
+                </p>
+            </section>
+            <section>
+                W git commit to snapshot
+                <b>wszystkich </b> plików
+                <p>
+                    <img src="img/snapshots.png">
+                </p>
+                reprezentowany za pomocą hasha SHA-1
+            </section>
+            <section>
+                Dzięki temu, można wskazać dowolny commit i podejrzeć cały stan systemu z ówczas, a nie tylko jakie diffy ten commit ze sobą
+                niósł.
+                <p>
+                    <img src="img/sha-commits.jpg"/>
+                </p>
+                <small class="fragment">Wiedząc jaka jest wersja na produkcji, zawsze można wrócić do niej w kodzie i zrobić drobną poprawkę
+                    bez wprowadzania
+                    na produkcję kolejnych commitów.
+                </small>
+            </section>
+            <section>
+                <h3>W przeciwieństwie do kryptowalut...</h3>
+                <p class="fragment">
+                    w swojej 'instacji bazy' (na swoim komputerze) możesz zmieniać istniejące snapshoty (commity)
+                </p>
+                <p class="fragment">
+                    <b>ALE!</b>
+                </p>
+                <p class="fragment">
+                    tylko pod warunkiem, że jeszcze ich nie opublikowałeś innym bazom
+                </p>
+            </section>
+            <section>
+                <h2>Git nie śledzi plików</h2>
+                <p>W przeciwieństwie do niektórych VCS,
+                    <br>git nie śledzi plików, wyłącznie ich zawartość</p>
+                <img src="img/git-doesnt-track.png">
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Przydatne narzędzia związane z gitem</h2>
+                <ul>
+                    <li class="fragment">GitHub Pages / GitLab Pages / Netlify
+                        <ul>
+                            <li class="fragment">Np. prezentacja na którą właśnie patrzymy:<br/><a href="javascript:void(0)">git-presentation.tk</a>
+                            </li>
                         </ul>
-						<a href="https://www.softwaredeveloper.blog/git-credential-storage-libsecret">Szerszy opis na blogu SoftwareDeveloper.Blog</a>
-					</small>
-				</section>
+                    </li>
+                    <li class="fragment">GitHub gist</li>
+                </ul>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
 
-				<section>
-					<h3>Wygodny i bezpieczny credentials helper dla Windows</h3>
-					<p>
-                        <small>
-							Instalator: <a href="https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/1.18.3"><i>github.com/Microsoft/Git-Credential-Manager-for-Windows/releases</i></a>
-						</small>
-					</p>
-                    <p>
-						<small>Lub <i>checkbox</i> w trakcie instalacji gita:</small>
-						<img style="margin-top:0; float:bottom" src="img/credential-manager-during-installation.png">
-					</p>
-					<p>
-						<small>
-							Powinno ustawić: <code>git config --global credential.helper manager</code>
-							<br/>albo ścieżkę do exe
-						</small>
-					</p>
-				</section>
+        <section>
+            <section>
+                <h2>Git blame</h2>
+                Który to ?!
+                <p>
+                    <img src="img/git-blame.png">
+                </p>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
 
-				<section>
-					Pytania?
-				</section>
+        <section>
+            <section>
+                <h2>Aliasy</h2>
+                <p style="margin-bottom:0">
+                    Modyfikacje aliasów można wykonywać w gitconfigu
+                </p>
+                <ul style="list-style:none">
+                    <li><code>[alias]</code></li>
+                    <li><code>st = status</code></li>
+                    <li><code>ci = commit -v</code></li>
+                </ul>
+                <p style="margin-bottom:0">
+                    Albo za pomocą polecenia
+                </p>
+                <ul style="list-style:none">
+                    <li><code>git config --global alias.st status</code></li>
+                    <li><code>git config --global alias.ci 'commit -v'</code></li>
+                </ul>
+                <p style="margin-bottom:0">
+                    Przykład użycia - skrócone wypisywanie statusu
+                </p>
+                <ul style="list-style:none">
+                    <li><code>git st</code></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Inne przykłady aliasów</h2>
 
-			</section>
+                <ul style="list-style:none">
+                    <li class="fragment"><code>wdiff = diff --word-diff=plain</code></li>
+                    <li class="fragment"><code>rh1 = reset HEAD^ --hard</code></li>
+                    <li class="fragment"><code>amend = commit --amend -aC HEAD
+                    </code></li>
+                    <li class="fragment"><code>standup = log --since '1 day ago' --oneline --author krzysztof.morcinek@gmail.com # hack it
+                        with your email</code></li>
+                    <li class="fragment"><code>cam = commit -am</code></li>
+                    <li class="fragment"><code> jira = log --since '6am' --oneline --author krzysztof.morcinek@gmail.com # hack it with your
+                        email</code></li>
+                    <li class="fragment"><code>ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate</code>
+                    </li>
+                    <li class="fragment"><code>mt = mergetool</code></li>
+                </ul>
 
-			<section>
-				<section>
-					<h2>Podpis kryptograficzny</h2>
-                    <p>Commity i tagi można podpisywać kryptograficznie, jednak wymaganie tego w workflow jest kłopotliwe</p>
-					<ul style="list-style:none; font-size:90%">
-						<li><small><code>
-							$ git log <b>--show-signature</b>
+            </section>
+            <section>
+                Pytania?
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Credentials helper</h2>
+                Każdy push, fetch (czyli również pull), wymaga autoryzacji...
+                <p>
+                    <img src="img/credentials.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Wbudowane credentials helpery</h2>
+                <ul>
+                    <li class="fragment">
+                        <code>cache</code>
+                        <ul style="list-style:none">
+                            <li>
+                                <small>
+                                    <code>git config --global credential.helper 'cache --timeout=300'</code>
+                                    <br/>Bezpieczny, ale tylko tymczasowy (in memory).
+                                    <br/>Opcjonalnie własny timeout w sekundach (domyślny 900 - 15minut).
+                                </small>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fragment" style="margin-top:20px">
+                        <code>store</code>
+                        <ul style="list-style:none">
+                            <li>
+                                <small>
+                                    <code>git config --global credential.helper store</code>
+                                    <br/>Wygodny, ale <b>niebezpieczny</b> - credentiale zapisane w <b>pliku tekstowym niezaszyfrowane</b>.
+                                </small>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>libsecret - wygodny i bezpieczny credentials helper dla Linux</h3>
+                Przykładowa instalacja dla Linux Mint / Ubuntu
+                <small>
+                    <ol>
+                        <li><code>sudo apt-get install libsecret-1-0 libsecret-1-dev</code></li>
+                        <li><code>cd /usr/share/doc/git/contrib/credential/libsecret</code></li>
+                        <li><code>sudo make</code></li>
+                    </ol>
+                </small>
+                <br/><br/>Konfiguracja (gdy już zainstalowany)
+                <small>
+                    <ul style="list-style:none">
+                        <li><code>git config --global credential.helper
+                            /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret</code></li>
+                    </ul>
+                    <a href="https://www.softwaredeveloper.blog/git-credential-storage-libsecret">Szerszy opis na blogu
+                        SoftwareDeveloper.Blog</a>
+                </small>
+            </section>
+
+            <section>
+                <h3>Wygodny i bezpieczny credentials helper dla Windows</h3>
+                <p>
+                    <small>
+                        Instalator: <a href="https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/1.18.3"><i>github.com/Microsoft/Git-Credential-Manager-for-Windows/releases</i></a>
+                    </small>
+                </p>
+                <p>
+                    <small>Lub <i>checkbox</i> w trakcie instalacji gita:</small>
+                    <img style="margin-top:0; float:bottom" src="img/credential-manager-during-installation.png">
+                </p>
+                <p>
+                    <small>
+                        Powinno ustawić: <code>git config --global credential.helper manager</code>
+                        <br/>albo ścieżkę do exe
+                    </small>
+                </p>
+            </section>
+
+            <section>
+                Pytania?
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2>Podpis kryptograficzny</h2>
+                <p>Commity i tagi można podpisywać kryptograficznie, jednak wymaganie tego w workflow jest kłopotliwe</p>
+                <ul style="list-style:none; font-size:90%">
+                    <li>
+                        <small><code>
+                            $ git log <b>--show-signature</b>
                             <br/>commit 5c3386cf54bba0a33a32da706aa52bc0155503c2
-                            <br/><b>gpg: Signature made Wed Jun  4 19:49:17 2014 PDT using RSA key ID 0A46826A</b>
+                            <br/><b>gpg: Signature made Wed Jun 4 19:49:17 2014 PDT using RSA key ID 0A46826A</b>
                             <br/><b>gpg: Good signature from "Scott Chacon (Git signing key) &lt;schacon@gmail.com&gt;"</b>
                             <br/>Author: Scott Chacon &lt;schacon@gmail.com&gt;
-                            <br/>Date:   Wed Jun 4 19:49:17 2014 -0700
+                            <br/>Date: Wed Jun 4 19:49:17 2014 -0700
                             <br/>Add new function
-						</code></small></li>
-					</ul>
-				</section>
-			</section>
-			
-			<section>
-				<section>
-					<h2>Git hooks</h2>
-					<img src="img/git-hooks.png" />
-				</section>
-			</section>
+                        </code></small>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Git hooks</h2>
+                <img src="img/git-hooks.png"/>
+            </section>
+        </section>
 
 
-			<section>
-				<section>
-					<h2>Linki</h2>
-					<ul>
-						<li>
-							<a href="https://git-scm.com/book">Pro Git book (Scott Chacon, Ben Straub)</a>
-						</li>
-						<li>
-							<a href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message <small>(The seven rules of a great Git commit message)</small></a>
-						</li>
-						<li>
-							<a href="https://www.atlassian.com/git/tutorials/">Atlassian Tutorials</a>
-						</li>
-						<li>
-							<a href="http://pcottle.github.io/learnGitBranching/">Learn git branching</a>
-						</li>
-						<li>
-							<a href="https://onlywei.github.io/explain-git-with-d3/">Visualise git with D3</a>
-						</li>
-						<li>
-							<a href="http://nvie.com/posts/a-successful-git-branching-model/">Successful git branching model - Git flow</a>
-						</li>
-						<li>
-							<a href="http://ohshitgit.com/">Oh shit, git!</a>
-						</li>
-						<li>
-							<a href="http://files.zeroturnaround.com/pdf/zt_git_cheat_sheet.pdf">Git cheatsheet</a>
-						</li>
-						<li>
-							<a href="https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/">How to undo (almost) anything with git</a>
-						</li>
-						<li>
-							<a href="https://illustrated-git.readthedocs.io/en/latest/#">GIT Illustrated Cheatsheet</a>
-						</li>
-						<li>
-							<a href="https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1">Artykuł na co uważać przy rebase</a>
-						</li>
-						<li>
-							<a href="https://trunkbaseddevelopment.com/">Trunk Based Development: Introduction</a>
-						</li>
-					</ul>
-				</section>
-			</section>
+        <section>
+            <section>
+                <h2>Linki</h2>
+                <ul>
+                    <li>
+                        <a href="https://git-scm.com/book">Pro Git book (Scott Chacon, Ben Straub)</a>
+                    </li>
+                    <li>
+                        <a href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message
+                            <small>(The seven rules of a great Git commit message)</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.atlassian.com/git/tutorials/">Atlassian Tutorials</a>
+                    </li>
+                    <li>
+                        <a href="http://pcottle.github.io/learnGitBranching/">Learn git branching</a>
+                    </li>
+                    <li>
+                        <a href="https://onlywei.github.io/explain-git-with-d3/">Visualise git with D3</a>
+                    </li>
+                    <li>
+                        <a href="http://nvie.com/posts/a-successful-git-branching-model/">Successful git branching model - Git flow</a>
+                    </li>
+                    <li>
+                        <a href="http://ohshitgit.com/">Oh shit, git!</a>
+                    </li>
+                    <li>
+                        <a href="http://files.zeroturnaround.com/pdf/zt_git_cheat_sheet.pdf">Git cheatsheet</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/">How to undo (almost) anything
+                            with git</a>
+                    </li>
+                    <li>
+                        <a href="https://illustrated-git.readthedocs.io/en/latest/#">GIT Illustrated Cheatsheet</a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1">Artykuł na co uważać
+                            przy rebase</a>
+                    </li>
+                    <li>
+                        <a href="https://trunkbaseddevelopment.com/">Trunk Based Development: Introduction</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
 
-			<section>
-				<h2>Dziękujemy!</h2>
-				<img src="img/thank-you.png" />
-			</section>
-		</div>
-	</div>
+        <section>
+            <h2>Dziękujemy!</h2>
+            <img src="img/thank-you.png"/>
+        </section>
+    </div>
+</div>
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-	<script>
+<script>
 
-		// Full list of configuration options available at:
-		// https://github.com/hakimel/reveal.js#configuration
-		Reveal.initialize({
-			controls: true,
-			progress: true,
-			history: true,
-			center: true,
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-			transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-			// Optional reveal.js plugins
-			dependencies: [
-				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-				{ src: 'plugin/zoom-js/zoom.js', async: true },
-				{ src: 'plugin/notes/notes.js', async: true }
-			]
-		});
-	</script>
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                    return !document.body.classList;
+                }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+</script>
 
 </body>
 
