@@ -472,149 +472,145 @@
 					</ol>
                 </section>
 				<section data-transition="slide-in none-out">
-					<h2>Ćwiczenie 1</h2>
-                    <p>Sprawdź datę ostatniego commita</p>
-                    <span class="fragment">
-                        <h4>Wizualnie:</h4>
-                        <code>gitk</code>
-                        <h4 style="margin-top:20px">Z konsoli:</h4>
-                        <code>git log -1</code>
-					</span>
-                    <p class="fragment">Odpowiedź:<br/>Fri Dec 14 00:39:27 2018 +0300</p>
+                    <h4>Sprawdź datę commita poprzedzającego developa o 50 commitów</h4>
+                    <div class="fragment">
+                        <h4>Gitk</h4>
+                        <code>gitk develop~50 -1</code>
+                        <h4 style="margin-top:20px">Konsola</h4>
+                        <code>git log develop~50 -1</code>
+					</div>
+                    <p class="fragment">Odpowiedź:<br/>Thu Sep 27 12:04:17 2018 +0300
+					<br/><small><br/><strong>Pytania?</strong></small>
+					</p>
+					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
 				</section>
 				<section data-transition="none-in none-out">
-					<h2>Ćwiczenie 2</h2>
-					<p>Sprawdź datę przedostatniego commita</p>
-                    <span class="fragment">
-                        <h4>Wizualnie:</h4>
-                        <code>gitk</code>
-                        <h4 style="margin-top:20px">Z konsoli:</h4>
-                        <code>git log -2</code><br/>lub<br/><code>git log HEAD^ -1</code>
-					</span>
-					<p class="fragment">Odpowiedź:<br/>Thu Dec 13 23:58:11 2018 +0300</p>
-				</section>
-				<section data-transition="none-in none-out">
-					<h2>Ćwiczenie 3</h2>
-					<p>Sprawdź tytuł ostatniego commita autora z nazwiskiem <i>Gulya</i></p>
-                    <span class="fragment">
-                        <h4>Wizualnie:</h4>
-                        <code>gitk --author=gulya</code>
-                        <h4 style="margin-top:20px">Z konsoli:</h4>
-                        <code>git log -1 --author=gulya</code>
-					</span>
+					<h4>Sprawdź tytuł ostatniego commita autora z nazwiskiem <i>Gulya</i></h4>
+                    <div class="fragment">
+                        <h4>Gitk</h4>
+                        <code>gitk --author=gulya -1</code>
+                        <h4 style="margin-top:20px">Konsola</h4>
+                        <code>git log --author=gulya -1</code>
+					</div>
 					<p class="fragment">Odpowiedź:<br/>
 						<small>
 							<code>Upgrade Markwon to version 2.0.0. Replace ImageSizeResolver workaround with upstream one.</code>
 						</small>
+						<br/><small><br/><strong>Pytania?</strong></small>
 					</p>
+					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
 				</section>
 				<section data-transition="none-in none-out">
-					<h2>Ćwiczenie 4</h2>
-					<p>Sprawdź autora commita zawierającego w opisie frazę <i>Update Stub</i></p>
-                    <span class="fragment">
-                        <h4>Wizualnie:</h4>
+					<h4>Sprawdź autora commita zawierającego w opisie frazę <i>Update Stub</i></h4>
+                    <div class="fragment">
+                        <h4>Gitk</h4>
                         <small>
-                            <code>gitk --all --grep="Update Stub"</code>
+                            <code>gitk --all --grep="Update Stub" -1</code>
                         </small>
-                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <h4 style="margin-top:20px">Konsola</h4>
                         <small>
-                            <code>git log --all --grep="Update Stub"</code>
+                            <code>git log --all --grep="Update Stub" -1</code>
                         </small>
-					</span>
+					</div>
 					<p class="fragment">Odpowiedź:<br/>
                         <code>terrakok</code>
+						<br/><small><br/><strong>Pytania?</strong></small>
 					</p>
+					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
 				</section>
 				<section data-transition="none-in none-out">
-					<h2>Ćwiczenie 5</h2>
-					<p>Sprawdź jakie pliki modyfikował commit <small><code>b9272a3be3d4f9182e6893a0f9a2f7b9ff0b6923</code></small></p>
-					<span class="fragment">
+					<h4>Sprawdź jakie pliki modyfikował commit <small><code>b9272a3be3d4f9182e6893a0f9a2f7b9ff0b6923</code></small></h4>
+					<div class="fragment">
                         <p>
-                            <h4>Wizualnie:</h4>
+                            <h4>Gitk</h4>
                             <small>
-                                <code>gitk b927</code>
+                                <code>gitk b927 -1</code>
                             </small>
-                            <h4 style="margin-top:20px">Z konsoli:</h4>
+                            <h4 style="margin-top:20px">Konsola</h4>
                             <small>
                                 <code>git log b927 -1 --stat</code>
                             </small>
 						</p>
-					</span>
-					<span class="fragment">Odpowiedź:<br/>
+					</div>
+					<div class="fragment">Odpowiedź:<br/>
                         <p align="left">
                             <small>
                                 .../model/repository/session/SessionRepository.kt            |  9 +++++++++<br/>
                                 .../terrakok/gitlabclient/presentation/auth/AuthPresenter.kt | 12 ++++++------
                             </small>
 						</p>
-					</span>
+						<small><strong>Pytania?</strong></small>
+					</div>
+					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
 				</section>
 				<section data-transition="none-in none-out">
-					<h2>Ćwiczenie 6</h2>
-					<p>Sprawdź dokładnie co zmienił commit <small><code>0e02008383a59f6ab56a14df4688070aab925765</code></small></p>
-					<span class="fragment">
-                        <h4>Wizualnie:</h4>
+					<h4>Sprawdź co dokładnie zmienił commit <small><code>0e02008383a59f6ab56a14df4688070aab925765</code></small></h4>
+					<div class="fragment">
+                        <h4>Gitk</h4>
                         <small>
                             <code>gitk 0e020 -1</code>
                         </small>
-                        <h4>Z konsoli:</h4>
+                        <h4>Konsola</h4>
                         <small>
                             <code>git log 0e020 -1 --patch</code><br/>lub<br/><code>git show 0e020</code>
-                            
                         </small>
-					</span>
+					</div>
 					<p class="fragment">Odpowiedź:<br/>
                         <small>
-							<b>Linie dodane</b> do pliku <code>PrivacyPolicyFragment.kt</code>:<br/>
+							<small><b>Linie dodane</b> do pliku <code>PrivacyPolicyFragment.kt</code>:<br/>
 								override val parentScopeName = DI.APP_SCOPE<br/>
-								pusta<br/>
-								Toothpick.inject(this, scope)<br/>
-							<b>Linia usunięta</b> z pliku <code>PrivacyPolicyFragment.kt</code>:<br/>Toothpick.inject(this, Toothpick.openScope(DI.APP_SCOPE))<br/>
+								pusta</small><br/>
+								<small>Toothpick.inject(this, scope)</small><br/>
+							<small><b>Linia usunięta</b> z pliku <code>PrivacyPolicyFragment.kt</code>:<br/>Toothpick.inject(this, Toothpick.openScope(DI.APP_SCOPE))<br/>
+                                <br/><strong>Pytania?</strong></small>
 						</small>
 					</p>
+					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
 				</section>
 				<section data-transition="none-in none-out">
-					<h2>Ćwiczenie 7</h2>
-					<p>Sprawdź id commitów z drugiego grudnia 2018</p>
-					<span class="fragment">
-                        <h4>Wizualnie:</h4>
+					<h4>Sprawdź id commitów z drugiego grudnia 2018</h4>
+					<div class="fragment">
+                        <h4>Gitk</h4>
                         <small>
                             <code>gitk --after="2018-12-02 00:01" --before="2018-12-02 23:59"</code>
                         </small>
-                        <h4 style="margin-top:20px">Z konsoli:</h4>
+                        <h4 style="margin-top:20px">Konsola</h4>
                         <small>
                             <code>git log --after="2018-12-02 00:01" --before="2018-12-02 23:59"</code>
                         </small>
-					</span>
-					<span class="fragment">Odpowiedź:<br/>
+					</div>
+					<div class="fragment">Odpowiedź:<br/>
                         <p align="left">
                             <small>
-                                6167018 Merge branch 'task/upgrade-markwon-and-remove-image-loading-crutch' into 'develop'<br/>
-                                fdb2e6c Merge branch 'project_milestone_tab' into 'develop'<br/>
-                                158bba8 Delete unused "todo".<br/>
-                                6d45888 Add account id for fixing same userId for difference servers.<br/>
-                                0e02008 Fix scope for PrivacyPolicyFragment.<br/>
-                                c46c806 Merge branch 'feture/multi_account' into develop<br/>
-                                45c0836 Delete code style from git history.<br/>
-                                5752be0 Add scopes to each fragment for more powerful memory management.<br/>
+                                <small>
+									6167018 Merge branch 'task/upgrade-markwon-and-remove-image-loading-crutch' into 'develop'<br/>
+									fdb2e6c Merge branch 'project_milestone_tab' into 'develop'<br/>
+									158bba8 Delete unused "todo".<br/>
+									6d45888 Add account id for fixing same userId for difference servers.<br/>
+									0e02008 Fix scope for PrivacyPolicyFragment.<br/>
+									c46c806 Merge branch 'feture/multi_account' into develop<br/>
+									45c0836 Delete code style from git history.<br/>
+									5752be0 Add scopes to each fragment for more powerful memory management.<br/>
+								</small>
                             </small>
                         </p>
-					</span>
+						<small><strong>Pytania?</strong></small>
+					</div>
+					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
 				</section>
 				<section data-transition="none-in slide-out">
-					<h2>Ćwiczenie 8</h2>
-					<p>Sprawdź kto podniósł wersję produktu z 9 na 10 <small>(text: <code>versionCode 10</code>)</small></p>
-					<span class="fragment">
-                        <p>
-                            <h4>Z konsoli:</h4>
-                            <small>
-                                <code>git log -S "versionCode 10" -p</code>
-                            </small>
-						</p>
-					</span>
+					<h4>Sprawdź kto podniósł wersję produktu z 9 na 10 <small>(text: <code>versionCode 10</code>)</small></h4>
+					<div class="fragment">
+                        <h4>Konsola</h4>
+                        <small>
+                            <code>git log -S "versionCode 10" -p</code>
+                        </small>
+					</div>
 					<p class="fragment">Odpowiedź:<br/>
 						<i>terrakok</i>, w commicie<br/><small><code>6d289b10a07bb13d75a7b9767b9b0ae52b0421ce</code></small>
+						<br/><small><strong>Pytania?</strong></small>
 					</p>
+					<iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
 				</section>
                 <section>
 					<h3>gitk pokazujący cały stan projektu</h3>
