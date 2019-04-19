@@ -2,7 +2,9 @@
 
 ## Konfiguracja narzędzi do zainstalowania przed warsztatami wysłana przez Pawła 2 dni wcześniej (przez meetup)
 ## Wydrukować ludziom wszystkie materiały (w repozytorium katalog /to-print)
-
+## Dogadać z organizatorem przejściówki Laptop <-> rzutnik
+Krzysiek: VGA, MiniDisplayPort, przejściówka na hdmi
+Tomek: VGA, HDMI
 
 # Przygotowanie samych warsztatów
 osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja itp).
