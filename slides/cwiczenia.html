@@ -6,6 +6,19 @@
 <meta charset="utf-8">
 <body>
 <section>
+<!--
+### Example flow - KRZYSIEK
+
+git init
+  git init -> obok widać że powstał katalog gita
+otworz w explorerze
+z PPM->New file->txt
+pokaz w SourceTree, i tutaj te 3 stany
+~ dodawanie kolejnego,
+~ dodawanie tekstu w utworzonym
+~ zamiast screenshot pokazujemy równolegle w SourceTree.
+? Czy oni powinni mieć SourceTree. Oni nie mieli my też nie wymagamy, można doinstalować.
+-->
     <h2>Ćwiczenie: proste flow</h2>
     Komendy potrzebne do ćwiczenia
     <ul>
@@ -44,6 +57,13 @@
         <li>Sprawdź status repozytorium (<code>git status</code>)</li>
     </ol>
 </section>
+
+<!--
+## rebase --interactive - KRZYSIEK
+* dużo wprowadzenia, jak edytować (bo otworzy się plik w notatniku), kilka opcji, zamykamy plik
+* pokazać że można to zrobić 'rebase --interactive'
+* ćwiczenie:
+-->
 
 <h2>Demo rebase --interactive</h2>
 <a href="https://github.com/kmorcinek-for-git-trainings/devwarsztaty-rebase-interactive-demo">https://github.com/kmorcinek-for-git-trainings/devwarsztaty-rebase-interactive-demo</a>
@@ -86,6 +106,15 @@ Połączyć commity c42f4e2 c1ae555 6b0c679 61d2ada w jeden z lepszym opisem.
     </li>
 </ul>
 
+<!--
+* pracujemy nad featurem, na branch feature_light
+* mamy kilka commitów // 'git log' z consoli, ?SourceTree?
+* synchronizujemy mastera
+  * checkout, pulll, checkout z powrotem, pokazanie historii
+* robimy merge
+* push
+-->
+
 <h2>Ćwiczenie rebase vs merge</h2>
 Komendy potrzebne do ćwiczenia
 <ul>
@@ -98,7 +127,8 @@ Komendy potrzebne do ćwiczenia
         Sklonowanie repozytorium do ćwiczenia<br/>
         <code>
             cd ~/Desktop/cwiczenia<br/>
-            git clone https://github.com/kmorcinek-for-git-trainings/rebase-vs-merge-training rebase-and-merge-demo
+            git clone https://github.com/kmorcinek-for-git-trainings/rebase-vs-merge-training rebase-and-merge-demo<br/>
+			git checkout branch-a
         </code>
     </li>
     <p>
