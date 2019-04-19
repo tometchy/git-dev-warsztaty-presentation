@@ -18,29 +18,6 @@ Wydrukować ludziom wszystkie komendy które bedziemu używali, z wszystkimi fla
 * windows wiemy jak zrobić. Sprawdzić jak na Mac/Unix.
 * jeśli będziemy używali np 'touch' to też go tutaj dorzucić.
 
-## CZYM JEST git - TOMEK
-- Git to rozproszona baza danych, oparta na streamie snapshotow plikow, reprezentowanych za pomocą hashy SHA-1. Dokładnie tak samo jak transakcję w bitcoinie.
-OBRAZEK z kolejka SHA i chmurkami co każdy SHA symbolizuje 
-
-## Jak działa git - TOMEK
-Git w podstawowym scenariuszu tylko dodaje dane
-OBRAZEK  poprzedni dalej jesteśmy na tym samym slajdzie, ale dodaje dopisek że nawet commit revertujacy to dodanie danych
-
-## Wytłumaczyć working, staging, commited - TOMEK
-
-Twoj projekt (Twoje pliki - absolutnie każdy plik który stworzysz/zedytujesz/usuniesz) zawsze jest w którymś z 3 "obszarow":
-Obszarze roboczym (working directory)
-Staging area - bycia oznaczonym (staged) do dodania do bazy danych (zacommitowania)
-.git directory (repozytorium) - dodanym do bazy danych (commited) - czyli zabezpieczonym, który można odnaleźć znając SHA snapschota bazy danych.
-
-* pokazać że przy przechodzeniu między branchami - pliki na dysku są podmieniane
-
-Synchronizowanie baz danych między soba, pokazanie że wskazujesz jakiegoś remota i w raczej niespotykanym scenariuszu możesz wkazac nawet komputer kolegi obok - żadna roznica.
-
-## Przykładowe flow na slajdzie - KRZYSIEK
-
-* W SourceTree pokazać jak poszczególne chunki się dodaje.
-
 Uwaga do zapamietania, że "-" przy pojedynczej fladze, a "--" przy całym słowie, gdzieś w trakcie, może później.
 
 ### Example flow - KRZYSIEK
