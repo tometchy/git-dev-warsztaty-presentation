@@ -1,6 +1,9 @@
 # Przed warsztatami
 
-## Konfiguracja narzędzi do zainstalowania przed warsztatami wysłana przez Pawła 2 dni wcześniej (przez meetup)
+## Mail do uczestników 2 dni przed warsztatmi
+### Konfiguracja narzędzi do zainstalowania przed warsztatami (link do posta Krzyśka)
+### Podanie maila do nas, z prośbą o przesłanie nicka z GitHuba, żeby móc szybko dodać uprawnienia do repozytorium dla ćwiczenia push & pull
+
 ## Wydrukować ludziom wszystkie materiały (w repozytorium katalog /to-print)
 ## Dogadać z organizatorem przejściówki Laptop <-> rzutnik
 Krzysiek: VGA, MiniDisplayPort, przejściówka na hdmi
