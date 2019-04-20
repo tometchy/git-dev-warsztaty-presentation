@@ -16,7 +16,7 @@ osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja i
 
 * Wyczyść pulpit
 * .gitconfig: wywalić wszystkie aliasy, zmienić edytor na notepad (mam już do tego commita).
-* przezentacja, naciskanie "s", naciskanie "ESC".
+* prezentacja, naciskanie "s", naciskanie "ESC".
 * jest konto https://github.com/kmorcinek-for-git-trainings
 * operować repozytoriami (demo i ćwiczenia) w katalogu `~/Desktop/cwiczenia/`
 * sciagnięte wszystkie najnowsze repo do ćwiczeń do katalogu `~/Desktop/cwiczenia-backup` (i może wykonać ćwiczenia), a z uczestnikami na nowo robię `clone`.
