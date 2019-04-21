@@ -10,8 +10,11 @@ git branch <name> - tworzy nowy branch o nazwie <name>
 git checkout <name> - "przełącza się" na brancha <name>
 
 git reset --hard <commit> - resetuje staging i working area.
+@Tomek - opiszesz pozostałe rodzaje resetów żeby to było spójne z tym co prezentujesz o resetach?
 
 git rebase <target-commit> - szuka commita który był wspólnym przodkiem zarówno aktualnego brancha jak i <target-commit>, nakłada wszystkie commity których nie ma w <target-commit> na górę <target-commit>
 git merge <target-branch> - tworzy commita mergującego który ma dwóch przodków, ze wspolną historią tych dwóch branchy, gdy <target-branch> ma w historii aktualnego brancha to następuje "Fast Forward" czyli następuję dodanie commitów, ale nie tworzy się commit mergujący.
 
 git rebase --interactive <commit> - pozwala zamieniac ze sobą miejscami, łączyć usuwać, edytować commity od <commit> do aktualnego commita
+
+
