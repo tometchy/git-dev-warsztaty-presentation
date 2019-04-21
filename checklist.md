@@ -32,3 +32,4 @@ osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja i
 * Utworzyć brancha powarsztatowego i dodać do readme.md
 * Napisać maila powtarzającego, że mogą się do nas odzywać z pytaniami
 * przenieść katalog `~/Desktop/cwiczenia` do `/Work/git-devwarsztaty-miasto/`
+* Wysłać listę rzeczy okołogitowych
