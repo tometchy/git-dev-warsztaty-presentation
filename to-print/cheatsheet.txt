@@ -1,0 +1,12 @@
+git init - stwórz puste repozytorium w aktualnym katalogu
+git add <folder> - dodać wszystkie zmiany z <folder> do następnego commita
+git commit - utwórz commita ze zmiana aktualnie w indeksie, często używane z dodatkowymi przełącznikami
+git status - pokaż które pliki się zmieniły od ostatniego commita, a które zostały dodane (usunięte)
+
+git push - wrzuca lokalne commity do zdelnego repozytorium (synchronizuje lokalne repo ze zdalnym)
+git pull - pobiera commity ze zdalnego repozytorium do lokalnego repozytorium
+
+git branch <name> - tworzy nowy branch o nazwie <name>
+git checkout <name> - "przełącza się" na brancha <name>
+
+git rebase <target-branch> - sprawdza ...
