@@ -128,9 +128,9 @@ Komendy potrzebne do ćwiczenia (niekoniecznie w tej kolejności)
         <code>
             cd ~/Desktop/cwiczenia<br/>
             git clone https://github.com/git-devwarsztaty/rebase-vs-merge-training rebase-and-merge-demo<br/>
-			cd rebase-and-merge-demo<br/>
-			git checkout feature-branch (tylko żeby ten branch się pojawił lokalnie)<br/>
-			git checkout master
+            cd rebase-and-merge-demo<br/>
+            git checkout feature-branch (tylko żeby ten branch się pojawił lokalnie)<br/>
+            git checkout master
         </code>
     </li>
     <p>
@@ -139,12 +139,28 @@ Komendy potrzebne do ćwiczenia (niekoniecznie w tej kolejności)
     <p>
         <img src="img/dod-merge-output.png">
     </p>
+    <details>
+        <summary>podejrzyj rozwiązanie</summary>
+        <code>
+            git checkout master<br/>
+            git merge feature-branch
+        </code>
+    </details>
     <p>
         Rebase output:
     </p>
     <p>
         <img src="img/dod-rebase-output.png">
     </p>
+    <details>
+        <summary>podejrzyj rozwiązanie</summary>
+        <code>
+            git checkout feature-branch<br/>
+            git rebase master<br/>
+            git checkout master<br/>
+            "git reset --hard feature-branch" albo "git merge feature-branch"
+        </code>
+    </details>
 </ul>
 
 <h2 id="resolve-conflicts">Ćwiczenie: rozwiązywania konfliktów</h2>
