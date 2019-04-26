@@ -3,9 +3,10 @@
 ## Przed warsztatami
 
 * Ustalić z organizatorami godziny szkolenia, czasem to jest 9-16, czasem 9-17.
-* Mail do uczestników 2 dni przed warsztatmi
+* Mail do uczestników 2 dni przed warsztatmi (jest w drugim repo)
   * Konfiguracja narzędzi do zainstalowania przed warsztatami (link do posta Krzyśka)
-  * Podanie maila do nas, z prośbą o przesłanie nicka z GitHuba, żeby móc szybko dodać uprawnienia do repozytorium dla ćwiczenia push & pull
+  * Ankieta
+  * Zdarzały sie sytuacje, że osoba nie dostała tego maila bo w ostatniej chwili dołączyła z waiting list, czy w takim wypadku dodamy też te informacje jako komentarz w meetupie?
 * Wydrukować (może jakkaś internetowa usługa zrobi to tanio i na dobrym papierze)
   * uczestnikom wszystkie materiały (w repozytorium katalog /to-print)
   * nasze materiały (jakie kroki do przeprowadzenia wszystkich Demo)
