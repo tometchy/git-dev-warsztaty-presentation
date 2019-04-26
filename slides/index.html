@@ -509,18 +509,39 @@
                 <p>
                     <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
                 </p>
+                <p class="fragment">Pytania?</p>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+                <aside class="notes">
+                    5minut na ćwiczenie
+                </aside>
             </section>
             <section>
                 <h3>Edycja 'ostatnich' commitów po opublikowaniu</h3>
-                <b>git revert</b>
-                <br>np:
                 <p>
+                    <b>git revert</b>
+                </p>
+                <p>
+                    np:
+                </p>
                 <ul>
                     <li>git revert HEAD</li>
                     <li>git revert HEAD~4</li>
                     <li>git revert 6e5av3a</li>
                 </ul>
-                </p>
+                <aside class="notes">
+                    Krótke demo - pokazać revert na repozytorium z ćwiczenia resetowania, bez ćwiczenia dla uczestników (improwizacja).
+                </aside>
+            </section>
+            <section>
+                <h3>Modyfikacja working directory i staging area</h3>
+                <ul>
+                    <li class="fragment">git checkout *PATH*</li>
+                    <li class="fragment">git reset --hard</li>
+                    <li class="fragment">git clean (-d -f -n)</li>
+                </ul>
+                <aside class="notes">
+                    Krótkie demo - pokazać czyszczenie  na repozytorium z ćwiczenia resetowania, bez ćwiczenia dla uczestników (improwizacja).
+                </aside>
             </section>
             <section data-transition="slide-in none-out">
                 <!-- https://github.com/git-devwarsztaty/devwarsztaty-rebase-interactive-demo -->
@@ -668,7 +689,7 @@
         <!-- Krzysiek -->
         <section>
             <section>
-                Slajd o wąsach podczas konfliktu
+               <h3>Konfliktowe <i>wąsy</i></h3> 
             </section>
             <section>
                 Ćwiczenie: rozwiąż konflikty

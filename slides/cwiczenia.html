@@ -59,18 +59,29 @@ pokaz w SourceTree, i tutaj te 3 stany
 </section>
 
 <h2>Ćwiczenie: zabawa z resetowaniem commitów i obserwacja 'co się dzieje'</h2>
-<ul>
-    <li>git reset --soft/mixed/hard HEAD~LICZBA_COMMITÓW</li>
-</ul>
-<ul style="list-style:none">
+<ol>
     <li>
-        Sklonowanie repozytorium do ćwiczenia<br/>
         <code>
             cd ~/Desktop/cwiczenia<br/>
             git clone https://github.com/material-components/material-components-android reset-demo
         </code>
     </li>
-</ul>
+    <li><b><code>git reset --hard b92e18b9ebb</code></b>
+        <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+    </li>
+    <li><b><code>git reset --soft HEAD^^</code></b>
+        <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+    </li>
+    <li><b><code>git reset --hard HEAD</code></b>
+        <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+    </li>
+    <li><b><code>git reset --hard master</code></b>
+        <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+    </li>
+    <li><b><code>git reset --hard origin/master</code></b>
+        <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+    </li>
+</ol>
 
 <!--
 ## rebase --interactive - KRZYSIEK
