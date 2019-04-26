@@ -19,6 +19,7 @@ Tomek: VGA, HDMI
 osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja itp).
 
 * Wyczyść pulpit
+* Zmienic color w konsoli na https://github.com/mavnn/mintty-colors-solarized/blob/master/.minttyrc.light dodając do pliku ~/.minntyrc
 * .gitconfig: wywalić wszystkie aliasy, zmienić edytor na notepad (mam już do tego commita).
 * prezentacja, naciskanie "s", naciskanie "ESC".
 * jest organizacja https://github.com/git-devwarsztaty
