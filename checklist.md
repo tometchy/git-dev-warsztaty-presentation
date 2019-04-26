@@ -2,6 +2,7 @@
 
 ## Przed warsztatami
 
+* Ustalić z organizatorami godziny szkolenia, czasem to jest 9-16, czasem 9-17.
 * Mail do uczestników 2 dni przed warsztatmi
   * Konfiguracja narzędzi do zainstalowania przed warsztatami (link do posta Krzyśka)
   * Podanie maila do nas, z prośbą o przesłanie nicka z GitHuba, żeby móc szybko dodać uprawnienia do repozytorium dla ćwiczenia push & pull
