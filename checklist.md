@@ -5,7 +5,7 @@
 * Mail do uczestników 2 dni przed warsztatmi
   * Konfiguracja narzędzi do zainstalowania przed warsztatami (link do posta Krzyśka)
   * Podanie maila do nas, z prośbą o przesłanie nicka z GitHuba, żeby móc szybko dodać uprawnienia do repozytorium dla ćwiczenia push & pull
-* Wydrukować ludziom wszystkie materiały (w repozytorium katalog /to-print)
+* Wydrukować ludziom wszystkie materiały (w repozytorium katalog /to-print) - może jakkaś internetowa usługa zrobi to tanio i na dobrym papierze
 * Dogadać z organizatorem przejściówki Laptop <-> rzutnik
 Krzysiek: VGA, MiniDisplayPort, przejściówka na hdmi
 Tomek: VGA, HDMI
