@@ -30,7 +30,8 @@ osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja i
 ## W trakcie warsztatów
 
 * Korzystać z ZoomIt (powiększanie, rysowanie, timer)
-* Powiedzieć, że mogą przez x czasu do nas się odzywać z pytaniami
+* Przed obiadem zebrać pozostałe brakujące nicki githubowe
+* Powiedzieć, że uczestnicy mogą przez x czasu do nas się odzywać z pytaniami
 * Zrobić zdjęcie z uczestnikami
 
 ## Po warsztatach
