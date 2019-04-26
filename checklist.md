@@ -38,3 +38,4 @@ osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja i
 * Napisać maila powtarzającego, że mogą się do nas odzywać z pytaniami
 * przenieść katalog `~/Desktop/cwiczenia` do `/Work/git-devwarsztaty-miasto/`
 * Wysłać listę rzeczy okołogitowych
+* Wysłać linka https://www.youtube.com/watch?v=mBCJCuU3p7I (Interactive Rebasing with SourceTree, Matthew Setter)
