@@ -58,6 +58,20 @@ pokaz w SourceTree, i tutaj te 3 stany
     </ol>
 </section>
 
+<h2>Ćwiczenie: zabawa z resetowaniem commitów i obserwacja 'co się dzieje'</h2>
+<ul>
+    <li>git reset --soft/mixed/hard HEAD~LICZBA_COMMITÓW</li>
+</ul>
+<ul style="list-style:none">
+    <li>
+        Sklonowanie repozytorium do ćwiczenia<br/>
+        <code>
+            cd ~/Desktop/cwiczenia<br/>
+            git clone https://github.com/material-components/material-components-android reset-demo
+        </code>
+    </li>
+</ul>
+
 <!--
 ## rebase --interactive - KRZYSIEK
 * dużo wprowadzenia, jak edytować (bo otworzy się plik w notatniku), kilka opcji, zamykamy plik
@@ -91,20 +105,6 @@ Po otworzeniu <code>gitk</code>, widzimy tag <i>already-pushed</i>, który jest 
 Zadanie:<br/>
 Wycofać zmiany z commita 83bfe65 ("EXPERIMENTAL") z tagiem "already-pushed".
 Połączyć commity c42f4e2 c1ae555 6b0c679 61d2ada w jeden z lepszym opisem.
-
-<h2>Ćwiczenie: zabawa z resetowaniem commitów i obserwacja 'co się dzieje'</h2>
-<ul>
-    <li>git reset --soft/mixed/hard HEAD~LICZBA_COMMITÓW</li>
-</ul>
-<ul style="list-style:none">
-    <li>
-        Sklonowanie repozytorium do ćwiczenia<br/>
-        <code>
-            cd ~/Desktop/cwiczenia<br/>
-            git clone https://github.com/material-components/material-components-android reset-demo
-        </code>
-    </li>
-</ul>
 
 <!--
 * pracujemy nad featurem, na branch feature_light
