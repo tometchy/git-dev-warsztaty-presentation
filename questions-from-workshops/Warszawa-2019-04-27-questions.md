@@ -32,7 +32,7 @@ Osoba nr. 11
 Pytanie: 
 
 Osoba nr. 12
-Pytanie:
+Pytanie: Dzięki za warsztaty!
 
 Osoba nr. 13
 Pytanie:
