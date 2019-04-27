@@ -1,6 +1,6 @@
 Osoba nr. 1
 Pytanie: 
-
+Jeszcze powrót do cherry-pick. tak dla upewnienia, jeœli damy tê opcjê czy przykryje nam aktualn¹ pracê w naszym branch'u, tzn czy przed t¹ komend¹ zalecane jest zrobiæ commita ze swoich rzecy
 Osoba nr. 2
 Pytanie:
 
