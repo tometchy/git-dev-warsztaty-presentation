@@ -14,7 +14,7 @@ Osoba nr. 5
 Pytanie: Jakie sa odpowiedzialnosci poszczególnych obiektów w folderze .git
 
 Osoba nr. 6
-Pytanie: 
+Pytanie: Do czego sÅ‚uÅ¼y plik .gitattributes
 
 Osoba nr. 7
 Pytanie: Moje pytanie testowe
