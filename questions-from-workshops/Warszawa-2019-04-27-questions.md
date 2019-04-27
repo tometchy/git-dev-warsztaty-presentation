@@ -26,7 +26,7 @@ Osoba nr. 9
 Pytanie:
 
 Osoba nr. 10
-Pytanie: 
+Pytanie: Brak pytañ
 
 Osoba nr. 11
 Pytanie: 
