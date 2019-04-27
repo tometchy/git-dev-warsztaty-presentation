@@ -14,7 +14,7 @@ Osoba nr. 5
 Pytanie:
 
 Osoba nr. 6
-Pytanie: 
+Pytanie: Do czego służy plik .gitattributes
 
 Osoba nr. 7
 Pytanie: 
