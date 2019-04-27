@@ -22,4 +22,6 @@ Link to presentation version seen on workshops: [_wroclaw_2018_05_19_ branch](ht
 [meetup.com/devWarsztaty/events/260725269/](https://www.meetup.com/devWarsztaty/events/260725269/)  
 Link to presentation version seen on workshops: [_warszawa_2019_04_27_ branch](https://github.com/tometchy/git-dev-warsztaty-presentation/tree/warszawa_2019_04_27)
 
-To see old presentation version, you need to clone this repo, checkout to chosen branch then open in browser slides/index.html file.
+## Old presentation version
+To see old presentation version, you need to clone this repo, checkout to chosen branch, then open in browser slides/index.html file.  
+Recommended browser is chromium (or derivative like Chrome or Brave), it works a bit slow on Firefox.
