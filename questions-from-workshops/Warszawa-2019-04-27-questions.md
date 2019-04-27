@@ -20,7 +20,7 @@ Osoba nr. 7
 Pytanie: Moje pytanie testowe
 
 Osoba nr. 8
-Pytanie:
+Pytanie: Jak pracować z kilkoma repozytoriami zdalnymi?
 
 Osoba nr 9
 Pytanie: What was the toughest problem you has when working with git? Have you ever had WTF?!
