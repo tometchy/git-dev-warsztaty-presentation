@@ -22,8 +22,9 @@ Pytanie: Moje pytanie testowe
 Osoba nr. 8
 Pytanie:
 
-Osoba nr. 9
-Pytanie:
+Osoba nr 9
+Pytanie: What was the toughest problem you has when working with git? Have you ever had WTF?!
+moments?
 
 Osoba nr. 10
 Pytanie: 
