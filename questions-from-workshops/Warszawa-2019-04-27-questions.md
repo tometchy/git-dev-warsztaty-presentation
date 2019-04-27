@@ -11,7 +11,7 @@ Osoba nr. 4
 Pytanie:
 
 Osoba nr. 5
-Pytanie:
+Pytanie: Jakie sa odpowiedzialnosci poszczególnych obiektów w folderze .git
 
 Osoba nr. 6
 Pytanie: 
