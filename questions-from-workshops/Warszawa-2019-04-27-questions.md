@@ -42,7 +42,7 @@ Osoba nr. 14
 Pytanie:
 
 Osoba nr. 15
-Pytanie:
+Pytanie: Adres do dokumentacji GIT
 
 Osoba nr. 16
 Pytanie:
