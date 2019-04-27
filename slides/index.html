@@ -574,16 +574,20 @@
                     <li class="fragment">Przenoszenie linii tekstu(hashe) w edytorze tekstu</li>
                 </ul>
                 </p>
-            </section>
-            <section>
-                <h4>Ćwiczenie <i>Poprawianie commitów</i></h4>
-                <a href="http://www.git-presentation.tk/cwiczenia">git-presentation.tk/cwiczenia</a>
+				<p class="fragment">
+					<!--<a href="/cwiczenia.html#rebase-vs-merge">git-presentation.tk/cwiczenia/#rebase-vs-merge</a>-->
+					<a href="https://github.com/git-devwarsztaty/devwarsztaty-rebase-interactive-demo">rebase-interactive-demo</a>
+				</p>
                 <aside class="notes">
                     <b>Krzysiek</b><br/>
                     tylko pokazuję o co chodzi w odpalaniu edytora<br/>
                     wspomnieć że robią to też toole UI ale jest ich wiele i różne i teraz tego nie ćwiczymy (będzie link)<br/>
                     <br/>
                 </aside>
+            </section>
+            <section>
+                <h4>Ćwiczenie <i>Poprawianie commitów</i></h4>
+                <a href="/cwiczenia.html#improving-commits">git-presentation.tk/cwiczenia/#improving-commits</a>
             </section>
             <section>
                 Pytania?
@@ -790,7 +794,7 @@
                 Często dobrą opcją jest zastosowanie komendy która od razu za nas zrebasuje commity
                 <p>
                     <code>git pull --rebase</code><br/>
-                    <code>git config --global rebase.true</code>
+                    <code>git config --global --bool pull.rebase true</code>
                 </p>
                 <aside class="notes">
                     <b>Krzysiek</b><br/>
