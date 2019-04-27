@@ -8,7 +8,7 @@ Osoba nr. 3
 Pytanie:
 
 Osoba nr. 4
-Pytanie:
+Pytanie: Git czy nie git oto jest pytanie ;)
 
 Osoba nr. 5
 Pytanie: Jakie sa odpowiedzialnosci poszczególnych obiektów w folderze .git
