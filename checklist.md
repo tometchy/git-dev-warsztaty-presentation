@@ -15,8 +15,9 @@
   * uczestnikom wszystkie materiały (w repozytorium katalog /to-print)
   * nasze materiały (jakie kroki do przeprowadzenia wszystkich Demo)
 * Dogadać z organizatorem przejściówki Laptop <-> rzutnik
-Krzysiek: VGA, MiniDisplayPort, przejściówka na HDMI
-Tomek: VGA, HDMI
+  * Krzysiek: VGA, MiniDisplayPort, przejściówka na HDMI
+  * Tomek: VGA, HDMI
+* Utworzyć kolejny plik w /questions-from-workshops
 
 ## Przygotowanie samych warsztatów
 
