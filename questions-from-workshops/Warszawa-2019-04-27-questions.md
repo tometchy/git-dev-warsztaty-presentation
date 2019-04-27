@@ -1,4 +1,4 @@
-Osoba nr. 1
+Osoba nr. 1 Czy bêdzie szkolenie git lvl expert?
 Pytanie: 
 
 Osoba nr. 2
