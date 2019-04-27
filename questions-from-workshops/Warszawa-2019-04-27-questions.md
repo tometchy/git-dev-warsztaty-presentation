@@ -27,7 +27,7 @@ Pytanie: What was the toughest problem you has when working with git? Have you e
 moments?
 
 Osoba nr. 10
-Pytanie: 
+Pytanie: Brak pytañ
 
 Osoba nr. 11
 Pytanie: Pytanie testowe  
