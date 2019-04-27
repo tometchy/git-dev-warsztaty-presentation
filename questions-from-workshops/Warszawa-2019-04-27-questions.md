@@ -1,8 +1,8 @@
-Osoba nr. 1 Czy bêdzie szkolenie git lvl expert?
+Osoba nr. 1 
 Pytanie: 
 
 Osoba nr. 2
-Pytanie:
+Pytanie:Czy bêdzie szkolenie git lvl expert?
 
 Osoba nr. 3
 Pytanie:
