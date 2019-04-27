@@ -3,6 +3,7 @@
 ## Przed warsztatami
 
 * Ustalić z organizatorami godziny szkolenia, czasem to jest 9-16, czasem 9-17.
+* Ustalić z organizatorem utworzenie kanału na slacku
 * Mail do uczestników 2 dni przed warsztatmi (jest w drugim repo)
   * Konfiguracja narzędzi do zainstalowania przed warsztatami (link do posta Krzyśka)
   * Ankieta
