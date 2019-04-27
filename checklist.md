@@ -7,7 +7,10 @@
 * Mail do uczestników 2 dni przed warsztatmi (jest w drugim repo)
   * Konfiguracja narzędzi do zainstalowania przed warsztatami (link do posta Krzyśka)
   * Ankieta
-  * Zdarzały sie sytuacje, że osoba nie dostała tego maila bo w ostatniej chwili dołączyła z waiting list, czy w takim wypadku dodamy też te informacje jako komentarz w meetupie?
+  * Zdarzały sie sytuacje, że osoba nie dostała tego maila bo w ostatniej chwili dołączyła z waiting list, w takiej sytuacji zdublować też na meetup
+  * Instrukcja jak założyć konto na slacku devwarsztatów:
+    * wspomnieć, że trzeba nowe konto założyć, a to że ma się już 'Slacka' w innym projekcie nic nie pomaga. Trzeba rejestrację na nowo
+    * zdarzało się że ktoś już miał konto i zapomniał o tym - jak wtedy się taka sytuacja objawia?
 * Wydrukować (może jakkaś internetowa usługa zrobi to tanio i na dobrym papierze)
   * uczestnikom wszystkie materiały (w repozytorium katalog /to-print)
   * nasze materiały (jakie kroki do przeprowadzenia wszystkich Demo)
