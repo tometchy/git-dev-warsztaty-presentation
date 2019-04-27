@@ -20,7 +20,7 @@ Osoba nr. 7
 Pytanie: 
 
 Osoba nr. 8
-Pytanie:
+Pytanie: Jak pracować z kilkoma repozytoriami zdalnymi?
 
 Osoba nr. 9
 Pytanie:
