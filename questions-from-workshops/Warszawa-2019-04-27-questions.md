@@ -5,7 +5,7 @@ Osoba nr. 2
 Pytanie:
 
 Osoba nr. 3
-Pytanie:
+Pytanie: Jak znaleźć projekt open source do którego początkujący może coś dodać?
 
 Osoba nr. 4
 Pytanie: Git czy nie git oto jest pytanie ;)
