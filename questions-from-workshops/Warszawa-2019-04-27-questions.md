@@ -30,7 +30,7 @@ Osoba nr. 10
 Pytanie: 
 
 Osoba nr. 11
-Pytanie: 
+Pytanie: Pytanie testowe  
 
 Osoba nr. 12
 Pytanie: Dzięki za warsztaty!
