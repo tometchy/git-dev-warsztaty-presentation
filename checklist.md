@@ -25,7 +25,7 @@ osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja i
 
 * Wyczyść pulpit
 * Zmienic color w konsoli na https://github.com/mavnn/mintty-colors-solarized/blob/master/.minttyrc.light dodając do pliku ~/.minntyrc
-* .gitconfig: wywalić wszystkie aliasy, zmienić edytor na notepad (mam już do tego commita).
+* .gitconfig: wywalić wszystkie aliasy, zmienić edytor: Krzysiek - na notepad (ma już do tego commita), Tomek - na xed.
 * prezentacja, naciskanie "s", naciskanie "ESC".
 * jest organizacja https://github.com/git-devwarsztaty
 * operować repozytoriami (demo i ćwiczenia) w katalogu `~/Desktop/cwiczenia/`
@@ -33,6 +33,7 @@ osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja i
 
 ## W trakcie warsztatów
 
+* Powiedzieć, że wydrukowane materiały są do zabrania do domu i niech służą
 * Korzystać z ZoomIt (powiększanie, rysowanie, timer)
 * Przed obiadem zebrać pozostałe brakujące nicki githubowe
 * Powiedzieć, że uczestnicy mogą przez x czasu do nas się odzywać z pytaniami
