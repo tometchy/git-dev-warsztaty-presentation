@@ -3,14 +3,14 @@
 ## Przed warsztatami
 
 * Ustalić z organizatorami godziny szkolenia, czasem to jest 9-16, czasem 9-17.
-* Ustalić z organizatorem utworzenie kanału na slacku
+* Ustalić z organizatorem utworzenie kanału na slacku - musi być utworzony już w przededniu
 * Mail do uczestników 2 dni przed warsztatmi (jest w drugim repo)
   * Konfiguracja narzędzi do zainstalowania przed warsztatami (link do posta Krzyśka)
   * Ankieta
-  * Zdarzały sie sytuacje, że osoba nie dostała tego maila bo w ostatniej chwili dołączyła z waiting list, w takiej sytuacji zdublować też na meetup
   * Instrukcja jak założyć konto na slacku devwarsztatów:
     * wspomnieć, że trzeba nowe konto założyć, a to że ma się już 'Slacka' w innym projekcie nic nie pomaga. Trzeba rejestrację na nowo
     * zdarzało się że ktoś już miał konto i zapomniał o tym - jak wtedy się taka sytuacja objawia?
+* Przekopiować maila do komentarza na meetup - zdarzały sie sytuacje, że osoba nie dostała tego maila bo w ostatniej chwili dołączyła z waiting list
 * Wydrukować (może jakkaś internetowa usługa zrobi to tanio i na dobrym papierze)
   * uczestnikom wszystkie materiały (w repozytorium katalog /to-print)
   * nasze materiały (jakie kroki do przeprowadzenia wszystkich Demo)
