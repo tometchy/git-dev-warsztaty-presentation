@@ -33,7 +33,7 @@ osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja i
 
 ## W trakcie warsztatów
 
-* Powiedzieć, że wydrukowane materiały są do zabrania do domu i niech służą
+* Powiedzieć, że wydrukowane materiały są do zabrania do domu i niech służą (wskazane jest pisać po nich)
 * Korzystać z ZoomIt (powiększanie, rysowanie, timer)
 * Przed obiadem zebrać pozostałe brakujące nicki githubowe
 * Powiedzieć, że uczestnicy mogą przez x czasu do nas się odzywać z pytaniami
