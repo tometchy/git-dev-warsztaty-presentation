@@ -33,6 +33,7 @@ osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja i
 
 ## W trakcie warsztatów
 
+* Zapytać już na początku o możliwość robienia zdjęć i zrobić kilka przez cały dzień (tak robił Mariusz Gil na warsztatach)
 * Powiedzieć, że wydrukowane materiały są do zabrania do domu i niech służą (wskazane jest pisać po nich)
 * Korzystać z ZoomIt (powiększanie, rysowanie, timer)
 * Przed obiadem zebrać pozostałe brakujące nicki githubowe
