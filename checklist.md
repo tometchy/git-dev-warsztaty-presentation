@@ -25,6 +25,7 @@ osobna chromium z osobnymi zakładkami do kilku rzeczy (ćwiczenia prezentacja i
 
 * Wyczyść pulpit
 * Zmienic color w konsoli na https://github.com/mavnn/mintty-colors-solarized/blob/master/.minttyrc.light dodając do pliku ~/.minntyrc
+* Powiększyć fonty w konsoli, Options->Text zwiększyć na 28(taki pomysł, trzeba będzie kalibrować) i save
 * .gitconfig: wywalić wszystkie aliasy, zmienić edytor: Krzysiek - na notepad (ma już do tego commita), Tomek - na xed.
 * prezentacja, naciskanie "s", naciskanie "ESC".
 * jest organizacja https://github.com/git-devwarsztaty
