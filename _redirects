@@ -1,2 +1,5 @@
+# *** Warning! Your custom domain is not using HTTPS yet ***
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
 # Redirect default Netlify subdomain to primary domain
-http://sleepy-lamarr-36e9b2.netlify.com/* http://www.git-presentation.tk/:splat 301!
+http://sleepy-lamarr-36e9b2.netlify.com/* http://www.gitwarsztaty.pl/:splat 301!
