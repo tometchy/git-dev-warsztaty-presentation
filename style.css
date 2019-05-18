@@ -1778,7 +1778,7 @@ aside .widget_search button:hover {
 	color: #43484d;
 }
 .widget_recent_comments ul li a:hover {
-	color: #ff4a5d;
+	color: #6cbfff;
 	transition: all ease-in .3s;
 	-moz-transition: all ease-in .3s;
 	-webkit-transition: all ease-in .3s;
@@ -1886,7 +1886,7 @@ aside .widget_search button:hover {
 	color: #000;
 }
 .widget_archive li a:hover {
-	color: #ff4a5d;
+	color: #6cbfff;
 	transition: all ease-in .3s;
 	-moz-transition: all ease-in .3s;
 	-webkit-transition: all ease-in .3s;
@@ -1920,7 +1920,7 @@ aside ul li a {
 	color: #000;
 }
 aside li a:hover {
-	color: #ff4a5d;
+	color: #6cbfff;
 	transition: all ease-in .3s;
 	-moz-transition: all ease-in .3s;
 	-webkit-transition: all ease-in .3s;
@@ -1956,7 +1956,7 @@ aside li a:hover {
 	float: right;
 }
 .widget_categories li a:hover {
-	color: #ff4a5d;
+	color: #6cbfff;
 	transition: all ease-in .3s;
 	-moz-transition: all ease-in .3s;
 	-webkit-transition: all ease-in .3s;
@@ -2097,13 +2097,13 @@ aside li a:hover {
 	font-weight: 600;
 }
 .widget_meta li a:hover {
-	color: #ff4a5d;
+	color: #6cbfff;
 	transition: all ease-in .3s;
 	-moz-transition: all ease-in .3s;
 	-webkit-transition: all ease-in .3s;
 }
 .widget_meta li:hover:before {
-	color: #ff4a5d;
+	color: #6cbfff;
 	transition: all ease-in .3s;
 	-moz-transition: all ease-in .3s;
 	-webkit-transition: all ease-in .3s;
@@ -2329,7 +2329,7 @@ aside li a:hover {
 	border-radius: 0;
 }
 #respond input[type=submit] {
-	background: #ff5959;
+	background: #6cbfff;
 	color: #fff;
 	border: none;
 	float: left;
@@ -2406,7 +2406,7 @@ embed, iframe, object {
 	right: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #ff4a5d;
+	background-color: #6cbfff;
 	opacity: 0.7;
 }
 #home-banner .content {
@@ -2462,7 +2462,7 @@ embed, iframe, object {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 500;
-	background-color: #ff4a5d;
+	background-color: #6cbfff;
 	letter-spacing: 0.8px;
 	text-decoration: none;
 }
@@ -2609,7 +2609,7 @@ ul.about-features li p {
 	color: #6f6f6f;
 }
 ul.about-features li:hover i {
-	color: #ff5959;
+	color: #6cbfff;
 	transition: all .6s;
 	-moz-transition: all .6s;
 	-webkit-transition: all .6s;
@@ -2634,13 +2634,13 @@ ul.about-features li:hover i {
 #home-contact-block a {
 	float: right;
 	max-width: 300px;
-	border: 1px #ff5959 solid;
+	border: 1px #6cbfff solid;
 	display: inline-block;
 	color: #fff;
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 400;
-	background: #ff5959;
+	background: #6cbfff;
 	padding: 15px 53px;
 	letter-spacing: 0.8px;
 }
@@ -2781,7 +2781,7 @@ ul.about-features li:hover i {
 }
 #our-work-block .works figcaption .caption-content a:hover {
 	text-decoration: none;
-	color: #ff4a5d;
+	color: #6cbfff;
 	transition: all 300ms ease-in-out;
 }
 #our-work-block .works figcaption .caption-content {
@@ -2813,7 +2813,7 @@ ul.about-features li:hover i {
 	margin: 10px 5px;
 }
 #our-work-block .works figure figcaption .work-more li a {
-	background: #ff4a5d;
+	background: #6cbfff;
 	border-radius: 50%;
 	font-size: 12px;
 	color: #fff;
@@ -2861,26 +2861,26 @@ ul.about-features li:hover i {
 	background-color: transparent;
 }
 #process-block .nav-tabs > li.active i {
-	color: #ff5959;
+	color: #6cbfff;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
 #process-block .nav-tabs > li.active i:after {
-	background: #ff5959;
+	background: #6cbfff;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
 #process-block .nav > li > a:hover, #process-block .nav > li > a:focus {
 	background-color: transparent;
-	color: #ff5959;
+	color: #6cbfff;
 }
 #process-block .nav > li > a:hover i {
-	color: #ff5959;
+	color: #6cbfff;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
 #process-block .nav > li > a:hover i:after {
-	background: #ff5959;
+	background: #6cbfff;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
@@ -3057,11 +3057,11 @@ ul.about-features li:hover i {
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
 	filter: Alpha(Opacity=100);
 	opacity: 1;
-	border: 2px #ff5959 solid;
+	border: 2px #6cbfff solid;
 	background: #fff;
 }
 .owl-theme .owl-controls .owl-page.active span {
-	border: 2px #ff5959 solid;
+	border: 2px #6cbfff solid;
 	background: #fff;
 }
 #latest-news-block {
@@ -3414,13 +3414,13 @@ ul.about-features li:hover i {
 .single .single-post footer.entry-meta-bar a:hover, .page .page-block footer.entry-meta-bar a:hover {
 	webkit-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
-	border: 0px #ff5959 solid;
-	background: #ff5959;
+	border: 0px #6cbfff solid;
+	background: #6cbfff;
 	text-decoration: none;
 	color: #fff;
 }
 blockquote {
-	border-left: 3px #ff5959 solid;
+	border-left: 3px #6cbfff solid;
 	padding: 0px;
 	margin: 30px;
 	margin-left: 40px;
@@ -3510,7 +3510,7 @@ blockquote p {
 	
 }
 .author-box .author-box-title a {
-	background: #ff5959;
+	background: #6cbfff;
 	color: #fff;
 	padding: 4px 10px;
 	border-radius: 6px;
@@ -3624,7 +3624,7 @@ ul.nav.nav-tabs {
 	color: #fff;
 	margin-right: 10px;
 	display: inline-block;
-	background: #ff5959;
+	background: #6cbfff;
 	padding: 1px 3px;
 	border-radius: 100%;
 }
@@ -3898,7 +3898,7 @@ to {
 	left: -.5em;
 	margin: 0;
 	border-radius: 0;
-	background-color: #ff5959;
+	background-color: #6cbfff;
 	color: #fff;
 	font-size: .857em;
 	-webkit-font-smoothing: antialiased;
@@ -4102,7 +4102,7 @@ to {
 	text-decoration: none;
 }
 .price ins .woocommerce-Price-amount {
-	color: #ff5959;
+	color: #6cbfff;
 	font-size: 24px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
@@ -4358,7 +4358,7 @@ nav.bottom-nav ul li a {
 	font-size: 20px;
 }
 #bottom-footer .social-link li a:hover {
-	color: #ff5959;
+	color: #6cbfff;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
@@ -4379,7 +4379,7 @@ nav.bottom-nav ul li a {
 	font-size: 20px;
 }
 #top-menu .social-link li a:hover {
-	color: #ff5959;
+	color: #6cbfff;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
@@ -4624,10 +4624,10 @@ ul.about-features li i {
 	display: block;
 }
 #process-block .nav-tabs > li:hover {
-	background: #ff5959;
+	background: #6cbfff;
 }
 #process-block .nav-tabs > li.active {
-	background: #ff5959;
+	background: #6cbfff;
 }
 #process-block .nav-tabs > li:hover a h5, #process-block .nav-tabs > li:hover a i {
 	color: #fff;
