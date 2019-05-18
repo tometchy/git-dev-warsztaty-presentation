@@ -422,3 +422,18 @@ ASALocalRun/
 
 # Remainings from resolvings conflicts in Source Control
 *.orig
+
+# Reveal
+*.iml
+*.iws
+*.eml
+*.swp
+out/
+.DS_Store
+.svn
+log/*.log
+tmp/**
+node_modules/
+.sass-cache
+css/reveal.min.css
+js/reveal.min.js
