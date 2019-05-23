@@ -1,6 +1,6 @@
 # Materials for git-devwarsztaty workshops
 
-Link to presentation preview (current version) - www.git-presentation.tk
+Link to presentation preview (current version) - www.gitwarsztaty.pl/prezentacja
 
 ## Previous workshops
 
