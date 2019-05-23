@@ -815,8 +815,8 @@
                     <li><code>git log</code></li>
                     <li><code>gitk</code></li>
                 </ul>
-                <p>Git log oraz gitk domyślnie pokazują historię od <i>obecnego momentu</i> - HEAD, ale możliwe jest wskazanie dowolnego
-                    momentu w historii, np. nazwy brancha, SHA commita lub odniesienia HEAD^ lub HEAD~N</p>
+                <p>Git log oraz gitk domyślnie pokazują historię od <i>obecnego momentu</i> - <code>HEAD</code>, ale możliwe jest wskazanie dowolnego
+                    momentu w historii, np. nazwy brancha, SHA commita lub odniesienia SHA^ lub SHA~N<br><small>np. HEAD^, master~5</small></p>
             </section>
             <section>
                 <h2 style="font-size:127%">Popularne przełączniki do git log / gitk</h2>
@@ -891,27 +891,13 @@
                         <br/>
                     </li>
                 </ol>
-            </section>
-            <section data-transition="slide-in none-out">
-                <h4>Sprawdź datę commita poprzedzającego developa o 50 commitów</h4>
-                <div class="fragment">
-                    <h4>Gitk</h4>
-                    <code>gitk develop~50 -1</code>
-                    <h4 style="margin-top:20px">Konsola</h4>
-                    <code>git log develop~50 -1</code>
-                </div>
-                <p class="fragment">Odpowiedź:<br/>Thu Sep 27 12:04:17 2018 +0300
-                    <br/>
-                    <small><br/><strong>Pytania?</strong></small>
-                </p>
-                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
                 <aside class="notes">
                     <b>Tomek</b><br/>
-                    30 sekund do podpowiedzie kolejne 30 sekund do odpowiedzi<br/>
-                    pytać kto ma odpowiedź i wybrac osobę do powiedzenia odpowiedzi<br/>
+                    50 sekund do podpowiedzi, kolejne 20 sekund do odpowiedzi<br/><br/>
+                    pytać kto ma odpowiedź i wybrac osobę do powiedzenia<br/>
                 </aside>
             </section>
-            <section data-transition="none-in none-out">
+            <section data-transition="slide-in none-out">
                 <h4>Sprawdź tytuł ostatniego commita autora z nazwiskiem <i>Gulya</i></h4>
                 <div class="fragment">
                     <h4>Gitk</h4>
@@ -933,17 +919,37 @@
                 <div class="fragment">
                     <h4>Gitk</h4>
                     <small>
-                        <code>gitk --all --grep="Update Stub" -1</code>
+                        <code>gitk --all --grep="Update Stub" -i -1</code>
                     </small>
                     <h4 style="margin-top:20px">Konsola</h4>
                     <small>
-                        <code>git log --all --grep="Update Stub" -1</code>
+                        <code>git log --all --grep="Update Stub" -i -1</code>
                     </small>
                 </div>
                 <p class="fragment">Odpowiedź:<br/>
                     <code>terrakok</code>
                     <br/>
                     <small><br/><strong>Pytania?</strong></small>
+                </p>
+                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
+            </section>
+            <section data-transition="none-in none-out">
+                <h4>Sprawdź kto podniósł wersję produktu z 9 na 10
+                    <small>(text w kodzie: <code>versionCode 10</code>)</small>
+                </h4>
+                <div class="fragment">
+                    <h4>Gitk</h4>
+                    <small>Da się wyklikać :)</small>
+                    <h4>Konsola</h4>
+                    <small>
+                        <code>git log -S "versionCode 10" -i -p</code>
+                    </small>
+                </div>
+                <p class="fragment">Odpowiedź:<br/>
+                    <i>terrakok</i>, w commicie<br/>
+                    <small><code>6d289b10a07bb13d75a7b9767b9b0ae52b0421ce</code></small>
+                    <br/>
+                    <small><strong>Pytania?</strong></small>
                 </p>
                 <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
             </section>
@@ -1013,7 +1019,7 @@
                     </small>
                     <h4 style="margin-top:20px">Konsola</h4>
                     <small>
-                        <code>git log --after="2018-12-02 00:01" --before="2018-12-02 23:59"</code>
+                        <code>git log --after="2018-12-02 00:01" --before="2018-12-02 23:59" --oneline</code>
                     </small>
                 </div>
                 <div class="fragment">Odpowiedź:<br/>
@@ -1035,7 +1041,7 @@
                 </div>
                 <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
             </section>
-            <section data-transition="none-in none-out">
+            <section data-transition="none-in slide-out">
                 <strong>Sprawdź jakie commity są lokalnie na branchu develop, a których nie ma na branchu develop na serwerze</strong>
                 <div class="fragment">
                     <h4>Gitk</h4>
@@ -1049,63 +1055,6 @@
                 </div>
                 <p class="fragment">Odpowiedź:<br/>
                     <small>Nie ma takich</small>
-                    <br/>
-                    <small><strong>Pytania?</strong></small>
-                </p>
-                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
-            </section>
-            <section data-transition="none-in none-out">
-                <strong>Sprawdź jakie commity są na serwerze na branchu develop, a których nie ma na branchu develop lokalnie</strong>
-                <div class="fragment">
-                    <h4>Gitk</h4>
-                    <small>
-                        <code>gitk origin/develop --not develop</code><br/>lub<br/><code>gitk develop..origin/develop</code>
-                    </small>
-                    <h4 style="margin-top:20px">Konsola</h4>
-                    <small>
-                        <code>git log origin/develop --not develop</code><br/>lub<br/><code>git log develop..origin/develop</code>
-                    </small>
-                </div>
-                <div class="fragment" style="font-size:85%; margin-top:20px">Odpowiedź:<br/>To zależy od momentu zrobienia <code>git
-                    fetch</code> i
-                    pracowitości autorów :)<br/><br/>
-                    <small><strong>Pytania?</strong></small>
-                </div>
-                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
-            </section>
-            <section data-transition="none-in none-out">
-                <strong>Sprawdź jakie commity na branchu develop są tylko lokalnie lub tylko na serwerze</strong>
-                <div class="fragment">
-                    <h4>Gitk</h4>
-                    <small>
-                        <code>gitk develop...origin/develop</code>
-                    </small>
-                    <h4 style="margin-top:20px">Konsola</h4>
-                    <small>
-                        <code>git log develop...origin/develop --decorate</code>
-                    </small>
-                </div>
-                <p class="fragment" style="font-size:85%">Odpowiedź:<br/>To zależy od momentu zrobienia <code>git fetch</code> i
-                    pracowitości autorów :)<br/><br/>
-                    <small><strong>Pytania?</strong></small>
-                </p>
-                <iframe src="stopwatch.html" frameborder="0" scrolling="no" width="391" height="110"></iframe>
-            </section>
-            <section data-transition="none-in slide-out">
-                <h4>Sprawdź kto podniósł wersję produktu z 9 na 10
-                    <small>(text: <code>versionCode 10</code>)</small>
-                </h4>
-                <div class="fragment">
-                    <h4>Gitk</h4>
-                    <small>Da się wyklikać :)</small>
-                    <h4>Konsola</h4>
-                    <small>
-                        <code>git log -S "versionCode 10" -p</code>
-                    </small>
-                </div>
-                <p class="fragment">Odpowiedź:<br/>
-                    <i>terrakok</i>, w commicie<br/>
-                    <small><code>6d289b10a07bb13d75a7b9767b9b0ae52b0421ce</code></small>
                     <br/>
                     <small><strong>Pytania?</strong></small>
                 </p>
