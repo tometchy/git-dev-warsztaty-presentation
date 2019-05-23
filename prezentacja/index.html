@@ -507,6 +507,7 @@
                         </ul>
                     </li>
                     <li class="fragment">commit --amend</li>
+                    <li class="fragment">rebase</li>
                     <li class="fragment">rebase --interactive</li>
                 </ul>
             </section>
@@ -660,25 +661,10 @@
             <!-- TOMEK -->
             <section>
                 <h3>Rebase to świetne narzędzie...</h3>
-                <p>
-                    Rebase to świetne narzędzie, poprawianie czytelności historii bardzo ułatatwia przeglądanie repozytorium.
-                </p>
                 <p class="fragment">
-                    Ale trzeba być ostrożnym. Czasami łatwiej przerwać rebasowanie i jednak zrobić zwykłego merge.
-                    <small>(Jeżeli flow projektu na to pozwala)</small>
-                    <br/>
-                    <a href="https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1">
-                        <small>
-                            <i>link do fajnego artykułu tłumaczącego trudności które można napotkać</i>
-                        </small>
-                    </a>
-                    <a href="https://jimmybogard.com/trunk-based-development-or-pull-requests-why-not-both/">
-                        <small>
-                            <i>Trunk-Based Development or Pull Requests - Why Not Both?</i>
-                        </small>
-                    </a>
+                    ... ale w niektórych sytuacjach trzeba uważać.<br>Czasami łatwiej przerwać rebasowanie i jeżeli flow projektu na to pozwala, jednak zrobić zwykłego merge.<br><small>(głównie przy <i>starych</i>, mocno <i>rozjechanych</i> branchach)</small>
                 <ul>
-                    <li class="fragment">rebase zakłamauje historię (z dobrą intencją, ale jednak)</li>
+                    <li class="fragment">rebase zakłamauje historię</li>
                     <li class="fragment">rebase może wywołać konflikty których by nie było przy mergu</li>
                     <ul>
                         <li class="fragment">a w związku z tym, może wprowadzić błąd na produkcję</li>
