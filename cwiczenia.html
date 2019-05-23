@@ -58,7 +58,7 @@ pokaz w SourceTree, i tutaj te 3 stany
     </ol>
 </section>
 
-<h2 id="reset-revert-commit-ammend">Ćwiczenie: reset, revert, commit ammend</h2>
+<h2 id="reset-revert-commit-ammend">Ćwiczenie wspólnie z demo: reset, revert, commit ammend</h2>
 <ol>
     <li>
         <code>
@@ -81,6 +81,20 @@ pokaz w SourceTree, i tutaj te 3 stany
     </li>
     <li><b><code>git reset --hard origin/master</code></b>
         <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+    </li>
+    <li><code>git reset --soft HEAD^</code>
+        <br/><code>git status<br/><b>git checkout .</b><br/>git status<br><b>git reset</b><br/>git status<br><b>git checkout .</b><br>git status</code>
+    </li>
+    <li><code>git reset --soft HEAD^</code>
+        <br/><code>git status<br/><b>git reset --hard</b><br>git status</code>
+    </li>
+    <li><code>touch new-file.txt</code>
+        <br/><code>git status<br/><b>git checkout new-file.txt</b><br>git status<br><b>git clean new-file.txt -df</b><br>git status</code>
+    </li>
+    <li><code>touch new-file.txt</code>
+        <br/><code>git status<br/>git add .<br>git commit -m"Add new file"<br>git status<br>touch new-file.txt<br/>git add .<br/><b>git commit --amend</b></code>
+    </li>
+    <li><b><code>git revert HEAD</code></b>
     </li>
 </ol>
 
