@@ -546,32 +546,37 @@
             </section>
             <section data-transition="slide-in none-out">
                 <!-- https://github.com/git-warsztaty/devwarsztaty-rebase-interactive-demo -->
-                <h3>Demo rebase --interactive</h3>
+                <h3>rebase --interactive</h3>
                 <img src="img/rebase-interactive-example-in-notepad.jpg">
                 <aside class="notes">
                     <b>Krzysiek</b><br/>
+                    Demo, uczestnicy tylko patrzą i słuchają.
                     <br/>
                 </aside>
             </section>
             <section data-transition="none-in slide-out">
-                <h3>Demo rebase --interactive</h3>
+                <h3>rebase --interactive</h3>
+                <h4>Komendy do ćwiczenia</h4>
                 <p>
                 <ul>
-                    <li>git rebase -i HEAD~6</li>
-                    <li class="fragment">git rebase --interactive HEAD~6</li>
-                    <li class="fragment">git add .</li>
-                    <li class="fragment">git commit --amend</li>
-                    <li class="fragment">git rebase --continue</li>
-                    <li class="fragment">Przenoszenie linii tekstu(hashe) w edytorze tekstu</li>
+                    <li class="fragment" style="list-style-type: none"><small>Przenosimy linie tekstu w edytorze, zmieniamy <i>komendy</i> z początku linii</small></li>
+                    <li class="fragment" style="list-style-type: none"><small>Zawsze wnikliwie czytamy podpowiedzi gita, piszemy <code>git status</code> gdy <i>znikną</i></small></li>
+                    <li class="fragment"><code>git rebase -i HEAD~6</code></li>
+                    <li class="fragment"><code>git rebase --interactive HEAD~6</code></li>
+                    <li class="fragment"><code>git add . <span style="margin:0 15px 0 15px">&#8226;</span> git commit --amend</code></li>
+                    <li class="fragment"><code>git commit --amend</code></li>
+                    <li class="fragment"><code>git rebase --continue</code></li>
+                    <li class="fragment"><code>git rebase --abort</code></li>
+                    <li class="fragment"><code>git reset --hard origin/master</code></li>
                 </ul>
                 </p>
                 <p class="fragment">
                     <!--<a href="/cwiczenia.html#rebase-vs-merge">git-presentation.tk/cwiczenia/#rebase-vs-merge</a>-->
-                    <a href="https://github.com/git-warsztaty/devwarsztaty-rebase-interactive-demo">ćwiczenia/#rebase-interactive-demo</a>
+                    <a href="/cwiczenia/#rebase-interactive">cwiczenia/#rebase-interactive-demo</a>
                 </p>
                 <aside class="notes">
                     <b>Krzysiek</b><br/>
-                    tylko pokazuję o co chodzi w odpalaniu edytora<br/>
+                    Ćwiczenie wykonywane przez uczestników<br/>
                     wspomnieć że robią to też toole UI ale jest ich wiele i różne i teraz tego nie ćwiczymy (będzie link)<br/>
                     <br/>
                 </aside>
