@@ -148,15 +148,20 @@ Przeglądamy wyniki naszej pracy i rzucają nam się w oczy różne drobne nidos
 -->
 
 <h2 id="rebase-vs-merge">Ćwiczenie rebase vs merge</h2>
-Komendy potrzebne do ćwiczenia (niekoniecznie w tej kolejności)
+<h5>Opis</h5>
+<b>Dołącz pracę z brancha feature-branch na brancha master.</b><br>
+Najpierw wykonaj to robiąc merga i sprawdź w programie <code>gitk</code>, czy efekt jest taki sam jak na wzorcowym obrazku.<br>
+Następnie zresetuj branche do stanów początkowych i przenieś pracę z brancha feature-branch za pomocą rebase i sprawdź w programie <code>gitk</code>, czy efekt jest taki sam jak na wzorcowym obrazku.
+<h5>Komendy potrzebne do ćwiczenia (niekoniecznie w tej kolejności)</h5>
 <ul>
     <li>git checkout</li>
     <li>git merge</li>
     <li>git rebase</li>
+    <li>gitk</li>
 </ul>
+<h5>Przygotowanie do ćwiczenia</h5>
 <ul style="list-style:none">
     <li>
-        Sklonowanie repozytorium do ćwiczenia<br/>
         <code>
             cd ~/Desktop/cwiczenia<br/>
             git clone https://github.com/git-warsztaty/rebase-vs-merge-training rebase-and-merge-demo<br/>
@@ -165,37 +170,30 @@ Komendy potrzebne do ćwiczenia (niekoniecznie w tej kolejności)
             git checkout master
         </code>
     </li>
-    <p>
-        Merge output:
-    </p>
-    <p>
-        <img src="img/dod-merge-output.jpg">
-    </p>
-    <details>
-        <summary>podejrzyj rozwiązanie</summary>
-        <code>
-            git checkout master<br/>
-            git merge feature-branch
-        </code>
-    </details>
-    <details>
-        <summary>przywrócenie brancha master do początkowej sytuacji</summary>
-        <code>
-            git reset --hard origin/master<br/>
-        </code>
-    </details>
-    <details>
-        <summary>przywrócenie brancha feature-branch do początkowej sytuacji</summary>
-        <code>
-            git reset --hard origin/feature-branch<br/>
-        </code>
-    </details>
-    <p>
-        Rebase output:
-    </p>
-    <p>
+</ul>
+<h5>Cel wykonania merge (sprawdź programem <code>gitk</code>, czy Ci się udało)</h5>
+<img src="img/dod-merge-output.jpg">
+<details>
+    <summary>podejrzyj rozwiązanie</summary>
+    <code>
+        git checkout master<br/>
+        git merge feature-branch
+    </code>
+</details>
+<details>
+    <summary>przywrócenie brancha master do początkowej sytuacji</summary>
+    <code>
+        git reset --hard origin/master<br/>
+    </code>
+</details>
+<details>
+    <summary>przywrócenie brancha feature-branch do początkowej sytuacji</summary>
+    <code>
+        git reset --hard origin/feature-branch<br/>
+    </code>
+</details>
+<h5>Cel wykonania rebase (sprawdź programem <code>gitk</code>, czy Ci się udało)</h5>
         <img src="img/dod-rebase-output.jpg">
-    </p>
     <details>
         <summary>podejrzyj rozwiązanie</summary>
         <code>
@@ -205,7 +203,6 @@ Komendy potrzebne do ćwiczenia (niekoniecznie w tej kolejności)
             "git reset --hard feature-branch" albo "git merge feature-branch"
         </code>
     </details>
-</ul>
 
 <h2 id="resolve-conflicts">Ćwiczenie: rozwiązywanie konfliktów</h2>
 <ul>
