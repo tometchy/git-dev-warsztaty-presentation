@@ -28,12 +28,12 @@ pokaz w SourceTree, i tutaj te 3 stany
         <li>git commit</li>
     </ul>
     <ol>
-        <li>Utwórz na pulpicie katalogi <code>cwiczenia/flow-demo</code><br/>
+        <li>Utwórz na pulpicie katalogi <code>cwiczenia/flow-demo</code><br>
             <code>
-                cd ~/Desktop<br/>
-                mkdir cwiczenia<br/>
-                cd cwiczenia<br/>
-                mkdir flow-demo<br/>
+                cd ~/Desktop<br>
+                mkdir cwiczenia<br>
+                cd cwiczenia<br>
+                mkdir flow-demo<br>
                 cd flow-demo
             </code>
         </li>
@@ -46,7 +46,7 @@ pokaz w SourceTree, i tutaj te 3 stany
         <li>Dodaj do pliku kolejną linijkę "jest git"</li>
         <li>Stwórz nowy plik cars.json i wpisz "toyota"</li>
         <li>Sprawdź status repozytorium (<code>git status</code>)</li>
-        <li>Dodaj plik cars.json do repozytorium<br/>
+        <li>Dodaj plik cars.json do repozytorium<br>
             (<code>git add cars.json, git commit</code>)
         </li>
         <li>Sprawdź status repozytorium (<code>git status</code>)</li>
@@ -62,37 +62,37 @@ pokaz w SourceTree, i tutaj te 3 stany
 <ol>
     <li>
         <code>
-            cd ~/Desktop/cwiczenia<br/>
-            git clone https://github.com/material-components/material-components-android reset-demo<br/>
+            cd ~/Desktop/cwiczenia<br>
+            git clone https://github.com/material-components/material-components-android reset-demo<br>
             cd reset-demo
         </code>
     </li>
     <li><b><code>git reset --hard b92e18b9ebb</code></b>
-        <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+        <br><code>git status<br>git diff<br>git diff --staged</code>
     </li>
     <li><b><code>git reset --soft HEAD^^</code></b>
-        <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+        <br><code>git status<br>git diff<br>git diff --staged</code>
     </li>
     <li><b><code>git reset --hard HEAD</code></b>
-        <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+        <br><code>git status<br>git diff<br>git diff --staged</code>
     </li>
     <li><b><code>git reset --hard master</code></b>
-        <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+        <br><code>git status<br>git diff<br>git diff --staged</code>
     </li>
     <li><b><code>git reset --hard origin/master</code></b>
-        <br/><code>git status<br/>git diff<br/>git diff --staged</code>
+        <br><code>git status<br>git diff<br>git diff --staged</code>
     </li>
     <li><code>git reset --soft HEAD^</code>
-        <br/><code>git status<br/><b>git checkout .</b><br/>git status<br><b>git reset</b><br/>git status<br><b>git checkout .</b><br>git status</code>
+        <br><code>git status<br><b>git checkout .</b><br>git status<br><b>git reset</b><br>git status<br><b>git checkout .</b><br>git status</code>
     </li>
     <li><code>git reset --soft HEAD^</code>
-        <br/><code>git status<br/><b>git reset --hard</b><br>git status</code>
+        <br><code>git status<br><b>git reset --hard</b><br>git status</code>
     </li>
     <li><code>touch new-file.txt</code>
-        <br/><code>git status<br/><b>git checkout new-file.txt</b><br>git status<br><b>git clean new-file.txt -df</b><br>git status</code>
+        <br><code>git status<br><b>git checkout new-file.txt</b><br>git status<br><b>git clean new-file.txt -df</b><br>git status</code>
     </li>
     <li><code>touch new-file.txt</code>
-        <br/><code>git status<br/>git add .<br>git commit -m"Add new file"<br>git status<br>touch new-file.txt<br/>git add .<br/><b>git commit --amend</b></code>
+        <br><code>git status<br>git add .<br>git commit -m"Add new file"<br>git status<br>touch new-file.txt<br>git add .<br><b>git commit --amend</b></code>
     </li>
     <li><b><code>git revert HEAD</code></b>
     </li>
@@ -118,8 +118,8 @@ Przeglądamy wyniki naszej pracy i rzucają nam się w oczy różne drobne nidos
 </ul>
 <h5>Przygotowanie do ćwiczenia</h5>
 <code>
-    cd ~/Desktop/cwiczenia<br/>
-    git clone https://github.com/git-warsztaty/devwarsztaty-rebase-interactive-demo rebase-interactive-demo<br/>
+    cd ~/Desktop/cwiczenia<br>
+    git clone https://github.com/git-warsztaty/devwarsztaty-rebase-interactive-demo rebase-interactive-demo<br>
     cd rebase-interactive-demo
 </code>
 <h5>Zbiór komend potrzebnych/przydatnych w ćwiczeniu</h5>
@@ -163,10 +163,10 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
 <ul style="list-style:none">
     <li>
         <code>
-            cd ~/Desktop/cwiczenia<br/>
-            git clone https://github.com/git-warsztaty/rebase-vs-merge-training rebase-and-merge-demo<br/>
-            cd rebase-and-merge-demo<br/>
-            git checkout feature-branch (tylko żeby ten branch się pojawił lokalnie)<br/>
+            cd ~/Desktop/cwiczenia<br>
+            git clone https://github.com/git-warsztaty/rebase-vs-merge-training rebase-and-merge-demo<br>
+            cd rebase-and-merge-demo<br>
+            git checkout feature-branch (tylko żeby ten branch się pojawił lokalnie)<br>
             git checkout master
         </code>
     </li>
@@ -176,7 +176,7 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
 <details>
     <summary>Podejrzyj rozwiązanie</summary>
     <code>
-        git checkout master<br/>
+        git checkout master<br>
         git merge feature-branch
     </code>
 </details>
@@ -185,7 +185,7 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
     <p>
         <code>
             git checkout master<br>
-            git reset --hard origin/master<br/>
+            git reset --hard origin/master<br>
         </code>
     </p>
 </details>
@@ -194,7 +194,7 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
     <p>
         <code>
             git checkout feature-branch<br>
-            git reset --hard origin/feature-branch<br/>
+            git reset --hard origin/feature-branch<br>
         </code>
     </p>
 </details>
@@ -203,9 +203,9 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
     <details>
         <summary>Podejrzyj rozwiązanie</summary>
         <code>
-            git checkout feature-branch<br/>
-            git rebase master<br/>
-            git checkout master<br/>
+            git checkout feature-branch<br>
+            git rebase master<br>
+            git checkout master<br>
             "git reset --hard feature-branch" albo "git merge feature-branch"
         </code>
     </details>
@@ -230,10 +230,10 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
 <h5>Przygotowanie do ćwiczenia</h5>
 <ul style="list-style:none">
     <li>
-        Sklonowanie repozytorium do ćwiczenia<br/>
+        Sklonowanie repozytorium do ćwiczenia<br>
         <code>
-            cd ~/Desktop/cwiczenia<br/>
-            git clone https://github.com/git-warsztaty/conflict-line-training conflicts-demo<br/>
+            cd ~/Desktop/cwiczenia<br>
+            git clone https://github.com/git-warsztaty/conflict-line-training conflicts-demo<br>
             cd conflicts-demo
         </code>
     </li>
@@ -246,7 +246,7 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
     <summary>Podejrzyj rozwiązanie</summary>
     <p>
         <code>
-            git checkout master<br/>
+            git checkout master<br>
             git merge feature-branch<br>
             git mergetool<br>
             <i>Klikanie w kdiff3 albo wybieranie za pomocą skrótów CTRL+1/CTRL+2/CTRL+3 CTRL+PgDn CTRL+PgUp.</i><br>
@@ -260,7 +260,7 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
     <p>
         <code>
             git checkout master<br>
-            git reset --hard origin/master<br/>
+            git reset --hard origin/master<br>
         </code>
     </p>
 </details>
@@ -269,7 +269,7 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
     <p>
         <code>
             git checkout tomek-path<br>
-            git reset --hard origin/tomek-path<br/>
+            git reset --hard origin/tomek-path<br>
         </code>
     </p>
 </details>
@@ -278,13 +278,13 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
 <details>
     <summary>Podejrzyj rozwiązanie</summary>
     <code>
-        git checkout tomek-path<br/>
-        git rebase master<br/>
+        git checkout tomek-path<br>
+        git rebase master<br>
         git mergetool<br>
         <i>Klikanie w kdiff3 albo wybieranie za pomocą skrótów CTRL+1/CTRL+2/CTRL+3 CTRL+PgDn CTRL+PgUp.</i><br>
         <i>Po zakończonej pracy CTRL+S i zamknięcie programu kdiff3.</i><br>
         git rebase --continue<br>
-        git checkout master<br/>
+        git checkout master<br>
         "git reset --hard tomek-path" albo "git merge tomek-path"
     </code>
 </details>
@@ -299,11 +299,11 @@ Komendy potrzebne do ćwiczenia
 </ul>
 <ul style="list-style:none">
     <li>
-        Sklonowanie repozytorium do ćwiczenia<br/>
+        Sklonowanie repozytorium do ćwiczenia<br>
         <code>
-            cd ~/Desktop/cwiczenia<br/>
-            git clone https://github.com/git-warsztaty/names-collector names-collector<br/>
-            cd names-collector<br/>
+            cd ~/Desktop/cwiczenia<br>
+            git clone https://github.com/git-warsztaty/names-collector names-collector<br>
+            cd names-collector<br>
         </code>
         Czekamy na wszystkich aż sklonują
         <details>
@@ -316,21 +316,21 @@ Komendy potrzebne do ćwiczenia
 <h2>Przygotowanie do ćwiczeń z przeglądaniem historii</h2>
 <ol>
     <li>
-        Przejdź do katalogu ćwiczeń na pulpicie:<br/>
+        Przejdź do katalogu ćwiczeń na pulpicie:<br>
         <code>cd ~/Desktop/cwiczenia</code>
     </li>
     <li>Sklonuj przykładowe repozytorium (z projektem open source), do katalogu
-        <code>log-demo</code>:<br/>
+        <code>log-demo</code>:<br>
         <small><code><b>git clone https://gitlab.com/terrakok/gitlab-client log-demo</b></code></small>
     </li>
     <li>
         Przejdź do katalogu repo: <code>cd log-demo</code>
     </li>
     <li>
-        Zresetuj repozytorium do wersji: 7ad14ecda2f97a3ff7c3cca44cc7605484b578b5<br/>
-        <code>git reset --hard 7ad14</code><br/>
+        Zresetuj repozytorium do wersji: 7ad14ecda2f97a3ff7c3cca44cc7605484b578b5<br>
+        <code>git reset --hard 7ad14</code><br>
         <small><em>Żeby każdy miał tę samą wersję do ćwiczeń</em></small>
-        <br/>
+        <br>
     </li>
 </ol>
 
@@ -342,8 +342,8 @@ Komendy potrzebne do ćwiczenia
     <li>Kliknij <i>fork</i></li>
     <li>
         <code>
-            cd ~/Desktop/cwiczenia<br/>
-            git clone https://github.com/TWOJ_NICK/git-dev-warsztaty-presentation pull-requests-demo<br/>
+            cd ~/Desktop/cwiczenia<br>
+            git clone https://github.com/TWOJ_NICK/git-dev-warsztaty-presentation pull-requests-demo<br>
             cd pull-requests-demo
         </code>
     </li>
