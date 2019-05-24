@@ -174,28 +174,34 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
 <h5>Cel wykonania merge (sprawdź programem <code>gitk</code>, czy Ci się udało)</h5>
 <img src="img/dod-merge-output.jpg">
 <details>
-    <summary>podejrzyj rozwiązanie</summary>
+    <summary>Podejrzyj rozwiązanie</summary>
     <code>
         git checkout master<br/>
         git merge feature-branch
     </code>
 </details>
 <details>
-    <summary>przywrócenie brancha master do początkowej sytuacji</summary>
-    <code>
-        git reset --hard origin/master<br/>
-    </code>
+    <summary>Przywrócenie brancha master do początkowej sytuacji</summary>
+    <p>
+        <code>
+            git checkout master<br>
+            git reset --hard origin/master<br/>
+        </code>
+    </p>
 </details>
 <details>
-    <summary>przywrócenie brancha feature-branch do początkowej sytuacji</summary>
-    <code>
-        git reset --hard origin/feature-branch<br/>
-    </code>
+    <summary>Przywrócenie brancha feature-branch do początkowej sytuacji</summary>
+    <p>
+        <code>
+            git checkout feature-branch<br>
+            git reset --hard origin/feature-branch<br/>
+        </code>
+    </p>
 </details>
 <h5>Cel wykonania rebase (sprawdź programem <code>gitk</code>, czy Ci się udało)</h5>
         <img src="img/dod-rebase-output.jpg">
     <details>
-        <summary>podejrzyj rozwiązanie</summary>
+        <summary>Podejrzyj rozwiązanie</summary>
         <code>
             git checkout feature-branch<br/>
             git rebase master<br/>
@@ -205,13 +211,23 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
     </details>
 
 <h2 id="resolve-conflicts">Ćwiczenie: rozwiązywanie konfliktów</h2>
+<h5>Opis</h5>
+Dołącz pracę z brancha tomek-path na brancha master. W trakcie dołączania napotkasz konflikt do rozwiązania.<br>
+<b>Rozwiąż konflikt tak, żeby plik program.txt wyglądał jak na wzorcowym obrazku.</b><br>
+Najpierw wykonaj to robiąc merga, oprócz pliku program.txt sprawdź również w programie <code>gitk</code>, czy historia commitów jest taka sama jak na wzorcowym obrazku.<br>
+Następnie zresetuj branche do stanów początkowych i przenieś pracę z brancha tomek-path za pomocą rebase i oprócz pliku program.txt sprawdź w programie <code>gitk</code>, czy historia commitów jest taka sama jak na wzorcowym obrazku.
+<h5>Komendy potrzebne do ćwiczenia (niekoniecznie w tej kolejności)</h5>
 <ul>
-    <li>git checkout tomek-path</li>
-    <li>git rebase master</li>
-	<li>(git rebase --abort)</li>
-    <li>git mergetool</li>
-    <li>git rebase --continue</li>
+    <li><code>git checkout tomek-path</code></li>
+    <li><code>git rebase master</code></li>
+	<li><code>(git rebase --abort)</code></li>
+    <li><code>git merge</code></li>
+    <li><code>(git merge --abort)</code></li>
+    <li><code>git mergetool</code></li>
+    <li><code>git rebase --continue</code></li>
+    <li><code>git commit</code></li>
 </ul>
+<h5>Przygotowanie do ćwiczenia</h5>
 <ul style="list-style:none">
     <li>
         Sklonowanie repozytorium do ćwiczenia<br/>
@@ -222,7 +238,56 @@ Następnie zresetuj branche do stanów początkowych i przenieś pracę z branch
         </code>
     </li>
 </ul>
-<code></code>
+<h5>Cel - wynikowy plik <code>program.txt</code></h5>
+<img src="img/dod-conflicts-result-file.jpg">
+<h5>Cel - historia commitów w przypadku merge (sprawdź programem <code>gitk</code>, czy Ci się udało)</h5>
+<img src="img/dod-conflicts-merge.jpg">
+<details>
+    <summary>Podejrzyj rozwiązanie</summary>
+    <p>
+        <code>
+            git checkout master<br/>
+            git merge feature-branch<br>
+            git mergetool<br>
+            <i>Klikanie w kdiff3 albo wybieranie za pomocą skrótów CTRL+1/CTRL+2/CTRL+3 CTRL+PgDn CTRL+PgUp.</i><br>
+            <i>Po zakończonej pracy CTRL+S i zamknięcie programu kdiff3.</i><br>
+            git commit
+        </code>
+    </p>
+</details>
+<details>
+    <summary>Przywrócenie brancha master do początkowej sytuacji</summary>
+    <p>
+        <code>
+            git checkout master<br>
+            git reset --hard origin/master<br/>
+        </code>
+    </p>
+</details>
+<details>
+    <summary>Przywrócenie brancha tomek-path do początkowej sytuacji</summary>
+    <p>
+        <code>
+            git checkout tomek-path<br>
+            git reset --hard origin/tomek-path<br/>
+        </code>
+    </p>
+</details>
+<h5>Cel - historia commitów w przypadku rebase (sprawdź programem <code>gitk</code>, czy Ci się udało)</h5>
+<img src="img/dod-conflicts-rebase.jpg">
+<details>
+    <summary>Podejrzyj rozwiązanie</summary>
+    <code>
+        git checkout tomek-path<br/>
+        git rebase master<br/>
+        git mergetool<br>
+        <i>Klikanie w kdiff3 albo wybieranie za pomocą skrótów CTRL+1/CTRL+2/CTRL+3 CTRL+PgDn CTRL+PgUp.</i><br>
+        <i>Po zakończonej pracy CTRL+S i zamknięcie programu kdiff3.</i><br>
+        git rebase --continue<br>
+        git checkout master<br/>
+        "git reset --hard tomek-path" albo "git merge tomek-path"
+    </code>
+</details>
 
 <h2 id="push-at-the-same-time">Ćwiczenie: pushowanie do wspólnego repozytorium</h2>
 Komendy potrzebne do ćwiczenia
