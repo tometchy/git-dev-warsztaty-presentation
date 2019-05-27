@@ -369,12 +369,30 @@ Komendy potrzebne do ćwiczenia
     <li>
         <code>
             cd ~/Desktop/cwiczenia<br>
-            git clone https://github.com/TWOJ_NICK/git-dev-warsztaty-presentation pull-requests-demo<br>
+            git clone https://github.com/TWOJ_GITHUB_NICK/git-dev-warsztaty-presentation pull-requests-demo<br>
             cd pull-requests-demo
         </code>
     </li>
-    <li>Dopisz swoje pytanie w pliku questions-from-workshops/MIASTO-DATA-questions.md przy swoim numerku</li>
-    <li>Stwórz commit ze swoim pytaniem</li>
+    <li>Wejdź do katalogu <i>_pytania-z-warsztatow</i> (zwróc uwagę, że nazwa katalogu zaczyna się od znaku podkreślenia (tak zwana podłoga)</li>
+    <li>Skopiuj plik <i>_template.md</i> i nowy plik nazwij <i>TWOJ_GITHUB_NICK.md</i> (stosuj same małe litery)</li>
+    <li>Uzupełnij plik <i>TWOJ_GITHUB_NICK.md</i> zgodnie z szablonem:<br>
+        ---<br>
+        day: "2019-06-05"<br>
+        author: twoj-nick-github<br>
+        about-author: "Uczestnik warsztatów"<br>
+        ---<br>
+<br>
+        Treść pytania.
+    </li>
+    <li>W sekcji <i>day</i> wpisz dzisiejszą datę w formacie "YYYY-MM-DD".<br>
+        W sekcji <i>author</i> wpisz swój nick z githuba (stosuj małe litery).<br>
+        W sekcji <i>about-author</i> możesz napisać kilka słów o sobie (nie więcej niż treść pytania).<br>
+        W ostatniej sekcji wpisz swoje pytanie, odnośnie gita, warsztatów, githuba, gitlaba - cokolwiek Ci przychodzi na myśl i myślisz, że prowadzący będą znali odpowiedź :)<br>
+        <small>
+        Nie zmieniaj formatu tekstu, pierwsza i piąta linia musi składać się z trzech myślników, szósta linia musi pozostać pusta, nazwy elementów muszą pozostać takie jakie są, a wartości oddzielone są od nazw dwukropkiem.
+        </small>
+    </li>
+    <li>Stwórz commit z plikiem który dodałeś</li>
     <li>Push (do swojego repozytorium)</li>
     <li>Otwórz w przeglądarcę stronę projektu do którego kontrybuujesz <a
             href="https://github.com/tometchy/git-dev-warsztaty-presentation" target=”_blank”>github.com/tometchy/git-dev-warsztaty-presentation</a>
