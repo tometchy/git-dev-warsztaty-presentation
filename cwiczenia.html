@@ -137,6 +137,32 @@ Przeglądamy wyniki naszej pracy i rzucają nam się w oczy różne drobne nidos
 
 <h5>Spodziewany efekt podejrzany programem <code>gitk</code></h5>
 <img src="img/dod-rebase-interactive.jpg">
+<details>
+    <summary>Podejrzyj rozwiązanie</summary>
+    <p>
+        <code>
+            git rebase -i HEAD~6<br>
+            <i>W edytorze ustawiamy linijki jak następuje</i><br>
+            <span style="margin-left:10px">pick c803c5d Add .gitignore</span><br>
+            <span style="margin-left:10px">r 4a7dc6f New cars</span><br>
+            <span style="margin-left:10px">d e0b2bbc Add wrong car</span><br>
+            <span style="margin-left:10px">e 68d5a89 Add Mazdaaa car</span><br>
+            <span style="margin-left:10px">pick 1306640 Add Skoda</span><br>
+            <span style="margin-left:10px">f feca8bb Correct typo</span><br>
+            <i>Zapisujemy plik i zamykamy edytor</i><br>
+            <i>W edytorze tekstowym który otworzy się, z commitem "New cars", poprawiamy tytuł, zapisujemy plik i zamykamy edytor</i><br>
+            <i>Otwieramy plik cars.txt i poprawiamy tekst "Mazdaaa", zapisujemy</i><br>
+            git status<br>
+            git add .<br>
+            git status<br>
+            git commit --amend<br>
+            <i>W edytorze tekstowym który otworzy się, z commitem "Add Mazdaaa car", poprawiamy tytuł, zapisujemy plik i zamykamy edytor</i><br>
+            git status<br>
+            git rebase --continue<br>
+            gitk
+        </code>
+    </p>
+</details>
 
 <!--
 * pracujemy nad featurem, na branch feature_light
