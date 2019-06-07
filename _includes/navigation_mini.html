@@ -1,0 +1,20 @@
+<div class="nav-mini" role="menu">
+    <div class="nav-container" onclick="changeMiniNav(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</div>
+
+<script>
+    function changeMiniNav(nav) {
+        // nav.classList.toggle("change");
+        var allHamburgers = document.getElementsByClassName("nav-container");
+        Array.prototype.forEach.call(allHamburgers, function(hamburger) {
+            hamburger.classList.toggle("change");
+        });
+        
+        document.getElementById("nav-mini-list").classList.toggle("nav-mini-hidden");
+    }
+</script>
+

@@ -1,0 +1,24 @@
+Small text in post
+https://meta.stackexchange.com/questions/53800/markdown-extension-for-really-small-tiny-text
+
+Tables and other markdown tips supported by jekyll
+https://sourceforge.net/p/jekyllc/bugs/markdown_syntax#md_ex_escapes
+
+Breaking line
+<br />
+or end a line with two or more spaces, then type return. 
+
+Liquid language
+https://jekyllrb.com/docs/liquid/filters/
+https://shopify.github.io/liquid/filters
+
+Full bleed images (#full)
+Super neat trick courtesy of @JoelDrapper
+Usage (In Ghost edtior):
+![img](/some/image.jpg#full)
+  
+Image captions
+Usage (In Ghost editor):
+![img](/some/image.jpg)
+<small>Your image caption</small>
+
