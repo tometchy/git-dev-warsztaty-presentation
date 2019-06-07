@@ -1,0 +1,195 @@
+<script src="{{ site.baseurl }}assets/js/sizzle.js"></script>
+<script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var postPage = false;
+    if(document.querySelector(".author-card") != null) postPage = true;
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var sideNavigation = document.querySelector('.side-navigation');
+    var postNavigation = document.querySelector('.post-navigation');
+    var postNavigationJquery = $(".post-navigation");
+    if(postPage)
+        var authorCardPosition = document.querySelector(".author-card").offsetTop;
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var lastDocumentWidth = $(document).width();
+    var ticking = false;
+
+    // Table of contents
+    var lastCurrentArticleSection;
+    
+    if(postPage) {
+        var headings = Sizzle('h2,h3');
+        var tableOfContentList = document.getElementById('table-of-content');
+        var articleSectionPositionOffset = 100;
+
+        var articleSections = [];
+
+
+        articleSections.push({
+            position: getElementPosition(document.querySelector(".post-full-content")),
+            element_in_table_id: "introduction-in-table"
+        });
+
+        var tableOfContentsElements = {};
+        tableOfContentsElements['introduction-in-table'] = document.querySelector("#introduction-in-table");
+
+        for (var i = 0; i < headings.length; i++) {
+            if(headings[i].id != null && headings[i].id !== ''){
+                var liElement = document.createElement("LI");
+                if(headings[i].tagName === 'H2' || headings[i].localName === 'h2' || headings[i].nodeName === 'H2') {
+                    liElement.innerHTML = "<a href='#" + headings[i].id + "'><b>" + headings[i].innerHTML + "</b></a>";
+                    liElement.setAttribute('class', 'h2_nav');
+                }
+                else {
+                    liElement.innerHTML = "<a href='#" + headings[i].id + "'>" + headings[i].innerHTML + "</a>";
+                    liElement.setAttribute('class', 'h3_nav');
+                }
+                
+                var elementId = headings[i].innerText + "-in-table";
+                liElement.setAttribute('id', elementId);
+                tableOfContentList.appendChild(liElement);
+
+                articleSections.push({
+                    position: getElementPosition(headings[i]),
+                    element_in_table_id: elementId
+                });
+
+                tableOfContentsElements[elementId] = liElement;
+            }
+        }
+
+        var tableOfContentHeight = document.querySelector("#table-of-content-outer").clientHeight;
+        
+        var sideBarStateEnum = {
+            UNDEFINED: 'undefined',
+            ABOVE_ARTICLE: 'above_article',
+            IN_ARTICLE: 'IN_ARTICLE',
+            BELOW_ARTICLE: 'BELOW_ARTICLE'
+        };
+
+        var sideBarState = sideBarStateEnum.UNDEFINED;
+    }
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        lastDocumentWidth = $(document).width();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        // Floating header
+        var offset = 55;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= offset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        if(progressBar != null){
+            progressBar.setAttribute('max', progressMax);
+            progressBar.setAttribute('value', lastScrollY);
+        }
+
+        ticking = false;
+
+        // Side navigations
+        if(lastDocumentWidth > 1270 && postPage) {
+            var sideTrigger = sideNavigation.getBoundingClientRect().top + window.scrollY;
+            var sideTriggerOffset = -59;
+            var beginningOfArticle = sideTrigger + sideTriggerOffset;
+            var sideMarginOffset = 180;
+            var endOfArticle = (authorCardPosition - tableOfContentHeight - sideMarginOffset);
+
+            if(lastScrollY < beginningOfArticle) {
+                if(sideBarState !== sideBarStateEnum.ABOVE_ARTICLE){
+                    postNavigation.classList.remove('fixed');
+                    postNavigationJquery.css({'margin-top':'0px'});
+                    sideBarState = sideBarStateEnum.ABOVE_ARTICLE;
+                }
+            }
+            else if (lastScrollY >= beginningOfArticle && lastScrollY <= endOfArticle) {
+                if(sideBarState !== sideBarStateEnum.IN_ARTICLE) {
+                    postNavigation.classList.add('fixed');
+                    postNavigationJquery.css({'margin-top':'0px'});
+                    sideBarState = sideBarStateEnum.IN_ARTICLE;
+                }
+            }
+            else {
+                if(sideBarState !== sideBarStateEnum.BELOW_ARTICLE) {
+                    postNavigation.classList.remove('fixed');
+                    var sideMargin = (endOfArticle - beginningOfArticle) + 'px';
+                    postNavigationJquery.css({'margin-top': sideMargin});
+                    sideBarState = sideBarStateEnum.BELOW_ARTICLE;
+                }
+            }
+
+            var currentArticleSection = getCurrentArticleSection();
+
+            if(lastCurrentArticleSection !== currentArticleSection) {
+                lastCurrentArticleSection = currentArticleSection;
+                deactivateAllTableElements();
+
+                if(currentArticleSection != null) {
+                    var elementToActivate = tableOfContentsElements[currentArticleSection.element_in_table_id];
+                    elementToActivate.classList.add('nav_active');
+                }
+            }
+        }
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+    
+    function getElementPosition(element) {
+        var bodyRect = document.body.getBoundingClientRect();
+        var elemRect = element.getBoundingClientRect();
+        return elemRect.top - bodyRect.top;
+    }
+    
+    function deactivateAllTableElements(){
+        for(var elementKey in tableOfContentsElements) {
+            tableOfContentsElements[elementKey].classList.remove('nav_active');
+        }
+    }
+
+    function getCurrentArticleSection(){
+        var currentArticleSection = null;
+        articleSections.forEach(function(section){
+            if(lastScrollY > section.position - articleSectionPositionOffset )
+                currentArticleSection = section;
+        });
+        return currentArticleSection;
+    }
+});
+</script>

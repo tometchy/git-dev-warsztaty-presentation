@@ -1,0 +1,59 @@
+{% for post in paginator.posts %}
+    {% assign isQuickTipPost=false %}
+    {% for tag in post.tags %}
+        {% assign tagUpcase = tag | upcase %}
+        {% if tagUpcase == "QUICK-TIPS" %}
+            {% assign isQuickTipPost=true %}
+        {% endif %}
+    {% endfor %}
+
+    {% if page.class == 'home-template' and isQuickTipPost %}
+        {% continue %}
+    {% endif %}
+
+    <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
+        {% if post.cover %}
+            <a class="post-card-image-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
+                <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ post.cover }})"></div>
+            </a>
+        {% endif %}
+        <div class="post-card-content">
+            <div class="post-card-content-link">
+                <header class="post-card-header">
+                    {% if post.tags.size > 0 %}
+                        {% for tag in post.tags %}
+                            {% if forloop.index == post.tags.size %}
+                                <span class="post-card-tags"><a href="{{ site.baseurl }}tag/{{ tag }}" class="post-card-tags-link">{{ tag | replace:"-"," " | capitalize }}</a></span>
+                            {% else %}
+                               <span class="post-card-tags"><a href="{{ site.baseurl }}tag/{{ tag }}" class="post-card-tags-link">{{ tag | replace:"-"," " | capitalize }}</a></span>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                    <h2 class="post-card-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" style="color: inherit; cursor: pointer; text-decoration: none">{{ post.title }}</a></h2>
+                </header>
+                <section class="post-card-excerpt">
+                    <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" style="color: inherit; cursor: pointer; text-decoration: none">
+                        {% if post.excerpt %}
+                        <p>{{ post.excerpt | strip_html | truncatewords: 33, "" }}</p>
+                        {% else %}
+                        <p>{{ post.content | strip_html | truncatewords: 33, "" }}</p>
+                        {% endif %}
+                    </a>
+                </section>
+            </div>
+            <footer class="post-card-meta">
+                {% for author in site.data.authors %}
+                    {% if author[1].username == post.author %}
+                        {% if author[1].picture %}
+                        <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}" />
+                        {% endif %}
+                        <span class="post-card-author">
+                            <a href="{{ site.baseurl }}author/{{ post.author }}/">{{ author[1].name }}</a>
+                        </span>
+                    {% endif %}
+                {% endfor %}
+            </footer>
+        </div>
+    </article>
+{% endfor %}

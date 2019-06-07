@@ -1,0 +1,16 @@
+<nav class="regular-header">
+    <div class="floating-header-logo">
+        <a href="{{ site.url }}{{ site.baseurl }}blog">
+            {% if site.logo_dark %}
+            <img src="{{ site.baseurl }}{{ site.logo_dark }}" alt="{{ site.title }} icon"/>
+            {% endif %}
+            <span>{{ site.title }}</span>
+        </a>
+    </div>
+    <div class="floating-header-title" style="padding-right: 0">
+        {% if page.navigation %}
+        {% include navigation_expanded.html %}
+        {% include navigation_mini.html %}
+        {% endif %}
+    </div>
+</nav>

@@ -1,0 +1,82 @@
+{% assign previousPage=page.previous %}
+
+{% if previousPage %}
+    {% assign afterCurrentPost=false %}
+
+    {% for post in site.posts %}
+        {% if afterCurrentPost == false %}
+            {% if previousPage == post %}
+                {% assign afterCurrentPost=true %}
+            {% endif %}
+        {% endif %}
+
+        {% if afterCurrentPost %}
+            {% assign isQuickTipPost=false %}
+            {% for tag in post.tags %}
+                {% assign tagUpcase = tag | upcase %}
+                {% if tagUpcase == "QUICK-TIPS" %}
+                    {% assign isQuickTipPost=true %}
+                {% endif %}
+            {% endfor %}
+
+            {% if isQuickTipPost %}
+                {% assign previousPage=page.next %}
+            {% else %}
+                {% assign previousPage=post %}
+                {% break %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if previousPage %}
+    {% if previousPage.tags contains 'quick-tips' %}
+        {% assign previousPage=nil %}
+    {% endif %}
+{% endif %}
+
+{% if previousPage %}
+    <article class="post-card {{ previousPage.class }}{% unless previousPage.cover %} no-image{% endunless %}">
+        {% if previousPage.cover %}
+            <a class="post-card-image-link" href="{{ site.baseurl }}{{ previousPage.url | remove_first: '/' }}">
+                <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ previousPage.cover }})"></div>
+            </a>
+        {% endif %}
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="{{ site.baseurl }}{{ previousPage.url | remove_first: '/' }}">
+                <header class="post-card-header">
+                    {% if previousPage.tags.size > 0 %}
+                        {% for tag in previousPage.tags %}
+                            {% if forloop.index == previousPage.tags.size %}
+                                <span class="post-card-tags">{{ tag | capitalize }}</span>
+                            {% else %}
+                               <span class="post-card-tags">{{ tag | capitalize }}</span>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                    <h2 class="post-card-title">{{ previousPage.title }}</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    {% if post.excerpt %}
+                        <p>{{ post.excerpt | strip_html | truncatewords: 33, "" }}</p>
+                    {% else %}
+                        <p>{{ post.content | strip_html | truncatewords: 33, "" }}</p>
+                    {% endif %}
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                {% for author in site.data.authors %}
+                    {% if author[1].username == previousPage.author %}
+                        {% if author[1].picture %}
+                        <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}" />
+                        {% endif %}
+                        <span class="post-card-author">
+                            <a href="{{ site.baseurl }}author/{{ previousPage.author }}/">{{ author[1].name }}</a>
+                        </span>
+                    {% endif %}
+                {% endfor %}
+            </footer>
+        </div>
+    </article>
+{% endif %}

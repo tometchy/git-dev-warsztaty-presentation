@@ -1,0 +1,103 @@
+---
+layout: default
+current: author
+title: Author Page
+cover: false
+class: 'author-template'
+navigation: True
+label: Author
+logo: 'assets/images/favicon.ico'
+---
+<!-- < default}} -->
+<!-- The tag above means - insert everything in this file into the {body} of the default.hbs template -->
+
+<!-- #author  -->
+<!-- Everything inside the #author tags pulls data from the author -->
+{% for author in site.data.authors %}
+{% if author[1].username == page.author %}
+<header class="site-header outer {% if author[1].cover or page.cover %}"
+        style="background-image: url({{ site.baseurl }}{% if author[1].cover %}{{ author[1].cover }}{% elsif page.cover %}{{ page.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        {% include site-nav-transparent.html %}
+        <div class="site-header-content" style="margin-top:50px; text-shadow: 1px 1px 2px black">
+            {% if author[1].picture %}
+            <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ page.author }}"/>
+            {% endif %}
+            <h1 class="site-title">{{ author[1].name }}</h1>
+            {% if author[1].bio %}
+            <h2 class="author-bio">{{ author[1].bio }}</h2>
+            {% endif %}
+            <div class="author-meta">
+                <div class="author-stats">
+                    {% if paginator.total_posts == 0 %}No posts{% elsif paginator.total_posts == 1 %}1 post{% else %}{{
+                    paginator.total_posts }} posts{% endif %}
+                    <span class="inline-on-pc" style="margin: 0 12px; opacity: 0.5;">&bull;</span>
+                    <span class="inline-on-mobile"><br/></span>
+                    <a class="social-link-author social-link-rss" href="/author/{{ author[1].name | downcase }}/feed.xml" target="_blank">
+                        <small>Obserwuj nowe posty {{ author[1].name }} z RSS feed</small>{% include rss.html %}
+                    </a>
+                    <div style="margin-top: 14px; margin-bottom: 21px">
+                        {% if author[1].url %}
+                        <a class="social-link-author social-link-wb" href="{{ author[1].url_full }}" target="_blank" rel="noopener">
+                            {{ author[1].url }}{% include website.html %}
+                        </a>
+                        {% else %}
+                        <a class="social-link-author social-link-wb" href="/author/{{ page.author }}" target="_blank" rel="noopener">
+                            {{ site.production_url }}/author/{{ author[1].name }}{% include website.html %}
+                        </a>
+                        {% endif %}
+                        {% if author[1].gitlab-username %}
+                        <span class="inline-on-pc" style="margin: 0 12px; opacity: 0.5;">&bull;</span>
+                        <span class="inline-on-mobile"><br/></span>
+                        <a class="social-link-author social-link-wb" href="https://www.gitlab.com/{{ author[1].gitlab-username }}"
+                           target="_blank" rel="noopener">
+                            gitlab.com/{{ author[1].gitlab-username}}{% include gitlab.html %}
+                        </a>
+                        {% endif %}
+                        {% if author[1].github-username %}
+                        <span class="inline-on-pc" style="margin: 0 12px; opacity: 0.5;">&bull;</span>
+                        <span class="inline-on-mobile"><br/></span>
+                        <a class="social-link-author social-link-wb" href="https://www.github.com/{{ author[1].github-username }}"
+                           target="_blank" rel="noopener">
+                            github.com/{{ author[1].github-username}}{% include github.html %}
+                        </a>
+                        {% endif %}
+                        {% if author[1].linkedin-name %}
+                        <br/>
+                        <a class="social-link-author social-link-wb" href="{{ author[1].linkedin-full-url }}" target="_blank"
+                           rel="noopener">
+                            {{ author[1].linkedin-name }}{% include linkedin.html %}
+                        </a>
+                        {% endif %}
+                        {% if author[1].linux-mint-community-user-url %}
+                        <span class="inline-on-pc" style="margin: 0 12px; opacity: 0.5;">&bull;</span>
+                        <span class="inline-on-mobile"><br/></span>
+                        <a class="social-link-author social-link-wb" href="{{ author[1].linux-mint-community-user-url }}" target="_blank"
+                           rel="noopener">
+                            Linux Mint Community{% include linuxmint.html %}
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endif %}
+{% endfor %}
+<!-- /author -->
+
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {% include post-card.html %}
+        </div>
+
+    </div>
+</main>
+
+<!-- floating header which appears on-scroll, included from includes/floating-header.hbs -->
+{% include floating-header.html %}
