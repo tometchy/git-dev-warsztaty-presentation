@@ -11,30 +11,31 @@ subclass: 'post tag-credential-manager'
 author: tomasz-skraskowski
 ---
 
-Typing username and password every push is burdensome and irritating... libsecret git credential storage to the rescue.
+Nikt nie lubi wprowadzać login i hasło przy każdym pushu... na szczęście mamy libsecret jako git credential storage.
 
-When you want to use external git repository hosting service, like _Gitlab_ or _GitHub_ you need to authorise yourself.
-Git has built in credential helper mechanism, which allows choosing the way you have credentials persisted.
-It gives you two options out of the box, but you're not limited to them - you can install third party solution.
+Gdy chcesz skorzystać z serwisów hostujących repozytoria gita takich jak _GitLab lub _GitHub_ musisz się zautoryzować.
+Git posiada wbudowany mechanizmy zwany credential helper, który umożliwiają wybranie sposobu przechowywania hasła.
+Od razu po instalacji mamy do dyspozycji 2 opcje, ale nie jesteśmy do nich ograniczeni - można doinstalowywać rozwiązania firm trzecich.
 
-### _Cache_ credential helper (out of the box)
-Cache is quite secure because keeps data only in memory. It's fine for security, but every time you open new session, you need to type credentials again.
-Memory is purged after 900 seconds (15 min) by default, but it can be changed with optional `timeout` parameter.
+### _Cache_ credential helper (wbudowany)
+Cache jest uznawany za bezpieczny, ponieważ trzyma dane jedynie w pamięci RAM. Jest to akceptowalne dla bezpieczeństwa, 
+jednak wygoda użytkowania pozostawia wiele do życzenia - za każdy razem gdy zaczynasz nową sesję (np. po restarcie komputera), musisz wprowadzić credentiale ponownie.
+Pamięć jest czyszczona domyślnie po 900 sekundach (15minut), ale można wartość tę zmienić za pomocą parametru `timeout`.
 
-If for some reason you don't want to install anything, at least use cache :)
+Jeżeli z jakiegoś powodu nie chcesz nic instalować, użyj przynajmniech cache, zawsze to jakieś odciążenie :)
 {% highlight bash%}
 git config --global credential.helper 'cache --timeout=300'
 {% endhighlight %}
-Official description - [git-scm.com/docs/git-credential-cache](https://git-scm.com/docs/git-credential-cache)
+Oficjalna dokumentacja - [git-scm.com/docs/git-credential-cache](https://git-scm.com/docs/git-credential-cache)
 
-### _Store_ credential helper (out of the box)
+### _Store_ credential helper (wbudowany)
 Store keeps your username and password in... plain text file! It's totally insecure and use it only if you don't care about your account (for example during some kind of workshops).
 {% highlight bash%}
 git config --global credential.helper store
 {% endhighlight %}
 Official description - [git-scm.com/docs/git-credential-store](https://git-scm.com/docs/git-credential-store)
 
-### _Git Credential Manager for Mac and Linux_ (by Microsoft)
+### _Git Credential Manager for Mac and Linux_ (autorstwa Microsoft)
 Windows users are familiar with convenient _Git Credential Manager for Windows_ which is integrated with OS way of storing credentials. It can be installed with official wizard or during git installation on Windows (there is checkbox to select).
 And recently Microsoft announced release of... _Git Credential Manager for Mac and Linux_. I was positively surprised, till I tried to use it on my _Linux Mint 19 Tara_. Installation was successful (but not without complications) and attempt to use it ended up with error:
 {% highlight bash%}
@@ -46,7 +47,7 @@ I have opened the issue and till now I haven't received any response (more than 
 
 Official description - [github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux)
 
-## _Libsecret_ git credential storage (by GNOME)
+## _Libsecret_ git credential storage (autorstwa GNOME)
 The best way to store Git credentials on Linux used to be _GNOME Keyring_ (libgnome-keyring), but as it is specific to GNOME, [it is deprecated since January 2014](https://mail.gnome.org/archives/commits-list/2014-January/msg01585.html).
 For Git versions 2.11+ you should use credential helper based on _libsecret_.
 Installation and configuration takes only 4 bash commands :)

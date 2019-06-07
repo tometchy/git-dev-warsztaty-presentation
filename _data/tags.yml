@@ -2,3 +2,4 @@ credential-manager:
   name: credential-manager
   description: Posty związane z git credential manager
   site-description: Posty związane z git credential manager - GitWarsztaty Blog
+  cover: assets/images/tag-background.jpg
