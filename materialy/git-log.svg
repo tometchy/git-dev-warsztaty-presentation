@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="git-log.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient6852"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6850" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6830"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6828" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6822"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6820" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6758"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6756" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5302"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5300" />
+    </linearGradient>
+    <clipPath
+       id="clipPath277"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path275"
+         d="M 0,0 H 595.2 V 841.8 H 0 Z" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6822"
+       id="linearGradient6832"
+       x1="144.36974"
+       y1="-42.877544"
+       x2="182.24284"
+       y2="-42.877544"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3871919,0,0,1.6411957,-125.03376,82.592589)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6852"
+       id="linearGradient6832-3"
+       x1="144.36974"
+       y1="-42.877544"
+       x2="182.24284"
+       y2="-42.877544"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.387192,0,0,1.6411957,-90.504267,81.954812)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6852"
+       id="linearGradient6832-3-5"
+       x1="144.36974"
+       y1="-42.877544"
+       x2="182.24284"
+       y2="-42.877544"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.387192,0,0,1.6411957,-90.315604,81.866941)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6852"
+       id="linearGradient6832-3-5-1"
+       x1="144.36974"
+       y1="-42.877544"
+       x2="182.24284"
+       y2="-42.877544"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.387192,0,0,1.6411957,126.92635,61.614412)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6852"
+       id="linearGradient6832-7"
+       x1="144.36974"
+       y1="-42.877544"
+       x2="182.24284"
+       y2="-42.877544"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3871919,0,0,1.6411957,92.208193,62.340062)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6852"
+       id="linearGradient6832-3-2"
+       x1="144.36974"
+       y1="-42.877544"
+       x2="182.24284"
+       y2="-42.877544"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.387192,0,0,1.6411957,126.73769,61.702282)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="66.386734"
+     inkscape:cy="572.67938"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g269"
+     showgrid="false"
+     inkscape:window-width="1879"
+     inkscape:window-height="1172"
+     inkscape:window-x="1407"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(0.35277777,0,0,-0.35277777,-22.331251,273.63944)"
+       inkscape:label="Popularne przełączniki do git log"
+       id="g269">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 211.52998,-35.520304 v 20.029433"
+         id="path7338"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 233.97609,4.9624017 211.52998,-15.490871"
+         id="path7340"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 188.97608,4.5606187 22.5539,-20.0514897"
+         id="path7342"
+         inkscape:connector-curvature="0" />
+      <g
+         id="g271"
+         transform="matrix(1.195496,0,0,1.0887658,-12.37334,-78.674337)">
+        <g
+           clip-path="url(#clipPath277)"
+           id="g273">
+          <g
+             id="g279">
+            <text
+               id="text283"
+               style="font-variant:normal;font-weight:normal;font-size:25px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="scale(1,-1)"
+               x="69.415688"
+               y="-754.45648">
+              <tspan
+                 id="tspan281"
+                 sodipodi:role="line"
+                 y="-754.45648"
+                 x="69.415688 84.415688 99.690689 115.56569 131.36569 138.26569 153.56569 163.8407 179.64069 195.11569 203.0907 218.8907 229.1657 242.2657 257.64069 264.74069 280.04068 293.74069 306.8407 322.64069 329.54068 344.11569 351.09067 359.06567 374.86569 390.14069">Popularne przełączniki do</tspan>
+            </text>
+          </g>
+          <g
+             id="g285">
+            <text
+               id="text289"
+               style="font-variant:normal;font-weight:bold;font-size:25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="scale(1,-1)"
+               x="400"
+               y="-754.58844">
+              <tspan
+                 id="tspan287"
+                 sodipodi:role="line"
+                 y="-754.58844"
+                 x="400 415 430.07501 445.07501 460.14999 475.14999 490.22501">git log</tspan>
+            </text>
+          </g>
+          <g
+             id="g291">
+            <text
+               id="text295"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,726.1)">
+              <tspan
+                 id="tspan293"
+                 sodipodi:role="line"
+                 x="0"
+                 y="9.2900391"></tspan>
+              <tspan
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 139.07249 145.3725 151.6725 158.067 164.367 170.66701 176.967 183.267 189.567 195.867 202.26151 208.56149 214.8615 221.1615 227.556 233.9505 240.2505 246.55051 252.85049 259.15051 265.4505"
+                 id="tspan7389">git log --after=&quot;2014-02-12T16:36:00-07:00&quot;</tspan>
+            </text>
+          </g>
+          <g
+             id="g297">
+            <text
+               id="text301"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,713.8)">
+              <tspan
+                 id="tspan299"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.467 151.767 158.067 164.367 170.66701 176.967 183.267 189.567 195.867 202.26151 208.56149 214.8615 221.1615 227.556 233.856 240.2505 246.55051 252.85049 259.15051 265.4505 271.75049">git log --before=&quot;2014-02-12T16:36:00-07:00&quot;</tspan>
+            </text>
+          </g>
+          <g
+             id="g303">
+            <text
+               id="text307"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,701.6)">
+              <tspan
+                 id="tspan305"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.778 120.1725 126.4725 132.77251 139.07249 145.3725 151.767 158.067 164.367 170.76151 177.06149 183.3615 189.6615 196.056 202.356 208.65601 214.95599 221.256 227.556 233.856 240.15601 246.645 252.94501 259.245 265.54501 271.93951 278.2395 284.53949 290.83951 297.1395 303.43951 309.7395 316.134 322.5285 328.82849 335.12851 341.4285 347.72849 354.0285 360.32849 366.62851 372.9285 379.323 385.7175 392.01749 398.3175 404.61749 410.91751">git log --since=&quot;2 weeks 3 days 2 hours 30 minutes 59 seconds ago&quot;</tspan>
+            </text>
+          </g>
+          <g
+             id="g309">
+            <text
+               id="text313"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,690.7)">
+              <tspan
+                 id="tspan311"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.189 113.679 119.079 124.479 129.96899 135.369 140.769 146.16901 151.569 156.96899 162.369 167.769 173.16901 178.569 184.05901 189.549 194.94901 200.349 205.74899 211.149">Wyszukiwanie commitów na podstawie czasu</tspan>
+            </text>
+          </g>
+          <g
+             id="g315">
+            <text
+               id="text319"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,666.6)">
+              <tspan
+                 id="tspan317"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889">git log -4</tspan>
+            </text>
+          </g>
+          <g
+             id="g321">
+            <text
+               id="text325"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,655.7)">
+              <tspan
+                 id="tspan323"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54.09 59.580002 64.980003 70.379997 75.779999 81.18 86.580002 92.07 97.470001 102.87 108.27 113.67 119.07 124.47 129.87 135.27 140.75999 146.16 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001 200.25 205.64999 211.05 216.45 221.85001 227.25 232.839 238.239 243.63901 249.039 254.439 259.83899 265.23901 270.63901 276.039 281.439 286.83899">Określanie liczby commitów (w tym przypadku 4 commity)</tspan>
+            </text>
+          </g>
+          <g
+             id="g327">
+            <text
+               id="text331"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,631.6)">
+              <tspan
+                 id="tspan329"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835">git log --oneline</tspan>
+            </text>
+          </g>
+          <g
+             id="g333">
+            <text
+               id="text337"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,620.7)">
+              <tspan
+                 id="tspan335"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.800003 70.290001 75.779999 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 118.98 124.569 129.96899 135.369 140.769 146.16901 151.569 157.05901 162.459 167.85899 173.259 178.659 184.05901 189.459 194.85899 200.349 205.74899 211.149 216.549 222.039 227.439 232.839 238.239 243.63901 249.039 254.439">Skompresowanie commitów jedna linijka per commit</tspan>
+            </text>
+          </g>
+          <g
+             id="g339">
+            <text
+               id="text343"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,596.6)">
+              <tspan
+                 id="tspan341"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389">git log --graph</tspan>
+            </text>
+          </g>
+          <g
+             id="g345">
+            <text
+               id="text349"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,585.7)">
+              <tspan
+                 id="tspan347"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.189 113.679 119.079 124.569 129.96899 135.369 140.769 146.16901 151.569 156.96899">Wizualizacja commitów w grafie</tspan>
+            </text>
+          </g>
+          <g
+             id="g351">
+            <text
+               id="text355"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,561.6)">
+              <tspan
+                 id="tspan353"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835">git log --decorate</tspan>
+            </text>
+          </g>
+          <g
+             id="g357">
+            <text
+               id="text361"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,550.7)">
+              <tspan
+                 id="tspan359"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.580002 64.980003 70.379997 75.779999 81.18 86.580002 91.980003 97.379997 102.87 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.47 157.05901 162.459 167.85899 173.259 178.659 184.05901 189.459 194.85899 200.259 205.659 211.05901 216.459 221.85899 227.259 232.74899 238.149 243.549 248.94901 254.349 259.93799 265.33801 270.73801 276.138 281.53799">Dodanie do commitów adnotacji o branchach/tagach itp.</tspan>
+            </text>
+          </g>
+          <g
+             id="g363" />
+          <g
+             id="g365">
+            <text
+               id="text369"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,526.6)">
+              <tspan
+                 id="tspan367"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997">git log --stat</tspan>
+            </text>
+          </g>
+          <g
+             id="g371">
+            <text
+               id="text375"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,515.7)">
+              <tspan
+                 id="tspan373"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.189 113.589 118.989 124.389 129.789 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.16901 178.569 183.96899 189.369 194.769 200.259 205.659 211.05901 216.459 221.85899 227.259 232.74899 238.149 243.549 248.94901 254.349 259.93799 265.33801 270.73801 276.138 281.53799 286.93799 292.33801">Wylistowanie zmodyfikowanych/dodanych/usuniętych plików</tspan>
+            </text>
+          </g>
+          <g
+             id="g377" />
+          <g
+             id="g379">
+            <text
+               id="text383"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,491.6)">
+              <tspan
+                 id="tspan381"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001">git log -</tspan>
+            </text>
+          </g>
+          <g
+             id="g385">
+            <text
+               id="text389"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,127.9,491.6)">
+              <tspan
+                 id="tspan387"
+                 y="0"
+                 x="0">-</tspan>
+            </text>
+          </g>
+          <g
+             id="g391">
+            <text
+               id="text395"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,134.3,491.6)">
+              <tspan
+                 id="tspan393"
+                 y="0"
+                 x="0">p</tspan>
+            </text>
+          </g>
+          <g
+             transform="translate(134.3,491.6)"
+             id="g397">
+            <path
+               inkscape:connector-curvature="0"
+               id="path399"
+               style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               d="M 0,-1 H 6.3" />
+          </g>
+          <g
+             id="g401">
+            <text
+               id="text405"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,140.6,491.6)">
+              <tspan
+                 id="tspan403"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.9">atch</tspan>
+            </text>
+          </g>
+          <g
+             id="g407">
+            <text
+               id="text411"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,480.7)">
+              <tspan
+                 id="tspan409"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.18 86.580002 92.07 97.470001 102.87 108.27 113.67 119.07 124.56 129.96001 135.36 140.75999 146.16 151.56 156.96001 162.36 167.75999 173.16 178.56 183.96001 189.36 194.94901 200.349 205.74899 211.149 216.549 221.94901 227.439 232.839 238.239 243.63901 249.039 254.52901 259.92899 265.32901 270.729 276.129 281.52899 286.92899 292.41901 297.819 303.21899 308.61899 314.01901 319.41901 324.819 330.21899 335.70901 341.10901 346.509 351.909">Ukazanie diffów – zmian wprowdzonych przez dany commit (skrót: -p)</tspan>
+            </text>
+          </g>
+          <g
+             id="g413">
+            <text
+               id="text417"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,456.6)">
+              <tspan
+                 id="tspan415"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 139.07249 145.467 151.767 158.067 164.367 170.66701 177.06149 183.3615 189.6615 195.9615 202.26151 208.56149 214.8615 221.1615">git log origin/develop --not develop</tspan>
+            </text>
+          </g>
+          <g
+             id="g419">
+            <text
+               id="text423"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,445.7)">
+              <tspan
+                 id="tspan421"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 92.079002 97.478996 102.879 108.279 113.679 119.079 124.479 129.879 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.16901 178.659 184.05901 189.459 194.85899 200.259 205.659 211.05901 216.459 222.048 227.448 232.84801 238.248 243.64799 249.048 254.448 259.93799 265.33801 270.73801 276.138 281.53799 286.93799 292.33801 297.73801 303.138 308.53799 313.93799 319.52701 324.927 330.327 335.72699 341.12701 346.52701 351.927 357.327 362.72699 368.12701 373.52701 378.927 384.327 389.72699 395.21701 400.617 406.017 411.41699 416.81699 422.21701">Commity z brancha origin/develop, których nie ma na branchu develop(„lokalnie”)</tspan>
+            </text>
+          </g>
+          <g
+             id="g425">
+            <text
+               id="text429"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,421.6)">
+              <tspan
+                 id="tspan427"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251 170.57249 176.967 183.267 189.567">git log develop..origin/develop</tspan>
+            </text>
+          </g>
+          <g
+             id="g431">
+            <text
+               id="text435"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,410.7)">
+              <tspan
+                 id="tspan433"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 92.079002 97.478996 102.879 108.279 113.679 119.079 124.479 129.879 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.16901 178.659 184.05901 189.459 194.85899 200.259 205.659 211.05901 216.459 222.048 227.448 232.84801 238.248 243.64799 249.048 254.448 259.93799 265.33801 270.73801 276.138 281.53799 286.93799 292.33801 297.73801 303.138 308.53799 313.93799 319.52701 324.927 330.327 335.72699 341.12701 346.52701 351.927 357.327 362.72699 368.12701 373.52701 378.927 384.327 389.72699 395.21701 400.617 406.017 411.41699 416.81699 422.21701">Commity z brancha origin/develop, których nie ma na branchu develop(„lokalnie”)</tspan>
+            </text>
+          </g>
+          <g
+             id="g437">
+            <text
+               id="text441"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,386.6)">
+              <tspan
+                 id="tspan439"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251 170.57249 176.967 183.267 189.567 195.867">git log develop...origin/develop</tspan>
+            </text>
+          </g>
+          <g
+             id="g443">
+            <text
+               id="text447"
+               style="font-style:italic;font-variant:normal;font-size:8px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,376.6)">
+              <tspan
+                 id="tspan445"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 4.8000002 9.6000004 14.4 19.200001 24 28.799999 33.695999 38.495998 43.296001 48.096001 52.896 57.695999 62.495998 67.295998 72.096001 76.896004 81.888 86.688004 91.487999 96.288002 101.088 105.888 110.688 115.488 120.288 125.088 129.888 134.688 139.48801 144.28799 149.18401 153.98399 158.784 163.584 168.384 173.18401 178.08 182.88 187.67999 192.48 197.28 202.08 206.976 211.87199 216.672 221.472 226.272 231.07201 235.87199 240.672 245.472 250.368 255.26401 260.064 264.86401 269.664 274.46399 279.26401 284.16 288.95999 293.76001 298.56 303.35999 308.16 312.95999 317.76001 322.56 327.35999 332.16 337.056 341.952 346.75201 351.552 356.35199 361.15201 365.952 370.75201 375.552 380.35199 385.15201 389.952 394.75201 399.552 404.35199 409.24799 414.048 418.84799 423.64801 428.448 433.24799">Commity z brancha origin/develop(„serwera”), których nie ma na branchu develop(„lokalnie”),</tspan>
+            </text>
+          </g>
+          <g
+             id="g449">
+            <text
+               id="text453"
+               style="font-style:italic;font-variant:normal;font-size:8px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,367.3)">
+              <tspan
+                 id="tspan451"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 4.8000002 9.6000004 14.4 19.200001 24.096001 28.896 33.695999 38.495998 43.296001 48.096001 52.896 57.792 62.591999 67.391998 72.192001 76.991997 81.792 86.592003 91.391998 96.192001 100.992 105.888 110.784 115.584 120.384 125.184 129.98399 134.784 139.584 144.384 149.18401 153.98399 158.784 163.584 168.384 173.18401 178.08 182.88 187.67999 192.48 197.28 202.08 207.07201 211.87199 216.672 221.472 226.272 231.07201 235.87199 240.672 245.56799 250.368 255.168 259.96799 264.86401 269.664 274.46399 279.26401 284.16 288.95999 293.76001 298.56 303.35999 308.16 313.056 317.85599 322.65601 327.45599 332.25601 337.056 341.85599 346.65601 351.45599 356.25601 361.056 365.85599 370.65601 375.45599 380.35199 385.15201 389.952 394.75201 399.552 404.35199 409.24799 414.048 418.84799 423.64801 428.448">oraz commity z brancha develop(„lokalnie”), których nie ma branch origin/develop(„serwer”)</tspan>
+            </text>
+          </g>
+          <g
+             id="g455">
+            <text
+               id="text459"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,343.5)">
+              <tspan
+                 id="tspan457"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278">git log --author=&quot;Toma*&quot;</tspan>
+            </text>
+          </g>
+          <g
+             id="g461">
+            <text
+               id="text465"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,332.6)">
+              <tspan
+                 id="tspan463"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.580002 92.07 97.470001 102.87 108.27 113.67 119.07 124.56 129.96001 135.36 140.75999 146.16 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.94 200.34 205.74001 211.14 216.53999 221.94 227.34 232.74001 238.14 243.53999 249.03 254.52 259.92001 265.32001 270.72 276.12 281.51999 286.92001">Commity, których autor treści pasuje do regexa „Toma*”</tspan>
+            </text>
+          </g>
+          <g
+             id="g467" />
+          <g
+             id="g469">
+            <text
+               id="text473"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,308.5)">
+              <tspan
+                 id="tspan471"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251">git log --committer=&quot;Toma*&quot;</tspan>
+            </text>
+          </g>
+          <g
+             id="g475">
+            <text
+               id="text479"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,297.6)">
+              <tspan
+                 id="tspan477"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.779999 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 119.07 124.56 129.96001 135.36 140.75999 146.16 151.56 156.96001 162.36 167.75999 173.25 178.64999 184.05 189.45 194.85001 200.25 205.74001 211.14 216.53999 221.94 227.34 232.74001 238.23 243.63 249.03 254.42999 259.82999 265.23001 270.63 276.03 281.42999 287.01901 292.41901 297.819 303.21899 308.61899 314.01901 319.41901 324.819 330.21899 335.61899 341.10901 346.509 351.909 357.30899 362.70901 368.10901 373.509 378.909">Commity, które zostały stworzone przez osobę pasującą do regexa „Toma*”</tspan>
+            </text>
+          </g>
+          <g
+             id="g481">
+            <text
+               id="text485"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,273.5)">
+              <tspan
+                 id="tspan483"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.467 151.767 158.067">git log –grep=&quot;.scope*&quot; -i</tspan>
+            </text>
+          </g>
+          <g
+             id="g487">
+            <text
+               id="text491"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,262.6)">
+              <tspan
+                 id="tspan489"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 118.98 124.38 129.78 135.369 140.769 146.16901 151.569 156.96899 162.369 167.769 173.259 178.659 184.05901 189.549 194.94901 200.349 205.74899 211.149 216.549 221.94901">Commity których wiadomość pasuje do regexa</tspan>
+            </text>
+          </g>
+          <g
+             id="g493">
+            <text
+               id="text497"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,303.9,262.6)">
+              <tspan
+                 id="tspan495"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.689999 54.18 59.580002 64.980003 70.379997 75.779999 81.18">„.scope*” (case</tspan>
+            </text>
+          </g>
+          <g
+             id="g499">
+            <text
+               id="text503"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,390.6,262.6)">
+              <tspan
+                 id="tspan501"
+                 y="0"
+                 x="0">i</tspan>
+            </text>
+          </g>
+          <g
+             transform="translate(390.6,262.6)"
+             id="g505">
+            <path
+               inkscape:connector-curvature="0"
+               id="path507"
+               style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               d="M 0,-0.9 H 5.4" />
+          </g>
+          <g
+             id="g509">
+            <text
+               id="text513"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,396,262.6)">
+              <tspan
+                 id="tspan511"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.589001 64.988998 70.389 75.789001">nsensitive: -i)</tspan>
+            </text>
+          </g>
+          <g
+             id="g515">
+            <text
+               id="text519"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,238.5)">
+              <tspan
+                 id="tspan517"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251 170.57249 176.967 183.267 189.567 195.867 202.26151 208.56149 214.8615 221.1615 227.556 233.856 240.15601 246.45599 252.85049 259.15051 265.4505 271.75049 278.14499 284.44501 290.83951 297.23401 303.534">git log -S&quot;com.arellomobile.mvp.MvpPresentert&quot; -i</tspan>
+            </text>
+          </g>
+          <g
+             id="g521">
+            <text
+               id="text525"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,227.6)">
+              <tspan
+                 id="tspan523"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8">Com</tspan>
+            </text>
+          </g>
+          <g
+             id="g527">
+            <text
+               id="text531"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,87.2,227.6)">
+              <tspan
+                 id="tspan529"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27.09 32.490002 37.889999 43.290001 48.689999 54.09 59.580002 64.980003 70.379997 75.779999 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 119.07 124.47 129.87 135.27 140.85899 146.259 151.659 157.05901 162.459 167.85899 173.349 178.74899 184.149 189.549 194.94901 200.349 205.74899 211.149 216.549 221.94901 227.349 232.74899 238.149 243.549 249.039 254.439 259.83899 265.23901 270.63901 276.039 281.52899 286.92899 292.32901 297.729 303.129 308.52899 314.01901 319.41901 324.819 330.21899 335.61899 341.01901 346.509 351.909 357.30899 362.70901 368.10901 373.509 379.09799 384.49799 389.89801 395.298 400.78799 406.18799 411.58801 416.98801 422.388 427.78799">mitty które dodają/usuwają frazę „com.arellomobile.mvp.MvpPresentert”, tak zwany</tspan>
+            </text>
+          </g>
+          <g
+             id="g533">
+            <text
+               id="text537"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,217.1)">
+              <tspan
+                 id="tspan535"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.379997">pickaxe (case</tspan>
+            </text>
+          </g>
+          <g
+             id="g539">
+            <text
+               id="text543"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,146.8,217.1)">
+              <tspan
+                 id="tspan541"
+                 y="0"
+                 x="0">i</tspan>
+            </text>
+          </g>
+          <g
+             transform="translate(146.8,217.1)"
+             id="g545">
+            <path
+               inkscape:connector-curvature="0"
+               id="path547"
+               style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               d="M 0,-0.9 H 5.4" />
+          </g>
+          <g
+             id="g549">
+            <text
+               id="text553"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,152.2,217.1)">
+              <tspan
+                 id="tspan551"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54.09 59.580002 64.980003 70.379997 75.779999">nsensitive: -i)</tspan>
+            </text>
+          </g>
+          <g
+             id="g555">
+            <text
+               id="text559"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,194.7)">
+              <tspan
+                 id="tspan557"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998">git log –all</tspan>
+            </text>
+          </g>
+          <g
+             id="g561">
+            <text
+               id="text565"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,183.9)">
+              <tspan
+                 id="tspan563"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 91.889999 97.290001 102.78 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001 200.25 205.64999 211.14 216.53999 222.03 227.42999 232.83 238.23 243.63 249.03 254.42999 259.82999 265.23001 270.63 276.03 281.42999">Commity z wszystkich branchy (nie tylko z „obecnego”)</tspan>
+            </text>
+          </g>
+          <g
+             id="g567">
+            <text
+               id="text571"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,161.5)">
+              <tspan
+                 id="tspan569"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.183502 88.483498 94.783501 101.0835 107.3835 113.6835">git log --no-merges</tspan>
+            </text>
+          </g>
+          <g
+             id="g573">
+            <text
+               id="text577"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,150.6)">
+              <tspan
+                 id="tspan575"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.589001 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.279 113.679 119.079 124.479 129.879 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.259 178.659 184.05901 189.549 194.94901 200.349 205.74899 211.149 216.549 221.94901">Wykluczneie commitów mergujących z wyników</tspan>
+            </text>
+          </g>
+          <g
+             id="g579">
+            <text
+               id="text583"
+               style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,128.2)">
+              <tspan
+                 id="tspan581"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725">git log --pretty=&quot;FORMAT&quot;</tspan>
+            </text>
+          </g>
+          <g
+             id="g585">
+            <text
+               id="text589"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,117.4)">
+              <tspan
+                 id="tspan587"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.490002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 91.889999 97.290001 102.78 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001 200.34 205.74001 211.14 216.53999 222.03 227.42999 232.83 238.23 243.63 249.03 254.42999 259.82999 265.32001 270.72 276.12 281.51999 286.92001 292.32001 297.72 303.12 308.51999 313.92001 319.32001 324.72 330.20999 335.60999 341.01001 346.5 351.89999 357.29999">Zmiana wyświetlanego formatu commita, np. git log --pretty=”%an-%H”</tspan>
+            </text>
+          </g>
+          <g
+             id="g591">
+            <text
+               id="text595"
+               style="font-style:italic;font-variant:normal;font-size:7px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,71,108.7)">
+              <tspan
+                 id="tspan593"
+                 sodipodi:role="line"
+                 y="0"
+                 x="0 4.1999998 8.3999996 12.6 16.799999 21 25.200001 29.4 33.599998 37.799999 42 46.200001 50.400002 54.691002 58.890999 63.091 67.291 71.490997 75.691002 79.982002 84.181999 88.382004 92.582001 96.781998 101.178 105.378 109.578 113.778 117.978 122.178 126.378 130.578 134.778 138.978">https://devhints.io/git-log-format</tspan>
+            </text>
+          </g>
+          <g
+             id="g597">
+            <text
+               id="text601"
+               style="font-variant:normal;font-weight:normal;font-size:11px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#21409a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,411.3,87.4)">
+              <tspan
+                 id="tspan599"
+                 sodipodi:role="line"
+                 x="0"
+                 y="9.7324219" />
+            </text>
+          </g>
+          <g
+             id="g603">
+            <text
+               id="text607"
+               style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#2f4277;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,441.8,87.4)">
+              <tspan
+                 id="tspan605"
+                 sodipodi:role="line"
+                 x="0"
+                 y="10.617188" />
+            </text>
+          </g>
+          <g
+             id="g609">
+            <text
+               id="text613"
+               style="font-variant:normal;font-weight:normal;font-size:11px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#21409a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="matrix(1,0,0,-1,457.4,87.4)">
+              <tspan
+                 id="tspan611"
+                 sodipodi:role="line"
+                 x="0"
+                 y="9.7324219" />
+            </text>
+          </g>
+        </g>
+      </g>
+      <ellipse
+         id="path790"
+         cx="169.37262"
+         cy="-22.173994"
+         transform="scale(1,-1)"
+         rx="34.285717"
+         ry="32.678574"
+         style="stroke-width:0.75;fill-opacity:1;fill:none" />
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3);stroke-width:1.13164377"
+         id="path6762-7"
+         cx="136.03291"
+         cy="11.584373"
+         rx="25.748438"
+         ry="24.86787"
+         transform="scale(1,-1)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:20.44493484px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.51112336"
+         x="141.54402"
+         y="18.602928"
+         id="text6880-5"
+         transform="scale(0.95420167,-1.0479965)"><tspan
+           sodipodi:role="line"
+           id="tspan6878-3"
+           x="141.54402"
+           y="18.602928"
+           style="stroke-width:0.51112336">B</tspan></text>
+      <ellipse
+         style="fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient6832);stroke-width:1.13164377"
+         id="path6762"
+         cx="101.50341"
+         cy="12.222153"
+         transform="scale(1,-1)"
+         rx="25.748438"
+         ry="24.86787" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:20.44493484px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.51112336"
+         x="94.397057"
+         y="17.656963"
+         id="text6880"
+         transform="scale(0.95420166,-1.0479965)"><tspan
+           sodipodi:role="line"
+           id="tspan6878"
+           x="94.397057"
+           y="17.656963"
+           style="stroke-width:0.51112336">A</tspan></text>
+      <ellipse
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5);stroke-width:1.13164377"
+         id="path6762-7-2"
+         cx="136.22159"
+         cy="11.496498"
+         rx="25.748438"
+         ry="24.867868"
+         transform="scale(1,-1)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.99532509px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27488312"
+         x="84.355042"
+         y="49.518158"
+         id="text7242"
+         transform="scale(1,-1)"><tspan
+           sodipodi:role="line"
+           id="tspan7240"
+           x="84.355042"
+           y="49.518158"
+           style="stroke-width:0.27488312">git log A..B</tspan></text>
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244"
+         cx="188.97609"
+         cy="-4.6945653"
+         r="2.5446429"
+         transform="scale(1,-1)" />
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-9"
+         cx="196.34216"
+         cy="2.5375972"
+         r="2.5446429"
+         transform="scale(1,-1)" />
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-1"
+         cx="203.5743"
+         cy="8.9661636"
+         r="2.5446429"
+         transform="scale(1,-1)"
+         inkscape:transform-center-x="2.1261161"
+         inkscape:transform-center-y="-2.1733631" />
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-2"
+         cx="211.34216"
+         cy="15.528671"
+         r="2.5446429"
+         transform="scale(1,-1)"
+         inkscape:transform-center-x="1.6536458"
+         inkscape:transform-center-y="-1.4174107" />
+      <circle
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-7"
+         cx="-233.70822"
+         cy="-4.7029119"
+         r="2.5446429"
+         transform="scale(-1)" />
+      <circle
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-9-0"
+         cx="-226.34216"
+         cy="2.5292659"
+         r="2.5446429"
+         transform="scale(-1)" />
+      <circle
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-1-9"
+         cx="-219.11005"
+         cy="8.9577942"
+         r="2.5446429"
+         inkscape:transform-center-x="-2.1261161"
+         inkscape:transform-center-y="-2.1733631"
+         transform="scale(-1)" />
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-2-3"
+         cx="-211.34218"
+         cy="15.520294"
+         r="2.5446429"
+         inkscape:transform-center-x="-1.6536458"
+         inkscape:transform-center-y="-1.4174107"
+         transform="scale(-1)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.99532509px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27488312"
+         x="175.38344"
+         y="50.2967"
+         id="text7242-6"
+         transform="scale(1,-1)"><tspan
+           sodipodi:role="line"
+           id="tspan7240-0"
+           x="175.38344"
+           y="50.2967"
+           style="stroke-width:0.27488312">git log A..B</tspan></text>
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-6"
+         cx="211.34058"
+         cy="26.428928"
+         r="2.5446429"
+         transform="scale(1,-1)" />
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-26"
+         cx="211.34058"
+         cy="35.141495"
+         r="2.5446429"
+         transform="scale(1,-1)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:14.12111092px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35302776"
+         x="174.15213"
+         y="-1.4355625"
+         id="text7346"
+         transform="scale(1,-1)"><tspan
+           sodipodi:role="line"
+           id="tspan7344"
+           x="174.15213"
+           y="-1.4355625"
+           style="stroke-width:0.35302776">A</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:14.61592007px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36539799"
+         x="238.60934"
+         y="-2.0218358"
+         id="text7350"
+         transform="scale(1,-1)"><tspan
+           sodipodi:role="line"
+           id="tspan7348"
+           x="238.60934"
+           y="-2.0218358"
+           style="stroke-width:0.36539799">B</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:19.57766914px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.48944169"
+         x="371.62866"
+         y="58.824585"
+         id="text7364"
+         transform="scale(1.1497629,-0.86974454)"><tspan
+           sodipodi:role="line"
+           id="tspan7362"
+           x="371.62866"
+           y="58.824585"
+           style="stroke-width:0.48944169">www.gitwarsztaty.pl</tspan></text>
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot7393"
+         style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+           id="flowRegion7395"><rect
+             id="rect7397"
+             width="34.285713"
+             height="51.785713"
+             x="14.642858"
+             y="-11.408888" /></flowRegion><flowPara
+           id="flowPara7399"></flowPara></flowRoot>      <path
+         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 428.77194,-15.267782 V 4.7616588"
+         id="path7338-0"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 451.21804,25.214928 428.77194,4.7616588"
+         id="path7340-2"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 406.21803,24.813148 428.77194,4.7616588"
+         id="path7342-3"
+         inkscape:connector-curvature="0" />
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3-2);stroke-width:1.13164377"
+         id="path6762-7-7"
+         cx="353.27487"
+         cy="-8.6681414"
+         rx="25.748438"
+         ry="24.867868"
+         transform="scale(1,-1)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:20.44493484px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.51112336"
+         x="369.21283"
+         y="-0.72205496"
+         id="text6880-5-5"
+         transform="scale(0.95420167,-1.0479965)"><tspan
+           sodipodi:role="line"
+           id="tspan6878-3-9"
+           x="369.21283"
+           y="-0.72205496"
+           style="stroke-width:0.51112336">B</tspan></text>
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-7);stroke-width:1.13164377"
+         id="path6762-2"
+         cx="318.74536"
+         cy="-8.030386"
+         rx="25.748438"
+         ry="24.867868"
+         transform="scale(1,-1)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:20.44493484px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.51112336"
+         x="322.06589"
+         y="-1.668067"
+         id="text6880-2"
+         transform="scale(0.95420167,-1.0479965)"><tspan
+           sodipodi:role="line"
+           id="tspan6878-8"
+           x="322.06589"
+           y="-1.668067"
+           style="stroke-width:0.51112336">A</tspan></text>
+      <ellipse
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5-1);stroke-width:1.13164377"
+         id="path6762-7-2-9"
+         cx="353.46353"
+         cy="-8.756031"
+         rx="25.748438"
+         ry="24.867868"
+         transform="scale(1,-1)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.99532509px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27488312"
+         x="301.59698"
+         y="29.265638"
+         id="text7242-7"
+         transform="scale(1,-1)"><tspan
+           sodipodi:role="line"
+           id="tspan7240-3"
+           x="301.59698"
+           y="29.265638"
+           style="stroke-width:0.27488312">git log A...B</tspan></text>
+      <circle
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-61"
+         cx="406.21802"
+         cy="-24.947071"
+         r="2.5446429"
+         transform="scale(1,-1)" />
+      <circle
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-9-2"
+         cx="413.58411"
+         cy="-17.714954"
+         r="2.5446429"
+         transform="scale(1,-1)" />
+      <circle
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-1-93"
+         cx="420.81622"
+         cy="-11.286366"
+         r="2.5446429"
+         inkscape:transform-center-x="2.1261161"
+         inkscape:transform-center-y="-2.1733631"
+         transform="scale(1,-1)" />
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-2-1"
+         cx="428.58411"
+         cy="-4.723866"
+         r="2.5446429"
+         inkscape:transform-center-x="1.6536458"
+         inkscape:transform-center-y="-1.4174107"
+         transform="scale(1,-1)" />
+      <circle
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-7-9"
+         cx="-450.95016"
+         cy="-24.955433"
+         r="2.5446429"
+         transform="scale(-1)" />
+      <circle
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-9-0-4"
+         cx="-443.58411"
+         cy="-17.723255"
+         r="2.5446429"
+         transform="scale(-1)" />
+      <circle
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-1-9-7"
+         cx="-436.35199"
+         cy="-11.294728"
+         r="2.5446429"
+         inkscape:transform-center-x="-2.1261161"
+         inkscape:transform-center-y="-2.1733631"
+         transform="scale(-1)" />
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-2-3-8"
+         cx="-428.58411"
+         cy="-4.7322278"
+         r="2.5446429"
+         inkscape:transform-center-x="-1.6536458"
+         inkscape:transform-center-y="-1.4174107"
+         transform="scale(-1)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.99532509px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27488312"
+         x="392.62537"
+         y="30.044203"
+         id="text7242-6-4"
+         transform="scale(1,-1)"><tspan
+           sodipodi:role="line"
+           id="tspan7240-0-5"
+           x="392.62537"
+           y="30.044203"
+           style="stroke-width:0.27488312">git log A...B</tspan></text>
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-6-0"
+         cx="428.58252"
+         cy="6.1764045"
+         r="2.5446429"
+         transform="scale(1,-1)" />
+      <circle
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         id="path7244-26-3"
+         cx="428.58252"
+         cy="14.888989"
+         r="2.5446429"
+         transform="scale(1,-1)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:14.12111092px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35302776"
+         x="391.39407"
+         y="-21.688099"
+         id="text7346-6"
+         transform="scale(1,-1)"><tspan
+           sodipodi:role="line"
+           id="tspan7344-1"
+           x="391.39407"
+           y="-21.688099"
+           style="stroke-width:0.35302776">A</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:14.61591911px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36539799"
+         x="455.85129"
+         y="-22.274342"
+         id="text7350-0"
+         transform="scale(1,-1)"><tspan
+           sodipodi:role="line"
+           id="tspan7348-6"
+           x="455.85129"
+           y="-22.274342"
+           style="stroke-width:0.36539799">B</tspan></text>
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.12626907"
+         d="m 362.56345,1044.7639 c -5.14537,-5.2997 -8.23533,-11.7368 -9.01425,-18.7788 -0.19704,-1.7814 -0.16169,-5.6272 0.0679,-7.3867 0.75172,-5.761 3.08793,-11.2666 6.6707,-15.7205 1.10616,-1.3752 2.75779,-3.15676 2.92643,-3.15676 0.19339,0 2.97846,2.85926 3.8815,3.98496 2.00554,2.4999 4.04344,6.1157 5.12737,9.0974 2.83064,7.7865 2.43694,16.4649 -1.09177,24.0661 -1.39942,3.0144 -3.9884,6.7105 -6.24395,8.914 l -0.68456,0.6688 z"
+         id="path7522"
+         inkscape:connector-curvature="0"
+         transform="matrix(0.75000002,0,0,-0.75000002,63.301185,775.67087)" />
+    </g>
+  </g>
+</svg>
