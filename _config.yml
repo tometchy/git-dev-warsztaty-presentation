@@ -6,6 +6,7 @@ collections:
 markdown: kramdown
 highlighter: rouge
 paginate: 100 # it will paginate after this number
+paginate_path: "/blog/page:num/"
 language: 'en'
 lang: 'en'
 
