@@ -1,7 +1,7 @@
 ---
 layout: error
 current: error
-title: "404 - Page Not Found"
+title: "404 - nie odnaleziono strony"
 permalink: 404.html
 ---
 <!--
@@ -29,11 +29,7 @@ It's a good idea to keep this template as minimal as possible in terms of both f
         <header class="site-header outer {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }})){% else %}no-cover{% endif %}">
             <div class="inner">
                 <nav class="site-nav-center">
-                    {% if site.logo %}
-                        <a class="site-nav-logo" href="{{ site.baseurl }}"><img src="{{site.baseurl}}{{ site.logo }}" alt="{{ site.title }}" /></a>
-                    {% else %}
-                        <a class="site-nav-logo" href="{{ site.baseurl }}">{{ site.title }}</a>
-                    {% endif %}
+                    <a class="site-nav-logo" href="{{ site.baseurl }}" style="font-size:200%">Git Warsztaty</a>
                 </nav>
             </div>
         </header>
@@ -43,8 +39,8 @@ It's a good idea to keep this template as minimal as possible in terms of both f
 
                 <section class="error-message">
                     <h1 class="error-code">404</h1>
-                    <p class="error-description">Page not found</p>
-                    <a class="error-link" href="{{ site.baseurl }}">Go to the front page →</a>
+                    <p class="error-description">Nie znaleziono strony</p>
+                    <a class="error-link" href="{{ site.baseurl }}">Przejdź na stronę główną→</a>
                 </section>
             </div>
         </main>
