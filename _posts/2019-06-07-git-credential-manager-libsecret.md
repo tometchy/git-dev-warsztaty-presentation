@@ -11,7 +11,7 @@ subclass: 'post tag-credential-manager'
 author: tomasz-skraskowski
 ---
 
-Nikt nie lubi wprowadzać login i hasło przy każdym pushu... na szczęście mamy libsecret jako git credential storage.
+Nikt nie lubi wprowadzać loginu i hasło przy każdym pushu... na szczęście mamy libsecret jako git credential storage.
 
 Gdy chcesz skorzystać z serwisów hostujących repozytoria gita takich jak _GitLab_ lub _GitHub_ musisz się zautoryzować.
 Git posiada wbudowany mechanizmy zwany credential helper, który umożliwia wybranie sposobu przechowywania hasła.
