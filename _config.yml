@@ -42,7 +42,7 @@ disqus: False
 disqus_shortname: todo # replace with your disqus username
 
 # Google Analytics
-google_analytics: todo
+google_analytics: UA-135667563-2
 
 # Permalinks
 permalink: /blog/:title
