@@ -521,7 +521,8 @@
 <!-- Custom Javascripts
     ================================================== --> 
 <script type="text/javascript" src="js/main.js"></script> 
-<script src="js/wow.min.js"></script> 
+<script src="js/wow.min.js"></script>
+
 <script>
     jQuery(document).ready(function( $ ) {
         $('.counter').counterUp({
@@ -541,5 +542,8 @@
 <script>
 new WOW().init();
 </script>
+
+{% include analytics.html %}
+
 </body>
 </html>
