@@ -38,8 +38,8 @@ subscribers: False # you need to connect an external service for this to work,
 #facebook: ghost # replace by your username
 
 # Disqus
-disqus: False
-disqus_shortname: todo # replace with your disqus username
+disqus: True
+disqus_shortname: gitwarsztaty # replace with your disqus username
 
 # Google Analytics
 google_analytics: UA-135667563-2
