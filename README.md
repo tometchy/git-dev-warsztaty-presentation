@@ -1,4 +1,4 @@
-# Materials for git-devwarsztaty workshops
+# Materials for Git Warsztaty workshops
 
 Link to presentation preview (current version) - www.gitwarsztaty.pl/prezentacja
 
