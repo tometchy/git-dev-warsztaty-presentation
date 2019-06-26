@@ -4,24 +4,14 @@ Link to presentation preview (current version) - www.gitwarsztaty.pl/prezentacja
 
 ## Previous workshops
 
-### Katowice - 2019.01.12
-
-[devwarsztaty.pl/warsztaty/2019-01-12](https://devwarsztaty.pl/warsztaty/2019-01-12/)  
-[meetup.com/devWarsztaty/events/257265105/](https://www.meetup.com/devWarsztaty/events/257265105/)  
-Link to presentation version seen on workshops: [_katowice_2019_01_12_ branch](https://github.com/tometchy/git-dev-warsztaty-presentation/tree/katowice_2019_01_12)
-
 ### Wrocław - 2018.05.19
+Link to presentation version seen on workshops: [prezentacja/pdf/2018-05-19 - Gitwarsztaty prezentacja - Tomasz Skraskowski i Krzysztof Morcinek.pdf](https://github.com/tometchy/git-dev-warsztaty-presentation/blob/master/prezentacja/pdf/2018-05-19%20-%20Gitwarsztaty%20prezentacja%20-%20Tomasz%20Skraskowski%20i%20Krzysztof%20Morcinek.pdf)
 
-[devwarsztaty.pl/warsztaty/2018-05-19-wro](https://devwarsztaty.pl/warsztaty/2018-05-19-wro)  
-[meetup.com/devWarsztaty/events/250692882](https://www.meetup.com/devWarsztaty/events/250692882/)  
-Link to presentation version seen on workshops: [_wroclaw_2018_05_19_ branch](https://github.com/tometchy/git-dev-warsztaty-presentation/tree/wroclaw_2018_05_19)
+### Katowice - 2019.01.12
+Link to presentation version seen on workshops: [prezentacja/pdf/2019-01-12 - Gitwarsztaty prezentacja - Tomasz Skraskowski i Krzysztof Morcinek.pdf](https://github.com/tometchy/git-dev-warsztaty-presentation/blob/master/prezentacja/pdf/2019-01-12%20-%20Gitwarsztaty%20prezentacja%20-%20Tomasz%20Skraskowski%20i%20Krzysztof%20Morcinek.pdf)
 
 ### Warszawa - 2019.04.27
+Link to presentation version seen on workshops: [prezentacja/pdf/2019-04-27 - Gitwarsztaty prezentacja - Tomasz Skraskowski i Krzysztof Morcinek.pdf](https://github.com/tometchy/git-dev-warsztaty-presentation/blob/master/prezentacja/pdf/2019-04-27%20-%20Gitwarsztaty%20prezentacja%20-%20Tomasz%20Skraskowski%20i%20Krzysztof%20Morcinek.pdf)
 
-[devwarsztaty.pl/warsztaty/2019-04-27/](https://devwarsztaty.pl/warsztaty/2019-04-27/)  
-[meetup.com/devWarsztaty/events/260725269/](https://www.meetup.com/devWarsztaty/events/260725269/)  
-Link to presentation version seen on workshops: [_warszawa_2019_04_27_ branch](https://github.com/tometchy/git-dev-warsztaty-presentation/tree/warszawa_2019_04_27)
-
-## Old presentation version
-To see old presentation version, you need to clone this repo, checkout to chosen branch, then open in browser slides/index.html file.  
-Recommended browser is chromium (or derivative like Chrome or Brave), it works a bit slow on Firefox.
+### Kraków - 2019.06.05
+Link to presentation version seen on workshops: [prezentacja/pdf/2019-06-05 - Gitwarsztaty prezentacja - Tomasz Skraskowski i Krzysztof Morcinek.pdf](https://github.com/tometchy/git-dev-warsztaty-presentation/blob/master/prezentacja/pdf/2019-06-05%20-%20Gitwarsztaty%20prezentacja%20-%20Tomasz%20Skraskowski%20i%20Krzysztof%20Morcinek.pdf)
