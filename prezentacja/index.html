@@ -1,4 +1,7 @@
-﻿<!doctype html>
+---
+---
+
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -481,15 +484,15 @@
                     <li class="fragment">git reset
                         <ul>
                             <small>
-                            <li class="fragment">
+                                <li class="fragment">
                                     git reset --mixed
-                            </li>
-                            <li class="fragment">
-                                git reset --soft
-                            </li>
-                            <li class="fragment">
-                                git reset --hard
-                            </li>
+                                </li>
+                                <li class="fragment">
+                                    git reset --soft
+                                </li>
+                                <li class="fragment">
+                                    git reset --hard
+                                </li>
                             </small>
                         </ul>
                     </li>
@@ -520,7 +523,7 @@
                     <li class="fragment">git clean (-d -f -n)</li>
                 </ul>
             </section>
-            
+
             <section>
                 <h4>Ćwiczenie wspólnie z demo <i>reset, revert, commit ammend</i></h4>
                 <p>
@@ -630,9 +633,9 @@
 
             <section>
                 <h3>Git Guitar Hero</h3>
-                    <p>
-                        <img src="img/git-guitar-hero.jpg" style="border:none; box-shadow:none">
-                    </p>
+                <p>
+                    <img src="img/git-guitar-hero.jpg" style="border:none; box-shadow:none">
+                </p>
             </section>
 
             <section>
@@ -1240,18 +1243,18 @@
             </section>
         </section>
 
-<!--        <section>-->
-<!--            <section>-->
-<!--                <p>-->
-<!--                    <img src="img/ankieta.jpg"/>-->
-<!--                </p>-->
-<!--                <aside class="notes">-->
-<!--                    Powiedzieć, że mogą do nas pisać po warsztatach na slacku, zachęcamy do ćwiczenia.-->
-<!--                    Jeżeli jest losowanie za ankietę to powiedzieć.-->
-<!--                    Powiedzieć, że teraz chwila na uzupełnienie, po czym luźne tematy na koniec.-->
-<!--                </aside>-->
-<!--            </section>-->
-<!--        </section>-->
+        <!--        <section>-->
+        <!--            <section>-->
+        <!--                <p>-->
+        <!--                    <img src="img/ankieta.jpg"/>-->
+        <!--                </p>-->
+        <!--                <aside class="notes">-->
+        <!--                    Powiedzieć, że mogą do nas pisać po warsztatach na slacku, zachęcamy do ćwiczenia.-->
+        <!--                    Jeżeli jest losowanie za ankietę to powiedzieć.-->
+        <!--                    Powiedzieć, że teraz chwila na uzupełnienie, po czym luźne tematy na koniec.-->
+        <!--                </aside>-->
+        <!--            </section>-->
+        <!--        </section>-->
 
         <!-- TOMEK -->
         <section>
@@ -1367,30 +1370,30 @@
             </section>
         </section>
 
-	<section>
-		<section>
-			<h2>Trunk Based Development</h2>
-			<p>
-			    <img src="img/trunk-based-development.jpg">
-			</p>
-		</section>
-		<section>
-			<h3>Git Flow</h3>
-			<p>
-			    <img src="img/git-flow.jpg" style="max-height:600px">
-			</p>
-		</section>
         <section>
-            <h3>Git Guitar Hero</h3>
-            <p>
-                <img src="img/git-guitar-hero.jpg" style="border:none; box-shadow:none">
-            </p>
-        </section>
+            <section>
+                <h2>Trunk Based Development</h2>
+                <p>
+                    <img src="img/trunk-based-development.jpg">
+                </p>
+            </section>
+            <section>
+                <h3>Git Flow</h3>
+                <p>
+                    <img src="img/git-flow.jpg" style="max-height:600px">
+                </p>
+            </section>
+            <section>
+                <h3>Git Guitar Hero</h3>
+                <p>
+                    <img src="img/git-guitar-hero.jpg" style="border:none; box-shadow:none">
+                </p>
+            </section>
 
-		    <section>
+            <section>
                 Pytania?
-		    </section>
-	</section>
+            </section>
+        </section>
 
         <section>
             <section>
@@ -1458,13 +1461,13 @@
             <section>
                 <h2>Wiele remotów</h2>
                 <p>
-                    <ul style="list-style: none; line-height:190%;">
-                        <li><code>git remote add anotherOrigin https...</code></li>
-                        <li><code>git remote -v</code></li>
-                        <li><code>git push anotherOrigin</code></li>
-                        <li><code>git fetch anotherOrigin</code></li>
-                        <li><code>git push -u anotherOrigin your_branch</code></li>
-                    </ul>
+                <ul style="list-style: none; line-height:190%;">
+                    <li><code>git remote add anotherOrigin https...</code></li>
+                    <li><code>git remote -v</code></li>
+                    <li><code>git push anotherOrigin</code></li>
+                    <li><code>git fetch anotherOrigin</code></li>
+                    <li><code>git push -u anotherOrigin your_branch</code></li>
+                </ul>
                 </p>
             </section>
 
@@ -1556,33 +1559,33 @@
             </section>
 
         </section>
-        
+
         <section>
             <h2>Strategie mergowania</h2>
             <ul style="line-height: 4">
                 <small>
-                        <li>resolve </li>
-                        <li><b>recursive</b> 
-                            <ul>
-                                <li>ours </li>
-                                <li>theirs </li>
-                                <li>patience </li>
-                                <li>diff-algorithm=[patience|minimal|histogram|myers]</li>
-                                <li>ignore-space-change </li>
-                                <li>ignore-all-space </li>
-                                <li>ignore-space-at-eol </li>
-                                <li>ignore-cr-at-eol </li>
-                                <li>renormalize </li>
-                                <li>no-renormalize </li>
-                                <li>no-renames </li>
-                                <li><b>find-renames[=<i>n</i>]</b></li>
-                                <li>rename-threshold=<i>n</i> </li>
-                                <li>subtree[=<i>path</i>] </li>
-                            </ul>
-                        </li>
-                        <li>octopus </li>
-                        <li>ours </li>
-                        <li>subtree </li>
+                    <li>resolve </li>
+                    <li><b>recursive</b>
+                        <ul>
+                            <li>ours </li>
+                            <li>theirs </li>
+                            <li>patience </li>
+                            <li>diff-algorithm=[patience|minimal|histogram|myers]</li>
+                            <li>ignore-space-change </li>
+                            <li>ignore-all-space </li>
+                            <li>ignore-space-at-eol </li>
+                            <li>ignore-cr-at-eol </li>
+                            <li>renormalize </li>
+                            <li>no-renormalize </li>
+                            <li>no-renames </li>
+                            <li><b>find-renames[=<i>n</i>]</b></li>
+                            <li>rename-threshold=<i>n</i> </li>
+                            <li>subtree[=<i>path</i>] </li>
+                        </ul>
+                    </li>
+                    <li>octopus </li>
+                    <li>ours </li>
+                    <li>subtree </li>
                 </small>
             </ul>
         </section>
@@ -1613,7 +1616,7 @@
                 <img src="img/git-hooks.jpg"/>
             </section>
         </section>
-        
+
         <section>
             <h2>Git bisect</h2>
             <h4>Automatyzacja szukania commita, który wprowadził błąd</h4>
