@@ -65,3 +65,5 @@ git config --global credential.helper /usr/share/doc/git/contrib/credential/libs
 To wszystko, następnym razem, gdy zostaniesz poproszony o login i hasło, będzie to ostatni raz na tym urządzeniu :)
 
 Oficjalna dokumentacja - [wiki.gnome.org/Projects/Libsecret](https://wiki.gnome.org/Projects/Libsecret)
+
+Artykuł ten przetłumaczyłem z mojego anglojęzycznego bloga - [SoftwareDeveloper.Blog](https://www.softwaredeveloper.blog) - [Libsecret - remember Git credentials in Linux Mint and Ubuntu securely](https://www.softwaredeveloper.blog/git-credential-storage-libsecret).
