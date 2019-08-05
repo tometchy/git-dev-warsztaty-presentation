@@ -78,7 +78,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.3871919,0,0,1.6411957,-125.03376,82.592589)" />
+       gradientTransform="matrix(1.2834731,0,0,1.5265611,-103.13111,11.388022)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6852"
@@ -88,7 +88,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.387192,0,0,1.6411957,-90.504267,81.954812)" />
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,-71.183352,10.794793)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6852"
@@ -98,7 +98,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.387192,0,0,1.6411957,-90.315604,81.866941)" />
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,-71.008795,10.713059)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6852"
@@ -108,7 +108,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.387192,0,0,1.6411957,126.92635,61.614412)" />
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,131.67299,9.875134)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6852"
@@ -118,7 +118,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.3871919,0,0,1.6411957,92.208193,62.340062)" />
+       gradientTransform="matrix(1.2834731,0,0,1.5265611,99.550674,10.550098)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6852"
@@ -128,7 +128,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.387192,0,0,1.6411957,126.73769,61.702282)" />
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,131.49844,9.956866)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -137,9 +137,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="66.386734"
-     inkscape:cy="572.67938"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="201.42757"
+     inkscape:cy="178.5101"
      inkscape:document-units="mm"
      inkscape:current-layer="g269"
      showgrid="false"
@@ -169,23 +169,23 @@
        inkscape:label="Popularne przełączniki do git log"
        id="g269">
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 211.52998,-35.520304 v 20.029433"
+         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 208.26814,32.396347 V 51.026759"
          id="path7338"
          inkscape:connector-curvature="0" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 233.97609,4.9624017 211.52998,-15.490871"
+         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 229.03597,70.051407 208.26814,51.026759"
          id="path7340"
          inkscape:connector-curvature="0" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 188.97608,4.5606187 22.5539,-20.0514897"
+         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 187.40056,69.677688 208.26814,51.026759"
          id="path7342"
          inkscape:connector-curvature="0" />
       <g
          id="g271"
-         transform="matrix(1.195496,0,0,1.0887658,-12.37334,-78.674337)">
+         transform="matrix(1.1842607,0,0,1.0127174,-6.1552143,-19.743453)">
         <g
            clip-path="url(#clipPath277)"
            id="g273">
@@ -229,7 +229,7 @@
                  id="tspan293"
                  sodipodi:role="line"
                  x="0"
-                 y="9.2900391"></tspan>
+                 y="9.2900391" />
               <tspan
                  sodipodi:role="line"
                  y="0"
@@ -920,403 +920,423 @@
       </g>
       <ellipse
          id="path790"
-         cx="169.37262"
-         cy="-22.173994"
+         cx="173.88271"
+         cy="-74.060799"
          transform="scale(1,-1)"
-         rx="34.285717"
-         ry="32.678574"
-         style="stroke-width:0.75;fill-opacity:1;fill:none" />
+         rx="33.963501"
+         ry="30.396032"
+         style="fill:none;fill-opacity:1;stroke-width:0.71992582" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3);stroke-width:1.13164377"
+         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3);stroke-width:1.04981256"
          id="path6762-7"
-         cx="136.03291"
-         cy="11.584373"
-         rx="25.748438"
-         ry="24.86787"
+         cx="138.41589"
+         cy="-54.660397"
+         rx="23.823256"
+         ry="23.130894"
          transform="scale(1,-1)" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:20.44493484px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.51112336"
-         x="141.54402"
-         y="18.602928"
+         style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
+         x="144.50021"
+         y="-45.015694"
          id="text6880-5"
-         transform="scale(0.95420167,-1.0479965)"><tspan
+         transform="scale(0.95167444,-1.0507795)"><tspan
            sodipodi:role="line"
            id="tspan6878-3"
-           x="141.54402"
-           y="18.602928"
-           style="stroke-width:0.51112336">B</tspan></text>
+           x="144.50021"
+           y="-45.015694"
+           style="stroke-width:0.47416309">B</tspan></text>
       <ellipse
-         style="fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient6832);stroke-width:1.13164377"
+         style="fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient6832);stroke-width:1.04981256"
          id="path6762"
-         cx="101.50341"
-         cy="12.222153"
+         cx="106.46812"
+         cy="-54.067162"
          transform="scale(1,-1)"
-         rx="25.748438"
-         ry="24.86787" />
+         rx="23.823256"
+         ry="23.130894" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:20.44493484px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.51112336"
-         x="94.397057"
-         y="17.656963"
+         style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
+         x="100.76254"
+         y="-45.893253"
          id="text6880"
-         transform="scale(0.95420166,-1.0479965)"><tspan
+         transform="scale(0.95167444,-1.0507795)"><tspan
            sodipodi:role="line"
            id="tspan6878"
-           x="94.397057"
-           y="17.656963"
-           style="stroke-width:0.51112336">A</tspan></text>
+           x="100.76254"
+           y="-45.893253"
+           style="stroke-width:0.47416309">A</tspan></text>
       <ellipse
-         style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5);stroke-width:1.13164377"
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5);stroke-width:1.04981256"
          id="path6762-7-2"
-         cx="136.22159"
-         cy="11.496498"
-         rx="25.748438"
-         ry="24.867868"
+         cx="138.59047"
+         cy="-54.742134"
+         rx="23.823256"
+         ry="23.130892"
          transform="scale(1,-1)" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.99532509px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27488312"
-         x="84.355042"
-         y="49.518158"
+         style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
+         x="90.842522"
+         y="-19.3249"
          id="text7242"
-         transform="scale(1,-1)"><tspan
+         transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7240"
-           x="84.355042"
-           y="49.518158"
-           style="stroke-width:0.27488312">git log A..B</tspan></text>
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+           x="90.842522"
+           y="-19.3249"
+           style="stroke-width:0.25500581">git log A..B</tspan></text>
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244"
-         cx="188.97609"
-         cy="-4.6945653"
-         r="2.5446429"
-         transform="scale(1,-1)" />
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         cx="187.40057"
+         cy="-69.802277"
+         transform="scale(1,-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-9"
-         cx="196.34216"
-         cy="2.5375972"
-         r="2.5446429"
-         transform="scale(1,-1)" />
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         cx="194.2159"
+         cy="-63.075272"
+         transform="scale(1,-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-1"
-         cx="203.5743"
-         cy="8.9661636"
-         r="2.5446429"
+         cx="200.90729"
+         cy="-57.095726"
          transform="scale(1,-1)"
-         inkscape:transform-center-x="2.1261161"
-         inkscape:transform-center-y="-2.1733631" />
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         inkscape:transform-center-x="1.9671474"
+         inkscape:transform-center-y="-2.021557"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-2"
-         cx="211.34216"
-         cy="15.528671"
-         r="2.5446429"
+         cx="208.09436"
+         cy="-50.9916"
          transform="scale(1,-1)"
-         inkscape:transform-center-x="1.6536458"
-         inkscape:transform-center-y="-1.4174107" />
-      <circle
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         inkscape:transform-center-x="1.5300033"
+         inkscape:transform-center-y="-1.3184073"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-7"
-         cx="-233.70822"
-         cy="-4.7029119"
-         r="2.5446429"
-         transform="scale(-1)" />
-      <circle
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         cx="-228.78813"
+         cy="-69.810043"
+         transform="scale(-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-9-0"
-         cx="-226.34216"
-         cy="2.5292659"
-         r="2.5446429"
-         transform="scale(-1)" />
-      <circle
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         cx="-221.97282"
+         cy="-63.083023"
+         transform="scale(-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-1-9"
-         cx="-219.11005"
-         cy="8.9577942"
-         r="2.5446429"
-         inkscape:transform-center-x="-2.1261161"
-         inkscape:transform-center-y="-2.1733631"
-         transform="scale(-1)" />
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         cx="-215.28145"
+         cy="-57.103512"
+         inkscape:transform-center-x="-1.9671503"
+         inkscape:transform-center-y="-2.0215574"
+         transform="scale(-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-2-3"
-         cx="-211.34218"
-         cy="15.520294"
-         r="2.5446429"
-         inkscape:transform-center-x="-1.6536458"
-         inkscape:transform-center-y="-1.4174107"
-         transform="scale(-1)" />
+         cx="-208.09436"
+         cy="-50.99939"
+         inkscape:transform-center-x="-1.5300008"
+         inkscape:transform-center-y="-1.3184065"
+         transform="scale(-1)"
+         rx="2.3543828"
+         ry="2.366904" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.99532509px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27488312"
-         x="175.38344"
-         y="50.2967"
+         style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
+         x="175.28848"
+         y="-18.602655"
          id="text7242-6"
-         transform="scale(1,-1)"><tspan
+         transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7240-0"
-           x="175.38344"
-           y="50.2967"
-           style="stroke-width:0.27488312">git log A..B</tspan></text>
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+           x="175.28848"
+           y="-18.602655"
+           style="stroke-width:0.25500581">git log A..B</tspan></text>
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-6"
-         cx="211.34058"
-         cy="26.428928"
-         r="2.5446429"
-         transform="scale(1,-1)" />
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         cx="208.09288"
+         cy="-40.852707"
+         transform="scale(1,-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-26"
-         cx="211.34058"
-         cy="35.141495"
-         r="2.5446429"
-         transform="scale(1,-1)" />
+         cx="208.09288"
+         cy="-32.748699"
+         transform="scale(1,-1)"
+         rx="2.3543828"
+         ry="2.366904" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:14.12111092px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35302776"
-         x="174.15213"
-         y="-1.4355625"
+         style="font-style:normal;font-weight:normal;font-size:13.09998798px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32749969"
+         x="174.14622"
+         y="-66.59407"
          id="text7346"
-         transform="scale(1,-1)"><tspan
+         transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7344"
-           x="174.15213"
-           y="-1.4355625"
-           style="stroke-width:0.35302776">A</tspan></text>
+           x="174.14622"
+           y="-66.59407"
+           style="stroke-width:0.32749969">A</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:14.61592007px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36539799"
-         x="238.60934"
-         y="-2.0218358"
+         style="font-style:normal;font-weight:normal;font-size:13.55901623px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3389754"
+         x="233.94241"
+         y="-67.137955"
          id="text7350"
-         transform="scale(1,-1)"><tspan
+         transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7348"
-           x="238.60934"
-           y="-2.0218358"
-           style="stroke-width:0.36539799">B</tspan></text>
+           x="233.94241"
+           y="-67.137955"
+           style="stroke-width:0.3389754">B</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:19.57766914px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.48944169"
-         x="371.62866"
-         y="58.824585"
+         style="font-style:normal;font-weight:normal;font-size:17.39925003px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.43498126"
+         x="349.90005"
+         y="-6.751565"
          id="text7364"
-         transform="scale(1.1497629,-0.86974454)"><tspan
+         transform="scale(1.2272383,-0.81483767)"><tspan
            sodipodi:role="line"
            id="tspan7362"
-           x="371.62866"
-           y="58.824585"
-           style="stroke-width:0.48944169">www.gitwarsztaty.pl</tspan></text>
+           x="349.90005"
+           y="-6.751565"
+           style="stroke-width:0.43498126">www.gitwarsztaty.pl</tspan></text>
       <flowRoot
          xml:space="preserve"
          id="flowRoot7393"
-         style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         transform="matrix(0.99060201,0,0,0.93015176,6.1018412,53.43562)"><flowRegion
            id="flowRegion7395"><rect
              id="rect7397"
              width="34.285713"
              height="51.785713"
              x="14.642858"
              y="-11.408888" /></flowRegion><flowPara
-           id="flowPara7399"></flowPara></flowRoot>      <path
-         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 428.77194,-15.267782 V 4.7616588"
+           id="flowPara7399" /></flowRoot>      <path
+         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 410.94993,33.234266 v 18.63042"
          id="path7338-0"
          inkscape:connector-curvature="0" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 451.21804,25.214928 428.77194,4.7616588"
+         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 431.71775,70.88933 410.94993,51.864686"
          id="path7340-2"
          inkscape:connector-curvature="0" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 406.21803,24.813148 428.77194,4.7616588"
+         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 390.08235,70.515614 410.94993,51.864686"
          id="path7342-3"
          inkscape:connector-curvature="0" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3-2);stroke-width:1.13164377"
+         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3-2);stroke-width:1.04981256"
          id="path6762-7-7"
-         cx="353.27487"
-         cy="-8.6681414"
-         rx="25.748438"
-         ry="24.867868"
+         cx="341.09769"
+         cy="-55.498306"
+         rx="23.823256"
+         ry="23.130892"
          transform="scale(1,-1)" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:20.44493484px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.51112336"
-         x="369.21283"
-         y="-0.72205496"
+         style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
+         x="357.474"
+         y="-45.813103"
          id="text6880-5-5"
-         transform="scale(0.95420167,-1.0479965)"><tspan
+         transform="scale(0.95167444,-1.0507795)"><tspan
            sodipodi:role="line"
            id="tspan6878-3-9"
-           x="369.21283"
-           y="-0.72205496"
-           style="stroke-width:0.51112336">B</tspan></text>
+           x="357.474"
+           y="-45.813103"
+           style="stroke-width:0.47416309">B</tspan></text>
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-7);stroke-width:1.13164377"
+         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-7);stroke-width:1.04981256"
          id="path6762-2"
-         cx="318.74536"
-         cy="-8.030386"
-         rx="25.748438"
-         ry="24.867868"
+         cx="309.1499"
+         cy="-54.905098"
+         rx="23.823256"
+         ry="23.130892"
          transform="scale(1,-1)" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:20.44493484px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.51112336"
-         x="322.06589"
-         y="-1.668067"
+         style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
+         x="313.73633"
+         y="-46.690708"
          id="text6880-2"
-         transform="scale(0.95420167,-1.0479965)"><tspan
+         transform="scale(0.95167444,-1.0507795)"><tspan
            sodipodi:role="line"
            id="tspan6878-8"
-           x="322.06589"
-           y="-1.668067"
-           style="stroke-width:0.51112336">A</tspan></text>
+           x="313.73633"
+           y="-46.690708"
+           style="stroke-width:0.47416309">A</tspan></text>
       <ellipse
-         style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5-1);stroke-width:1.13164377"
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5-1);stroke-width:1.04981256"
          id="path6762-7-2-9"
-         cx="353.46353"
-         cy="-8.756031"
-         rx="25.748438"
-         ry="24.867868"
+         cx="341.27225"
+         cy="-55.580059"
+         rx="23.823256"
+         ry="23.130892"
          transform="scale(1,-1)" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.99532509px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27488312"
-         x="301.59698"
-         y="29.265638"
+         style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
+         x="294.06268"
+         y="-20.160593"
          id="text7242-7"
-         transform="scale(1,-1)"><tspan
+         transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7240-3"
-           x="301.59698"
-           y="29.265638"
-           style="stroke-width:0.27488312">git log A...B</tspan></text>
-      <circle
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+           x="294.06268"
+           y="-20.160593"
+           style="stroke-width:0.25500581">git log A...B</tspan></text>
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-61"
-         cx="406.21802"
-         cy="-24.947071"
-         r="2.5446429"
-         transform="scale(1,-1)" />
-      <circle
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         cx="390.08234"
+         cy="-70.640182"
+         transform="scale(1,-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-9-2"
-         cx="413.58411"
-         cy="-17.714954"
-         r="2.5446429"
-         transform="scale(1,-1)" />
-      <circle
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         cx="396.89767"
+         cy="-63.913216"
+         transform="scale(1,-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-1-93"
-         cx="420.81622"
-         cy="-11.286366"
-         r="2.5446429"
-         inkscape:transform-center-x="2.1261161"
-         inkscape:transform-center-y="-2.1733631"
-         transform="scale(1,-1)" />
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         cx="403.58905"
+         cy="-57.933655"
+         inkscape:transform-center-x="1.9671478"
+         inkscape:transform-center-y="-2.0215578"
+         transform="scale(1,-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-2-1"
-         cx="428.58411"
-         cy="-4.723866"
-         r="2.5446429"
-         inkscape:transform-center-x="1.6536458"
-         inkscape:transform-center-y="-1.4174107"
-         transform="scale(1,-1)" />
-      <circle
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         cx="410.77612"
+         cy="-51.829533"
+         inkscape:transform-center-x="1.5300087"
+         inkscape:transform-center-y="-1.3184071"
+         transform="scale(1,-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-7-9"
-         cx="-450.95016"
-         cy="-24.955433"
-         r="2.5446429"
-         transform="scale(-1)" />
-      <circle
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         cx="-431.46991"
+         cy="-70.647957"
+         transform="scale(-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-9-0-4"
-         cx="-443.58411"
-         cy="-17.723255"
-         r="2.5446429"
-         transform="scale(-1)" />
-      <circle
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.50892854"
+         cx="-424.6546"
+         cy="-63.920937"
+         transform="scale(-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-1-9-7"
-         cx="-436.35199"
-         cy="-11.294728"
-         r="2.5446429"
-         inkscape:transform-center-x="-2.1261161"
-         inkscape:transform-center-y="-2.1733631"
-         transform="scale(-1)" />
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         cx="-417.96323"
+         cy="-57.941433"
+         inkscape:transform-center-x="-1.9671502"
+         inkscape:transform-center-y="-2.021558"
+         transform="scale(-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-2-3-8"
-         cx="-428.58411"
-         cy="-4.7322278"
-         r="2.5446429"
-         inkscape:transform-center-x="-1.6536458"
-         inkscape:transform-center-y="-1.4174107"
-         transform="scale(-1)" />
+         cx="-410.77612"
+         cy="-51.837311"
+         inkscape:transform-center-x="-1.5300004"
+         inkscape:transform-center-y="-1.3184072"
+         transform="scale(-1)"
+         rx="2.3543828"
+         ry="2.366904" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.99532509px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27488312"
-         x="392.62537"
-         y="30.044203"
+         style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
+         x="378.50864"
+         y="-19.438326"
          id="text7242-6-4"
-         transform="scale(1,-1)"><tspan
+         transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7240-0-5"
-           x="392.62537"
-           y="30.044203"
-           style="stroke-width:0.27488312">git log A...B</tspan></text>
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+           x="378.50864"
+           y="-19.438326"
+           style="stroke-width:0.25500581">git log A...B</tspan></text>
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-6-0"
-         cx="428.58252"
-         cy="6.1764045"
-         r="2.5446429"
-         transform="scale(1,-1)" />
-      <circle
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.50892854"
+         cx="410.77466"
+         cy="-41.690628"
+         transform="scale(1,-1)"
+         rx="2.3543828"
+         ry="2.366904" />
+      <ellipse
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-26-3"
-         cx="428.58252"
-         cy="14.888989"
-         r="2.5446429"
-         transform="scale(1,-1)" />
+         cx="410.77466"
+         cy="-33.586601"
+         transform="scale(1,-1)"
+         rx="2.3543828"
+         ry="2.366904" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:14.12111092px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35302776"
-         x="391.39407"
-         y="-21.688099"
+         style="font-style:normal;font-weight:normal;font-size:13.09998798px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32749969"
+         x="377.36639"
+         y="-67.429787"
          id="text7346-6"
-         transform="scale(1,-1)"><tspan
+         transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7344-1"
-           x="391.39407"
-           y="-21.688099"
-           style="stroke-width:0.35302776">A</tspan></text>
+           x="377.36639"
+           y="-67.429787"
+           style="stroke-width:0.32749969">A</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:14.61591911px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36539799"
-         x="455.85129"
-         y="-22.274342"
+         style="font-style:normal;font-weight:normal;font-size:13.55901527px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3389754"
+         x="437.1626"
+         y="-67.973633"
          id="text7350-0"
-         transform="scale(1,-1)"><tspan
+         transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7348-6"
-           x="455.85129"
-           y="-22.274342"
-           style="stroke-width:0.36539799">B</tspan></text>
+           x="437.1626"
+           y="-67.973633"
+           style="stroke-width:0.3389754">B</tspan></text>
       <path
-         style="fill:#ffffff;fill-opacity:1;stroke-width:0.12626907"
-         d="m 362.56345,1044.7639 c -5.14537,-5.2997 -8.23533,-11.7368 -9.01425,-18.7788 -0.19704,-1.7814 -0.16169,-5.6272 0.0679,-7.3867 0.75172,-5.761 3.08793,-11.2666 6.6707,-15.7205 1.10616,-1.3752 2.75779,-3.15676 2.92643,-3.15676 0.19339,0 2.97846,2.85926 3.8815,3.98496 2.00554,2.4999 4.04344,6.1157 5.12737,9.0974 2.83064,7.7865 2.43694,16.4649 -1.09177,24.0661 -1.39942,3.0144 -3.9884,6.7105 -6.24395,8.914 l -0.68456,0.6688 z"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.08785374"
+         d="m 324.39625,40.08549 c -3.57049,3.697144 -5.71468,8.187755 -6.25519,13.100351 -0.13673,1.242729 -0.11221,3.925613 0.0471,5.153065 0.52163,4.018953 2.14278,7.859736 4.62895,10.966838 0.76759,0.959358 1.9137,2.202199 2.03072,2.202199 0.1342,0 2.06682,-1.994659 2.69347,-2.779963 1.39169,-1.743965 2.80583,-4.266397 3.55799,-6.346472 1.96425,-5.43197 1.69105,-11.486142 -0.7576,-16.788845 -0.97109,-2.102887 -2.76765,-4.681337 -4.33282,-6.218529 l -0.47503,-0.466565 z"
          id="path7522"
-         inkscape:connector-curvature="0"
-         transform="matrix(0.75000002,0,0,-0.75000002,63.301185,775.67087)" />
+         inkscape:connector-curvature="0" />
     </g>
   </g>
 </svg>
