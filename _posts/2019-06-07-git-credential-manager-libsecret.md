@@ -2,6 +2,7 @@
 layout: post
 current: post
 navigation: True
+cover:  assets/images/git-key.jpg
 title: Libsecret - przechowuj bezpiecznie hasła dla Gita w Linux Mint oraz Ubuntu
 date: 2019-06-07 06:00:00
 modified_date: 2019-06-07 06:00:00
