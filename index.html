@@ -42,85 +42,237 @@ description: Gitwarsztaty - warsztaty wprowadzające do GITa. Warsztaty otwarte 
 </head>
 
 <body>
-<!-- Navigation
-    ==========================================-->
-<!--<nav id="top-menu" class="navbar navbar-default navbar-fixed-top">-->
-  <!--<div class="container"> -->
-    <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
-    <!--<div class="navbar-header">-->
-      <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>-->
-      <!--<a class="navbar-brand" href="index.html"><img src="img/logo-top.png" class="img-responsive"><span>Grit</span></a> </div>-->
-    <!---->
-    <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
-    <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
-   <!---->
-      <!--&lt;!&ndash;nav icon&ndash;&gt; -->
-      <!--<a id="nav-icon"> <span></span> <span></span> <span></span> </a> -->
-      <!--&lt;!&ndash;nav icon end&ndash;&gt;-->
-      <!---->
-      <!--<ul id="nav-top" class="nav navbar-nav navbar-right">-->
-        <!--<li><a href="index.html" class="page-scroll">Home</a></li>-->
-        <!--<li><a href="page.html" class="page-scroll">Page</a></li>-->
-        <!--<li><a href="blog.html" class="page-scroll">Blog</a></li>-->
-        <!--<li><a href="contact.html" class="page-scroll">Contact</a></li>-->
-      <!--</ul>        -->
-          <!--&lt;!&ndash;search form&ndash;&gt;         -->
-          <!--<form method="get" action="/search" id="search">-->
-            <!--<input name="q" type="text" size="40" placeholder="Search..." />-->
-          <!--</form>-->
-          <!--&lt;!&ndash;/search form&ndash;&gt; -->
-          <!---->
-           <!--<nav class="bottom-nav">-->
-          <!--<ul>-->
-            <!--<li><a href="#">FAQ</a></li>-->
-            <!--<li><a href="#">Privacy</a></li>-->
-            <!--<li><a href="#">Blog</a></li>-->
-            <!--<li><a href="#">Pricing</a></li>-->
-          <!--</ul>-->
-        <!--</nav>-->
-          <!---->
-          <!--<ul class="social-link">-->
-          <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-          <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-          <!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
-          <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
-        <!--</ul>-->
-    <!--</div>-->
-    <!--&lt;!&ndash; /.navbar-collapse &ndash;&gt; -->
-  <!--</div>-->
-  <!--&lt;!&ndash; /.container-fluid &ndash;&gt; -->
-<!--</nav>-->
 
-<!-- banner Page
-    ==========================================-->
+<nav id="top-menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="index.html"><img src="img/logo-top.png" class="img-responsive"><span>Grit</span></a> </div>
+
+    <div class="collapse navbar-collapse fixed-navbarb">
+      <ul class="nav navbar-nav navbar-right"> <!-- nav-view -->
+        <li><a href="index.html" class="page-scroll">Home</a></li>
+        <li><a href="page.html" class="page-scroll">Page</a></li>
+        <li><a href="blog.html" class="page-scroll">Blog</a></li>
+        <li><a href="contact.html" class="page-scroll">Contact</a></li>
+      </ul>
+    </div> 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse hamburger-navbarb" id="bs-example-navbar-collapse-1"> 
+   
+      <!--nav icon--> 
+      <a id="nav-icon"> <span></span> <span></span> <span></span> </a> 
+      <!--nav icon end-->
+      
+      <ul id="nav-top" class="nav navbar-nav navbar-right"> <!-- nav-view -->
+        <li><a href="index.html" class="page-scroll">Home</a></li>
+        <li><a href="page.html" class="page-scroll">Page</a></li>
+        <li><a href="blog.html" class="page-scroll">Blog</a></li>
+        <li><a href="contact.html" class="page-scroll">Contact</a></li>
+      </ul>        
+          <!--search form-->         
+<!--          <form method="get" action="/search" id="search">-->
+<!--            <input name="q" type="text" size="40" placeholder="Search..." />-->
+<!--          </form>-->
+          <!--/search form--> 
+          
+           <nav class="bottom-nav">
+<!--          <ul>-->
+<!--            <li><a href="#">FAQ</a></li>-->
+<!--            <li><a href="#">Privacy</a></li>-->
+<!--            <li><a href="#">Blog</a></li>-->
+<!--            <li><a href="#">Pricing</a></li>-->
+<!--          </ul>-->
+        </nav>
+          
+          <ul class="social-link">
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
 <section id="home-banner" style="background-image: url(img/b-1.jpg);">
   <div class="content">
-    <div class="container"  data-wow-duration="1s"> <span class="wow fadeIn">Tomasz Skraskowski & Krzysztof Morcinek zapraszają na</span>
-      <h1 class="wow fadeInUp"><b>GitWarsztaty</b> - całodniowe wprowadzenie do <span>GITa</span>
-        <br><br>Skontaktuj się z nami, ustalimy termin 
-        warsztatów w <span>Twojej firmie</span></h1>
+    <div class="container"  data-wow-duration="1s">
+      <h1 class="wow fadeInUp"><b>GitWarsztaty</b></h1>
+        <h3 class="wow fadeInUp" style="color: white">GIT efektywnie wykorzystany</h3>
+    </div>
+      <!-- ToDo: Przełączanie w formularzy za pomocą Vue.js -->
+      <div style="height: 50px">
+        <a class="wow fadeInUp" href="#kontakt" onclick="to_position('#kontakt')">Warsztaty u mnie w firmie</a>
+      </div>
+  <div style="height: 50px">
+      <a class="wow fadeInUp" href="#kontakt" onclick="to_position('#kontakt')">Warsztaty otwarte</a>
     </div>
   </div>
-  <!--<a href="#about-us-block">-->
-    <div class="arrow bounce" onclick="to_position('#about-us-block')"> <i class="fa fa-arrow-down fa-2x" style="cursor: pointer"></i> </div>
+  <!--<a href="#prowadzacy">-->
+    <div class="arrow bounce" onclick="to_position('#o-warsztatach')"> <i class="fa fa-arrow-down fa-2x" style="cursor: pointer"></i> </div>
   <!--</a>-->
 </section>
 
-<!-- about us Page
-    ==========================================-->
-<section id="about-us-block">
+<section id="o-warsztatach" style="margin-bottom: 50px; padding-top: 100px">
+  <div class="container">
+    <div class="row">
+      <!--section-title-->
+      <div class="section-title text-center wow fadeInUp">
+        <h2>O warsztatach</h2>
+        <!--<a href="page.html">Mission brief</a>-->
+        <p>
+          <br><br>
+            Warsztaty z gita xxx
+          <br>
+          Zorganizujemy warsztaty w Twojej firmie, albo warsztaty otwarte w Twoim mieście.<br>
+          <br>
+        </p>
+        <img src="img/warsztaty-w-firmie.jpg" style="margin-bottom:0; max-width: 70%; margin-left: auto;margin-right:auto" /><br>
+      </div>
+      <!--/section-title-->
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</section>
+
+<section id="home-contact-block">
+  <div class="container">
+    <div class="row wow fadeInUp">
+      <p class="small-block">Nie trać czasu na zadania, które GIT może wykonać za Ciebie... przećwicz je praktycznie!</p>
+      <a href="#">Umów Warsztaty</a> </div>
+  </div>
+</section>
+
+<section id="process-block">
+  <div class="container">
+    <div class="row">
+      <!--section-title-->
+      <div class="section-title text-center wow fadeInUp">
+        <h2>Co zyskasz dzięki warsztatom</h2>
+        <p style="max-width: 800px; margin-left: auto; margin-right: auto">Warsztaty przekrojowo xxx... takie concepty jak... (MNIEJSZY ODSTEP ODTAD DO PRZYCISKOW)<br>
+          Po warsztatach bardzo ważne jest wdrożenie nabytej wiedzy, dlatego uczestnicy otrzymują <b>dostęp do zamkniętego channela na slacku gitwarsztatowym</b>, na którym prowadzący zdalnie pomagają w napotkanych sytuacjach i odpowiadają na pytania.</p>
+      </div>
+      <!--/section-title-->
+      <!--process tab-->
+      <div>
+        <!--tab nav-->
+        <!-- ToDo: Pozbyć się tej linii osi -->
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#concept" data-toggle="tab"><i class="fa fa-star-o"></i>
+            <h5>Rebasowanie vs mergowanie</h5>
+          </a>
+          </li>
+          <li><a href="#prototype" data-toggle="tab"><i class="fa fa-copy"></i>
+            <h5>Rebase interactive</h5>
+          </a>
+          </li>
+          <li><a href="#design" data-toggle="tab"><i class="fa fa-laptop"></i>
+            <h5>Lorem ipsum</h5>
+          </a>
+          </li>
+          <li><a href="#development" data-toggle="tab"><i class="fa fa-code"></i>
+            <h5>Dolor sit amor</h5>
+          </a>
+          </li>
+          <li><a href="#development" data-toggle="tab"><i class="fa fa-code"></i>
+            <h5>Dolor sit amor</h5>
+          </a>
+          </li>
+          <li><a href="#development" data-toggle="tab"><i class="fa fa-code"></i>
+            <h5>Dolor sit amor</h5>
+          </a>
+          </li>
+          <li><a href="#development" data-toggle="tab"><i class="fa fa-code"></i>
+            <h5>Dolor sit amor</h5>
+          </a>
+          </li>
+        </ul>
+        <!--/tab nav-->
+        <!--tab container-->
+        <div class="tab-content">
+
+          <!--tab nav item 1-->
+          <div id="concept" class="tab-pane active">
+            <!--tab img-->
+            <div class="col-md-5 process-img"> <img src="img/tab-1.jpg" class="img-responsive"> </div>
+            <!--/tab img-->
+            <!--tab content-->
+            <div class="col-md-7 process-content">
+              <h6>Professional website design</h6>
+              <p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p>
+              <a href="#">Read More</a> </div>
+            <!--/tab content-->
+          </div>
+          <!--/tab nav item 1-->
+
+          <!--tab nav item 2-->
+          <div id="prototype" class="tab-pane">
+            <!--tab img-->
+            <div class="col-md-5 process-img"> <img src="img/03-screenshot.jpg" class="img-responsive"> </div>
+            <!--/tab img-->
+            <!--tab content-->
+            <div class="col-md-7 process-content">
+              <h6>Sketch like a PRO</h6>
+              <p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p>
+              <a href="#">Read More</a> </div>
+            <!--/tab content-->
+          </div>
+          <!--/tab nav item 2-->
+
+          <!--tab nav item 3-->
+          <div id="design" class="tab-pane">
+            <!--tab img-->
+            <div class="col-md-5 process-img"> <img src="img/02-screenshot.jpg" class="img-responsive"> </div>
+            <!--/tab img-->
+            <!--tab content-->
+            <div class="col-md-7 process-content">
+              <h6>Make the design</h6>
+              <p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p>
+              <a href="#">Read More</a> </div>
+            <!--/tab content-->
+          </div>
+          <!--/tab nav item 3-->
+
+          <!--tab nav item 4-->
+          <div id="development" class="tab-pane">
+            <!--tab img-->
+            <div class="col-md-5 process-img"> <img src="img/01-screenshot.jpg" class="img-responsive"> </div>
+            <!--/tab img-->
+            <!--tab content-->
+            <div class="col-md-7 process-content">
+              <h6>Code like a star</h6>
+              <p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p>
+              <a href="#">Read More</a> </div>
+            <!--/tab content-->
+          </div>
+          <!--/tab nav item 4-->
+        </div>
+        <!--/tab container-->
+
+      </div>
+      <!--\process tab-->
+
+    </div>
+  </div>
+</section>
+<section id="prowadzacy">
   <div class="container">
     <div class="row"> 
       <!--section-title-->
       <div class="section-title text-center wow fadeInUp">
-        <h2>O nas</h2>
+        <h2>Prowadzący</h2>
         <!--<a href="page.html">Mission brief</a>-->
-        <p>Git to nie tylko narzędzie pracy, którym posługujemy się od lat, ale również nasza pasja.
-          <br>
-          Skontaktuj się z nami, nauczymy obsługi GITa Ciebie i Twoich współpracowników.<br>
-          Krzysztof Morcinek - 737 692 782<br>
-          Tomasz Skraskowski - 792 228 321
+        <p style="margin-top: 20px">
             <br><br>
+        Git to nie tylko narzędzie pracy, którym posługujemy się od lat, ale również nasza pasja.
+          <br>
+          Zorganizujemy warsztaty w Twojej firmie, albo warsztaty otwarte w Twoim mieście.<br>
+          <br>
         </p>
         <img src="img/my.jpg" style="margin-bottom:0; max-width: 70%; margin-left: auto;margin-right:auto" /><br>
       </div>
@@ -152,331 +304,189 @@ description: Gitwarsztaty - warsztaty wprowadzające do GITa. Warsztaty otwarte 
   </div>
 </section>
 
-<!-- contact us Page
-    ==========================================-->
-<!--<section id="home-contact-block">-->
-  <!--<div class="container">-->
-    <!--<div class="row wow fadeInUp">-->
-      <!--<p>Increase leads, build a professional website and be awesome..</p>-->
-      <!--<a href="#">Contact us</a> </div>-->
-  <!--</div>-->
-<!--</section>-->
+<section id="company-counter" style="background-image:url(img/count-bg.jpg);">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12 wow fadeInDown">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="c-block"><i class="fa fa-heart-o"></i><span class="counter">17</span>
+            <p>Darmowe materiały</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="c-block"><i class="fa fa-envelope-o"></i><span class="counter">456</span>
+            <p>Leads</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="c-block"><i class="fa fa-folder-o"></i><span class="counter">8596</span>
+            <p>Websites</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="c-block"><i class="fa fa-coffee"></i><span class="counter">456</span>
+            <p>Coffee</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials-block" class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div id="testimonial" class="owl-carousel owl-theme">
+          <div class="item"> <img src="img/team/01.jpg">
+            <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+            <p><strong>Dean Martin</strong> CEO Acme Inc.</p>
+          </div>
+          <div class="item"> <img src="img/team/02.jpg">
+            <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+            <p><strong>Rima Martin</strong> CEO Food Inc.</p>
+          </div>
+          <div class="item"> <img src="img/team/03.jpg">
+            <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+            <p><strong>Joe Martin</strong> CEO Chat Inc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="latest-news-block">
+  <div class="container">
+    <div class="row">
+      <!--section-title-->
+      <div class="section-title text-center wow fadeInUp">
+        <h2>Ostatnie wpisy</h2>
+        <a href="blog.html">Przejdź do bloga</a></div>
+      <!--/section-title-->
+
+      <!--home article-->
+      <article class="col-md-4 col-sm-8 col-xs-12">
+        <header class="entry-header"> <a href="blog-post.html"><img src="img/04-screenshot.jpg" alt="image 1"></a>
+          <a href="blog-post.html"><h6>10 Incredible Quotes To Guide Your Life</h6></a>
+          <a href="#">Web-design</a> , <a href="#">Front-end</a> </header></a>
+      </article>
+      <!--/home article -->
+
+      <!--home article-->
+      <article class="col-md-4 col-sm-8 col-xs-12">
+        <header class="entry-header"> <img src="img/02-screenshot.jpg" alt="image 1"> <a href="#">
+          <h6>Responsive Website in 2017 –
+            Step by Step Guide</h6>
+        </a> <a href="#">Web-design</a> </header>
+      </article>
+      <!--/home article -->
+
+      <!--home article-->
+      <article class="col-md-4 col-sm-8 col-xs-12">
+        <header class="entry-header"> <img src="img/03-screenshot.jpg" alt="image 1"> <a href="#">
+          <h6>10 Incredible Quotes To Guide Your Life</h6>
+        </a> <a href="#">Web-design</a> , <a href="#">Front-end</a> </header>
+      </article>
+      <!--/home article -->
+
+      <!--home article-->
+<!--      <article class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <header class="entry-header"> <img src="img/01-screenshot.jpg" alt="image 1"> <a href="#">-->
+<!--          <h6>HEADING 6 in use here</h6>-->
+<!--        </a> <a href="#">Web-design</a> </header>-->
+<!--      </article>-->
+      <!--/home article -->
+
+    </div>
+  </div>
+</section>
 
 <!-- our works block
     ==========================================-->
-<!--<section id="our-work-block">-->
-  <!--<div class="container">-->
-    <!--<div class="row"> -->
-      <!--&lt;!&ndash;section-title&ndash;&gt;-->
-      <!--<div class="section-title text-center wow fadeInUp">-->
-        <!--<h2>Our work</h2>-->
-        <!--<a href="portfolio.html">go to portfolio</a></div>-->
-      <!--&lt;!&ndash;/section-title&ndash;&gt;-->
-      <!--<div class="clearfix"></div>-->
-      <!--<div class="works">-->
-        <!--<ul class="grid">-->
-          <!--<li>-->
-            <!--<figure><img src="img/01-screenshot.jpg" alt="Screenshot 01">-->
-              <!--<figcaption>-->
-                <!--<div class="caption-content">-->
-                  <!--<h6>Codetowp branding</h6>-->
-                  <!--<hr>-->
-                  <!--<a href="#">Design</a>/ <a href="#">brand</a>-->
-                  <!--<ul class="work-more">-->
-                    <!--<li><a href="img/01-screenshot.jpg"><i class="fa fa-search"></i></a></li>-->
-                    <!--<li><a href="portfolio-inner.html"><i class="fa fa-link"></i></a></li>-->
-                  <!--</ul>-->
-                <!--</div>-->
-              <!--</figcaption>-->
-            <!--</figure>-->
-          <!--</li>-->
-          <!--<li>-->
-            <!--<figure><img src="img/02-screenshot.jpg" alt="Screenshot 01">-->
-              <!--<figcaption>-->
-                <!--<div class="caption-content">-->
-                  <!--<h6>Optimised For Design</h6>-->
-                  <!--<hr>-->
-                  <!--<a href="#">Design</a>/ <a href="#">brand</a>-->
-                  <!--<ul class="work-more">-->
-                    <!--<li><a href="#"><i class="fa fa-search"></i></a></li>-->
-                    <!--<li><a href="#"><i class="fa fa-link"></i></a></li>-->
-                  <!--</ul>-->
-                <!--</div>-->
-              <!--</figcaption>-->
-            <!--</figure>-->
-          <!--</li>-->
-          <!--<li>-->
-            <!--<figure><img src="img/03-screenshot.jpg" alt="Screenshot 01">-->
-              <!--<figcaption>-->
-                <!--<div class="caption-content">-->
-                  <!--<h6>Optimised For Design</h6>-->
-                  <!--<hr>-->
-                  <!--<a href="#">Design</a>/ <a href="#">brand</a>-->
-                  <!--<ul class="work-more">-->
-                    <!--<li><a href="#"><i class="fa fa-search"></i></a></li>-->
-                    <!--<li><a href="#"><i class="fa fa-link"></i></a></li>-->
-                  <!--</ul>-->
-                <!--</div>-->
-              <!--</figcaption>-->
-            <!--</figure>-->
-          <!--</li>-->
-          <!--<li>-->
-            <!--<figure><img src="img/04-screenshot.jpg" alt="Screenshot 01">-->
-              <!--<figcaption>-->
-                <!--<div class="caption-content">-->
-                  <!--<h6>Optimised For Design</h6>-->
-                  <!--<hr>-->
-                  <!--<a href="#">Design</a>/ <a href="#">brand</a>-->
-                  <!--<ul class="work-more">-->
-                    <!--<li><a href="#"><i class="fa fa-search"></i></a></li>-->
-                    <!--<li><a href="#"><i class="fa fa-link"></i></a></li>-->
-                  <!--</ul>-->
-                <!--</div>-->
-              <!--</figcaption>-->
-            <!--</figure>-->
-          <!--</li>-->
-          <!--<li>-->
-            <!--<figure><img src="img/05-screenshot.jpg" alt="Screenshot 01">-->
-              <!--<figcaption>-->
-                <!--<div class="caption-content">-->
-                  <!--<h6>Optimised For Design</h6>-->
-                  <!--<hr>-->
-                  <!--<a href="#">Design</a>/ <a href="#">brand</a>-->
-                  <!--<ul class="work-more">-->
-                    <!--<li><a href="#"><i class="fa fa-search"></i></a></li>-->
-                    <!--<li><a href="#"><i class="fa fa-link"></i></a></li>-->
-                  <!--</ul>-->
-                <!--</div>-->
-              <!--</figcaption>-->
-            <!--</figure>-->
-          <!--</li>-->
-          <!--<li>-->
-            <!--<figure><img src="img/06-screenshot.jpg" alt="Screenshot 01">-->
-              <!--<figcaption>-->
-                <!--<div class="caption-content">-->
-                  <!--<h6>Optimised For Design</h6>-->
-                  <!--<hr>-->
-                  <!--<a href="#">Design</a>/ <a href="#">brand</a>-->
-                  <!--<ul class="work-more">-->
-                    <!--<li><a href="#"><i class="fa fa-search"></i></a></li>-->
-                    <!--<li><a href="#"><i class="fa fa-link"></i></a></li>-->
-                  <!--</ul>-->
-                <!--</div>-->
-              <!--</figcaption>-->
-            <!--</figure>-->
-          <!--</li>-->
-        <!--</ul>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</section>-->
+<section id=kontakt">
+  <div class="container">
+    <div class="row"> 
+      <!--section-title-->
+      <div class="section-title text-center wow fadeInUp">
+        <h2>Kontakt</h2>
+          <p>
+            Możesz skontaktować się z nami bezpośrednio, lub za pośrednictwem formularza. <br><br>
+            <!-- ToDo: Na małym ekranie usunąć ramkę, żeby się nie łamała linia -->
+            Krzysztof Morcinek:  <a class="phone" href="tel:737692782">737 692 782</a><br>
+            Tomasz Skraskowski: <a class="phone" href="tel:792228321">792 228 321</a><br>
+            E-mail: <a class="phone" href="mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty" target="_top">kontakt@gitwarsztaty.pl</a>
+          </p>
+<!--        <a href="portfolio.html">go to portfolio</a></div>-->
+      <!--/section-title-->
+        <div class="container" style="padding-top: 45px; max-width: 800px">
+          <form action="/action_page.php">
+            <!-- ToDo: za pomocą vue zminiać labelki na podstawie wyboru rodzaju warsztatów - to będze też zmieniane za pomocą przycisków na pierwszym ekranie -->
+            <label for="country" style="float: left">Interesują mnie</label>
+            <select id="country" name="country">
+              <option value="australia">Warsztaty u mnie w firmie</option>
+              <option value="canada">Warsztaty otwarte</option>
+            </select>
 
-<!-- the process block
-    ==========================================-->
+            <label for="lname" style="float: left">E-mail</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-<!--<section id="process-block">-->
-  <!--<div class="container">-->
-    <!--<div class="row"> -->
-      <!--&lt;!&ndash;section-title&ndash;&gt;-->
-      <!--<div class="section-title text-center wow fadeInUp">-->
-        <!--<h2>The process</h2>-->
-      <!--</div>-->
-      <!--&lt;!&ndash;/section-title&ndash;&gt; -->
-      <!--&lt;!&ndash;process tab&ndash;&gt;-->
-      <!--<div> -->
-        <!--&lt;!&ndash;tab nav&ndash;&gt;-->
-        <!--<ul class="nav nav-tabs">-->
-            <!--<li class="active"><a href="#concept" data-toggle="tab"><i class="fa fa-star-o"></i>-->
-                <!--<h5>01. Concept</h5>-->
-                <!--</a>-->
-            <!--</li>-->
-            <!--<li><a href="#prototype" data-toggle="tab"><i class="fa fa-copy"></i>-->
-                <!--<h5>02. Prototyping</h5>-->
-                <!--</a>-->
-            <!--</li>-->
-            <!--<li><a href="#design" data-toggle="tab"><i class="fa fa-laptop"></i>-->
-                <!--<h5>03. Design</h5>-->
-                <!--</a>-->
-            <!--</li>-->
-            <!--<li><a href="#development" data-toggle="tab"><i class="fa fa-code"></i>-->
-                <!--<h5>04. Development</h5>-->
-                <!--</a>-->
-            <!--</li>-->
-        <!--</ul>-->
-        <!--&lt;!&ndash;/tab nav&ndash;&gt; -->
-        <!--&lt;!&ndash;tab container&ndash;&gt;-->
-        <!--<div class="tab-content"> -->
-          <!---->
-          <!--&lt;!&ndash;tab nav item 1&ndash;&gt;-->
-          <!--<div id="concept" class="tab-pane active"> -->
-            <!--&lt;!&ndash;tab img&ndash;&gt;-->
-            <!--<div class="col-md-5 process-img"> <img src="img/tab-1.jpg" class="img-responsive"> </div>-->
-            <!--&lt;!&ndash;/tab img&ndash;&gt; -->
-            <!--&lt;!&ndash;tab content&ndash;&gt;-->
-            <!--<div class="col-md-7 process-content">-->
-              <!--<h6>Professional website design</h6>-->
-              <!--<p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p>-->
-              <!--<a href="#">Read More</a> </div>-->
-            <!--&lt;!&ndash;/tab content&ndash;&gt;             -->
-          <!--</div>-->
-          <!--&lt;!&ndash;/tab nav item 1&ndash;&gt; -->
-          <!---->
-          <!--&lt;!&ndash;tab nav item 2&ndash;&gt;-->
-          <!--<div id="prototype" class="tab-pane"> -->
-            <!--&lt;!&ndash;tab img&ndash;&gt;-->
-            <!--<div class="col-md-5 process-img"> <img src="img/03-screenshot.jpg" class="img-responsive"> </div>-->
-            <!--&lt;!&ndash;/tab img&ndash;&gt; -->
-            <!--&lt;!&ndash;tab content&ndash;&gt;-->
-            <!--<div class="col-md-7 process-content">-->
-              <!--<h6>Sketch like a PRO</h6>-->
-              <!--<p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p>-->
-              <!--<a href="#">Read More</a> </div>-->
-            <!--&lt;!&ndash;/tab content&ndash;&gt;             -->
-          <!--</div>-->
-          <!--&lt;!&ndash;/tab nav item 2&ndash;&gt; -->
-		  <!---->
-           <!--&lt;!&ndash;tab nav item 3&ndash;&gt;-->
-          <!--<div id="design" class="tab-pane"> -->
-            <!--&lt;!&ndash;tab img&ndash;&gt;-->
-            <!--<div class="col-md-5 process-img"> <img src="img/02-screenshot.jpg" class="img-responsive"> </div>-->
-            <!--&lt;!&ndash;/tab img&ndash;&gt; -->
-            <!--&lt;!&ndash;tab content&ndash;&gt;-->
-            <!--<div class="col-md-7 process-content">-->
-              <!--<h6>Make the design</h6>-->
-              <!--<p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p>-->
-              <!--<a href="#">Read More</a> </div>-->
-            <!--&lt;!&ndash;/tab content&ndash;&gt;             -->
-          <!--</div>-->
-          <!--&lt;!&ndash;/tab nav item 3&ndash;&gt;     -->
-		  <!---->
-          <!--&lt;!&ndash;tab nav item 4&ndash;&gt;-->
-          <!--<div id="development" class="tab-pane"> -->
-            <!--&lt;!&ndash;tab img&ndash;&gt;-->
-            <!--<div class="col-md-5 process-img"> <img src="img/01-screenshot.jpg" class="img-responsive"> </div>-->
-            <!--&lt;!&ndash;/tab img&ndash;&gt; -->
-            <!--&lt;!&ndash;tab content&ndash;&gt;-->
-            <!--<div class="col-md-7 process-content">-->
-              <!--<h6>Code like a star</h6>-->
-              <!--<p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p>-->
-              <!--<a href="#">Read More</a> </div>-->
-            <!--&lt;!&ndash;/tab content&ndash;&gt;             -->
-          <!--</div>-->
-          <!--&lt;!&ndash;/tab nav item 4&ndash;&gt; 		  -->
-        <!--</div>-->
-        <!--&lt;!&ndash;/tab container&ndash;&gt; -->
-        <!---->
-      <!--</div>-->
-      <!--&lt;!&ndash;\process tab&ndash;&gt; -->
-      <!---->
-    <!--</div>-->
-  <!--</div>-->
-<!--</section>-->
+            <label for="lname" style="float: left">Numer telefonu <small>(opcjonalnie)</small></label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+            <label for="fname" style="float: left">Nazwa firmy <small>(opcjonalnie)</small></label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-<!-- Company counter section
-    ==========================================-->
-<!--<section id="company-counter" style="background-image:url(img/count-bg.jpg);">-->
-  <!--<div class="container">-->
-    <!--<div class="row text-center">-->
-      <!--<div class="col-md-12 wow fadeInDown">-->
-        <!--<div class="col-md-3 col-sm-6 col-xs-12">-->
-          <!--<div class="c-block"><i class="fa fa-heart-o"></i><span class="counter">17</span>-->
-            <!--<p>Clients</p>-->
-          <!--</div>-->
-        <!--</div>-->
-        <!--<div class="col-md-3 col-sm-6 col-xs-12">-->
-          <!--<div class="c-block"><i class="fa fa-envelope-o"></i><span class="counter">456</span>-->
-            <!--<p>Leads</p>-->
-          <!--</div>-->
-        <!--</div>-->
-        <!--<div class="col-md-3 col-sm-6 col-xs-12">-->
-          <!--<div class="c-block"><i class="fa fa-folder-o"></i><span class="counter">8596</span>-->
-            <!--<p>Websites</p>-->
-          <!--</div>-->
-        <!--</div>-->
-        <!--<div class="col-md-3 col-sm-6 col-xs-12">-->
-          <!--<div class="c-block"><i class="fa fa-coffee"></i><span class="counter">456</span>-->
-            <!--<p>Coffee</p>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</section>-->
-<!-- /Company counter section --> 
+            <label for="lname" style="float: left">Adres biura <small>(opcjonalnie)</small></label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-<!-- Testimonials Section
-    ==========================================-->
-<!--<section id="testimonials-block" class="text-center">-->
-  <!--<div class="container">-->
-    <!--<div class="row">-->
-      <!--<div class="col-md-8 col-md-offset-2">-->
-        <!--<div id="testimonial" class="owl-carousel owl-theme">-->
-          <!--<div class="item"> <img src="img/team/01.jpg">-->
-            <!--<h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>-->
-            <!--<p><strong>Dean Martin</strong> CEO Acme Inc.</p>-->
-          <!--</div>-->
-          <!--<div class="item"> <img src="img/team/02.jpg">-->
-            <!--<h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>-->
-            <!--<p><strong>Rima Martin</strong> CEO Food Inc.</p>-->
-          <!--</div>-->
-          <!--<div class="item"> <img src="img/team/03.jpg">-->
-            <!--<h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>-->
-            <!--<p><strong>Joe Martin</strong> CEO Chat Inc.</p>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</section>-->
 
-<!-- latest news block
-    ==========================================-->
+            <label for="subject" style="float: left">Dodatkowe informacje <small>(opcjonalnie)</small></label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-<!--<section id="latest-news-block">-->
-  <!--<div class="container">-->
-    <!--<div class="row"> -->
-      <!--&lt;!&ndash;section-title&ndash;&gt;-->
-      <!--<div class="section-title text-center wow fadeInUp">-->
-        <!--<h2>Latest news</h2>-->
-        <!--<a href="blog.html">See the blog</a></div>-->
-      <!--&lt;!&ndash;/section-title&ndash;&gt; -->
-      <!---->
-      <!--&lt;!&ndash;home article&ndash;&gt;-->
-      <!--<article class="col-md-3 col-sm-6 col-xs-12">-->
-        <!--<header class="entry-header"> <a href="blog-post.html"><img src="img/04-screenshot.jpg" alt="image 1"></a>-->
-          <!--<a href="blog-post.html"><h6>10 Incredible Quotes To Guide Your Life</h6></a>-->
-           <!--<a href="#">Web-design</a> , <a href="#">Front-end</a> </header></a>-->
-      <!--</article>-->
-      <!--&lt;!&ndash;/home article &ndash;&gt; -->
-      <!---->
-      <!--&lt;!&ndash;home article&ndash;&gt;-->
-      <!--<article class="col-md-3 col-sm-6 col-xs-12">-->
-        <!--<header class="entry-header"> <img src="img/02-screenshot.jpg" alt="image 1"> <a href="#">-->
-          <!--<h6>Responsive Website in 2017 – -->
-            <!--Step by Step Guide</h6>-->
-          <!--</a> <a href="#">Web-design</a> </header>-->
-      <!--</article>-->
-      <!--&lt;!&ndash;/home article &ndash;&gt; -->
-      <!---->
-      <!--&lt;!&ndash;home article&ndash;&gt;-->
-      <!--<article class="col-md-3 col-sm-6 col-xs-12">-->
-        <!--<header class="entry-header"> <img src="img/03-screenshot.jpg" alt="image 1"> <a href="#">-->
-          <!--<h6>10 Incredible Quotes To Guide Your Life</h6>-->
-          <!--</a> <a href="#">Web-design</a> , <a href="#">Front-end</a> </header>-->
-      <!--</article>-->
-      <!--&lt;!&ndash;/home article &ndash;&gt; -->
-      <!---->
-      <!--&lt;!&ndash;home article&ndash;&gt;-->
-      <!--<article class="col-md-3 col-sm-6 col-xs-12">-->
-        <!--<header class="entry-header"> <img src="img/01-screenshot.jpg" alt="image 1"> <a href="#">-->
-          <!--<h6>HEADING 6 in use here</h6>-->
-          <!--</a> <a href="#">Web-design</a> </header>-->
-      <!--</article>-->
-      <!--&lt;!&ndash;/home article &ndash;&gt; -->
-      <!---->
-    <!--</div>-->
-  <!--</div>-->
-<!--</section>-->
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="podziel-sie" class="latest-news-block">
+  <div class="container">
+    <div class="section-title text-center wow fadeInUp elements-title">
+      <h2>Podziel się!</h2>
+              <p style="margin-top: 75px">Jeżeli znasz programistów którzy nie korzystają z wielu dobrodziejstw GIT'a, 
+                <b>podziel się linkiem do inicjatywy GitWarsztaty</b>, może dadzą się przekonać do zoptymalizowania swojej pracy.
+                <br>Z góry dziękujemy! :)</p>
+    </div>
+    <div class="row" style="margin-left: auto; margin-right: auto;">
+        <div class="wow fadeInUp" style="margin-left: auto; margin-right: auto">
+          <div class="col-md-4 col-sm-8 col-xs-12 row-element" style="margin-left: auto; margin-right: auto">
+              <div class="social-left">
+                <a href="blog-post.html" class="text-center" style="margin-top: auto; margin-bottom: auto">
+                  <h4><i class="fa fa-facebook" style="font-size: 250%; margin-bottom: 10px"></i><br>Facebook</h4>
+                </a>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-8 col-xs-12 row-element">
+            <div>
+              <a href="blog-post.html" class="text-center" style="margin-top: auto; margin-bottom: auto">
+                <h4><i class="fa fa-twitter" style="font-size: 250%; margin-bottom: 10px"></i><br>Twitter</h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-8 col-xs-12 row-element">
+            <div class="social-right">
+              <a href="blog-post.html" class="text-center" style="margin-top: auto; margin-bottom: auto">
+                <h4><i class="fa fa-linkedin" style="font-size: 250%; margin-bottom: 10px"></i><br>LinkedIn</h4>
+              </a>
+            </div>
+          </div>
+    </div>
+  </div>
+  </div>
+</section>
 
 <footer id="bottom-footer">
   <div class="container">
@@ -500,14 +510,14 @@ description: Gitwarsztaty - warsztaty wprowadzające do GITa. Warsztaty otwarte 
       <!--/bottom nav--> 
       
       <!--Social Links-->
-      <!--<div class="col-md-4 col-sm-4 col-xs-12">-->
-        <!--<ul class="social-link">-->
-          <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-          <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-          <!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
-          <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
-        <!--</ul>-->
-      <!--</div>-->
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <ul class="social-link" style="padding-left: 0">
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
       <!--/Social Links--> 
       
     </div>
