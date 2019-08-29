@@ -2678,7 +2678,7 @@ ul.about-features li:hover i {
 	transform: rotate(136deg);
 	z-index: -1;
 }
-#our-work-block .section-title, #process-block .section-title{
+#our-work-block .section-title, #co-zyskasz .section-title{
 	margin-bottom: 120px;
 }
 #our-work-block .section-title p {
@@ -2828,15 +2828,15 @@ ul.about-features li:hover i {
 	padding: 10px 13px;
 	transition: all 300ms ease-in-out;
 }
-#process-block {
+#co-zyskasz {
 	padding: 80px 0 160px;
 	background: #f6f6f6;
 }
-#process-block .nav-tabs {
+#co-zyskasz .nav-tabs {
 	text-align: center;
 	border-bottom: 0px #bcc6d0 solid;
 }
-#process-block .nav-tabs:before {
+#co-zyskasz .nav-tabs:before {
 	content: "";
 	display: block;
 	width: 100%;
@@ -2845,52 +2845,52 @@ ul.about-features li:hover i {
 	position: relative;
 	top: 58px;
 }
-#process-block .nav-tabs > li {
+#co-zyskasz .nav-tabs > li {
 	float: none;
 	display: inline-block;
 }
-#process-block .nav-tabs > li a {
+#co-zyskasz .nav-tabs > li a {
 	border-bottom: 0px #bcc6d0 solid;
 	border: none;
 	padding: 10px 35px;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
-#process-block .nav-tabs > li.active > a, #process-block .nav-tabs > li.active > a:hover, #process-block .nav-tabs > li.active > a:focus {
+#co-zyskasz .nav-tabs > li.active > a, #co-zyskasz .nav-tabs > li.active > a:hover, #co-zyskasz .nav-tabs > li.active > a:focus {
 	border-bottom: 0px #bcc6d0 solid;
 	background-color: transparent;
 }
-#process-block .nav-tabs > li.active i {
+#co-zyskasz .nav-tabs > li.active i {
 	color: #6cbfff;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
-#process-block .nav-tabs > li.active i:after {
+#co-zyskasz .nav-tabs > li.active i:after {
 	background: #6cbfff;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
-#process-block .nav > li > a:hover, #process-block .nav > li > a:focus {
+#co-zyskasz .nav > li > a:hover, #co-zyskasz .nav > li > a:focus {
 	background-color: transparent;
 	color: #6cbfff;
 }
-#process-block .nav > li > a:hover i {
+#co-zyskasz .nav > li > a:hover i {
 	color: #6cbfff;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
-#process-block .nav > li > a:hover i:after {
+#co-zyskasz .nav > li > a:hover i:after {
 	background: #6cbfff;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 }
-#process-block .nav-tabs > li a i {
+#co-zyskasz .nav-tabs > li a i {
 	color: #bcc6d0;
 	font-weight: 400;
 	font-size: 24px;
 	display: block;
 }
-#process-block .nav-tabs > li a i:after {
+#co-zyskasz .nav-tabs > li a i:after {
 	content: "";
 	display: inline-block;
 	width: 7px;
@@ -2901,7 +2901,7 @@ ul.about-features li:hover i {
 	top: 30px;
 	right: 14px;
 }
-#process-block .nav-tabs > li a h5 {
+#co-zyskasz .nav-tabs > li a h5 {
 	color: #404040;
 	font-size: 14px;
 	font-weight: 600;
@@ -2909,11 +2909,11 @@ ul.about-features li:hover i {
 	display: block;
 	margin-top: 50px;
 }
-#process-block .tab-content .tab-pane {
+#co-zyskasz .tab-content .tab-pane {
 	background: none;
 	margin-top: 120px;
 }
-#process-block .process-img img {
+#co-zyskasz .process-img img {
 	width: 100%;
 	object-fit: cover;
 	overflow: hidden;
@@ -2921,15 +2921,15 @@ ul.about-features li:hover i {
 	margin:0 auto;
     min-height: 400px;
 }
-#process-block .process-content {
+#co-zyskasz .process-content {
 	padding: 5em 3em;
 }
-#process-block .process-content h6 {
+#co-zyskasz .process-content h6 {
 	font-size: 42px;
 	color: #3c434d;
 	font-weight: 600;
 }
-#process-block .process-content p {
+#co-zyskasz .process-content p {
 	color: #6f6f6f;
 	font-size: 16px;
 	font-weight: 400;
@@ -2937,14 +2937,14 @@ ul.about-features li:hover i {
 	margin-top: 50px;
 	margin-bottom: 35px;
 }
-#process-block .process-content a {
+#co-zyskasz .process-content a {
 	color: #e95151;
 	text-transform: uppercase;
 	font-size: 14px;
 	text-decoration: underline;
 	font-weight: 500;
 }
-#process-block .process-content a:hover {
+#co-zyskasz .process-content a:hover {
 	color: #404040;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
@@ -4411,7 +4411,7 @@ ul.about-features li {
 #our-work-block .works ul li {
 	width: 47%;
 }
-#process-block .nav-tabs > li a {
+#co-zyskasz .nav-tabs > li a {
 	padding: 10px 16px;
 }
 
@@ -4613,28 +4613,28 @@ ul.about-features li i {
 	max-width: none;
 	text-align: center;
 }
-#process-block .nav-tabs:before {
+#co-zyskasz .nav-tabs:before {
 	display: none;
 }
-#process-block .nav-tabs > li a i:after {
+#co-zyskasz .nav-tabs > li a i:after {
 	display: none;
 }
-#process-block .nav-tabs > li a h5 {
+#co-zyskasz .nav-tabs > li a h5 {
 	margin-top: 15px;
 }
-#process-block .nav-tabs > li {
+#co-zyskasz .nav-tabs > li {
 	display: block;
 }
-#process-block .nav-tabs > li:hover {
+#co-zyskasz .nav-tabs > li:hover {
 	background: #6cbfff;
 }
-#process-block .nav-tabs > li.active {
+#co-zyskasz .nav-tabs > li.active {
 	background: #6cbfff;
 }
-#process-block .nav-tabs > li:hover a h5, #process-block .nav-tabs > li:hover a i {
+#co-zyskasz .nav-tabs > li:hover a h5, #co-zyskasz .nav-tabs > li:hover a i {
 	color: #fff;
 }
-#process-block .nav-tabs > li.active a h5, #process-block .nav-tabs > li.active a i {
+#co-zyskasz .nav-tabs > li.active a h5, #co-zyskasz .nav-tabs > li.active a i {
 	color: #fff;
 }
 .bottom-nav ul {
