@@ -214,6 +214,7 @@ pre {
 	color: #fff;
 	padding: 0;
 	font-weight: 900;
+    max-height: 35px;
 }
 #top-menu a.navbar-brand img, #top-menu a.navbar-brand span {
 	display: inline-block;
@@ -4673,6 +4674,16 @@ input[type=submit]:hover {
 /*.fixed-navbar {*/
 /*	display: block;*/
 /*}*/
+
+@media (min-width: 767px) {
+    #bs-example-navbar-collapse-1 {
+		max-height: 0;
+	}
+	
+	.navbar-top {
+		max-height: 50px;
+	}
+}
 
 @media (max-width: 767px) {
 	/*.fixed-navbar{*/
