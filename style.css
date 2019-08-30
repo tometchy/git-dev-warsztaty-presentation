@@ -4763,3 +4763,7 @@ input[type=submit]:hover {
         font-size: 11px !important;
 	}
 }
+
+.collapsing {
+	width: 100%
+}
