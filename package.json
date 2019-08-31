@@ -1,6 +1,6 @@
 {
     "name": "gitwarsztaty-blog",
-    "description": "Warsztaty wprowadzające do GITa",
+    "description": "Warsztaty wprowadzające do Gita",
     "demo": "https://gitwarsztaty.pl",
     "version": "2.1.9",
     "engines": {
