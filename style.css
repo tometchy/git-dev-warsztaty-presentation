@@ -2766,7 +2766,7 @@ ul.about-features li:hover i {
 	transition: all 300ms ease-in-out;
 }
 #co-zyskasz {
-	padding: 80px 0 160px;
+	padding: 80px 0 0;
 	background: #f6f6f6;
 }
 #co-zyskasz .nav-tabs {
@@ -2778,17 +2778,18 @@ ul.about-features li:hover i {
 	display: block;
 	width: 100%;
 	height: 1px;
-	background: #bcc6d0;
+	/*background: #bcc6d0;*/
 	position: relative;
 	top: 58px;
 }
 #co-zyskasz .nav-tabs > li {
 	float: none;
 	display: inline-block;
+	background-color: #f8f8f8;
 }
 #co-zyskasz .nav-tabs > li a {
-	border-bottom: 0px #bcc6d0 solid;
-	border: none;
+	/*border-bottom: 0px #bcc6d0 solid;*/
+	/*border: none;*/
 	padding: 10px 35px;
 	transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
@@ -2809,7 +2810,7 @@ ul.about-features li:hover i {
 }
 #co-zyskasz .nav > li > a:hover, #co-zyskasz .nav > li > a:focus {
 	background-color: transparent;
-	color: #6cbfff;
+	color: #365c81;
 }
 #co-zyskasz .nav > li > a:hover i {
 	color: #6cbfff;
@@ -2840,15 +2841,18 @@ ul.about-features li:hover i {
 }
 #co-zyskasz .nav-tabs > li a h5 {
 	color: #404040;
-	font-size: 14px;
+	/*font-size: 14px;*/
+	font-size: 100%;
 	font-weight: 600;
 	text-transform: uppercase;
 	display: block;
-	margin-top: 50px;
+	margin-top: 15px;
+    margin-bottom: 15px
 }
 #co-zyskasz .tab-content .tab-pane {
 	background: none;
-	margin-top: 120px;
+	margin-top: 20px;
+    
 }
 #co-zyskasz .process-img img {
 	width: 100%;
@@ -4453,8 +4457,29 @@ ul.about-features li i {
 
 
 
+@media (min-width: 767px) {
+	#co-zyskasz .nav-tabs > li,
+	#co-zyskasz .nav-tabs > li a {
+		height: 76px;
+		margin-bottom: 4px;
+	}
+    
+	.co-zyskasz-style {
+		max-width: 710px
+	}
+}
+
+@media (min-width: 1001px){
+	.co-zyskasz-style {
+		max-width: 850px
+	}
+}
+
  /*@media (max-width: 603px) {*/
 @media (max-width: 767px) {
+.co-zyskasz-line-break {
+	display: none;
+}
 	 
 #top-menu nav.bottom-nav{border-top:1px #999 solid; padding:25px 0 15px; margin:15px 0; display:block;}	 
 #top-menu .social-link{display:block; text-align:center; padding-left:0; }
@@ -4556,7 +4581,8 @@ ul.about-features li i {
 	display: none;
 }
 #co-zyskasz .nav-tabs > li a h5 {
-	margin-top: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 #co-zyskasz .nav-tabs > li {
 	display: block;
