@@ -2859,8 +2859,8 @@ ul.about-features li:hover i {
 	object-fit: cover;
 	overflow: hidden;
 	max-width: 360px;
-	margin: 0 auto 20px;
-	max-height: 400px;
+	margin: 0 auto 37px;
+	max-height: 330px;
 }
 
 @media (max-width: 991px) {

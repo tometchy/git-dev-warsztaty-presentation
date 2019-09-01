@@ -29,8 +29,8 @@ logo: 'assets/images/favicon.ico'
             {% endif %}
             <div class="author-meta">
                 <div class="author-stats">
-                    {% if paginator.total_posts == 0 %}No posts{% elsif paginator.total_posts == 1 %}1 post{% else %}{{
-                    paginator.total_posts }} posts{% endif %}
+                    {% if paginator.total_posts == 0 %}Brak postów{% elsif paginator.total_posts == 1 %}1 post{% else %}{{
+                    paginator.total_posts }} posty{% endif %}
                     <span class="inline-on-pc" style="margin: 0 12px; opacity: 0.5;">&bull;</span>
                     <span class="inline-on-mobile"><br/></span>
                     <a class="social-link-author social-link-rss" href="/author/{{ author[1].name | downcase }}/feed.xml" target="_blank">

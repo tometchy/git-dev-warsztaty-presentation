@@ -34,7 +34,25 @@ into the {body} of the default.hbs template -->
                 {% else %}
                 <section class="post-full-meta" style="margin-top:0;">
                 {% endif %}
-                    <time class="post-full-meta-date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
+                    <time class="post-full-meta-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                        {% assign m = page.date | date: "%-m" %}
+                        {{ page.date | date: "%-d" }}
+                        {% case m %}
+                        {% when '1' %}stycznia
+                        {% when '2' %}lutego
+                        {% when '3' %}marca
+                        {% when '4' %}kwietnia
+                        {% when '5' %}maja
+                        {% when '6' %}czerwca
+                        {% when '7' %}lipca
+                        {% when '8' %}sierpnia
+                        {% when '9' %}września
+                        {% when '10' %}październiak
+                        {% when '11' %}listopada
+                        {% when '12' %}grudnia
+                        {% endcase %}
+                        {{ page.date | date: "%Y" }} 
+                    </time>
                     {% if page.tags.size > 0 %}
                     <span class="date-divider">/</span>
                     {% for tag in page.tags %}
