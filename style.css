@@ -2859,11 +2859,20 @@ ul.about-features li:hover i {
 	object-fit: cover;
 	overflow: hidden;
 	max-width: 360px;
-	margin:0 auto;
-    min-height: 400px;
+	margin: 0 auto 20px;
+	max-height: 400px;
+}
+
+@media (max-width: 991px) {
+	#co-zyskasz .process-img img {
+		max-height: 250px;
+	}
 }
 #co-zyskasz .process-content {
-	padding: 5em 3em;
+	/*padding: 5em 3em;*/
+    /*width: 100%*/
+    /*margin-left: auto;*/
+	/*margin-right: auto;*/
 }
 #co-zyskasz .process-content h6 {
 	font-size: 42px;
