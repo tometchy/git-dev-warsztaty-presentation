@@ -379,7 +379,6 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
           <a class="phone" href="http://Tometchy.com" target="_blank">Więcej o prowadzącym na stronie Tometchy.com</a>
         </p>
         <img src="img/my.jpg" style="margin-bottom:0; max-width: 70%; margin-left: auto;margin-right:auto; margin-top: 48px" />
-        <!-- ToDo: Pod zdjęciem taki odstęp jak pod zdjęciem o warsztatach -->
       </div>
       <div class="clearfix"></div>
     </div>
@@ -399,12 +398,12 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
                 <p>Opis najważniejszych komend <small>(A4)</small></p>
                 <p>Ściągawka szczegółowego przeszukiwania historii <small>(A4)</small></p>
                   <div>
-                    <input type="checkbox" id="zgadzam-sie" checked style="top: 3px">
+                    <input type="checkbox" id="agree" v-model="agree" name="agree" style="top: 3px">
                     <label style="margin-bottom: 0;"><small>Chcę czasem otrzymać informacje o warsztatach otwartych, promocjach i nowościach</small></label>
                   </div>
                 <div class="input-group">
                 </div>
-                  <input class="input-group-field" type="email" placeholder="Email" required>
+                  <input id="email" v-model="email" name="email" class="input-group-field" type="email" placeholder="Email" required>
                   <button class="button">Chcę materiały</button>
               </form>
             </div>
@@ -493,7 +492,6 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
         <h2>Kontakt</h2>
         <p>
           Możesz skontaktować się z nami bezpośrednio, lub za pośrednictwem formularza. <br><br>
-          <!-- ToDo: Na małym ekranie usunąć ramkę, żeby się nie łamała linia -->
           Krzysztof Morcinek:  <a class="phone" href="tel:737692782">737 692 782</a><br>
           Tomasz Skraskowski: <a class="phone" href="tel:792228321">792 228 321</a><br>
           E-mail: <a class="phone" href="mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty" target="_top">kontakt@gitwarsztaty.pl</a>
@@ -502,7 +500,6 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
         <!--/section-title-->
         <div class="container" style="padding-top: 45px; max-width: 800px">
           <form action="/action_page.php">
-            <!-- ToDo: za pomocą vue zminiać labelki na podstawie wyboru rodzaju warsztatów - to będze też zmieniane za pomocą przycisków na pierwszym ekranie -->
             <label for="country" style="float: left">Interesują mnie</label>
             <select id="country" name="country" v-model="warsztatywfirmie">
               <option v-bind:value="true">Warsztaty u mnie w firmie</option>
@@ -587,19 +584,17 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
 
             <div class="modal-header">
               <slot name="header">
-                default header
               </slot>
             </div>
 
             <div class="modal-body">
               <slot name="body">
-                default body
+                {% raw %}{{ modalBody }}{% endraw %}
               </slot>
             </div>
 
             <div class="modal-footer">
               <slot name="footer">
-                default footer
                 <button class="modal-default-button" @click="$emit('close')">
                   OK
                 </button>
@@ -611,15 +606,9 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
     </transition>
   </script>
 
-  <!-- app -->
-  <div id="app">
-    <!-- use the modal component, pass in the prop -->
+  <div>
     <modal v-if="showModal" @close="showModal = false">
-      <!--
-        you can use custom content here to overwrite
-        default content
-      -->
-      <h3 slot="header">Już niebawem wyślemy Ci materiały!</h3>
+      <h3 slot="header" v-bind:class="(modalSuccess)?'successHeader ':'failureHeader'">{% raw %}{{ modalHeader }}{% endraw %}</h3>
     </modal>
   </div>
   
@@ -693,12 +682,22 @@ new WOW().init();
     el: '#app',
     data: {
       warsztatywfirmie: true,
-      showModal: false
+      showModal: false,
+      agree: true,
+      email: "",
+      modalSuccess: false,
+      modalHeader: "Ups, coś poszło nie tak",
+      modalBody: "Prosimy, skontaktuj się z nami telefonicznie lub mailowo<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>"
     },
     methods:{
       requestMaterials: function (e) {
+          // this.modalHeader = "Już niebawem wyślemy Ci materiały!";
+          // this.modalSuccess = true;
           this.showModal = true;
+          console.log(this.email);
+          console.log(this.agree);
         e.preventDefault();
+        // https://vuejs.org/v2/cookbook/form-validation.html
       }
     }
   })
