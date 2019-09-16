@@ -387,30 +387,30 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
 </section>
 
 <section id="company-counter" style="background-image:url(img/count-bg.jpg);">
-  <div class="container">
+  <div class="container" style="margin-left: auto; margin-right: auto">
     <div class="row text-center">
-      <div class="col-md-12 wow fadeInDown">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="c-block"><i class="fa fa-heart-o"></i><span class="counter">17</span>
-            <p>Darmowe materiały</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="c-block"><i class="fa fa-envelope-o"></i><span class="counter">456</span>
-            <p>Leads</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="c-block"><i class="fa fa-folder-o"></i><span class="counter">8596</span>
-            <p>Websites</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="c-block"><i class="fa fa-coffee"></i><span class="counter">456</span>
-            <p>Coffee</p>
-          </div>
+      <div class="wow fadeInDown">
+        <div style="max-width: 675px; margin-left: auto; margin-right: auto">
+          <div>
+            <div class="counter simple-subscription-form">
+              <form>
+                <h4>Darmowe materiały</h4>
+                <p>Opis najważniejszych komend <small>(A4)</small></p>
+                <p>Ściągawka szczegółowego przeszukiwania historii <small>(A4)</small></p>
+                  <div>
+                    <input type="checkbox" id="zgadzam-sie" checked style="top: 3px">
+                    <label style="margin-bottom: 0;"><small>Chcę czasem otrzymać informacje o warsztatach otwartych, promocjach i nowościach</small></label>
+                  </div>
+                <div class="input-group">
+                </div>
+                  <input class="input-group-field" type="email" placeholder="Email" required>
+                  <button class="button">Chcę materiały</button>
+              </form>
+            </div>
         </div>
       </div>
+    </div>
+      
     </div>
   </div>
 </section>
@@ -627,16 +627,6 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
     ================================================== --> 
 <script type="text/javascript" src="js/main.js"></script> 
 <script src="js/wow.min.js"></script>
-
-<script>
-    jQuery(document).ready(function( $ ) {
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
-    });
-
-</script>
 
 <script>
     function to_position(divid) {
