@@ -4395,7 +4395,7 @@ blockquote{margin-left:0;}
 	float: left;
 	margin: 10px;
 }
-.section-title a {
+.section-title a:not(.phone) {
 	display: block;
 	float: none;
 	text-align: center;
@@ -4545,7 +4545,7 @@ ul.about-features li i {
 	float: none;
 	margin: 10px 0;
 }
-.section-title a {
+.section-title a:not(.phone) {
 	display: block;
 	float: none;
 	text-align: center;
