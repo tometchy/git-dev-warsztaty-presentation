@@ -3,3 +3,8 @@ credential-manager:
   description: Posty związane z git credential manager
   site-description: Posty związane z git credential manager - GitWarsztaty Blog
   cover: assets/images/tag-background.jpg
+wprowadzenie:
+  name: wprowadzenie 
+  description: Posty przedstawiajace korzyści, które daje Git
+  site-description: Posty przedstawiajace korzyści, które daje Git
+  cover: assets/images/wprowadzenie.jpg
