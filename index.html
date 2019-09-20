@@ -109,10 +109,10 @@ description: GitWarsztaty - warsztaty wprowadzające do Gita. Warsztaty otwarte 
         <h3 class="wow fadeInUp" style="color: white">GIT efektywnie wykorzystany</h3>
     </div>
       <div style="height: 50px">
-        <a class="wow fadeInUp" href="#kontakt" v-on:click="warsztatywfirmie = true">Warsztaty u mnie w firmie</a>
+        <a class="wow fadeInUp" href="#kontakt" v-on:click="inCompany = true">Warsztaty u mnie w firmie</a>
       </div>
   <div style="height: 50px">
-      <a class="wow fadeInUp" href="#kontakt" v-on:click="warsztatywfirmie = false">Warsztaty otwarte</a>
+      <a class="wow fadeInUp" href="#kontakt" v-on:click="inCompany = false">Warsztaty otwarte</a>
     </div>
   </div>
   <!--<a href="#prowadzacy">-->
@@ -399,11 +399,15 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
                 <p>Ściągawka szczegółowego przeszukiwania historii <small>(A4)</small></p>
                   <div>
                     <input type="checkbox" id="agree" v-model="agree" name="agree" style="top: 3px">
-                    <label style="margin-bottom: 0;"><small>Chcę czasem otrzymać informacje o warsztatach otwartych, promocjach i nowościach</small></label>
+                    <label for="agree" style="margin-bottom: 0;"><small>Chcę czasem otrzymać informacje o warsztatach otwartych, promocjach i nowościach</small></label>
                   </div>
                 <div class="input-group">
                 </div>
-                  <input id="email" v-model="email" name="email" class="input-group-field" type="email" placeholder="Email" required>
+                <span>
+                  <label for="emailForMaterials" style="margin-bottom: 10px;">E-mail</label>
+                </span>
+              <br class="breakEmailLabelForMaterials">
+                  <input id="emailForMaterials" v-model="email" class="input-group-field" type="email" placeholder="E-mail" required>
                   <button class="button">Chcę materiały</button>
               </form>
             </div>
@@ -501,7 +505,7 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
   </div>
 </section>
 
-<section id="kontakt" style="margin-bottom: 50px; padding-top: 50px">
+<section id="kontakt" style="padding-top: 64px">
   <div class="container">
     <div class="row">
       <!--section-title-->
@@ -515,41 +519,41 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
         </p>
         <!--        <a href="portfolio.html">go to portfolio</a></div>-->
         <!--/section-title-->
-        <div class="container" style="padding-top: 45px; max-width: 800px">
-          <form action="/action_page.php">
-            <label for="country" style="float: left">Interesują mnie</label>
-            <select id="country" name="country" v-model="warsztatywfirmie">
+        <div class="container" style="padding-top: 25px; padding-bottom: 15px; max-width: 800px">
+          <form @submit="requestContact">
+            <label for="workshopsType" style="float: left">Interesują mnie</label>
+            <select id="workshopsType" v-model="inCompany">
               <option v-bind:value="true">Warsztaty u mnie w firmie</option>
               <option v-bind:value="false">Warsztaty otwarte</option>
             </select>
               
-            <label for="lname" style="float: left">E-mail</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="emailForContact" style="float: left">E-mail</label>
+            <input type="email" id="emailForContact" v-model="email" placeholder="E-mail" required>
 
-            <label for="lname" style="float: left">Numer telefonu <small>(opcjonalnie)</small></label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="phoneNumber" style="float: left">Numer telefonu <small>(opcjonalnie)</small></label>
+            <input type="text" id="phoneNumber" v-model="phoneNumber" placeholder="Numer telefonu">
 
-            <section v-if="warsztatywfirmie">
-              <label for="fname" style="float: left">Nazwa firmy <small>(opcjonalnie)</small></label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <section v-if="inCompany">
+              <label for="companyName" style="float: left">Nazwa firmy <small>(opcjonalnie)</small></label>
+              <input type="text" id="companyName" v-model="companyName" placeholder="Nazwa firmy">
 
-              <label for="lname" style="float: left">Adres biura <small>(opcjonalnie)</small></label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="officeAddress" style="float: left">Adres biura <small>(opcjonalnie)</small></label>
+              <input type="text" id="officeAddress" v-model="officeAddress" placeholder="Adres biura">
             </section>
             
             <section v-else>
-              <label for="fname" style="float: left"> <small>Pan/Pani (opcjonalnie)</small></label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="who" style="float: left"> <small>Pan/Pani (opcjonalnie)</small></label>
+              <input type="text" id="who" v-model="who" placeholder="Imię">
 
-              <label for="lname" style="float: left">W jakim mieście/miastach interesują Cię warsztaty <small>(opcjonalnie)</small></label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="whichCity" style="float: left">W jakim mieście/miastach interesują Cię warsztaty <small>(opcjonalnie)</small></label>
+              <input type="text" id="whichCity" v-model="whichCity" placeholder="Miasto/miasta">
             
             </section>
             
-            <label for="subject" style="float: left">Dodatkowe informacje <small>(opcjonalnie)</small></label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <label for="additionalInfo" style="float: left">Dodatkowe informacje <small>(opcjonalnie)</small></label>
+            <textarea id="additionalInfo" v-model="additionalInfo" placeholder="Dodatkowe informacje" style="height:200px"></textarea>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Wyślij" style="margin-top: 10px;">
           </form>
         </div>
       </div>
@@ -698,10 +702,16 @@ new WOW().init();
   var app = new Vue({
     el: '#app',
     data: {
-      warsztatywfirmie: true,
-      showModal: false,
+      inCompany: true,
       agree: true,
       email: "",
+      phoneNumber: "",
+      companyName: "",
+      officeAddress: "",
+      who: "",
+      whichCity: "",
+      additionalInfo: "",
+      showModal: false,
       modalSuccess: false,
       modalHeader: "Ups, coś poszło nie tak",
       modalBody: "Prosimy, skontaktuj się z nami telefonicznie lub mailowo<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>"
@@ -711,10 +721,23 @@ new WOW().init();
           // this.modalHeader = "Już niebawem wyślemy Ci materiały!";
           // this.modalSuccess = true;
           this.showModal = true;
-          console.log(this.email);
-          console.log(this.agree);
+          console.log("email: " + this.email);
+          console.log("agree: " + this.agree);
         e.preventDefault();
         // https://vuejs.org/v2/cookbook/form-validation.html
+      },
+      requestContact: function(e) {
+        console.log("email: " + this.email);
+        console.log("in company: " + this.inCompany);
+        console.log("phone number: " + this.phoneNumber);
+        console.log("company name: " + this.companyName);
+        console.log("office address: " + this.officeAddress);
+        console.log("who: " + this.who);
+        console.log("which city: " + this.whichCity);
+        console.log("additional info: " + this.additionalInfo);
+
+        this.showModal = true;
+        e.preventDefault();
       }
     }
   })

@@ -4674,6 +4674,17 @@ input[type=text], select, textarea {
 	resize: vertical;
 }
 
+input[type=email], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
 input[type=submit] {
 	background-color: #4CAF50;
 	color: white;
@@ -4977,8 +4988,26 @@ input[type=submit]:hover {
 	}
 }
 
+#kontakt {
+	margin-bottom: 50px;
+}
+
 @media (max-width: 768px) {
 	.latest-news-block {
 		padding-bottom: 0
+	}
+    
+	#kontakt {
+		margin-bottom: 17px;
+	}
+}
+
+@media (min-width: 500px) {
+	.breakEmailLabelForMaterials {
+		display: none;
+	}
+    
+	#emailForMaterials {
+		margin-left: 21px
 	}
 }
