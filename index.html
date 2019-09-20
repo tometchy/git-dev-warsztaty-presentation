@@ -104,15 +104,15 @@ description: GitWarsztaty - warsztaty wprowadzające do Gita. Warsztaty otwarte 
 <main id="app">
 <section id="home-banner" style="background-image: url(img/b-1.jpg);">
   <div class="content">
-    <div class="container"  data-wow-duration="1s">
+    <div class="container" data-wow-duration="1s">
       <h1 class="wow fadeInUp"><b>GitWarsztaty</b></h1>
         <h3 class="wow fadeInUp" style="color: white">GIT efektywnie wykorzystany</h3>
     </div>
-      <div style="height: 50px">
-        <a class="wow fadeInUp" href="#kontakt" v-on:click="inCompany = true">Warsztaty u mnie w firmie</a>
+      <div style="height: 50px" class="wow fadeInUp">
+        <a href="#kontakt" v-on:click="inCompany = true">Warsztaty u mnie w firmie</a>
       </div>
-  <div style="height: 50px">
-      <a class="wow fadeInUp" href="#kontakt" v-on:click="inCompany = false">Warsztaty otwarte</a>
+  <div style="height: 50px" class="wow fadeInUp">
+      <a href="#kontakt" v-on:click="inCompany = false">Warsztaty otwarte</a>
     </div>
   </div>
   <!--<a href="#prowadzacy">-->
@@ -183,7 +183,7 @@ description: GitWarsztaty - warsztaty wprowadzające do Gita. Warsztaty otwarte 
       </div>
       <!--/section-title-->
       <!--process tab-->
-      <div class="co-zyskasz-style" style="margin-left:auto; margin-right: auto">
+      <div class="co-zyskasz-style wow fadeInUp" style="margin-left:auto; margin-right: auto">
         <!--tab nav-->
         <ul class="nav nav-tabs">
           <li class="active"><a href="#dvcs-vs-cvcs" data-toggle="tab">
