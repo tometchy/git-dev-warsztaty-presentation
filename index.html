@@ -203,25 +203,11 @@ description: GitWarsztaty - warsztaty wprowadzające do Gita. Warsztaty otwarte 
               {% continue %}
           {% endif %}
                     <li {% if post.title == 'DVCS' %}class="active"{% endif %}><a href="#{{ post.url | replace: '/blog/', '' }}" data-toggle="tab">
-                      <h5>{{ post.title }}
-<!--                        <br class="co-zyskasz-line-break"> vs CVCS-->
-                      </h5>
+                      <h5>{{ post.advantages-list-title }} </h5>
                         </a>
                     </li>
           {% endfor %}
 
-
-          
-<!--          <li class="active"><a href="#dvcs-vs-cvcs" data-toggle="tab">-->
-<!--            <h5>DVCS<br class="co-zyskasz-line-break"> vs CVCS</h5>-->
-<!--              </a>-->
-<!--          </li>-->
-<!--          -->
-<!--          <li><a href="#konfiguracja-gita" data-toggle="tab">-->
-<!--            <h5>Konfiguracja<br class="co-zyskasz-line-break"> Gita</h5>-->
-<!--              </a>-->
-<!--          </li>-->
-          
           <li><a href="#design" data-toggle="tab">
             <h5>Filozofia<br class="co-zyskasz-line-break"> Gita</h5>
 <!--              Najważniejsze<br>zagadnienia

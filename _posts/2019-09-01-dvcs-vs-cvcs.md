@@ -10,6 +10,7 @@ tags: wprowadzenie
 class: post-template
 subclass: 'post tag-wprowdzenie'
 author: tomasz-skraskowski
+advantages-list-title: DVCS<br class="co-zyskasz-line-break"> vs CVCS
 ---
 
 Co oznacza, że Git jest zdecentralizowanym systemem kontroli wersji i co odróżnia go od scentralizowanego systemu kontroli wersji?

@@ -10,6 +10,7 @@ tags: wprowadzenie
 class: post-template
 subclass: 'post tag-wprowdzenie'
 author: tomasz-skraskowski
+advantages-list-title: Konfiguracja<br class="co-zyskasz-line-break"> Gita
 ---
 
 Opisać po krótce pliki .gitconfig i możliwości odczytu i modyfikacji
