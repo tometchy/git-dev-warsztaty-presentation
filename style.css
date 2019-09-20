@@ -4948,8 +4948,37 @@ input[type=submit]:hover {
 	width: 100%;
 	max-height: 270px;
 }
+
 @media(max-height: 800px) {
 	.owl-carousel .owl-wrapper-outer {
 		max-height: 170px;
+	}
+}
+.latest-news-block article {
+	margin-bottom: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.latest-news-block article {
+		margin-left: auto;
+		margin-right: auto;
+		float: initial;
+        margin-bottom: 25px;
+	}
+}
+
+@media (min-width: 769px) {
+	.latest-news-block .section-title {
+		margin-bottom: 40px;
+	}
+    
+	.latest-news-block .section-title a {
+		float: initial;
+	}
+}
+
+@media (max-width: 768px) {
+	.latest-news-block {
+		padding-bottom: 0
 	}
 }

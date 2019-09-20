@@ -480,51 +480,28 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
   
 <section class="latest-news-block">
   <div class="container">
-    <div class="row">
-      <!--section-title-->
       <div class="section-title text-center wow fadeInUp">
         <h2>Ostatnie wpisy</h2>
-        <a href="blog.html">Przejdź do bloga</a></div>
-      <!--/section-title-->
+          <p>
+            <a href="blog">Przejdź do bloga</a>
+          </p>
+      </div>
 
-      <!--home article-->
+    <div class="row wow fadeInUp" style="padding-bottom: 0">
+
+      {% for post in site.posts limit:3 %}
       <article class="col-md-4 col-sm-8 col-xs-12">
-        <header class="entry-header"> <a href="blog-post.html"><img src="img/04-screenshot.jpg" alt="image 1"></a>
-          <a href="blog-post.html"><h6>10 Incredible Quotes To Guide Your Life</h6></a>
-          <a href="#">Web-design</a> , <a href="#">Front-end</a> </header></a>
+        <header class="entry-header"> <a href="{{ post.url }}"><img src="{{ site.url }}/{{ post.cover }}" alt="image 1"></a>
+          <a href="{{ post.url }}"><h6>{{ post.title }}</h6></a>
+          <a href="{{ post.url }}">{{ post.excerpt | strip_html | truncatewords: 33, "" }}</a></header></a>
       </article>
-      <!--/home article -->
-
-      <!--home article-->
-      <article class="col-md-4 col-sm-8 col-xs-12">
-        <header class="entry-header"> <img src="img/02-screenshot.jpg" alt="image 1"> <a href="#">
-          <h6>Responsive Website in 2017 –
-            Step by Step Guide</h6>
-        </a> <a href="#">Web-design</a> </header>
-      </article>
-      <!--/home article -->
-
-      <!--home article-->
-      <article class="col-md-4 col-sm-8 col-xs-12">
-        <header class="entry-header"> <img src="img/03-screenshot.jpg" alt="image 1"> <a href="#">
-          <h6>10 Incredible Quotes To Guide Your Life</h6>
-        </a> <a href="#">Web-design</a> , <a href="#">Front-end</a> </header>
-      </article>
-      <!--/home article -->
-
-      <!--home article-->
-<!--      <article class="col-md-3 col-sm-6 col-xs-12">-->
-<!--        <header class="entry-header"> <img src="img/01-screenshot.jpg" alt="image 1"> <a href="#">-->
-<!--          <h6>HEADING 6 in use here</h6>-->
-<!--        </a> <a href="#">Web-design</a> </header>-->
-<!--      </article>-->
-      <!--/home article -->
-
+      {% endfor %}
+      
     </div>
   </div>
 </section>
 
-<section id="kontakt" style="margin-bottom: 50px; padding-top: 100px">
+<section id="kontakt" style="margin-bottom: 50px; padding-top: 50px">
   <div class="container">
     <div class="row">
       <!--section-title-->
