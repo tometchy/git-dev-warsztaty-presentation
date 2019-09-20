@@ -186,15 +186,41 @@ description: GitWarsztaty - warsztaty wprowadzające do Gita. Warsztaty otwarte 
       <div class="co-zyskasz-style wow fadeInUp" style="margin-left:auto; margin-right: auto">
         <!--tab nav-->
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#dvcs-vs-cvcs" data-toggle="tab">
-            <h5>DVCS<br class="co-zyskasz-line-break"> vs CVCS</h5>
-              </a>
-          </li>
+
+
+
+          {% for post in site.posts reversed %}
+
+          {% assign isIntroductionPost=false %}
+              {% for tag in post.tags %}
+                  {% assign tagUpcase = tag | upcase %}
+                  {% if tagUpcase == "WPROWADZENIE" %}
+                      {% assign isIntroductionPost=true %}
+              {% endif %}
+          {% endfor %}
+
+          {% if isIntroductionPost == false %}
+              {% continue %}
+          {% endif %}
+                    <li {% if post.title == 'DVCS' %}class="active"{% endif %}><a href="#{{ post.url | replace: '/blog/', '' }}" data-toggle="tab">
+                      <h5>{{ post.title }}
+<!--                        <br class="co-zyskasz-line-break"> vs CVCS-->
+                      </h5>
+                        </a>
+                    </li>
+          {% endfor %}
+
+
           
-          <li><a href="#konfiguracja-gita" data-toggle="tab">
-            <h5>Konfiguracja<br class="co-zyskasz-line-break"> Gita</h5>
-              </a>
-          </li>
+<!--          <li class="active"><a href="#dvcs-vs-cvcs" data-toggle="tab">-->
+<!--            <h5>DVCS<br class="co-zyskasz-line-break"> vs CVCS</h5>-->
+<!--              </a>-->
+<!--          </li>-->
+<!--          -->
+<!--          <li><a href="#konfiguracja-gita" data-toggle="tab">-->
+<!--            <h5>Konfiguracja<br class="co-zyskasz-line-break"> Gita</h5>-->
+<!--              </a>-->
+<!--          </li>-->
           
           <li><a href="#design" data-toggle="tab">
             <h5>Filozofia<br class="co-zyskasz-line-break"> Gita</h5>
