@@ -124,19 +124,22 @@ $('#home-banner h1 span').addClass('liner');
 
 /*creating click event*/
 $(document).ready(function(){
-  $('a#nav-icon').click(function(){
-    $('#nav-top').toggleClass('nav-view');
-  });
-  
-  $("#testimonial").owlCarousel({
-        navigation : false, // Show next and prev buttons
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem:true
-        });
-  
-});
+    $('a#nav-icon').click(function(){
+        $('#nav-top').toggleClass('nav-view');
+    });
 
+    var owl = $("#testimonial").owlCarousel({
+        navigation : false, // Show next and prev buttons -> Does it work in new version of OWL?
+        items:1,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        // autoplayTimeout:5000,
+        autoplayHoverPause:true
+    });
+
+    owl.trigger('play.owl.autoplay',[5000]);
+});
 
 /*nav-icon*/
 $(document).ready(function(){
