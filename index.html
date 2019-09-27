@@ -214,15 +214,6 @@ default-shown-advantage: lepsza-jakosc-kodu-w-krotszym-czasie-dzieki-efektywnego
           {% endfor %}
 
           <li><a href="#development" data-toggle="tab">
-            <h5>Podstawowe<br class="co-zyskasz-line-break"> komendy</h5>
-<!--              add<br>commit<br>revert
-https://pixabay.com/pl/vectors/podstawowe-edukacja-podk%C5%82adka-1293977/
-Podstawowe operacje takie jak commit, revert...
--->
-              </a>
-          </li>
-
-          <li><a href="#development" data-toggle="tab">
             <h5>Edytowanie<br class="co-zyskasz-line-break"> commitów</h5>
 <!-- Edytowanie istniejących commitów            
 rebase<br>rebase &#45;&#45;interactive<br>commit &#45;&#45;amend<br>reset
@@ -313,7 +304,6 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
           </li>
         </ul>
         <div class="tab-content">
-
           {% for post in site.posts reversed %}
 
               {% assign isIntroductionPost=false %}
@@ -341,26 +331,8 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
                 </div>
           
           {% endfor %}
-
-          <!--tab nav item 4-->
-          <div id="development" class="tab-pane">
-            <!--tab img-->
-            <div class="col-md-5 process-img"> <img src="img/01-screenshot.jpg" class="img-responsive"> </div>
-            <!--/tab img-->
-            <!--tab content-->
-            <div class="col-md-7 process-content">
-              <h6>Code like a star</h6>
-              <p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p>
-              <a href="#">Read More</a> </div>
-            <!--/tab content-->
-          </div>
-          <!--/tab nav item 4-->
         </div>
-        <!--/tab container-->
-
       </div>
-      <!--\process tab-->
-
     </div>
   </div>
 </section>
