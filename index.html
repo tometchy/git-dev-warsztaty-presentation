@@ -213,15 +213,6 @@ default-shown-advantage: lepsza-jakosc-kodu-w-krotszym-czasie-dzieki-efektywnego
                     </li>
           {% endfor %}
 
-          <li><a href="#design" data-toggle="tab">
-            <h5>Filozofia<br class="co-zyskasz-line-break"> Gita</h5>
-<!--              Najważniejsze<br>zagadnienia
-https://pixabay.com/pl/photos/my%C5%9Bli-idea-innowacje-wyobra%C5%BAni-2123970/
-Wytłumaczenie filozofii gitowej i najważniejszych zagadnień
--->
-              </a>
-          </li>
-          
           <li><a href="#development" data-toggle="tab">
             <h5>Podstawowe<br class="co-zyskasz-line-break"> komendy</h5>
 <!--              add<br>commit<br>revert
@@ -341,7 +332,7 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
                 <div id="{{ post.url | replace: '/blog/', '' }}" class="tab-pane {% if postUrlUpcase contains defaultShownAdvantageUpcase %}active{% endif %}">
                   <div class="col-md-5 process-img"> <img src="{{ post.advantages-list-cover }}" class="img-responsive"> </div>
                   <div class="col-md-7 process-content">
-                    <h6 class="text-center">{{ post.title }}</h6>
+                    <h6>{{ post.title }}</h6>
                     <p>
                         {{ post.excerpt | strip_html | truncatewords: 33, "" }}
                       <a href="{{ site.url }}{{ post.url }}" style="float: right; text-decoration: none; margin-top: 13px">Czytaj więcej...</a>
@@ -350,20 +341,6 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
                 </div>
           
           {% endfor %}
-
-          <!--tab nav item 3-->
-          <div id="design" class="tab-pane">
-            <!--tab img-->
-            <div class="col-md-5 process-img"> <img src="img/many-git-tools-landing-page.jpg" class="img-responsive"> </div>
-            <!--/tab img-->
-            <!--tab content-->
-            <div class="col-md-7 process-content">
-              <h6>Make the design</h6>
-              <p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p>
-              <a href="#">Read More</a> </div>
-            <!--/tab content-->
-          </div>
-          <!--/tab nav item 3-->
 
           <!--tab nav item 4-->
           <div id="development" class="tab-pane">

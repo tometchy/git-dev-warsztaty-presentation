@@ -2880,9 +2880,9 @@ ul.about-features li:hover i {
 	color: #3c434d;
 	font-weight: 600;
 }
-@media(max-width: 500px){
+@media(max-width: 630px){
 	#co-zyskasz .process-content h6 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 }
 #co-zyskasz .process-content p {
