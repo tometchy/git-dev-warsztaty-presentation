@@ -16,4 +16,3 @@ advantages-list-cover: img/edytowanie-commitow.jpg
 
 Co daje Edytowanie istniejących commitów - rebase interactive, commit ammend, reset
 rebase<br>rebase &#45;&#45;interactive<br>commit &#45;&#45;amend<br>reset.
-
