@@ -1,6 +1,12 @@
 ---
 description: GitWarsztaty - warsztaty wprowadzające do Gita. Warsztaty otwarte i w firmie.
+default-shown-advantage: dvcs-vs-cvcs
 ---
+<!-- ToDo: 
+default-shown-advantage: lepsza-jakosc-kodu-w-krotszym-czasie-dzieki-efektywnego-wykorzystaniu-gita
+-->
+
+{% assign defaultShownAdvantageUpcase = page.default-shown-advantage | upcase %}
 
 <!doctype html>
 <html xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
@@ -187,8 +193,6 @@ description: GitWarsztaty - warsztaty wprowadzające do Gita. Warsztaty otwarte 
         <!--tab nav-->
         <ul class="nav nav-tabs">
 
-
-
           {% for post in site.posts reversed %}
 
           {% assign isIntroductionPost=false %}
@@ -202,7 +206,8 @@ description: GitWarsztaty - warsztaty wprowadzające do Gita. Warsztaty otwarte 
           {% if isIntroductionPost == false %}
               {% continue %}
           {% endif %}
-                    <li {% if post.title == 'DVCS' %}class="active"{% endif %}><a href="#{{ post.url | replace: '/blog/', '' }}" data-toggle="tab">
+            {% assign postUrlUpcase = post.url | upcase %}
+                    <li {% if postUrlUpcase contains defaultShownAdvantageUpcase %}class="active"{% endif %}><a href="#{{ post.url | replace: '/blog/', '' }}" data-toggle="tab">
                       <h5>{{ post.advantages-list-title }} </h5>
                         </a>
                     </li>
@@ -317,29 +322,34 @@ https://www.pexels.com/photo/apple-check-computer-female-7079/
           </li>
         </ul>
         <div class="tab-content">
-            
-          <div id="dvcs-vs-cvcs" class="tab-pane active">
-            <div class="col-md-5 process-img"> <img src="img/dvcs-vs-cvcs.jpg" class="img-responsive"> </div>
-            <div class="col-md-7 process-content">
-              <h6 class="text-center">DVCS vs CVCS</h6>
-              <p>
-                Co MI DA oznacza, że Git jest zdecentralizowanym systemem kontroli wersji i co odróżnia go od scentralizowanego systemu kontroli wersji?
-                <a href="{{ site.url }}/blog/dvcs-vs-cvcs" style="float: right; text-decoration: none"><br>Czytaj więcej...</a>
-              </p>
-            </div>
-          </div>
 
-          <div id="konfiguracja-gita" class="tab-pane">
-            <div class="col-md-5 process-img"> <img src="img/konfiguracja-gita.jpg" class="img-responsive"> </div>
-            <div class="col-md-7 process-content">
-              <!-- ToDo: Zmniejszyć h6 z co zyskasz na małym ekranie, bo się poniższe nie mieści -->
-              <h6 class="text-center">Konfiguracja Gita</h6>
-              <p>
-                Radzenie sobie z przypadkami okazyjnymi dzięki zrozumieniu konfiguracji GITa - pliki .gitconfig
-                <a href="{{ site.url }}/blog/konfiguracja-gita" style="float: right; text-decoration: none"><br>Czytaj więcej...</a>
-              </p>
-            </div>
-          </div>
+          {% for post in site.posts reversed %}
+
+              {% assign isIntroductionPost=false %}
+              {% for tag in post.tags %}
+                  {% assign tagUpcase = tag | upcase %}
+                  {% if tagUpcase == "WPROWADZENIE" %}
+                      {% assign isIntroductionPost=true %}
+                  {% endif %}
+              {% endfor %}
+
+              {% if isIntroductionPost == false %}
+                  {% continue %}
+              {% endif %}
+              {% assign postUrlUpcase = post.url | upcase %}
+
+                <div id="{{ post.url | replace: '/blog/', '' }}" class="tab-pane {% if postUrlUpcase contains defaultShownAdvantageUpcase %}active{% endif %}">
+                  <div class="col-md-5 process-img"> <img src="{{ post.advantages-list-cover }}" class="img-responsive"> </div>
+                  <div class="col-md-7 process-content">
+                    <h6 class="text-center">{{ post.title }}</h6>
+                    <p>
+                        {{ post.excerpt | strip_html | truncatewords: 33, "" }}
+                      <a href="{{ site.url }}{{ post.url }}" style="float: right; text-decoration: none; margin-top: 13px">Czytaj więcej...</a>
+                    </p>
+                  </div>
+                </div>
+          
+          {% endfor %}
 
           <!--tab nav item 3-->
           <div id="design" class="tab-pane">

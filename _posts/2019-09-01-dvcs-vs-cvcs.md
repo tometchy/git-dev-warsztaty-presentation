@@ -11,9 +11,10 @@ class: post-template
 subclass: 'post tag-wprowdzenie'
 author: tomasz-skraskowski
 advantages-list-title: DVCS<br class="co-zyskasz-line-break"> vs CVCS
+advantages-list-cover: img/dvcs-vs-cvcs.jpg
 ---
 
-Co oznacza, że Git jest zdecentralizowanym systemem kontroli wersji i co odróżnia go od scentralizowanego systemu kontroli wersji?
+Co MI DA oznacza, że Git jest zdecentralizowanym systemem kontroli wersji i co odróżnia go od scentralizowanego systemu kontroli wersji?
 
 Kluczowa różnica polega na tym, że w przypadku centralnego systemu tylko jeden komputer (centralny serwer) posiada
 wszystkie informacje (historię zmian, branche, tagi etc.) a użytkownicy mają jedynie ostatnią wersję kodu.

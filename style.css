@@ -279,6 +279,7 @@ a.navbar-brand:hover span {
 	background-color: transparent;
 	font-weight: 700;
 }
+
 .navbar-toggle {
 	border-radius: 0;
 }
@@ -2796,7 +2797,7 @@ ul.about-features li:hover i {
 }
 #co-zyskasz .nav-tabs > li.active > a, #co-zyskasz .nav-tabs > li.active > a:hover, #co-zyskasz .nav-tabs > li.active > a:focus {
 	border-bottom: 0px #bcc6d0 solid;
-	background-color: transparent;
+	background-color: #4999b8;
 }
 #co-zyskasz .nav-tabs > li.active i {
 	color: #6cbfff;
@@ -2879,12 +2880,17 @@ ul.about-features li:hover i {
 	color: #3c434d;
 	font-weight: 600;
 }
+@media(max-width: 500px){
+	#co-zyskasz .process-content h6 {
+		font-size: 32px;
+	}
+}
 #co-zyskasz .process-content p {
 	color: #6f6f6f;
 	font-size: 16px;
 	font-weight: 400;
 	font-family: 'PT Serif', serif;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-bottom: 35px;
 }
 #co-zyskasz .process-content a {

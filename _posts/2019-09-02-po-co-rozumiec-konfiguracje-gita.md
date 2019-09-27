@@ -3,7 +3,7 @@ layout: post
 current: post
 navigation: True
 cover:  assets/images/konfiguracja-gita.jpg
-title: Konfiguracja Gita
+title: Po co rozumieć konfigurację Gita
 date: 2019-09-02 06:00:00
 modified_date: 2019-09-02 06:00:00
 tags: wprowadzenie
@@ -11,6 +11,7 @@ class: post-template
 subclass: 'post tag-wprowdzenie'
 author: tomasz-skraskowski
 advantages-list-title: Konfiguracja<br class="co-zyskasz-line-break"> Gita
+advantages-list-cover: img/konfiguracja-gita.jpg
 ---
 
 Opisać po krótce pliki .gitconfig i możliwości odczytu i modyfikacji
