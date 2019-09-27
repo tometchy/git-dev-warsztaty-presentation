@@ -2876,13 +2876,13 @@ ul.about-features li:hover i {
 	/*margin-right: auto;*/
 }
 #co-zyskasz .process-content h6 {
-	font-size: 42px;
+	font-size: 32px;
 	color: #3c434d;
 	font-weight: 600;
 }
 @media(max-width: 500px){
 	#co-zyskasz .process-content h6 {
-		font-size: 32px;
+		font-size: 28px;
 	}
 }
 #co-zyskasz .process-content p {

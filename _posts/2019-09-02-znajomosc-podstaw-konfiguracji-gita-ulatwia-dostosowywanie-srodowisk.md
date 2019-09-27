@@ -3,7 +3,7 @@ layout: post
 current: post
 navigation: True
 cover:  assets/images/konfiguracja-gita.jpg
-title: Po co rozumieć konfigurację Gita
+title: Znajomość podstaw konfiguracji Gita ułatwia dostosowywanie środowisk
 date: 2019-09-02 06:00:00
 modified_date: 2019-09-02 06:00:00
 tags: wprowadzenie
