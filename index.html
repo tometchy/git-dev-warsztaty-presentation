@@ -276,10 +276,14 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
                 <h4>Darmowe materiały</h4>
                 <p>Opis najważniejszych komend <small>(A4)</small></p>
                 <p>Ściągawka szczegółowego przeszukiwania historii <small>(A4)</small></p>
-                  <div>
+              <div class="agree-wrapper-small">
+                <label for="agree" style="margin-bottom: 0;"><small><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi i informacjami na temat nadchodzących warsztatów</small></label>
+                <span>
                     <input type="checkbox" id="agree" v-model="agree" name="agree" style="top: 3px">
-                    <label for="agree" style="margin-bottom: 0;"><small>Chcę czasem otrzymać informacje o warsztatach otwartych, promocjach i nowościach</small></label>
-                  </div>
+              </span>
+                <div class="clearboth"></div>
+              </div>
+              
                 <div class="input-group">
                 </div>
                 <span>
@@ -428,9 +432,17 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
               <input type="text" id="whichCity" v-model="whichCity" placeholder="Miasto/miasta">
             
             </section>
-            
+
             <label for="additionalInfo" style="float: left">Dodatkowe informacje <small>(opcjonalnie)</small></label>
             <textarea id="additionalInfo" v-model="additionalInfo" placeholder="Dodatkowe informacje" style="height:200px"></textarea>
+              
+            <div class="agree-wrapper">
+              <label for="agree2" style=""><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi i informacjami na temat nadchodzących warsztatów <small>(opcjonalnie)</small></label>
+              <span>
+                <input type="checkbox" id="agree2" v-model="agree" name="agree" style="float: left; height: 20px">
+              </span>
+              <div class="clearboth"></div>
+            </div>
 
             <input type="submit" value="Wyślij" style="margin-top: 10px;">
           </form>

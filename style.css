@@ -4691,6 +4691,29 @@ input[type=email], select, textarea {
 	resize: vertical;
 }
 
+#kontakt input[type=checkbox] {
+    float: left;
+}
+
+div.agree-wrapper { float:right;}
+div.agree-wrapper label { float: right; width: 95%; text-align: left; }
+div.agree-wrapper span { float: right; width: 4%; text-align: right; }
+div.clearboth { clear: both }
+
+@media(max-width: 700px){
+	div.agree-wrapper label { float: right; width: 94%; text-align: left; }
+	div.agree-wrapper span { float: right; width: 5%; text-align: right; }
+}
+
+@media(max-width: 460px){
+	div.agree-wrapper label { float: right; width: 92%; text-align: left; }
+	div.agree-wrapper span { float: right; width: 8%; text-align: right; }
+}
+
+div.agree-wrapper-small { width: 74%; margin-left: auto; margin-right: auto}
+div.agree-wrapper-small label { float: right; width: 89%; text-align: left; }
+div.agree-wrapper-small span { float: left; width: 10%; text-align: right; }
+
 input[type=submit] {
 	background-color: #4CAF50;
 	color: white;
