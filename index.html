@@ -1,10 +1,7 @@
 ---
 description: GitWarsztaty - warsztaty wprowadzające do Gita. Warsztaty otwarte i w firmie.
-default-shown-advantage: dvcs-vs-cvcs
+default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie
 ---
-<!-- ToDo: 
-default-shown-advantage: lepsza-jakosc-kodu-w-krotszym-czasie-dzieki-efektywnego-wykorzystaniu-gita
--->
 
 {% assign defaultShownAdvantageUpcase = page.default-shown-advantage | upcase %}
 
@@ -213,15 +210,6 @@ default-shown-advantage: lepsza-jakosc-kodu-w-krotszym-czasie-dzieki-efektywnego
                     </li>
           {% endfor %}
           
-          <li><a href="#development" data-toggle="tab">
-            <h5>Post<br class="co-zyskasz-line-break"> warsztaty</h5>
-<!--              Dostęp do zamkniętego kanału na slacku<br>-->
-<!--              Wersja offline prezentacji<br>-->
-<!--              Materiały pomocnicze
-https://www.pexels.com/photo/apple-check-computer-female-7079/
--->
-              </a>
-          </li>
         </ul>
         <div class="tab-content">
           {% for post in site.posts reversed %}

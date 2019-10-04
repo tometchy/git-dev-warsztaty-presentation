@@ -29,7 +29,6 @@ Podać przykładu wpływu na czas implementajcji i jakość kodu
 Jestem pewny, że wiele osób rypnęło by to w jednym wielkim commicie.
 - Możliwość szybkiego przeglądania kodu ze straszych/atlernatywnych wersji, możliwość szybkiego usuwania wybranych commitów i sprawdzanie efektu, możliwość wyciachania którychś zmian z commita, możliwość rozłożenia commita -> niezastąpione przy szukaniu błędu którego trudno zdebugować a wiemy w jakim jest commicie, ale przy implementacji nowych rzeczy też potrafi bardzo usprawnić proces implementacji.
 
-
 Call to action
 W stylu "Jeżeli chcesz lepiej zrozumieć, to na warsztatach chętnie Ci to dokładnie wytłumaczymy", albo "Jeżeli czujesz, że nie wyciskasz z GITa istotnych optymalizacji pracy, na warsztatach pokażemy Ci drogę żeby to zmienić".
 Call to action to link do index.html#kontakt
