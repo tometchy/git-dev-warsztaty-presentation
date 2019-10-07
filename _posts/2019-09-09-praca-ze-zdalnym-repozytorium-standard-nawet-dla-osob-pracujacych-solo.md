@@ -14,4 +14,4 @@ advantages-list-title: Zdalne<br class="co-zyskasz-line-break"> repozytorium
 advantages-list-cover: img/zdalne-repozytorium.jpg
 ---
 
-Praca ze zdalnymi repozytoriami push & pull
+Przesyłanie kodu pomiędzy urządzeniami jest banalnie proste, warto jednak znać kilka tricków i dobrych praktyk, które ten proces usprawniają.
