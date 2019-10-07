@@ -14,5 +14,5 @@ advantages-list-title: Praca na<br class="co-zyskasz-line-break"> branchach
 advantages-list-cover: img/branche.jpg
 ---
 
-Łatwość zmieniania kontekstu, próbowania alternatywnych rozwiązań, podlądania alternatywnego kodu.
-
+Dzięki branchom zyskujemy nie tylko możliwość współpracy za pomocą pull requestów, ale również
+łatwość zmieniania kontekstu, próbowania alternatywnych rozwiązań czy _podglądania_ równoległych wersji kodu.
