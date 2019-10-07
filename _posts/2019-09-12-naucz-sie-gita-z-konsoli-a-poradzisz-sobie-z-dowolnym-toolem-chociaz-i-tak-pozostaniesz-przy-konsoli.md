@@ -15,6 +15,8 @@ advantages-list-cover: img/many-git-tools.jpg
 ---
 
 Od powstania Gita zdążyła narosnąć ogromna liczba tooli do _wyklikiwania_ komend gitowych.
-Którego się nauczyć? Odpowiedź jest prosta - najefektywniejszego i wszystkich na raz zarazem.
+Którego się nauczyć? Odpowiedź jest prosta - najefektywniejszego i wszystkich na raz, zarazem.
 
-Tutaj też poruszyć temat, że gui jest dobre do ekplorowania, ale gdy już się zna narzędzie to efektywniej jest pisać, ułamek sekundy i polecenie wpisane, a w gui trzeba czekać aż się menu kontekstowe rozwinie, najpierw pierwsze, potem drugie itd.
+<!--
+Tutaj poruszyć temat, że gui jest dobre do ekplorowania, ale gdy już się zna narzędzie to efektywniej jest pisać, ułamek sekundy i polecenie wpisane, a w gui trzeba czekać aż się menu kontekstowe rozwinie, najpierw pierwsze, potem drugie itd.
+-->
