@@ -14,5 +14,4 @@ advantages-list-title: Podstawowe<br class="co-zyskasz-line-break"> komendy
 advantages-list-cover: img/podstawowe-komendy-gita.jpg
 ---
 
-Cenna sprawa - opanowanie podstawowych operacji takich jak commit, revert...
-
+Znajomość wachlarza możliwości, które oferuje Git, jest ważna, ale kluczowe są podstawowe polecenia, na których oparta jest codzienna praca.
