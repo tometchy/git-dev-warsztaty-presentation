@@ -14,8 +14,5 @@ advantages-list-title: Post<br class="co-zyskasz-line-break"> warsztaty
 advantages-list-cover: img/wsparcie.jpg
 ---
 
-Dostęp do zamkniętego kanału na slacku Wersja offline prezentacji Materiały pomocnicze
-
-Call to action
-W stylu "Jeżeli chcesz lepiej zrozumieć, to na warsztatach chętnie Ci to dokładnie wytłumaczymy", albo "Jeżeli czujesz, że nie wyciskasz z GITa istotnych optymalizacji pracy, na warsztatach pokażemy Ci drogę żeby to zmienić".
-Call to action to link do index.html#kontakt
+Po warsztatach nie zapomnimy o Tobie! Żeby ułatwić codzienną pracę z Gitem, każdy uczestnik otrzymuje wersję offline prezentacji i materiałów pomocniczych,
+oraz dostęp do zamkniętego kanału na Slacku GitWarsztatowym, na którym udzielają się prowadzący.
