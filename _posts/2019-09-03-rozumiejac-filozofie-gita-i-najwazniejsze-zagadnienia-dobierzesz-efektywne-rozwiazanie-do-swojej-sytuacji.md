@@ -14,4 +14,4 @@ advantages-list-title: Filozofia<br class="co-zyskasz-line-break"> Gita
 advantages-list-cover: img/filozofia-gita.jpg
 ---
 
-Po co - Wytłumaczenie filozofii gitowej i najważniejszych zagadnień.
+Znajomość filozofii Gita i podstawowych komend jest kluczowa do optymalnej pracy.
