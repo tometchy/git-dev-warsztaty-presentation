@@ -14,4 +14,9 @@ advantages-list-title: Rozwiązywanie<br class="co-zyskasz-line-break"> konflikt
 advantages-list-cover: img/konflikty-w-kodzie.jpg
 ---
 
+Sytuacja towarzysząca powstaniu Gita przyczyniła się do usprawnienia procesu rozwiązywania konfliktów do granic możliwości - wiele dróg, strategii i narzędzi, dopasowywanych do sytuacji.
+
+<!--
+Git powstał między innymi dlatego, że jego autor, Linus Torvalds...
 Sytuacje konfliktowe, z Gitem wachlarz możliwośći, główne: merge i rebase
+-->
