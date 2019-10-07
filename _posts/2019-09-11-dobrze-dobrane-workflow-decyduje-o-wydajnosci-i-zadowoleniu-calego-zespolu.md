@@ -14,4 +14,5 @@ advantages-list-title: Wybór<br class="co-zyskasz-line-break"> workflow
 advantages-list-cover: img/workflow.jpg
 ---
 
-Różne podejścia do zarządzania repozytorium - git flow vs trunk based development
+Na przestrzeni lat wypracowano wiele sposobów prowadzenia projektów - każdy przynosi różne korzyści i różne obciążenia dla zespołu.
+Zdecyduj świadomie, który najlepiej pasuje do Twojej sytuacji!
