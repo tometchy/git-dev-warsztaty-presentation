@@ -14,4 +14,4 @@ advantages-list-title: Cherry<br class="co-zyskasz-line-break"> pick
 advantages-list-cover: img/cherry-pick.jpg
 ---
 
-Wybrnij z sytuacji, przenosząc commity między branchami - cherry-pick
+Czasami możesz wybrnąć z napotkanej sytuacji przenosząc commity między branchami - w tym celu powstał cherry-pick.
