@@ -3,7 +3,7 @@ layout: post
 current: post
 navigation: True
 cover:  assets/images/wsparcie.jpg
-title: Wsparcie dla uczestników, żeby utrwalać wiedzę z warsztatów na co dzień
+title: Wsparcie dla uczestników warsztatów - utrwalaj zdobytą wiedzę na co dzień
 date: 2019-09-14 06:00:00
 modified_date: 2019-09-14 06:00:00
 tags: wprowadzenie
