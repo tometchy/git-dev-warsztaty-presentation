@@ -16,7 +16,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="git-log.svg">
   <defs
      id="defs2">
@@ -78,7 +78,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834731,0,0,1.5265611,-103.13111,11.388022)" />
+       gradientTransform="matrix(1.2834731,0,0,1.5265611,258.46889,-63.81198)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6852"
@@ -88,7 +88,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834732,0,0,1.5265611,-71.183352,10.794793)" />
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,290.41665,-64.40521)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6852"
@@ -98,7 +98,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834732,0,0,1.5265611,-71.008795,10.713059)" />
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,290.59121,-64.48694)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6852"
@@ -108,7 +108,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834732,0,0,1.5265611,131.67299,9.875134)" />
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,291.67299,22.675134)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6852"
@@ -118,7 +118,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834731,0,0,1.5265611,99.550674,10.550098)" />
+       gradientTransform="matrix(1.2834731,0,0,1.5265611,259.55067,23.350098)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6852"
@@ -128,7 +128,7 @@
        x2="182.24284"
        y2="-42.877544"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834732,0,0,1.5265611,131.49844,9.956866)" />
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,291.49844,22.756866)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -137,16 +137,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.9899495"
-     inkscape:cx="201.42757"
-     inkscape:cy="178.5101"
+     inkscape:zoom="0.87"
+     inkscape:cx="372.04724"
+     inkscape:cy="586.52578"
      inkscape:document-units="mm"
      inkscape:current-layer="g269"
      showgrid="false"
-     inkscape:window-width="1879"
-     inkscape:window-height="1172"
-     inkscape:window-x="1407"
-     inkscape:window-y="0"
+     inkscape:window-width="1858"
+     inkscape:window-height="1057"
+     inkscape:window-x="54"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -170,22 +170,22 @@
        id="g269">
       <path
          style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 208.26814,32.396347 V 51.026759"
+         d="m 569.86814,107.59635 0,18.63041"
          id="path7338"
          inkscape:connector-curvature="0" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 229.03597,70.051407 208.26814,51.026759"
+         d="M 590.63597,145.25141 569.86814,126.22676"
          id="path7340"
          inkscape:connector-curvature="0" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 187.40056,69.677688 208.26814,51.026759"
+         d="m 549.00056,144.87769 20.86758,-18.65093"
          id="path7342"
          inkscape:connector-curvature="0" />
       <g
          id="g271"
-         transform="matrix(1.1842607,0,0,1.0127174,-6.1552143,-19.743453)">
+         transform="matrix(1.1842607,0,0,1.0127174,-4.5552143,-40.543453)">
         <g
            clip-path="url(#clipPath277)"
            id="g273">
@@ -193,30 +193,30 @@
              id="g279">
             <text
                id="text283"
-               style="font-variant:normal;font-weight:normal;font-size:25px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="scale(1,-1)"
-               x="69.415688"
-               y="-754.45648">
+               style="font-variant:normal;font-weight:normal;font-size:25.46689415px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="scale(0.98166659,-1.0186758)"
+               x="70.712082"
+               y="-740.81317">
               <tspan
                  id="tspan281"
                  sodipodi:role="line"
-                 y="-754.45648"
-                 x="69.415688 84.415688 99.690689 115.56569 131.36569 138.26569 153.56569 163.8407 179.64069 195.11569 203.0907 218.8907 229.1657 242.2657 257.64069 264.74069 280.04068 293.74069 306.8407 322.64069 329.54068 344.11569 351.09067 359.06567 374.86569 390.14069">Popularne przełączniki do</tspan>
+                 y="-740.81317"
+                 x="70.712082 85.992218 101.55249 117.72397 133.81906 140.84792 156.43365 166.90054 182.99562 198.75963 206.88358 222.97865 233.44556 246.79021 262.45233 269.68494 285.27066 299.22653 312.5712 328.66626 335.69513 350.54233 357.64755 365.77151 381.86661 397.42688">Popularne przełączniki do</tspan>
             </text>
           </g>
           <g
              id="g285">
             <text
                id="text289"
-               style="font-variant:normal;font-weight:bold;font-size:25px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="scale(1,-1)"
-               x="400"
-               y="-754.58844">
+               style="font-variant:normal;font-weight:bold;font-size:28.52458572px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="scale(0.87643692,-1.1409834)"
+               x="456.39337"
+               y="-662.73132">
               <tspan
                  id="tspan287"
                  sodipodi:role="line"
-                 y="-754.58844"
-                 x="400 415 430.07501 445.07501 460.14999 475.14999 490.22501">git log</tspan>
+                 y="-662.73132"
+                 x="456.39337 473.50812 490.70847 507.82321 525.0235 542.13824 559.33862">git log</tspan>
             </text>
           </g>
           <g
@@ -229,7 +229,7 @@
                  id="tspan293"
                  sodipodi:role="line"
                  x="0"
-                 y="9.2900391" />
+                 y="0" />
               <tspan
                  sodipodi:role="line"
                  y="0"
@@ -454,7 +454,7 @@
                inkscape:connector-curvature="0"
                id="path399"
                style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-               d="M 0,-1 H 6.3" />
+               d="m 0,-1 6.3,0" />
           </g>
           <g
              id="g401">
@@ -685,7 +685,7 @@
                inkscape:connector-curvature="0"
                id="path507"
                style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-               d="M 0,-0.9 H 5.4" />
+               d="m 0,-0.9 5.4,0" />
           </g>
           <g
              id="g509">
@@ -771,7 +771,7 @@
                inkscape:connector-curvature="0"
                id="path547"
                style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-               d="M 0,-0.9 H 5.4" />
+               d="m 0,-0.9 5.4,0" />
           </g>
           <g
              id="g549">
@@ -861,20 +861,23 @@
                  id="tspan587"
                  sodipodi:role="line"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.490002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 91.889999 97.290001 102.78 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001 200.34 205.74001 211.14 216.53999 222.03 227.42999 232.83 238.23 243.63 249.03 254.42999 259.82999 265.32001 270.72 276.12 281.51999 286.92001 292.32001 297.72 303.12 308.51999 313.92001 319.32001 324.72 330.20999 335.60999 341.01001 346.5 351.89999 357.29999">Zmiana wyświetlanego formatu commita, np. git log --pretty=”%an-%H”</tspan>
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.490002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 91.889999 97.290001 102.78 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001">Zmiana wyświetlanego formatu commita,</tspan>
             </text>
           </g>
           <g
-             id="g591">
+             id="g591"
+             transform="translate(0,-30.01825)">
             <text
                id="text595"
                style="font-style:italic;font-variant:normal;font-size:7px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,108.7)">
+               transform="scale(1,-1)"
+               x="71"
+               y="-127.65892">
               <tspan
                  id="tspan593"
                  sodipodi:role="line"
-                 y="0"
-                 x="0 4.1999998 8.3999996 12.6 16.799999 21 25.200001 29.4 33.599998 37.799999 42 46.200001 50.400002 54.691002 58.890999 63.091 67.291 71.490997 75.691002 79.982002 84.181999 88.382004 92.582001 96.781998 101.178 105.378 109.578 113.778 117.978 122.178 126.378 130.578 134.778 138.978">https://devhints.io/git-log-format</tspan>
+                 y="-127.65892"
+                 x="71 75.199997 79.400002 83.599998 87.800003 92 96.199997 100.4 104.6 108.8 113 117.2 121.4 125.691 129.89099 134.091 138.291 142.491 146.69101 150.98199 155.18201 159.382 163.582 167.782 172.17801 176.37799 180.578 184.778 188.978 193.17801 197.37799 201.578 205.778 209.978">https://devhints.io/git-log-format</tspan>
             </text>
           </g>
           <g
@@ -887,7 +890,7 @@
                  id="tspan599"
                  sodipodi:role="line"
                  x="0"
-                 y="9.7324219" />
+                 y="0" />
             </text>
           </g>
           <g
@@ -900,7 +903,7 @@
                  id="tspan605"
                  sodipodi:role="line"
                  x="0"
-                 y="10.617188" />
+                 y="0" />
             </text>
           </g>
           <g
@@ -913,15 +916,30 @@
                  id="tspan611"
                  sodipodi:role="line"
                  x="0"
-                 y="9.7324219" />
+                 y="0" />
+            </text>
+          </g>
+          <g
+             transform="translate(-0.47859122,-10.444643)"
+             id="g585-4">
+            <text
+               id="text589-5"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               transform="scale(1,-1)"
+               x="-134.36009"
+               y="-117.4">
+              <tspan
+                 id="tspan587-7"
+                 sodipodi:role="line"
+                 x="71.379601 76.779625 82.179649 87.669693 93.069733 98.469749 103.86977 109.26981 114.66984 120.06986 125.46988 130.95995 136.36 141.76006 147.16011 152.5602 157.96025 163.36031 168.76036 174.16042 179.5605 184.96056 190.36061 195.85066 201.25072 206.6508 212.14085 217.54091 222.94096">np. git log --pretty=”%an-%H”</tspan>
             </text>
           </g>
         </g>
       </g>
       <ellipse
          id="path790"
-         cx="173.88271"
-         cy="-74.060799"
+         cx="175.48271"
+         cy="-53.260811"
          transform="scale(1,-1)"
          rx="33.963501"
          ry="30.396032"
@@ -929,84 +947,84 @@
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3);stroke-width:1.04981256"
          id="path6762-7"
-         cx="138.41589"
-         cy="-54.660397"
+         cx="500.01724"
+         cy="-129.8604"
          rx="23.823256"
          ry="23.130894"
          transform="scale(1,-1)" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
-         x="144.50021"
-         y="-45.015694"
+         x="524.46155"
+         y="-116.58173"
          id="text6880-5"
          transform="scale(0.95167444,-1.0507795)"><tspan
            sodipodi:role="line"
            id="tspan6878-3"
-           x="144.50021"
-           y="-45.015694"
+           x="524.46155"
+           y="-116.58173"
            style="stroke-width:0.47416309">B</tspan></text>
       <ellipse
          style="fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient6832);stroke-width:1.04981256"
          id="path6762"
-         cx="106.46812"
-         cy="-54.067162"
+         cx="468.0694"
+         cy="-129.26715"
          transform="scale(1,-1)"
          rx="23.823256"
          ry="23.130894" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
-         x="100.76254"
-         y="-45.893253"
+         x="480.72363"
+         y="-117.4593"
          id="text6880"
          transform="scale(0.95167444,-1.0507795)"><tspan
            sodipodi:role="line"
            id="tspan6878"
-           x="100.76254"
-           y="-45.893253"
+           x="480.72363"
+           y="-117.4593"
            style="stroke-width:0.47416309">A</tspan></text>
       <ellipse
          style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5);stroke-width:1.04981256"
          id="path6762-7-2"
-         cx="138.59047"
-         cy="-54.742134"
+         cx="500.19183"
+         cy="-129.94212"
          rx="23.823256"
          ry="23.130892"
          transform="scale(1,-1)" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
-         x="90.842522"
-         y="-19.3249"
+         x="453.40262"
+         y="-94.325798"
          id="text7242"
          transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7240"
-           x="90.842522"
-           y="-19.3249"
+           x="453.40262"
+           y="-94.325798"
            style="stroke-width:0.25500581">git log A..B</tspan></text>
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244"
-         cx="187.40057"
-         cy="-69.802277"
+         cx="549.00122"
+         cy="-145.00235"
          transform="scale(1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-9"
-         cx="194.2159"
-         cy="-63.075272"
+         cx="555.81641"
+         cy="-138.2753"
          transform="scale(1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-1"
-         cx="200.90729"
-         cy="-57.095726"
+         cx="562.50769"
+         cy="-132.29573"
          transform="scale(1,-1)"
          inkscape:transform-center-x="1.9671474"
          inkscape:transform-center-y="-2.021557"
@@ -1015,8 +1033,8 @@
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-2"
-         cx="208.09436"
-         cy="-50.9916"
+         cx="569.69458"
+         cy="-126.19157"
          transform="scale(1,-1)"
          inkscape:transform-center-x="1.5300033"
          inkscape:transform-center-y="-1.3184073"
@@ -1025,108 +1043,108 @@
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-7"
-         cx="-228.78813"
-         cy="-69.810043"
-         transform="scale(-1)"
+         cx="-590.388"
+         cy="-145.0101"
+         transform="scale(-1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-9-0"
-         cx="-221.97282"
-         cy="-63.083023"
-         transform="scale(-1)"
+         cx="-583.57281"
+         cy="-138.28305"
+         transform="scale(-1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-1-9"
-         cx="-215.28145"
-         cy="-57.103512"
+         cx="-576.88159"
+         cy="-132.30351"
          inkscape:transform-center-x="-1.9671503"
          inkscape:transform-center-y="-2.0215574"
-         transform="scale(-1)"
+         transform="scale(-1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-2-3"
-         cx="-208.09436"
-         cy="-50.99939"
+         cx="-569.69458"
+         cy="-126.19936"
          inkscape:transform-center-x="-1.5300008"
          inkscape:transform-center-y="-1.3184065"
-         transform="scale(-1)"
+         transform="scale(-1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
-         x="175.28848"
-         y="-18.602655"
+         x="537.84857"
+         y="-93.603546"
          id="text7242-6"
          transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7240-0"
-           x="175.28848"
-           y="-18.602655"
+           x="537.84857"
+           y="-93.603546"
            style="stroke-width:0.25500581">git log A..B</tspan></text>
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-6"
-         cx="208.09288"
-         cy="-40.852707"
+         cx="569.69312"
+         cy="-116.05267"
          transform="scale(1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-26"
-         cx="208.09288"
-         cy="-32.748699"
+         cx="569.69312"
+         cy="-107.94866"
          transform="scale(1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:13.09998798px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32749969"
-         x="174.14622"
-         y="-66.59407"
+         x="536.7063"
+         y="-141.595"
          id="text7346"
          transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7344"
-           x="174.14622"
-           y="-66.59407"
+           x="536.7063"
+           y="-141.595"
            style="stroke-width:0.32749969">A</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:13.55901623px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3389754"
-         x="233.94241"
-         y="-67.137955"
+         x="596.5025"
+         y="-142.1389"
          id="text7350"
          transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7348"
-           x="233.94241"
-           y="-67.137955"
+           x="596.5025"
+           y="-142.1389"
            style="stroke-width:0.3389754">B</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:17.39925003px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.43498126"
-         x="349.90005"
-         y="-6.751565"
+         style="font-style:normal;font-weight:normal;font-size:18.39698029px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.43498126"
+         x="70.529877"
+         y="-8.643465"
          id="text7364"
-         transform="scale(1.2272383,-0.81483767)"><tspan
+         transform="scale(1.160681,-0.86156316)"><tspan
            sodipodi:role="line"
            id="tspan7362"
-           x="349.90005"
-           y="-6.751565"
-           style="stroke-width:0.43498126">www.gitwarsztaty.pl</tspan></text>
+           x="70.529877"
+           y="-8.643465"
+           style="stroke-width:0.43498126">www.GitWarsztaty.pl</tspan></text>
       <flowRoot
          xml:space="preserve"
          id="flowRoot7393"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0.99060201,0,0,0.93015176,6.1018412,53.43562)"><flowRegion
+         transform="matrix(0.99060201,0,0,0.93015176,7.7018412,32.63562)"><flowRegion
            id="flowRegion7395"><rect
              id="rect7397"
              width="34.285713"
@@ -1135,100 +1153,100 @@
              y="-11.408888" /></flowRegion><flowPara
            id="flowPara7399" /></flowRoot>      <path
          style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 410.94993,33.234266 v 18.63042"
+         d="m 570.94993,20.434266 0,18.63042"
          id="path7338-0"
          inkscape:connector-curvature="0" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 431.71775,70.88933 410.94993,51.864686"
+         d="M 591.71775,58.08933 570.94993,39.064686"
          id="path7340-2"
          inkscape:connector-curvature="0" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 390.08235,70.515614 410.94993,51.864686"
+         d="M 550.08235,57.71561 570.94993,39.064686"
          id="path7342-3"
          inkscape:connector-curvature="0" />
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3-2);stroke-width:1.04981256"
          id="path6762-7-7"
-         cx="341.09769"
-         cy="-55.498306"
+         cx="501.0983"
+         cy="-42.698311"
          rx="23.823256"
          ry="23.130892"
          transform="scale(1,-1)" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
-         x="357.474"
-         y="-45.813103"
+         x="525.59863"
+         y="-33.631676"
          id="text6880-5-5"
          transform="scale(0.95167444,-1.0507795)"><tspan
            sodipodi:role="line"
            id="tspan6878-3-9"
-           x="357.474"
-           y="-45.813103"
+           x="525.59863"
+           y="-33.631676"
            style="stroke-width:0.47416309">B</tspan></text>
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-7);stroke-width:1.04981256"
          id="path6762-2"
-         cx="309.1499"
-         cy="-54.905098"
+         cx="469.15051"
+         cy="-42.105103"
          rx="23.823256"
          ry="23.130892"
          transform="scale(1,-1)" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
-         x="313.73633"
-         y="-46.690708"
+         x="481.86072"
+         y="-34.509285"
          id="text6880-2"
          transform="scale(0.95167444,-1.0507795)"><tspan
            sodipodi:role="line"
            id="tspan6878-8"
-           x="313.73633"
-           y="-46.690708"
+           x="481.86072"
+           y="-34.509285"
            style="stroke-width:0.47416309">A</tspan></text>
       <ellipse
          style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5-1);stroke-width:1.04981256"
          id="path6762-7-2-9"
-         cx="341.27225"
-         cy="-55.580059"
+         cx="501.27286"
+         cy="-42.780067"
          rx="23.823256"
          ry="23.130892"
          transform="scale(1,-1)" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
-         x="294.06268"
-         y="-20.160593"
+         x="454.48749"
+         y="-7.3944969"
          id="text7242-7"
          transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7240-3"
-           x="294.06268"
-           y="-20.160593"
+           x="454.48749"
+           y="-7.3944969"
            style="stroke-width:0.25500581">git log A...B</tspan></text>
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-61"
-         cx="390.08234"
-         cy="-70.640182"
+         cx="550.08221"
+         cy="-57.840195"
          transform="scale(1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-9-2"
-         cx="396.89767"
-         cy="-63.913216"
+         cx="556.8974"
+         cy="-51.11322"
          transform="scale(1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-1-93"
-         cx="403.58905"
-         cy="-57.933655"
+         cx="563.58868"
+         cy="-45.133659"
          inkscape:transform-center-x="1.9671478"
          inkscape:transform-center-y="-2.0215578"
          transform="scale(1,-1)"
@@ -1237,8 +1255,8 @@
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-2-1"
-         cx="410.77612"
-         cy="-51.829533"
+         cx="570.77563"
+         cy="-39.029541"
          inkscape:transform-center-x="1.5300087"
          inkscape:transform-center-y="-1.3184071"
          transform="scale(1,-1)"
@@ -1247,94 +1265,94 @@
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-7-9"
-         cx="-431.46991"
-         cy="-70.647957"
-         transform="scale(-1)"
+         cx="-591.46899"
+         cy="-57.847954"
+         transform="scale(-1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-9-0-4"
-         cx="-424.6546"
-         cy="-63.920937"
-         transform="scale(-1)"
+         cx="-584.65381"
+         cy="-51.120941"
+         transform="scale(-1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-1-9-7"
-         cx="-417.96323"
-         cy="-57.941433"
+         cx="-577.96259"
+         cy="-45.141441"
          inkscape:transform-center-x="-1.9671502"
          inkscape:transform-center-y="-2.021558"
-         transform="scale(-1)"
+         transform="scale(-1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-2-3-8"
-         cx="-410.77612"
-         cy="-51.837311"
+         cx="-570.77563"
+         cy="-39.037315"
          inkscape:transform-center-x="-1.5300004"
          inkscape:transform-center-y="-1.3184072"
-         transform="scale(-1)"
+         transform="scale(-1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
-         x="378.50864"
-         y="-19.438326"
+         x="538.93347"
+         y="-6.6722298"
          id="text7242-6-4"
          transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7240-0-5"
-           x="378.50864"
-           y="-19.438326"
+           x="538.93347"
+           y="-6.6722298"
            style="stroke-width:0.25500581">git log A...B</tspan></text>
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-6-0"
-         cx="410.77466"
-         cy="-41.690628"
+         cx="570.77417"
+         cy="-28.890633"
          transform="scale(1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <ellipse
          style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
          id="path7244-26-3"
-         cx="410.77466"
-         cy="-33.586601"
+         cx="570.77417"
+         cy="-20.786598"
          transform="scale(1,-1)"
          rx="2.3543828"
          ry="2.366904" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:13.09998798px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32749969"
-         x="377.36639"
-         y="-67.429787"
+         x="537.7912"
+         y="-54.663666"
          id="text7346-6"
          transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7344-1"
-           x="377.36639"
-           y="-67.429787"
+           x="537.7912"
+           y="-54.663666"
            style="stroke-width:0.32749969">A</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:13.55901527px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3389754"
-         x="437.1626"
-         y="-67.973633"
+         x="597.5874"
+         y="-55.20752"
          id="text7350-0"
          transform="scale(0.99735144,-1.0026556)"><tspan
            sodipodi:role="line"
            id="tspan7348-6"
-           x="437.1626"
-           y="-67.973633"
+           x="597.5874"
+           y="-55.20752"
            style="stroke-width:0.3389754">B</tspan></text>
       <path
          style="fill:#ffffff;fill-opacity:1;stroke-width:0.08785374"
-         d="m 324.39625,40.08549 c -3.57049,3.697144 -5.71468,8.187755 -6.25519,13.100351 -0.13673,1.242729 -0.11221,3.925613 0.0471,5.153065 0.52163,4.018953 2.14278,7.859736 4.62895,10.966838 0.76759,0.959358 1.9137,2.202199 2.03072,2.202199 0.1342,0 2.06682,-1.994659 2.69347,-2.779963 1.39169,-1.743965 2.80583,-4.266397 3.55799,-6.346472 1.96425,-5.43197 1.69105,-11.486142 -0.7576,-16.788845 -0.97109,-2.102887 -2.76765,-4.681337 -4.33282,-6.218529 l -0.47503,-0.466565 z"
+         d="m 484.39625,27.28549 c -3.57049,3.697144 -5.71468,8.187755 -6.25519,13.100351 -0.13673,1.242729 -0.11221,3.925613 0.0471,5.153065 0.52163,4.018954 2.14278,7.859734 4.62895,10.966834 0.76759,0.95936 1.9137,2.2022 2.03072,2.2022 0.1342,0 2.06682,-1.99466 2.69347,-2.77996 1.39169,-1.74396 2.80583,-4.2664 3.55799,-6.34647 1.96425,-5.431972 1.69105,-11.486144 -0.7576,-16.788847 -0.97109,-2.102887 -2.76765,-4.681337 -4.33282,-6.218529 l -0.47503,-0.466565 z"
          id="path7522"
          inkscape:connector-curvature="0" />
     </g>
