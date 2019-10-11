@@ -31,8 +31,9 @@ exports.handler = function (event, context, callback) {
 
         request(options, callback);
          */
-        import fetch from "node-fetch";
-
+        // import fetch from "node-fetch";
+        require('node-fetch');
+        
         const API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
         const body = {
             personalizations: [{to: [{email: "toniek.r@wp.pl"}]}],
