@@ -275,7 +275,7 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
             <form @submit="requestMaterials">
                 <h4>Darmowe materiały</h4>
                 <p>Opis najważniejszych komend <small>(A4)</small></p>
-                <p>Ściągawka szczegółowego przeszukiwania historii <small>(A4)</small></p>
+              <p>Popularne przełączniki do <b>git log</b> <small>(A4)</small></p>
               <div class="agree-wrapper-small">
                 <label for="agree" style="margin-bottom: 0;"><small><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi i informacjami na temat nadchodzących warsztatów</small></label>
                 <span>
@@ -612,7 +612,6 @@ new WOW().init();
     },
     methods:{
       requestMaterials: function (e) {
-          // this.modalHeader = "Już niebawem wyślemy Ci materiały!";
         const self = this;
         self.modalSuccess = true;
         self.modalHeader = "Trwa wysyłanie...";
@@ -624,8 +623,12 @@ new WOW().init();
         const materialsSendingFailureBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo.<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
 
         try {
-          var subscriptionJson = '{ "title": "Nowa subskrybcja", "content": "Użytkownik "' + this.email + '" zasubskrybował się na powiadomienia. Czas: ' + new Date().toString() + '" }';
-          $.post('{{ site.url }}/.netlify/functions/contact', subscriptionJson, function(result) {
+          var sendMaterialsJson = '{ ' +
+                  '"email": "' + this.email + '",' +
+                  '"agree": "' + this.agree + '",' +
+                  '"time": "' + new Date().toString() + '"' +
+                  '}';
+          $.post('{{ site.url }}/.netlify/functions/sendmaterials', sendMaterialsJson, function(result) {
             console.debug("Subscription submit successed, result: " + JSON.stringify(result));
             self.modalSuccess = true;
             self.modalHeader = materialsSentHeader;
@@ -645,8 +648,6 @@ new WOW().init();
           self.modalBody = materialsSendingFailureBody;
         }
         
-          console.log("email: " + this.email);
-          console.log("agree: " + this.agree);
         e.preventDefault();
         // https://vuejs.org/v2/cookbook/form-validation.html
       },
