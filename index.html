@@ -624,21 +624,21 @@ new WOW().init();
           $.post('{{ site.url }}/.netlify/functions/contact', subscriptionJson, function(result) {
             console.debug("Subscription submit successed, result: " + JSON.stringify(result));
             thisApp.modalSuccess = true;
-            thisApp.modalHeader = "Wysłano materiały";
             thisApp.modalBody = "Jeżeli materiały nie dotrą w najbliższym czasie, sprawdź folder SPAM lub skontaktuj się z nami bezpośrednio<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+            thisApp.modalHeader = "Wysłano materiały";
           })
                   .fail(function(response) {
                     console.error("Subscription submit failed, response: " + JSON.stringify(response));
                     thisApp.modalSuccess = false;
-                    thisApp.modalHeader = "Ups, coś poszło nie tak";
                     thisApp.modalBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+                    thisApp.modalHeader = "Ups, coś poszło nie tak";
                   });
         }
         catch (e) {
           console.error(e);
           thisApp.modalSuccess = false;
-          thisApp.modalHeader = "Ups, coś poszło nie tak";
           thisApp.modalBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+          thisApp.modalHeader = "Ups, coś poszło nie tak";
         }
         
           console.log("email: " + this.email);
