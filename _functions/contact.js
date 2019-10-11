@@ -33,6 +33,13 @@ exports.handler = function (event, context, callback) {
          */
         // import fetch from "node-fetch";
         require('node-fetch');
+        function checkStatus(res) {
+            if (res.ok) { // res.status >= 200 && res.status < 300
+                return res;
+            } else {
+                throw res.statusText;
+            }
+        }
         
         const API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
         const body = {
@@ -42,20 +49,17 @@ exports.handler = function (event, context, callback) {
             content: [{type: "text/plain", value: "and easy to do anywhere, even with NETLIFY FUNCTIONS!"}]
         };
 
-        exports.handler = async (event, context) => {
-            return fetch(API_ENDPOINT, {
-                method: 'post',
-                body: JSON.stringify(body),
-                headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': 'Bearer process.env.sendgrid'}
-            })
-                .then(response => response.json())
-                .then(data => ({
-                    statusCode: 200,
-                    body: data.joke
-                }))
-                .catch(error => ({statusCode: 422, body: String(error)}));
-        };
-
+        var response = fetch(API_ENDPOINT, {
+            method: 'post',
+            body: JSON.stringify(body),
+            headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': 'Bearer process.env.sendgrid'}
+        })
+            .then(checkStatus)
+            .then(response => console.log("Success: " + response.json()))
+            .catch(error => {
+                console.error(error);
+                throw error;
+            });
 
         console.log('end request to ' + event.url);
 
