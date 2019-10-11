@@ -119,7 +119,7 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
     </div>
   </div>
   <!--<a href="#prowadzacy">-->
-    <div class="arrow bounce" onclick="to_position('#o-warsztatach')"> <i class="fa fa-arrow-down fa-2x" style="cursor: pointer"></i> </div>
+    <div class="arrow bounce" onclick="to_height(window.innerHeight)"> <i class="fa fa-arrow-down fa-2x" style="cursor: pointer"></i> </div>
   <!--</a>-->
 </section>
 
@@ -578,6 +578,9 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
 <script>
     function to_position(divid) {
         $('html, body').animate({ scrollTop: $(divid).offset().top - 90 }, 'slow');
+    }
+    function to_height(height) {
+      $('html, body').animate({ scrollTop: height }, 'slow');
     }
 </script>
 
