@@ -614,6 +614,20 @@ new WOW().init();
       requestMaterials: function (e) {
           // this.modalHeader = "Już niebawem wyślemy Ci materiały!";
           // this.modalSuccess = true;
+
+        try {
+          var subscriptionJson = '{ "title": "Nowa subskrybcja", "content": "Użytkownik "' + this.email + '" zasubskrybował się na powiadomienia. Czas: ' + new Date().toString() + '" }';
+          $.post('{{ site.url }}/.netlify/functions/contact', subscriptionJson, function(result) {
+            console.debug("Subscription submit successed, result: " + JSON.stringify(result));
+          })
+                  .fail(function(response) {
+                    console.error("Subscription submit failed, response: " + JSON.stringify(response));
+                  });
+        }
+        catch (e) {
+          console.error(e)
+        }
+        
           this.showModal = true;
           console.log("email: " + this.email);
           console.log("agree: " + this.agree);
