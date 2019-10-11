@@ -4,8 +4,9 @@ exports.handler = function (event, context, callback) {
     console.log('event body: ' + event.body);
 
     try {
-        console.log('start request to ' + event.url);
+        console.log('start request FETCH STYLE' + event.url);
 
+        /*
         var request = require('request');
 
         var headers = {
@@ -29,17 +30,31 @@ exports.handler = function (event, context, callback) {
         }
 
         request(options, callback);
+         */
+        import fetch from "node-fetch";
 
+        const API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
+        const body = {
+            personalizations: [{to: [{email: "toniek.r@wp.pl"}]}],
+            from: {email: "kontakt@gitwarsztaty.pl", name: "GitWarsztaty"},
+            subject: "Sending with SendGrid is Fun",
+            content: [{type: "text/plain", value: "and easy to do anywhere, even with NETLIFY FUNCTIONS!"}]
+        };
 
-        // http.get(event.url, function(res) {
-        //     console.log("Got response: " + res.statusCode);
-        //     // context.succeed();
-        //     callback(null, 'success msg'); // to return ok
-        // }).on('error', function(e) {
-        //     console.log("Got error: " + e.message);
-        //     // context.done(null, 'FAILURE');
-        //     callback(new Error('failure' + e.message)); // to return error
-        // });
+        exports.handler = async (event, context) => {
+            return fetch(API_ENDPOINT, {
+                method: 'post',
+                body: JSON.stringify(body),
+                headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': 'Bearer process.env.sendgrid'}
+            })
+                .then(response => response.json())
+                .then(data => ({
+                    statusCode: 200,
+                    body: data.joke
+                }))
+                .catch(error => ({statusCode: 422, body: String(error)}));
+        };
+
 
         console.log('end request to ' + event.url);
 
