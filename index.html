@@ -501,7 +501,6 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
 
             <div class="modal-body">
               <slot name="body">
-                {% raw %}{{ modalBody }}{% endraw %}
               </slot>
             </div>
 
@@ -521,6 +520,7 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
   <div>
     <modal v-if="showModal" @close="showModal = false">
       <h3 slot="header" v-bind:class="(modalSuccess)?'successHeader ':'failureHeader'">{% raw %}{{ modalHeader }}{% endraw %}</h3>
+      <span slot="body" v-html="modalBody"></span>
     </modal>
   </div>
   
@@ -613,32 +613,32 @@ new WOW().init();
     methods:{
       requestMaterials: function (e) {
           // this.modalHeader = "Już niebawem wyślemy Ci materiały!";
-        thisApp = this;
-        thisApp.modalSuccess = true;
-        thisApp.modalHeader = "Trwa wysyłanie...";
-        thisApp.modalBody = "Proszę czekać...";
-        this.showModal = true;
+        const self = this;
+        self.modalSuccess = true;
+        self.modalHeader = "Trwa wysyłanie...";
+        self.modalBody = "Proszę czekać...";
+        self.showModal = true;
 
         try {
           var subscriptionJson = '{ "title": "Nowa subskrybcja", "content": "Użytkownik "' + this.email + '" zasubskrybował się na powiadomienia. Czas: ' + new Date().toString() + '" }';
           $.post('{{ site.url }}/.netlify/functions/contact', subscriptionJson, function(result) {
             console.debug("Subscription submit successed, result: " + JSON.stringify(result));
-            thisApp.modalSuccess = true;
-            thisApp.modalBody = "Jeżeli materiały nie dotrą w najbliższym czasie, sprawdź folder SPAM lub skontaktuj się z nami bezpośrednio<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
-            thisApp.modalHeader = "Wysłano materiały";
+            self.modalSuccess = true;
+            self.modalBody = "Jeżeli materiały nie dotrą w najbliższym czasie, sprawdź folder SPAM lub skontaktuj się z nami bezpośrednio<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+            self.modalHeader = "Wysłano materiały";
           })
                   .fail(function(response) {
                     console.error("Subscription submit failed, response: " + JSON.stringify(response));
-                    thisApp.modalSuccess = false;
-                    thisApp.modalBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
-                    thisApp.modalHeader = "Ups, coś poszło nie tak";
+                    self.modalSuccess = false;
+                    self.modalBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+                    self.modalHeader = "Ups, coś poszło nie tak";
                   });
         }
         catch (e) {
           console.error(e);
-          thisApp.modalSuccess = false;
-          thisApp.modalBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
-          thisApp.modalHeader = "Ups, coś poszło nie tak";
+          self.modalSuccess = false;
+          self.modalBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+          self.modalHeader = "Ups, coś poszło nie tak";
         }
         
           console.log("email: " + this.email);
