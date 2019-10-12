@@ -1,13 +1,17 @@
 exports.handler = function (event, context, callback) {
-    console.log('------------- SEND MATERIALS BEGINNING -------------------- VER 2019_10_11__21_03');
+    console.log('------------- SEND MATERIALS BEGINNING -------------------- VER 2019_10_12__07_50');
     console.log('event http method: ' + event.httpMethod);
     console.log('event body: ' + event.body);
 
     const API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
+    require('node-fetch');
 
-    console.log("email: " + event.body.email);
-    console.log("agree: " + event.body.agree);
+    var eventBody = JSON.parse(event.body);
 
+    console.log("email: " + eventBody.email);
+    console.log("agree: " + eventBody.agree);
+
+    
     function checkStatus(res, shouldThrow) {
         if (res.ok) { // res.status >= 200 && res.status < 300
             return res;
@@ -19,13 +23,13 @@ exports.handler = function (event, context, callback) {
     }
 
     function informUs() {
-        var informUsBody = {
+        const informUsBody = {
             personalizations: [{to: [{email: "kontakt@gitwarsztaty.pl"}]}],
-            from: {email: event.body.email},
-            subject: "Nowy request o darmowe materiały od " + event.body.email + " czy zgodził się na newsletter: " + event.body.agree,
+            from: {email: eventBody.email},
+            subject: "Nowy request o darmowe materiały od " + eventBody.email + " czy zgodził się na newsletter: " + eventBody.agree,
             content: [{
                 type: "text/plain",
-                value: "Nowy request o darmowe materiały od " + event.body.email + " czy zgodził się na newsletter: " + event.body.agree + ". Czas: " + event.body.time
+                value: "Nowy request o darmowe materiały od " + eventBody.email + " czy zgodził się na newsletter: " + eventBody.agree + ". Czas: " + eventBody.time
             }]
         };
 
@@ -43,8 +47,8 @@ exports.handler = function (event, context, callback) {
     }
 
     function sendMaterials() {
-        var sendMaterialsBody = {
-            personalizations: [{to: [{email: event.body.email}]}],
+        const sendMaterialsBody = {
+            personalizations: [{to: [{email: eventBody.email}]}],
             from: {email: "kontakt@gitwarsztaty.pl", name: "GitWarsztaty"},
             subject: "Darmowe materiały do pracy z Gitem!",
             content: [{
@@ -71,7 +75,6 @@ exports.handler = function (event, context, callback) {
     }
 
     try {
-        require('node-fetch');
 
         informUs();
         sendMaterials();
