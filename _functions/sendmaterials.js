@@ -4,6 +4,8 @@ exports.handler = function (event, context, callback) {
     console.log('event body: ' + event.body);
 
     const API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
+    const apiKey = process.env.sendgrid;
+    console.log("Api key: " + apiKey.substring(0, 4) + "...");
     const fetch = require("node-fetch");
 
     const eventBody = JSON.parse(event.body);
@@ -11,7 +13,7 @@ exports.handler = function (event, context, callback) {
     console.log("email: " + eventBody.email);
     console.log("agree: " + eventBody.agree);
 
-    
+
     function checkStatus(res, shouldThrow) {
         if (res.ok) { // res.status >= 200 && res.status < 300
             return res;
@@ -36,10 +38,13 @@ exports.handler = function (event, context, callback) {
         fetch(API_ENDPOINT, {
             method: 'post',
             body: JSON.stringify(informUsBody),
-            headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': 'Bearer process.env.sendgrid'}
+            headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': ('Bearer ' + apiKey)}
         })
             .then(res => checkStatus(res, false))
-            .then(response => console.log("Response: " + response.json()))
+            .then(response => {
+                console.log("Got response:");
+                console.log(response)
+            })
             .catch(error => {
                 console.log("Error catched during fetch");
                 console.error(error);
@@ -63,14 +68,17 @@ exports.handler = function (event, context, callback) {
         fetch(API_ENDPOINT, {
             method: 'post',
             body: JSON.stringify(sendMaterialsBody),
-            headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': 'Bearer process.env.sendgrid'}
+            headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': ('Bearer ' + apiKey)}
         })
             .then(res => checkStatus(res, true))
-            .then(response => console.log("Response: " + response.json()))
+            .then(response => {
+                console.log("Got response:");
+                console.log(response)
+            })
             .catch(error => {
                 console.log("Error catched during fetch");
                 console.error(error);
-                throw "Could not send";
+                callback(new Error('Could not send'));
             });
     }
 
@@ -84,7 +92,7 @@ exports.handler = function (event, context, callback) {
     } catch (e) {
         console.log('Exception catched');
         console.error(e);
-        callback(new Error('failure'));
+        callback(new Error('General failure'));
     }
 
     console.log('------------- END --------------------');
