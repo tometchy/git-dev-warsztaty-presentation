@@ -1,5 +1,5 @@
 exports.handler = function (event, context, callback) {
-    console.log('------------- SEND MATERIALS BEGINNING -------------------- VER 2019_10_12__07_54');
+    console.log('------------- SEND MATERIALS BEGINNING -------------------- VER 2019_10_12__15_46');
     console.log('event http method: ' + event.httpMethod);
     console.log('event body: ' + event.body);
 
