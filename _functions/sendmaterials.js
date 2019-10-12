@@ -1,12 +1,12 @@
 exports.handler = function (event, context, callback) {
-    console.log('------------- SEND MATERIALS BEGINNING -------------------- VER 2019_10_12__07_50');
+    console.log('------------- SEND MATERIALS BEGINNING -------------------- VER 2019_10_12__07_54');
     console.log('event http method: ' + event.httpMethod);
     console.log('event body: ' + event.body);
 
     const API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
-    require('node-fetch');
+    const fetch = require("node-fetch");
 
-    var eventBody = JSON.parse(event.body);
+    const eventBody = JSON.parse(event.body);
 
     console.log("email: " + eventBody.email);
     console.log("agree: " + eventBody.agree);
@@ -84,7 +84,7 @@ exports.handler = function (event, context, callback) {
     } catch (e) {
         console.log('Exception catched');
         console.error(e);
-        callback(new Error('failure')); // to return error
+        callback(new Error('failure'));
     }
 
     console.log('------------- END --------------------');
