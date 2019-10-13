@@ -5,7 +5,7 @@ navigation: True
 cover:  assets/images/dvcs-vs-cvcs.jpg
 title: DVCS vs CVCS - o co ta wojna?
 date: 2019-09-01 06:00:00
-modified_date: 2019-09-01 06:00:00
+modified_date: 2019-10-13 06:00:00
 tags: wprowadzenie
 class: post-template
 subclass: 'post tag-wprowdzenie'
@@ -25,6 +25,8 @@ wszystkie informacje (historię zmian, branche, tagi etc.), a użytkownicy maj�
 W przypadku scentralizowanego systeu kontroli wersji, użytkownik chcący otrzymać jakiekolwiek informacje, każdorazowo musi pytać serwer centralny, w dodatku zazwyczaj odbywa się to po sieci.
 Jest to więc wysoce niewydajne, a w dodatku istnieje tak zwany _single point of failure_, więc w przypadku problemów z siecią lub serwerem, jesteś zablokowany.
 Nie masz jak stworzyć commita albo sprawdzić potrzebnej informacji, co nierzadko wiąże się ze wstrzymaniem pracy.
+
+Temat wydajności w najpopularniejszym zdecentralizowanym systemie kontroli wersji - Gicie, szczegółowo opisałem w [artykule o wpływie Gita na tempo i jakość pracy]({{ site.url }}/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie).
 
 ## CVCS a problemy bezpieczeństwa
 Serwer centralny w rzadkich sytuacjach powoduje problemy bezpieczeństwa - chociaż mnie osobiście nigdy to nie spotkało, od znajomych znam 2 przypadki:
