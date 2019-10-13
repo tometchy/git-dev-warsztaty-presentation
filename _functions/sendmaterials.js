@@ -1,5 +1,5 @@
 exports.handler = function (event, context, callback) {
-    console.log('------------- SEND MATERIALS BEGINNING -------------------- VER 2019_10_13__10_40');
+    console.log('------------- SEND MATERIALS BEGINNING -------------------- VER 2019_10_13__21_01');
     console.log('event http method: ' + event.httpMethod);
     console.log('event body: ' + event.body);
 
@@ -83,12 +83,8 @@ exports.handler = function (event, context, callback) {
     }
 
     try {
-
         informUs();
         sendMaterials();
-
-        console.log('end request to ' + event.url);
-
     } catch (e) {
         console.log('Exception catched');
         console.error(e);
