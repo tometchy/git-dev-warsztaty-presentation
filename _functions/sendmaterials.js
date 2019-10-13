@@ -1,10 +1,10 @@
 exports.handler = function (event, context, callback) {
-    console.log('------------- SEND MATERIALS BEGINNING -------------------- VER 2019_10_12__15_46');
+    console.log('------------- SEND MATERIALS BEGINNING -------------------- VER 2019_10_13__10_40');
     console.log('event http method: ' + event.httpMethod);
     console.log('event body: ' + event.body);
 
     const API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
-    const apiKey = process.env.sendgrid;
+    const apiKey = process.env.SENDGRID;
     console.log("Api key: " + apiKey.substring(0, 4) + "...");
     const fetch = require("node-fetch");
 
