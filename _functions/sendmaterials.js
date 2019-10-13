@@ -28,7 +28,7 @@ exports.handler = function (event, context, callback) {
         const informUsBody = {
             personalizations: [{to: [{email: "kontakt@gitwarsztaty.pl"}]}],
             from: {email: eventBody.email},
-            subject: "Nowy request o darmowe materiały od " + eventBody.email + " czy zgodził się na newsletter: " + eventBody.agree,
+            subject: "Nowy request o darmowe materiały od " + eventBody.email,
             content: [{
                 type: "text/plain",
                 value: "Nowy request o darmowe materiały od " + eventBody.email + " czy zgodził się na newsletter: " + eventBody.agree + ". Czas: " + eventBody.time
