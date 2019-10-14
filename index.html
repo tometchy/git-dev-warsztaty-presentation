@@ -667,12 +667,12 @@ new WOW().init();
                   '"agree": "' + this.agree + '",' +
                   '"time": "' + new Date().toString() + '",' +
                   '"inCompany": "' + this.inCompany + '",' +
-                  '"phoneNumber": "' + this.phoneNumber + '",' +
-                  '"companyName": "' + this.companyName + '",' +
-                  '"officeAddress": "' + this.officeAddress + '",' +
-                  '"who": "' + this.who + '",' +
-                  '"whichCity": "' + this.whichCity + '",' +
-                  '"additionalInfo": "' + this.additionalInfo + '"}';
+                  '"phoneNumber": "' + window.btoa(this.phoneNumber) + '",' +
+                  '"companyName": "' + window.btoa(this.companyName) + '",' +
+                  '"officeAddress": "' + window.btoa(this.officeAddress) + '",' +
+                  '"who": "' + window.btoa(this.who) + '",' +
+                  '"whichCity": "' + window.btoa(this.whichCity) + '",' +
+                  '"additionalInfo": "' + window.btoa(this.additionalInfo) + '"}';
           
           $.post('{{ site.url }}/.netlify/functions/sendcontactrequest', requestDetailsJson, function(result) {
             console.debug("Request submit successed, result: " + JSON.stringify(result));

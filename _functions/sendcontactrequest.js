@@ -3,11 +3,13 @@ exports.handler = function (event, context, callback) {
     console.log('event http method: ' + event.httpMethod);
     console.log('event body: ' + event.body);
 
+    const fetch = require("node-fetch");
+    const atob = require("atob");
+    
     const API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
     const apiKey = process.env.SENDGRID;
     console.log("Api key: " + apiKey.substring(0, 4) + "...");
-    const fetch = require("node-fetch");
-
+    
     const eventBody = JSON.parse(event.body);
 
     console.log("email: " + eventBody.email);
@@ -22,6 +24,7 @@ exports.handler = function (event, context, callback) {
                 throw "Did not send";
         }
     }
+    
 
     function informUs() {
         const informUsBody = {
@@ -30,16 +33,16 @@ exports.handler = function (event, context, callback) {
             subject: "Nowy request o KONTAKT od " + eventBody.email,
             content: [{
                 type: "text/plain",
-                value: "Nowy request o KONTAKT od " + eventBody.email + "\n" +
-                    "Czy zgodził się na newsletter: " + eventBody.agree + "\n" +
-                    "Czas: " + eventBody.time + "\n" +
-                    "Czy w firmie: " + eventBody.inCompany + "\n" +
-                    "Numer telefonu: " + eventBody.phoneNumber + "\n" +
-                    "(JEZELI W FIRMIE) Nazwa firmy: " + eventBody.companyName + "\n" +
-                    "(JEZELI W FIRMIE) Adres biura: " + eventBody.officeAddress + "\n" +
-                    "(JEZELI OTWARTE) Kto: " + eventBody.who + "\n" +
-                    "(JEZELI OTWARTE) Gdzie: " + eventBody.whichCity + "\n" +
-                    "Dodatkowe informacje: " + eventBody.additionalInfo + "\n"
+                value: "Nowy request o KONTAKT od " + eventBody.email + "\n\n" +
+                    "Czy zgodził się na newsletter: " + eventBody.agree + "\n\n" +
+                    "Czas: " + eventBody.time + "\n\n" +
+                    "Czy w firmie: " + eventBody.inCompany + "\n\n" +
+                    "Numer telefonu: " + atob(eventBody.phoneNumber) + "\n\n" +
+                    "(JEZELI W FIRMIE) Nazwa firmy: " + atob(eventBody.companyName) + "\n\n" +
+                    "(JEZELI W FIRMIE) Adres biura: " + atob(eventBody.officeAddress) + "\n\n" +
+                    "(JEZELI OTWARTE) Kto: " + atob(eventBody.who) + "\n\n" +
+                    "(JEZELI OTWARTE) Gdzie: " + atob(eventBody.whichCity) + "\n\n" +
+                    "Dodatkowe informacje: " + atob(eventBody.additionalInfo) + "\n\n"
             }]
         };
 
