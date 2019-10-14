@@ -1,5 +1,5 @@
 exports.handler = function (event, context, callback) {
-    console.log('------------- SEND CONTACT REQUEST BEGINNING -------------------- VER 2019_10_14__09_53');
+    console.log('------------- SEND CONTACT REQUEST BEGINNING -------------------- VER 2019_10_14__11_29');
     console.log('event http method: ' + event.httpMethod);
     console.log('event body: ' + event.body);
 
@@ -37,12 +37,12 @@ exports.handler = function (event, context, callback) {
                     "Czy zgodził się na newsletter: " + eventBody.agree + "\n\n" +
                     "Czas: " + eventBody.time + "\n\n" +
                     "Czy w firmie: " + eventBody.inCompany + "\n\n" +
-                    "Numer telefonu: " + atob(eventBody.phoneNumber) + "\n\n" +
-                    "(JEZELI W FIRMIE) Nazwa firmy: " + atob(eventBody.companyName) + "\n\n" +
-                    "(JEZELI W FIRMIE) Adres biura: " + atob(eventBody.officeAddress) + "\n\n" +
-                    "(JEZELI OTWARTE) Kto: " + atob(eventBody.who) + "\n\n" +
-                    "(JEZELI OTWARTE) Gdzie: " + atob(eventBody.whichCity) + "\n\n" +
-                    "Dodatkowe informacje: " + atob(eventBody.additionalInfo) + "\n\n"
+                    "Numer telefonu: " + atob(decodeURIComponent(escape(eventBody.phoneNumber))) + "\n\n" +
+                    "(JEZELI W FIRMIE) Nazwa firmy: " + atob(decodeURIComponent(escape(eventBody.companyName))) + "\n\n" +
+                    "(JEZELI W FIRMIE) Adres biura: " + atob(decodeURIComponent(escape(eventBody.officeAddress))) + "\n\n" +
+                    "(JEZELI OTWARTE) Kto: " + atob(decodeURIComponent(escape(eventBody.who))) + "\n\n" +
+                    "(JEZELI OTWARTE) Gdzie: " + atob(decodeURIComponent(escape(eventBody.whichCity))) + "\n\n" +
+                    "Dodatkowe informacje: " + atob(decodeURIComponent(escape(eventBody.additionalInfo))) + "\n\n"
             }]
         };
 
