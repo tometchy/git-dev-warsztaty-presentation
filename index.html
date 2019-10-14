@@ -649,19 +649,50 @@ new WOW().init();
         }
         
         e.preventDefault();
-        // https://vuejs.org/v2/cookbook/form-validation.html
       },
       requestContact: function(e) {
-        console.log("email: " + this.email);
-        console.log("in company: " + this.inCompany);
-        console.log("phone number: " + this.phoneNumber);
-        console.log("company name: " + this.companyName);
-        console.log("office address: " + this.officeAddress);
-        console.log("who: " + this.who);
-        console.log("which city: " + this.whichCity);
-        console.log("additional info: " + this.additionalInfo);
+        const self = this;
+        self.modalSuccess = true;
+        self.modalHeader = "Trwa wysyłanie...";
+        self.modalBody = "Proszę czekać...";
+        self.showModal = true;
+        const requestSentHeader = "Wysłono pomyślnie";
+        const requestSentBody = "Skontaktujemy się niezwłocznie. W razie problemów, skontaktuj się proszę z nami bezpośrednio. <br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+        const requestSendingFailureHeader = "Ups, coś poszło nie tak";
+        const requestSendingFailureBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo.<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
 
-        this.showModal = true;
+        try {
+          var requestDetailsJson = "{ " +
+                  '"email": "' + this.email + '",' +
+                  '"agree": "' + this.agree + '",' +
+                  '"time": "' + new Date().toString() + '",' +
+                  '"inCompany": "' + this.inCompany + '",' +
+                  '"phoneNumber": "' + this.phoneNumber + '",' +
+                  '"companyName": "' + this.companyName + '",' +
+                  '"officeAddress": "' + this.officeAddress + '",' +
+                  '"who": "' + this.who + '",' +
+                  '"whichCity": "' + this.whichCity + '",' +
+                  '"additionalInfo": "' + this.additionalInfo + '"}';
+          
+          $.post('{{ site.url }}/.netlify/functions/sendcontactrequest', requestDetailsJson, function(result) {
+            console.debug("Request submit successed, result: " + JSON.stringify(result));
+            self.modalSuccess = true;
+            self.modalHeader = requestSentHeader;
+            self.modalBody = requestSentBody;
+          })
+                  .fail(function(response) {
+                    console.error("Request submit failed, response: " + JSON.stringify(response));
+                    self.modalSuccess = false;
+                    self.modalHeader = requestSendingFailureHeader;
+                    self.modalBody = requestSendingFailureBody;
+                  });
+        }
+        catch (e) {
+          console.error(e);
+          self.modalSuccess = false;
+          self.modalHeader = requestSendingFailureHeader;
+          self.modalBody = requestSendingFailureBody;
+        }
         e.preventDefault();
       }
     }
