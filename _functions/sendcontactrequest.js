@@ -1,5 +1,5 @@
 exports.handler = function (event, context, callback) {
-    console.log('------------- SEND CONTACT REQUEST BEGINNING -------------------- VER 2019_10_14__11_29');
+    console.log('------------- SEND CONTACT REQUEST BEGINNING -------------------- VER 2019_10_18__18_39');
     console.log('event http method: ' + event.httpMethod);
     console.log('event body: ' + event.body);
 
@@ -20,6 +20,7 @@ exports.handler = function (event, context, callback) {
             return res;
         } else {
             console.error("Response status is not ok");
+            console.log(res);
             if (shouldThrow)
                 throw "Did not send";
         }
