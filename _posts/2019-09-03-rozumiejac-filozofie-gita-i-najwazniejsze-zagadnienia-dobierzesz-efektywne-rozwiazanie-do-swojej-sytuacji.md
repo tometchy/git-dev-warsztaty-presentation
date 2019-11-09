@@ -15,3 +15,5 @@ advantages-list-cover: img/filozofia-gita.jpg
 ---
 
 Znajomość filozofii Gita i podstawowych komend jest kluczowa do optymalnej pracy.
+
+Na wstępie, ważne jest aby załapać, że [Git jest zdecentralizowany]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna).
