@@ -35,6 +35,6 @@ Serwer centralny w rzadkich sytuacjach powoduje problemy bezpieczeństwa - choci
 
 ## Podsumowanie
 Git jest znacznie optymalniejszy od każdego scentralizowanego systemu kontroli wersji, przez sam fakt rozproszenia repozytoriów po komputerach wszystkich użytkowników.
-Więcej o tym i innych aspektach opisałem w [poście tłumaczącym podstawową filozofię działania i najważniejsze komendy]({{ site.url }}/blog/rozumiejac-filozofie-gita-i-najwazniejsze-zagadnienia-dobierzesz-efektywne-rozwiazanie-do-swojej-sytuacji).
+Więcej o tym i innych aspektach opisałem w [poście tłumaczącym podstawową filozofię działania i najważniejsze zagadnienia]({{ site.url }}/blog/rozumiejac-filozofie-gita-i-najwazniejsze-zagadnienia-dobierzesz-efektywne-rozwiazanie-do-swojej-sytuacji).
 
 Jeżeli chcesz szerzej poznać tę i [inne zalety Gita]({{ site.url }}#co-zyskasz), a zamiast wysłuchiwać jedynie suchej teorii, spróbować wszystkiego w praktyce, [zapraszamy na GitWarsztaty]({{ site.url }}#kontakt), na których z pomocą prowadzących przećwiczysz najważniejsze mechanizmy Gita.

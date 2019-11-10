@@ -15,3 +15,5 @@ advantages-list-cover: img/podstawowe-komendy-gita.jpg
 ---
 
 Znajomość wachlarza możliwości, które oferuje Git, jest ważna, ale kluczowe są podstawowe polecenia, na których oparta jest codzienna praca.
+
+Coś o tym, że rebasujemy zawsze siebie.

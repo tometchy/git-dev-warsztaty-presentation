@@ -23,4 +23,4 @@ W DVCS całość instalujesz u siebie na komputerze. Czyli wszystko to co wykony
 
 A co w Gicie odbywa się zdalnie? Jedynie synchronizowanie ropozytoriów między sobą, czyli np. ja mam swoje repozytorium, którego odpowiednik jest na serwerze Gitlab, którego odpowiednik ma również kolega w pracy, więc ja po dodaniu nowych commitów z kodem zscynchronizuję się z Gitlabem (uaktualnię go), a następnie zsynchronizuje się z Gitlabem kolega, który to z kolei uaktualni swoje repozytorium.
 
-Coś o tym, że rebasujemy zawsze siebie.
+Tutaj nie komendy czyli zagadnienia, czyli np. czym jest commit (obrazek nie kulka itp).
