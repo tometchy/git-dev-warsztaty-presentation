@@ -295,6 +295,38 @@ cover: img/prezentacja.jpg
             <p>
                 <img src="img/bisect.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
             </p>
+            <aside class="notes">
+                <small>
+                    <p>
+                        <code>
+                            # ZOOM TERMINAL CTRL + SHIFT + PLUS
+                            git bisect start
+                            git bisect bad
+                            git bisect good v1.2
+                            ...
+                            git bisect reset
+                        </code>
+                    </p>
+                    <p>
+                        <code>
+                            # Do it second time introducing USING REVERSE SEARCH:
+                            git bisect view
+                        </code>
+                    </p>
+                    <p>
+                        <code>
+                            #If the DISPLAY environment variable is not set, git log is used instead. You can also give command-line options such as -p and --stat.
+                        </code>
+                    </p>
+                    <p>
+                        <b>
+                            <code>
+                                git bisect run node node_modules/.bin/codeceptjs run --steps
+                            </code>
+                        </b>
+                    </p>
+                </small>
+            </aside>
         </section>
         
         <section>
