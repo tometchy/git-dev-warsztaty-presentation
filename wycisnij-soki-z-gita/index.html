@@ -307,7 +307,7 @@ cover: img/prezentacja.jpg
                 </small>
             </p>
         </section>
-        
+
         <section>
             <h2>7 zasad dobrego <i>commit message</i></h2>
             <ol>
@@ -321,7 +321,8 @@ cover: img/prezentacja.jpg
             </ol>
             <p>
                 <small>
-                    Oprócz punktu 6. (<i>szerokość ciała</i>), wszystkie punkty robią znaczącą różnicę.<br>Testowałem każdy z nich w innych
+                    Oprócz punktu 6. (<i>szerokość ciała</i>), wszystkie punkty robią znaczącą różnicę.<br>Testowałem
+                    każdy z nich w innych
                     wariacjach, te naprawdę mają sens.
                 </small>
             </p>
@@ -331,7 +332,8 @@ cover: img/prezentacja.jpg
                 * piszą to 2 osoby<br>
                 * często siedzące obok siebie<br>
                 * i to się nie zmieni<br>
-                * to nie jest kod, tego się nie debuguje, nie refaktoruje, aspekt historii jest trzeciorzędny, nikt po latach nie będzie
+                * to nie jest kod, tego się nie debuguje, nie refaktoruje, aspekt historii jest trzeciorzędny, nikt po
+                latach nie będzie
                 tego utrzymywał<br>
             </aside>
         </section>
@@ -341,6 +343,32 @@ cover: img/prezentacja.jpg
             <p>
                 <img src="img/commit-editor.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
             </p>
+        </section>
+
+        <section>
+            <h4>Git patch</h4>
+            <p>
+                Pozwala np. na łatwe przerzucanie zmian pomiędzy repozytoriami nie związanymi ze sobą.
+            </p>
+            <p>
+                Przykład:
+            </p>
+            <div style="margin-left: auto; margin-right: auto">
+                <small style="text-align: left">
+                    <code>
+                        git format-patch HEAD~2<br>
+                        # Output:<br>
+                        # 0001-make-stuff-more-awesome.patch<br>
+                        # 0002-allow-users-to-be-locked.patch<br>
+                        <br>
+                        cp *.patch ANOTHER_REPO_PATH<br>
+                        <br>
+                        cd ANOTHER_REPO_PATH<br>
+                        <br>
+                        git am *.patch
+                    </code>
+                </small>
+            </div>
         </section>
 
         <section>
