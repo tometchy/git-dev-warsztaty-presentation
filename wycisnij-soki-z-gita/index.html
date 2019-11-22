@@ -269,6 +269,36 @@ cover: img/prezentacja.jpg
         </section>
         
         <section>
+            <h4>Intent to add untracked files</h4>
+            <p>
+                <code>
+                    <ul style="list-style: none">
+                        <li>-N</li>
+                        <li>--intent-to-add</li>
+                    </ul>
+                </code>
+            </p>
+            <p>
+                Np.<br>
+                <code>git add . -N</code>
+            </p>
+            <p>
+                Przykładowe korzyści:
+                <ul>
+                    <li>działa git add -p</li>
+                    <li>można użyć git diff</li>
+                </ul>
+            </p>
+            <p>
+                <small>
+                    <i>
+                        Record only the fact that the path will be added later. An entry for the path is placed in the index with no content. This is useful for, among other things, showing the unstaged content of such files with git diff and committing them with git commit -a.
+                    </i>
+                </small>
+            </p>
+        </section>
+        
+        <section>
             <h3><code>git commit</code> > <code>git commit -m</code></h3>
             <p>
                 <img src="img/commit-editor.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
