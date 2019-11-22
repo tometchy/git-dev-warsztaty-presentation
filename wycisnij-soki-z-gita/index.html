@@ -39,6 +39,15 @@ cover: img/prezentacja.jpg
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
+    <style>
+        .alias-list li{
+            margin-bottom: 9px
+        }
+        
+        .alias-list li {
+            font-size: 70%
+        }
+    </style>
 </head>
 
 <body>
@@ -277,6 +286,62 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
+            <section>
+                <h2>Aliasy</h2>
+                <p style="margin-bottom:0">
+                    Modyfikacje aliasów można wykonywać w gitconfigu
+                </p>
+                <small>
+                    <ul style="list-style:none">
+                        <li><code>[alias]</code></li>
+                        <li><code>st = status</code></li>
+                        <li><code>ci = commit -v</code></li>
+                    </ul>
+                </small>
+                <p style="margin-bottom:0">
+                    Albo za pomocą polecenia
+                </p>
+                <small>
+                    <ul style="list-style:none">
+                        <li><code>git config --global alias.st status</code></li>
+                        <li><code>git config --global alias.ci 'commit -v'</code></li>
+                    </ul>
+                </small>
+                <p>
+                    <small>
+                        Przykład użycia: <code>git st</code>
+                    </small>
+                </p>
+                <p>
+                    Aliasy mogą być też na poziomie <i>Basha</i> - wówczas nie trzeba pisać <i>Git</i>.
+                </p>
+            </section>
+            <section>
+                <h6>Przykłady aliasów</h6>
+                <small>
+                    <ul style="list-style:none" class="alias-list">
+                        <li><code><b><i>vd</i></b> = difftool --tool=vimdiff</code></li>
+                        <li><code><i><b>vds</b></i> = difftool --tool=vimdiff --staged</code></li>
+                        <li><code><i><b>wip</b></i> = !git add --all && git commit -m WIP</code></li>
+                        <li><code><i><b>pfl</b></i> = push --force-with-lease</code></li>
+                        <li><code><i><b>standup</b></i> = log --since '1 day ago' --oneline --author krzysztof.morcinek@gmail.com # use your mail</code></li>
+                        <li><code><i><b>cam</b></i> = commit -am</code></li>
+                        <li><code><i><b>jira</b></i> = log --since '6am' --oneline --author krzysztof.morcinek@gmail.com # use your mail</code></li>
+                        <li><code><i><b>ls</b></i> = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate</code> </li>
+                        <li><code><i><b>mt</b></i> = mergetool</code></li>
+                        <li><code><i><b>mff</b></i> = merge --ff-only</code></li>
+                        <li><code><i><b>cpc</b></i> = cherry-pick --continue</code></li>
+                        <li><code><i><b>rei</b></i> = rebase --interactive</code></li>
+                        <li><code><i><b>rec</b></i> = rebase --continue</code></li>
+                        <li># list aliases<br>
+                            <code><i><b>a</b></i> = "!f() { git alias;  }; f"</code></li>
+                        <li><code><i><b>alias</b></i> = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /</code></li>
+                    </ul>
+                </small>
+            </section>
+        </section>
+
+        <section>
             <h5>Checkout last used branch</h5>
             <p>
                 <br>
@@ -287,7 +352,7 @@ cover: img/prezentacja.jpg
                 <img src="img/previous.png" style="border:none; box-shadow:none; max-width: 300px"/>
             </p>
         </section>
-        
+
         <section>
             <h4>Intent to add untracked files</h4>
             <p>
