@@ -40,10 +40,10 @@ cover: img/prezentacja.jpg
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
     <style>
-        .alias-list li{
+        .alias-list li {
             margin-bottom: 9px
         }
-        
+
         .alias-list li {
             font-size: 70%
         }
@@ -324,23 +324,27 @@ cover: img/prezentacja.jpg
                         <li><code><i><b>vds</b></i> = difftool --tool=vimdiff --staged</code></li>
                         <li><code><i><b>wip</b></i> = !git add --all && git commit -m WIP</code></li>
                         <li><code><i><b>pfl</b></i> = push --force-with-lease</code></li>
-                        <li><code><i><b>standup</b></i> = log --since '1 day ago' --oneline --author krzysztof.morcinek@gmail.com # use your mail</code></li>
+                        <li><code><i><b>standup</b></i> = log --since '1 day ago' --oneline --author
+                            krzysztof.morcinek@gmail.com # use your mail</code></li>
                         <li><code><i><b>cam</b></i> = commit -am</code></li>
-                        <li><code><i><b>jira</b></i> = log --since '6am' --oneline --author krzysztof.morcinek@gmail.com # use your mail</code></li>
-                        <li><code><i><b>ls</b></i> = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate</code> </li>
+                        <li><code><i><b>jira</b></i> = log --since '6am' --oneline --author krzysztof.morcinek@gmail.com
+                            # use your mail</code></li>
+                        <li><code><i><b>ls</b></i> = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\
+                            [%cn]" --decorate</code></li>
                         <li><code><i><b>mt</b></i> = mergetool</code></li>
                         <li><code><i><b>mff</b></i> = merge --ff-only</code></li>
                         <li><code><i><b>cpc</b></i> = cherry-pick --continue</code></li>
                         <li><code><i><b>rei</b></i> = rebase --interactive</code></li>
                         <li><code><i><b>rec</b></i> = rebase --continue</code></li>
                         <li># list aliases<br>
-                            <code><i><b>a</b></i> = "!f() { git alias;  }; f"</code></li>
-                        <li><code><i><b>alias</b></i> = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /</code></li>
+                            <code><i><b>a</b></i> = "!f() { git alias; }; f"</code></li>
+                        <li><code><i><b>alias</b></i> = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e
+                            s/\\ /\\ =\\ /</code></li>
                     </ul>
                 </small>
             </section>
         </section>
-        
+
         <section>
             <h4>Pull --rebase</h4>
             <p style="text-align: left; font-size: 80%">
@@ -435,14 +439,14 @@ cover: img/prezentacja.jpg
                 <img src="img/commit-editor.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
             </p>
         </section>
-        
+
         <section>
             <h3>git commit -v</h3>
             <p>
                 <img src="img/commit-v.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
             </p>
         </section>
-        
+
         <section>
             <h3>Git stash with name</h3>
             <p>
@@ -474,13 +478,44 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
-            <h3>Ciekawe przełączniki do git merge</h3>
-            <ul style="list-style: none">
-                <li><code>--ff</code></li>
-                <li><code>--no-ff</code></li>
-                <li><code>--ff-only</code></li>
-                <li><code>--squash</code></li>
-            </ul>
+            <section>
+                <h3>Ciekawe przełączniki do git merge</h3>
+                <ul style="list-style: none">
+                    <li><code>--ff</code></li>
+                    <li><code>--no-ff</code></li>
+                    <li><code>--ff-only</code></li>
+                    <li><code>--squash</code></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Strategie mergowania</h2>
+                <ul style="line-height: 4">
+                    <small>
+                        <li>resolve </li>
+                        <li><b>recursive</b>
+                            <ul>
+                                <li>ours </li>
+                                <li>theirs </li>
+                                <li>patience </li>
+                                <li>diff-algorithm=[patience|minimal|histogram|myers]</li>
+                                <li>ignore-space-change </li>
+                                <li>ignore-all-space </li>
+                                <li>ignore-space-at-eol </li>
+                                <li>ignore-cr-at-eol </li>
+                                <li>renormalize </li>
+                                <li>no-renormalize </li>
+                                <li>no-renames </li>
+                                <li><b>find-renames[=<i>n</i>]</b></li>
+                                <li>rename-threshold=<i>n</i> </li>
+                                <li>subtree[=<i>path</i>] </li>
+                            </ul>
+                        </li>
+                        <li>octopus </li>
+                        <li>ours </li>
+                        <li>subtree </li>
+                    </small>
+                </ul>
+            </section>
         </section>
 
         <section>
