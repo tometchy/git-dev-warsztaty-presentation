@@ -341,6 +341,35 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
+            <h3>Git ReReRe</h3>
+            <p>
+                <b>RE</b>use <b>RE</b>corded <b>RE</b>solution of conflicted merges
+                <br>
+                <br>
+            </p>
+            <p>
+                <small>
+                    What rerere does is save the resolution of a conflict so that it can be re-applied later if it sees
+                    the same conflict again. When Git sees the conflict which it already has a resolution recorded for,
+                    it will apply the resolution automatically for you, and give you the opportunity to accept the
+                    resolution as applied, or change it.
+                </small>
+                <br>
+                <br>
+            </p>
+            <p>
+            <ul>
+                <li>
+                    <code>git config --global rerere.enabled true</code>
+                </li>
+                <li>
+                    git rerere <i>(przed lub po rozwiązaniu konfliktu)</i>
+                </li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
             <section>
                 <h3>Git Log</h3>
                 <p>
