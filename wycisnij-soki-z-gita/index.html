@@ -47,6 +47,10 @@ cover: img/prezentacja.jpg
         .alias-list li {
             font-size: 70%
         }
+        
+        .modifications-list li {
+            margin-bottom: 9px
+        }
     </style>
 </head>
 
@@ -349,6 +353,23 @@ cover: img/prezentacja.jpg
             </ul>
             <p>
                 <img src="img/look.gif" style="border:none; box-shadow:none; max-width: 500px"/>
+            </p>
+        </section>
+        
+        <section>
+            <h4>Modyfikowanie kodu wprost z Gita</h4>
+            <p>
+                <small>
+                    <ul class="modifications-list">
+                        <li style="list-style: none; font-size: 140%; margin-bottom: 40px; text-align: center">Częste scenariusze lokalnych zmian kodu <b>bez commitowania</b></li>
+                        <li>Wywal zmiany z pliku Y (<code>git reset Y; git checkout Y</code>)</li>
+                        <li>Wyzeruj wszystkie zmiany (<code>git reset --hard</code>)</li>
+                        <li>Wyzeruj zmiany ale odłóż na potem (<code>git stash --include-untracked</code>)</li>
+                        <li>Zastaguj zmianę <i>X</i> z pliku <i>Y</i> (<code>git add add Y -p</code>), resztę z pliku wywal (<code>git checkout Y</code>)</li>
+                        <li>Zastaguj wszystkie zmiany z wszystkich plików (<code>git add .</code>),
+                        ale wyklucz zmianę <i>X</i> z pliku <i>Y</i> (<code>git reset Y -p)</code> i wywal (<code>git checkout .</code>)</li>
+                    </ul>
+                </small>
             </p>
         </section>
 
