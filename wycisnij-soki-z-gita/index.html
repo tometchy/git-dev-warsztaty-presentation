@@ -47,7 +47,7 @@ cover: img/prezentacja.jpg
         .alias-list li {
             font-size: 70%
         }
-        
+
         .modifications-list li {
             margin-bottom: 9px
         }
@@ -252,6 +252,74 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
+            <section>
+                <h3>Obawy przed konsolą</h3>
+                <ul style="line-height: 170%; margin-top: 30px">
+                    <li>Pewnie trzeba się strasznie opisać, a to będzie wolno szło</li>
+                    <li>Pewnie będzie problem spamiętać komendy</li>
+                    <li>To jest jakiś niewygodny przeżytek</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Kiedy nie warto kurczywie trzymać się konsoli?</h4>
+                <ul style="line-height: 170%; margin-top: 30px">
+                    <li>Tool bywa lepszy do diffa</li>
+                    <li>Toole ładniej wizualizują historię branchów</li>
+                    <li>W dobrym IDE wygodniej się patrzy na <i>Git Blame</i></li>
+                    <li>Nie warto rozwiązywać konfliktów bez toola</li>
+                </ul>
+                <aside class="notes">
+                    Oczywiście, nie warto być fanatykiem i jak coś jest wygodniejsze w toolu, to lepiej wykorzystać
+                    toola. Tylko, że gdy się ma wydajnie ogarniętą konsolę to jest rzadkość. Ale np. git blame zawsze
+                    robię z Ide. Przeszukiwanie historii czasami z IDE lub gitk, ale tylko gdy nie mam pomysłu czego
+                    szukam, w przeciwnym wypadku log ogarnia mi to bardzo dobrze. Merge robię zawsze z kdiff3. Diffy
+                    oglądam zawsze z kdiff3 lub vimdiff -> ten drugi działa szybciej i nie odrywa mnie od konsoli.
+                </aside>
+            </section>
+            <section>
+                <h3>Myszka jest do eksplorowania</h3>
+                <p>
+                    <img src="img/context-menu.png" style="border:none; box-shadow:none; max-width: 700px"/>
+                </p>
+            </section>
+            <section>
+                <h5>Są toole z dobrze ogarniętymi<br>skrótami klawiszowymi</h5>
+                <p>
+                    <img src="img/fork-keyboard-shortcuts.jpg" style="border:none; box-shadow:none; max-width: 500px"/>
+                </p>
+                <aside class="notes">
+                    Np. Rider jest dobrze ogarnięty skrótowo
+                </aside>
+            </section>
+            <section>
+                <h4>Ale dobrze ogarnięta konsola wygrywa</h4>
+                <ul style="margin-top:40px; font-size:70%; line-height: 195%">
+                    <li style="color: green">Z dobrze ogarniętą konsolą pracuje się wydajniej</li>
+                    <li style="color: green">Konsola zawsze ma więcej możliwości - żaden tool nie pokryje wszystkich
+                        casów
+                    </li>
+                    <li style="color: green">Konsola zachęca do lepszego zrozumienia Gita</li>
+                    <li style="color: green">Nie ma toola działającego szybciej niż konsola</li>
+                    <li style="color: rgba(255,0,0,0.67)">Toole często zachęcają do złych praktyk i budują złe nawyki
+                    </li>
+                    <li style="color: rgba(255,0,0,0.67)">Toole często zachęcają do klikania zamiast używania skrótów
+                        klawiszowych
+                    </li>
+                    <li style="color: rgba(255,0,0,0.67)">Wiele (popularnych) tooli działa wolno i odrywa od <i>flow</i>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    Przykłady złych praktyk: długi commit title, korzystanie z jakichś <i>magic sync buttonów</i> i
+                    innych
+                    takich złych rozwiązań, przycisk <i>Git Flow</i>.
+                </aside>
+            </section>
+            <section>
+                <h4>Co to znaczy dobrze ogarnięta konsola?</h4>
+            </section>
+        </section>
+
+        <section>
             <h1>Co daje Git?</h1>
             <h5>Jak przyczynia się do większej wydajności pracy?</h5>
             <p>
@@ -373,14 +441,14 @@ cover: img/prezentacja.jpg
                 </small>
             </p>
         </section>
-        
+
         <section>
             <h4>Alternatywne wersje rzeczywistości</h4>
             <p>
                 <img src="img/gitk-version-tree.jpg" style="border:none; box-shadow:none; max-width: 700px"/>
             </p>
         </section>
-        
+
         <section>
             <h4>Szybkie sprawdzanie starych wersji</h4>
             <ul style="font-size:80%">
@@ -388,25 +456,30 @@ cover: img/prezentacja.jpg
                 <li>Szybkie <i>przepinanie się</i> na starą wersję</li>
                 <li>Szybkie <i>podglądanie</i> starych wersji</li>
                 <li>Szybki <i>Blame</i> do każdej linii w pliku</li>
-                <li>Szybkie odszukiwanie commitów </li>
+                <li>Szybkie odszukiwanie commitów</li>
             </ul>
             <p>
                 <img src="img/look.gif" style="border:none; box-shadow:none; max-width: 500px"/>
             </p>
         </section>
-        
+
         <section>
             <h4>Modyfikowanie kodu wprost z Gita</h4>
             <p>
                 <small>
                     <ul class="modifications-list">
-                        <li style="list-style: none; font-size: 140%; margin-bottom: 40px; text-align: center">Częste scenariusze lokalnych zmian kodu <b>bez commitowania</b></li>
+                        <li style="list-style: none; font-size: 140%; margin-bottom: 40px; text-align: center">Częste
+                            scenariusze lokalnych zmian kodu <b>bez commitowania</b></li>
                         <li>Wywal zmiany z pliku Y (<code>git reset Y; git checkout Y</code>)</li>
                         <li>Wyzeruj wszystkie zmiany (<code>git reset --hard</code>)</li>
                         <li>Wyzeruj zmiany ale odłóż na potem (<code>git stash --include-untracked</code>)</li>
-                        <li>Zastaguj zmianę <i>X</i> z pliku <i>Y</i> (<code>git add add Y -p</code>), resztę z pliku wywal (<code>git checkout Y</code>)</li>
+                        <li>Zastaguj zmianę <i>X</i> z pliku <i>Y</i> (<code>git add add Y -p</code>), resztę z pliku
+                            wywal (<code>git checkout Y</code>)
+                        </li>
                         <li>Zastaguj wszystkie zmiany z wszystkich plików (<code>git add .</code>),
-                        ale wyklucz zmianę <i>X</i> z pliku <i>Y</i> (<code>git reset Y -p)</code> i wywal (<code>git checkout .</code>)</li>
+                            ale wyklucz zmianę <i>X</i> z pliku <i>Y</i> (<code>git reset Y -p)</code> i wywal (<code>git
+                                checkout .</code>)
+                        </li>
                     </ul>
                 </small>
             </p>
