@@ -51,6 +51,14 @@ cover: img/prezentacja.jpg
         .modifications-list li {
             margin-bottom: 9px
         }
+        
+        .good-terminal-list ul {
+            font-size: 61%;
+        }
+        
+        .good-terminal-list li {
+            margin-bottom: 15px
+        }
     </style>
 </head>
 
@@ -292,9 +300,9 @@ cover: img/prezentacja.jpg
                 </aside>
             </section>
             <section>
-                <h4>Ale dobrze ogarnięta konsola wygrywa</h4>
+                <h4>Ale <i>dobrze ogarnięta</i> konsola wygrywa</h4>
                 <ul style="margin-top:40px; font-size:70%; line-height: 195%">
-                    <li style="color: green">Z dobrze ogarniętą konsolą pracuje się wydajniej</li>
+                    <li style="color: green">Z <i>dobrze ogarniętą</i> konsolą pracuje się wydajniej</li>
                     <li style="color: green">Konsola zawsze ma więcej możliwości - żaden tool nie pokryje wszystkich
                         casów
                     </li>
@@ -315,7 +323,45 @@ cover: img/prezentacja.jpg
                 </aside>
             </section>
             <section>
-                <h4>Co to znaczy dobrze ogarnięta konsola?</h4>
+                <h4 style="margin-bottom: 35px; font-size: 125%">Co to znaczy <i>dobrze ogarnięta</i> konsola?</h4>
+                <ul class="good-terminal-list">
+                    <li>Konsola zawsze pod ręką
+                        <ul>
+                            <li style="margin-bottom: 0">Zdecydowanie najlepiej gdy jest zintegrowana w IDE</li>
+                            <li>Opcjonalnie wyskakująca od skrótu klawiszowego<br><small>(choć to mało przy otwartych na raz dwóch lub więcej projektach)</small></li>
+                        </ul>
+                    </li>
+                    <li>Konsola z wydajnym autouzupełnianiem</li>
+                    <li>Zdecydowanie dobrze, gdy konsola ma wydajny<br><i>reverse search</i></li>
+                    <li>Ustawione <i>Git aliasy</i> i aliasy na poziomie shella</li>
+                </ul>
+            </section>
+            <section>
+                <h5 style="font-size:101%; margin-bottom: 35px">Jak w kilka minut przygotować konsolę na start?</h5>
+                <ul style="font-size: 90%">
+                    <li>Aby spełnić wszystkie <i>prerekwizyty</i>
+                        <ol>
+                           <li>IDE z wbudowanym terminalem <br><small>(np. Jet Brains Rider, działa reverse search)</small></li> 
+                            <li>Bash ustawiony jako terminal w IDE <br><small>(na Windowsie GitBash)</small></li>
+                            <li>Aliasy (Gitowe i Bashowe) na start wzięte z internetu <br><small>(np. z tej prezentacji, później dostosowywanie pod siebie)</small></li>
+                        </ol>
+                    </li>
+                    <li>Opcjonalnie
+                        <ul>
+                            <li>Dla IDE bez terminala
+                                <small>
+                                    <ul>
+                                        <li>(Git)Bash przypięty do taskbarda pod stałą pozycją wywoływany <i>Win+pozycja</i></li>
+                                        <li>Lub nakładka na (Git)Bash umożliwiająca wywołanie skrótem klawiszowym np. <i>Conemu</i></li>
+                                        <li>W terminalu ustawiony katalog z projektami jako katalog startowy</li>
+                                    </ul>
+                                </small>
+                            </li>
+                            <li><i>Text expandery</i> na poziomie OS np. AutoHotKey</li>
+                            <li>Odradzam poleganie na <i>Alt+Tab</i></li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
         </section>
 
