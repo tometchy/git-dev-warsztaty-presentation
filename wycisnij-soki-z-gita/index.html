@@ -70,6 +70,9 @@ cover: img/prezentacja.jpg
             <h2>Wyciśnij soki z Gita</h2>
             <h3>Przestań używać jak Zipa</h3>
             <img src="img/wyciskanie-gita.png" style="border:none; box-shadow:none; max-height: 500px"/>
+            <aside class="notes">
+                Kto uzywa Gita glownie z konsoli, <b>reka do gory</b>.
+            </aside>
         </section>
 
         <section>
@@ -354,6 +357,17 @@ cover: img/prezentacja.jpg
                         </ul>
                     </li>
                 </ul>
+            </section>
+            <section>
+                <h4>Don't get fooled by simple interface</h4>
+                <ul>
+                    <li>Visual Studio Extension: Switch Startup Project</li>
+                    <li>Azure DevOps build definition</li>
+                </ul>
+
+                <p>
+                    <img src="img/simplicity.jpg" style="border:none; box-shadow:none; max-width: 550px"/>
+                </p>
             </section>
             <section>
                 <h4>Przekonałem już niejedenego<br>zatwardziałego Windowsiarza :)</h4>
@@ -702,6 +716,24 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
+            <h3>git commit --amend <u>--no-edit</u></h3>
+            <p>
+                <img src="img/amend-no-edit.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
+            </p>
+        </section>
+
+        <section>
+            <h3>Feature branch</h3>
+            <ul>
+                <li style="margin-bottom: 15px">Should has <b>short life</b></li>
+                <li>Despite short life, update it (rebase) from master <b>often</b></li>
+            </ul>
+            <p>
+                <img src="img/branch.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
+            </p>
+        </section>
+
+        <section>
             <h3>Git stash with name</h3>
             <p>
                 <code>git stash save "my stash"</code>
@@ -838,6 +870,17 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
+            <h3>Push before rebase</h3>
+            <p style="margin-top:50px">
+                Then you don't need reflog to roolback<br><br>
+                <code>git reset --hard origin/branch-name</code>
+            </p>
+            <p>
+                <img src="img/anchor.jpg" style="border:none; box-shadow:none; max-width: 500px"/>
+            </p>
+        </section>
+        
+        <section>
             <h3>Git ReReRe</h3>
             <p>
                 <b>RE</b>use <b>RE</b>corded <b>RE</b>solution of conflicted merges
@@ -921,46 +964,53 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
-            <h3>Git Bisect</h3>
-            <p>
-                <small>Znowu sprawdziło się tworzenie małych commitów ;)</small>
-            </p>
-            <p>
-                <img src="img/bisect.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
-            </p>
-            <aside class="notes">
-                <small>
-                    <p>
-                        <code>
-                            # ZOOM TERMINAL CTRL + SHIFT + PLUS
-                            git bisect start
-                            git bisect bad
-                            git bisect good v1.2
-                            ...
-                            git bisect reset
-                        </code>
-                    </p>
-                    <p>
-                        <code>
-                            # Do it second time introducing USING REVERSE SEARCH:
-                            git bisect view
-                        </code>
-                    </p>
-                    <p>
-                        <code>
-                            #If the DISPLAY environment variable is not set, git log is used instead. You can also give
-                            command-line options such as -p and --stat.
-                        </code>
-                    </p>
-                    <p>
-                        <b>
+            <section>
+                <h3>Git Bisect</h3>
+                <p>
+                    <small>Yet again it was worth to create small commits :)</small>
+                </p>
+                <p>
+                    <img src="img/bisect.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <aside class="notes">
+                    <small>
+                        <p>
                             <code>
-                                git bisect run node node_modules/.bin/codeceptjs run --steps
+                                # ZOOM TERMINAL CTRL + SHIFT + PLUS
+                                git bisect start
+                                git bisect bad
+                                git bisect good v1.2
+                                ...
+                                git bisect reset
                             </code>
-                        </b>
-                    </p>
-                </small>
-            </aside>
+                        </p>
+                        <p>
+                            <code>
+                                # Do it second time introducing USING REVERSE SEARCH:
+                                git bisect view
+                            </code>
+                        </p>
+                        <p>
+                            <code>
+                                #If the DISPLAY environment variable is not set, git log is used instead. You can also give
+                                command-line options such as -p and --stat.
+                            </code>
+                        </p>
+                        <p>
+                            <b>
+                                <code>
+                                    git bisect run node node_modules/.bin/codeceptjs run --steps
+                                </code>
+                            </b>
+                        </p>
+                    </small>
+                </aside>
+            </section>
+            <section>
+                <h2>Demo</h2>
+
+                <a href="https://bittubers.com/post/dd77dfe6-a548-4f2e-9ff1-19141fa67923" title="Watch Git Bisect demo" target="_blank"><img style="border:none" src="img/git-bisect-video.jpg" alt="Video player with Git Bisect demo"></a>
+            </section>
         </section>
 
         <section>
