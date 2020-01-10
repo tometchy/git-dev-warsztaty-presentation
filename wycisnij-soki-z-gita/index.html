@@ -928,46 +928,53 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
-            <h3>Git Bisect</h3>
-            <p>
-                <small>Yet again it was worth to create small commits :)</small>
-            </p>
-            <p>
-                <img src="img/bisect.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
-            </p>
-            <aside class="notes">
-                <small>
-                    <p>
-                        <code>
-                            # ZOOM TERMINAL CTRL + SHIFT + PLUS
-                            git bisect start
-                            git bisect bad
-                            git bisect good v1.2
-                            ...
-                            git bisect reset
-                        </code>
-                    </p>
-                    <p>
-                        <code>
-                            # Do it second time introducing USING REVERSE SEARCH:
-                            git bisect view
-                        </code>
-                    </p>
-                    <p>
-                        <code>
-                            #If the DISPLAY environment variable is not set, git log is used instead. You can also give
-                            command-line options such as -p and --stat.
-                        </code>
-                    </p>
-                    <p>
-                        <b>
+            <section>
+                <h3>Git Bisect</h3>
+                <p>
+                    <small>Yet again it was worth to create small commits :)</small>
+                </p>
+                <p>
+                    <img src="img/bisect.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <aside class="notes">
+                    <small>
+                        <p>
                             <code>
-                                git bisect run node node_modules/.bin/codeceptjs run --steps
+                                # ZOOM TERMINAL CTRL + SHIFT + PLUS
+                                git bisect start
+                                git bisect bad
+                                git bisect good v1.2
+                                ...
+                                git bisect reset
                             </code>
-                        </b>
-                    </p>
-                </small>
-            </aside>
+                        </p>
+                        <p>
+                            <code>
+                                # Do it second time introducing USING REVERSE SEARCH:
+                                git bisect view
+                            </code>
+                        </p>
+                        <p>
+                            <code>
+                                #If the DISPLAY environment variable is not set, git log is used instead. You can also give
+                                command-line options such as -p and --stat.
+                            </code>
+                        </p>
+                        <p>
+                            <b>
+                                <code>
+                                    git bisect run node node_modules/.bin/codeceptjs run --steps
+                                </code>
+                            </b>
+                        </p>
+                    </small>
+                </aside>
+            </section>
+            <section>
+                <h2>Demo</h2>
+
+                <a href="https://bittubers.com/post/dd77dfe6-a548-4f2e-9ff1-19141fa67923" title="Watch Git Bisect demo" target="_blank"><img style="border:none" src="img/git-bisect-video.jpg" alt="Video player with Git Bisect demo"></a>
+            </section>
         </section>
 
         <section>
