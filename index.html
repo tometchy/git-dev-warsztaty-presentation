@@ -286,6 +286,7 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
                 <span>
                     <input type="checkbox" id="agreeGitWarsztaty" v-model="agreeGitWarsztatyInbox" name="agreeGitWarsztatyInbox" style="top: 3px">
                 </span>
+                
                 <div class="clearboth"></div>
               </div>
               
@@ -442,10 +443,17 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
             <textarea id="additionalInfo" v-model="additionalInfo" placeholder="Dodatkowe informacje" style="height:200px"></textarea>
               
             <div class="agree-wrapper">
-              <label for="agree2" style=""><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi i informacjami na temat nadchodzących warsztatów <small>(opcjonalnie)</small></label>
+              
+              <label for="agree2" style=""><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi <small>(opcjonalnie)</small></label>
               <span>
                 <input type="checkbox" id="agree2" v-model="agreeGitInbox" name="agreeGitInbox" style="float: left; height: 20px">
               </span>
+              
+              <label for="agreeGitWarsztaty2" style="margin-top: 0px;"><b>GitWarsztaty w Twojej skrzynce</b> - informacje na temat nadchodzących warsztatów <small>(opcjonalnie)</small></label>
+              <span>
+                <input type="checkbox" id="agreeGitWarsztaty2" v-model="agreeGitWarsztatyInbox" name="agreeGitWarsztatyInbox" style="float: left; height: 20px">
+              </span>
+
               <div class="clearboth"></div>
             </div>
 
