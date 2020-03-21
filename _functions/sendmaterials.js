@@ -11,7 +11,7 @@ exports.handler = function (event, context, callback) {
     const eventBody = JSON.parse(event.body);
 
     console.log("email: " + eventBody.email);
-    console.log("agree: " + eventBody.agree);
+    console.log("agreeGitInbox: " + eventBody.agreeGitInbox);
 
 
     function checkStatus(res, shouldThrow) {
@@ -32,7 +32,7 @@ exports.handler = function (event, context, callback) {
             subject: "Nowy request o darmowe materiały od " + eventBody.email,
             content: [{
                 type: "text/plain",
-                value: "Nowy request o darmowe materiały od " + eventBody.email + " czy zgodził się na newsletter: " + eventBody.agree + ". Czas: " + eventBody.time
+                value: "Nowy request o darmowe materiały od " + eventBody.email + " czy zgodził się na Git w Twojej skrzynce: " + eventBody.agreeGitInbox + ". Czas: " + eventBody.time
             }]
         };
 

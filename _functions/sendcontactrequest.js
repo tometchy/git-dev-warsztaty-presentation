@@ -13,7 +13,7 @@ exports.handler = function (event, context, callback) {
     const eventBody = JSON.parse(event.body);
 
     console.log("email: " + eventBody.email);
-    console.log("agree: " + eventBody.agree);
+    console.log("agreeGitInbox: " + eventBody.agreeGitInbox);
 
     function checkStatus(res, shouldThrow) {
         if (res.ok) { // res.status >= 200 && res.status < 300
@@ -35,7 +35,7 @@ exports.handler = function (event, context, callback) {
             content: [{
                 type: "text/plain",
                 value: "Nowy request o KONTAKT od " + eventBody.email + "\n\n" +
-                    "Czy zgodził się na newsletter: " + eventBody.agree + "\n\n" +
+                    "Czy zgodził się na Git w Twojej skrzynce: " + eventBody.agreeGitInbox + "\n\n" +
                     "Czas: " + eventBody.time + "\n\n" +
                     "Czy w firmie: " + eventBody.inCompany + "\n\n" +
                     "Numer telefonu: " + atob(decodeURIComponent(escape(eventBody.phoneNumber))) + "\n\n" +

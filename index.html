@@ -279,7 +279,7 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
               <div class="agree-wrapper-small">
                 <label for="agree" style="margin-bottom: 0;"><small><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi i informacjami na temat nadchodzących warsztatów</small></label>
                 <span>
-                    <input type="checkbox" id="agree" v-model="agree" name="agree" style="top: 3px">
+                    <input type="checkbox" id="agree" v-model="agreeGitInbox" name="agreeGitInbox" style="top: 3px">
               </span>
                 <div class="clearboth"></div>
               </div>
@@ -439,7 +439,7 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
             <div class="agree-wrapper">
               <label for="agree2" style=""><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi i informacjami na temat nadchodzących warsztatów <small>(opcjonalnie)</small></label>
               <span>
-                <input type="checkbox" id="agree2" v-model="agree" name="agree" style="float: left; height: 20px">
+                <input type="checkbox" id="agree2" v-model="agreeGitInbox" name="agreeGitInbox" style="float: left; height: 20px">
               </span>
               <div class="clearboth"></div>
             </div>
@@ -597,7 +597,7 @@ new WOW().init();
     el: '#app',
     data: {
       inCompany: true,
-      agree: true,
+      agreeGitInbox: true,
       email: "",
       phoneNumber: "",
       companyName: "",
@@ -625,7 +625,7 @@ new WOW().init();
         try {
           var sendMaterialsJson = '{ ' +
                   '"email": "' + this.email + '",' +
-                  '"agree": "' + this.agree + '",' +
+                  '"agreeGitInbox": "' + this.agreeGitInbox + '",' +
                   '"time": "' + new Date().toString() + '"' +
                   '}';
           $.post('{{ site.url }}/.netlify/functions/sendmaterials', sendMaterialsJson, function(result) {
@@ -664,7 +664,7 @@ new WOW().init();
         try {
           var requestDetailsJson = "{ " +
                   '"email": "' + this.email + '",' +
-                  '"agree": "' + this.agree + '",' +
+                  '"agreeGitInbox": "' + this.agreeGitInbox + '",' +
                   '"time": "' + new Date().toString() + '",' +
                   '"inCompany": "' + this.inCompany + '",' +
                   '"phoneNumber": "' + window.btoa(unescape(encodeURIComponent(this.phoneNumber))) + '",' +
