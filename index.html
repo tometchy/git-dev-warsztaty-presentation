@@ -275,12 +275,17 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
             <form @submit="requestMaterials">
                 <h4>Darmowe materiały</h4>
                 <p>Opis najważniejszych komend <small>(A4)</small></p>
-              <p>Popularne przełączniki do <b>git log</b> <small>(A4)</small></p>
+              <p>Wybrane przełączniki do <b>git log</b> <small>(A4)</small></p>
               <div class="agree-wrapper-small">
-                <label for="agree" style="margin-bottom: 0;"><small><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi i informacjami na temat nadchodzących warsztatów</small></label>
+                <label for="agree" style="margin-bottom: 0;"><small><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi</small></label>
                 <span>
                     <input type="checkbox" id="agree" v-model="agreeGitInbox" name="agreeGitInbox" style="top: 3px">
-              </span>
+                </span>
+                
+                <label for="agreeGitWarsztaty" style="margin-top: 7px;"><small><b>GitWarsztaty w Twojej skrzynce</b> - informacje na temat nadchodzących warsztatów</small></label>
+                <span>
+                    <input type="checkbox" id="agreeGitWarsztaty" v-model="agreeGitWarsztatyInbox" name="agreeGitWarsztatyInbox" style="top: 3px">
+                </span>
                 <div class="clearboth"></div>
               </div>
               
@@ -598,6 +603,7 @@ new WOW().init();
     data: {
       inCompany: true,
       agreeGitInbox: true,
+      agreeGitWarsztatyInbox: true,
       email: "",
       phoneNumber: "",
       companyName: "",
