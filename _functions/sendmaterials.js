@@ -12,6 +12,7 @@ exports.handler = function (event, context, callback) {
 
     console.log("email: " + eventBody.email);
     console.log("agreeGitInbox: " + eventBody.agreeGitInbox);
+    console.log("agreeGitWarsztatyInbox : " + eventBody.agreeGitWarsztatyInbox);
 
 
     function checkStatus(res, shouldThrow) {
@@ -32,7 +33,7 @@ exports.handler = function (event, context, callback) {
             subject: "Nowy request o darmowe materiały od " + eventBody.email,
             content: [{
                 type: "text/plain",
-                value: "Nowy request o darmowe materiały od " + eventBody.email + " czy zgodził się na Git w Twojej skrzynce: " + eventBody.agreeGitInbox + ". Czas: " + eventBody.time
+                value: "Nowy request o darmowe materiały od " + eventBody.email + " czy zgodził się na Git w Twojej skrzynce: " + eventBody.agreeGitInbox + " czy zgodził się na GitWarsztaty w Twojej skrzynce: " + eventBody.agreeGitWarsztatyInbox  + ". Czas: " + eventBody.time
             }]
         };
 

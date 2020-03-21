@@ -632,6 +632,7 @@ new WOW().init();
           var sendMaterialsJson = '{ ' +
                   '"email": "' + this.email + '",' +
                   '"agreeGitInbox": "' + this.agreeGitInbox + '",' +
+                  '"agreeGitWarsztatyInbox": "' + this.agreeGitWarsztatyInbox + '",' +
                   '"time": "' + new Date().toString() + '"' +
                   '}';
           $.post('{{ site.url }}/.netlify/functions/sendmaterials', sendMaterialsJson, function(result) {
