@@ -14,6 +14,7 @@ exports.handler = function (event, context, callback) {
 
     console.log("email: " + eventBody.email);
     console.log("agreeGitInbox: " + eventBody.agreeGitInbox);
+    console.log("agreeGitWarsztatyInbox: " + eventBody.agreeGitWarsztatyInbox);
 
     function checkStatus(res, shouldThrow) {
         if (res.ok) { // res.status >= 200 && res.status < 300
@@ -36,6 +37,7 @@ exports.handler = function (event, context, callback) {
                 type: "text/plain",
                 value: "Nowy request o KONTAKT od " + eventBody.email + "\n\n" +
                     "Czy zgodził się na Git w Twojej skrzynce: " + eventBody.agreeGitInbox + "\n\n" +
+                    "Czy zgodził się na GitWarsztaty w Twojej skrzynce: " + eventBody.agreeGitWarsztatyInbox + "\n\n" +
                     "Czas: " + eventBody.time + "\n\n" +
                     "Czy w firmie: " + eventBody.inCompany + "\n\n" +
                     "Numer telefonu: " + atob(decodeURIComponent(escape(eventBody.phoneNumber))) + "\n\n" +
