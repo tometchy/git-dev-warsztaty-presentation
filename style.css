@@ -258,6 +258,11 @@ a.navbar-brand:hover span {
 	padding: 0 !important;
 }
 
+.onforce {
+	background-color: #3a5f75 !important;
+	padding: 0 !important;
+}
+
 
 .navbar-collapse.collapse.in  {
 	width: 100%;
@@ -2455,16 +2460,15 @@ embed, iframe, object {
 }
 }
 #prowadzacy {
-	padding: 75px 0;
+	padding: 50px 0 65px 0;
 }
 #prowadzacy h2 {
 	font-size: 32px;
 	color: #404040;
 	font-weight: 600;
-	margin-bottom: 10px;
 	display: block;
 	max-width: 600px;
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
 }
 /*#prowadzacy hr {
 	width: 100px;
@@ -2890,8 +2894,8 @@ ul.about-features li:hover i {
 	font-size: 16px;
 	font-weight: 400;
 	font-family: 'PT Serif', serif;
-	margin-top: 30px;
-	margin-bottom: 35px;
+	margin-top: 15px;
+	margin-bottom: 1px;
 }
 #co-zyskasz .process-content a {
 	color: #e95151;
@@ -4517,10 +4521,15 @@ ul.about-features li i {
 }
 #top-menu.navbar-default .navbar-collapse{background-color: rgba(0, 0, 0, 0.79);}
 #top-menu.navbar-default.on .navbar-collapse{background-color: transparent;}
+	#top-menu.navbar-default.onforce .navbar-collapse{background-color: transparent;}
 
 #top-menu.navbar-default.on {
 	background-color: rgba(0, 0, 0, 0.79);
 	
+	}
+	#top-menu.navbar-default.onforce {
+		background-color: rgba(0, 0, 0, 0.79);
+
 	}
 	.nav-view{width:100%;}
 	#top-menu{padding:40px 0;}
@@ -5038,5 +5047,47 @@ input[type=submit]:hover {
     
 	#emailForMaterials {
 		margin-left: 21px
+	}
+}
+
+@media (max-width: 991px) {
+	.br-on-big-screen {
+		display: none
+	}
+}
+
+.min-img {
+	margin-bottom: 17px;
+	float: left;
+}
+
+@media (min-width: 466px) {
+    .min-img {
+		max-width: 300px;
+		padding-right: 44px;
+		margin-bottom: 8px;
+	}
+}
+
+.read-more {
+	 margin-bottom: 15px
+}
+
+@media (min-width: 768px) {
+	.read-more {
+		margin-bottom: 30px
+	}
+}
+
+.subpageTitle {
+	font-weight: bold; 
+	margin-top: 37px;
+	margin-bottom: 40px;
+}
+
+@media (max-width: 770px) {
+	.subpageTitle {
+		margin-top: 7px;
+		margin-bottom: 30px;
 	}
 }

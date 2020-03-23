@@ -257,6 +257,11 @@ a.navbar-brand:hover span {
 	padding: 0 !important;
 }
 
+.onforce {
+	background-color: #222222 !important;
+	padding: 0 !important;
+}
+
 
 .navbar-collapse.collapse.in  {
 	width: 100%;
@@ -4527,11 +4532,16 @@ ul.about-features li i {
 }
 #top-menu.navbar-default .navbar-collapse{background-color: rgba(0, 0, 0, 0.79);}
 #top-menu.navbar-default.on .navbar-collapse{background-color: transparent;}
+ #top-menu.navbar-default.onforce .navbar-collapse{background-color: transparent;}
 
 #top-menu.navbar-default.on {
 	background-color: rgba(0, 0, 0, 0.79);
 	
 	}
+	 #top-menu.navbar-default.onforce {
+		 background-color: rgba(0, 0, 0, 0.79);
+
+	 }
 	.nav-view{width:100%;}
 	#top-menu{padding:40px 0;}
 	#top-menu .container{padding-left:0; padding-right:0;}

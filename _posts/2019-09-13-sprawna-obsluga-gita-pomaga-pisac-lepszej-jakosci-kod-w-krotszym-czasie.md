@@ -126,4 +126,4 @@ Mam nadzieję, że w tym artykule udało mi się merytorycznie uzasadnić swoje
 W skrócie, kluczową kwestią przy optymalizowaniu czasu programowania i podnoszeniu jakości kodu, jest lepsza świadomość _sytuacji w kodzie_,
 widok big picture wprowadzonych zmian, a dzięki temu większa kontrola i mniejszy chaos.
 
-Jeżeli chcesz opanować sprawne posługiwanie się Gitem w [wymienionych w tym artykule obszarach oraz innych, równie ważnych]({{ site.url }}#co-zyskasz), a zamiast wysłuchiwać jedynie suchej teorii, spróbować wszystkiego w praktyce, [zapraszamy na GitWarsztaty]({{ site.url }}#kontakt), na których z pomocą prowadzących przećwiczysz najważniejsze mechanizmy Gita.
+Jeżeli chcesz opanować sprawne posługiwanie się Gitem w [wymienionych w tym artykule obszarach oraz innych, równie ważnych]({{ site.url }}#co-zyskasz), a zamiast wysłuchiwać jedynie suchej teorii, spróbować wszystkiego w praktyce, [zapraszamy na GitWarsztaty]({{ site.url }}#kontakt), na których z pomocą trenerów przećwiczysz najważniejsze mechanizmy Gita.

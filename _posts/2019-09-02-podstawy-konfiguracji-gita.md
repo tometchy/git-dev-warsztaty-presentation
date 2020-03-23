@@ -143,4 +143,4 @@ Jak widzisz, filozofia konfiguracji Gita jest bardzo prosta - opiera się o trzy
 
 Podstawowy setup środowiska zajmuje kilka minut i składa się z zainstalowania 3 programów: Git, gitk oraz KDiff3, oraz skonfigurowaniu imienia i nazwiska, maila, edytora tekstowego i diff/merge toola.
 
-Jeżeli chcesz szerzej poznać ten i [inne mechanizmy Gita]({{ site.url }}#co-zyskasz), a zamiast wysłuchiwać jedynie suchej teorii, spróbować wszystkiego w praktyce, [zapraszamy na GitWarsztaty]({{ site.url }}#kontakt), na których z pomocą prowadzących przećwiczysz najważniejsze funkcje Gita.
+Jeżeli chcesz szerzej poznać ten i [inne mechanizmy Gita]({{ site.url }}#co-zyskasz), a zamiast wysłuchiwać jedynie suchej teorii, spróbować wszystkiego w praktyce, [zapraszamy na GitWarsztaty]({{ site.url }}#kontakt), na których z pomocą trenerów przećwiczysz najważniejsze funkcje Gita.

@@ -15,4 +15,4 @@ advantages-list-cover: img/wsparcie.jpg
 ---
 
 Po warsztatach nie zapomnimy o Tobie! Żeby ułatwić codzienną pracę z Gitem, każdy uczestnik otrzymuje wersję offline prezentacji i materiałów pomocniczych,
-oraz dostęp do zamkniętego kanału na Slacku GitWarsztatowym, na którym udzielają się prowadzący.
+oraz dostęp do zamkniętego kanału na Slacku GitWarsztatowym, na którym udzielają się trenerzy.

@@ -1,5 +1,6 @@
 ---
-description: GitWarsztaty - szkolenie Git i szkolenie Docker. Warsztaty otwarte i w firmie.
+description: GitWarsztaty - S Gita. Warsztaty otwarte i w firmie.
+default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie
 ---
 
 {% assign defaultShownAdvantageUpcase = page.default-shown-advantage | upcase %}
@@ -46,7 +47,7 @@ description: GitWarsztaty - szkolenie Git i szkolenie Docker. Warsztaty otwarte 
 
 <body>
 
-<nav id="top-menu" class="navbar navbar-default navbar-fixed-top navbar-top">
+<nav id="top-menu" class="navbar navbar-default navbar-fixed-top navbar-top on onforce">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header" style="max-height: 40px">
@@ -55,9 +56,9 @@ description: GitWarsztaty - szkolenie Git i szkolenie Docker. Warsztaty otwarte 
 
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right"> <!-- nav-view -->
-        <li><a href="#o-warsztatach" class="page-scroll">O warsztatach</a></li>
-        <li><a href="#co-zyskasz" class="page-scroll">Po co?</a></li>
-        <li><a href="#prowadzacy" class="page-scroll">O nas</a></li>
+        <li><a href="{{ site.url }}#o-warsztatach" class="page-scroll">O warsztatach</a></li>
+        <li><a href="{{ site.url }}#co-zyskasz" class="page-scroll">Po co?</a></li>
+        <li><a href="{{ site.url }}#prowadzacy" class="page-scroll">O nas</a></li>
         <li><a href="{{ site.url }}/blog" class="page-scroll">Blog</a></li>
         <li><a href="#kontakt" class="page-scroll">Kontakt</a></li>
       </ul>
@@ -70,9 +71,9 @@ description: GitWarsztaty - szkolenie Git i szkolenie Docker. Warsztaty otwarte 
       <!--nav icon end-->
       
       <ul id="nav-top" class="nav navbar-nav navbar-right"> <!-- nav-view -->
-        <li><a href="#o-warsztatach" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">O warsztatach</a></li>
-        <li><a href="#co-zyskasz" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Po co?</a></li>
-        <li><a href="#prowadzacy" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">O nas</a></li>
+        <li><a href="{{ site.url }}#o-warsztatach" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">O warsztatach</a></li>
+        <li><a href="{{ site.url }}#co-zyskasz" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Po co?</a></li>
+        <li><a href="{{ site.url }}#prowadzacy" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">O nas</a></li>
         <li><a href="{{ site.url }}/blog" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Blog</a></li>
         <li><a href="#kontakt" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Kontakt</a></li>
       </ul>        
@@ -104,89 +105,62 @@ description: GitWarsztaty - szkolenie Git i szkolenie Docker. Warsztaty otwarte 
 </nav>
 
 <main id="app">
-<section id="home-banner" style="background-image: url(img/b-1.jpg);">
-  <div class="content">
-    <div class="container" data-wow-duration="1s">
-      <h1 class="wow fadeInUp"><b>GitWarsztaty</b></h1>
-        <h3 class="wow fadeInUp" style="color: white"><strong>Git</strong> i <strong>Docker</strong> efektywnie wykorzystane</h3>
-    </div>
-      <div style="height: 50px" class="wow fadeInUp">
-        <a href="#kontakt" v-on:click="inCompany = true">Warsztaty u mnie w firmie</a>
-      </div>
-  <div style="height: 50px" class="wow fadeInUp">
-      <a href="#kontakt" v-on:click="inCompany = false">Warsztaty otwarte</a>
-    </div>
-  </div>
-  <!--<a href="#prowadzacy">-->
-    <div class="arrow bounce" onclick="to_height(window.innerHeight)"> <i class="fa fa-arrow-down fa-2x" style="cursor: pointer"></i> </div>
-  <!--</a>-->
-</section>
-
-<section id="o-warsztatach" style="margin-bottom: 100px; padding-top: 100px">
-  <div class="container">
-    <div class="row">
-      <!--section-title-->
-      <div class="section-title text-center wow fadeInUp easyReadText">
-        <h2>O szkoleniu z Dockera i Gita</h2>
-        
-        <p>
-          Szkolenie z Dockera i szkolenie z Gita, są dla każdego, w różnych formach na różne potrzeby. Opowiedz nam swoją sytuację i wspólnie dobierzemy
-          zakres szkolenia, np. <strong>wprowadzenie do Dockera od zera</strong> lub <strong>wprowadzenie do Gita od zera</strong>, czy np. <strong>optymalizacja pracy z Gitem</strong> w zespole, który już opanował podstawy.
-          Pomagamy również usprawnić lub stworzyć od podstaw <strong>pipeline Continuous Integration & Continuous Delivery/Deployment (CI/CD)</strong>.
-        </p>
-        <p>
-          Na warsztatach omawiamy teorię działania poszczególnych mechanizmów Gita i Dockera, ale <strong>skupiamy się na ćwiczeniach praktycznych</strong>.
-          Poruszamy również kwestie workflow, a całość uzupełniamy streszczeniem komend, z których korzysta się rzadziej, ale które potrafią czasem <i>uratować skórę</i> :)<br>
-        </p>
-          <p>
-            Szkolenie organizujemy zarówno <strong>w formie ekskluzywnej w Twojej firmie</strong>, jak i w <strong>formie otwartej</strong>.
-            Dojeżdżamy do każdego miasta w Polsce!
-          </p>
-        <img src="img/warsztaty-w-firmie.jpg" class="img-adjustable" style="margin-bottom:0; margin-top: 14px; margin-left: auto;margin-right:auto" /><br>
-      </div>
-      <!--/section-title-->
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</section>
-
-<section id="home-contact-block">
-  <div class="container">
-    <div class="row wow fadeInUp">
-      <p class="small-block">Nie trać czasu na zadania, które Git i Docker mogą wykonać za Ciebie... przećwicz je praktycznie!</p>
-      <a href="#kontakt">Umów Warsztaty</a> </div>
-  </div>
-</section>
 
 <section id="co-zyskasz">
   <div class="container">
     <div class="row">
       <!--section-title-->
       <div class="section-title text-center wow fadeInUp easyReadText" style="margin-bottom: 20px">
-        <h2>Co zyskasz dzięki szkoleniu z Gita i Dockera</h2>
-        <p style="max-width: 800px; margin-left: auto; margin-right: auto">
-          GitWarsztaty są <strong>dopasowane pod Twoją sytuację</strong> - opowiedz nam o sobie i wspólnie dobierzemy zakres.
-        </p>
-        <p>
-          Bez względu na wybraną ścieżkę, <strong>oszczędzisz mnóstwo czasu, czyli pieniędzy</strong>. 
-          Dzięki umiejętnościom wyniesionym ze szkolenia z Dockera i Gita <strong>unikniesz wielu kosztownych i stresujących błędów</strong>, na które skazana jest samodzielna nauka, np. utraty napisanego kodu albo źle przygotowanego obrazu aplikacji.
-        </p>
-        <p>
-          Świadomie dobierając polecenie Gita, <strong>podniesiesz swoją wydajność i satysfakcję</strong> z pracy, a dzięki Dockerowi <strong>odzyskasz cenny czas deploymentu</strong> i 
-          <strong>zautomatyzujesz wiele codziennych czynności</strong>.
-        </p>
+        <h1 class="subpageTitle">Szkolenie Git od zera</h1>
+        <p style="margin-top: 20px"> <img src="img/git-from-0.jpg" class="img-responsive"> </p>
+                      <p style="margin-top: 37px">
+                        Szkolenie Git od zera przewidziane jest dla zespołów, które dopiero wdrażają Gita.
+                        Na warsztatach przechodzimy od najprostszych poleceń do bardziej zaawansowanych,
+                        skupiając się na tym, <strong>dlaczego poszczególne mechanizmy działają w dany sposób</strong>, zamiast sztucznie wykuwać polecenia na pamięć.
+                      </p>
+                      {% assign paragraphMargin = "24px" %}
+                      <p style="margin-top: {{ paragraphMargin }}">
+                      Świadomie dobierając polecenie Gita, <strong>podniesiesz swoją wydajność, oszczędzisz mnóstwo czasu, czyli pieniędzy i zwiększysz satysfakcję z pracy</strong>.
+                      </p>
+                      <p style="margin-top: {{ paragraphMargin }}">
+                        Naszym celem jest, <strong>żebyś po warsztatach poczuł Gita</strong>, oswoił się z jego filozofią i sposobem działania, a dzięki dobrym praktykom uniknął niekorzystnych nawyków. 
+                        Im bardziej się Gita rozumie, tym przyjemniej się... programuje, a wpływ Gita na jakość pracy staje się odczuwalny.
+                      </p>
+                      <p style="margin-top: {{ paragraphMargin }}">
+                        Git szkolenie da Ci umiejętności, dzięki którym <strong>unikniesz wielu kosztownych i stresujących błędów</strong>, na które skazana jest samodzielna nauka, np. utraty napisanego kodu.
+                      </p>
+                      <p>
+                        Wielotygodniowe <strong>kursy video wymagają wiele dyscypliny</strong> i nie są dopasowane dokładnie pod Ciebie.
+                        Dzięki pomocy trenerów, git szkolenie pomoże Ci <strong>nabyć wiedzę potrzebną na start, w dzień lub dwa</strong>.
+                      </p>
+                      <p style="margin-top: {{ paragraphMargin }}">
+                        Ponieważ po warsztatach bardzo ważne jest codzienne stosowanie nowych umiejętności, każdy uczestnik otrzyma
+                        <strong>dostęp do zamkniętego kanału na slacku gitwarsztatowym</strong>, na którym trenerzy zdalnie pomagają w napotkanych sytuacjach i odpowiadają na pytania.
+                        Dodatkowo udostępniamy również <strong>wersję offline prezentacji i materiałów</strong>, aby móc korzystać z nich w codziennej pracy.
+                      </p>
+      </div>
+        <div class="text-center wow fadeInUp easyReadText" style="margin-bottom: 20px; margin-top: 41px">
+        <a href="{{ site.url }}#co-zyskasz">
+          <p>
+            <img src="img/attention.png" class="img-responsive" style="float: left; max-height: 100px">
+              Opowiedz nam swoją sytuację, a wspólnie dopasujemy zakres szkolenia, na przykład:
+              zespół wdrożony <strong>do Dockera od zera</strong>; 
+              zespół wdrożony <strong>do Gita od zera</strong>;
+              <strong>podniesienie wydajności zespołu</strong>, który już zna Gita;
+              usprawniony lub przygotowany od zera <strong>pipeline CI/CD</strong>.
+          </p>
+        </a>
       </div>
       
-      <div class="co-zyskasz-style wow fadeInUp" style="margin-left:auto; margin-right: auto">
-        <!--tab nav-->
-        <ul class="nav nav-tabs">
-          
-          <li class="active"><a href="#zespol-wdrozony-do-gita-od-zera" data-toggle="tab">
-            <h5>Zespół wdrożony do Gita od zera</h5>
-          </a>
-          </li>
-          
+<!--      <div class="co-zyskasz-style wow fadeInUp" style="margin-left:auto; margin-right: auto">-->
+<!--        &lt;!&ndash;tab nav&ndash;&gt;-->
+<!--        <ul class="nav nav-tabs">-->
+<!--          -->
+<!--          <li class="active"><a href="#zespol-wdrozony-do-gita-od-zera" data-toggle="tab">-->
+<!--            <h5>Zespół wdrożony do Gita od zera</h5>-->
+<!--          </a>-->
+<!--          </li>-->
+<!--          -->
 <!--          <li><a href="#podniesienie-wydajnosci-zespolu-ktory-juz-zna-gita" data-toggle="tab">-->
 <!--            <h5>Podniesienie wydajności zespołu, który już zna Gita</h5>-->
 <!--          </a>-->
@@ -202,93 +176,120 @@ description: GitWarsztaty - szkolenie Git i szkolenie Docker. Warsztaty otwarte 
 <!--          </a>-->
 <!--          </li>-->
 
-        </ul>
-        <div class="tab-content">
-          
-          <div id="zespol-wdrozony-do-gita-od-zera" class="tab-pane active">
-            <div class="process-content">
-              <a href="{{ site.url }}/szkolenie-git-od-zera">
-                <h6 class="text-center">Zespół wdrożony do Gita od zera</h6>
-              </a>
-              <a href="{{ site.url }}/szkolenie-git-od-zera">
-                <img src="img/git-from-0-min.jpg" class="img-responsive min-img">
-              </a>
-              <p>
-                Szkolenie Git od zera przewidziane jest dla zespołów, które dopiero wdrażają Gita.
-                Na warsztatach przechodzimy od najprostszych poleceń do bardziej zaawansowanych,
-                skupiając się na tym, <strong>dlaczego poszczególne mechanizmy działają w dany sposób</strong>, zamiast sztucznie wykuwać polecenia na pamięć.
-              </p>
-              <p>
-                Naszym celem jest, żebyś <strong>po warsztatach poczuł Gita</strong>, oswoił się z jego filozofią i sposobem działania i dzięki dobrym praktykom uniknął niekorzystnych nawyków. 
-                Im bardziej się Gita rozumie, tym przyjemniej się... programuje, a wpływ Gita na jakość pracy staje się odczuwalny.
-              </p>
-              <p>
-                <a href="{{ site.url }}/szkolenie-git-od-zera" class="read-more" style="float: right; text-decoration: none; margin-top: 6px">Czytaj więcej...</a>
-              </p>
-            </div>
-          </div>
+<!--        </ul>-->
+<!--        <div class="tab-content">-->
+<!--          -->
+<!--          <div id="zespol-wdrozony-do-gita-od-zera" class="tab-pane active">-->
+<!--            <div class="process-content">-->
+<!--              <h6>Zespół wdrożony do Gita od zera</h6>-->
+<!--              <img src="img/git-from-0-min.jpg" class="img-responsive min-img">-->
+<!--              <p>-->
+<!--                <a href="http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie" class="read-more" style="float: right; text-decoration: none; margin-top: 6px">Czytaj więcej...</a>-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div id="podniesienie-wydajnosci-zespolu-ktory-juz-zna-gita" class="tab-pane">
-            <div class="col-md-5 process-img"> <img src="img/code-quality.jpg" class="img-responsive"> </div>
-            <div class="col-md-7 process-content">
-              <h6>tytuł2</h6>
-              <p>
-                excerpt2
-                <a href="http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie" style="float: right; text-decoration: none; margin-top: 13px">Czytaj więcej...</a>
-              </p>
-            </div>
-          </div>
+<!--          <div id="podniesienie-wydajnosci-zespolu-ktory-juz-zna-gita" class="tab-pane">-->
+<!--            <div class="col-md-5 process-img"> <img src="img/code-quality.jpg" class="img-responsive"> </div>-->
+<!--            <div class="col-md-7 process-content">-->
+<!--              <h6>tytuł2</h6>-->
+<!--              <p>-->
+<!--                excerpt2-->
+<!--                <a href="http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie" style="float: right; text-decoration: none; margin-top: 13px">Czytaj więcej...</a>-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div id="zespol-wdrozony-do-dockera-od-zera" class="tab-pane">
-            <div class="col-md-5 process-img"> <img src="img/code-quality.jpg" class="img-responsive"> </div>
-            <div class="col-md-7 process-content">
-              <h6>tytuł3</h6>
-              <p>
-                excerpt3
-                <a href="http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie" style="float: right; text-decoration: none; margin-top: 13px">Czytaj więcej...</a>
-              </p>
-            </div>
-          </div>
-          
-          <div id="usprawniony-lub-przygotowany-od-zera-pipeline-ci-cd" class="tab-pane">
-            <div class="col-md-5 process-img"> <img src="img/cicd.png" class="img-responsive"> </div>
-            <div class="col-md-7 process-content">
-              <h6>tytuł4</h6>
-              <p>
-                excerpt4
-                <a href="http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie" style="float: right; text-decoration: none; margin-top: 13px">Czytaj więcej...</a>
-              </p>
-            </div>
-          </div>
+<!--          <div id="zespol-wdrozony-do-dockera-od-zera" class="tab-pane">-->
+<!--            <div class="col-md-5 process-img"> <img src="img/code-quality.jpg" class="img-responsive"> </div>-->
+<!--            <div class="col-md-7 process-content">-->
+<!--              <h6>tytuł3</h6>-->
+<!--              <p>-->
+<!--                excerpt3-->
+<!--                <a href="http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie" style="float: right; text-decoration: none; margin-top: 13px">Czytaj więcej...</a>-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          -->
+<!--          <div id="usprawniony-lub-przygotowany-od-zera-pipeline-ci-cd" class="tab-pane">-->
+<!--            <div class="col-md-5 process-img"> <img src="img/cicd.png" class="img-responsive"> </div>-->
+<!--            <div class="col-md-7 process-content">-->
+<!--              <h6>tytuł4</h6>-->
+<!--              <p>-->
+<!--                excerpt4-->
+<!--                <a href="http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie" style="float: right; text-decoration: none; margin-top: 13px">Czytaj więcej...</a>-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
 
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+  </div>
+</section>
+  
+<section id="testimonials-block" class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="testimonial" class="owl-carousel owl-theme">
+            <div class="item">
+              <h5>Najlepsze szkolenie na jakim byłam!</h5>
+              <p><strong>Uczestniczka warsztatów</strong></p>
+            </div>
+            <div class="item smaller-text-on-mobile">
+              <h5>Świetna prezentacja, dobre przykłady i konkretne dema do zagadnień. Poruszone wszystkie zagadnienia, otwartość na pytania i pomoc, duża wiedza i doświadczenie.</h5>
+              <p><strong>Uczestnik warsztatów</strong></p>
+            </div>
+            <div class="item">
+              <h5>Bardzo udane szkolenie - nastawione na praktykę. Świetnie! :)</h5>
+              <p><strong>Uczestniczka warsztatów</strong></p>
+            </div>
+            <div class="item">
+              <h5>Świetne warsztaty zarówno dla osób zaczynających z Gitem, jak i tych osób chcących ustandaryzować wiedzę.</h5>
+              <p><strong>Uczestnik warsztatów</strong></p>
+            </div>
+            <div class="item">
+              <h5>Wiedza przekazana w przystępny sposób, dobrze dobrany plan tematów.</h5>
+              <p><strong>Uczestnik warsztatów</strong></p>
+            </div>
+            <div class="item">
+              <h5>Bardzo dobrze przygotowane technicznie i merytorycznie.</h5>
+              <p><strong>Uczestnik warsztatów</strong></p>
+            </div>
+            <div class="item">
+              <h5>Szkolenie bardzo dobre, jako początkującemu udało mi się nadążać za treścią.</h5>
+              <p><strong>Uczestnik warsztatów</strong></p>
+            </div>
+            <div class="item">
+              <h5>Bardzo fajnie poprowadzone, praktyczne przykłady. Super !!</h5>
+              <p><strong>Uczestniczka warsztatów</strong></p>
+            </div>
+            <div class="item smaller-text-on-mobile">
+              <h5>Dla mnie - jako dla osoby, która kiedyś odrobinę poznała Gita ale nie ma żadnego doświadczenia w korzystaniu z niego - szkolenie było trafione w dziesiątkę i pozwoliło dokładnie zrozumieć na czym to wszystko polega.</h5>
+              <p><strong>Uczestnik warsztatów</strong></p>
+            </div>
+            <div class="item">
+              <h5>Dobrze przeprowadzone, bardzo merytoryczne.</h5>
+              <p><strong>Uczestnik warsztatów</strong></p>
+            </div>
+            <div class="item smaller-text-on-mobile">
+              <h5>Szkolenie bardzo przydatne, mój pierwszy kontakt z Gitem i już wiem, że będę go wykorzystywał nie tylko przy tworzeni oprogramowania</h5>
+              <p><strong>Uczestnik warsztatów</strong></p>
+            </div>
+            <div class="item">
+              <h5>Bardzo fajnie tłumaczone przykłady i wspólne rozwiązywanie ćwiczeń</h5>
+              <p><strong>Uczestnik warsztatów</strong></p>
+            </div>
+            <div class="item">
+              <h5>Bardzo dobra organizacja i podejście do tematu</h5>
+              <p><strong>Uczestnik warsztatów</strong></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-  <section id="prowadzacy">
-  <div class="container">
-    <div class="row"> 
-      <!--section-title-->
-      <div class="section-title text-center wow fadeInUp" style="margin-bottom: 0">
-        <h2>O nas</h2>
-        <p style="margin-top: 25px"><strong>Software craftsmanship</strong> to nasza pasja. Czysty kod w krótkim czasie, częsty deploy na produkcję, skutkujący szybkim feedbackiem od klientów,
-          to wszystko możliwe, ale wymaga optymalnego wykorzystania istniejących narzędzi. <strong>Git</strong> i <strong>Docker</strong> są do wydajnej pracy niezastąpione,
-          dlatego kładziemy nacisk nie tylko na nasze umiejętności programistyczne, ale na optymalne wykorzystanie Gita, Dockera i innych ważnych narzędzi.
-          Lubimy pomagać i uczyć innych, dlatego oprócz wytwarzania oprogramowania chętnie dzielimy się swoją wiedzą i doświadczeniem.
-          </p>
-        <p style="margin-top: 20px"><b>Krzysztof Morcinek</b> - pasjonat programowania skoncentrowany na platformie .NET i czystym kodzie. Oprócz szkolenia i występowania publicznego prowadzi bloga -
-            <a class="phone" href="https://KrzysztofMorcinek.Wordpress.com" target="_blank">KrzysztofMorcinek.Wordpress.com</a></p>
-        <p style="margin-top: 30px"><b>Tomasz Skraskowski</b> - również pasjonat programowania, wychowany na C++, obecnie wyspecjalizowany w C#. 
-          Szkoli, występuje, prowadzi bloga <a class="phone" href="https://SoftwareDeveloper.Blog" target="_blank">SoftwareDeveloper.Blog</a>, na którym największą poczytnością cieszą się posty
-          na temat Dockera i Gita. <a class="phone" href="http://Tometchy.com" target="_blank">Więcej o trenerze na stronie Tometchy.com</a>
-        </p>
-        <img src="img/my.jpg" style="margin-bottom:0; max-width: 70%; margin-left: auto;margin-right:auto; margin-top: 48px" />
-      </div>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</section>
+  </section>
 
 <section id="company-counter" style="background-image:url(img/count-bg.jpg);">
   <div class="container" style="margin-left: auto; margin-right: auto">
@@ -333,93 +334,7 @@ description: GitWarsztaty - szkolenie Git i szkolenie Docker. Warsztaty otwarte 
     </div>
   </div>
 </section>
-
-<section id="testimonials-block" class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div id="testimonial" class="owl-carousel owl-theme">
-          <div class="item">
-            <h5>Najlepsze szkolenie na jakim byłam!</h5>
-            <p><strong>Uczestniczka warsztatów</strong></p>
-          </div>
-          <div class="item smaller-text-on-mobile">
-            <h5>Świetna prezentacja, dobre przykłady i konkretne dema do zagadnień. Poruszone wszystkie zagadnienia, otwartość na pytania i pomoc, duża wiedza i doświadczenie.</h5>
-            <p><strong>Uczestnik warsztatów</strong></p>
-          </div>
-          <div class="item">
-            <h5>Bardzo udane szkolenie - nastawione na praktykę. Świetnie! :)</h5>
-            <p><strong>Uczestniczka warsztatów</strong></p>
-          </div>
-          <div class="item">
-            <h5>Świetne warsztaty zarówno dla osób zaczynających z Gitem, jak i tych osób chcących ustandaryzować wiedzę.</h5>
-            <p><strong>Uczestnik warsztatów</strong></p>
-          </div>
-          <div class="item">
-            <h5>Wiedza przekazana w przystępny sposób, dobrze dobrany plan tematów.</h5>
-            <p><strong>Uczestnik warsztatów</strong></p>
-          </div>
-          <div class="item">
-            <h5>Bardzo dobrze przygotowane technicznie i merytorycznie.</h5>
-            <p><strong>Uczestnik warsztatów</strong></p>
-          </div>
-          <div class="item">
-            <h5>Szkolenie bardzo dobre, jako początkującemu udało mi się nadążać za treścią.</h5>
-            <p><strong>Uczestnik warsztatów</strong></p>
-          </div>
-          <div class="item">
-            <h5>Bardzo fajnie poprowadzone, praktyczne przykłady. Super !!</h5>
-            <p><strong>Uczestniczka warsztatów</strong></p>
-          </div>
-          <div class="item smaller-text-on-mobile">
-            <h5>Dla mnie - jako dla osoby, która kiedyś odrobinę poznała Gita ale nie ma żadnego doświadczenia w korzystaniu z niego - szkolenie było trafione w dziesiątkę i pozwoliło dokładnie zrozumieć na czym to wszystko polega.</h5>
-            <p><strong>Uczestnik warsztatów</strong></p>
-          </div>
-          <div class="item">
-            <h5>Dobrze przeprowadzone, bardzo merytoryczne.</h5>
-            <p><strong>Uczestnik warsztatów</strong></p>
-          </div>
-          <div class="item smaller-text-on-mobile">
-            <h5>Szkolenie bardzo przydatne, mój pierwszy kontakt z Gitem i już wiem, że będę go wykorzystywał nie tylko przy tworzeni oprogramowania</h5>
-            <p><strong>Uczestnik warsztatów</strong></p>
-          </div>
-          <div class="item">
-            <h5>Bardzo fajnie tłumaczone przykłady i wspólne rozwiązywanie ćwiczeń</h5>
-            <p><strong>Uczestnik warsztatów</strong></p>
-          </div>
-          <div class="item">
-            <h5>Bardzo dobra organizacja i podejście do tematu</h5>
-            <p><strong>Uczestnik warsztatów</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
   
-<section class="latest-news-block">
-  <div class="container">
-      <div class="section-title text-center wow fadeInUp">
-        <h2>Ostatnie wpisy</h2>
-          <p>
-            <a href="blog">Przejdź do bloga</a>
-          </p>
-      </div>
-
-    <div class="row wow fadeInUp" style="padding-bottom: 0">
-
-      {% for post in site.posts limit:3 %}
-      <article class="col-md-4 col-sm-8 col-xs-12">
-        <header class="entry-header"> <a href="{{ post.url }}"><img src="{{ site.url }}/{{ post.cover }}" alt="image 1"></a>
-          <a href="{{ post.url }}"><h6>{{ post.title }}</h6></a>
-          <a href="{{ post.url }}">{{ post.excerpt | strip_html | truncatewords: 33, "" }}</a></header></a>
-      </article>
-      {% endfor %}
-      
-    </div>
-  </div>
-</section>
-
 <section id="kontakt" style="padding-top: 64px">
   <div class="container">
     <div class="row">
