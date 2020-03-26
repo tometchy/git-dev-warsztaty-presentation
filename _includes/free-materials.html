@@ -1,0 +1,43 @@
+<section id="company-counter" style="background-image:url(img/count-bg.jpg);">
+    <div class="container" style="margin-left: auto; margin-right: auto">
+        <div class="row text-center">
+            <div class="wow fadeInDown">
+                <div style="max-width: 675px; margin-left: auto; margin-right: auto">
+                    <div>
+                        <div class="counter simple-subscription-form">
+                            <!--              <form v-on:submit.prevent="onSubmit">-->
+                            <form @submit="requestMaterials">
+                                <h4>Darmowe materiały</h4>
+                                <p>Opis najważniejszych komend <small>(A4)</small></p>
+                                <p>Wybrane przełączniki do <b>git log</b> <small>(A4)</small></p>
+                                <div class="agree-wrapper-small">
+                                    <label for="agree" style="margin-bottom: 0;"><small><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi</small></label>
+                                    <span>
+                    <input type="checkbox" id="agree" v-model="agreeGitInbox" name="agreeGitInbox" style="top: 3px">
+                </span>
+
+                                    <label for="agreeGitWarsztaty" style="margin-top: 7px;"><small><b>GitWarsztaty w Twojej skrzynce</b> - informacje na temat nadchodzących warsztatów</small></label>
+                                    <span>
+                    <input type="checkbox" id="agreeGitWarsztaty" v-model="agreeGitWarsztatyInbox" name="agreeGitWarsztatyInbox" style="top: 3px">
+                </span>
+
+                                    <div class="clearboth"></div>
+                                </div>
+
+                                <div class="input-group">
+                                </div>
+                                <span>
+                  <label for="emailForMaterials" style="margin-bottom: 10px;">E-mail</label>
+                </span>
+                                <br class="breakEmailLabelForMaterials">
+                                <input id="emailForMaterials" v-model="email" class="input-group-field" type="email" placeholder="E-mail" required>
+                                <button class="button">Wyślij materiały</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
