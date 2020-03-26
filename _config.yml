@@ -12,7 +12,7 @@ lang: 'en'
 
 # Website info
 title: GitWarsztaty Blog 
-description: Warsztaty wprowadzające do Gita
+description: Szkolenie wprowadzające do Dockera i Gita
 cover: assets/images/blog-cover.jpg
 logo-square: assets/images/logo-square.png
 logo: assets/images/blog-icon.png
