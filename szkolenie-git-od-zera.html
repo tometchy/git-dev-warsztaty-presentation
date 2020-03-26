@@ -162,77 +162,8 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
 {% include testimonials.html %}
 
 {% include free-materials.html %}
-
-<section id="kontakt" style="padding-top: 64px">
-  <div class="container">
-    <div class="row">
-      <!--section-title-->
-      <div class="section-title text-center wow fadeInUp">
-        <h2>Kontakt</h2>
-        <p>
-          Możesz skontaktować się z nami bezpośrednio, lub za pośrednictwem formularza.<br><b>Dojeżdżamy do każdego miasta w Polsce!</b><br><br>
-          Krzysztof Morcinek:  <a class="phone" href="tel:737692782">737 692 782</a><br>
-          Tomasz Skraskowski: <a class="phone" href="tel:792228321">792 228 321</a><br>
-          E-mail: <a class="phone" href="mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty" target="_top">kontakt@gitwarsztaty.pl</a>
-        </p>
-        <!--        <a href="portfolio.html">go to portfolio</a></div>-->
-        <!--/section-title-->
-        <div class="container" style="padding-top: 25px; padding-bottom: 15px; max-width: 800px">
-          <form @submit="requestContact">
-            <label for="workshopsType" style="float: left">Interesują mnie</label>
-            <select id="workshopsType" v-model="inCompany">
-              <option v-bind:value="true">Warsztaty u mnie w firmie</option>
-              <option v-bind:value="false">Warsztaty otwarte</option>
-            </select>
-              
-            <label for="emailForContact" style="float: left">E-mail</label>
-            <input type="email" id="emailForContact" v-model="email" placeholder="E-mail" required>
-
-            <label for="phoneNumber" style="float: left">Numer telefonu <small>(opcjonalnie)</small></label>
-            <input type="text" id="phoneNumber" v-model="phoneNumber" placeholder="Numer telefonu">
-
-            <section v-if="inCompany">
-              <label for="companyName" style="float: left">Nazwa firmy <small>(opcjonalnie)</small></label>
-              <input type="text" id="companyName" v-model="companyName" placeholder="Nazwa firmy">
-
-              <label for="officeAddress" style="float: left">Adres biura <small>(opcjonalnie)</small></label>
-              <input type="text" id="officeAddress" v-model="officeAddress" placeholder="Adres biura">
-            </section>
-            
-            <section v-else>
-              <label for="who" style="float: left"> <small>Pan/Pani (opcjonalnie)</small></label>
-              <input type="text" id="who" v-model="who" placeholder="Imię">
-
-              <label for="whichCity" style="float: left">W jakim mieście/miastach interesują Cię warsztaty <small>(opcjonalnie)</small></label>
-              <input type="text" id="whichCity" v-model="whichCity" placeholder="Miasto/miasta">
-            
-            </section>
-
-            <label for="additionalInfo" style="float: left">Dodatkowe informacje <small>(opcjonalnie)</small></label>
-            <textarea id="additionalInfo" v-model="additionalInfo" placeholder="Dodatkowe informacje" style="height:200px"></textarea>
-              
-            <div class="agree-wrapper">
-              
-              <label for="agree2" style=""><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi <small>(opcjonalnie)</small></label>
-              <span>
-                <input type="checkbox" id="agree2" v-model="agreeGitInbox" name="agreeGitInbox" style="float: left; height: 20px">
-              </span>
-              
-              <label for="agreeGitWarsztaty2" style="margin-top: 0px;"><b>GitWarsztaty w Twojej skrzynce</b> - informacje na temat nadchodzących warsztatów <small>(opcjonalnie)</small></label>
-              <span>
-                <input type="checkbox" id="agreeGitWarsztaty2" v-model="agreeGitWarsztatyInbox" name="agreeGitWarsztatyInbox" style="float: left; height: 20px">
-              </span>
-
-              <div class="clearboth"></div>
-            </div>
-
-            <input type="submit" value="Wyślij" style="margin-top: 10px;">
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+ 
+{% include contact.html %}
 
 <section id="podziel-sie" class="latest-news-block">
   <div class="container">
