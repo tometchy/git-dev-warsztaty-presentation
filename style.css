@@ -5100,3 +5100,9 @@ input[type=submit]:hover {
 		margin-bottom: 30px;
 	}
 }
+
+@media (min-width: 596px) {
+	.o-warsztatach-not-visible-on-small {
+		display: none;
+	}
+}
