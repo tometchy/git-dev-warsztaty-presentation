@@ -2511,7 +2511,16 @@ embed, iframe, object {
 	margin-top: -43px;
 	text-align: right;
 }
-.section-title a:hover {
+
+.phone-button {
+	color: #2b4c6f;
+}
+
+.phone-button button {
+	margin-bottom: 8px
+}
+
+.section-title a:hover:not(.phone-button) {
 	background-color: #ff4a5b;
 	border: 2px #ff4a5b solid;
 	color: #fff;
