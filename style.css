@@ -5161,3 +5161,10 @@ input[type=submit]:hover {
 /*.landing h3 {*/
 /*	font-size: 110% !important;*/
 /*}*/
+
+#szkolenia-buttons button {
+	/*max-width: 320px;*/
+	max-width: 100vw;
+	/*word-break:break-all;*/
+	white-space: normal;
+}
