@@ -1,0 +1,708 @@
+---
+cover: img/prezentacja.jpg
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Git code review. Zoptymalizuj swój flow sprytnymi trickami, dobrymi praktykami i przydatnymi narzędziami.</title>
+
+    <meta name="description" content="Prelekcja Tomka Skraskowskiego na temat optymalizowania pracy za pomocą Gita">
+    <meta name="author" content="Tomasz Skraskowski">
+
+    {% include head.html %}
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+        .reveal .slides section .fragment.step-fade-in-then-out {
+            opacity: 0;
+            display: none; }
+        .reveal .slides section .fragment.step-fade-in-then-out.current-fragment {
+            opacity: 1;
+            display: inline; }
+        
+        .alias-list li {
+            margin-bottom: 9px
+        }
+
+        .alias-list li {
+            font-size: 70%
+        }
+
+        .modifications-list li {
+            margin-bottom: 9px
+        }
+        
+        .good-terminal-list ul {
+            font-size: 61%;
+        }
+        
+        .good-terminal-list li {
+            margin-bottom: 15px
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+    <img src="img/logo.png" style="position: absolute; bottom:0; left:0;"/>
+    <div class="slides">
+        <section>
+            <h2>Git code review</h2>
+            <h4>Zoptymalizuj swój flow sprytnymi trickami, dobrymi praktykami i przydatnymi narzędziami</h4>
+            <img src="img/code-review.jpg" style="border:none; box-shadow:none; max-height: 500px"/>
+            <aside class="notes">
+                Kto uzywa Gita glownie z konsoli, <b>reka do gory</b>.
+            </aside>
+        </section>
+
+        <section>
+            <h2 style="margin-bottom: 50px">Tomasz Skraskowski</h2>
+            <p>
+            <div>
+                <img src="img/tomasz-skraskowski.jpg" style="border:none; box-shadow:none; max-width: 320px; float: left; margin-top: 56px"/>
+            </div>
+            <div>
+                <ul style="line-height: 200%; padding-left: 27px">
+                    <li>Backend developer at Pirios S.A.</li>
+                    <li>Writes code since 12</li>
+                    <li>Currently .Net (Core), previously C++</li>
+                    <li>Interested in decentralized systems</li>
+                    <li><a href="https://www.softwaredeveloper.blog/" target="_blank">www.SoftwareDeveloper.Blog</a>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </section>
+
+        <section>
+            <h2 style="margin-bottom: 50px">Krzysztof Morcinek</h2>
+            <p>
+            <div>
+                <img src="img/krzysztof-morcinek-black.jpg" style="max-width: 300px; float: left; margin-top: 56px"/>
+            </div>
+            <div>
+                
+                <ul style="line-height: 200%; padding-left: 27px">
+                    <li><a href="https://kariera.pragmaticcoders.com/" target="_blank">@ Pragmatic Coders</a></li>
+                    <li>10 years in .NET stacks</li>
+                    <li>Last year in JAVA</li>
+                    <li><a href="https://krzysztofmorcinek.wordpress.com/" target="_blank">krzysztofmorcinek.wordpress.com</a></li>
+                    <li>Screencast: <a href="https://www.youtube.com/watch?v=7_-FgbUsNM0&list=PLfVKkuw80D-kQPQ5ZjFf6jO3HmSavk6A-" target="_blank">Show me the code</a></li>
+                </ul>
+            </div>
+            </p>
+            <aside class="notes">
+                Dodać mój kontekst
+            </aside>
+        </section>
+
+        <section>
+            <h2>GitWarsztaty w Twojej firmie</h2>
+            <p>
+                <img src="img/my.jpg" style="border:none; box-shadow:none; max-width: 500px"/>
+            </p>
+            <p style="color: #42affa">
+                <a href="https://gitwarsztaty.pl">www.GitWarsztaty.pl</a>
+            </p>
+        </section>
+
+        <section>
+            <section>
+                <h3>Agenda:</h3>
+                <p>Pytajcie w trakcie na chacie - odpowiemy async po skończonych sekcjach</p>
+                <div>
+                    <ul style="line-height: 200%; padding-left: 27px; font-size:75%">
+                        <li>Powtarzające się uwagi - automatyzować, a może nie reagować?</li>
+                        <li>Jak unikać flame Wars?</li>
+                        <li>Kod jest !#@$ - jak dawać konstruktywny feedback.</li>
+                        <li>Kod działa, ale nie jest umieszczony w odpowiednich "miejscach". W jakich warunkach taki kod przepuścić?</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>Agenda cd.</h3>
+                <div>
+                    <ul style="line-height: 200%; padding-left: 27px; font-size:75%">
+                        <li>Kandydat na nie robienie: &lt;!--Zła kolejność argumentów - istotna czytelność, czy fanaberia?--&gt;</li>
+                        <li>TLDR - za długie CR czy może coś, co trzeba bez CR "przepchnąć"?</li>
+                        <li>Jak namawiać do braku CR?</li>
+                        <li>Konieczny refactoring w trakcie feature'a - jak to reviewowac?</li>
+                        <li>Przekrój CI: od startu projektu do code review</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <h3>Nasz kontekst</h3> 
+            <p class="fragment"><q>it's better to ask forgiveness than permission</q>
+            </p>
+            <p class="fragment">projekty gdzie dostarcza się business value, a nie security critical - różne części kodu będą miały różne wymagania w Code Review
+            </p>
+            <p class="fragment">zespoły same się organizują</p>
+            <aside class="notes">
+                PM czy ktoś inny nie narzuca.                
+            </aside>
+        </section>
+
+        <section>
+            <section>
+                <h3>Powtarzające się uwagi</h3>
+                <p>
+                    <img src="img/wrong-formatting-1.PNG" style="border:none; box-shadow:none; max-width: 900px"/>
+                </p>
+                <aside class="notes">
+                    MR1: https://gitlab.com/krzysztof.morcinek/conqueror-browser-spy/-/merge_requests/17/diffs
+
+                    wszystko w exercise.txt
+                </aside>
+            </section>
+            <section>
+                <p style="font-size: 400%;">
+                    DEMO
+                </p>
+            </section>
+            <section>
+                <h3>Stylecop (prettier.io, checkstyle)</h3>
+                <p>
+                    <img src="img/stylecop-logo.jfif" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <p class="fragment">
+                    <img src="img/couple-random-spaces-in-code-review.png" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+            <section>
+                <h3>Stylecop cd.</h3>
+                <p class="fragment">
+                    <img src="img/remove-this.PNG" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <p class="fragment">PrefixLocalCallsWithThis - przykład że coś trzeba wybrać i się stosować.
+                </p>
+                <p class="fragment">... w dowolną stronę (z <strong>thisem</strong>, albo bez <strong>thisa</strong>)
+                </p>
+                <aside class="notes">
+                        https://github.com/kmorcinek/dotnet-tools-settings
+                </aside>
+            </section>
+
+            <section>
+                <h3>Uniwersalne narzędzie do formatowania</h3>
+                <p><a href="https://prettier.io/">prettier.io</a>
+                </p>
+                <p class="fragment">
+                    Kolega ustawił indentation na 2 spacje - nigdy w życiu nie miałem takiego ustawienia. Ale dzięki temu że jest to wymuszone to nie narzekam i się przyzwyczaiłem (chociaż przeformatowało cały projekt)
+                </p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+            <section>
+                <h3>Testy konwencji</h3>
+                <p>3 kawałki:</p>
+                <ul>
+                    <li class="fragment">pętla po wszystkich plikach w projekcie</li>
+                    <li class="fragment">szukanie problemów w jednym pliku</li>
+                    <li class="fragment">odpalenie tych <em>testów</em> podczas buildu</li>
+                </ul>
+                <p class="fragment">Przykład: wymóg aby wszystkie kolekcje były niemutowalne w C# (<em>IReadOnlyCollection&lt;&gt;</em>)</p>
+                <aside class="notes">
+                    wyobraź sobie kod w języku w którym piszesz właśnie projekt
+                </aside>
+            </section>
+            <section>
+                <h3>Powtarzające się uwagi</h3>
+                <ul>
+                    <li class="fragment">automatyzować (jeśli się da)</li>
+                    <li class="fragment">może nie reagować</li>
+                </ul>
+                <aside class="notes">
+                    czasem trzeba przycisnąć, ale wtedy wiecie.
+                    Tylko teraz żeby wojenki podjazdowe nie toczyły się o to co będzie w skryptach. Bo te flame wars można tam przenieść i ciągle mamy problem (chociaż już mniejszy).
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Jak unikać flame wars</h3>
+                <p class="fragment">
+                    <img src="img/flame-war-about-klamra.PNG" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <aside class="notes">
+                </aside>
+            </section>
+            <section>
+                <h3>tabs vs spaces</h3>
+                <!-- <p class="fragment">Flame wars (tabs vs spaces)</p> -->
+                <p class="fragment">
+                    <img src="img/tabs-vs-spaces.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <p class="fragment">Wy sami wiecie co odpuścić. Zachęcam żeby czasem odpuszczać.</p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <h3> Kod jest !#@$ - jak dawać konstruktywny feedback</h3>
+            <p style="margin-top: 40px">
+                Nie oceniamy osoby, merytorycznie opisujemy problem.
+            </p>
+            <p style="margin-top: 40px; margin-bottom: 40px">
+                Proponujemy możliwe rozwiązania.
+            </p>
+            <p>
+                W CR nie tylko doszukujemy się potencjalnych problemów, dostrzegamy i doceniamy również to co ktoś napisał elegancko ;)
+            </p>
+        </section>
+
+        <section>
+            <h3>Kod działa, ale nie jest umieszczony w odpowiednich "miejscach". W jakich warunkach taki kod przepuścić?</h3>
+            <p>
+                Czy wymóc dostosowanie się? Jak zwykle - to zależy.<br>Jaki jest impact?
+            </p>
+            <p>
+                Najlepiej dla konwencji również mieć przygotowany automat, np. obiekty domenowe muszą być w projekcie kończącym się na <i>Domain</i>.
+            </p>
+            <aside class="notes">
+                Anti Corruption Layer
+            </aside>
+        </section>
+        
+        <section>
+            <section>
+                <h3>TLDR - za długie CR czy może coś, co trzeba bez CR "przepchnąć"?</h3>
+                <ul>
+                    <li class="fragment">olbrzymi rename - nikt nie chce tego przeglądać</li>
+                    <li class="fragment">olbrzymi rename i gdzieś logika się zmieniła</li>
+                    <li class="fragment">
+                        <img src="img/looks-fine.png" style="border:none; box-shadow:none; max-width: 600px"/>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    kwestia dwóch rzeczy:
+                    1 może takie CR nie powinno byc wystawione.
+                    2 może rzeczywiście nie warto w szczegółach robić tego CR tylko pobieżnie, albo klepnąć jeśli mamy taki wymóg.
+                </aside>
+            </section>
+            <section>
+                <h3>Oczyszczenie commitu (commitów) przed CR</h3>
+                <p>
+                    <ul>
+                        <li class="fragment">Fix typo</li>
+                        <li class="fragment">Poprawa formatowania</li>
+                        <li class="fragment">Zmiana namespace'u / folderu / pakietu</li>
+                        <!-- <li class="fragment">DEMO czyszczenia przed CR</li> -->
+                        <!-- <li class="fragment"></li>
+                        <li class="fragment"></li> -->
+                    </ul>
+                </p>
+                <aside class="notes">
+                    Dla niektórych jest to kontrowersyjne dla mnie nie.
+
+                    przykład gdy jest duży commit i z niego wyciągamy różne rzeczy i najpierw wrzucamy na mastera.
+                    bo dałem komentarze "Should go straight to master".
+
+                    conq i tam jest.
+
+                    wspomniane 7 zasad dobrego commit message.
+                </aside>
+            </section>
+            <section>
+                <p>
+                    <img src="img/straight-to-master.PNG" style="border:none; box-shadow:none; max-width: 500px"/>
+                </p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Jak namawiać do braku CR?</h3>
+                <p class="fragment">Przykłady gdzie warto się zastanowić</p>
+                <ul>
+                    <li class="fragment">jakiś projekt na wymarciu gdzie nie chcemy inwestować swojego czasu</li>
+                    <li class="fragment">1 osoba w nowym projekcie i nikt nie kwapi się do przeglądania (jeśli chodzi o dzienne review)</li>
+                    <li class="fragment">... !!! ale z pewnością co jakiś czas ktoś powinien doglądać w którą stronę to ogólnie idzie</li>
+                    <li class="fragment">2 osoby które ze sobą rozmawiają</li>
+                    <li class="fragment">jeśli mam przeglądać ogromny MR TechLeada, który zmienia coś we frameworku (co mnie nie dotyczy)</li>
+                </ul>
+                <aside class="notes">
+                    jeśli już wiemy po co robimy CR to zacznie być widoczne, że nie zawsze tak samo CR się opłaca. I warto się nad tym zastanawiać i dostosowywać do sytuacji.
+
+                    historie jak jeden programista pracował przez 2 lata i się zwolnił - wiele razy to już słyszałem
+                </aside>
+            </section>
+            <section>
+                <h3>Więc jak namawiać do braku CR?</h3>
+                <p class="fragment">Przemyśleć sobie czy da nam to więcej zysku niż zainwestowany w to czas.</p>
+                <ul>
+                    <li class="fragment">zakładam że proces jest w rękakach zespołu i możemy to sobie zmienić</li>
+                    <li class="fragment">... albo robić wyjątki</li>
+                    <li class="fragment">może się okazać, że po pewnym czasie zespół się dociera i już na CR nie są wyłapytawne kardynalne błędy</li>
+                    <li class="fragment">... decyzje odnośnie architektury są wystarczająco dobrze przegadane przy kawach i kod powstaje w odpowiednich miejscach</li>
+                    <!-- <li class="fragment">2 osoby które ze sobą rozmawiają</li> -->
+                </ul>
+                <aside class="notes">
+                    jeśli już wiemy po co robimy CR to zacznie być widoczne, że nie zawsze tak samo CR się opłaca. I warto się nad tym zastanawiać i dostosowywać do sytuacji.
+                </aside>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h3>Konieczny refactoring w trakcie feature'a - jak to reviewowac?</h3>
+                <p class="fragment" style="font-size: 400%;">
+                    DEMO
+                </p>
+                <aside class="notes">
+    T: "już kolejny raz widzę przekazywanie tych 3 parametrów, stwórzmy obiekt który to encapsuluje, biznesowo/domenowo taki obiekt ma sens"
+    K: "tak, ale ja najpierw muszę feature skończyć"
+    (...?...)
+    T: "jak teraz nie zrobisz to nigdy nie będzie zrobione, a tak już każdy będzie mógł z tego korzystać"
+    T: "ale zrób to w osobnym MR przed featurem"
+    K: "ok robię"
+    / alternatywnie T: "tak, ale zaraz po zakończeniu zrób ten rafactoring jako osobny MR"
+    bo presja czasu. Każdy sam wyważy.
+                    <br><br>
+                    wypushowane 2 kolejne MR:
+                    - jeden z refactorem
+                    (K: zrobic cały commit z refactorem, zeby było widać że zmieniamy też wywołania!. "To może pociągnąć zmiany w wielu miejscach więc dlatego też robię MR.")
+                    (T: w międzyczasie klepnie +1, lapka w górę)
+                    K: zobaczy i zmerguje
+                    - drugi z featurem. ten sam który inicjował i rebase na tamten z refactorem.
+                    (K: pokazuje że poprzedni kod dostowuje do refactora)
+
+                    wytłumaczyć pushf - --force-with-lease pod spodem
+
+                    K: na slacku @Tomek po refactoringu można sprawdzać dalej.
+
+                    opcja nr 2 niesie ze sobą możliwość wymigania się.
+
+                    Zalety:
+                    - pokazać 2 osobne commity
+                    - łatwiej je reviewoć było.
+                    ?- zdjęcie sytuacji gdy to wszystko jest pomieszane.
+
+                    porównanie https://docs.google.com/spreadsheets/d/1AmgYL0J-E70giVI4-WXN4HzALlt0_UlA/edit#gid=1982900541
+
+                    - wspomnieć, że cokolwiek byśmy pokazali to i tak było contekstowe.
+                    - wspomnieć że MR mogą niezależnie wejść. Często coś jest zblokowane.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Porównanie dwóch podejść</h3>
+                <p>
+                    <img src="img/separe-MR-comaprison.PNG" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+                <aside class="notes">
+                    <br><br>
+                </aside>
+            </section>
+            <section>
+                <h3>Porównanie dwóch podejść cd.</h3>
+                <p>
+                    <img src="img/separe-MR-comaprison-shorter.PNG" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+                <aside class="notes">
+                    <br><br>
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Od startu projektu do code review</h3>
+                <p>
+                    <img src="img/way.jpg" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+                <aside class="notes">
+                    <br><br>
+                </aside>
+            </section>
+            
+            <section>
+                <h3>Wybór flow commitów</h3>    
+                    <p style="margin-top: 45px">
+                       <span style="color: green">&#9786; Jeden branch długo-żyjący</span><br><br>
+                       <span style="color: red; font-size: 60%">&#9785; Wiele branchy długo-żyjących</span> 
+                    </p>
+            </section>
+            
+            <section>
+                <h3>Wybór flow dołączania feature brancha do core brancha</h3>
+                <ul>
+                    <li>Basic merge</li>
+                    <li>Squash merge</li>
+                    <li>Rebase and fast-forward</li>
+                    <li>Rebase with merge commit</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>Basic merge</h3>
+                <p style="font-size: 50%">
+                    Da się wyciągnąć informację z historii, ale jest to trudne, czasami bardzo trudne.
+                </p>
+                <p>
+                    <img src="img/git-guitar-hero.jpg" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+
+            <section>
+                <h3>Squash merge</h3>
+                <p style="font-size: 50%">
+                    Gdy feature branche są bardzo małe, da się coś wyciagnąć z historii, ale stosunkowo niewiele.<br>
+                    Ważna wiedza spoczywa poza repo - w zewnętrznym narzędziu.
+                </p>
+                <p>
+                    <img src="img/squash-flow.png" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+
+            <section>
+                <h3>Rebase and fast-forward</h3>
+                <p style="font-size: 50%">
+                    Historia jest przejrzysta, można wyciągnąć z niej bardzo dużo.<br>
+                    Tracimy informacje o pullrequestach i 'zarys', które commity były w ramach jednego feature brancha.
+                </p>
+                <p>
+                    <img src="img/rebase-ff-flow.png" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+
+            <section style="height: 700px">
+                <h3>Rebase with merge commit</h3>
+                <p style="font-size: 50%">
+                    Historia jest przejrzysta, można wyciągnąć z niej wszystko.
+                </p>
+                <p class="fragment step-fade-in-then-out">
+                    <img src="img/rebase-noff-flow.png" style="border:none; box-shadow:none; max-width: 500px"/>
+                </p>
+                <p class="fragment">
+                    <img src="img/rebase-with-merge-commits-flow.png" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+            
+            <section>
+                <h3>Wybór polityki ochronnej dla core brancha</h3>
+                <p>
+                    <img src="img/guard.jpg" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+            
+            <section>
+                <h3>Blokada bezpośrednich pushy do core brancha</h3>
+                <p>
+                    Wszelkie zmiany możliwe tylko przez PR.
+                </p>
+                <p style="font-size:80%">
+                    Polecane nawet, gdy pracujesz z samymi seniorami-wymiataczami,<br>
+                    a nawet gdy prowadzisz dany projekt samemu.
+                </p>
+                <p>
+                    <img src="img/not-allowed.gif" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+            
+            <section>
+                <h3>Branch policy - sposób dołączania feature brancha</h3>
+                <p>
+                    <img src="img/limit-merge-types.png" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+            
+            <section>
+               <h3>Branch policy - build pipeline</h3>
+                <p>
+                    <img src="img/build-policy.png" style="border:none; box-shadow:none; max-height: 600px"/>
+                </p>
+            </section>
+
+            <section>
+                <h3>Branch policy - required approve</h3>
+                <p style="font-size: 50%">Minimum 1 wymagany approve (ale nie kliknięty przez siebie samego).<br>
+                    Ja polecam: wymagany 1 approve od kogoś z grupy <i>Developers</i> i 1 approve od kogoś z grupy <i>Testers</i>.
+                </p>
+                <p>
+                    <img src="img/reviewers-required.png" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+            
+            <section>
+                <h3>Branch policy - additional approve for specific project parts</h3>
+                <p>
+                    Gdy zmienione są pliki ze wskazanej ścieżki, wymagany dodatkowy approve od użytkownika ze specifycznej grupy/roli. Przykładowo:
+                </p>
+                <ul style="font-size: 75%">
+                    <li>Dla ścieżki <code>src/data-processing/*</code> wymagany dodatkowy approve z grupy <i>Performance specialist</i></li>
+                    <li style="margin-top: 17px; margin-bottom: 17px">Dla ścieżki <code>src/core-engine/*</code> wymagany dodatkowy approve z grupy <i>Senior developer</i></li>
+                    <li>Dla ścieżki <code>src/ssl-library/*</code> wymagany dodatkowy approve z grupy <i>Security specialist</i></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Branch policy - all comments resolved</h3>
+                <p>
+                    <img src="img/comments.png" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+
+            <section>
+                <h3>Branch policy - linked work item</h3>
+                <p>
+                    <img src="img/work-items.jpg" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+            
+            <section>
+                <h3>Przykładowy PR z branch policy</h3>
+                <p>
+                    <img src="img/example-pr-policies.png" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+
+            <section>
+                <h3>Zaczynamy nowy feature</h3>
+                <ol>
+                    <li>Tworzymy i pushujemy nowego feature brancha.</li>
+                    <li style="color: #061170">Tworzymy nowy draft pull request, który będzie na bieżąco w trakcie pracy raportował nam stan z CI.</li>
+                    <li>Pracujemy tworząc i pushując małe commity często. Akceptowalne WIP/TEMP commity i <code>push --force-with-lease</code>. Często też robimy <code>git fetch && git rebase origin/master</code>.</li>
+                    <li style="color: #061170">Porządkujemy historię, układamy commity w odpowiedniej kolejności, łączymy gdy trzeba, usuwamy niepotrzebne.</li>
+                    <li>Opublikowujemy drafta jako czekającego pull requesta i informujemy zespół.</li>
+                </ol>
+            </section>
+            
+            <section>
+                <h3>Opublikowujemy pull requesta</h3>
+                <ol style="font-size: 80%">
+                    <li>Upewniamy się, że description PR wprowadza reviuującego w temat</li>
+                    <li>Upewniamy się, że nie ma konfliktów lub czerwonych buildów</li>
+                    <li>Po raz ostatni przeglądamy diffa wszystkich plików</li>
+                    <li>Po raz ostatni przeglądamy listę commitów, które udostępniamy</li>
+                    <li>Jeżeli serwer to umożliwia, ustawiamy automat do zamknięcia PR</li>
+                </ol>
+                <p>
+                    <img src="img/automatic-completion.png" style="border:none; box-shadow:none; max-height: 500px"/>
+                </p>
+            </section>
+
+            <section>
+                <h3>Zaczynamy code review</h3>
+                <ol style="font-size: 80%">
+                    <li style="margin-bottom: 7px">Nie tykamy, jeżeli są konflikty lub buildy świecą się na czerwono</li>
+                    <li style="margin-bottom: 7px">Zapoznajemy się z descriptionem pull requesta</li>
+                    <li style="margin-bottom: 7px">Rzut oka na listę commitów</li>
+                    <li style="margin-bottom: 7px">Przeglądanie kodu</li>
+                    <li style="margin-bottom: 7px">W niektórych serwerach, komentarze mogą wskazywać zaznaczony tekst</li>
+                    <li style="margin-bottom: 7px">Jeżeli serwer to umożliwia, gdy wystawiający PR dostosuje się do uwag, my przeglądamy tylko nowo wypchnięte zmiany</li>
+                    <li style="margin-bottom: 7px">Wystawiający PR na zakończenie pilnuje usunięcia brancha</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>Niniejsza prezentacja w formie PDF</h3>
+                <p>
+                    Prezentacja, na którą właśnie patrzysz, istnieje równiez w formie pdfa,
+                    niestety za pośrednictwem platformy webinarowej nie ma jak jej wysłać.
+                </p>
+                <p>
+                    Jeżeli chciałbyś/chciałabyś ją sobie zachować,
+                    napisz do nas na <u>kontakt@GitWarsztaty.pl</u> i ją podeślemy.
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <h2>Dziękujemy!</h2>
+            <img src="img/thank-you.jpg"/>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                    return !document.body.classList;
+                }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+</script>
+
+{% include analytics.html %}
+
+</body>
+
+</html>

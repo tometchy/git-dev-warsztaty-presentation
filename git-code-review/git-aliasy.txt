@@ -1,0 +1,13 @@
+za pierwszym użyciem aliasu zrobić pełną komendą i wycofać i zrobić alias.
+
+
+[alias]
+	co = checkout
+	com = checkout master
+
+	cp = cherry-pick
+	rh = reset --hard
+
+	rem = rebase master
+    
+    pushf = push --force-with-lease
