@@ -86,10 +86,19 @@ exports.handler = function (event, context, callback) {
                 callback(new Error('Could not send'));
             });
     }
+    
+    function sendMaterialsAndSubscribe(){
+        
+    }
 
     try {
         informUs();
-        sendMaterialsWithSendgrid();
+        
+        if(eventBody.agreeGitInbox || eventBody.agreeGitWarsztatyInbox)
+            sendMaterialsAndSubscribe();
+        else
+            sendMaterialsWithSendgrid();
+        
     } catch (e) {
         console.log('Exception catched');
         console.error(e);
