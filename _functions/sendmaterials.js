@@ -3,9 +3,10 @@ exports.handler = function (event, context, callback) {
     console.log('event http method: ' + event.httpMethod);
     console.log('event body: ' + event.body);
 
-    const API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
-    const apiKey = process.env.SENDGRID;
-    console.log("Api key: " + apiKey.substring(0, 4) + "...");
+    const SENDGRID_API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
+    const SENDGRID_API_KEY = process.env.SENDGRID;
+    console.log("SendGrid api key: " + SENDGRID_API_KEY.substring(0, 4) + "...");
+    
     const fetch = require("node-fetch");
 
     const eventBody = JSON.parse(event.body);
@@ -37,10 +38,10 @@ exports.handler = function (event, context, callback) {
             }]
         };
 
-        fetch(API_ENDPOINT, {
+        fetch(SENDGRID_API_ENDPOINT, {
             method: 'post',
             body: JSON.stringify(informUsBody),
-            headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': ('Bearer ' + apiKey)}
+            headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': ('Bearer ' + SENDGRID_API_KEY)}
         })
             .then(res => checkStatus(res, false))
             .then(response => {
@@ -53,7 +54,7 @@ exports.handler = function (event, context, callback) {
             });
     }
 
-    function sendMaterials() {
+    function sendMaterialsWithSendgrid() {
         const sendMaterialsBody = {
             personalizations: [{to: [{email: eventBody.email}]}],
             from: {email: "kontakt@gitwarsztaty.pl", name: "GitWarsztaty"},
@@ -67,10 +68,10 @@ exports.handler = function (event, context, callback) {
             }]
         };
 
-        fetch(API_ENDPOINT, {
+        fetch(SENDGRID_API_ENDPOINT, {
             method: 'post',
             body: JSON.stringify(sendMaterialsBody),
-            headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': ('Bearer ' + apiKey)}
+            headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': ('Bearer ' + SENDGRID_API_KEY)}
         })
             .then(res => checkStatus(res, true))
             .then(response => {
@@ -86,7 +87,7 @@ exports.handler = function (event, context, callback) {
 
     try {
         informUs();
-        sendMaterials();
+        sendMaterialsWithSendgrid();
     } catch (e) {
         console.log('Exception catched');
         console.error(e);
