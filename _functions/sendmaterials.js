@@ -6,6 +6,9 @@ exports.handler = function (event, context, callback) {
     const SENDGRID_API_ENDPOINT = "https://api.sendgrid.com/v3/mail/send";
     const SENDGRID_API_KEY = process.env.SENDGRID;
     console.log("SendGrid api key: " + SENDGRID_API_KEY.substring(0, 4) + "...");
+
+    const MAILERLITE_API_KEY = process.env.MAILERLITE;
+    console.log("MailerLite api key: " + MAILERLITE_API_KEY.substring(0, 4) + "...");
     
     const fetch = require("node-fetch");
 
@@ -14,7 +17,6 @@ exports.handler = function (event, context, callback) {
     console.log("email: " + eventBody.email);
     console.log("agreeGitInbox: " + eventBody.agreeGitInbox);
     console.log("agreeGitWarsztatyInbox : " + eventBody.agreeGitWarsztatyInbox);
-
 
     function checkStatus(res, shouldThrow) {
         if (res.ok) { // res.status >= 200 && res.status < 300
