@@ -114,3 +114,23 @@
 
     <meta name="generator" content="Jekyll 3.6.2" />
     <link rel="alternate" type="application/rss+xml" title="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" href="{{ site.baseurl }}feed.xml" />
+
+<script>
+    window.onload = function(e){
+        checkIfSubscriptionConfirmationWasInvoked();
+    };
+        
+    function checkIfSubscriptionConfirmationWasInvoked(){
+        window.location.search.match(/confirm-email/gi) ? showSubscriptionConfirmed() : "";
+    }
+    
+    function showSubscriptionConfirmed(){
+        setTimeout(function(){
+            app.modalSuccess = true;
+            app.modalHeader = "Potwierdzamy zapisanie się na GitWarsztatowy newsletter";
+            app.modalBody = "Będziesz na bieżąco z nowymi treściami o Gicie, Dockerze i Continuous Integration & Delivery. <br><br>" +
+                "Fajnie, że jesteś z nami!";
+            app.showModal = true;
+        }, 2000);
+    }
+</script>
