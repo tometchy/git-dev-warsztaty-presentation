@@ -64,7 +64,7 @@ exports.handler = function (event, context, callback) {
             content: [{
                 type: "text/plain", value: "Witaj! Oto Twoje darmowe materiały do pracy z Gitem:\n" +
                     " Opis najważniejszych komend - https://www.gitwarsztaty.pl/materialy/cheatsheet.pdf\n" +
-                    " Popularne przełączniki do git log - https://www.gitwarsztaty.pl/materialy/git-log.pdf\n\n" +
+                    " Popularne przełączniki do Git log - https://www.gitwarsztaty.pl/materialy/git-log.pdf\n\n" +
                     "Jeżeli masz pytania, być może potrzebujesz pomocy z Gita, możesz do nas pisać na kontakt@gitwarsztaty.pl\n\n" +
                     "Miłego dnia!"
             }]
