@@ -30,7 +30,7 @@ exports.handler = function (event, context, callback) {
 
             if (propagateFailure) {
                 console.log("Propagating failure from wrong response status to user");
-                callback(new Error('Could not send'));
+                callback(new Error("Third party service doesn't work, could not send"));
             }
 
             return res;
@@ -58,6 +58,7 @@ exports.handler = function (event, context, callback) {
             }]
         };
 
+        console.log("Sending inform us mail using sendgrid");
         fetch(SENDGRID_API_ENDPOINT, {
             method: 'post',
             body: JSON.stringify(informUsBody),
@@ -78,8 +79,41 @@ exports.handler = function (event, context, callback) {
 
                 if (propagateFailure) {
                     console.log("Propagating inform us failure to user");
-                    callback(new Error('Could not send'));
+                    callback(new Error("Third party service doesn't work, could not send"));
                 }
+            });
+    }
+    
+    function sendMaterialsWithSendgrid(){
+        const sendMaterialsBody = {
+            personalizations: [{to: [{email: eventBody.email}]}],
+            from: {email: "kontakt@gitwarsztaty.pl", name: "GitWarsztaty"},
+            subject: "Darmowe materiały do pracy z Gitem!",
+            content: [{
+                type: "text/plain", value: "Cześć! Oto Twoje darmowe materiały do pracy z Gitem:\n" +
+                    " Opis najważniejszych komend - https://www.gitwarsztaty.pl/materialy/cheatsheet.pdf\n" +
+                    " Popularne przełączniki do Git log - https://www.gitwarsztaty.pl/materialy/git-log.pdf\n\n" +
+                    "Jeżeli masz pytania, być może potrzebujesz pomocy z Gita, Dockera lub Continuous Integration & Continuous Delivery/Deployment (CI/CD), możesz do nas pisać na kontakt@gitwarsztaty.pl\n" +
+                    "Jeżeli chcesz od czasu do czasu otrzymać maila z poradą na któryś z powyższych tematów, zachęcamy do zapisania się na nasz newsletter: https://www.gitwarsztaty.pl/#darmowe-materialy - wystarczy ponownie kliknąć 'Wyślij materiały', z zaznaczonym checkboxem z poradami.\n\n" +
+                    "Miłego dnia!"
+            }]
+        };
+
+        console.log("Sending materials using sendgrid");
+        fetch(SENDGRID_API_ENDPOINT, {
+            method: 'post',
+            body: JSON.stringify(sendMaterialsBody),
+            headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': ('Bearer ' + SENDGRID_API_KEY)}
+        })
+            .then(res => checkStatus(res, true))
+            .then(response => {
+                console.log("Got response from sending materials with sendgrid:");
+                console.log(response)
+            })
+            .catch(error => {
+                console.log("Error catched during sending materials with sendgrid, propagating failure to user");
+                console.error(error);
+                callback(new Error("Third party service doesn't work, could not send"));
             });
     }
 
