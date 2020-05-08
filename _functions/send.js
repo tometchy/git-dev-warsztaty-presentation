@@ -19,7 +19,9 @@ exports.handler = function (event, context, callback) {
     console.log("email: " + eventBody.email);
     console.log("agreeGitInbox: " + eventBody.agreeGitInbox);
     console.log("agreeGitWarsztatyInbox : " + eventBody.agreeGitWarsztatyInbox);
-    console.log("camefromformlocation : " + eventBody.camefromformlocation);
+    console.log("cameFromFormLocation : " + eventBody.cameFromFormLocation);
+    console.log("cameFromUrlJekyll: " + eventBody.cameFromUrlJekyll);
+    console.log("cameFromUrl: " + eventBody.cameFromUrl);
 
     function checkStatus(res, propagateFailure) {
         if (res.ok) { // res.status >= 200 && res.status < 300
@@ -41,13 +43,15 @@ exports.handler = function (event, context, callback) {
         const informUsBody = {
             personalizations: [{to: [{email: "kontakt@gitwarsztaty.pl"}]}],
             from: {email: eventBody.email},
-            subject: "Nowy request o " + eventBody.camefromformlocation + " od " + eventBody.email,
+            subject: "Nowy request o " + eventBody.cameFromFormLocation + " od " + eventBody.email,
             content: [{
                 type: "text/plain",
-                value: "Nowy request o " + eventBody.camefromformlocation + " od " + eventBody.email + "\n\n" +
+                value: "Nowy request o " + eventBody.cameFromFormLocation + " od " + eventBody.email + "\n\n" +
                     "Czy zgodził się na Git w Twojej skrzynce: " + eventBody.agreeGitInbox + "\n\n" +
                     "Czy zgodził się na GitWarsztaty w Twojej skrzynce: " + eventBody.agreeGitWarsztatyInbox + "\n\n" +
                     "Czas: " + eventBody.time + "\n\n" +
+                    "Url: " + eventBody.cameFromUrl + "\n\n" +
+                    "Url (Jekyll): " + eventBody.cameFromUrlJekyll + "\n\n" +
                     "Czy w firmie: " + eventBody.inCompany + "\n\n" +
                     "Numer telefonu: " + atob(decodeURIComponent(escape(eventBody.phoneNumber))) + "\n\n" +
                     "(JEZELI W FIRMIE) Nazwa firmy: " + atob(decodeURIComponent(escape(eventBody.companyName))) + "\n\n" +
@@ -116,6 +120,18 @@ exports.handler = function (event, context, callback) {
                 callback(new Error("Third party service doesn't work, could not send"));
             });
     }
+    
+    function subscribe(){
+        var subscribeBody = {
+            email: eventBody.email,
+            fields: {
+                camefromurljekyll: eventBody.cameFromUrlJekyll,
+                camefromurl: eventBody.cameFromUrl,
+                camefromformlocation: eventBody.cameFromFormLocation,
+                tags: eventBody.tags
+            }
+        };
+    }
 
     try {
         try {
@@ -127,13 +143,13 @@ exports.handler = function (event, context, callback) {
         }
 
         if (eventBody.agreeGitInbox || eventBody.agreeGitWarsztatyInbox) {
-            subscribe(); // This will send materials with MailerLite if camefromformlocation is materialy
+            subscribe(); // This will send materials with MailerLite if cameFromFormLocation is materialy
         } else {
-            if (eventBody.camefromformlocation.toLowerCase() === "materialy")
+            if (eventBody.cameFromFormLocation.toLowerCase() === "materialy")
                 sendMaterialsWithSendgrid();
         }
 
-        if (eventBody.camefromformlocation.toLowerCase() === "kontakt") {
+        if (eventBody.cameFromFormLocation.toLowerCase() === "kontakt") {
             // This will use SendGrid which often fails, but at this moment we know that user wanted to contact us
             // so if sending contact details to us fails, then we should show failure to user
             informUs(true);

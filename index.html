@@ -414,7 +414,7 @@ new WOW().init();
       inCompany: true,
       agreeGitInbox: true,
       agreeGitWarsztatyInbox: true,
-      camefromformlocation: "",
+      cameFromFormLocation: "",
       email: "",
       phoneNumber: "",
       companyName: "",
@@ -430,7 +430,7 @@ new WOW().init();
     methods:{
       requestMaterials: function (e) {
         const self = this;
-        self.camefromformlocation = "materialy";
+        self.cameFromFormLocation = "materialy";
         self.modalSuccess = true;
         self.modalHeader = "Trwa wysyłanie...";
         self.modalBody = "Proszę czekać...";
@@ -443,7 +443,9 @@ new WOW().init();
         try {
           var sendMaterialsJson = '{ ' +
                   '"email": "' + this.email + '",' +
-                  '"camefromformlocation": "' + this.camefromformlocation + '",' +
+                  '"cameFromFormLocation": "' + this.cameFromFormLocation + '",' +
+                  '"cameFromUrl": "' + window.location.href + '",' +
+                  '"cameFromUrlJekyll": "' + "{{ page.url }}" + '",' +
                   '"agreeGitInbox": "' + this.agreeGitInbox + '",' +
                   '"agreeGitWarsztatyInbox": "' + this.agreeGitWarsztatyInbox + '",' +
                   '"time": "' + new Date().toString() + '"' +
@@ -472,7 +474,7 @@ new WOW().init();
       },
       requestContact: function(e) {
         const self = this;
-        self.camefromformlocation = "kontakt";
+        self.cameFromFormLocation = "kontakt";
         self.modalSuccess = true;
         self.modalHeader = "Trwa wysyłanie...";
         self.modalBody = "Proszę czekać...";
@@ -485,7 +487,9 @@ new WOW().init();
         try {
           var requestDetailsJson = "{ " +
                   '"email": "' + this.email + '",' +
-                  '"camefromformlocation": "' + this.camefromformlocation + '",' +
+                  '"cameFromFormLocation": "' + this.cameFromFormLocation + '",' +
+                  '"cameFromUrl": "' + window.location.href + '",' +
+                  '"cameFromUrlJekyll": "' + "{{ page.url }}" + '",' +
                   '"agreeGitInbox": "' + this.agreeGitInbox + '",' +
                   '"agreeGitWarsztatyInbox": "' + this.agreeGitWarsztatyInbox + '",' +
                   '"time": "' + new Date().toString() + '",' +
