@@ -137,6 +137,56 @@ exports.handler = function (event, context, callback) {
                 tags: eventBody.tags
             }
         };
+
+        subscribeBody = JSON.stringify(subscribeBody);
+        console.log("Sending mailerlite subscribe request: " + subscribeBody);
+
+        fetch("https://api.mailerlite.com/api/v2/subscribers", {
+            method: 'post',
+            body: subscribeBody,
+            headers: {
+                'Content-Type': 'application/json',
+                'X-MailerLite-ApiKey': MAILERLITE_API_KEY
+            }
+        })
+            .then(res => checkStatus(res, true))
+            .then(response => {
+                console.log("Got response from mailerlite subscribe request:");
+                console.log(response)
+            })
+            .catch(error => {
+                console.error("Error catched during fetch mailerlite subscribe request");
+                console.error(error);
+                callback(new Error("Third party service doesn't work, could not send"));
+            });
+
+        setTimeout(function() {
+            var addToGroupBody = {
+                email: eventBody.email,
+            };
+            
+            addToGroupBody = JSON.stringify(addToGroupBody);
+            console.log("Sending mailerlite add to group request: " + addToGroupBody);
+            
+            fetch("https://api.mailerlite.com/api/v2/groups/102857664/subscribers", {
+                method: 'post',
+                body: addToGroupBody,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-MailerLite-ApiKey': MAILERLITE_API_KEY
+                }
+            })
+                .then(res => checkStatus(res, true))
+                .then(response => {
+                    console.log("Got response from mailerlite add to group request:");
+                    console.log(response)
+                })
+                .catch(error => {
+                    console.error("Error catched during fetch mailerlite add to group request");
+                    console.error(error);
+                    callback(new Error("Third party service doesn't work, could not send"));
+                });
+        }, 250);
     }
 
     try {
