@@ -30,12 +30,12 @@ Commitujemy do repo znajdującego się na naszym własnym komputerze. I jest to 
 
 ## W Gicie synchronizujemy repozytoria
 Dlaczego to ma takie wielkie znaczenie? Ponieważ do repo współdzielonego z innymi programistami,
-nie wysyłamy po prostu naszych zmian, czystego _diffa_ plików. To co my robimy, to 
+nie wysyłamy po prostu naszych zmian, pojedynczego _diffa_ plików. To co my robimy, to 
 synchronizowanie między sobą dwóch niezależnych repozytoriów.
 
-Jeżeli w czasie gdy my commitowaliśmy lokalnie, ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
+Jeżeli podczas naszej pracy, gdy commitowaliśmy lokalnie, ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
 współdzielonego repo, to nasza synchronizacja nie polega na zwykłym _wypchnięciu_ naszych commitów, najpierw musimy
-ujednolicić wersje repozytoriów.
+ujednolicić stan naszego repozytorium i zdalnego repozytorium.
 
 ## Dbamy nie tylko o schludny kod, ale również o schludne repozytorium
 Co więcej, nasza praca jako programistów, nie musi, a nawet nie powinna, ograniczać się do dodawania zmian w kodzie do repo.
