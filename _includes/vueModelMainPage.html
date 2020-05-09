@@ -1,0 +1,127 @@
+<script>
+    Vue.component('modal', {
+        template: '#modal-template'
+    });
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            inCompany: true,
+            agreeGitInbox: true,
+            agreeGitWarsztatyInbox: true,
+            requestPurpose: "",
+            cameFromFormLocation: "",
+            email: "",
+            phoneNumber: "",
+            companyName: "",
+            officeAddress: "",
+            who: "",
+            whichCity: "",
+            additionalInfo: "",
+            showModal: false,
+            modalSuccess: true,
+            modalHeader: "Trwa wysyłanie...",
+            modalBody: "Proszę czekać..."
+        },
+        methods:{
+            requestMaterials: function (e) {
+                const self = this;
+                self.requestPurpose = "materialy";
+                self.cameFromFormLocation = "materialy";
+                self.modalSuccess = true;
+                self.modalHeader = "Trwa wysyłanie...";
+                self.modalBody = "Proszę czekać...";
+                self.showModal = true;
+                const materialsSentHeader = "Wysłano materiały";
+                const materialsSentBody = "Jeżeli materiały nie dotrą w najbliższym czasie, sprawdź folder SPAM lub skontaktuj się z nami bezpośrednio.<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+                const materialsSendingFailureHeader = "Ups, coś poszło nie tak";
+                const materialsSendingFailureBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo.<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+
+                try {
+                    var sendMaterialsJson = '{ ' +
+                        '"email": "' + this.email + '",' +
+                        '"requestPurpose": "' + this.requestPurpose + '",' +
+                        '"cameFromUrl": "' + window.location.href + '",' +
+                        '"cameFromUrlJekyll": "' + "{{ page.url }}" + '",' +
+                        '"cameFromFormLocation": "' + this.cameFromFormLocation + '",' +
+                        '"agreeGitInbox": "' + this.agreeGitInbox + '",' +
+                        '"agreeGitWarsztatyInbox": "' + this.agreeGitWarsztatyInbox + '",' +
+                        '"time": "' + new Date().toString() + '"' +
+                        '}';
+                    $.post('{{ site.url }}/.netlify/functions/sendmaterials', sendMaterialsJson, function(result) {
+                        console.debug("Subscription submit successed, result: " + JSON.stringify(result));
+                        self.modalSuccess = true;
+                        self.modalHeader = materialsSentHeader;
+                        self.modalBody = materialsSentBody;
+                    })
+                        .fail(function(response) {
+                            console.error("Subscription submit failed, response: " + JSON.stringify(response));
+                            self.modalSuccess = false;
+                            self.modalHeader = materialsSendingFailureHeader;
+                            self.modalBody = materialsSendingFailureBody;
+                        });
+                }
+                catch (e) {
+                    console.error(e);
+                    self.modalSuccess = false;
+                    self.modalHeader = materialsSendingFailureHeader;
+                    self.modalBody = materialsSendingFailureBody;
+                }
+
+                e.preventDefault();
+            },
+            requestContact: function(e) {
+                const self = this;
+                self.requestPurpose = "kontakt";
+                self.cameFromFormLocation = "kontakt";
+                self.modalSuccess = true;
+                self.modalHeader = "Trwa wysyłanie...";
+                self.modalBody = "Proszę czekać...";
+                self.showModal = true;
+                const requestSentHeader = "Wysłono pomyślnie";
+                const requestSentBody = "Skontaktujemy się niezwłocznie. W razie problemów, skontaktuj się proszę z nami bezpośrednio. <br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+                const requestSendingFailureHeader = "Ups, coś poszło nie tak";
+                const requestSendingFailureBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo.<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+
+                try {
+                    var requestDetailsJson = "{ " +
+                        '"email": "' + this.email + '",' +
+                        '"requestPurpose": "' + this.requestPurpose + '",' +
+                        '"cameFromUrl": "' + window.location.href + '",' +
+                        '"cameFromUrlJekyll": "' + "{{ page.url }}" + '",' +
+                        '"cameFromFormLocation": "' + this.cameFromFormLocation + '",' +
+                        '"agreeGitInbox": "' + this.agreeGitInbox + '",' +
+                        '"agreeGitWarsztatyInbox": "' + this.agreeGitWarsztatyInbox + '",' +
+                        '"time": "' + new Date().toString() + '",' +
+                        '"inCompany": "' + this.inCompany + '",' +
+                        '"phoneNumber": "' + window.btoa(unescape(encodeURIComponent(this.phoneNumber))) + '",' +
+                        '"companyName": "' + window.btoa(unescape(encodeURIComponent(this.companyName))) + '",' +
+                        '"officeAddress": "' + window.btoa(unescape(encodeURIComponent(this.officeAddress))) + '",' +
+                        '"who": "' + window.btoa(unescape(encodeURIComponent(this.who))) + '",' +
+                        '"whichCity": "' + window.btoa(unescape(encodeURIComponent(this.whichCity))) + '",' +
+                        '"additionalInfo": "' + window.btoa(unescape(encodeURIComponent(this.additionalInfo))) + '"}';
+
+                    $.post('{{ site.url }}/.netlify/functions/sendcontactrequest', requestDetailsJson, function(result) {
+                        console.debug("Request submit successed, result: " + JSON.stringify(result));
+                        self.modalSuccess = true;
+                        self.modalHeader = requestSentHeader;
+                        self.modalBody = requestSentBody;
+                    })
+                        .fail(function(response) {
+                            console.error("Request submit failed, response: " + JSON.stringify(response));
+                            self.modalSuccess = false;
+                            self.modalHeader = requestSendingFailureHeader;
+                            self.modalBody = requestSendingFailureBody;
+                        });
+                }
+                catch (e) {
+                    console.error(e);
+                    self.modalSuccess = false;
+                    self.modalHeader = requestSendingFailureHeader;
+                    self.modalBody = requestSendingFailureBody;
+                }
+                e.preventDefault();
+            }
+        }
+    })
+</script>
