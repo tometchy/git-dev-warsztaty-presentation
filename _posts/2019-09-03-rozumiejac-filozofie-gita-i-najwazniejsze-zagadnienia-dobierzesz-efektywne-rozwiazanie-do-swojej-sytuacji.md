@@ -14,4 +14,46 @@ advantages-list-title: Filozofia<br class="co-zyskasz-line-break"> Gita
 advantages-list-cover: img/filozofia-gita.jpg
 ---
 
-Znajomość filozofii Gita i podstawowych komend jest kluczowa do optymalnej pracy.
+Znajomość filozofii Gita i podstawowych zagadnień jest kluczowa do optymalnej pracy.
+
+Git to system kontroli wersji (_ang. version control system - VCS_), to oczywiste.
+Niestety sposób, w jaki w nim pracujemy, już taki oczywisty nie jest.
+
+## W Gicie commitujemy lokalnie
+Wydaje mi się, że większość osób stawiających pierwsze kroki w naszej branży, 
+o _VCS_ myśli w sposób [scentralizowany]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna) -
+dokonuję zmiany w kodzie (_commituję_) i wysyłam ją (_commit_) do wspólnego dla wszystkich repozytorium kodu.
+
+W Gicie i każdym innym [zdecentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna)
+oczywiście wysyłamy zmiany w kodzie do repo, różnica polega na tym, że nie commitujemy do wspólnego repozytorium.
+Commitujemy do repo znajdującego się na naszym własnym komputerze. I jest to różnica znacząca.
+
+## W Gicie synchronizujemy repozytoria
+Dlaczego to ma takie wielkie znaczenie? Ponieważ do repo współdzielonego z innymi programistami,
+nie wysyłamy po prostu naszych zmian, czystego _diffa_ plików. To co my robimy, to 
+synchronizowanie między sobą dwóch niezależnych repozytoriów.
+
+Jeżeli w czasie gdy my commitowaliśmy lokalnie, ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
+współdzielonego repo, to nasza synchronizacja nie polega na zwykłym _wypchnięciu_ naszych commitów, najpierw musimy
+ujednolicić wersje repozytoriów.
+
+## Dbamy nie tylko o schludny kod, ale również o schludne repozytorium
+Co więcej, nasza praca jako programistów, nie musi, a nawet nie powinna, ograniczać się do dodawania zmian w kodzie do repo.
+Oprócz dbania o czysty kod, powinniśmy dbać również o czyste repozytorium.
+W końcu mamy je na swoim komputerze, zanim je zsynchronizujemy z innymi, powinniśmy zadbać, że to co udostępniamy innym, jest schludne i czytelne.
+
+W [scentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna) moment
+wysłania zmian w kodzie do repo, jest momentem _finalnym_ naszej pracy, jest to moment udostępnienia zmian innym
+programistom. Jest to moment, w uproszczeniu mówiąc, nieodwracalny, to co wysłaliśmy, już nie zmienimy.
+
+W [zdecentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna) moment
+wysłania zmian w kodzie do repo odbywa się w trakcie naszej pracy, a momentem finalnym jest (mówiąc w uproszczeniu) synchronizowanie
+swojego repozytorium z innymi.
+Wcześniej wielokrotnie wysyłaliśmy zmiany do repo ([tworzyliśmy commity]({{ site.url }}/blog/opanowanie-podstawowych-komend-gita-jest-fundamentem-codziennej-pracy)),
+na bieżąco dbając o czystość naszego repozytorium, czyli mówiąc konkretniej,
+[poprawiając historię commitów, którą tworzymy]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
+
+Synchronizujemy swoją historię commitów z innymi, dopiero gdy kod który dopisaliśmy jest schludny i nasz _wkład w repo projektu_ - tak samo. 
+
+## Rozgałęziamy się
+W 
