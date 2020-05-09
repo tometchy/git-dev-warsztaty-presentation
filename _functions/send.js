@@ -23,6 +23,9 @@ exports.handler = function (event, context, callback) {
     console.log("cameFromUrlJekyll: " + eventBody.cameFromUrlJekyll);
     console.log("cameFromUrl: " + eventBody.cameFromUrl);
     console.log("cameFromFormLocation: " + eventBody.cameFromFormLocation);
+    if(eventBody.tags == null)
+        eventBody.tags = "";
+    console.log("tags: " + eventBody.tags);
 
     function checkStatus(res, propagateFailure) {
         if (res.ok) { // res.status >= 200 && res.status < 300
