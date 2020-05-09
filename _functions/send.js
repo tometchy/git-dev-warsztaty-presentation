@@ -22,6 +22,7 @@ exports.handler = function (event, context, callback) {
     console.log("requestPurpose : " + eventBody.requestPurpose);
     console.log("cameFromUrlJekyll: " + eventBody.cameFromUrlJekyll);
     console.log("cameFromUrl: " + eventBody.cameFromUrl);
+    console.log("cameFromFormLocation: " + eventBody.cameFromFormLocation);
 
     function checkStatus(res, propagateFailure) {
         if (res.ok) { // res.status >= 200 && res.status < 300
@@ -52,6 +53,7 @@ exports.handler = function (event, context, callback) {
                     "Czas: " + eventBody.time + "\n\n" +
                     "Url: " + eventBody.cameFromUrl + "\n\n" +
                     "Url (Jekyll): " + eventBody.cameFromUrlJekyll + "\n\n" +
+                    "Który formularz uzupełnił: " + eventBody.cameFromFormLocation + "\n\n" +
                     "Czy w firmie: " + eventBody.inCompany + "\n\n" +
                     "Numer telefonu: " + atob(decodeURIComponent(escape(eventBody.phoneNumber))) + "\n\n" +
                     "(JEZELI W FIRMIE) Nazwa firmy: " + atob(decodeURIComponent(escape(eventBody.companyName))) + "\n\n" +
@@ -127,6 +129,7 @@ exports.handler = function (event, context, callback) {
             fields: {
                 camefromurljekyll: eventBody.cameFromUrlJekyll,
                 camefromurl: eventBody.cameFromUrl,
+                camefromformlocation: eventBody.cameFromFormLocation,
                 requestPurpose: eventBody.requestPurpose,
                 tags: eventBody.tags
             }
