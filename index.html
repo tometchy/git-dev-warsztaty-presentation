@@ -414,7 +414,7 @@ new WOW().init();
       inCompany: true,
       agreeGitInbox: true,
       agreeGitWarsztatyInbox: true,
-      cameFromFormLocation: "",
+      requestPurpose: "",
       email: "",
       phoneNumber: "",
       companyName: "",
@@ -430,7 +430,7 @@ new WOW().init();
     methods:{
       requestMaterials: function (e) {
         const self = this;
-        self.cameFromFormLocation = "materialy";
+        self.requestPurpose = "materialy";
         self.modalSuccess = true;
         self.modalHeader = "Trwa wysyłanie...";
         self.modalBody = "Proszę czekać...";
@@ -443,7 +443,7 @@ new WOW().init();
         try {
           var sendMaterialsJson = '{ ' +
                   '"email": "' + this.email + '",' +
-                  '"cameFromFormLocation": "' + this.cameFromFormLocation + '",' +
+                  '"requestPurpose": "' + this.requestPurpose + '",' +
                   '"cameFromUrl": "' + window.location.href + '",' +
                   '"cameFromUrlJekyll": "' + "{{ page.url }}" + '",' +
                   '"agreeGitInbox": "' + this.agreeGitInbox + '",' +
@@ -474,7 +474,7 @@ new WOW().init();
       },
       requestContact: function(e) {
         const self = this;
-        self.cameFromFormLocation = "kontakt";
+        self.requestPurpose = "kontakt";
         self.modalSuccess = true;
         self.modalHeader = "Trwa wysyłanie...";
         self.modalBody = "Proszę czekać...";
@@ -487,7 +487,7 @@ new WOW().init();
         try {
           var requestDetailsJson = "{ " +
                   '"email": "' + this.email + '",' +
-                  '"cameFromFormLocation": "' + this.cameFromFormLocation + '",' +
+                  '"requestPurpose": "' + this.requestPurpose + '",' +
                   '"cameFromUrl": "' + window.location.href + '",' +
                   '"cameFromUrlJekyll": "' + "{{ page.url }}" + '",' +
                   '"agreeGitInbox": "' + this.agreeGitInbox + '",' +

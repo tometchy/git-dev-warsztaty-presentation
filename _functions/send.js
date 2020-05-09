@@ -19,7 +19,7 @@ exports.handler = function (event, context, callback) {
     console.log("email: " + eventBody.email);
     console.log("agreeGitInbox: " + eventBody.agreeGitInbox);
     console.log("agreeGitWarsztatyInbox : " + eventBody.agreeGitWarsztatyInbox);
-    console.log("cameFromFormLocation : " + eventBody.cameFromFormLocation);
+    console.log("requestPurpose : " + eventBody.requestPurpose);
     console.log("cameFromUrlJekyll: " + eventBody.cameFromUrlJekyll);
     console.log("cameFromUrl: " + eventBody.cameFromUrl);
 
@@ -43,10 +43,10 @@ exports.handler = function (event, context, callback) {
         const informUsBody = {
             personalizations: [{to: [{email: "kontakt@gitwarsztaty.pl"}]}],
             from: {email: eventBody.email},
-            subject: "Nowy request o " + eventBody.cameFromFormLocation + " od " + eventBody.email,
+            subject: "Nowy request o " + eventBody.requestPurpose + " od " + eventBody.email,
             content: [{
                 type: "text/plain",
-                value: "Nowy request o " + eventBody.cameFromFormLocation + " od " + eventBody.email + "\n\n" +
+                value: "Nowy request o " + eventBody.requestPurpose + " od " + eventBody.email + "\n\n" +
                     "Czy zgodził się na Git w Twojej skrzynce: " + eventBody.agreeGitInbox + "\n\n" +
                     "Czy zgodził się na GitWarsztaty w Twojej skrzynce: " + eventBody.agreeGitWarsztatyInbox + "\n\n" +
                     "Czas: " + eventBody.time + "\n\n" +
@@ -127,7 +127,7 @@ exports.handler = function (event, context, callback) {
             fields: {
                 camefromurljekyll: eventBody.cameFromUrlJekyll,
                 camefromurl: eventBody.cameFromUrl,
-                camefromformlocation: eventBody.cameFromFormLocation,
+                requestPurpose: eventBody.requestPurpose,
                 tags: eventBody.tags
             }
         };
@@ -143,13 +143,13 @@ exports.handler = function (event, context, callback) {
         }
 
         if (eventBody.agreeGitInbox || eventBody.agreeGitWarsztatyInbox) {
-            subscribe(); // This will send materials with MailerLite if cameFromFormLocation is materialy
+            subscribe(); // This will send materials with MailerLite if requestPurpose is materialy
         } else {
-            if (eventBody.cameFromFormLocation.toLowerCase() === "materialy")
+            if (eventBody.requestPurpose.toLowerCase() === "materialy")
                 sendMaterialsWithSendgrid();
         }
 
-        if (eventBody.cameFromFormLocation.toLowerCase() === "kontakt") {
+        if (eventBody.requestPurpose.toLowerCase() === "kontakt") {
             // This will use SendGrid which often fails, but at this moment we know that user wanted to contact us
             // so if sending contact details to us fails, then we should show failure to user
             informUs(true);
