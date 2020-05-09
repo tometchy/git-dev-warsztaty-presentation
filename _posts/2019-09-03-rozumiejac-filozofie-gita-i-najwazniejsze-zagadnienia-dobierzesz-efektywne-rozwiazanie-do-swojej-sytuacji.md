@@ -19,7 +19,7 @@ Znajomość filozofii Gita i podstawowych zagadnień jest kluczowa do optymalnej
 Git to system kontroli wersji (_ang. version control system - VCS_), to oczywiste.
 Niestety sposób, w jaki w nim pracujemy, już taki oczywisty nie jest.
 
-## W Gicie commitujemy lokalnie
+## Commitujemy lokalnie
 Wydaje mi się, że większość osób stawiających pierwsze kroki w naszej branży, 
 o _VCS_ myśli w sposób [scentralizowany]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna) -
 dokonuję zmiany w kodzie i zapisuję ją we wspólnym dla wszystkich repozytorium kodu.
@@ -29,7 +29,7 @@ oczywiście zapisujemy zmiany kodu (_commity_) w repozytorium, ale nie wspóldzi
 Commitujemy do naszego własnego repo znajdującego się na naszym prywatnym komputerze.
 I jest to różnica znacząca.
 
-## W Gicie synchronizujemy repozytoria
+## Synchronizujemy repozytoria
 Dlaczego ma to takie znaczenie? Ponieważ do repo współdzielonego z innymi programistami,
 nie wysyłamy po prostu naszych zmian, pojedynczego _diffa_ plików. To co my robimy, to 
 synchronizowanie między sobą dwóch niezależnych repozytoriów.
@@ -56,7 +56,10 @@ Wcześniej wielokrotnie wysyłaliśmy zmiany do repo ([tworzyliśmy commity]({{ 
 na bieżąco dbając o czystość naszego repozytorium, czyli mówiąc konkretniej,
 [poprawiając historię commitów, którą tworzymy]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
 
-Synchronizujemy swoją historię commitów z innymi, dopiero gdy kod który dopisaliśmy jest schludny i nasz _wkład w repo projektu_ - tak samo. 
+Synchronizujemy swoją historię commitów z innymi dopiero gdy kod który dopisaliśmy jest schludny i nasz _wkład w repo projektu_ - tak samo. 
 
 ## Rozgałęziamy się
-W 
+W Gicie  każdego dnia (wielokrotnie) korzystamy z możliwości rozgałęziania historii commitów - [tworzenia tak zwanych branchy]({{ site.url }}/blog/branche-w-gicie-usprawnienie-wspolpracy-nawet-z-samym-soba).
+Czyli możemy nie tylko możemy dobudowywać nasze (i cudze) repozytorium o nowe commity. Możemy to robić różnymi _ścieżkami_.
+Temat ten szerzej opisuję w [poście dedykowanym branchom w Gicie]({{ site.url }}/blog/branche-w-gicie-usprawnienie-wspolpracy-nawet-z-samym-soba),
+w tym miejscu jednak chciałbym zwrócić uwagę, że skoro jest to kolejny sposób w jaki 
