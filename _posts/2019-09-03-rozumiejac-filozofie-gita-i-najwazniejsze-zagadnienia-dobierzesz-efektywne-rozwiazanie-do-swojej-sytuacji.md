@@ -22,11 +22,12 @@ Niestety sposób, w jaki w nim pracujemy, już taki oczywisty nie jest.
 ## W Gicie commitujemy lokalnie
 Wydaje mi się, że większość osób stawiających pierwsze kroki w naszej branży, 
 o _VCS_ myśli w sposób [scentralizowany]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna) -
-dokonuję zmiany w kodzie (_commituję_) i wysyłam ją (_commit_) do wspólnego dla wszystkich repozytorium kodu.
+dokonuję zmiany w kodzie i zapisuję ją we wspólnym dla wszystkich repozytorium kodu.
 
 W Gicie i każdym innym [zdecentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna)
-oczywiście wysyłamy zmiany w kodzie do repo, różnica polega na tym, że nie commitujemy do wspólnego repozytorium.
-Commitujemy do repo znajdującego się na naszym własnym komputerze. I jest to różnica znacząca.
+oczywiście zapisujemy zmiany kodu (_commity_) w repozytorium, ale nie wspóldzielonym.
+Commitujemy do naszego własnego repo znajdującego się na naszym prywatnym komputerze.
+I jest to różnica znacząca.
 
 ## W Gicie synchronizujemy repozytoria
 Dlaczego to ma takie wielkie znaczenie? Ponieważ do repo współdzielonego z innymi programistami,
