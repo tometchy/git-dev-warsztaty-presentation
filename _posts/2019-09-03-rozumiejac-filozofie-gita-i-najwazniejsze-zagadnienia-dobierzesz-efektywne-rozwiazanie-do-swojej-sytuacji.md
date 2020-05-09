@@ -36,12 +36,14 @@ synchronizowanie między sobą dwóch niezależnych repozytoriów.
 
 Jeżeli podczas naszej pracy, gdy commitowaliśmy lokalnie, ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
 współdzielonego repo, to nasza synchronizacja nie polega na zwykłym _wypchnięciu_ naszych commitów. Najpierw musimy
-ujednolicić stan naszego repozytorium i zdalnego repozytorium.
+ujednolicić stan naszego repozytorium, ze stanem ze zdalnego repozytorium.
 
 ## Dbamy nie tylko o schludny kod, ale również o schludne repozytorium
-Co więcej, nasza praca jako programistów, nie musi, a nawet nie powinna, ograniczać się do dodawania zmian w kodzie do repo.
+Co więcej, nasza praca jako programistów, nie musi, a nawet nie powinna, ograniczać się tylko do zatwierdzania zmian w kodzie.
 Oprócz dbania o czysty kod, powinniśmy dbać również o czyste repozytorium.
-W końcu mamy je na swoim komputerze, zanim je zsynchronizujemy z innymi, powinniśmy zadbać, że to co udostępniamy innym, jest schludne i czytelne.
+Mamy je na swoim komputerze, zanim zsynchronizujemy je z innymi, powinniśmy zadbać, że to co udostępniamy jest schludne i czytelne.
+Historia commitów powinna umożliwić osobom trzecim zrozumienie kontekstu naszej pracy i powodów powstania poszczególnych zmian.
+Rzut oka na tytuły commitów powinien dać obraz co zostało wprowadzone.
 
 W [scentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna) moment
 wysłania zmian w kodzie do repo, jest momentem _finalnym_ naszej pracy, jest to moment udostępnienia zmian innym
