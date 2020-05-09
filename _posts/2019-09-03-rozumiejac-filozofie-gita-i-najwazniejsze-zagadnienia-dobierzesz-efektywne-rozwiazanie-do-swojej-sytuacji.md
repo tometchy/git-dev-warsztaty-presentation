@@ -60,7 +60,9 @@ Synchronizujemy swoją historię commitów z innymi dopiero gdy kod który dopis
 
 ## Rozgałęziamy się
 W Gicie  każdego dnia (wielokrotnie) korzystamy z możliwości rozgałęziania historii commitów - [tworzenia tak zwanych branchy]({{ site.url }}/blog/branche-w-gicie-usprawnienie-wspolpracy-nawet-z-samym-soba).
-Czyli możemy nie tylko możemy dobudowywać nasze (i cudze) repozytorium o nowe commity. Możemy to robić różnymi _ścieżkami_.
+Czyli możemy nie tylko dobudowywać nasze (i cudze) repozytorium o nowe commity. Możemy to robić różnymi _ścieżkami_.
 Temat ten szerzej opisuję w [poście dedykowanym branchom w Gicie]({{ site.url }}/blog/branche-w-gicie-usprawnienie-wspolpracy-nawet-z-samym-soba),
-w tym miejscu jednak chciałbym zwrócić uwagę, że skoro jest to kolejny sposób w jaki 
+w tym miejscu jednak chciałbym zwrócić uwagę, że skoro jest to kolejny sposób w jaki modyfikujemy nasze (i cudze) repozytorium,
+to również powinniśmy to robić schludnie. Bardzo łatwo poprzez zaniedbanie stworzyć historię trudną do inwestygowania, doprowadzić do tak
+zwanego _Git guitar hero_:
 obrazek git guitar hero
