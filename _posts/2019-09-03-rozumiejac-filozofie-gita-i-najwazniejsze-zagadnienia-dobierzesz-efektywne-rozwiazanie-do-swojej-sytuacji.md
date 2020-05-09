@@ -24,13 +24,13 @@ Wydaje mi się, że większość osób stawiających pierwsze kroki w naszej bra
 o _VCS_ myśli w sposób [scentralizowany]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna) -
 dokonuję zmiany w kodzie i zapisuję ją we wspólnym dla wszystkich repozytorium kodu.
 
-W Gicie i każdym innym [zdecentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna)
+W Gicie i każdym innym [zdecentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna),
 oczywiście zapisujemy zmiany kodu (_commity_) w repozytorium, ale nie wspóldzielonym.
 Commitujemy do naszego własnego repo znajdującego się na naszym prywatnym komputerze.
 I jest to różnica znacząca.
 
 ## W Gicie synchronizujemy repozytoria
-Dlaczego to ma takie wielkie znaczenie? Ponieważ do repo współdzielonego z innymi programistami,
+Dlaczego ma to takie znaczenie? Ponieważ do repo współdzielonego z innymi programistami,
 nie wysyłamy po prostu naszych zmian, pojedynczego _diffa_ plików. To co my robimy, to 
 synchronizowanie między sobą dwóch niezależnych repozytoriów.
 
