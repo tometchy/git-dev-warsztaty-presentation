@@ -63,3 +63,4 @@ W Gicie  każdego dnia (wielokrotnie) korzystamy z możliwości rozgałęziania 
 Czyli możemy nie tylko możemy dobudowywać nasze (i cudze) repozytorium o nowe commity. Możemy to robić różnymi _ścieżkami_.
 Temat ten szerzej opisuję w [poście dedykowanym branchom w Gicie]({{ site.url }}/blog/branche-w-gicie-usprawnienie-wspolpracy-nawet-z-samym-soba),
 w tym miejscu jednak chciałbym zwrócić uwagę, że skoro jest to kolejny sposób w jaki 
+obrazek git guitar hero
