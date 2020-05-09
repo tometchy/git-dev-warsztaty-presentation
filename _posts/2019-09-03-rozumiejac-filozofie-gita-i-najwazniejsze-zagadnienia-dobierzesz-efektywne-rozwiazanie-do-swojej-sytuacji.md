@@ -35,7 +35,7 @@ nie wysyłamy po prostu naszych zmian, pojedynczego _diffa_ plików. To co my ro
 synchronizowanie między sobą dwóch niezależnych repozytoriów.
 
 Jeżeli podczas naszej pracy, gdy commitowaliśmy lokalnie, ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
-współdzielonego repo, to nasza synchronizacja nie polega na zwykłym _wypchnięciu_ naszych commitów, najpierw musimy
+współdzielonego repo, to nasza synchronizacja nie polega na zwykłym _wypchnięciu_ naszych commitów. Najpierw musimy
 ujednolicić stan naszego repozytorium i zdalnego repozytorium.
 
 ## Dbamy nie tylko o schludny kod, ale również o schludne repozytorium
