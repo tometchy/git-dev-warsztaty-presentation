@@ -70,8 +70,8 @@ zwanego _Git guitar hero_:
 ## Zrozumienie filozofii Gita a wpływ na codzienną pracę
 Dopóki się nie oswoi z zasadą działania [zdecentralizowanego _VCS_]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna),
 naturalnym jest, że do repo próbuje się poprostu dosyłać nowe zmiany i nie myśli się o niczym więcej.
-Oczywiście takie podejście do pracy jest możliwe, ponieważ jest wspierane przez [wiele tooli]({{ site.url }}/blog/naucz-sie-gita-z-konsoli-a-poradzisz-sobie-z-dowolnym-toolem-chociaz-i-tak-pozostaniesz-przy-konsoli)
-w których wystarczy kliknąć _jeden magiczny przycisk_ i efekt pracy po prostu jest udostępniana innym - _jakoś_.
+Oczywiście takie podejście do pracy jest możliwe. [Wiele tooli]({{ site.url }}/blog/naucz-sie-gita-z-konsoli-a-poradzisz-sobie-z-dowolnym-toolem-chociaz-i-tak-pozostaniesz-przy-konsoli)
+do niego zachęca, oferując _jeden magiczny przycisk_, który wystarczy kliknąć i efekt pracy po prostu jest udostępniana innym - _jakoś_.
 
 Niestety ta niewiedza ma swoją cenę:
 - Po pierwsze, niemal zawsze przy takim podejściu tworzy się bałagan w historii, co w przyszłości odbija się np. trudniejszym inwestygowaniem
