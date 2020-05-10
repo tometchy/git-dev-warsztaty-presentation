@@ -198,7 +198,7 @@ exports.handler = function (event, context, callback) {
             console.error(e);
         }
 
-        if (eventBody.agreeGitInbox || eventBody.agreeGitWarsztatyInbox) {
+        if (eventBody.agreeGitInbox == true || eventBody.agreeGitWarsztatyInbox == true) {
             subscribe(); // This will send materials with MailerLite if requestPurpose is materialy
         } else {
             if (eventBody.requestPurpose.toLowerCase() === "materialy")
