@@ -66,3 +66,20 @@ w tym miejscu jednak chciałbym zwrócić uwagę, że skoro jest to kolejny spos
 to również powinniśmy to robić schludnie. Bardzo łatwo poprzez zaniedbanie stworzyć historię trudną do inwestygowania, doprowadzić do tak
 zwanego _Git guitar hero_:
 obrazek git guitar hero
+
+## Łączymy rozgałęzienia
+
+## Zrozumienie filozofii Gita a wpływ na codzienną pracę
+Dopóki się nie załapie zasady działania [zdecentralizowanego _VCS_]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna),
+naturalnym jest, że do repo próbuje się poprostu dosyłać nowe zmiany i nie myśli się o niczym więcej.
+Oczywiście takie podejście do pracy jest możliwe, ponieważ jest wspierane przez [wiele tooli]({{ site.url }}/blog/naucz-sie-gita-z-konsoli-a-poradzisz-sobie-z-dowolnym-toolem-chociaz-i-tak-pozostaniesz-przy-konsoli)
+w których wystarczy kliknąć _jeden magiczny przycisk_ i efekt pracy po prostu jest udostępniana innym - _jakoś_.
+
+Niestety ta niewiedza ma swoją cenę:
+- Po pierwsze, niemal zawsze przy takim podejściu tworzy się bałagan w historii, co w przyszłości odbija się np. trudniejszym inwestygowaniem
+przy debugowaniu, albo głowieniem dlaczego coś zostało zaimplementowane tak a nie inaczej.
+- Po drugie, przy takim podejściu nie wykorzystuje się pełnego potencjału Gita, np. jako narzędzia [usprawniającego nam codzienną pracę](http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie)
+
+## Podsumowanie
+
+Jeżeli chcesz XXX
