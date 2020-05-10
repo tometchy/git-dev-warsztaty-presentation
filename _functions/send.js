@@ -104,7 +104,7 @@ exports.handler = function (event, context, callback) {
                 type: "text/plain", value: "Cześć! Oto Twoje darmowe materiały do pracy z Gitem:\n" +
                     " Opis najważniejszych komend - https://www.gitwarsztaty.pl/materialy/cheatsheet.pdf\n" +
                     " Popularne przełączniki do Git log - https://www.gitwarsztaty.pl/materialy/git-log.pdf\n\n" +
-                    "Jeżeli masz pytania, być może potrzebujesz pomocy z Gita, Dockera lub Continuous Integration & Continuous Delivery/Deployment (CI/CD), możesz do nas pisać na kontakt@gitwarsztaty.pl\n" +
+                    "Jeżeli masz pytania, być może potrzebujesz pomocy z Gita, Dockera lub Continuous Integration & Continuous Delivery/Deployment (CI/CD), możesz do nas pisać na kontakt@gitwarsztaty.pl\n\n" +
                     "Jeżeli chcesz od czasu do czasu otrzymać maila z poradą na któryś z powyższych tematów, zachęcamy do zapisania się na nasz newsletter: https://www.gitwarsztaty.pl/#darmowe-materialy - wystarczy ponownie kliknąć 'Wyślij materiały', z zaznaczonym checkboxem z poradami.\n\n" +
                     "Miłego dnia!"
             }]
