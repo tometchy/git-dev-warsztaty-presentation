@@ -65,7 +65,7 @@ Temat ten szerzej opisuję w [poście dedykowanym branchom w Gicie]({{ site.url 
 w tym miejscu jednak chciałbym zwrócić uwagę, że skoro jest to kolejny sposób w jaki modyfikujemy nasze (i cudze) repozytorium,
 to również powinniśmy to robić schludnie. Bardzo łatwo poprzez zaniedbanie stworzyć historię trudną do inwestygowania, doprowadzić do tak
 zwanego _Git guitar hero_:
-obrazek git guitar hero
+![Screenshot from Gitk tool with commits history with many merges, which looks like guitar hero game](/assets/images/git-guitar-hero.jpg "Git guitar hero")
 
 ## Zrozumienie filozofii Gita a wpływ na codzienną pracę
 Dopóki się nie załapie zasady działania [zdecentralizowanego _VCS_]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna),
