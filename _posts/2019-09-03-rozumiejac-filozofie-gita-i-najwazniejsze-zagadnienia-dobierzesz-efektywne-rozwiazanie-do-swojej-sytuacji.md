@@ -31,10 +31,10 @@ I jest to różnica znacząca.
 
 ## Synchronizujemy repozytoria
 Dlaczego ma to takie znaczenie? Ponieważ do repo współdzielonego z innymi programistami,
-nie wysyłamy po prostu naszych zmian, pojedynczego _diffa_ plików. To co my robimy, to 
+nie wysyłamy po prostu naszych zmian, pojedynczego _diffa_ plików. To co robimy w Gicie, to 
 synchronizowanie między sobą dwóch niezależnych repozytoriów.
 
-Jeżeli podczas naszej pracy, gdy commitowaliśmy lokalnie, ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
+Jeżeli podczas naszej pracy (gdy commitowaliśmy lokalnie) ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
 współdzielonego repo, to nasza synchronizacja nie polega na zwykłym _wypchnięciu_ naszych commitów. Najpierw musimy
 ujednolicić stan naszego repozytorium, ze stanem ze zdalnego repozytorium.
 
@@ -79,5 +79,8 @@ przy debugowaniu, albo głowieniem dlaczego coś zostało zaimplementowane tak a
 - Po drugie, przy takim podejściu nie wykorzystuje się pełnego potencjału Gita, np. jako narzędzia [usprawniającego nam codzienną pracę](http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie)
 
 ## Podsumowanie
+Podsumowując: w Gicie nie ograniczamy się do commitowania zmian w kodzie.
+W Gicie jednocześnie (świadomie lub nieświadomie) administrujemy całym repozytorium.
+Powinniśmy dbać, aby zawsze przed synchronizowaniem naszego repo z innymi
 
 Jeżeli chcesz XXX
