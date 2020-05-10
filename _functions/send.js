@@ -44,7 +44,7 @@ exports.handler = function (event, context, callback) {
     }
 
     function informUs(propagateFailure) {
-        const informUsBody = {
+        var informUsBody = {
             personalizations: [{to: [{email: "kontakt@gitwarsztaty.pl"}]}],
             from: {email: eventBody.email},
             subject: "Nowy request o " + eventBody.requestPurpose + " od " + eventBody.email,
@@ -67,10 +67,12 @@ exports.handler = function (event, context, callback) {
             }]
         };
 
-        console.log("Sending inform us mail using sendgrid");
+        informUsBody = JSON.stringify(informUsBody);
+        console.log("Sending inform us mail using sendgrid: " + informUsBody);
+        
         fetch(SENDGRID_API_ENDPOINT, {
             method: 'post',
-            body: JSON.stringify(informUsBody),
+            body: informUsBody,
             headers: {
                 "Accept": "application/json",
                 'Content-Type': 'application/json',
@@ -94,7 +96,7 @@ exports.handler = function (event, context, callback) {
     }
     
     function sendMaterialsWithSendgrid(){
-        const sendMaterialsBody = {
+        var sendMaterialsBody = {
             personalizations: [{to: [{email: eventBody.email}]}],
             from: {email: "kontakt@gitwarsztaty.pl", name: "GitWarsztaty"},
             subject: "Darmowe materiały do pracy z Gitem!",
@@ -107,11 +109,13 @@ exports.handler = function (event, context, callback) {
                     "Miłego dnia!"
             }]
         };
-
-        console.log("Sending materials using sendgrid");
+        
+        sendMaterialsBody = JSON.stringify(sendMaterialsBody);
+        console.log("Sending materials using sendgrid: " + sendMaterialsBody);
+        
         fetch(SENDGRID_API_ENDPOINT, {
             method: 'post',
-            body: JSON.stringify(sendMaterialsBody),
+            body: sendMaterialsBody,
             headers: {"Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': ('Bearer ' + SENDGRID_API_KEY)}
         })
             .then(res => checkStatus(res, true))
