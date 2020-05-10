@@ -80,7 +80,7 @@ przy debugowaniu, albo głowieniem dlaczego coś zostało zaimplementowane tak a
 
 ## Podsumowanie
 Podsumowując: w Gicie nie ograniczamy się do commitowania zmian w kodzie.
-W Gicie jednocześnie (świadomie lub nieświadomie) administrujemy całym repozytorium.
-Powinniśmy dbać, aby zawsze przed synchronizowaniem naszego repo z innymi
+W Gicie jednocześnie (świadomie lub nieświadomie) administrujemy całym repozytorium, które regularnie synchronizujemy z innymi.
+Powinniśmy dbać, aby to co zobaczą inni, było schludne i czytelne, aby w przyszłości można było z łatwością do tego wrócić.
 
 Jeżeli chcesz XXX
