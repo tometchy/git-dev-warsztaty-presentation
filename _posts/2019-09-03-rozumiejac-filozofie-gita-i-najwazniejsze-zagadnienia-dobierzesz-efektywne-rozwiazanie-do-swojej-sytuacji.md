@@ -67,8 +67,6 @@ to również powinniśmy to robić schludnie. Bardzo łatwo poprzez zaniedbanie 
 zwanego _Git guitar hero_:
 obrazek git guitar hero
 
-## Łączymy rozgałęzienia
-
 ## Zrozumienie filozofii Gita a wpływ na codzienną pracę
 Dopóki się nie załapie zasady działania [zdecentralizowanego _VCS_]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna),
 naturalnym jest, że do repo próbuje się poprostu dosyłać nowe zmiany i nie myśli się o niczym więcej.
