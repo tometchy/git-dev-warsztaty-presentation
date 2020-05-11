@@ -137,7 +137,7 @@ exports.handler = function (event, context, callback) {
                 camefromurljekyll: eventBody.cameFromUrlJekyll,
                 camefromurl: eventBody.cameFromUrl,
                 camefromformlocation: eventBody.cameFromFormLocation,
-                requestPurpose: eventBody.requestPurpose,
+                requestpurpose: eventBody.requestPurpose,
                 tags: eventBody.tags
             }
         };
