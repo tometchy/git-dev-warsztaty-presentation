@@ -138,6 +138,8 @@ exports.handler = function (event, context, callback) {
                 camefromurl: eventBody.cameFromUrl,
                 camefromformlocation: eventBody.cameFromFormLocation,
                 requestpurpose: eventBody.requestPurpose,
+                agreegitwarsztatyinbox: eventBody.agreeGitWarsztatyInbox,
+                agreegitinbox: eventBody.agreeGitInbox,
                 tags: eventBody.tags
             }
         };
