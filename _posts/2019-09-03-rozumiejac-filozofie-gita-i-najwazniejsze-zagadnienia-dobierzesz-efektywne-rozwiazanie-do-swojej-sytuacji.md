@@ -30,8 +30,8 @@ Commitujemy do naszego własnego repo, znajdującego się na naszym prywatnym ko
 I jest to różnica znacząca.
 
 ## Synchronizujemy repozytoria
-Dlaczego ma to takie znaczenie? Ponieważ do repo współdzielonego z innymi programistami,
-nie wysyłamy po prostu naszych zmian, pojedynczego _diffa_ plików. To co robimy w Gicie, to 
+Dlaczego ma to takie znaczenie? Ponieważ w Gicie gdy udostępniamy innym programistom nasze zmiany, to
+nie wysyłamy pojedynczego _diffa_ plików. To co robimy w Gicie, to 
 synchronizowanie między sobą dwóch niezależnych repozytoriów.
 
 Jeżeli podczas naszej pracy (gdy commitowaliśmy lokalnie) ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
