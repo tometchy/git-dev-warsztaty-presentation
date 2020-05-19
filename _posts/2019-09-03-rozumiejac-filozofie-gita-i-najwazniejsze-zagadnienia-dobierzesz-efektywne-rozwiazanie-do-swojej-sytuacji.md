@@ -26,7 +26,7 @@ dokonuję zmiany w kodzie i zapisuję ją we wspólnym dla wszystkich repozytori
 
 W Gicie i każdym innym [zdecentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna),
 oczywiście zapisujemy zmiany kodu (_commity_) w repozytorium, ale nie wspóldzielonym.
-Commitujemy do naszego własnego repo znajdującego się na naszym prywatnym komputerze.
+Commitujemy do naszego własnego repo, znajdującego się na naszym prywatnym komputerze.
 I jest to różnica znacząca.
 
 ## Synchronizujemy repozytoria
