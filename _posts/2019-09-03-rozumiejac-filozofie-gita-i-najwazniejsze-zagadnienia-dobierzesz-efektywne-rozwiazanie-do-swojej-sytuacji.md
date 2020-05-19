@@ -51,10 +51,11 @@ programistom. Jest to moment, w uproszczeniu mówiąc, nieodwracalny, to co wys�
 
 W [zdecentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna) moment
 wysłania zmian w kodzie do repo odbywa się w trakcie naszej pracy, a momentem finalnym jest (mówiąc w uproszczeniu) synchronizowanie
-swojego repozytorium z innymi.
+swojego repozytorium ze zdalnym repozytorium (jednym lub więcej).
 Wcześniej wielokrotnie wysyłaliśmy zmiany do repo ([tworzyliśmy commity]({{ site.url }}/blog/opanowanie-podstawowych-komend-gita-jest-fundamentem-codziennej-pracy)),
 na bieżąco dbając o czystość naszego repozytorium, czyli mówiąc konkretniej,
 [poprawiając historię commitów, którą tworzymy]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
+A jeżeli w trakcie pracy zostawiliśmy coś do _posprzątania później_, to przed opublikowaniem to robimy.
 
 Synchronizujemy swoją historię commitów z innymi dopiero gdy kod który dopisaliśmy jest schludny i nasz _wkład w repo projektu_ - tak samo. 
 
