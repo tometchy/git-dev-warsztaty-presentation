@@ -35,7 +35,7 @@ nie wysyłamy pojedynczego _diffa_ plików. To co robimy w Gicie, to
 synchronizowanie między sobą dwóch niezależnych repozytoriów.
 
 Jeżeli podczas naszej pracy (gdy commitowaliśmy lokalnie) ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
-współdzielonego repo, to nasza synchronizacja nie polega na zwykłym _wypchnięciu_ naszych commitów. Najpierw musimy
+Gitowego repo współdzielonego przez wszystkich, to nasza synchronizacja nie polega na zwykłym _wypchnięciu_ naszych commitów. Najpierw musimy
 ujednolicić stan naszego repozytorium, ze stanem ze zdalnego repozytorium.
 
 ## Dbamy nie tylko o schludny kod, ale również o schludne repozytorium
