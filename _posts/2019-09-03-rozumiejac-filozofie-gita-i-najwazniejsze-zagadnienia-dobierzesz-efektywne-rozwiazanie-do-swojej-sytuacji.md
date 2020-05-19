@@ -55,7 +55,7 @@ swojego repozytorium ze zdalnym repozytorium (jednym lub więcej).
 Wcześniej wielokrotnie wysyłaliśmy zmiany do repo ([tworzyliśmy commity]({{ site.url }}/blog/opanowanie-podstawowych-komend-gita-jest-fundamentem-codziennej-pracy)),
 na bieżąco dbając o czystość naszego repozytorium, czyli mówiąc konkretniej,
 [poprawiając historię commitów, którą tworzymy]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
-A jeżeli w trakcie pracy zostawiliśmy coś do _posprzątania później_, to przed opublikowaniem to robimy - synchronizujemy swoją historię commitów z innymi dopiero gdy kod który dopisaliśmy jest schludny i nasz _wkład w repo projektu_ - tak samo. 
+A jeżeli w trakcie pracy zostawiliśmy coś do _posprzątania później_, to przed opublikowaniem to robimy - synchronizujemy swoją historię commitów z innymi dopiero, gdy kod który dopisaliśmy jest schludny i nasz _wkład w repo projektu_ - tak samo. 
 
 ## Rozgałęziamy się
 W Gicie  każdego dnia (wielokrotnie) korzystamy z możliwości rozgałęziania historii commitów - [tworzenia tak zwanych branchy]({{ site.url }}/blog/branche-w-gicie-usprawnienie-wspolpracy-nawet-z-samym-soba).
