@@ -57,7 +57,9 @@ na bieżąco dbając o czystość naszego repozytorium, czyli mówiąc konkretni
 [poprawiając historię commitów, którą tworzymy]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
 A jeżeli w trakcie pracy zostawiliśmy coś do _posprzątania później_, to przed opublikowaniem to robimy - synchronizujemy swoją historię commitów z innymi dopiero, gdy kod który dopisaliśmy jest schludny i nasz _wkład w repo projektu_ - tak samo. 
 
-## Rozgałęziamy się
+TODOTODOTODOW celu xxx głównie służą polecenia reset i rebase interactive [opisane w innym poście]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
+
+## Rozgałęziamy się - _branche_
 W Gicie  każdego dnia (wielokrotnie) korzystamy z możliwości rozgałęziania historii commitów, czyli [tworzenia tak zwanych branchy]({{ site.url }}/blog/branche-w-gicie-usprawnienie-wspolpracy-nawet-z-samym-soba).
 Dzięki temu możemy nie tylko dobudowywać nasze (i cudze) repozytorium o nowe commity. Możemy to robić różnymi _ścieżkami_.
 Temat ten szerzej opisuję w [poście dedykowanym branchom w Gicie]({{ site.url }}/blog/branche-w-gicie-usprawnienie-wspolpracy-nawet-z-samym-soba),
@@ -65,6 +67,9 @@ w tym miejscu jednak chciałbym zwrócić uwagę, że skoro jest to kolejny spos
 to również powinniśmy to robić schludnie. Bardzo łatwo poprzez zaniedbanie stworzyć historię trudną do przyszłych inwestygacji - doprowadzić do tak
 zwanego _Git guitar hero_:
 ![Screenshot from Gitk tool with commits history with many merges, which looks like guitar hero game](/assets/images/git-guitar-hero-small.jpg "Git guitar hero")
+
+## Przerzucanie commitów - _cherry-pick_
+TODOTODOTODO
 
 ## Zrozumienie filozofii Gita a wpływ na codzienną pracę
 Przed oswojeniem się z zasadą działania [zdecentralizowanego _VCS_]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna),
@@ -81,5 +86,5 @@ przy _debugowaniu_ jakiegoś problemu, albo głowieniem dlaczego coś zostało z
 Podsumowując: w Gicie nie ograniczamy się do commitowania zmian w kodzie.
 W Gicie jednocześnie (świadomie lub nieświadomie) administrujemy całym repozytorium, które regularnie synchronizujemy z innymi.
 Powinniśmy dbać, aby to co zobaczą inni, było schludne i czytelne, aby w przyszłości można było z łatwością do tego wrócić.
-
+TODOTODOTODO
 Jeżeli chcesz XXX
