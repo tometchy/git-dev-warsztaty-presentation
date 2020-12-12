@@ -79,11 +79,11 @@ do niego zachęca, oferując _jeden magiczny przycisk_, który wystarczy klikną
 Niestety ta niewiedza ma swoją cenę:
 - Po pierwsze, niemal zawsze przy takim podejściu tworzy się bałagan w historii, co w przyszłości odbija się np. trudniejszym inwestygowaniem
 przy _debugowaniu_ jakiegoś problemu, albo głowieniem dlaczego coś zostało zaimplementowane tak, a nie inaczej.
-- Po drugie, przy takim podejściu nie wykorzystuje się pełnego potencjału Gita, np. jako narzędzia [usprawniającego nam codzienną pracę](http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie).
+- Po drugie, przy takim podejściu nie wykorzystuje się pełnego potencjału Gita, np. jako narzędzia [usprawniającego nam codzienną pracę]({{ site.url }}/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie).
 
 ## Podsumowanie
 Podsumowując: w Gicie nie ograniczamy się do commitowania zmian w kodzie.
 W Gicie jednocześnie (świadomie lub nieświadomie) administrujemy całym repozytorium, które regularnie synchronizujemy z innymi.
 Powinniśmy dbać, aby to co zobaczą inni, było schludne i czytelne, aby w przyszłości można było z łatwością do tego wrócić.
 
-Jeżeli masz pytania nie wahaj się zadać je w komentarzu lub napisać do mnie na maila. Oczywiście zachęcam również do [naszych szkoleń z Gita](), na których ćwiczymy obsługę Gita na różnym poziomie zaawansowania, zarówno dla programistów ale również np. dla wdrożeniowców czy testerów :)
+Jeżeli masz pytania nie wahaj się zadać je w komentarzu lub napisać do mnie maila. Oczywiście zachęcam również do [naszych szkoleń z Gita]({{ site.url }}/#o-warsztatach), na których ćwiczymy obsługę Gita na różnym poziomie zaawansowania, zarówno dla programistów, ale również np. dla wdrożeniowców czy testerów :)
