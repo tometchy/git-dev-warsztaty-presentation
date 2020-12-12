@@ -36,7 +36,7 @@ synchronizowanie między sobą dwóch niezależnych repozytoriów.
 
 Bardzo często jest tak, że podczas naszej pracy, gdy commitowaliśmy lokalnie, ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
 Gitowego repo współdzielonego przez wszystkich. Wówczas nasza synchronizacja nie polega na zwykłym _wypchnięciu_ naszych commitów - najpierw musimy
-ujednolicić stan naszego repozytorium, ze stanem ze zdalnego repozytorium.
+ujednolicić stan naszego repozytorium, ze stanem ze zdalnego repozytorium, żeby wypychane commity _pasowały_, a repozytoria pozostały spójne.
 
 ## Dbamy nie tylko o schludny kod, ale również o schludne repozytorium
 Co więcej, nasza praca jako programistów, nie musi, a nawet nie powinna, ograniczać się tylko do zatwierdzania zmian w kodzie.
