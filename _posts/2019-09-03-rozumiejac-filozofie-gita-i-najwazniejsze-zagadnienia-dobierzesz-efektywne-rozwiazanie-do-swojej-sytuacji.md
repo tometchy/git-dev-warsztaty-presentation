@@ -59,7 +59,7 @@ na bieżąco dbając o czystość naszego repozytorium, czyli mówiąc konkretni
 [poprawiając historię commitów, którą tworzymy]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
 A jeżeli w trakcie pracy zostawiliśmy coś do _posprzątania później_, to przed opublikowaniem to robimy - synchronizujemy swoją historię commitów z innymi dopiero, gdy kod który dopisaliśmy jest schludny i nasz _wkład w repo projektu_ - tak samo. 
 
-Do dbania o schludność repozytorium służy wiele poleceń i dobrych praktyk, głównie polecenia reset i rebase interactive [opisane w innym poście]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow), ale również wiele inncyh, np. [cherry-pick]({{ site.url }}/blog/cherry-pick-rozwiaz-problem-podkradajac-kod-z-innego-brancha).
+Do dbania o schludność repozytorium służy wiele poleceń i dobrych praktyk, głównie polecenia reset i rebase interactive [opisane w innym poście]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
 
 ## Rozgałęziamy się - _branche_
 W Gicie  każdego dnia (wielokrotnie) korzystamy z możliwości rozgałęziania historii commitów, czyli [tworzenia tak zwanych branchy]({{ site.url }}/blog/branche-w-gicie-usprawnienie-wspolpracy-nawet-z-samym-soba).
@@ -70,8 +70,7 @@ to również powinniśmy to robić schludnie. Bardzo łatwo poprzez zaniedbanie 
 zwanego _Git guitar hero_:
 ![Screenshot from Gitk tool with commits history with many merges, which looks like guitar hero game](/assets/images/git-guitar-hero-small.jpg "Git guitar hero")
 
-## Przerzucanie commitów - _cherry-pick_
-TODOTODOTODO
+Z tematyką branchy wiąże się wiele poleceń i rozwiązań, np. [cherry-pick do 'podkradania' commita/commitów z innego brancha]({{ site.url }}/blog/cherry-pick-rozwiaz-problem-podkradajac-kod-z-innego-brancha), wiele z nich.
 
 ## Zrozumienie filozofii Gita a wpływ na codzienną pracę
 Przed oswojeniem się z zasadą działania [zdecentralizowanego _VCS_]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna),
