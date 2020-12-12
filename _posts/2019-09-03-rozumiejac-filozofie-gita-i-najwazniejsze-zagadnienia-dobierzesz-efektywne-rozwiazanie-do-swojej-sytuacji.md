@@ -29,8 +29,6 @@ oczywiście zapisujemy zmiany kodu (_commity_) w repozytorium, ale nie wspóldzi
 Commitujemy do naszego własnego repo, znajdującego się na naszym prywatnym komputerze.
 I jest to różnica znacząca.
 
-TODO: Nie wiem czy w tej sekcji, ale dodać obrazek z sejfami obrazujący. Obrazek dopiero powstaje zapisałem go w DRIVE w KP w katalogu filozofia-gita. Dodać tam też watermarka może do tometchy.com, taki jak ten który mam na jednym zdjęciu profilowe-biznesowe, czyli te "logo" moje.
-
 ## Synchronizujemy repozytoria
 Dlaczego ma to takie znaczenie? Ponieważ w Gicie gdy udostępniamy innym programistom nasze zmiany, to
 nie wysyłamy pojedynczego _diffa_ plików. To co robimy w Gicie, to 
