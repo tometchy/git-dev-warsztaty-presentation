@@ -78,7 +78,7 @@ do niego zachęca, oferując _jeden magiczny przycisk_, który wystarczy klikną
 
 Niestety ta niewiedza ma swoją cenę:
 - Po pierwsze, niemal zawsze przy takim podejściu tworzy się bałagan w historii, co w przyszłości odbija się np. trudniejszym inwestygowaniem
-przy _debugowaniu_ jakiegoś problemu, albo głowieniem dlaczego coś zostało zaimplementowane tak a nie inaczej.
+przy _debugowaniu_ jakiegoś problemu, albo głowieniem dlaczego coś zostało zaimplementowane tak, a nie inaczej.
 - Po drugie, przy takim podejściu nie wykorzystuje się pełnego potencjału Gita, np. jako narzędzia [usprawniającego nam codzienną pracę](http://localhost:4000/blog/sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie).
 
 ## Podsumowanie
