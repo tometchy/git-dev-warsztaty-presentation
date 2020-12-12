@@ -73,7 +73,7 @@ Z tematyką branchy wiąże się wiele poleceń i rozwiązań, np. [cherry-pick 
 ## Zrozumienie filozofii Gita a wpływ na codzienną pracę
 Przed oswojeniem się z zasadą działania [zdecentralizowanego _VCS_]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna),
 naturalnym jest, że do repo próbuje się poprostu dosyłać nowe zmiany i nie myśli się o niczym więcej.
-Oczywiście takie podejście do pracy jest możliwe. [Wiele tooli]({{ site.url }}/blog/naucz-sie-gita-z-konsoli-a-poradzisz-sobie-z-dowolnym-toolem-chociaz-i-tak-pozostaniesz-przy-konsoli)
+Oczywiście takie podejście do pracy jest możliwe, a nawet [wiele tooli]({{ site.url }}/blog/naucz-sie-gita-z-konsoli-a-poradzisz-sobie-z-dowolnym-toolem-chociaz-i-tak-pozostaniesz-przy-konsoli)
 do niego zachęca, oferując _jeden magiczny przycisk_, który wystarczy kliknąć i efekt pracy po prostu jest udostępniany innym - _jakoś_.
 
 Niestety ta niewiedza ma swoją cenę:
