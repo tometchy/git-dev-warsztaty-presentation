@@ -70,7 +70,7 @@ to również powinniśmy to robić schludnie. Bardzo łatwo poprzez zaniedbanie 
 zwanego _Git guitar hero_:
 ![Screenshot from Gitk tool with commits history with many merges, which looks like guitar hero game](/assets/images/git-guitar-hero-small.jpg "Git guitar hero")
 
-Z tematyką branchy wiąże się wiele poleceń i rozwiązań, np. [cherry-pick do 'podkradania' commita/commitów z innego brancha]({{ site.url }}/blog/cherry-pick-rozwiaz-problem-podkradajac-kod-z-innego-brancha), wiele z nich.
+Z tematyką branchy wiąże się wiele poleceń i rozwiązań, np. [cherry-pick do 'podkradania' commita/commitów z innego brancha]({{ site.url }}/blog/cherry-pick-rozwiaz-problem-podkradajac-kod-z-innego-brancha), czy wspomniane wcześniej _rebase_ lub _merge_.
 
 ## Zrozumienie filozofii Gita a wpływ na codzienną pracę
 Przed oswojeniem się z zasadą działania [zdecentralizowanego _VCS_]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna),
