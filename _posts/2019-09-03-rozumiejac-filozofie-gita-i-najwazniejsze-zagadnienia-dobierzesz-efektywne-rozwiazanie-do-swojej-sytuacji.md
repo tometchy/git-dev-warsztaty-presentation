@@ -57,7 +57,7 @@ na bieżąco dbając o czystość naszego repozytorium, czyli mówiąc konkretni
 [poprawiając historię commitów, którą tworzymy]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
 A jeżeli w trakcie pracy zostawiliśmy coś do _posprzątania później_, to przed opublikowaniem - sprzątamy. Synchronizujemy swoją historię commitów z innymi dopiero gdy kod, który dopisaliśmy jest schludny i nasz _wkład w repo projektu_ - tak samo. 
 
-Do dbania o schludność repozytorium służy wiele poleceń i dobrych praktyk, głównie polecenia reset i rebase interactive [opisane w innym poście]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
+Do dbania o schludność repozytorium służy wiele poleceń i dobrych praktyk nie będących tematem tego artykułu, ale warto odnotować, że kluczowe polecenia w tym temacie to [_reset_ i _rebase interactive_, opisane w innym poście]({{ site.url }}/blog/popraw-czytelnosc-swojej-pracy-ulepszajac-historie-commitow).
 
 ## Rozgałęziamy się - _branche_
 W Gicie  każdego dnia (wielokrotnie) korzystamy z możliwości rozgałęziania historii commitów, czyli [tworzenia tak zwanych branchy]({{ site.url }}/blog/branche-w-gicie-usprawnienie-wspolpracy-nawet-z-samym-soba).
