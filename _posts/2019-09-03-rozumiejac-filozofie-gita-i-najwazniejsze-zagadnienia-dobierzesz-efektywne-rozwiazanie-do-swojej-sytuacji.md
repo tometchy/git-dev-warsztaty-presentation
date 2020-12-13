@@ -14,7 +14,7 @@ advantages-list-title: Filozofia<br class="co-zyskasz-line-break"> Gita
 advantages-list-cover: img/filozofia-gita.jpg
 ---
 
-Znajomość filozofii Gita i podstawowych zagadnień jest kluczowa do optymalnej pracy.
+Znajomość filozofii Gita i podstawowych zagadnień jest bardzo ważna do optymalnej pracy.
 
 Git to system kontroli wersji (_ang. version control system - VCS_), to oczywiste.
 Niestety sposób, w jaki w nim pracujemy, już taki oczywisty nie jest.
