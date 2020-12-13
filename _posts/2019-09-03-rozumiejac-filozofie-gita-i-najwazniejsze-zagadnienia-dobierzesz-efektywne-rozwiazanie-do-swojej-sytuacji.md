@@ -42,7 +42,7 @@ ujednolicić stan naszego repozytorium, ze stanem ze zdalnego repozytorium, żeb
 Co więcej, nasza praca jako programistów, nie musi, a nawet nie powinna, ograniczać się tylko do zatwierdzania zmian w kodzie.
 Oprócz dbania o czysty kod, powinniśmy dbać również o czyste repozytorium.
 Zanim zsynchronizujemy swoje repozytrium z innymi, powinniśmy zadbać o to, że to co udostępniamy jest schludne i czytelne.
-Historia commitów powinna umożliwić osobom trzecim zrozumienie kontekstu naszej pracy i powodów powstania poszczególnych zmian.
+Historia commitów powinna umożliwić osobom trzecim (i nam samym w przyszłości) zrozumienie kontekstu naszej pracy i powodów powstania poszczególnych zmian.
 Rzut oka na tytuły commitów powinien dać obraz pracy, która była wykonywana.
 
 W [scentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna) moment
