@@ -34,7 +34,7 @@ Dlaczego ma to takie znaczenie? Ponieważ w Gicie gdy udostępniamy innym progra
 nie wysyłamy pojedynczego _diffa_ plików. To co robimy w Gicie, to 
 synchronizowanie między sobą dwóch niezależnych repozytoriów.
 
-Bardzo często jest tak, że podczas naszej pracy, gdy commitowaliśmy lokalnie, ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
+Zazwycaj jest tak, że podczas naszej pracy, gdy commitowaliśmy lokalnie, ktoś inny również commitował i zdążył już swoje commity _wypchnąć_ do
 Gitowego repo współdzielonego przez wszystkich. Wówczas nasza synchronizacja nie polega na zwykłym _wypchnięciu_ naszych commitów - najpierw musimy
 ujednolicić stan naszego repozytorium, ze stanem ze zdalnego repozytorium, żeby wypychane commity _pasowały_, a repozytoria pozostały spójne.
 
