@@ -25,7 +25,7 @@ o _VCS_ myśli w sposób [scentralizowany]({{ site.url }}/blog/dvcs-vs-cvcs-o-co
 dokonuję zmiany w kodzie i zapisuję ją we wspólnym dla wszystkich repozytorium kodu.
 
 W Gicie i każdym innym [zdecentralizowanym systemie kontroli wersji]({{ site.url }}/blog/dvcs-vs-cvcs-o-co-ta-wojna)
-oczywiście zapisujemy zmiany kodu (_commity_) w repozytorium, ale nie wspóldzielonym.
+oczywiście zapisujemy zmiany kodu (_commity_) w repozytorium, ale nie współdzielonym.
 Commitujemy do naszego własnego repo, znajdującego się na naszym prywatnym komputerze.
 I jest to różnica znacząca.
 
