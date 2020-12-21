@@ -3,7 +3,7 @@ layout: post
 current: post
 navigation: True
 cover:  assets/images/workflow.jpg
-title: Dobrze dobrane workflow decyduje o wydajności i zadowoleniu całego zespołu
+title: Dobrze dobrane flow w Gicie decyduje o wydajności i zadowoleniu całego zespołu
 date: 2019-09-11 06:00:00
 modified_date: 2019-09-11 06:00:00
 tags: wprowadzenie
