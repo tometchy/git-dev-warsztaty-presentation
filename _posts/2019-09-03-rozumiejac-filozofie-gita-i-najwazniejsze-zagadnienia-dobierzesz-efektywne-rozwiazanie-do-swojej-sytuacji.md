@@ -84,6 +84,6 @@ przy _debugowaniu_ jakiegoś problemu, albo głowieniem, dlaczego coś zostało 
 ## Podsumowanie
 Podsumowując: w Gicie nie ograniczamy się do commitowania zmian w kodzie.
 W Gicie jednocześnie (świadomie lub nieświadomie) administrujemy całym repozytorium, które regularnie synchronizujemy z innymi.
-Powinniśmy dbać, aby to, co zobaczą inni, było schludne i czytelne, aby w przyszłości można było z łatwością do tego wrócić.
+Powinniśmy dbać o to, aby to, co zobaczą inni, było schludne i czytelne, aby w przyszłości można było z łatwością do tego wrócić.
 
 Jeżeli masz pytania, nie wahaj się zadać je w komentarzu lub napisać do mnie maila. Oczywiście zachęcam również do [naszych szkoleń z Gita (i nie tylko Gita)]({{ site.url }}/#o-warsztatach), na których w fajnej atmosferze ćwiczymy na różnym poziomie zaawansowania, zarówno dla programistów, ale również np. dla wdrożeniowców czy testerów :)
