@@ -1,0 +1,103 @@
+<script>
+    Vue.component('modal', {
+        template: '#modal-template'
+    });
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            inCompany: true,
+            agreeGitInbox: true,
+            agreeGitWarsztatyInbox: true,
+            requestPurpose: "",
+            cameFromFormLocation: "",
+            email: "",
+            phoneNumber: "",
+            companyName: "",
+            officeAddress: "",
+            who: "",
+            whichCity: "",
+            additionalInfo: "",
+            showModal: false,
+            modalSuccess: true,
+            modalHeader: "Trwa wysyłanie...",
+            modalBody: "Proszę czekać..."
+        },
+        methods:{
+            requestMaterials: function (e) {
+                const self = this;
+                self.requestPurpose = "materialy";
+                self.cameFromFormLocation = "materialy";
+                self.modalSuccess = true;
+                self.modalHeader = "Trwa wysyłanie...";
+                self.modalBody = "Proszę czekać...";
+                self.showModal = true;
+                const materialsSentHeader = "Wysłano materiały";
+                const materialsSentBody = "Jeżeli materiały nie dotrą w najbliższym czasie, sprawdź folder SPAM lub skontaktuj się z nami bezpośrednio.<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+                const materialsSendingFailureHeader = "Ups, coś poszło nie tak";
+                const materialsSendingFailureBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo.<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+
+                send(self, materialsSentHeader, materialsSentBody, materialsSendingFailureHeader, materialsSendingFailureBody);
+
+                e.preventDefault();
+            },
+            requestContact: function(e) {
+                const self = this;
+                self.requestPurpose = "kontakt";
+                self.cameFromFormLocation = "kontakt";
+                self.modalSuccess = true;
+                self.modalHeader = "Trwa wysyłanie...";
+                self.modalBody = "Proszę czekać...";
+                self.showModal = true;
+                const requestSentHeader = "Wysłono pomyślnie";
+                const requestSentBody = "Skontaktujemy się niezwłocznie. W razie problemów, skontaktuj się proszę z nami bezpośrednio. <br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+                const requestSendingFailureHeader = "Ups, coś poszło nie tak";
+                const requestSendingFailureBody = "Prosimy, skontaktuj się z nami telefonicznie lub mailowo.<br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
+
+                send(self, requestSentHeader, requestSentBody, requestSendingFailureHeader, requestSendingFailureBody);
+                e.preventDefault();
+            }
+        }
+    })
+    
+    function send(app, requestSentHeader, requestSentBody, requestSendingFailureHeader, requestSendingFailureBody)
+    {
+        try {
+            var requestDetailsJson = "{ " +
+                '"email": "' + app.email + '",' +
+                '"requestPurpose": "' + app.requestPurpose + '",' +
+                '"cameFromUrl": "' + window.location.href + '",' +
+                '"cameFromUrlJekyll": "' + "{{ page.url }}" + '",' +
+                '"cameFromFormLocation": "' + app.cameFromFormLocation + '",' +
+                '"agreeGitInbox": "' + app.agreeGitInbox + '",' +
+                '"agreeGitWarsztatyInbox": "' + app.agreeGitWarsztatyInbox + '",' +
+                '"time": "' + new Date().toString() + '",' +
+                '"inCompany": "' + app.inCompany + '",' +
+                '"phoneNumber": "' + window.btoa(unescape(encodeURIComponent(app.phoneNumber))) + '",' +
+                '"companyName": "' + window.btoa(unescape(encodeURIComponent(app.companyName))) + '",' +
+                '"officeAddress": "' + window.btoa(unescape(encodeURIComponent(app.officeAddress))) + '",' +
+                '"who": "' + window.btoa(unescape(encodeURIComponent(app.who))) + '",' +
+                '"whichCity": "' + window.btoa(unescape(encodeURIComponent(app.whichCity))) + '",' +
+                '"additionalInfo": "' + window.btoa(unescape(encodeURIComponent(app.additionalInfo))) + '"}';
+
+            $.post('{{ site.url }}/.netlify/functions/send', requestDetailsJson, function(result) {
+                console.debug("Request submit successed, result: " + JSON.stringify(result));
+                app.modalSuccess = true;
+                app.modalHeader = requestSentHeader;
+                app.modalBody = requestSentBody;
+            })
+                .fail(function(response) {
+                    console.error("Request submit failed, response: " + JSON.stringify(response));
+                    app.modalSuccess = false;
+                    app.modalHeader = requestSendingFailureHeader;
+                    app.modalBody = requestSendingFailureBody;
+                });
+        }
+        catch (e) {
+            console.error(e);
+            app.modalSuccess = false;
+            app.modalHeader = requestSendingFailureHeader;
+            app.modalBody = requestSendingFailureBody;
+        }
+    }
+</script>
