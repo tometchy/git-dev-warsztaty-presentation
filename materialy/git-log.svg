@@ -138,9 +138,9 @@
      showgrid="false"
      inkscape:current-layer="g269"
      inkscape:document-units="mm"
-     inkscape:cy="883.66977"
-     inkscape:cx="391.03076"
-     inkscape:zoom="2.4959333"
+     inkscape:cy="-161.00284"
+     inkscape:cx="159.7852"
+     inkscape:zoom="1.28"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -155,7 +155,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -208,11 +208,11 @@
              id="g285">
             <text
                y="-662.73132"
-               x="456.39337"
-               transform="scale(0.87643692,-1.1409834)"
+               x="448.95325"
+               transform="scale(0.87643694,-1.1409834)"
                style="font-variant:normal;font-weight:bold;font-size:28.5246px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                id="text289"><tspan
-                 x="456.39337 473.50812 490.70847 507.82321 525.0235 542.13824 559.33862"
+                 x="448.95325 466.06799 483.26834 500.38309 517.58356 534.6983 551.89868"
                  y="-662.73132"
                  sodipodi:role="line"
                  id="tspan287">git log</tspan></text>
