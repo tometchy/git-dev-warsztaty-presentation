@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -11,143 +9,144 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
-   version="1.1"
+   sodipodi:docname="git-log.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="git-log.svg">
+   version="1.1"
+   viewBox="0 0 210 297"
+   height="297mm"
+   width="210mm">
   <defs
      id="defs2">
     <linearGradient
-       id="linearGradient6852"
-       osb:paint="solid">
+       osb:paint="solid"
+       id="linearGradient6852">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         id="stop6850"
          offset="0"
-         id="stop6850" />
+         style="stop-color:#000000;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
-       id="linearGradient6830"
-       osb:paint="solid">
+       osb:paint="solid"
+       id="linearGradient6830">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         id="stop6828"
          offset="0"
-         id="stop6828" />
+         style="stop-color:#000000;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
-       id="linearGradient6822"
-       osb:paint="solid">
+       osb:paint="solid"
+       id="linearGradient6822">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         id="stop6820"
          offset="0"
-         id="stop6820" />
+         style="stop-color:#000000;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
-       id="linearGradient6758"
-       osb:paint="solid">
+       osb:paint="solid"
+       id="linearGradient6758">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         id="stop6756"
          offset="0"
-         id="stop6756" />
+         style="stop-color:#000000;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
-       id="linearGradient5302"
-       osb:paint="solid">
+       osb:paint="solid"
+       id="linearGradient5302">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         id="stop5300"
          offset="0"
-         id="stop5300" />
+         style="stop-color:#000000;stop-opacity:1;" />
     </linearGradient>
     <clipPath
-       id="clipPath277"
-       clipPathUnits="userSpaceOnUse">
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath277">
       <path
-         style="clip-rule:evenodd"
-         inkscape:connector-curvature="0"
+         d="M 0,0 H 595.2 V 841.8 H 0 Z"
          id="path275"
-         d="M 0,0 H 595.2 V 841.8 H 0 Z" />
+         inkscape:connector-curvature="0"
+         style="clip-rule:evenodd" />
     </clipPath>
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6822"
+       gradientTransform="matrix(1.2834731,0,0,1.5265611,258.46889,-38.31198)"
+       gradientUnits="userSpaceOnUse"
+       y2="-42.877544"
+       x2="182.24284"
+       y1="-42.877544"
+       x1="144.36974"
        id="linearGradient6832"
-       x1="144.36974"
-       y1="-42.877544"
-       x2="182.24284"
-       y2="-42.877544"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834731,0,0,1.5265611,258.46889,-63.81198)" />
+       xlink:href="#linearGradient6822"
+       inkscape:collect="always" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6852"
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,290.41665,-38.90521)"
+       gradientUnits="userSpaceOnUse"
+       y2="-42.877544"
+       x2="182.24284"
+       y1="-42.877544"
+       x1="144.36974"
        id="linearGradient6832-3"
-       x1="144.36974"
-       y1="-42.877544"
-       x2="182.24284"
-       y2="-42.877544"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834732,0,0,1.5265611,290.41665,-64.40521)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient6852"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,290.59121,-38.98694)"
+       gradientUnits="userSpaceOnUse"
+       y2="-42.877544"
+       x2="182.24284"
+       y1="-42.877544"
+       x1="144.36974"
        id="linearGradient6832-3-5"
-       x1="144.36974"
-       y1="-42.877544"
-       x2="182.24284"
-       y2="-42.877544"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834732,0,0,1.5265611,290.59121,-64.48694)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient6852"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,291.67299,48.175134)"
+       gradientUnits="userSpaceOnUse"
+       y2="-42.877544"
+       x2="182.24284"
+       y1="-42.877544"
+       x1="144.36974"
        id="linearGradient6832-3-5-1"
-       x1="144.36974"
-       y1="-42.877544"
-       x2="182.24284"
-       y2="-42.877544"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834732,0,0,1.5265611,291.67299,22.675134)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient6852"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="matrix(1.2834731,0,0,1.5265611,259.55067,48.850098)"
+       gradientUnits="userSpaceOnUse"
+       y2="-42.877544"
+       x2="182.24284"
+       y1="-42.877544"
+       x1="144.36974"
        id="linearGradient6832-7"
-       x1="144.36974"
-       y1="-42.877544"
-       x2="182.24284"
-       y2="-42.877544"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834731,0,0,1.5265611,259.55067,23.350098)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient6852"
-       id="linearGradient6832-3-2"
-       x1="144.36974"
-       y1="-42.877544"
-       x2="182.24284"
-       y2="-42.877544"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="matrix(1.2834732,0,0,1.5265611,291.49844,48.256866)"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.2834732,0,0,1.5265611,291.49844,22.756866)" />
+       y2="-42.877544"
+       x2="182.24284"
+       y1="-42.877544"
+       x1="144.36974"
+       id="linearGradient6832-3-2"
+       xlink:href="#linearGradient6852"
+       inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.87"
-     inkscape:cx="372.04724"
-     inkscape:cy="586.52578"
-     inkscape:document-units="mm"
-     inkscape:current-layer="g269"
+     inkscape:document-rotation="0"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="92"
+     inkscape:window-height="1471"
+     inkscape:window-width="2303"
      showgrid="false"
-     inkscape:window-width="1858"
-     inkscape:window-height="1057"
-     inkscape:window-x="54"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:current-layer="g269"
+     inkscape:document-units="mm"
+     inkscape:cy="883.66977"
+     inkscape:cx="391.03076"
+     inkscape:zoom="2.4959333"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -156,1205 +155,1125 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     id="layer1"
      inkscape:groupmode="layer"
-     id="layer1">
+     inkscape:label="Layer 1">
     <g
-       transform="matrix(0.35277777,0,0,-0.35277777,-22.331251,273.63944)"
+       id="g269"
        inkscape:label="Popularne przełączniki do git log"
-       id="g269">
+       transform="matrix(0.35277777,0,0,-0.35277777,-22.331251,273.63944)">
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 569.86814,107.59635 0,18.63041"
+         inkscape:connector-curvature="0"
          id="path7338"
-         inkscape:connector-curvature="0" />
+         d="m 569.86814,82.09635 v 18.63041"
+         style="fill:none;stroke:#000000;stroke-width:0.695766px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 590.63597,145.25141 569.86814,126.22676"
+         inkscape:connector-curvature="0"
          id="path7340"
-         inkscape:connector-curvature="0" />
+         d="M 590.63597,119.75141 569.86814,100.72676"
+         style="fill:none;stroke:#000000;stroke-width:0.695766px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 549.00056,144.87769 20.86758,-18.65093"
+         inkscape:connector-curvature="0"
          id="path7342"
-         inkscape:connector-curvature="0" />
+         d="m 549.00056,119.37769 20.86758,-18.65093"
+         style="fill:none;stroke:#000000;stroke-width:0.695766px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <g
-         id="g271"
-         transform="matrix(1.1842607,0,0,1.0127174,-4.5552143,-40.543453)">
+         transform="matrix(1.1842607,0,0,1.0127174,-4.5552143,-40.543453)"
+         id="g271">
         <g
-           clip-path="url(#clipPath277)"
-           id="g273">
+           id="g273"
+           clip-path="url(#clipPath277)">
           <g
+             transform="translate(0,-2.962327)"
              id="g279">
             <text
-               id="text283"
-               style="font-variant:normal;font-weight:normal;font-size:25.46689415px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="scale(0.98166659,-1.0186758)"
+               y="-740.81317"
                x="70.712082"
-               y="-740.81317">
-              <tspan
-                 id="tspan281"
-                 sodipodi:role="line"
+               transform="scale(0.98166659,-1.0186758)"
+               style="font-variant:normal;font-weight:normal;font-size:25.4669px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="text283"><tspan
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, '"
                  y="-740.81317"
-                 x="70.712082 85.992218 101.55249 117.72397 133.81906 140.84792 156.43365 166.90054 182.99562 198.75963 206.88358 222.97865 233.44556 246.79021 262.45233 269.68494 285.27066 299.22653 312.5712 328.66626 335.69513 350.54233 357.64755 365.77151 381.86661 397.42688">Popularne przełączniki do</tspan>
-            </text>
+                 x="70.712082"
+                 sodipodi:role="line"
+                 id="tspan281">Advance</tspan></text>
           </g>
           <g
+             transform="matrix(1.1654658,0,0,1.2814203,-274.04393,-214.15728)"
              id="g285">
             <text
-               id="text289"
-               style="font-variant:normal;font-weight:bold;font-size:28.52458572px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="scale(0.87643692,-1.1409834)"
+               y="-662.73132"
                x="456.39337"
-               y="-662.73132">
-              <tspan
-                 id="tspan287"
-                 sodipodi:role="line"
+               transform="scale(0.87643692,-1.1409834)"
+               style="font-variant:normal;font-weight:bold;font-size:28.5246px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="text289"><tspan
+                 x="456.39337 473.50812 490.70847 507.82321 525.0235 542.13824 559.33862"
                  y="-662.73132"
-                 x="456.39337 473.50812 490.70847 507.82321 525.0235 542.13824 559.33862">git log</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan287">git log</tspan></text>
           </g>
           <g
              id="g291">
             <text
-               id="text295"
+               transform="matrix(1,0,0,-1,71,726.1)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,726.1)">
-              <tspan
-                 id="tspan293"
-                 sodipodi:role="line"
-                 x="0"
-                 y="0" />
-              <tspan
-                 sodipodi:role="line"
+               id="text295"><tspan
                  y="0"
+                 x="0"
+                 sodipodi:role="line"
+                 id="tspan293" /><tspan
+                 id="tspan7389"
                  x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 139.07249 145.3725 151.6725 158.067 164.367 170.66701 176.967 183.267 189.567 195.867 202.26151 208.56149 214.8615 221.1615 227.556 233.9505 240.2505 246.55051 252.85049 259.15051 265.4505"
-                 id="tspan7389">git log --after=&quot;2014-02-12T16:36:00-07:00&quot;</tspan>
-            </text>
+                 y="0"
+                 sodipodi:role="line">git log --after=&quot;2014-02-12T16:36:00-07:00&quot;</tspan></text>
           </g>
           <g
              id="g297">
             <text
-               id="text301"
+               transform="matrix(1,0,0,-1,71,713.8)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,713.8)">
-              <tspan
-                 id="tspan299"
-                 sodipodi:role="line"
+               id="text301"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.467 151.767 158.067 164.367 170.66701 176.967 183.267 189.567 195.867 202.26151 208.56149 214.8615 221.1615 227.556 233.856 240.2505 246.55051 252.85049 259.15051 265.4505 271.75049"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.467 151.767 158.067 164.367 170.66701 176.967 183.267 189.567 195.867 202.26151 208.56149 214.8615 221.1615 227.556 233.856 240.2505 246.55051 252.85049 259.15051 265.4505 271.75049">git log --before=&quot;2014-02-12T16:36:00-07:00&quot;</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan299">git log --before=&quot;2014-02-12T16:36:00-07:00&quot;</tspan></text>
           </g>
           <g
              id="g303">
             <text
-               id="text307"
+               transform="matrix(1,0,0,-1,71,701.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,701.6)">
-              <tspan
-                 id="tspan305"
-                 sodipodi:role="line"
+               id="text307"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.778 120.1725 126.4725 132.77251 139.07249 145.3725 151.767 158.067 164.367 170.76151 177.06149 183.3615 189.6615 196.056 202.356 208.65601 214.95599 221.256 227.556 233.856 240.15601 246.645 252.94501 259.245 265.54501 271.93951 278.2395 284.53949 290.83951 297.1395 303.43951 309.7395 316.134 322.5285 328.82849 335.12851 341.4285 347.72849 354.0285 360.32849 366.62851 372.9285 379.323 385.7175 392.01749 398.3175 404.61749 410.91751"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.778 120.1725 126.4725 132.77251 139.07249 145.3725 151.767 158.067 164.367 170.76151 177.06149 183.3615 189.6615 196.056 202.356 208.65601 214.95599 221.256 227.556 233.856 240.15601 246.645 252.94501 259.245 265.54501 271.93951 278.2395 284.53949 290.83951 297.1395 303.43951 309.7395 316.134 322.5285 328.82849 335.12851 341.4285 347.72849 354.0285 360.32849 366.62851 372.9285 379.323 385.7175 392.01749 398.3175 404.61749 410.91751">git log --since=&quot;2 weeks 3 days 2 hours 30 minutes 59 seconds ago&quot;</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan305">git log --since=&quot;2 weeks 3 days 2 hours 30 minutes 59 seconds ago&quot;</tspan></text>
           </g>
           <g
              id="g309">
             <text
-               id="text313"
+               transform="matrix(1,0,0,-1,71,690.7)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,690.7)">
-              <tspan
-                 id="tspan311"
-                 sodipodi:role="line"
+               id="text313"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.189 113.679 119.079 124.479 129.96899 135.369 140.769 146.16901 151.569 156.96899 162.369 167.769 173.16901 178.569 184.05901 189.549 194.94901 200.349 205.74899 211.149"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.189 113.679 119.079 124.479 129.96899 135.369 140.769 146.16901 151.569 156.96899 162.369 167.769 173.16901 178.569 184.05901 189.549 194.94901 200.349 205.74899 211.149">Wyszukiwanie commitów na podstawie czasu</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan311">Wyszukiwanie commitów na podstawie czasu</tspan></text>
           </g>
           <g
              id="g315">
             <text
-               id="text319"
+               transform="matrix(1,0,0,-1,71,666.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,666.6)">
-              <tspan
-                 id="tspan317"
-                 sodipodi:role="line"
+               id="text319"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889">git log -4</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan317">git log -4</tspan></text>
           </g>
           <g
              id="g321">
             <text
-               id="text325"
+               transform="matrix(1,0,0,-1,71,655.7)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,655.7)">
-              <tspan
-                 id="tspan323"
-                 sodipodi:role="line"
+               id="text325"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54.09 59.580002 64.980003 70.379997 75.779999 81.18 86.580002 92.07 97.470001 102.87 108.27 113.67 119.07 124.47 129.87 135.27 140.75999 146.16 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001 200.25 205.64999 211.05 216.45 221.85001 227.25 232.839 238.239 243.63901 249.039 254.439 259.83899 265.23901 270.63901 276.039 281.439 286.83899"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54.09 59.580002 64.980003 70.379997 75.779999 81.18 86.580002 92.07 97.470001 102.87 108.27 113.67 119.07 124.47 129.87 135.27 140.75999 146.16 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001 200.25 205.64999 211.05 216.45 221.85001 227.25 232.839 238.239 243.63901 249.039 254.439 259.83899 265.23901 270.63901 276.039 281.439 286.83899">Określanie liczby commitów (w tym przypadku 4 commity)</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan323">Określanie liczby commitów (w tym przypadku 4 commity)</tspan></text>
           </g>
           <g
              id="g327">
             <text
-               id="text331"
+               transform="matrix(1,0,0,-1,71,631.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,631.6)">
-              <tspan
-                 id="tspan329"
-                 sodipodi:role="line"
+               id="text331"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835">git log --oneline</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan329">git log --oneline</tspan></text>
           </g>
           <g
              id="g333">
             <text
-               id="text337"
+               transform="matrix(1,0,0,-1,71,620.7)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,620.7)">
-              <tspan
-                 id="tspan335"
-                 sodipodi:role="line"
+               id="text337"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.800003 70.290001 75.779999 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 118.98 124.569 129.96899 135.369 140.769 146.16901 151.569 157.05901 162.459 167.85899 173.259 178.659 184.05901 189.459 194.85899 200.349 205.74899 211.149 216.549 222.039 227.439 232.839 238.239 243.63901 249.039 254.439"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.800003 70.290001 75.779999 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 118.98 124.569 129.96899 135.369 140.769 146.16901 151.569 157.05901 162.459 167.85899 173.259 178.659 184.05901 189.459 194.85899 200.349 205.74899 211.149 216.549 222.039 227.439 232.839 238.239 243.63901 249.039 254.439">Skompresowanie commitów jedna linijka per commit</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan335">Skompresowanie commitów jedna linijka per commit</tspan></text>
           </g>
           <g
              id="g339">
             <text
-               id="text343"
+               transform="matrix(1,0,0,-1,71,596.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,596.6)">
-              <tspan
-                 id="tspan341"
-                 sodipodi:role="line"
+               id="text343"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389">git log --graph</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan341">git log --graph</tspan></text>
           </g>
           <g
              id="g345">
             <text
-               id="text349"
+               transform="matrix(1,0,0,-1,71,585.7)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,585.7)">
-              <tspan
-                 id="tspan347"
-                 sodipodi:role="line"
+               id="text349"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.189 113.679 119.079 124.569 129.96899 135.369 140.769 146.16901 151.569 156.96899"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.189 113.679 119.079 124.569 129.96899 135.369 140.769 146.16901 151.569 156.96899">Wizualizacja commitów w grafie</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan347">Wizualizacja commitów w grafie</tspan></text>
           </g>
           <g
              id="g351">
             <text
-               id="text355"
+               transform="matrix(1,0,0,-1,71,561.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,561.6)">
-              <tspan
-                 id="tspan353"
-                 sodipodi:role="line"
+               id="text355"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835">git log --decorate</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan353">git log --decorate</tspan></text>
           </g>
           <g
              id="g357">
             <text
-               id="text361"
+               transform="matrix(1,0,0,-1,71,550.7)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,550.7)">
-              <tspan
-                 id="tspan359"
-                 sodipodi:role="line"
+               id="text361"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.580002 64.980003 70.379997 75.779999 81.18 86.580002 91.980003 97.379997 102.87 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.47 157.05901 162.459 167.85899 173.259 178.659 184.05901 189.459 194.85899 200.259 205.659 211.05901 216.459 221.85899 227.259 232.74899 238.149 243.549 248.94901 254.349 259.93799 265.33801 270.73801 276.138 281.53799"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.580002 64.980003 70.379997 75.779999 81.18 86.580002 91.980003 97.379997 102.87 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.47 157.05901 162.459 167.85899 173.259 178.659 184.05901 189.459 194.85899 200.259 205.659 211.05901 216.459 221.85899 227.259 232.74899 238.149 243.549 248.94901 254.349 259.93799 265.33801 270.73801 276.138 281.53799">Dodanie do commitów adnotacji o branchach/tagach itp.</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan359">Dodanie do commitów adnotacji o branchach/tagach itp.</tspan></text>
           </g>
           <g
              id="g363" />
           <g
              id="g365">
             <text
-               id="text369"
+               transform="matrix(1,0,0,-1,71,526.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,526.6)">
-              <tspan
-                 id="tspan367"
-                 sodipodi:role="line"
+               id="text369"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997">git log --stat</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan367">git log --stat</tspan></text>
           </g>
           <g
              id="g371">
             <text
-               id="text375"
+               transform="matrix(1,0,0,-1,71,515.7)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,515.7)">
-              <tspan
-                 id="tspan373"
-                 sodipodi:role="line"
+               id="text375"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.189 113.589 118.989 124.389 129.789 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.16901 178.569 183.96899 189.369 194.769 200.259 205.659 211.05901 216.459 221.85899 227.259 232.74899 238.149 243.549 248.94901 254.349 259.93799 265.33801 270.73801 276.138 281.53799 286.93799 292.33801"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.400002 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.189 113.589 118.989 124.389 129.789 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.16901 178.569 183.96899 189.369 194.769 200.259 205.659 211.05901 216.459 221.85899 227.259 232.74899 238.149 243.549 248.94901 254.349 259.93799 265.33801 270.73801 276.138 281.53799 286.93799 292.33801">Wylistowanie zmodyfikowanych/dodanych/usuniętych plików</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan373">Wylistowanie zmodyfikowanych/dodanych/usuniętych plików</tspan></text>
           </g>
           <g
              id="g377" />
           <g
              id="g379">
             <text
-               id="text383"
+               transform="matrix(1,0,0,-1,71,491.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,491.6)">
-              <tspan
-                 id="tspan381"
-                 sodipodi:role="line"
+               id="text383"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001">git log -</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan381">git log -</tspan></text>
           </g>
           <g
              id="g385">
             <text
-               id="text389"
+               transform="matrix(1,0,0,-1,127.9,491.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,127.9,491.6)">
-              <tspan
-                 id="tspan387"
+               id="text389"><tspan
+                 x="0"
                  y="0"
-                 x="0">-</tspan>
-            </text>
+                 id="tspan387">-</tspan></text>
           </g>
           <g
              id="g391">
             <text
-               id="text395"
+               transform="matrix(1,0,0,-1,134.3,491.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,134.3,491.6)">
-              <tspan
-                 id="tspan393"
+               id="text395"><tspan
+                 x="0"
                  y="0"
-                 x="0">p</tspan>
-            </text>
+                 id="tspan393">p</tspan></text>
           </g>
           <g
-             transform="translate(134.3,491.6)"
-             id="g397">
+             id="g397"
+             transform="translate(134.3,491.6)">
             <path
-               inkscape:connector-curvature="0"
-               id="path399"
+               d="m 0,-1 6.3,0"
                style="fill:none;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-               d="m 0,-1 6.3,0" />
+               id="path399"
+               inkscape:connector-curvature="0" />
           </g>
           <g
              id="g401">
             <text
-               id="text405"
+               transform="matrix(1,0,0,-1,140.6,491.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,140.6,491.6)">
-              <tspan
-                 id="tspan403"
-                 sodipodi:role="line"
+               id="text405"><tspan
+                 x="0 6.3000002 12.6 18.9"
                  y="0"
-                 x="0 6.3000002 12.6 18.9">atch</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan403">atch</tspan></text>
           </g>
           <g
              id="g407">
             <text
-               id="text411"
+               transform="matrix(1,0,0,-1,71,480.7)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,480.7)">
-              <tspan
-                 id="tspan409"
-                 sodipodi:role="line"
+               id="text411"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.18 86.580002 92.07 97.470001 102.87 108.27 113.67 119.07 124.56 129.96001 135.36 140.75999 146.16 151.56 156.96001 162.36 167.75999 173.16 178.56 183.96001 189.36 194.94901 200.349 205.74899 211.149 216.549 221.94901 227.439 232.839 238.239 243.63901 249.039 254.52901 259.92899 265.32901 270.729 276.129 281.52899 286.92899 292.41901 297.819 303.21899 308.61899 314.01901 319.41901 324.819 330.21899 335.70901 341.10901 346.509 351.909"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.18 86.580002 92.07 97.470001 102.87 108.27 113.67 119.07 124.56 129.96001 135.36 140.75999 146.16 151.56 156.96001 162.36 167.75999 173.16 178.56 183.96001 189.36 194.94901 200.349 205.74899 211.149 216.549 221.94901 227.439 232.839 238.239 243.63901 249.039 254.52901 259.92899 265.32901 270.729 276.129 281.52899 286.92899 292.41901 297.819 303.21899 308.61899 314.01901 319.41901 324.819 330.21899 335.70901 341.10901 346.509 351.909">Ukazanie diffów – zmian wprowdzonych przez dany commit (skrót: -p)</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan409">Ukazanie diffów – zmian wprowdzonych przez dany commit (skrót: -p)</tspan></text>
           </g>
           <g
              id="g413">
             <text
-               id="text417"
+               transform="matrix(1,0,0,-1,71,456.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,456.6)">
-              <tspan
-                 id="tspan415"
-                 sodipodi:role="line"
+               id="text417"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 139.07249 145.467 151.767 158.067 164.367 170.66701 177.06149 183.3615 189.6615 195.9615 202.26151 208.56149 214.8615 221.1615"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 139.07249 145.467 151.767 158.067 164.367 170.66701 177.06149 183.3615 189.6615 195.9615 202.26151 208.56149 214.8615 221.1615">git log origin/develop --not develop</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan415">git log origin/develop --not develop</tspan></text>
           </g>
           <g
              id="g419">
             <text
-               id="text423"
+               transform="matrix(1,0,0,-1,71,445.7)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,445.7)">
-              <tspan
-                 id="tspan421"
-                 sodipodi:role="line"
+               id="text423"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 92.079002 97.478996 102.879 108.279 113.679 119.079 124.479 129.879 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.16901 178.659 184.05901 189.459 194.85899 200.259 205.659 211.05901 216.459 222.048 227.448 232.84801 238.248 243.64799 249.048 254.448 259.93799 265.33801 270.73801 276.138 281.53799 286.93799 292.33801 297.73801 303.138 308.53799 313.93799 319.52701 324.927 330.327 335.72699 341.12701 346.52701 351.927 357.327 362.72699 368.12701 373.52701 378.927 384.327 389.72699 395.21701 400.617 406.017 411.41699 416.81699 422.21701"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 92.079002 97.478996 102.879 108.279 113.679 119.079 124.479 129.879 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.16901 178.659 184.05901 189.459 194.85899 200.259 205.659 211.05901 216.459 222.048 227.448 232.84801 238.248 243.64799 249.048 254.448 259.93799 265.33801 270.73801 276.138 281.53799 286.93799 292.33801 297.73801 303.138 308.53799 313.93799 319.52701 324.927 330.327 335.72699 341.12701 346.52701 351.927 357.327 362.72699 368.12701 373.52701 378.927 384.327 389.72699 395.21701 400.617 406.017 411.41699 416.81699 422.21701">Commity z brancha origin/develop, których nie ma na branchu develop(„lokalnie”)</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan421">Commity z brancha origin/develop, których nie ma na branchu develop(„lokalnie”)</tspan></text>
           </g>
           <g
              id="g425">
             <text
-               id="text429"
+               transform="matrix(1,0,0,-1,71,421.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,421.6)">
-              <tspan
-                 id="tspan427"
-                 sodipodi:role="line"
+               id="text429"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251 170.57249 176.967 183.267 189.567"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251 170.57249 176.967 183.267 189.567">git log develop..origin/develop</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan427">git log develop..origin/develop</tspan></text>
           </g>
           <g
              id="g431">
             <text
-               id="text435"
+               transform="matrix(1,0,0,-1,71,410.7)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,410.7)">
-              <tspan
-                 id="tspan433"
-                 sodipodi:role="line"
+               id="text435"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 92.079002 97.478996 102.879 108.279 113.679 119.079 124.479 129.879 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.16901 178.659 184.05901 189.459 194.85899 200.259 205.659 211.05901 216.459 222.048 227.448 232.84801 238.248 243.64799 249.048 254.448 259.93799 265.33801 270.73801 276.138 281.53799 286.93799 292.33801 297.73801 303.138 308.53799 313.93799 319.52701 324.927 330.327 335.72699 341.12701 346.52701 351.927 357.327 362.72699 368.12701 373.52701 378.927 384.327 389.72699 395.21701 400.617 406.017 411.41699 416.81699 422.21701"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 92.079002 97.478996 102.879 108.279 113.679 119.079 124.479 129.879 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.16901 178.659 184.05901 189.459 194.85899 200.259 205.659 211.05901 216.459 222.048 227.448 232.84801 238.248 243.64799 249.048 254.448 259.93799 265.33801 270.73801 276.138 281.53799 286.93799 292.33801 297.73801 303.138 308.53799 313.93799 319.52701 324.927 330.327 335.72699 341.12701 346.52701 351.927 357.327 362.72699 368.12701 373.52701 378.927 384.327 389.72699 395.21701 400.617 406.017 411.41699 416.81699 422.21701">Commity z brancha origin/develop, których nie ma na branchu develop(„lokalnie”)</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan433">Commity z brancha origin/develop, których nie ma na branchu develop(„lokalnie”)</tspan></text>
           </g>
           <g
              id="g437">
             <text
-               id="text441"
+               transform="matrix(1,0,0,-1,71,386.6)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,386.6)">
-              <tspan
-                 id="tspan439"
-                 sodipodi:role="line"
+               id="text441"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251 170.57249 176.967 183.267 189.567 195.867"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251 170.57249 176.967 183.267 189.567 195.867">git log develop...origin/develop</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan439">git log develop...origin/develop</tspan></text>
           </g>
           <g
              id="g443">
             <text
-               id="text447"
+               transform="matrix(1,0,0,-1,71,376.6)"
                style="font-style:italic;font-variant:normal;font-size:8px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,376.6)">
-              <tspan
-                 id="tspan445"
-                 sodipodi:role="line"
+               id="text447"><tspan
+                 x="0 4.8000002 9.6000004 14.4 19.200001 24 28.799999 33.695999 38.495998 43.296001 48.096001 52.896 57.695999 62.495998 67.295998 72.096001 76.896004 81.888 86.688004 91.487999 96.288002 101.088 105.888 110.688 115.488 120.288 125.088 129.888 134.688 139.48801 144.28799 149.18401 153.98399 158.784 163.584 168.384 173.18401 178.08 182.88 187.67999 192.48 197.28 202.08 206.976 211.87199 216.672 221.472 226.272 231.07201 235.87199 240.672 245.472 250.368 255.26401 260.064 264.86401 269.664 274.46399 279.26401 284.16 288.95999 293.76001 298.56 303.35999 308.16 312.95999 317.76001 322.56 327.35999 332.16 337.056 341.952 346.75201 351.552 356.35199 361.15201 365.952 370.75201 375.552 380.35199 385.15201 389.952 394.75201 399.552 404.35199 409.24799 414.048 418.84799 423.64801 428.448 433.24799"
                  y="0"
-                 x="0 4.8000002 9.6000004 14.4 19.200001 24 28.799999 33.695999 38.495998 43.296001 48.096001 52.896 57.695999 62.495998 67.295998 72.096001 76.896004 81.888 86.688004 91.487999 96.288002 101.088 105.888 110.688 115.488 120.288 125.088 129.888 134.688 139.48801 144.28799 149.18401 153.98399 158.784 163.584 168.384 173.18401 178.08 182.88 187.67999 192.48 197.28 202.08 206.976 211.87199 216.672 221.472 226.272 231.07201 235.87199 240.672 245.472 250.368 255.26401 260.064 264.86401 269.664 274.46399 279.26401 284.16 288.95999 293.76001 298.56 303.35999 308.16 312.95999 317.76001 322.56 327.35999 332.16 337.056 341.952 346.75201 351.552 356.35199 361.15201 365.952 370.75201 375.552 380.35199 385.15201 389.952 394.75201 399.552 404.35199 409.24799 414.048 418.84799 423.64801 428.448 433.24799">Commity z brancha origin/develop(„serwera”), których nie ma na branchu develop(„lokalnie”),</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan445">Commity z brancha origin/develop(„serwera”), których nie ma na branchu develop(„lokalnie”),</tspan></text>
           </g>
           <g
              id="g449">
             <text
-               id="text453"
+               transform="matrix(1,0,0,-1,71,367.3)"
                style="font-style:italic;font-variant:normal;font-size:8px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,367.3)">
-              <tspan
-                 id="tspan451"
-                 sodipodi:role="line"
+               id="text453"><tspan
+                 x="0 4.8000002 9.6000004 14.4 19.200001 24.096001 28.896 33.695999 38.495998 43.296001 48.096001 52.896 57.792 62.591999 67.391998 72.192001 76.991997 81.792 86.592003 91.391998 96.192001 100.992 105.888 110.784 115.584 120.384 125.184 129.98399 134.784 139.584 144.384 149.18401 153.98399 158.784 163.584 168.384 173.18401 178.08 182.88 187.67999 192.48 197.28 202.08 207.07201 211.87199 216.672 221.472 226.272 231.07201 235.87199 240.672 245.56799 250.368 255.168 259.96799 264.86401 269.664 274.46399 279.26401 284.16 288.95999 293.76001 298.56 303.35999 308.16 313.056 317.85599 322.65601 327.45599 332.25601 337.056 341.85599 346.65601 351.45599 356.25601 361.056 365.85599 370.65601 375.45599 380.35199 385.15201 389.952 394.75201 399.552 404.35199 409.24799 414.048 418.84799 423.64801 428.448"
                  y="0"
-                 x="0 4.8000002 9.6000004 14.4 19.200001 24.096001 28.896 33.695999 38.495998 43.296001 48.096001 52.896 57.792 62.591999 67.391998 72.192001 76.991997 81.792 86.592003 91.391998 96.192001 100.992 105.888 110.784 115.584 120.384 125.184 129.98399 134.784 139.584 144.384 149.18401 153.98399 158.784 163.584 168.384 173.18401 178.08 182.88 187.67999 192.48 197.28 202.08 207.07201 211.87199 216.672 221.472 226.272 231.07201 235.87199 240.672 245.56799 250.368 255.168 259.96799 264.86401 269.664 274.46399 279.26401 284.16 288.95999 293.76001 298.56 303.35999 308.16 313.056 317.85599 322.65601 327.45599 332.25601 337.056 341.85599 346.65601 351.45599 356.25601 361.056 365.85599 370.65601 375.45599 380.35199 385.15201 389.952 394.75201 399.552 404.35199 409.24799 414.048 418.84799 423.64801 428.448">oraz commity z brancha develop(„lokalnie”), których nie ma branch origin/develop(„serwer”)</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan451">oraz commity z brancha develop(„lokalnie”), których nie ma branch origin/develop(„serwer”)</tspan></text>
           </g>
           <g
              id="g455">
             <text
-               id="text459"
+               transform="matrix(1,0,0,-1,71,343.5)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,343.5)">
-              <tspan
-                 id="tspan457"
-                 sodipodi:role="line"
+               id="text459"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278">git log --author=&quot;Toma*&quot;</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan457">git log --author=&quot;Toma*&quot;</tspan></text>
           </g>
           <g
              id="g461">
             <text
-               id="text465"
+               transform="matrix(1,0,0,-1,71,332.6)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,332.6)">
-              <tspan
-                 id="tspan463"
-                 sodipodi:role="line"
+               id="text465"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.580002 92.07 97.470001 102.87 108.27 113.67 119.07 124.56 129.96001 135.36 140.75999 146.16 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.94 200.34 205.74001 211.14 216.53999 221.94 227.34 232.74001 238.14 243.53999 249.03 254.52 259.92001 265.32001 270.72 276.12 281.51999 286.92001"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.580002 92.07 97.470001 102.87 108.27 113.67 119.07 124.56 129.96001 135.36 140.75999 146.16 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.94 200.34 205.74001 211.14 216.53999 221.94 227.34 232.74001 238.14 243.53999 249.03 254.52 259.92001 265.32001 270.72 276.12 281.51999 286.92001">Commity, których autor treści pasuje do regexa „Toma*”</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan463">Commity, których autor treści pasuje do regexa „Toma*”</tspan></text>
           </g>
           <g
              id="g467" />
           <g
              id="g469">
             <text
-               id="text473"
+               transform="matrix(1,0,0,-1,71,308.5)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,308.5)">
-              <tspan
-                 id="tspan471"
-                 sodipodi:role="line"
+               id="text473"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251">git log --committer=&quot;Toma*&quot;</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan471">git log --committer=&quot;Toma*&quot;</tspan></text>
           </g>
           <g
              id="g475">
             <text
-               id="text479"
+               transform="matrix(1,0,0,-1,71,297.6)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,297.6)">
-              <tspan
-                 id="tspan477"
-                 sodipodi:role="line"
+               id="text479"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.779999 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 119.07 124.56 129.96001 135.36 140.75999 146.16 151.56 156.96001 162.36 167.75999 173.25 178.64999 184.05 189.45 194.85001 200.25 205.74001 211.14 216.53999 221.94 227.34 232.74001 238.23 243.63 249.03 254.42999 259.82999 265.23001 270.63 276.03 281.42999 287.01901 292.41901 297.819 303.21899 308.61899 314.01901 319.41901 324.819 330.21899 335.61899 341.10901 346.509 351.909 357.30899 362.70901 368.10901 373.509 378.909"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.779999 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 119.07 124.56 129.96001 135.36 140.75999 146.16 151.56 156.96001 162.36 167.75999 173.25 178.64999 184.05 189.45 194.85001 200.25 205.74001 211.14 216.53999 221.94 227.34 232.74001 238.23 243.63 249.03 254.42999 259.82999 265.23001 270.63 276.03 281.42999 287.01901 292.41901 297.819 303.21899 308.61899 314.01901 319.41901 324.819 330.21899 335.61899 341.10901 346.509 351.909 357.30899 362.70901 368.10901 373.509 378.909">Commity, które zostały stworzone przez osobę pasującą do regexa „Toma*”</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan477">Commity, które zostały stworzone przez osobę pasującą do regexa „Toma*”</tspan></text>
           </g>
           <g
              id="g481">
             <text
-               id="text485"
+               transform="matrix(1,0,0,-1,71,273.5)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,273.5)">
-              <tspan
-                 id="tspan483"
-                 sodipodi:role="line"
+               id="text485"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.467 151.767 158.067"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.467 151.767 158.067">git log –grep=&quot;.scope*&quot; -i</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan483">git log –grep=&quot;.scope*&quot; -i</tspan></text>
           </g>
           <g
              id="g487">
             <text
-               id="text491"
+               transform="matrix(1,0,0,-1,71,262.6)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,262.6)">
-              <tspan
-                 id="tspan489"
-                 sodipodi:role="line"
+               id="text491"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 118.98 124.38 129.78 135.369 140.769 146.16901 151.569 156.96899 162.369 167.769 173.259 178.659 184.05901 189.549 194.94901 200.349 205.74899 211.149 216.549 221.94901"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 118.98 124.38 129.78 135.369 140.769 146.16901 151.569 156.96899 162.369 167.769 173.259 178.659 184.05901 189.549 194.94901 200.349 205.74899 211.149 216.549 221.94901">Commity których wiadomość pasuje do regexa</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan489">Commity których wiadomość pasuje do regexa</tspan></text>
           </g>
           <g
              id="g493">
             <text
-               id="text497"
+               transform="matrix(1,0,0,-1,303.9,262.6)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,303.9,262.6)">
-              <tspan
-                 id="tspan495"
-                 sodipodi:role="line"
+               id="text497"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.689999 54.18 59.580002 64.980003 70.379997 75.779999 81.18"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.689999 54.18 59.580002 64.980003 70.379997 75.779999 81.18">„.scope*” (case</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan495">„.scope*” (case</tspan></text>
           </g>
           <g
              id="g499">
             <text
-               id="text503"
+               transform="matrix(1,0,0,-1,390.6,262.6)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,390.6,262.6)">
-              <tspan
-                 id="tspan501"
+               id="text503"><tspan
+                 x="0"
                  y="0"
-                 x="0">i</tspan>
-            </text>
+                 id="tspan501">i</tspan></text>
           </g>
           <g
-             transform="translate(390.6,262.6)"
-             id="g505">
+             id="g505"
+             transform="translate(390.6,262.6)">
             <path
-               inkscape:connector-curvature="0"
-               id="path507"
+               d="m 0,-0.9 5.4,0"
                style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-               d="m 0,-0.9 5.4,0" />
+               id="path507"
+               inkscape:connector-curvature="0" />
           </g>
           <g
              id="g509">
             <text
-               id="text513"
+               transform="matrix(1,0,0,-1,396,262.6)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,396,262.6)">
-              <tspan
-                 id="tspan511"
-                 sodipodi:role="line"
+               id="text513"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.589001 64.988998 70.389 75.789001"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.589001 64.988998 70.389 75.789001">nsensitive: -i)</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan511">nsensitive: -i)</tspan></text>
           </g>
           <g
              id="g515">
             <text
-               id="text519"
+               transform="matrix(1,0,0,-1,71,238.5)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,238.5)">
-              <tspan
-                 id="tspan517"
-                 sodipodi:role="line"
+               id="text519"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251 170.57249 176.967 183.267 189.567 195.867 202.26151 208.56149 214.8615 221.1615 227.556 233.856 240.15601 246.45599 252.85049 259.15051 265.4505 271.75049 278.14499 284.44501 290.83951 297.23401 303.534"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725 157.9725 164.27251 170.57249 176.967 183.267 189.567 195.867 202.26151 208.56149 214.8615 221.1615 227.556 233.856 240.15601 246.45599 252.85049 259.15051 265.4505 271.75049 278.14499 284.44501 290.83951 297.23401 303.534">git log -S&quot;com.arellomobile.mvp.MvpPresentert&quot; -i</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan517">git log -S&quot;com.arellomobile.mvp.MvpPresentert&quot; -i</tspan></text>
           </g>
           <g
              id="g521">
             <text
-               id="text525"
+               transform="matrix(1,0,0,-1,71,227.6)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,227.6)">
-              <tspan
-                 id="tspan523"
-                 sodipodi:role="line"
+               id="text525"><tspan
+                 x="0 5.4000001 10.8"
                  y="0"
-                 x="0 5.4000001 10.8">Com</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan523">Com</tspan></text>
           </g>
           <g
              id="g527">
             <text
-               id="text531"
+               transform="matrix(1,0,0,-1,87.2,227.6)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,87.2,227.6)">
-              <tspan
-                 id="tspan529"
-                 sodipodi:role="line"
+               id="text531"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27.09 32.490002 37.889999 43.290001 48.689999 54.09 59.580002 64.980003 70.379997 75.779999 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 119.07 124.47 129.87 135.27 140.85899 146.259 151.659 157.05901 162.459 167.85899 173.349 178.74899 184.149 189.549 194.94901 200.349 205.74899 211.149 216.549 221.94901 227.349 232.74899 238.149 243.549 249.039 254.439 259.83899 265.23901 270.63901 276.039 281.52899 286.92899 292.32901 297.729 303.129 308.52899 314.01901 319.41901 324.819 330.21899 335.61899 341.01901 346.509 351.909 357.30899 362.70901 368.10901 373.509 379.09799 384.49799 389.89801 395.298 400.78799 406.18799 411.58801 416.98801 422.388 427.78799"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27.09 32.490002 37.889999 43.290001 48.689999 54.09 59.580002 64.980003 70.379997 75.779999 81.18 86.580002 91.980003 97.379997 102.78 108.18 113.58 119.07 124.47 129.87 135.27 140.85899 146.259 151.659 157.05901 162.459 167.85899 173.349 178.74899 184.149 189.549 194.94901 200.349 205.74899 211.149 216.549 221.94901 227.349 232.74899 238.149 243.549 249.039 254.439 259.83899 265.23901 270.63901 276.039 281.52899 286.92899 292.32901 297.729 303.129 308.52899 314.01901 319.41901 324.819 330.21899 335.61899 341.01901 346.509 351.909 357.30899 362.70901 368.10901 373.509 379.09799 384.49799 389.89801 395.298 400.78799 406.18799 411.58801 416.98801 422.388 427.78799">mitty które dodają/usuwają frazę „com.arellomobile.mvp.MvpPresentert”, tak zwany</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan529">mitty które dodają/usuwają frazę „com.arellomobile.mvp.MvpPresentert”, tak zwany</tspan></text>
           </g>
           <g
              id="g533">
             <text
-               id="text537"
+               transform="matrix(1,0,0,-1,71,217.1)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,217.1)">
-              <tspan
-                 id="tspan535"
-                 sodipodi:role="line"
+               id="text537"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.379997"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.379997">pickaxe (case</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan535">pickaxe (case</tspan></text>
           </g>
           <g
              id="g539">
             <text
-               id="text543"
+               transform="matrix(1,0,0,-1,146.8,217.1)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,146.8,217.1)">
-              <tspan
-                 id="tspan541"
+               id="text543"><tspan
+                 x="0"
                  y="0"
-                 x="0">i</tspan>
-            </text>
+                 id="tspan541">i</tspan></text>
           </g>
           <g
-             transform="translate(146.8,217.1)"
-             id="g545">
+             id="g545"
+             transform="translate(146.8,217.1)">
             <path
-               inkscape:connector-curvature="0"
-               id="path547"
+               d="m 0,-0.9 5.4,0"
                style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-               d="m 0,-0.9 5.4,0" />
+               id="path547"
+               inkscape:connector-curvature="0" />
           </g>
           <g
              id="g549">
             <text
-               id="text553"
+               transform="matrix(1,0,0,-1,152.2,217.1)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,152.2,217.1)">
-              <tspan
-                 id="tspan551"
-                 sodipodi:role="line"
+               id="text553"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54.09 59.580002 64.980003 70.379997 75.779999"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54.09 59.580002 64.980003 70.379997 75.779999">nsensitive: -i)</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan551">nsensitive: -i)</tspan></text>
           </g>
           <g
              id="g555">
             <text
-               id="text559"
+               transform="matrix(1,0,0,-1,71,194.7)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,194.7)">
-              <tspan
-                 id="tspan557"
-                 sodipodi:role="line"
+               id="text559"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998">git log –all</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan557">git log –all</tspan></text>
           </g>
           <g
              id="g561">
             <text
-               id="text565"
+               transform="matrix(1,0,0,-1,71,183.9)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,183.9)">
-              <tspan
-                 id="tspan563"
-                 sodipodi:role="line"
+               id="text565"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 91.889999 97.290001 102.78 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001 200.25 205.64999 211.14 216.53999 222.03 227.42999 232.83 238.23 243.63 249.03 254.42999 259.82999 265.23001 270.63 276.03 281.42999"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 91.889999 97.290001 102.78 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001 200.25 205.64999 211.14 216.53999 222.03 227.42999 232.83 238.23 243.63 249.03 254.42999 259.82999 265.23001 270.63 276.03 281.42999">Commity z wszystkich branchy (nie tylko z „obecnego”)</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan563">Commity z wszystkich branchy (nie tylko z „obecnego”)</tspan></text>
           </g>
           <g
              id="g567">
             <text
-               id="text571"
+               transform="matrix(1,0,0,-1,71,161.5)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,161.5)">
-              <tspan
-                 id="tspan569"
-                 sodipodi:role="line"
+               id="text571"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.183502 88.483498 94.783501 101.0835 107.3835 113.6835"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.183502 88.483498 94.783501 101.0835 107.3835 113.6835">git log --no-merges</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan569">git log --no-merges</tspan></text>
           </g>
           <g
              id="g573">
             <text
-               id="text577"
+               transform="matrix(1,0,0,-1,71,150.6)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,150.6)">
-              <tspan
-                 id="tspan575"
-                 sodipodi:role="line"
+               id="text577"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.589001 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.279 113.679 119.079 124.479 129.879 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.259 178.659 184.05901 189.549 194.94901 200.349 205.74899 211.149 216.549 221.94901"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.400002 37.799999 43.200001 48.599998 54 59.589001 64.988998 70.389 75.789001 81.189003 86.588997 91.988998 97.389 102.789 108.279 113.679 119.079 124.479 129.879 135.27901 140.679 146.07899 151.479 156.879 162.27901 167.769 173.259 178.659 184.05901 189.549 194.94901 200.349 205.74899 211.149 216.549 221.94901">Wykluczneie commitów mergujących z wyników</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan575">Wykluczneie commitów mergujących z wyników</tspan></text>
           </g>
           <g
              id="g579">
             <text
-               id="text583"
+               transform="matrix(1,0,0,-1,71,128.2)"
                style="font-variant:normal;font-weight:normal;font-size:10.5px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,128.2)">
-              <tspan
-                 id="tspan581"
-                 sodipodi:role="line"
+               id="text583"><tspan
+                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725"
                  y="0"
-                 x="0 6.3000002 12.6 18.994499 25.2945 31.5945 37.894501 44.289001 50.589001 56.889 63.188999 69.488998 75.789001 82.088997 88.389 94.689003 101.0835 107.3835 113.6835 119.9835 126.378 132.67799 138.978 145.278 151.6725">git log --pretty=&quot;FORMAT&quot;</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan581">git log --pretty=&quot;FORMAT&quot;</tspan></text>
           </g>
           <g
              id="g585">
             <text
-               id="text589"
+               transform="matrix(1,0,0,-1,71,117.4)"
                style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,71,117.4)">
-              <tspan
-                 id="tspan587"
-                 sodipodi:role="line"
+               id="text589"><tspan
+                 x="0 5.4000001 10.8 16.200001 21.6 27 32.490002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 91.889999 97.290001 102.78 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001"
                  y="0"
-                 x="0 5.4000001 10.8 16.200001 21.6 27 32.490002 37.889999 43.290001 48.689999 54.09 59.490002 64.889999 70.290001 75.690002 81.089996 86.489998 91.889999 97.290001 102.78 108.27 113.67 119.07 124.47 129.87 135.27 140.67 146.07001 151.56 157.05 162.45 167.85001 173.25 178.64999 184.05 189.45 194.85001">Zmiana wyświetlanego formatu commita,</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan587">Zmiana wyświetlanego formatu commita,</tspan></text>
           </g>
           <g
-             id="g591"
-             transform="translate(0,-30.01825)">
+             transform="translate(0,-30.01825)"
+             id="g591">
             <text
-               id="text595"
-               style="font-style:italic;font-variant:normal;font-size:7px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="scale(1,-1)"
+               y="-127.65892"
                x="71"
-               y="-127.65892">
-              <tspan
-                 id="tspan593"
-                 sodipodi:role="line"
+               transform="scale(1,-1)"
+               style="font-style:italic;font-variant:normal;font-size:7px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="text595"><tspan
+                 x="71 75.199997 79.400002 83.599998 87.800003 92 96.199997 100.4 104.6 108.8 113 117.2 121.4 125.691 129.89099 134.091 138.291 142.491 146.69101 150.98199 155.18201 159.382 163.582 167.782 172.17801 176.37799 180.578 184.778 188.978 193.17801 197.37799 201.578 205.778 209.978"
                  y="-127.65892"
-                 x="71 75.199997 79.400002 83.599998 87.800003 92 96.199997 100.4 104.6 108.8 113 117.2 121.4 125.691 129.89099 134.091 138.291 142.491 146.69101 150.98199 155.18201 159.382 163.582 167.782 172.17801 176.37799 180.578 184.778 188.978 193.17801 197.37799 201.578 205.778 209.978">https://devhints.io/git-log-format</tspan>
-            </text>
+                 sodipodi:role="line"
+                 id="tspan593">https://devhints.io/git-log-format</tspan></text>
           </g>
           <g
              id="g597">
             <text
-               id="text601"
+               transform="matrix(1,0,0,-1,411.3,87.4)"
                style="font-variant:normal;font-weight:normal;font-size:11px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#21409a;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,411.3,87.4)">
-              <tspan
-                 id="tspan599"
-                 sodipodi:role="line"
+               id="text601"><tspan
+                 y="0"
                  x="0"
-                 y="0" />
-            </text>
+                 sodipodi:role="line"
+                 id="tspan599" /></text>
           </g>
           <g
              id="g603">
             <text
-               id="text607"
+               transform="matrix(1,0,0,-1,441.8,87.4)"
                style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#2f4277;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,441.8,87.4)">
-              <tspan
-                 id="tspan605"
-                 sodipodi:role="line"
+               id="text607"><tspan
+                 y="0"
                  x="0"
-                 y="0" />
-            </text>
+                 sodipodi:role="line"
+                 id="tspan605" /></text>
           </g>
           <g
              id="g609">
             <text
-               id="text613"
+               transform="matrix(1,0,0,-1,457.4,87.4)"
                style="font-variant:normal;font-weight:normal;font-size:11px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#21409a;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1,0,0,-1,457.4,87.4)">
-              <tspan
-                 id="tspan611"
-                 sodipodi:role="line"
+               id="text613"><tspan
+                 y="0"
                  x="0"
-                 y="0" />
-            </text>
+                 sodipodi:role="line"
+                 id="tspan611" /></text>
           </g>
           <g
-             transform="translate(-0.47859122,-10.444643)"
-             id="g585-4">
+             id="g585-4"
+             transform="translate(-0.47859122,-10.444643)">
             <text
-               id="text589-5"
-               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="scale(1,-1)"
+               y="-117.4"
                x="-134.36009"
-               y="-117.4">
-              <tspan
-                 id="tspan587-7"
+               transform="scale(1,-1)"
+               style="font-style:italic;font-variant:normal;font-size:9px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:DejaVuSansMono-Oblique;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="text589-5"><tspan
+                 x="71.379601 76.779625 82.179649 87.669693 93.069733 98.469749 103.86977 109.26981 114.66984 120.06986 125.46988 130.95995 136.36 141.76006 147.16011 152.5602 157.96025 163.36031 168.76036 174.16042 179.5605 184.96056 190.36061 195.85066 201.25072 206.6508 212.14085 217.54091 222.94096"
                  sodipodi:role="line"
-                 x="71.379601 76.779625 82.179649 87.669693 93.069733 98.469749 103.86977 109.26981 114.66984 120.06986 125.46988 130.95995 136.36 141.76006 147.16011 152.5602 157.96025 163.36031 168.76036 174.16042 179.5605 184.96056 190.36061 195.85066 201.25072 206.6508 212.14085 217.54091 222.94096">np. git log --pretty=”%an-%H”</tspan>
-            </text>
+                 id="tspan587-7">np. git log --pretty=”%an-%H”</tspan></text>
+          </g>
+          <g
+             transform="matrix(2.3935994,0,0,-2.7990491,42.577822,225.15167)"
+             id="layer1-4"
+             inkscape:label="Layer 1">
+            <g
+               transform="translate(-0.55233657,-4.832945)"
+               id="g40">
+              <path
+                 id="path46"
+                 d="m 22.064794,74.595615 c 0.329118,-0.06329 0.805368,-0.06088 1.058333,0.0053 0.252965,0.06622 -0.01631,0.118004 -0.598397,0.115067 -0.582084,-0.0029 -0.789055,-0.05712 -0.459936,-0.120406 z m 11.567321,-0.0018 c 0.724791,-0.06029 1.418464,-0.250807 1.541498,-0.423364 0.155434,-0.218002 0.191018,-0.192633 0.116609,0.08314 -0.07726,0.286338 -0.506592,0.404252 -1.541497,0.423363 l -1.434412,0.02648 1.317802,-0.109624 z m 3.139126,-0.219348 c -0.08617,-0.224557 -0.08243,-0.482526 0.0083,-0.573264 0.09073,-0.09075 0.164973,0.02723 0.164973,0.262158 0,0.326558 0.327107,0.450029 1.389062,0.524321 l 1.389063,0.09718 -1.397365,0.04894 c -1.047494,0.03669 -1.436595,-0.05328 -1.554041,-0.359343 z m 12.01647,0.221157 c 0.329118,-0.06329 0.805368,-0.06088 1.058334,0.0053 0.252965,0.06622 -0.01632,0.118003 -0.598398,0.115067 -0.582083,-0.0029 -0.789053,-0.05712 -0.459936,-0.120406 z m 3.672806,-0.01618 c -0.06911,-0.111819 0.340585,-0.158844 0.910429,-0.104501 0.569841,0.05434 1.036076,0.145831 1.036076,0.203307 0,0.197074 -1.820762,0.104651 -1.946505,-0.09881 z m 9.162318,-1.11962 c 0,-0.654844 0.0516,-0.922734 0.114662,-0.595313 0.06307,0.327422 0.06307,0.863204 0,1.190625 -0.06306,0.327422 -0.114662,0.05953 -0.114662,-0.595312 z m 18.827144,-5.027083 c 0,-3.41974 0.03771,-4.818724 0.08379,-3.108854 0.04609,1.709869 0.04609,4.507838 0,6.217708 -0.04609,1.70987 -0.08379,0.310885 -0.08379,-3.108854 z M 94.42583,73.59212 c 0.0029,-0.582084 0.05712,-0.789055 0.120406,-0.459936 0.06329,0.329118 0.06088,0.805368 -0.0053,1.058333 -0.06622,0.252965 -0.118005,-0.01631 -0.115068,-0.598397 z m 7.72201,-6.085417 c -1.5e-4,-3.929063 0.0367,-5.57329 0.0818,-3.653839 0.0452,1.91945 0.0453,5.134138 2.6e-4,7.14375 -0.045,2.009611 -0.0819,0.439152 -0.0821,-3.489911 z m -23.113678,6.063368 c 0.0127,-0.308224 0.07539,-0.370919 0.159851,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138964,-0.347266 z M 55.023009,72.00462 c 0.0011,-1.018646 0.049,-1.402944 0.106273,-0.853995 0.05727,0.548949 0.05631,1.382387 -0.0021,1.852083 -0.05847,0.469697 -0.10533,0.02056 -0.104156,-0.998088 z m -9.61182,1.115634 c 0,-0.333304 -0.335963,-0.44885 -1.521354,-0.523235 l -1.521355,-0.09547 1.529657,-0.05003 c 1.167186,-0.03817 1.566786,0.04672 1.686333,0.358258 0.08617,0.224557 0.08243,0.482526 -0.0083,0.573264 -0.09073,0.09074 -0.164973,-0.02752 -0.164973,-0.262791 z m 15.699373,-1.512509 c 0,-1.091407 0.0467,-1.537891 0.103785,-0.992188 0.05708,0.545703 0.05708,1.438672 0,1.984375 -0.05708,0.545703 -0.103785,0.09922 -0.103785,-0.992187 z m -13.826401,0.903993 c 0.0127,-0.308225 0.07539,-0.37092 0.159851,-0.159853 0.07643,0.190996 0.06703,0.4192 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138964,-0.347265 z m 26.966612,0.09519 c 0,-0.112986 0.684609,-0.191618 1.521354,-0.174737 1.614784,0.03258 1.456545,0.149411 -0.396875,0.293031 -0.618463,0.04793 -1.124479,-0.0053 -1.124479,-0.118294 z m -57.080218,-0.13071 c 0.402183,-0.06082 0.997496,-0.05919 1.322917,0.0036 0.325421,0.0628 -0.0036,0.11256 -0.731242,0.110573 -0.727605,-0.002 -0.993858,-0.05337 -0.591675,-0.114185 z m 40.345322,0.0031 c 0.327422,-0.06306 0.863203,-0.06306 1.190625,0 0.327422,0.06306 0.05953,0.114662 -0.595313,0.114662 -0.654844,0 -0.922734,-0.0516 -0.595312,-0.114662 z m 6.883905,-0.005 c 0.475549,-0.05889 1.189924,-0.05767 1.5875,0.0027 0.397576,0.06037 0.0085,0.108551 -0.864634,0.107066 -0.873125,-0.0015 -1.198415,-0.05088 -0.722866,-0.109766 z m 40.476508,3.44e-4 c 0.47295,-0.05869 1.24685,-0.05869 1.7198,0 0.47294,0.05869 0.086,0.106712 -0.8599,0.106712 -0.94588,0 -1.33284,-0.04802 -0.8599,-0.106712 z M 78.769579,71.453395 c 0.0127,-0.308225 0.07539,-0.37092 0.15985,-0.159853 0.07643,0.190996 0.06703,0.419199 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138965,-0.347265 z M 47.019578,70.395061 c 0.0127,-0.308224 0.07539,-0.370919 0.15985,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138965,-0.347266 z m 29.633334,-0.529166 c 0.0127,-0.308225 0.07539,-0.37092 0.159851,-0.159853 0.07643,0.190996 0.06703,0.419199 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138964,-0.347265 z m 1.852083,-0.529167 c 0.0127,-0.308224 0.07539,-0.370919 0.159851,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02088,0.507118 -0.08792,0.08792 -0.150452,-0.06835 -0.138964,-0.347266 z m -40.494036,0.02206 c 0,-0.14552 0.115414,-0.443177 0.25648,-0.661458 0.141065,-0.218281 0.256479,-0.277812 0.256479,-0.132292 0,0.145521 -0.115414,0.443177 -0.256479,0.661459 -0.141066,0.218281 -0.25648,0.277812 -0.25648,0.132291 z m 6.891952,-0.551215 c 0.0127,-0.308224 0.07539,-0.370919 0.159851,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138964,-0.347266 z M 76.388329,67.74924 c 0.0127,-0.308225 0.07539,-0.37092 0.15985,-0.159853 0.07643,0.190996 0.06703,0.4192 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138965,-0.347265 z M 40.404994,66.95549 c 0.0127,-0.308225 0.07539,-0.37092 0.159851,-0.159853 0.07643,0.190996 0.06703,0.4192 -0.02088,0.507118 -0.08792,0.08792 -0.150452,-0.06835 -0.138964,-0.347265 z m -1.852083,-0.529167 c 0.0127,-0.308224 0.07539,-0.370919 0.15985,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138965,-0.347266 z m 61.188565,-2.094618 c 0.0011,-1.164167 0.04748,-1.607504 0.10337,-0.985194 0.05589,0.62231 0.0551,1.57481 -0.0019,2.116667 -0.05675,0.541857 -0.102479,0.03269 -0.101518,-1.131473 z M 75.329995,65.36799 c 0.0127,-0.308225 0.07539,-0.37092 0.159851,-0.159853 0.07643,0.190996 0.06703,0.4192 -0.02088,0.507118 -0.08792,0.08792 -0.150452,-0.06835 -0.138964,-0.347265 z M 40.669577,64.838821 c 0.0127,-0.308224 0.07539,-0.370919 0.159851,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02087,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138965,-0.347266 z M 55.026891,63.27337 c 0.0011,-1.164167 0.04748,-1.607504 0.10337,-0.985194 0.05589,0.62231 0.05511,1.57481 -0.0019,2.116667 -0.05675,0.541856 -0.102479,0.03269 -0.101518,-1.131473 z m -16.209397,1.036284 c 0.0127,-0.308224 0.07539,-0.370919 0.159851,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138964,-0.347266 z m 5.027084,0 c 0.0127,-0.308224 0.07539,-0.370919 0.15985,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02087,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138965,-0.347266 z m 17.261713,-1.433159 c 0,-0.945886 0.04802,-1.332839 0.106715,-0.859896 0.05869,0.472943 0.05869,1.246849 0,1.719791 -0.05869,0.472943 -0.106715,0.08599 -0.106715,-0.859895 z m -19.113797,0.903993 c 0.0127,-0.308225 0.07539,-0.37092 0.159851,-0.159853 0.07643,0.190996 0.06703,0.4192 -0.02088,0.507118 -0.08792,0.08792 -0.150452,-0.06835 -0.138964,-0.347265 z M 75.57369,63.257755 c 0,-0.22687 0.119062,-0.338906 0.264583,-0.248969 0.145521,0.08994 0.264583,0.275558 0.264583,0.41249 0,0.136933 -0.119062,0.248969 -0.264583,0.248969 -0.145521,0 -0.264583,-0.185621 -0.264583,-0.41249 z M 34.584161,62.986738 c 0.0127,-0.308225 0.07539,-0.37092 0.15985,-0.159853 0.07643,0.190996 0.06703,0.4192 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138965,-0.347265 z m 39.158334,-0.264584 c 0.0127,-0.308224 0.07539,-0.370919 0.159851,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02088,0.507118 -0.08792,0.08792 -0.150452,-0.06835 -0.138964,-0.347266 z M 39.082077,62.192988 c 0.0127,-0.308225 0.07539,-0.37092 0.159851,-0.159853 0.07643,0.190996 0.06703,0.4192 -0.02088,0.507118 -0.08792,0.08792 -0.150452,-0.06835 -0.138964,-0.347265 z m -6.350001,-0.264584 c 0.0127,-0.308224 0.07539,-0.370919 0.159853,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02089,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138964,-0.347266 z m 28.890759,-0.639409 c 0,-0.654844 0.0516,-0.922735 0.114662,-0.595313 0.06307,0.327422 0.06307,0.863203 0,1.190625 -0.06306,0.327422 -0.114662,0.05953 -0.114662,-0.595312 z m -19.365757,0.374826 c 0.0127,-0.308224 0.07539,-0.370919 0.15985,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02087,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138965,-0.347266 z m 42.087505,-0.432307 -0.03964,-0.983522 -2.976563,-0.0844 -2.976562,-0.0844 2.984865,-0.05656 c 3.249843,-0.06158 3.376629,-0.0037 3.159927,1.442448 -0.09534,0.636272 -0.118391,0.600867 -0.152024,-0.233568 z M 34.848744,60.870071 c 0.0127,-0.308224 0.07539,-0.370919 0.159851,-0.159852 0.07643,0.190996 0.06703,0.419199 -0.02088,0.507118 -0.08792,0.08792 -0.150453,-0.06835 -0.138964,-0.347266 z m 2.095778,-0.182466 c 0,-0.296272 -0.300524,-0.456436 -0.992188,-0.528787 l -0.992187,-0.103785 1.00049,-0.04448 c 0.687917,-0.03058 1.049441,0.08308 1.157166,0.363809 0.08617,0.224557 0.08243,0.482526 -0.0083,0.573264 -0.09073,0.09074 -0.164973,-0.02627 -0.164973,-0.260023 z m 4.233333,-0.148263 c 0,-0.169774 -0.386953,-0.32652 -0.859896,-0.348324 -0.845693,-0.03899 -0.847346,-0.04151 -0.10006,-0.152976 0.758328,-0.113108 1.483228,0.28671 1.140754,0.629182 -0.09944,0.09944 -0.180798,0.04189 -0.180798,-0.127882 z m -19.84375,-0.367835 c 0,-0.112986 0.47625,-0.205429 1.058333,-0.205429 0.582083,0 1.058333,0.04702 1.058333,0.104501 0,0.05748 -0.47625,0.149919 -1.058333,0.205429 -0.582083,0.05551 -1.058333,0.0085 -1.058333,-0.104501 z m 69.453127,0.05915 -1.058333,-0.189491 0.976571,-0.03755 c 0.537115,-0.02065 1.050158,0.08152 1.140095,0.227037 0.08994,0.145521 0.12673,0.247688 0.08176,0.227038 -0.04497,-0.02065 -0.558012,-0.122817 -1.140095,-0.227038 z m -65.153648,-0.19552 c 0.836745,-0.05251 2.205964,-0.05251 3.042708,0 0.836745,0.05251 0.152136,0.09547 -1.521354,0.09547 -1.673489,0 -2.358099,-0.04296 -1.521354,-0.09547 z m 5.427043,0.0084 c 0.329119,-0.06329 0.805369,-0.06088 1.058334,0.0053 0.252965,0.06622 -0.01631,0.118003 -0.598398,0.115066 -0.582083,-0.0029 -0.789054,-0.05712 -0.459936,-0.120406 z m 18.253166,-0.0079 c 0.763984,-0.05345 2.014141,-0.05345 2.778125,0 0.763985,0.05345 0.138906,0.09718 -1.389062,0.09718 -1.527969,0 -2.153047,-0.04373 -1.389063,-0.09718 z m 19.182292,-4.49e-4 c 0.836745,-0.05251 2.205964,-0.05251 3.042709,0 0.836745,0.05251 0.152135,0.09547 -1.521354,0.09547 -1.67349,0 -2.358099,-0.04296 -1.521355,-0.09547 z m 16.804128,0.0084 c 0.329117,-0.06329 0.805367,-0.06088 1.058333,0.0053 0.252965,0.06622 -0.01633,0.118003 -0.598398,0.115067 -0.582083,-0.0029 -0.789053,-0.05712 -0.459935,-0.120406 z m 11.373998,-0.0079 c 0.763985,-0.05345 2.014141,-0.05345 2.778125,0 0.763984,0.05345 0.138907,0.09718 -1.389062,0.09718 -1.527969,0 -2.153047,-0.04373 -1.389063,-0.09718 z"
+                 style="fill:#8c8c8c;fill-opacity:1;stroke-width:0.264583" />
+              <path
+                 id="path44"
+                 d="m 17.166917,74.588266 c 0.691224,-0.0545 1.822318,-0.0545 2.513542,0 0.691224,0.0545 0.125677,0.0991 -1.256771,0.0991 -1.382448,0 -1.947995,-0.04459 -1.256771,-0.0991 z m 9.395793,0.0074 c 0.329119,-0.06329 0.805369,-0.06088 1.058334,0.0053 0.252965,0.06622 -0.01631,0.118003 -0.598397,0.115066 -0.582084,-0.0029 -0.789055,-0.05712 -0.459937,-0.120406 z m 14.350562,0.08378 c 0,-0.05684 0.408366,-0.151019 0.907481,-0.209288 0.499115,-0.05827 0.849278,-0.01176 0.778137,0.103345 -0.128037,0.207167 -1.685618,0.305063 -1.685618,0.105943 z m 5.357813,-0.07904 c 0.254661,-0.06655 0.67138,-0.06655 0.926041,0 0.254662,0.06655 0.0463,0.121001 -0.463021,0.121001 -0.509322,0 -0.717682,-0.05445 -0.46302,-0.121001 z m 10.847917,-0.01035 c 0.545703,-0.05708 1.438672,-0.05708 1.984375,0 0.545703,0.05708 0.09922,0.103786 -0.992188,0.103786 -1.091406,0 -1.53789,-0.0467 -0.992187,-0.103786 z m 7.128359,-5.29e-4 2.299711,-0.09075 0.109278,-0.918607 c 0.109233,-0.918226 0.109268,-0.918194 0.08154,0.07587 l -0.02774,0.994464 -2.38125,0.01488 -2.38125,0.01488 2.299713,-0.09075 z m 5.442434,0.0062 c 0.329118,-0.06329 0.805368,-0.06088 1.058334,0.0053 0.252965,0.06622 -0.01633,0.118003 -0.598398,0.115067 -0.582083,-0.0029 -0.789053,-0.05712 -0.459936,-0.120406 z m 3.175001,0 c 0.329117,-0.06329 0.805367,-0.06088 1.058333,0.0053 0.252965,0.06622 -0.01633,0.118003 -0.598398,0.115067 -0.582083,-0.0029 -0.789053,-0.05712 -0.459935,-0.120406 z m 5.027083,0 c 0.329118,-0.06329 0.805368,-0.06088 1.058333,0.0053 0.252966,0.06622 -0.01632,0.118003 -0.598397,0.115067 -0.582084,-0.0029 -0.789054,-0.05712 -0.459936,-0.120406 z m 3.497625,0.03845 0.788734,-0.148681 0.07893,-5.8046 0.07893,-5.8046 -0.0078,5.887135 -0.0078,5.887123 -0.859896,0.06615 c -0.838483,0.0645 -0.840256,0.06244 -0.07116,-0.08254 z m 6.556542,-0.03845 c 0.329118,-0.06329 0.805368,-0.06088 1.058333,0.0053 0.252966,0.06622 -0.01632,0.118003 -0.598397,0.115067 -0.582084,-0.0029 -0.789054,-0.05712 -0.459936,-0.120406 z m 4.665234,-0.187395 c -0.07904,-0.205989 -0.09315,-0.712005 -0.03134,-1.124479 0.09614,-0.641585 0.11811,-0.609004 0.152024,0.225469 0.03625,0.892007 0.113179,0.98455 0.899539,1.082136 l 0.859896,0.106712 -0.868199,0.04234 c -0.536204,0.02615 -0.923158,-0.100874 -1.01192,-0.332181 z m 3.53685,0.187395 c 0.329117,-0.06329 0.805367,-0.06088 1.058333,0.0053 0.252965,0.06622 -0.01632,0.118003 -0.598398,0.115067 -0.582083,-0.0029 -0.789053,-0.05712 -0.459935,-0.120406 z m 7.41412,-0.0082 c 0.76886,-0.05362 1.95949,-0.05305 2.64583,0.0012 0.68635,0.0543 0.0573,0.09817 -1.39793,0.09748 -1.45521,-6.88e-4 -2.01677,-0.04512 -1.2479,-0.09874 z M 56.860334,71.343161 c 0,-0.654843 0.0516,-0.922734 0.114663,-0.595312 0.06307,0.327422 0.06307,0.863203 0,1.190625 -0.06306,0.327422 -0.114663,0.05953 -0.114663,-0.595313 z m 2.38125,0 c 0,-0.654843 0.0516,-0.922734 0.114663,-0.595312 0.06307,0.327422 0.06307,0.863203 0,1.190625 -0.06306,0.327422 -0.114663,0.05953 -0.114663,-0.595313 z M 103.9979,66.316078 c 0,-3.41974 0.0377,-4.818724 0.0838,-3.108854 0.0461,1.70987 0.0461,4.507838 0,6.217708 -0.0461,1.70987 -0.0838,0.310886 -0.0838,-3.108854 z m -60.7978,4.030026 c -0.06911,-0.111818 0.340585,-0.158844 0.910429,-0.104501 0.569841,0.05434 1.036076,0.145832 1.036076,0.203307 0,0.197074 -1.820762,0.104651 -1.946505,-0.09881 z m 32.042861,0.01658 c 0.327421,-0.06306 0.863203,-0.06306 1.190625,0 0.327421,0.06306 0.05953,0.114662 -0.595313,0.114662 -0.654844,0 -0.922734,-0.0516 -0.595312,-0.114662 z m 26.360899,-6.030983 c 5.3e-4,-1.74625 0.0434,-2.426194 0.0952,-1.510986 0.0518,0.915208 0.0514,2.343958 -0.001,3.175 -0.0522,0.831042 -0.0946,0.08224 -0.0941,-1.664014 z M 56.849656,63.670245 c 0,-0.509323 0.05445,-0.717683 0.121002,-0.463021 0.06655,0.254661 0.06655,0.67138 0,0.926041 -0.06655,0.254662 -0.121002,0.0463 -0.121002,-0.46302 z m 2.391928,-0.264584 c 0,-0.654843 0.0516,-0.922734 0.114663,-0.595312 0.06307,0.327422 0.06307,0.863203 0,1.190625 -0.06306,0.327422 -0.114663,0.05953 -0.114663,-0.595313 z m 16.464397,-0.529166 c -0.08994,-0.145521 -0.03743,-0.264584 0.116676,-0.264584 0.15411,0 0.280199,0.119063 0.280199,0.264584 0,0.14552 -0.0525,0.264583 -0.116676,0.264583 -0.06417,0 -0.190261,-0.119063 -0.280199,-0.264583 z M 97.00494,62.294199 c 0,-0.1163 0.625079,-0.197643 1.389063,-0.180762 1.443284,0.03189 1.304692,0.135885 -0.396875,0.297803 -0.545703,0.05193 -0.992188,-7.41e-4 -0.992188,-0.117041 z M 24.084195,61.972803 c -0.07905,-0.205989 -0.09315,-0.712004 -0.03134,-1.124479 0.09606,-0.641062 0.118135,-0.608209 0.152022,0.226262 0.03755,0.924582 0.09212,0.981705 1.031831,1.080002 l 0.992188,0.103785 -1.000492,0.04448 c -0.651308,0.02895 -1.050651,-0.08624 -1.14421,-0.330048 z m 3.930639,0.185016 c 0.400182,-0.06062 1.055026,-0.06062 1.455208,0 0.400183,0.06062 0.07276,0.110223 -0.727604,0.110223 -0.800364,0 -1.127786,-0.0496 -0.727604,-0.110223 z m 22.362031,-0.0022 c 0.475549,-0.05889 1.189924,-0.05767 1.5875,0.0027 0.397576,0.06037 0.0085,0.108551 -0.864634,0.107065 -0.873125,-0.0015 -1.198415,-0.05088 -0.722866,-0.109765 z m 16.273053,-0.866575 c 0,-0.654844 0.0516,-0.922735 0.114663,-0.595313 0.06307,0.327422 0.06307,0.863203 0,1.190625 -0.06306,0.327422 -0.114663,0.05953 -0.114663,-0.595312 z m 0.920126,0.871608 c 0.327422,-0.06306 0.863203,-0.06306 1.190625,0 0.327422,0.06306 0.05953,0.114662 -0.595313,0.114662 -0.654844,0 -0.922734,-0.0516 -0.595312,-0.114662 z m 4.085897,0.0014 c 1.193186,-0.102863 1.24588,-0.142715 1.350658,-1.021492 0.108021,-0.906009 0.108773,-0.90527 0.08129,0.08002 l -0.02774,0.994472 -1.322917,0.02701 -1.322916,0.02701 1.241626,-0.107038 z m 7.294271,-0.0018 c 0.329118,-0.06329 0.805368,-0.06088 1.058334,0.0053 0.252965,0.06622 -0.01632,0.118003 -0.598398,0.115067 -0.582083,-0.0029 -0.789053,-0.05712 -0.459936,-0.120406 z m 3.572428,-0.0027 c 0.402183,-0.06081 0.997496,-0.05919 1.322917,0.0036 0.325422,0.0628 -0.0037,0.11256 -0.731242,0.110574 -0.727604,-0.002 -0.993857,-0.05337 -0.591675,-0.114186 z"
+                 style="fill:#494949;fill-opacity:1;stroke-width:0.264583" />
+            </g>
+            <g
+               id="g358">
+              <path
+                 id="path50"
+                 style="fill:#b9b9b9;fill-opacity:1;stroke-width:0.999999"
+                 transform="matrix(0.26458334,0,0,0.26458333,6.1500308,-207.50364)"
+                 d="m 42.191406,992.75195 c -1.45,-0.001 -2.937262,0.0526 -4.113281,0.15821 -2.352038,0.21123 -0.677345,0.38702 3.722656,0.39062 4.399986,0.004 6.325304,-0.1699 4.277344,-0.38476 -1.023982,-0.10734 -2.436719,-0.16289 -3.886719,-0.16407 z m 99.109374,0 c -1.35937,0 -2.71875,0.0542 -3.75,0.16211 -2.0625,0.21576 -0.375,0.39258 3.75,0.39258 4.12501,0 5.8125,-0.17684 3.75,-0.39258 -1.03125,-0.10787 -2.39062,-0.16211 -3.75,-0.16211 z m 53,0 c -1.54062,0 -3.08125,0.053 -4.25,0.15821 -2.3375,0.21052 -0.425,0.38281 4.25,0.38281 4.675,0 6.5875,-0.17229 4.25,-0.38281 -1.16875,-0.10526 -2.70937,-0.15821 -4.25,-0.15821 z m 170,0.006 c -0.81563,0 -1.63123,0.0605 -2.25,0.17969 -1.23749,0.23834 -0.22502,0.43359 2.25,0.43359 2.47487,0 3.48749,-0.19525 2.25,-0.43359 -0.61875,-0.11917 -1.43437,-0.17969 -2.25,-0.17969 z m -103.75,0.0215 c -3.9875,-0.0749 -7.24966,0.20078 -7.25,0.61328 -3.4e-4,0.41248 2.36216,0.61975 5.25,0.46094 8.80258,-0.48411 9.63482,-0.93083 2,-1.07422 z m -39.39062,0.0176 c -1.04188,0.004 -2.22937,0.0258 -3.57813,0.0547 l -9.78125,0.20899 9.75,0.32812 9.75,0.32617 0.16016,4.21485 c 0.14559,3.83341 0.19693,3.91041 0.57031,0.86719 0.63926,-5.21027 0.42202,-6.03082 -6.87109,-6 z M 88.837891,994.875 c -0.155402,-0.12129 -0.263672,0.91133 -0.263672,2.76758 0,2.47502 0.193303,3.48752 0.43164,2.25 0.238337,-1.2375 0.238337,-3.2625 0,-4.5 -0.05959,-0.30938 -0.116168,-0.47715 -0.167968,-0.51758 z m 181.999999,0 c -0.1554,-0.12129 -0.26367,0.91133 -0.26367,2.76758 0,2.47502 0.1933,3.48752 0.43164,2.25 0.23837,-1.2375 0.23837,-3.2625 0,-4.5 -0.0596,-0.30938 -0.11617,-0.47715 -0.16797,-0.51758 z m -97.90625,7.2676 -0.35937,6.75 -0.35938,6.75 h -3.45508 -3.45703 v -6.4414 c 0,-3.5426 -0.3375,-6.6498 -0.75,-6.9063 -0.76425,-0.4752 -0.51546,10.7718 0.29102,13.1582 0.28734,0.8502 1.76366,1.2016 4.20117,1 l 3.75781,-0.3105 0.0664,-7 z m -92.40039,0.3594 c -0.391531,0.2321 -0.498021,10.3109 -0.232422,22.9394 l 0.5,23.7012 0.269531,-22.9297 c 0.148921,-12.6119 -0.07497,-23.2792 -0.498047,-23.7031 -0.01322,-0.013 -0.02643,-0.015 -0.03906,-0.01 z m -34.699219,1.082 c -0.127835,7e-4 -0.216805,1.2898 -0.220703,3.5586 -0.0056,3.3 0.176127,4.7702 0.404297,3.2676 0.22817,-1.5027 0.232342,-4.2027 0.0098,-6 -0.06955,-0.5617 -0.135253,-0.8265 -0.19336,-0.8262 z m 18.070313,0.1 c -0.09626,0.3859 -0.16211,6.5605 -0.16211,16.959 0,15.125 0.138704,21.3125 0.308594,13.75 0.16989,-7.5625 0.16989,-19.9375 0,-27.5 -0.05309,-2.3633 -0.10273,-3.3844 -0.146484,-3.209 z m 271.999996,1 c -0.0963,0.3859 -0.16211,6.5605 -0.16211,16.959 0,15.125 0.13871,21.3125 0.3086,13.75 0.16989,-7.5625 0.16989,-19.9375 0,-27.5 -0.0531,-2.3633 -0.10273,-3.3844 -0.14649,-3.209 z m -74.99023,2.3027 c -0.35859,-0.06 -0.61133,0.1608 -0.61133,0.5977 0,0.5824 0.45,1.0586 1,1.0586 0.55,0 1,-0.1989 1,-0.4414 0,-0.2426 -0.45,-0.7187 -1,-1.0586 -0.1375,-0.085 -0.26914,-0.1362 -0.38867,-0.1563 z m -58.74219,2.7754 c -0.725,-0 -1.48546,0.054 -2.10742,0.1738 -1.24391,0.2392 -0.46172,0.4442 1.73828,0.4551 2.19994,0.011 3.21781,-0.1852 2.26172,-0.4355 -0.47805,-0.1251 -1.16758,-0.1897 -1.89258,-0.1934 z m -164.281248,0.4727 c -0.102844,0.2596 -0.171875,4.4129 -0.171875,11.4082 0,10.175 0.148585,14.3375 0.330078,9.25 0.181493,-5.0875 0.181493,-13.4125 0,-18.5 -0.05672,-1.5899 -0.111456,-2.2762 -0.158203,-2.1582 z m 198.009768,0.2695 c -0.0984,0.241 -0.16557,5.5637 -0.16602,14.6387 -6.4e-4,13.2 0.14037,18.7395 0.31446,12.3086 0.17372,-6.431 0.1752,-17.231 0.002,-24 -0.0541,-2.1154 -0.10568,-3.0568 -0.15039,-2.9473 z m -190.029299,12.0059 c -0.113479,0.065 -0.191777,2.4734 -0.19336,6.6328 -0.0022,6.05 0.160031,8.6545 0.361328,5.7871 0.201374,-2.8674 0.202937,-7.8174 0.0039,-11 -0.06221,-0.9946 -0.120294,-1.4495 -0.171875,-1.4199 z m 119.123049,2.1484 c -0.71562,0.01 -0.5927,0.4019 0.30859,0.9844 1.92113,1.2415 2.2673,1.2415 1.5,0 -0.33992,-0.55 -1.15356,-0.9927 -1.80859,-0.9844 z m 183.30859,0.096 c -1.17812,0 -2.35625,0.055 -3.25,0.166 -1.7875,0.2219 -0.325,0.4024 3.25,0.4024 3.575,0 5.03749,-0.1806 3.25,-0.4024 -0.89375,-0.1109 -2.07187,-0.166 -3.25,-0.166 z m -183.43164,5.7559 c -0.11355,0.065 -0.19198,2.4734 -0.19336,6.6328 -0.002,6.05 0.15992,8.6545 0.36133,5.7871 0.20137,-2.8674 0.20297,-7.8174 0.004,-11 -0.0622,-0.9946 -0.12027,-1.4495 -0.17188,-1.4199 z m 22.30078,0.2519 c -0.725,-0 -1.48546,0.054 -2.10742,0.1738 -1.24391,0.2392 -0.46172,0.4442 1.73828,0.4551 2.19994,0.011 3.21781,-0.1852 2.26172,-0.4355 -0.47805,-0.1251 -1.16758,-0.1897 -1.89258,-0.1934 z m 117.71485,3.6719 c -0.13588,-0.1421 -0.23077,1.9965 -0.22852,5.709 0.003,4.95 0.17374,6.8498 0.38086,4.2207 0.20617,-2.6291 0.20387,-6.6791 -0.006,-9 -0.0524,-0.5802 -0.10119,-0.8823 -0.14648,-0.9297 z m -142.94141,35.3769 c 0.0744,0.025 0.0712,0.027 0.15234,0.055 0.0812,0.027 -0.11331,-0.049 -0.11718,-0.055 -0.0113,10e-5 -0.0238,0 -0.0352,0 z m -43.64258,0.08 0.37695,0.057 c -0.078,-0.022 -0.1579,-0.036 -0.23632,-0.057 -0.0417,10e-5 -0.099,-10e-5 -0.14063,0 z m -0.75,0 c -0.20859,6e-4 -0.14429,0 -0.34961,0 0.37665,0.074 0.73466,0.1429 1.03516,0.1993 0.10843,2e-4 0.26761,0 0.37695,0 0.0943,-0.031 0.18952,-0.063 0.2793,-0.092 -0.0311,-0.01 -0.0627,-0.015 -0.0937,-0.023 -0.22206,-0.025 -0.70475,-0.06 -1.04492,-0.088 -0.0599,2e-4 -0.14335,-2e-4 -0.20313,0 z m -7.04883,0.035 c -2.83636,0.012 -5.29631,0.024 -6.91015,0.035 -0.0949,0.033 -0.19064,0.064 -0.28516,0.098 1.84704,0.01 4.33746,0.014 7.08203,0.022 0.0105,-0.013 0.0227,-0.024 0.0332,-0.037 0.0359,-0.045 0.0478,-0.075 0.0801,-0.1172 z m -7.99218,0.041 c -4.0534,0.032 -5.389944,0.062 -0.20704,0.088 0.12,-0.055 0.0316,-0.015 0.16797,-0.078 0.0171,-0 0.0221,-0.01 0.0391,-0.01 z m 16.33007,0.016 c 0.0314,0.01 0.0269,0.01 0.0606,0.018 0.008,-0 0.0159,-0.01 0.0234,-0.01 -0.0258,-0 -0.0571,-0.01 -0.084,-0.01 z" />
+              <path
+                 transform="translate(-0.5523366,-4.8329451)"
+                 style="fill:#333333;fill-opacity:1;stroke-width:0.264583"
+                 d="m 14.993414,74.006389 c -0.165872,-0.309934 -0.273893,-2.895446 -0.273893,-6.555712 0,-7.49744 -0.116914,-7.220016 3.042709,-7.220016 2.788131,0 3.042708,0.259502 3.042708,3.10158 v 1.925504 h -0.926042 -0.926041 v -1.455209 -1.455208 l -1.521355,0.02089 c -0.836744,0.01149 -1.372526,0.08094 -1.190625,0.15434 0.248225,0.100161 0.33073,1.382023 0.33073,5.138487 v 5.005034 h 1.206182 1.206182 l -0.0817,-3.175501 -0.0817,-3.1755 0.992187,5e-4 0.992188,5.01e-4 v 4.101042 4.101041 h -2.768816 c -2.466658,0 -2.798706,-0.05585 -3.042708,-0.511772 z m 6.605274,-6.631978 v -7.14375 h 0.926042 0.926041 v 7.14375 7.14375 H 22.52473 21.598688 Z m 4.497917,0.926042 v -6.217708 h -0.926042 c -0.881944,0 -0.926042,-0.0441 -0.926042,-0.926042 v -0.926042 h 2.910417 2.910417 v 0.926042 0.926042 h -1.375833 c -1.070093,0 -1.305278,0.07055 -1.058334,0.3175 0.227961,0.22796 0.3175,1.981435 0.3175,6.217708 v 5.900208 h -0.926041 -0.926042 z m 5.720767,0.198438 c -0.399753,-3.310599 -0.796293,-6.534128 -0.881201,-7.163397 l -0.154378,-1.144126 0.898552,0.08579 0.898552,0.08579 0.549287,4.562135 c 0.302109,2.509174 0.609876,4.622723 0.683928,4.696775 0.07405,0.07405 0.339964,-1.56219 0.590915,-3.636093 0.749422,-6.193349 0.626075,-5.755109 1.619824,-5.755109 1.012193,0 0.93335,-0.276213 1.61222,5.648207 0.247584,2.160629 0.533355,3.767973 0.635048,3.571875 0.101692,-0.196097 0.390004,-2.142477 0.640691,-4.32529 0.250687,-2.182813 0.514162,-4.177109 0.585499,-4.431771 0.152143,-0.543119 1.679139,-0.662967 1.685531,-0.132291 0.0021,0.181901 -0.375931,3.396588 -0.840274,7.143749 l -0.844259,6.813021 h -1.253136 c -1.426117,0 -1.243335,0.419224 -1.845551,-4.232895 -0.268121,-2.071238 -0.500446,-3.005799 -0.520814,-2.095056 -0.0046,0.206154 -0.179432,1.624983 -0.388493,3.152951 -0.20906,1.527969 -0.383881,2.867422 -0.388493,2.976563 -0.0046,0.10914 -0.581737,0.198437 -1.282504,0.198437 h -1.274122 z m 9.159736,5.178957 c 0.07669,-0.483713 0.47452,-3.712281 0.884068,-7.174594 l 0.744638,-6.295117 1.596509,0.07741 1.596512,0.07741 0.852268,6.746875 c 0.468749,3.710781 0.857779,6.895703 0.864513,7.077604 0.0075,0.202854 -0.339635,0.330729 -0.897829,0.330729 -0.86065,0 -0.91453,-0.05388 -0.992188,-0.992187 l -0.08212,-0.992188 -1.486466,-0.07831 -1.486466,-0.07831 0.03126,1.004351 c 0.02975,0.955834 -0.01209,1.008491 -0.866434,1.090078 -0.880867,0.08412 -0.89508,0.06924 -0.758264,-0.79375 z m 4.167383,-3.856041 c -0.0031,-1.077622 -0.766603,-7.008476 -0.922229,-7.1641 -0.07369,-0.0737 -0.138697,-0.02485 -0.144452,0.108545 -0.0058,0.133394 -0.222443,1.881235 -0.481533,3.884092 -0.259088,2.002857 -0.413131,3.699497 -0.342316,3.770313 0.07082,0.07081 0.52563,0.128754 1.010701,0.128754 0.786244,0 0.881713,-0.07895 0.879829,-0.727604 z m 3.177115,-2.447396 v -7.14375 h 2.626934 c 3.497151,0 3.458482,-0.04393 3.458482,3.928778 0,3.196385 -0.303831,4.273306 -1.205627,4.273306 -0.510079,0 -0.485661,0.262479 0.282872,3.040848 0.846889,3.061632 0.844756,3.096481 -0.183221,2.995186 -0.836669,-0.08244 -0.845807,-0.09962 -1.627797,-3.059472 -0.741785,-2.807692 -0.824645,-2.976562 -1.460481,-2.976562 -0.524283,0 -0.603523,0.07055 -0.356579,0.3175 0.205843,0.205844 0.3175,1.275879 0.3175,3.042708 v 2.725208 h -0.926042 -0.926041 z m 4.233333,-3.175 v -2.116666 h -1.508125 c -1.172985,0 -1.437569,0.07055 -1.190625,0.3175 0.18469,0.184689 0.3175,1.070092 0.3175,2.116666 v 1.799167 h 1.190625 1.190625 z m 2.963333,10.00125 c -0.184689,-0.184689 -0.3175,-1.070092 -0.3175,-2.116666 v -1.799167 h 0.778537 c 0.726776,0 0.783947,0.07476 0.859896,1.124479 l 0.08136,1.124479 h 1.190625 1.190625 l 0.07607,-1.058333 c 0.07026,-0.977543 -0.08627,-1.254747 -2.050521,-3.63129 L 55.20077,65.271207 v -2.202773 c 0,-1.36049 0.121404,-2.324176 0.3175,-2.520273 0.428808,-0.428808 4.757026,-0.428808 5.185834,0 0.18469,0.18469 0.3175,1.070093 0.3175,2.116667 v 1.799167 h -0.79375 c -0.749652,0 -0.79375,-0.0588 -0.79375,-1.058334 v -1.058333 h -1.413261 -1.413264 l 0.175037,1.153371 c 0.138851,0.914929 0.59512,1.666909 2.207014,3.637415 l 2.031974,2.484043 v 2.130502 c 0,1.30428 -0.123129,2.253631 -0.3175,2.448002 -0.197721,0.19772 -1.175925,0.3175 -2.592917,0.3175 -1.416992,0 -2.395196,-0.11978 -2.592917,-0.3175 z m 6.297526,-0.806979 c 2.43e-4,-0.618463 0.655087,-3.2528 1.455208,-5.854081 0.800121,-2.601281 1.454767,-4.833703 1.454767,-4.960938 0,-0.127234 -0.654844,-0.231335 -1.455209,-0.231335 h -1.455208 v -1.058333 -1.058334 h 2.38125 2.38125 l -5.29e-4,1.256771 c -2.65e-4,0.772379 -0.561147,3.079682 -1.455208,5.986373 -0.800034,2.601281 -1.45468,4.833703 -1.45468,4.960938 0,0.127234 0.654844,0.231335 1.455209,0.231335 h 1.455208 v 0.926042 0.926041 h -2.38125 -2.38125 l 5.29e-4,-1.124479 z m 7.407892,-5.093229 v -6.217708 h -1.058334 c -1.033134,0 -1.058333,-0.02205 -1.058333,-0.926042 v -0.926042 h 2.910417 2.910416 v 0.926042 c 0,0.921142 -0.0063,0.926042 -1.190625,0.926042 -0.654843,0 -1.190625,0.119062 -1.190625,0.264583 0,0.145521 0.119063,0.264583 0.264584,0.264583 0.16855,0 0.264583,2.160764 0.264583,5.953125 v 5.953125 H 70.149731 69.22369 Z m 4.125195,-0.727604 c 0.466376,-3.819922 0.793533,-7.03461 0.727014,-7.14375 -0.06652,-0.109141 0.659993,-0.198438 1.614467,-0.198438 1.205857,0 1.738886,0.100921 1.746811,0.33073 0.0063,0.181901 0.400965,3.396588 0.877101,7.143749 l 0.865699,6.813021 h -0.853845 c -0.789964,0 -0.867225,-0.07918 -1.032651,-1.058333 l -0.178805,-1.058333 h -1.61716 c -1.102733,0 -1.531027,0.08613 -1.34639,0.270768 0.14892,0.148922 0.218752,0.625172 0.155178,1.058333 -0.100558,0.685145 -0.225465,0.787565 -0.960483,0.787565 h -0.844888 z m 3.460554,1.984375 c -0.08514,-0.545703 -0.29836,-2.331641 -0.473826,-3.96875 -0.175466,-1.63711 -0.397245,-2.976563 -0.492842,-2.976563 -0.0956,0 -0.321635,1.279922 -0.502304,2.844271 -0.180668,1.564349 -0.39688,3.350287 -0.48047,3.96875 l -0.151984,1.124479 h 1.128112 1.128114 z m 3.730065,-1.190625 -0.07102,-6.151563 -0.992188,-0.08212 c -0.938308,-0.07766 -0.992188,-0.131539 -0.992188,-0.992188 v -0.91007 h 2.910417 2.910417 V 61.1567 c 0,0.913112 -0.01569,0.926038 -1.124479,0.925787 l -1.124479,-2.54e-4 0.07974,6.217962 0.07974,6.217963 h -0.802468 -0.802465 z m 6.936092,3.96875 c -0.0034,-1.728992 -0.268063,-3.216923 -1.272789,-7.156733 l -1.268442,-4.973921 0.926947,0.07913 0.926949,0.07913 0.71655,2.862204 c 0.394105,1.574213 0.774509,2.920163 0.845349,2.991002 0.07084,0.07084 0.464328,-1.246919 0.874422,-2.92835 l 0.745624,-3.057148 h 0.871535 c 0.479343,0 0.871533,0.06433 0.871533,0.142964 0,0.07863 -0.535782,2.276484 -1.190625,4.88412 -0.948071,3.775286 -1.190625,5.201487 -1.190625,7.000786 v 2.25963 H 88.405982 87.47994 l -0.0043,-2.182812 z m 5.296011,1.256771 c 0,-0.852547 0.063,-0.926042 0.79375,-0.926042 0.730753,0 0.79375,0.07349 0.79375,0.926042 0,0.852546 -0.063,0.926041 -0.79375,0.926041 -0.730753,0 -0.79375,-0.0735 -0.79375,-0.926041 z m 2.910417,-6.217709 v -7.14375 h 2.592916 c 1.663936,0 2.70667,0.113753 2.91042,0.3175 0.21503,0.215031 0.3175,1.4502 0.3175,3.82715 0,4.11143 0.0374,4.057434 -2.813651,4.057434 -1.392301,0 -1.719545,0.07055 -1.472602,0.3175 0.205843,0.205844 0.3175,1.275879 0.3175,3.042708 v 2.725208 h -0.926042 -0.926041 z m 4.178316,-3.108854 -0.07727,-2.050521 -1.389063,-0.07997 c -0.846312,-0.04872 -1.389063,0.02881 -1.389063,0.198438 0,0.153126 0.119063,0.27841 0.264584,0.27841 0.151191,0 0.264583,0.79375 0.264583,1.852084 v 1.852083 h 1.201754 1.201756 z m 2.37842,3.108679 -0.0744,-7.143925 0.85502,1.75e-4 0.85501,1.75e-4 0.071,6.151563 0.071,6.151562 1.65364,0.07877 1.65365,0.07877 v 0.913416 0.913416 h -2.50524 -2.50524 z"
+                 id="path42" />
+              <rect
+                 style="fill:#ff6600;stroke-width:0.250632"
+                 id="rect52"
+                 width="92.654457"
+                 height="2.4855149"
+                 x="14.116894"
+                 y="71.697617" />
+            </g>
           </g>
         </g>
       </g>
       <ellipse
-         id="path790"
-         cx="175.48271"
-         cy="-53.260811"
-         transform="scale(1,-1)"
-         rx="33.963501"
+         style="fill:none;fill-opacity:1;stroke-width:0.71992582"
          ry="30.396032"
-         style="fill:none;fill-opacity:1;stroke-width:0.71992582" />
+         rx="33.963501"
+         transform="scale(1,-1)"
+         cy="-53.260811"
+         cx="175.48271"
+         id="path790" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3);stroke-width:1.04981256"
-         id="path6762-7"
-         cx="500.01724"
-         cy="-129.8604"
-         rx="23.823256"
+         transform="scale(1,-1)"
          ry="23.130894"
-         transform="scale(1,-1)" />
+         rx="23.823256"
+         cy="-104.3604"
+         cx="500.01724"
+         id="path6762-7"
+         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3);stroke-width:1.04981" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
-         x="524.46155"
-         y="-116.58173"
+         transform="scale(0.95167444,-1.0507795)"
          id="text6880-5"
-         transform="scale(0.95167444,-1.0507795)"><tspan
-           sodipodi:role="line"
-           id="tspan6878-3"
+         y="-92.313988"
+         x="524.46155"
+         style="font-style:normal;font-weight:normal;font-size:18.9665px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.474163"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.474163"
+           y="-92.313988"
            x="524.46155"
-           y="-116.58173"
-           style="stroke-width:0.47416309">B</tspan></text>
+           id="tspan6878-3"
+           sodipodi:role="line">B</tspan></text>
       <ellipse
-         style="fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient6832);stroke-width:1.04981256"
-         id="path6762"
+         ry="23.130894"
+         rx="23.823256"
+         transform="scale(1,-1)"
+         cy="-103.76715"
          cx="468.0694"
-         cy="-129.26715"
-         transform="scale(1,-1)"
-         rx="23.823256"
-         ry="23.130894" />
+         id="path6762"
+         style="fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient6832);stroke-width:1.04981" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
-         x="480.72363"
-         y="-117.4593"
+         transform="scale(0.95167444,-1.0507795)"
          id="text6880"
-         transform="scale(0.95167444,-1.0507795)"><tspan
-           sodipodi:role="line"
-           id="tspan6878"
+         y="-93.191551"
+         x="480.72363"
+         style="font-style:normal;font-weight:normal;font-size:18.9665px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.474163"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.474163"
+           y="-93.191551"
            x="480.72363"
-           y="-117.4593"
-           style="stroke-width:0.47416309">A</tspan></text>
+           id="tspan6878"
+           sodipodi:role="line">A</tspan></text>
       <ellipse
-         style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5);stroke-width:1.04981256"
-         id="path6762-7-2"
+         transform="scale(1,-1)"
+         ry="23.130892"
+         rx="23.823256"
+         cy="-104.44212"
          cx="500.19183"
-         cy="-129.94212"
-         rx="23.823256"
-         ry="23.130892"
-         transform="scale(1,-1)" />
+         id="path6762-7-2"
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5);stroke-width:1.04981" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
-         x="453.40262"
-         y="-94.325798"
+         transform="scale(0.99735144,-1.0026556)"
          id="text7242"
-         transform="scale(0.99735144,-1.0026556)"><tspan
-           sodipodi:role="line"
-           id="tspan7240"
+         y="-68.893372"
+         x="453.40262"
+         style="font-style:normal;font-weight:normal;font-size:10.2002px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.255006"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.255006"
+           y="-68.893372"
            x="453.40262"
-           y="-94.325798"
-           style="stroke-width:0.25500581">git log A..B</tspan></text>
+           id="tspan7240"
+           sodipodi:role="line">git log A..B</tspan></text>
       <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(1,-1)"
+         cy="-119.50235"
          cx="549.00122"
-         cy="-145.00235"
-         transform="scale(1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         id="path7244"
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-9"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(1,-1)"
+         cy="-112.7753"
          cx="555.81641"
-         cy="-138.2753"
-         transform="scale(1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         id="path7244-9"
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-1"
-         cx="562.50769"
-         cy="-132.29573"
-         transform="scale(1,-1)"
-         inkscape:transform-center-x="1.9671474"
+         ry="2.366904"
+         rx="2.3543828"
          inkscape:transform-center-y="-2.021557"
-         rx="2.3543828"
-         ry="2.366904" />
-      <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-2"
-         cx="569.69458"
-         cy="-126.19157"
+         inkscape:transform-center-x="1.9671474"
          transform="scale(1,-1)"
-         inkscape:transform-center-x="1.5300033"
+         cy="-106.79573"
+         cx="562.50769"
+         id="path7244-1"
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
+      <ellipse
+         ry="2.366904"
+         rx="2.3543828"
          inkscape:transform-center-y="-1.3184073"
-         rx="2.3543828"
-         ry="2.366904" />
+         inkscape:transform-center-x="1.5300033"
+         transform="scale(1,-1)"
+         cy="-100.69157"
+         cx="569.69458"
+         id="path7244-2"
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-7"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(-1)"
+         cy="-119.5101"
          cx="-590.388"
-         cy="-145.0101"
-         transform="scale(-1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         id="path7244-7"
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-9-0"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(-1)"
+         cy="-112.78305"
          cx="-583.57281"
-         cy="-138.28305"
-         transform="scale(-1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         id="path7244-9-0"
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-1-9"
-         cx="-576.88159"
-         cy="-132.30351"
-         inkscape:transform-center-x="-1.9671503"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(-1)"
          inkscape:transform-center-y="-2.0215574"
-         transform="scale(-1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         inkscape:transform-center-x="-1.9671503"
+         cy="-106.80351"
+         cx="-576.88159"
+         id="path7244-1-9"
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-2-3"
-         cx="-569.69458"
-         cy="-126.19936"
-         inkscape:transform-center-x="-1.5300008"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(-1)"
          inkscape:transform-center-y="-1.3184065"
-         transform="scale(-1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         inkscape:transform-center-x="-1.5300008"
+         cy="-100.69936"
+         cx="-569.69458"
+         id="path7244-2-3"
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
-         x="537.84857"
-         y="-93.603546"
+         transform="scale(0.99735144,-1.0026556)"
          id="text7242-6"
-         transform="scale(0.99735144,-1.0026556)"><tspan
-           sodipodi:role="line"
-           id="tspan7240-0"
+         y="-68.17112"
+         x="537.84857"
+         style="font-style:normal;font-weight:normal;font-size:10.2002px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.255006"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.255006"
+           y="-68.17112"
            x="537.84857"
-           y="-93.603546"
-           style="stroke-width:0.25500581">git log A..B</tspan></text>
+           id="tspan7240-0"
+           sodipodi:role="line">git log A..B</tspan></text>
       <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(1,-1)"
+         cy="-90.552673"
+         cx="569.69312"
          id="path7244-6"
-         cx="569.69312"
-         cy="-116.05267"
-         transform="scale(1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(1,-1)"
+         cy="-82.448662"
+         cx="569.69312"
          id="path7244-26"
-         cx="569.69312"
-         cy="-107.94866"
-         transform="scale(1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:13.09998798px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32749969"
-         x="536.7063"
-         y="-141.595"
+         transform="scale(0.99735144,-1.0026556)"
          id="text7346"
-         transform="scale(0.99735144,-1.0026556)"><tspan
-           sodipodi:role="line"
-           id="tspan7344"
+         y="-116.16251"
+         x="536.7063"
+         style="font-style:normal;font-weight:normal;font-size:13.1px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3275"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.3275"
+           y="-116.16251"
            x="536.7063"
-           y="-141.595"
-           style="stroke-width:0.32749969">A</tspan></text>
+           id="tspan7344"
+           sodipodi:role="line">A</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:13.55901623px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3389754"
-         x="596.5025"
-         y="-142.1389"
+         transform="scale(0.99735144,-1.0026556)"
          id="text7350"
-         transform="scale(0.99735144,-1.0026556)"><tspan
-           sodipodi:role="line"
-           id="tspan7348"
+         y="-116.70641"
+         x="596.5025"
+         style="font-style:normal;font-weight:normal;font-size:13.559px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.338975"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.338975"
+           y="-116.70641"
            x="596.5025"
-           y="-142.1389"
-           style="stroke-width:0.3389754">B</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:18.39698029px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.43498126"
-         x="70.529877"
-         y="-8.643465"
-         id="text7364"
-         transform="scale(1.160681,-0.86156316)"><tspan
-           sodipodi:role="line"
-           id="tspan7362"
-           x="70.529877"
-           y="-8.643465"
-           style="stroke-width:0.43498126">www.GitWarsztaty.pl</tspan></text>
+           id="tspan7348"
+           sodipodi:role="line">B</tspan></text>
       <flowRoot
-         xml:space="preserve"
-         id="flowRoot7393"
+         transform="matrix(0.99060201,0,0,0.93015176,7.7018412,32.63562)"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0.99060201,0,0,0.93015176,7.7018412,32.63562)"><flowRegion
+         id="flowRoot7393"
+         xml:space="preserve"><flowRegion
            id="flowRegion7395"><rect
-             id="rect7397"
-             width="34.285713"
-             height="51.785713"
+             y="-11.408888"
              x="14.642858"
-             y="-11.408888" /></flowRegion><flowPara
-           id="flowPara7399" /></flowRoot>      <path
-         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 570.94993,20.434266 0,18.63042"
+             height="51.785713"
+             width="34.285713"
+             id="rect7397" /></flowRegion><flowPara
+           id="flowPara7399" /></flowRoot>
+      <path
+         inkscape:connector-curvature="0"
          id="path7338-0"
-         inkscape:connector-curvature="0" />
+         d="M 570.94993,-5.0657341 V 13.564686"
+         style="fill:none;stroke:#000000;stroke-width:0.695766px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 591.71775,58.08933 570.94993,39.064686"
+         inkscape:connector-curvature="0"
          id="path7340-2"
-         inkscape:connector-curvature="0" />
+         d="M 591.71775,32.58933 570.94993,13.564686"
+         style="fill:none;stroke:#000000;stroke-width:0.695766px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.69576609px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 550.08235,57.71561 570.94993,39.064686"
+         inkscape:connector-curvature="0"
          id="path7342-3"
-         inkscape:connector-curvature="0" />
+         d="M 550.08235,32.21561 570.94993,13.564686"
+         style="fill:none;stroke:#000000;stroke-width:0.695766px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3-2);stroke-width:1.04981256"
-         id="path6762-7-7"
+         transform="scale(1,-1)"
+         ry="23.130892"
+         rx="23.823256"
+         cy="-17.198311"
          cx="501.0983"
-         cy="-42.698311"
-         rx="23.823256"
-         ry="23.130892"
-         transform="scale(1,-1)" />
+         id="path6762-7-7"
+         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-3-2);stroke-width:1.04981" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
-         x="525.59863"
-         y="-33.631676"
+         transform="scale(0.95167444,-1.0507795)"
          id="text6880-5-5"
-         transform="scale(0.95167444,-1.0507795)"><tspan
-           sodipodi:role="line"
-           id="tspan6878-3-9"
+         y="-9.3639784"
+         x="525.59863"
+         style="font-style:normal;font-weight:normal;font-size:18.9665px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.474163"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.474163"
+           y="-9.3639784"
            x="525.59863"
-           y="-33.631676"
-           style="stroke-width:0.47416309">B</tspan></text>
+           id="tspan6878-3-9"
+           sodipodi:role="line">B</tspan></text>
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-7);stroke-width:1.04981256"
-         id="path6762-2"
+         transform="scale(1,-1)"
+         ry="23.130892"
+         rx="23.823256"
+         cy="-16.605103"
          cx="469.15051"
-         cy="-42.105103"
-         rx="23.823256"
-         ry="23.130892"
-         transform="scale(1,-1)" />
+         id="path6762-2"
+         style="fill:#62acd9;fill-opacity:1;stroke:url(#linearGradient6832-7);stroke-width:1.04981" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:18.96652412px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47416309"
-         x="481.86072"
-         y="-34.509285"
+         transform="scale(0.95167444,-1.0507795)"
          id="text6880-2"
-         transform="scale(0.95167444,-1.0507795)"><tspan
-           sodipodi:role="line"
-           id="tspan6878-8"
+         y="-10.241588"
+         x="481.86072"
+         style="font-style:normal;font-weight:normal;font-size:18.9665px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.474163"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.474163"
+           y="-10.241588"
            x="481.86072"
-           y="-34.509285"
-           style="stroke-width:0.47416309">A</tspan></text>
+           id="tspan6878-8"
+           sodipodi:role="line">A</tspan></text>
       <ellipse
-         style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5-1);stroke-width:1.04981256"
-         id="path6762-7-2-9"
-         cx="501.27286"
-         cy="-42.780067"
-         rx="23.823256"
+         transform="scale(1,-1)"
          ry="23.130892"
-         transform="scale(1,-1)" />
+         rx="23.823256"
+         cy="-17.280067"
+         cx="501.27286"
+         id="path6762-7-2-9"
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient6832-3-5-1);stroke-width:1.04981" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
-         x="454.48749"
-         y="-7.3944969"
+         transform="scale(0.99735144,-1.0026556)"
          id="text7242-7"
-         transform="scale(0.99735144,-1.0026556)"><tspan
-           sodipodi:role="line"
-           id="tspan7240-3"
+         y="18.037964"
+         x="454.48749"
+         style="font-style:normal;font-weight:normal;font-size:10.2002px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.255006"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.255006"
+           y="18.037964"
            x="454.48749"
-           y="-7.3944969"
-           style="stroke-width:0.25500581">git log A...B</tspan></text>
+           id="tspan7240-3"
+           sodipodi:role="line">git log A...B</tspan></text>
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-61"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(1,-1)"
+         cy="-32.340195"
          cx="550.08221"
-         cy="-57.840195"
-         transform="scale(1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         id="path7244-61"
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-9-2"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(1,-1)"
+         cy="-25.61322"
          cx="556.8974"
-         cy="-51.11322"
-         transform="scale(1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         id="path7244-9-2"
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-1-93"
-         cx="563.58868"
-         cy="-45.133659"
-         inkscape:transform-center-x="1.9671478"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(1,-1)"
          inkscape:transform-center-y="-2.0215578"
-         transform="scale(1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         inkscape:transform-center-x="1.9671478"
+         cy="-19.633659"
+         cx="563.58868"
+         id="path7244-1-93"
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-2-1"
-         cx="570.77563"
-         cy="-39.029541"
-         inkscape:transform-center-x="1.5300087"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(1,-1)"
          inkscape:transform-center-y="-1.3184071"
-         transform="scale(1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         inkscape:transform-center-x="1.5300087"
+         cy="-13.529541"
+         cx="570.77563"
+         id="path7244-2-1"
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-7-9"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(-1)"
+         cy="-32.347954"
          cx="-591.46899"
-         cy="-57.847954"
-         transform="scale(-1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         id="path7244-7-9"
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-9-0-4"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(-1)"
+         cy="-25.620941"
          cx="-584.65381"
-         cy="-51.120941"
-         transform="scale(-1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         id="path7244-9-0-4"
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#62acd9;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-1-9-7"
-         cx="-577.96259"
-         cy="-45.141441"
-         inkscape:transform-center-x="-1.9671502"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(-1)"
          inkscape:transform-center-y="-2.021558"
-         transform="scale(-1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         inkscape:transform-center-x="-1.9671502"
+         cy="-19.641441"
+         cx="-577.96259"
+         id="path7244-1-9-7"
+         style="fill:#62acd9;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-2-3-8"
-         cx="-570.77563"
-         cy="-39.037315"
-         inkscape:transform-center-x="-1.5300004"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(-1)"
          inkscape:transform-center-y="-1.3184072"
-         transform="scale(-1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         inkscape:transform-center-x="-1.5300004"
+         cy="-13.537315"
+         cx="-570.77563"
+         id="path7244-2-3-8"
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.20023346px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25500581"
-         x="538.93347"
-         y="-6.6722298"
+         transform="scale(0.99735144,-1.0026556)"
          id="text7242-6-4"
-         transform="scale(0.99735144,-1.0026556)"><tspan
-           sodipodi:role="line"
-           id="tspan7240-0-5"
+         y="18.760231"
+         x="538.93347"
+         style="font-style:normal;font-weight:normal;font-size:10.2002px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.255006"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.255006"
+           y="18.760231"
            x="538.93347"
-           y="-6.6722298"
-           style="stroke-width:0.25500581">git log A...B</tspan></text>
+           id="tspan7240-0-5"
+           sodipodi:role="line">git log A...B</tspan></text>
       <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
+         ry="2.366904"
+         rx="2.3543828"
+         transform="scale(1,-1)"
+         cy="-3.3906326"
+         cx="570.77417"
          id="path7244-6-0"
-         cx="570.77417"
-         cy="-28.890633"
-         transform="scale(1,-1)"
-         rx="2.3543828"
-         ry="2.366904" />
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
       <ellipse
-         style="fill:#00003b;fill-opacity:1;stroke-width:0.47212696"
-         id="path7244-26-3"
-         cx="570.77417"
-         cy="-20.786598"
-         transform="scale(1,-1)"
+         ry="2.366904"
          rx="2.3543828"
-         ry="2.366904" />
+         transform="scale(1,-1)"
+         cy="4.7134023"
+         cx="570.77417"
+         id="path7244-26-3"
+         style="fill:#00003b;fill-opacity:1;stroke-width:0.472127" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:13.09998798px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32749969"
-         x="537.7912"
-         y="-54.663666"
+         transform="scale(0.99735144,-1.0026556)"
          id="text7346-6"
-         transform="scale(0.99735144,-1.0026556)"><tspan
-           sodipodi:role="line"
-           id="tspan7344-1"
+         y="-29.231178"
+         x="537.7912"
+         style="font-style:normal;font-weight:normal;font-size:13.1px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3275"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.3275"
+           y="-29.231178"
            x="537.7912"
-           y="-54.663666"
-           style="stroke-width:0.32749969">A</tspan></text>
+           id="tspan7344-1"
+           sodipodi:role="line">A</tspan></text>
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:13.55901527px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3389754"
-         x="597.5874"
-         y="-55.20752"
+         transform="scale(0.99735144,-1.0026556)"
          id="text7350-0"
-         transform="scale(0.99735144,-1.0026556)"><tspan
-           sodipodi:role="line"
-           id="tspan7348-6"
+         y="-29.775032"
+         x="597.5874"
+         style="font-style:normal;font-weight:normal;font-size:13.559px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.338975"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.338975"
+           y="-29.775032"
            x="597.5874"
-           y="-55.20752"
-           style="stroke-width:0.3389754">B</tspan></text>
+           id="tspan7348-6"
+           sodipodi:role="line">B</tspan></text>
       <path
-         style="fill:#ffffff;fill-opacity:1;stroke-width:0.08785374"
-         d="m 484.39625,27.28549 c -3.57049,3.697144 -5.71468,8.187755 -6.25519,13.100351 -0.13673,1.242729 -0.11221,3.925613 0.0471,5.153065 0.52163,4.018954 2.14278,7.859734 4.62895,10.966834 0.76759,0.95936 1.9137,2.2022 2.03072,2.2022 0.1342,0 2.06682,-1.99466 2.69347,-2.77996 1.39169,-1.74396 2.80583,-4.2664 3.55799,-6.34647 1.96425,-5.431972 1.69105,-11.486144 -0.7576,-16.788847 -0.97109,-2.102887 -2.76765,-4.681337 -4.33282,-6.218529 l -0.47503,-0.466565 z"
+         inkscape:connector-curvature="0"
          id="path7522"
-         inkscape:connector-curvature="0" />
+         d="m 484.39625,1.78549 c -3.57049,3.697144 -5.71468,8.187755 -6.25519,13.100351 -0.13673,1.242729 -0.11221,3.925613 0.0471,5.153065 0.52163,4.018954 2.14278,7.859734 4.62895,10.966834 0.76759,0.95936 1.9137,2.2022 2.03072,2.2022 0.1342,0 2.06682,-1.99466 2.69347,-2.77996 1.39169,-1.74396 2.80583,-4.2664 3.55799,-6.34647 1.96425,-5.431972 1.69105,-11.486144 -0.7576,-16.788847 -0.97109,-2.102887 -2.76765,-4.681337 -4.33282,-6.218529 l -0.47503,-0.46656503 z"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.0878537" />
     </g>
   </g>
 </svg>
