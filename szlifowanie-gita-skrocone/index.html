@@ -253,133 +253,43 @@ cover: img/prezentacja.jpg
 
             <section>
                 <section>
-                    <h3>Flow</h3>
+                    <h3>Nie będziemy rozmawiać o <i>flow</i></h3>
                     <img src="img/git_working.jpg" />
                 </section>
                 <section>
-                    <h2>Working directory,</br>staging area, commit</h2>
+                    <img src="img/attention.png" style="border:none; box-shadow:none; max-height: 250px; background: rgba(0,0,0,0.0); margin-bottom: 0">
+                    <h2>Używaj stage</h2>
+                    <h3>Porządkuj zmiany przed commitem</h3> 
                     <p>
-                        Twoje pliki - absolutnie każdy plik który utworzysz/edytujesz/usuniesz,
-                        <br>zawsze jest w którymś z 3 "obszarów" gita
+                        Lepiej jest commitować z konsoli <br><small>(zwłaszcza w porównaniu do IntelliJ)</small>
+                    </p>
+                </section>
+                <section>
+                    <img src="img/attention.png" style="border:none; box-shadow:none; max-height: 250px; background: rgba(0,0,0,0.0); margin-bottom: 0">
+                    <h2>Sam zarządzaj Gitem</h2>
+                    <p>
+                        Nie pozwól IDE grzebać Ci w Gicie (stagować/unstagować)
+                    </p>
+                    <small>
+                        Dla Jet Brains skrypt w materiałach.
+                    </small>
+                </section>
+                <section>
+                    <h2>Git Side Effect</h2>
+                    <img src="img/gitsideeffect.jpg" style="border:none; max-height: 450px; box-shadow:none;">
+                </section>
+                <section>
+                    <h2>Pytania?</h2>
+                </section>
+                <section>
+                    <p>
+                        <img src="img/key.png" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
                     </p>
                     <ul>
-                        <li>obszarze roboczym (working directory)</li>
-                        <li>'indeksie' (staged files)</li>
-                        <li>repozytorium (commicie dodanym do historii)</li>
+                        <li>Używaj stage</li>
+                        <li style="margin-top: 10px">Sam zarządzaj Gitem</li>
+                        <li style="margin-top: 10px">Zapisz się na warsztaty <i>Git Side Effect</i> 🙂</li>
                     </ul>
-                    <aside class="notes">
-                        <b>Tomek</b><br>
-                        <br>
-
-                    </aside>
-                </section>
-                <section>
-                    <h2>Obszar roboczy</h2>
-                    <p>
-                        Obszar roboczy (working directory) to obszar w którym jest praca którą wykonałeś, ale o której
-                        jeszcze nie
-                        powiedziałeś nic
-                        gitowi
-                    </p>
-                    <ul>
-                        <li class="fragment">nowe pliki których wcześniej nie commitowałeś</li>
-                        <li class="fragment">zmiany w plikach które wcześniej commitowałeś</li>
-                        <li class="fragment">zmiana nazwy pliku lub jego usunięcie</li>
-                    </ul>
-                    <p class="fragment">
-                        <b>Git nie wie nic o Twojej pracy w working directory, uważaj żeby jej nie stracić dopóki mu o
-                            niej nie powiesz</b>
-                    </p>
-                    <p class="fragment">
-                        <small>
-                            Zmiany w working directory odnoszą się do staging area, a jeśli danego pliku nie ma w
-                            staging area, wówczas
-                            bezpośrednio
-                            do obecnej wersji w lokalnym repozytorium
-                        </small>
-                    </p>
-                </section>
-                <section>
-                    <h3>Index (staged files)</h3>
-                    Staging area to obszar w którym przygotowujesz sobie które zmiany zostaną zaccomitowane, czyli
-                    doddane do Twojego lokalnego
-                    repozytorium
-                    <p class="fragment">
-                        Po zastagowaniu zmiany, czyli przygotowaniu jej do commita, dalej można plik edytować, wówczas
-                        zmiany w working
-                        directory
-                        pokazywane są względem zastagowanej wersji
-                    </p>
-                    <p class="fragment">
-                        Co więcej, od razu można wybrać żeby zastagować tylko część zmian
-                        <small>Dla przykładu na dole pliku zaczęliśmy dopisywać nowy kod, a w środku pliku zobaczyliśmy
-                            literówkę w tekście.
-                            Wówczas
-                            można od razu nieprzerywając pracy na dole pliku, zastagować jedynie poprawienie literówki i
-                            dodać commita "Fix typo
-                            in module A".
-                        </small>
-                    </p>
-                </section>
-                <section>
-                    <h3>Commit</h3>
-                    Ukazanie różnicy pomiędzy ostatnią wersją, a jednocześnie snapshot wszystkich plików w projekcie,
-                    posiadający identyfikator
-                    SHA-1.
-                    <p>
-                        <img src="img/commit-example.jpg" />
-                    </p>
-                </section>
-                <section data-transition="slide-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part1.jpg" />
-                </section>
-                <section data-transition="none-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part2.jpg" />
-                </section>
-                <section data-transition="none-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part3.jpg" />
-                </section>
-                <section data-transition="none-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part4.jpg" />
-                </section>
-                <section data-transition="none-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part5.jpg" />
-                </section>
-                <section data-transition="none-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part6.jpg" />
-                </section>
-                <section data-transition="none-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part7.jpg" />
-                </section>
-                <section data-transition="none-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part8.jpg" />
-                </section>
-                <section data-transition="none-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part9.jpg" />
-                </section>
-                <section data-transition="none-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part10.jpg" />
-                </section>
-                <section data-transition="none-in none-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part11.jpg" />
-                </section>
-                <section data-transition="none-in slide-out">
-                    <h3>Przykład stagowania (git add)</h3>
-                    <img src="img/git-work-example/git-work-example-part12.jpg" />
-                </section>
-                <section>
-                    Pytania?
                 </section>
             </section>
 
