@@ -108,11 +108,6 @@ cover: img/prezentacja.jpg
                         Poprzez narzędzia mamy na myśli również integracje w IDE.
                     </aside>
                 </section>
-                <section data-transition="none-in slide-out">
-                    Wielu ludzi upiera się, że zarządzania gitem z konsoli nie spróbuje, że pisanie zamiast klikania to
-                    przeżytek
-                    <img src="img/daj-szanse-konsoli.jpg" />
-                </section>
                 <section>
                     <h2>Pytania?</h2>
                 </section>
@@ -803,6 +798,135 @@ cover: img/prezentacja.jpg
                 </section>
             </section>
 
+        <section>
+            <section>
+                <h3>Ostrzenie konsoli</h3>
+                <img src="img/ostrzenie.jpg" style="border:none; box-shadow:none; max-width: 700px"/>
+            </section>
+            <section>
+                <h3>Obawy przed konsolą</h3>
+                <ul style="line-height: 170%; margin-top: 30px">
+                    <li>Pewnie trzeba się strasznie opisać, a to będzie wolno szło</li>
+                    <li>Pewnie będzie problem spamiętać komendy</li>
+                    <li>To jest jakiś niewygodny przeżytek</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Kiedy nie warto kurczowo trzymać się konsoli?</h4>
+                <ul style="line-height: 170%; margin-top: 30px">
+                    <li>Tool bywa lepszy do diffa</li>
+                    <li>Toole ładniej wizualizują historię branchów</li>
+                    <li>W dobrym IDE wygodniej się patrzy na <i>Git Blame</i></li>
+                    <li>Nie warto rozwiązywać konfliktów bez toola</li>
+                </ul>
+                <aside class="notes">
+                    Oczywiście, nie warto być fanatykiem i jak coś jest wygodniejsze w toolu, to lepiej wykorzystać
+                    toola. Tylko, że gdy się ma wydajnie ogarniętą konsolę to jest rzadkość. Ale np. git blame zawsze
+                    robię z Ide. Przeszukiwanie historii czasami z IDE lub gitk, ale tylko gdy nie mam pomysłu czego
+                    szukam, w przeciwnym wypadku log ogarnia mi to bardzo dobrze. Merge robię zawsze z kdiff3. Diffy
+                    oglądam zawsze z kdiff3 lub vimdiff -> ten drugi działa szybciej i nie odrywa mnie od konsoli.
+                </aside>
+            </section>
+            <section>
+                <h3>Myszka jest do eksplorowania</h3>
+                <p>
+                    <img src="img/context-menu.png" style="border:none; box-shadow:none; max-width: 700px"/>
+                </p>
+            </section>
+            <section>
+                <h5>Są toole z dobrze ogarniętymi<br>skrótami klawiszowymi</h5>
+                <p>
+                    <img src="img/fork-keyboard-shortcuts.jpg" style="border:none; box-shadow:none; max-width: 500px"/>
+                </p>
+                <aside class="notes">
+                    Np. Rider jest dobrze ogarnięty skrótowo
+                </aside>
+            </section>
+            <section>
+                <h4>Ale <i>dobrze ogarnięta</i> konsola wygrywa</h4>
+                <ul style="margin-top:40px; font-size:70%; line-height: 195%">
+                    <li style="color: green">Z <i>dobrze ogarniętą</i> konsolą pracuje się wydajniej</li>
+                    <li style="color: green">Konsola zawsze ma więcej możliwości - żaden tool nie pokryje wszystkich
+                        casów
+                    </li>
+                    <li style="color: green">Konsola jest uniwersalna</li>
+                    <li style="color: green">Nie ma toola działającego szybciej niż konsola</li>
+                    <li style="color: green">Konsola zachęca do lepszego zrozumienia Gita</li>
+                    <li style="color: rgba(255,0,0,0.67)">Toole często zachęcają do złych praktyk i budują złe nawyki
+                    </li>
+                    <li style="color: rgba(255,0,0,0.67)">Toole często zachęcają do klikania zamiast używania skrótów
+                        klawiszowych
+                    </li>
+                    <li style="color: rgba(255,0,0,0.67)">Wiele (popularnych) tooli działa wolno i odrywa od <i>flow</i>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    Przykłady złych praktyk: długi commit title, korzystanie z jakichś <i>magic sync buttonów</i> i
+                    innych
+                    takich złych rozwiązań, przycisk <i>Git Flow</i>.
+                </aside>
+            </section>
+            <section>
+                <h4 style="margin-bottom: 35px; font-size: 125%">Co to znaczy <i>dobrze ogarnięta</i> konsola?</h4>
+                <ul class="good-terminal-list">
+                    <li>Konsola zawsze pod ręką
+                        <ul>
+                            <li style="margin-bottom: 0">Zdecydowanie najlepiej gdy jest zintegrowana w IDE</li>
+                            <li>Opcjonalnie wyskakująca od skrótu klawiszowego<br><small>(choć to mało przy otwartych na raz dwóch lub więcej projektach)</small></li>
+                        </ul>
+                    </li>
+                    <li>Konsola z wydajnym autouzupełnianiem</li>
+                    <li>Zdecydowanie dobrze, gdy konsola ma wydajny<br><i>reverse search</i></li>
+                    <li>Ustawione <i>Git aliasy</i> i aliasy na poziomie shella</li>
+                    <li>Edytor konsolowy lub przynajmniej szybko otwierający się</li>
+                </ul>
+            </section>
+            <section>
+                <h5 style="font-size:101%; margin-bottom: 35px">Jak w kilka minut przygotować konsolę na start?</h5>
+                <ul style="font-size: 90%">
+                    <li>Aby spełnić wszystkie <i>prerekwizyty</i>
+                        <ol>
+                           <li>IDE z wbudowanym terminalem <br><small>(np. Jet Brains Rider, działa reverse search)</small></li> 
+                            <li>Bash ustawiony jako terminal w IDE <br><small>(na Windowsie GitBash)</small></li>
+                            <li>Aliasy (Gitowe i Bashowe) na start wzięte z internetu <br><small>(np. z tej prezentacji, później dostosowywanie pod siebie)</small></li>
+                        </ol>
+                    </li>
+                    <li>Opcjonalnie
+                        <ul>
+                            <li>Dla IDE bez terminala
+                                <small>
+                                    <ul>
+                                        <li>(Git)Bash przypięty do taskbarda pod stałą pozycją wywoływany <i>Win+pozycja</i></li>
+                                        <li>Lub nakładka na (Git)Bash umożliwiająca wywołanie skrótem klawiszowym np. <i>Conemu</i></li>
+                                        <li>W terminalu ustawiony katalog z projektami jako katalog startowy</li>
+                                    </ul>
+                                </small>
+                            </li>
+                            <li><i>Text expandery</i> na poziomie OS np. AutoHotKey</li>
+                            <li>Odradzam poleganie na <i>Alt+Tab</i></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h4>Don't get fooled by simple interface</h4>
+                <ul>
+                    <li>Visual Studio Extension: Switch Startup Project</li>
+                    <li>Azure DevOps build definition</li>
+                </ul>
+
+                <p>
+                    <img src="img/simplicity.jpg" style="border:none; box-shadow:none; max-width: 550px"/>
+                </p>
+            </section>
+            <section>
+                <h4>Przekonałem już niejedenego<br>zatwardziałego Windowsiarza :)</h4>
+                <p>
+                    <img src="img/daj-szanse-konsoli.jpg" style="border:none; box-shadow:none; max-width: 700px"/>
+                </p>
+            </section>
+        </section>
+
             <section>
                 <section>
                     <h2>Ignorowanie plików</h2>
@@ -1355,7 +1479,7 @@ cover: img/prezentacja.jpg
 
             <section>
                 <section>
-                <h2>Ostrzenie konsoli</h2>
+                    <h2>Ostrzenie konsoli</h2>
                 </section>
                 <section>
                     <h3 style="margin-bottom:0">Różne edytory tekstowe</h3>
