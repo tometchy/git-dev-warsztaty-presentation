@@ -503,11 +503,27 @@ cover: img/prezentacja.jpg
                     <a href="https://gitwarsztaty.pl/try-to/rebase-without-pain" target="_blank">GitWarsztaty.pl/try-to/rebase-without-pain</a>
                 </section>
                 <section>
+                    <h2>Squashowanie brancha</h2>
+                    <p>
+                        Alternatywnie, możesz po prostu zesquoshować feature brancha do <i>mastera</i>
+                    </p>
+                    <p>
+                        <small>
+                            <code>git checkout master <br> git merge --squash feature_branch</code>
+                        </small>
+                    </p>
+                    <p>
+                        Twój branch zostanie domergowany liniowo jako jeden commit, a konfikty rozwiążesz tylko raz
+                    </p>
+                </section>
+                <section>
                     <p>
                         <img src="img/key.png" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
                     </p>
                     <ul>
-                        <li style="margin-top: 10px">Zawsze warto preferować <code>rebase</code> tylko trzeba znać GitWarsztatowy patent.</li>
+                        <li style="margin-top: 10px">Zawsze warto preferować <code>rebase</code></li>
+                        <li style="margin-top: 10px">Można zastosować trick</li>
+                        <li style="margin-top: 10px">Można zesquoshować brancha <small style="margin-top: 13px">(<code>git merge --squash</code>)</small></li>
                     </ul>
                 </section>
             </section>
