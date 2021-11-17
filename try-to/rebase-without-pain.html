@@ -1,0 +1,90 @@
+---
+description: GitWarsztaty - Ćwiczenia wykonywane w trakcie warsztatów z Gita
+cover:  img/cwiczenia.jpg
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ćwiczenia</title>
+    <meta charset="utf-8">
+    
+    {% include head.html %}
+
+</head>
+<body>
+<section>
+    <h2>Ćwiczenie <code>rebase</code> without pain</h2>
+    <h5>Przygotowanie do ćwiczenia</h5>
+    <p>
+        <code>
+            mkdir -p ~/Desktop/cwiczenia<br>
+            cd ~/Desktop/cwiczenia<br>
+            git clone https://github.com/git-warsztaty/silverflow-rebase<br>
+            cd silverflow-rebase<br>
+            git reset --hard HEAD^<br>
+            git checkout simplify_checking_if_person_is_old_enough_to_rent_a_car<br>
+            gitk --all
+        </code>
+    </p>
+    <p>
+        W <i>Gitk</i> (z flagą <i>--all</i>) sytuacja na start powinna wyglądać jak na screenshocie:
+    </p>
+    <p>
+        <img src="img/rebase-without-pain-start.jpg">
+    </p>
+    <h5>Opis</h5>
+    <p>
+        Skończyliśmy pracę na branchu <i>simplify_checking_if_person_is_old_enough_to_rent_a_car</i> i chcemy nałożyć naszą pracę na <i>mastera</i>, amasteramasterale do <i>mastera</i> zdążył dojść w między czasie commit <i>Ensure car is ready to ride before renting</i>.<br>
+        Nie chcemy, żeby branch <i>master</i> miał rozgałęzioną historię, nie zrobimy więc zwykłego merga.<br>
+        Niestety zwykły rebase skutkuje potrzebą kilkukrotnego rozwiązywania konfliktów, czego chcemy uniknąć.<br>
+        <strong>Zrebasuj w taki sposób, żeby konflikty rozwiązać tylko raz</strong>
+    </p>
+    <!-- <ul>
+        <li>Commit dodający plik .gitignore zazwyczaj dodawany jest od razu po commicie inicjalizującym, my go dodaliśmy na końcu. <b>Powinniśmy przenieść commit <i>Add .gitignore</i> na początek.</b></li>
+        <li>Niedopilnowaliśmy konwencji tytułów commitów - <b>commit <i>New cars</i> nie zaczyna się od czasownika w trybie rozkazującym, powinniśmy go przeredagować.</b></li>
+        <li>Wkradł nam się chochlik - zacommitowaliśmy auto którego nie powinniśmy byli zacommitować. Na szczęście, zrobiliśmy to w ramach jednego małego commita. <b>Wystarczy więc usunąć commita <i>Add wrong car</i>.</b></li>
+        <li>Dodaliśmy niepoprawny samochód - <i>Mazdaaa</i> a chodziło nam oczywiście o <i>Mazda</i>. <b>Należy zmienić w treści pliku oraz w tytule commita <i>Add Mazdaaa car</i></b></li>
+        <li>Stworzyliśmy commita do poprawy literówki, który generalnie nic nie wnosi. <b>Należy połączyć commita <i>Correct typo</i> z commitem <i>Add Skoda</i>, pozbywając się opisu <i>Correct typo</i>.</b></li>
+    </ul> -->
+    <!-- <h5>Zbiór komend potrzebnych/przydatnych w ćwiczeniu</h5>
+    <p>
+    <ul>
+        <li><code>git rebase -i HEAD~6</code></li>
+        <li><code>git rebase --interactive HEAD~6</code></li>
+        <li><code>git add . <span style="margin:0 15px 0 15px">&#8226;</span> git commit --amend</code></li>
+        <li><code>git commit --amend</code></li>
+        <li><code>git rebase --continue</code></li>
+        <li><code>git rebase --abort</code></li>
+        li><code>git reset --hard origin/master</code></li>
+        <li><code>gitk</code></li>
+    </ul> -->
+
+    <h5>Spodziewany efekt</h5>
+    <p>
+        W <i>Gitk</i> (bez flagi <i>--all</i>) sytuacja po zakończeniu pracy powinna wyglądać jak na screenshocie:
+    </p>
+    <p>
+        <img src="img/rebase-without-pain-finish.jpg">
+    </p>
+    <details>
+        <summary>Podejrzyj rozwiązanie</summary>
+        <p>
+            <code>
+                git merge origin/master --squash<br>
+                git mergetool<br>
+                git commit<br>
+                git rebase origin/master<br>
+                git checkout --theirs .<br>
+                git add .<br>
+                git rebase --continue<br>
+                gitk
+            </code>
+        </p>
+    </details>
+</section>
+
+{% include analytics.html %}
+
+</body>
+</html>
