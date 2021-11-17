@@ -1040,17 +1040,14 @@ cover: img/prezentacja.jpg
                 </section>
             </section>
 
-            <!-- KRZYSIEK -->
             <section>
                 <section>
                     <h2>Ignorowanie plików</h2>
-                    <p>
-                        Ścieżki do plików/katalogów które chcemy ignorować dla repozytorium, trzymamy w pliku .gitignore
+                    <p style="margin-top: 50px">
+                        Ścieżki do plików/katalogów które chcemy ignorować dla repozytorium, trzymamy w pliku <i>.gitignore</i>
                     </p>
-                    <p class="fragment">Plik ten wersjonujemy w repozytorium</p>
+                    <p style="margin-top: 50px">Plik ten wersjonujemy w repozytorium</p>
                     <aside class="notes">
-                        <b>Krzysiek</b><br>
-                        <br>
                     </aside>
                 </section>
                 <section>
@@ -1059,37 +1056,36 @@ cover: img/prezentacja.jpg
                         <li><code>*.orig</code></li>
                         <li><code>**/[Pp]ackages/*</code></li>
                         <li><code>bin/</code></li>
-                        <li class="fragment"><code>!src/Todo.csproj.user</code> - wykluczenie od reguły (zaczyna się od
+                        <li><code>!src/Todo.csproj.user</code> - wykluczenie od reguły (zaczyna się od
                             wykrzyknika)</li>
                     </ul>
-                    <p class="fragment">
-                        <small><a
-                                href="https://git-scm.com/docs/gitignore#_pattern_format">git-scm.com/docs/gitignore#_pattern_format</a></small>
+                    <p>
+                        <small><a href="https://git-scm.com/docs/gitignore#_pattern_format">git-scm.com/docs/gitignore#_pattern_format</a></small>
                     </p>
                 </section>
                 <section>
                     <h3>Dodaję regułę do .gitignore, a "git status" dalej pokazuje zmiany</h3>
-                    <p class="fragment">Jest to scenariusz na który każdy prędzej czy później się natknie</p>
-                    <p class="fragment">Powód jest prosty - plik już jest w repozytorium,<br>.gitignore ignoruje tylko
+                    <p>Jest to scenariusz na który każdy prędzej czy później się natknie</p>
+                    <p>Powód jest prosty - plik już jest w repozytorium,<br>.gitignore ignoruje tylko
                         nie śledzone pliki</p>
-                    <p class="fragment">Wystarczy plik... usunąć z repozytorium</p>
+                    <p>Wystarczy plik... usunąć z repozytorium</p>
                 </section>
                 <section>
                     <h3>Usuwanie pliku z repozytorium, żeby "posłuchał" reguł .gitignore</h3>
                     <p>
                     <ul>
-                        <li class="fragment">
+                        <li>
                             Tradycyjnie:<br>
                             usunięcie pliku -> git add -> git commit
                         </li>
-                        <li class="fragment" style="margin-top:17px">
+                        <li style="margin-top:17px">
                             Za pmocą komendy:<br>
                             <code>
                             git rm file1.txt<br>
                             git commit -m "remove file1.txt"
                         </code>
                         </li>
-                        <li class="fragment" style="margin-top:17px">
+                        <li style="margin-top:17px">
                             Zostawiając plik na dysku:<br>
                             <code>
                             git rm --cached file1.txt<br>
@@ -1100,7 +1096,7 @@ cover: img/prezentacja.jpg
                     </p>
                 </section>
                 <section>
-                    <h3>Gotowe reguły .gitignore</h3>
+                    <h3>Gotowe reguły <i>.gitignore</i></h3>
                     <ul>
                         <li><a href="https://www.gitignore.io/" target="_blank"><i>www.gitignore.io</i></a></li>
                         <li><i>checkbox</i> przy tworzeniu nowego projektu</li>
@@ -1110,6 +1106,36 @@ cover: img/prezentacja.jpg
                 </section>
                 <section>
                     Pytania?
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Atrybuty plików</h2>
+                    <p>
+                        Atrybuty plików trzymamy w pliku <i>.gitattributes</i>
+                    </p>
+                    <p>Plik ten wersjonujemy w repozytorium</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section>
+                    <h2>Przykładowe atrybuty plików</h2>
+                    <ul>
+                        <li><code>*.java text diff=java</code></li>
+                        <li><code>*.css text diff=css</code></li>
+                        <li><code>*.xml text</code></li>
+                        <li><code>*.dll binary</code></li>
+                    </ul>
+                    <p>
+                        <small><a href="https://www.git-scm.com/docs/gitattributes">git-scm.com/docs/gitattributes</a></small>
+                    </p>
+                </section>
+                <section>
+                    <h3>Gotowe reguły .gitattributes</h3>
+                    <p>
+                        <a href="https://gitattributes.io" target="_blank">gitattributes.io</a>
+                    </p>
                 </section>
             </section>
 
