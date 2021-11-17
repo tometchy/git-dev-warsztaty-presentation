@@ -441,97 +441,6 @@ cover: img/prezentacja.jpg
 
             <section>
                 <section>
-                    <h4>Jak rebasować, żeby nie bolało</h4>
-                    <p>
-                        <img src="img/bear.jpg" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
-                    </p>
-                </section>
-                <section>
-                    <h3>Rebase to świetne narzędzie, ale...</h3>
-                    <ul>
-                        <li>zakłamauje historię</li>
-                        <li> może wywołać konflikty których by nie było przy mergu</li>
-                        <ul>
-                            <li>a w związku z tym, może wprowadzić błąd na produkcję</li>
-                            <li>pomijając, że to dokłada dodatkowej roboty</li>
-                        </ul>
-                    </ul>
-                </section>
-                <section>
-
-<h3>Demo</h3>
-<aside class="notes">
-<h4>Przygotowanie przed warsztatatami</h4>
-<ul>
-<li><small><code>git clone https://github.com/git-warsztaty/silverflow-rebase</code></small></li>
-<li><small><code>cd silverflow-rebase</code></small></li>
-<li><small><code>git reset --hard HEAD^</code></small></li>
-<li><small><code>git checkout simplify_checking_if_person_is_old_enough_to_rent_a_car</code></small></li>
-</ul>
-
-<h4>Pokazujemy</h4>
-<ul>
-<li><small> <code>gitk</code> - Chcemy dołączyć <i>feature_brancha</i>, pokazujemy commity od <i>mastera</i> </small></li>
-<li><small> <code>gitk --all</code> - Sprawdzamy, że na masterze doszedł tylko jeden commit</small></li>
-<li><small> <code>git rebase origin/master</code> - Przed dołączaniem rebasujemy, żeby historia była prosta</small></li>
-<li><small> <code>git mergetool</code> ; <code>git rebase --continue</code> - N razy</small></li>
-<li><small> <code>gitk</code> - Historia wygląda tak jak chcieliśmy; Było kilka konlfitów, a sytuacja w tym demo jest bardzo prosta, życie zwykle nie jest takie proste; Konflikty trudne, zwłaszcza jak jakieś przeniesienia kodu. Kto wie ile było by konfliktów, gdybyśmy robili merge?</small></li>
-<li><small> <code>git reset --hard origin/simplify_checking_if_person_is_old_enough_to_rent_a_car</code> - Cofamy się w czasie przed rebase</small></li>
-<li><small> <code>gitk --all</code> - Jesteśmy cofnięci w czasie</small></li>
-<li><small> <code>git merge origin/master</code> - Zamiast rebase robimy merge</small></li>
-<li><small> <code>git mergetool</code></small></li>
-<li><small> <code>git status</code> ; <code>git commit</code> - All conflicts fixed</small></li>
-<li><small> <code>gitk</code> - Był tylko jeden konflikt, ale historia właśnie nam się zagmatwała. Jest jeszcze gorzej. Z rzadka zdarzy się tak, że przy rebase mamy N konfliktów, a przy merge ani jednego. Ostateczna wersja na masterze może nie konfliktować z ostateczna z feature brancha.</small></li>
-<li><small> <code>git reset --hard origin/simplify_checking_if_person_is_old_enough_to_rent_a_car</code> - Znowu cofamy się w czasie</small></li>
-<li><small> <code>gitk --all</code> - No to jak rebasować, żeby nie bolało</small></li>
-<li><small> Najpierw zaczynamy rebase tradycyjnie. Jeśli nie ma konfliktów no to nie ma problemu. Jeżeli zaczynają się konflikty to przerywamy przez <coed>git rebase --abort</coed></small></li>
-<li><small> Kto wie jak zrobić liniowego merga? Merge z flagą squash działa tak, jakbyśmy całego naszego <i>fetaure_brancha</i> zrebasowali do jednego commita, następnie przerzucili go cherry-pickiem</small></li>
-<li><small> <code>git merge origin/master --squash</code> - Robimy merga, ale w wersji <i>squash</i>, czyli liniowo</small></li>
-<li><small> <code>git mergetool</code> ; <code>git commit</code> - Rozwiązujemy konflikty jak przy zwykłym mergu</small></li>
-<li><small> <code>gitk --all</code> - Historia dalej liniowa i już mająca zmianę z mastera</small></li>
-<li><small> <code>git rebase origin/master</code> - Rebasujemy</small></li>
-<li><small> <code>git checkout --theirs .</code> - Rozwiązujemy konflikty automatycznie, wybierając nasze zmiany</small></li>
-<li><small> <code>git add .</code> - Dodajemy rozwiązane konflikty</small></li>
-<li><small> <code>git rebase --continue</code> - Kontynuujemy ...</small></li>
-<li><small> <code>gitk</code> - I mamy to!</small></li>
-<li><small> Kto spróbuje wytłumaczyć co tu się właśnie wydarzyło.</small></li>
-</ul>
-</aside>
-                </section>
-                <section>
-                    <h2>Excercise</h2>
-                    <a href="https://gitwarsztaty.pl/try-to/rebase-without-pain" target="_blank">GitWarsztaty.pl/try-to/rebase-without-pain</a>
-                </section>
-                <section>
-                    <h2>Squashowanie brancha</h2>
-                    <p>
-                        Alternatywnie, możesz po prostu zesquoshować feature brancha do <i>mastera</i>
-                    </p>
-                    <p>
-                        <small>
-                            <code>git checkout master <br> git merge --squash feature_branch</code>
-                        </small>
-                    </p>
-                    <p>
-                        Twój branch zostanie domergowany liniowo jako jeden commit, a konfikty rozwiążesz tylko raz
-                    </p>
-                </section>
-                <section>
-                    <p>
-                        <img src="img/key.png" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
-                    </p>
-                    <ul>
-                        <li style="margin-top: 10px">Zawsze warto preferować <code>rebase</code></li>
-                        <li style="margin-top: 10px">Można zastosować trick</li>
-                        <li style="margin-top: 10px">Można zesquoshować brancha <small style="margin-top: 13px">(<code>git merge --squash</code>)</small></li>
-                    </ul>
-                </section>
-            </section>
-
-
-            <!-- TOMEK -->
-            <section>
-                <section>
                     <h2>Edytowanie wprowadzonych zmian</h2>
                     <ul>
                         <li class="fragment">Przed opublikowaniem innym</li>
@@ -708,6 +617,95 @@ cover: img/prezentacja.jpg
                 </section>
                 <section>
                     Pytania?
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h4>Jak rebasować, żeby nie bolało</h4>
+                    <p>
+                        <img src="img/bear.jpg" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                    </p>
+                </section>
+                <section>
+                    <h3>Rebase to świetne narzędzie, ale...</h3>
+                    <ul>
+                        <li>zakłamauje historię</li>
+                        <li> może wywołać konflikty których by nie było przy mergu</li>
+                        <ul>
+                            <li>a w związku z tym, może wprowadzić błąd na produkcję</li>
+                            <li>pomijając, że to dokłada dodatkowej roboty</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section>
+
+<h3>Demo</h3>
+<aside class="notes">
+<h4>Przygotowanie przed warsztatatami</h4>
+<ul>
+<li><small><code>git clone https://github.com/git-warsztaty/silverflow-rebase</code></small></li>
+<li><small><code>cd silverflow-rebase</code></small></li>
+<li><small><code>git reset --hard HEAD^</code></small></li>
+<li><small><code>git checkout simplify_checking_if_person_is_old_enough_to_rent_a_car</code></small></li>
+</ul>
+
+<h4>Pokazujemy</h4>
+<ul>
+<li><small> <code>gitk</code> - Chcemy dołączyć <i>feature_brancha</i>, pokazujemy commity od <i>mastera</i> </small></li>
+<li><small> <code>gitk --all</code> - Sprawdzamy, że na masterze doszedł tylko jeden commit</small></li>
+<li><small> <code>git rebase origin/master</code> - Przed dołączaniem rebasujemy, żeby historia była prosta</small></li>
+<li><small> <code>git mergetool</code> ; <code>git rebase --continue</code> - N razy</small></li>
+<li><small> <code>gitk</code> - Historia wygląda tak jak chcieliśmy; Było kilka konlfitów, a sytuacja w tym demo jest bardzo prosta, życie zwykle nie jest takie proste; Konflikty trudne, zwłaszcza jak jakieś przeniesienia kodu. Kto wie ile było by konfliktów, gdybyśmy robili merge?</small></li>
+<li><small> <code>git reset --hard origin/simplify_checking_if_person_is_old_enough_to_rent_a_car</code> - Cofamy się w czasie przed rebase</small></li>
+<li><small> <code>gitk --all</code> - Jesteśmy cofnięci w czasie</small></li>
+<li><small> <code>git merge origin/master</code> - Zamiast rebase robimy merge</small></li>
+<li><small> <code>git mergetool</code></small></li>
+<li><small> <code>git status</code> ; <code>git commit</code> - All conflicts fixed</small></li>
+<li><small> <code>gitk</code> - Był tylko jeden konflikt, ale historia właśnie nam się zagmatwała. Jest jeszcze gorzej. Z rzadka zdarzy się tak, że przy rebase mamy N konfliktów, a przy merge ani jednego. Ostateczna wersja na masterze może nie konfliktować z ostateczna z feature brancha.</small></li>
+<li><small> <code>git reset --hard origin/simplify_checking_if_person_is_old_enough_to_rent_a_car</code> - Znowu cofamy się w czasie</small></li>
+<li><small> <code>gitk --all</code> - No to jak rebasować, żeby nie bolało</small></li>
+<li><small> Najpierw zaczynamy rebase tradycyjnie. Jeśli nie ma konfliktów no to nie ma problemu. Jeżeli zaczynają się konflikty to przerywamy przez <coed>git rebase --abort</coed></small></li>
+<li><small> Kto wie jak zrobić liniowego merga? Merge z flagą squash działa tak, jakbyśmy całego naszego <i>fetaure_brancha</i> zrebasowali do jednego commita, następnie przerzucili go cherry-pickiem</small></li>
+<li><small> <code>git merge origin/master --squash</code> - Robimy merga, ale w wersji <i>squash</i>, czyli liniowo</small></li>
+<li><small> <code>git mergetool</code> ; <code>git commit</code> - Rozwiązujemy konflikty jak przy zwykłym mergu</small></li>
+<li><small> <code>gitk --all</code> - Historia dalej liniowa i już mająca zmianę z mastera</small></li>
+<li><small> <code>git rebase origin/master</code> - Rebasujemy</small></li>
+<li><small> <code>git checkout --theirs .</code> - Rozwiązujemy konflikty automatycznie, wybierając nasze zmiany</small></li>
+<li><small> <code>git add .</code> - Dodajemy rozwiązane konflikty</small></li>
+<li><small> <code>git rebase --continue</code> - Kontynuujemy ...</small></li>
+<li><small> <code>gitk</code> - I mamy to!</small></li>
+<li><small> Kto spróbuje wytłumaczyć co tu się właśnie wydarzyło.</small></li>
+</ul>
+</aside>
+                </section>
+                <section>
+                    <h2>Excercise</h2>
+                    <a href="https://gitwarsztaty.pl/try-to/rebase-without-pain" target="_blank">GitWarsztaty.pl/try-to/rebase-without-pain</a>
+                </section>
+                <section>
+                    <h2>Squashowanie brancha</h2>
+                    <p>
+                        Alternatywnie, możesz po prostu zesquoshować feature brancha do <i>mastera</i>
+                    </p>
+                    <p>
+                        <small>
+                            <code>git checkout master <br> git merge --squash feature_branch</code>
+                        </small>
+                    </p>
+                    <p>
+                        Twój branch zostanie domergowany liniowo jako jeden commit, a konfikty rozwiążesz tylko raz
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <img src="img/key.png" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                    </p>
+                    <ul>
+                        <li style="margin-top: 10px">Zawsze warto preferować <code>rebase</code></li>
+                        <li style="margin-top: 10px">Można zastosować trick</li>
+                        <li style="margin-top: 10px">Można zesquoshować brancha <small style="margin-top: 13px">(<code>git merge --squash</code>)</small></li>
+                    </ul>
                 </section>
             </section>
 
