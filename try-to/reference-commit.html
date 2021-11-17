@@ -1,0 +1,69 @@
+---
+description: GitWarsztaty - Ćwiczenia wykonywane w trakcie warsztatów z Gita
+cover:  img/cwiczenia.jpg
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ćwiczenia</title>
+    <meta charset="utf-8">
+    
+    {% include head.html %}
+
+</head>
+<body>
+<section>
+    <h2>Ćwiczenie <i>reference commit</i></h2>
+    <h5>Przygotowanie do ćwiczenia</h5>
+    <p>
+        <code>
+            mkdir -p ~/Desktop/cwiczenia<br>
+            cd ~/Desktop/cwiczenia<br>
+            git clone https://github.com/git-warsztaty/reference-commit<br>
+            cd reference-commit<br>
+            git checkout feature_branch<br>
+            git checkout master<br>
+            gitk --all
+        </code>
+    </p>
+    <p>
+        W <i>Gitk</i> (z flagą <i>--all</i>) sytuacja na start powinna wyglądać jak na screenshocie:
+    </p>
+    <p>
+        <img src="img/reference-commit-start.jpg">
+    </p>
+    <h5>Opis</h5>
+    <p>
+        Pracujemy na branchu <i>master</i> i orientujemy się, że w zmergowanym przez nas wcześniej branchu
+        znajduje się niechciany przez nas commit <i>ignoring the demo dist files</i>, a oprócz tego potrzebujemy commita
+        <i>Remove comments from renderer</i> z brancha <i>feature_branch</i>, ale nie chcemy dołączać całego brancha - chcemy
+        tylko ten jeden commit.<br><br>
+        Za pomocą <code>git revert COMMIT_ID</code> wycofaj commit <i>ignoring the demo dist files</i>, 
+        a następnie za pomocą <code>git cherry-pick COMMIT_ID</code> przenieś na mastera
+        commit <i>Remove comments from renderer</i> z brancha <i>feature_branch</i>, <strong>w ogóle nie podając ID commitów.</strong>
+    </p>
+
+    <h5>Spodziewany efekt</h5>
+    <p>
+        W <i>Gitk</i> (z flagą <i>--all</i>) sytuacja po zakończeniu pracy powinna wyglądać jak na screenshocie:
+    </p>
+    <p>
+        <img src="img/reference-commit-finish.jpg">
+    </p>
+    <details>
+        <summary>Podejrzyj rozwiązanie</summary>
+        <p>
+            <code>
+                git revert HEAD~2^2~<br>
+                git cherry-pick feature_branch<br>
+                gitk --all
+            </code>
+        </p>
+    </details>
+</section>
+
+{% include analytics.html %}
+
+</body>
+</html>

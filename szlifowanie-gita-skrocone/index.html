@@ -327,25 +327,82 @@ cover: img/prezentacja.jpg
 
             <section>
                 <section>
+                    <h3>cherry-pick</h3>
+                    <p>
+                        Commity między branchami można <i>kopiować</i>
+                    </p>
+                    <p>
+                        <img src="img/cherrypick.jpg">
+                    </p>
+                    <p>
+                        <code>git cherry-pick COMMIT_ID</code>
+                    </p>
+                </section>
+                <section>
+                    <h2>Pytania?</h2>
+                    <small>
+                        Ćwiczenie z cherry-pick będzie za chwilę.
+                    </small>
+                </section>
+                <section>
+                    <img src="img/key.png" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                    <ul style="margin-top: 50px;">
+                        <li>Commity między branchami można <i>kopiować</i>
+                            <small>(<code>git cherry-pick COMMIT_ID</code>)</small></li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <section>
                     <h3>Czym jest <i>HEAD</i> i po co nam to wiedzieć</h3>
-                    HEAD to referencja do obecnie zcheckoutowanego commita, zazwyczaj będącego ostatnim commitem w
-                    branchu
+                        <img src="img/head.png" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                </section>
+                <section>
+                        <img src="img/commit-id.png" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                </section>
+                <section>
+                        <img src="img/commit-parents.jpg" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                </section>
+                <section>
+                        <img src="img/commit-name.png" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                </section>
+                <section>
+                    <h3>How many branches are here?</h3>
+                        <img src="img/how-many-branches.jpg" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                </section>
+                <section>
+                    <p>
+                        <img src="img/commit-name-many.png" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                    </p>
+                    <ul class="fragment">
+                        <li>HEAD is <i>alias</i> for COMMIT ID</li>
+                        <li>BRANCH is <i>alias</i> for COMMIT ID</li>
+                        <li>TAG is <i>alias</i> for COMMIT ID</li>
+                    </ul>
+                </section>
+                <section>
+                    <p>
+                        <img src="img/how-many-branches.jpg" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                    </p>
+                    <p>
+                        <a href="http://localhost:4000/visualise" target="_blank">
+                            What is <i>HEAD</i> and how many branches are on the picture?<br>Live Visualisation
+                        </a>
+                    </p>
+                    <aside class="notes">
+                        <code>git rev-parse HEAD</code>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Ancestors</h2>
+                    <h4><i>COMMIT ID</i> followed by</h4>
                     <ul>
-                        <li>HEAD - ostatni commit
-                            <i>(pierwszy od końca) - np. ed8ab42[...]</i>
-                        </li>
-                        <li>HEAD~1 - przedostatni commit
-                            <i> - np. daa6b92[...]</i>
-                        </li>
-                        <li>HEAD^ - przedostatni commit
-                            <i> - np. daa6b92[...]</i>
-                        </li>
-                        <li>HEAD~3 - czwarty od końca commit
-                            <i> - np. 7cb16f7[...]</i>
-                        </li>
-                        <li>HEAD^^^ - czwarty od końca commit
-                            <i> - np. 7cb16f7[...]</i>
-                        </li>
+                        <li><code>^ OR ^1</code> - first parent of the commit</li>
+                        <li><code>~ OR ~1</code> - first parent of the commit</li>
+                        <li><code>^2</code> - second parent of the commit <small style="margin-top: 13px">(only merge commit)</small></li>
+                        <li><code>~2</code> - the first parent of the first parent - the grandparent</li>
+                        <li><code>~2^2</code> - second parent of the grandparent <small style="margin-top: 13px">(only merge commit)</small></li>
                     </ul>
                 </section>
                 <section>
@@ -357,7 +414,28 @@ cover: img/prezentacja.jpg
 </p>
                 </section>
                 <section>
-                    Pytania?
+                    <a href="http://localhost:4000/visualise" target="_blank">
+                        Ancestors - Live Visualisation
+                    </a>
+                    <aside class="notes">
+                        <code>git rev-parse X</code>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Pytania?</h2>
+                </section>
+                <section>
+                    <h2>Excercise</h2>
+                    <a href="https://gitwarsztaty.pl/try-to/reference-commit">GitWarsztaty.pl/try-to/reference-commit</a>
+                </section>
+                <section>
+                    <p>
+                        <img src="img/key.png" style="border:none; box-shadow:none; background: rgba(0,0,0,0.0)">
+                    </p>
+                    <ul>
+                        <li style="margin-top: 10px"><i>HEAD</i>, <i>branch</i>, <i>tag</i> to tylko wygodne nazwy na ID commita</li>
+                        <li><code>~2^3</code> - third parent of the grandparent <small style="margin-top: 13px">(only merge commit)</small></li>
+                    </ul>
                 </section>
             </section>
 
@@ -519,50 +597,6 @@ cover: img/prezentacja.jpg
                 </section>
             </section>
 
-            <!-- KRZYSIEK -->
-            <section>
-                <section>
-                    <h2>Branche</h2>
-                    <p>
-                        <img src="img/branches.jpg">
-                    </p>
-                    <a href="https://learngitbranching.js.org/">Learning branching</a>
-                    <aside class="notes">
-                        <b>Krzysiek</b><br>
-                        Jest taki tool webowy którym można pobawić. Ma interaktywny tutorial. Jest minimalistyczny,
-                        tylko ważne rzeczy można
-                        robić.<br>
-                        <br>
-
-                    </aside>
-                </section>
-                <section>
-                    <h3>cherry-pick</h3>
-                    <p>
-                        Commity między branchami można przekładać
-                    </p>
-                    <p>
-                        <img src="img/cherrypick.jpg">
-                    </p>
-                </section>
-                <section>
-                    <h2>Demo</h2>
-                    <p>pokazanie jak zmiana brancha wpływa na zawartość katalogów (git checkout)</p>
-                    <p class="fragment">stosowanie cherry-pick w praktyce</P>
-                    <aside class="notes">
-                        <b>Krzysiek</b><br>
-                        Pokazać na repo names-collector: przeskakiwać miedzy miejsce gdzie był a nie był plik
-                        names-collector.txt<br>
-                        zrobic wpis do README na początku i cherry-pick na aktualnego mastera. A na koniec
-                        synchronizować do origin/master
-                    </aside>
-                </section>
-                <section>
-                    Pytania?
-                </section>
-            </section>
-
-            <!-- KRZYSIEK -->
             <section>
                 <section>
                     <h2>Merge</h2>
