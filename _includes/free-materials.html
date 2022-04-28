@@ -11,7 +11,7 @@
                                 <p>Opis najważniejszych komend <small>(A4)</small></p>
                                 <p>Wybrane przełączniki do <b>git log</b> <small>(A4)</small></p>
                                 <div class="agree-wrapper-small">
-                                    <label for="agree" style="margin-bottom: 0;"><small><b>Git w Twojej skrzynce</b> - newsletter z poradami na temat Gita, Dockera oraz pipeline CI/CD</small></label>
+                                    <!-- <label for="agree" style="margin-bottom: 0;"><small><b>Git w Twojej skrzynce</b> - newsletter z poradami na temat Gita, Dockera oraz pipeline CI/CD</small></label>
                                     <span>
                     <input type="checkbox" id="agree" v-model="agreeGitInbox" name="agreeGitInbox" style="top: 3px">
                 </span>
@@ -19,25 +19,30 @@
                                     <label for="agreeGitWarsztaty" style="margin-top: 7px;"><small><b>GitWarsztaty w Twojej skrzynce</b> - informacje na temat nadchodzących warsztatów</small></label>
                                     <span>
                     <input type="checkbox" id="agreeGitWarsztaty" v-model="agreeGitWarsztatyInbox" name="agreeGitWarsztatyInbox" style="top: 3px">
-                </span>
+                </span> -->
 
                                     <div class="clearboth"></div>
                                 </div>
 
-                                <div class="input-group">
-                                </div>
+                                <!-- <div class="input-group">
+                                </div> -->
                                 <span>
                   <label for="emailForMaterials" style="margin-bottom: 10px;">E-mail</label>
                 </span>
                                 <br class="breakEmailLabelForMaterials">
                                 <input id="emailForMaterials" v-model="email" class="input-group-field" type="email" placeholder="E-mail" required>
                                 <button class="button">Wyślij materiały</button>
+                                    <label for="agreeGitWarsztaty" style="margin-top: 7px; letter-spacing: inherit; text-transform: none;"><small>
+                Klikając przycisk „Wyślij materiały” wyrażasz zgodę na otrzymywanie na podany adres e-mail newsletter’a zawierającego informacje o Gicie, Dockerze,
+                Pipelinach CI&CD i naszych szkoleniach.
+Możesz zrezygnować z newsletter’a w każdym czasie wysyłając wiadomość na adres: kontakt@gitwarsztaty.pl lub klikając w link rezygnacyjny w stopce wiadomości marketingowej.
+Szczegółowe informacje o przetwarzaniu Twoich danych osobowych znajdziesz w <a href="{{ site.url }}/polityka-prywatnosci.pdf" target="_blank">Polityce Prywatności</a>.
+                                    </label>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
