@@ -1,24 +1,25 @@
 <section id="kontakt" style="padding-top: 64px">
     <div class="container">
         <div class="row">
-            <!--section-title-->
             <div class="section-title text-center wow fadeInUp">
                 <h2>Kontakt</h2>
                 <p>
-                    Możesz skontaktować się z nami bezpośrednio, lub za pośrednictwem formularza.<br><b>Dojeżdżamy do każdego miasta w Polsce!</b><br><br>
-                    Krzysztof Morcinek:  <a class="phone" href="tel:737692782">737 692 782</a><br>
+                    Możesz skontaktować się z nami bezpośrednio, lub za pośrednictwem formularza.<br><strong>Dojeżdżamy do każdego miasta w Polsce</strong>,
+ a jeśli preferujesz <strong>szkolenie zdalnie</strong>, przeprowadzimy je poprzez platformę Zoom.
+                    <br><br>
                     Tomasz Skraskowski: <a class="phone" href="tel:792228321">792 228 321</a><br>
+                    Krzysztof Morcinek:  <a class="phone" href="tel:737692782">737 692 782</a><br>
                     E-mail: <a class="phone" href="mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty" target="_top">kontakt@gitwarsztaty.pl</a>
                 </p>
                 <!--        <a href="portfolio.html">go to portfolio</a></div>-->
                 <!--/section-title-->
                 <div class="container" style="padding-top: 25px; padding-bottom: 15px; max-width: 800px">
                     <form @submit="requestContact">
-                        <label for="workshopsType" style="float: left">Interesują mnie</label>
+                        <!-- <label for="workshopsType" style="float: left">Interesują mnie</label>
                         <select id="workshopsType" v-model="inCompany">
                             <option v-bind:value="true">Warsztaty u mnie w firmie</option>
                             <option v-bind:value="false">Warsztaty otwarte</option>
-                        </select>
+                        </select> -->
 
                         <label for="emailForContact" style="float: left">E-mail</label>
                         <input type="email" id="emailForContact" v-model="email" placeholder="E-mail" required>
@@ -26,7 +27,7 @@
                         <label for="phoneNumber" style="float: left">Numer telefonu <small>(opcjonalnie)</small></label>
                         <input type="text" id="phoneNumber" v-model="phoneNumber" placeholder="Numer telefonu">
 
-                        <section v-if="inCompany">
+                        <!-- <section v-if="inCompany">
                             <label for="companyName" style="float: left">Nazwa firmy <small>(opcjonalnie)</small></label>
                             <input type="text" id="companyName" v-model="companyName" placeholder="Nazwa firmy">
 
@@ -41,12 +42,12 @@
                             <label for="whichCity" style="float: left">W jakim mieście/miastach interesują Cię warsztaty <small>(opcjonalnie)</small></label>
                             <input type="text" id="whichCity" v-model="whichCity" placeholder="Miasto/miasta">
 
-                        </section>
+                        </section> -->
 
                         <label for="additionalInfo" style="float: left">Dodatkowe informacje <small>(opcjonalnie)</small></label>
-                        <textarea id="additionalInfo" v-model="additionalInfo" placeholder="Dodatkowe informacje" style="height:200px"></textarea>
+                        <textarea id="additionalInfo" v-model="additionalInfo" placeholder="Dodatkowe informacje" style="height:50px"></textarea>
 
-                        <div class="agree-wrapper">
+                        <!-- <div class="agree-wrapper">
 
                             <label for="agree2" style=""><b>Git w Twojej skrzynce</b> - newsletter z poradami Gitowymi <small>(opcjonalnie)</small></label>
                             <span>
@@ -59,8 +60,13 @@
               </span>
 
                             <div class="clearboth"></div>
-                        </div>
+                        </div> -->
 
+        <p style="margin-top: 14px">
+          Szkolenie z Dockera i szkolenie z Gita, są dla każdego, w różnych formach na różne potrzeby. Opowiedz nam swoją sytuację i wspólnie dobierzemy
+          zakres szkolenia, np. <strong>wprowadzenie do Dockera od zera</strong> lub <strong>wprowadzenie do Gita od zera</strong>, czy np. <strong>optymalizacja pracy z Gitem</strong> w zespole, który już opanował podstawy.
+          Pomagamy również usprawnić lub stworzyć od podstaw <strong>pipeline Continuous Integration & Continuous Delivery/Deployment (CI/CD)</strong>.
+        </p>
                         <input type="submit" value="Wyślij" style="margin-top: 10px;">
                     </form>
                 </div>
