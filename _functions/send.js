@@ -99,14 +99,10 @@ exports.handler = function (event, context, callback) {
         var sendMaterialsBody = {
             personalizations: [{to: [{email: eventBody.email}]}],
             from: {email: "kontakt@gitwarsztaty.pl", name: "GitWarsztaty"},
-            subject: "Darmowe materiały do pracy z Gitem!",
+            subject: "11 Git Tricków do codziennej pracy",
             content: [{
-                type: "text/plain", value: "Cześć! Oto Twoje darmowe materiały do pracy z Gitem:\n" +
-                    " Opis najważniejszych komend - https://www.gitwarsztaty.pl/materialy/cheatsheet.pdf\n" +
-                    " Popularne przełączniki do Git log - https://www.gitwarsztaty.pl/materialy/git-log.pdf\n\n" +
-                    "Jeżeli masz pytania, być może potrzebujesz pomocy z Gita, Dockera lub Continuous Integration & Continuous Delivery/Deployment (CI/CD), możesz do nas pisać na kontakt@gitwarsztaty.pl\n\n" +
-                    "Jeżeli chcesz od czasu do czasu otrzymać maila z poradą na któryś z powyższych tematów, zachęcamy do zapisania się na nasz newsletter: https://www.gitwarsztaty.pl/#darmowe-materialy - wystarczy ponownie kliknąć 'Wyślij materiały', z zaznaczonym checkboxem z poradami.\n\n" +
-                    "Miłego dnia!"
+                type: "text/html", 
+                value: "<div>Cześć,<div><br>oto obiecany darmowy pdf - <a href=\"https://www.gitwarsztaty.pl/materialy/11-git-trickow-do-codziennej-pracy-gitwarsztatypl.pdf\">11 Git Tricków do codziennej pracy</a>.<br><br>Która porada spodobała Ci się najbardziej?</div><div>Zachęcamy do podzielenia się feedbackiem, wystarczy, że odpiszesz na tego maila.<br><br>Możesz od razu zacząć stosować nowe metody w praktyce... no może prawie od razu - najpierw prześlij je dalej pozostałym w Twojej firmie.</div><div><br>W końcu <b>razem tworzycie mocny zespół</b> 💪<br><br><i>Pozdrów zespół<br>Tomasz Skraskowski<br><a href=\"https://www.gitwarsztaty.pl\">GitWarsztaty.pl</a></i><br></div></div>"
             }]
         };
         
