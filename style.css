@@ -5106,6 +5106,26 @@ input[type=submit]:hover {
 	}
 }
 
+.freeMaterialsButtonOnBigScreen {
+	display: none;
+}
+.freeMaterialsButtonOnSmallScreen {
+	display: inherit;
+}
+
+@media (min-width: 744px) {
+	.freeMaterialsButtonOnBigScreen {
+		display: inherit;
+	}
+	.freeMaterialsButtonOnSmallScreen {
+		display: none;
+	}
+	.freeMaterialsImage{
+		float:left; 
+		max-width: 60%;
+	}
+}
+
 @media (max-width: 991px) {
 	.br-on-big-screen {
 		display: none

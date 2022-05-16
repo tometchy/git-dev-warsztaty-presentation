@@ -7,9 +7,20 @@
                         <div class="counter simple-subscription-form">
                             <!--              <form v-on:submit.prevent="onSubmit">-->
                             <form @submit="requestMaterials">
-                                <h4>Darmowe materiały</h4>
-                                <p>Opis najważniejszych komend <small>(A4)</small></p>
-                                <p>Wybrane przełączniki do <b>git log</b> <small>(A4)</small></p>
+
+
+                                <div>
+                                    <div class="freeMaterialsImage">
+                                        <img src="img/git-tricks-cover-from-dv-175.jpg" style="margin-bottom: 17px; margin-top: 10px; max-width: 95%;" />
+                                    </div>
+                                    <div class="freeMaterialsButtonOnBigScreen" style="float:left; max-width: 40%; margin-top: 69px; margin-bottom: auto">
+                                        <span> <label for="emailForMaterials" style="margin-bottom: 10px;">E-mail</label> </span>
+                                        <br>
+                                        <input id="emailForMaterials" v-model="email" class="input-group-field" type="email" placeholder="E-mail" required>
+                                        <button class="button">Chcę darmowy pdf</button>
+                                    </div>
+                                </div>
+
                                 <div class="agree-wrapper-small">
                                     <!-- <label for="agree" style="margin-bottom: 0;"><small><b>Git w Twojej skrzynce</b> - newsletter z poradami na temat Gita, Dockera oraz pipeline CI/CD</small></label>
                                     <span>
@@ -26,14 +37,16 @@
 
                                 <!-- <div class="input-group">
                                 </div> -->
-                                <span>
-                  <label for="emailForMaterials" style="margin-bottom: 10px;">E-mail</label>
-                </span>
+<div class="freeMaterialsButtonOnSmallScreen">
+                                <span> <label for="emailForMaterials" style="margin-bottom: 10px;">E-mail</label></span>
                                 <br class="breakEmailLabelForMaterials">
                                 <input id="emailForMaterials" v-model="email" class="input-group-field" type="email" placeholder="E-mail" required>
-                                <button class="button">Wyślij materiały</button>
+                                <button class="button">Chcę darmowy pdf</button>
+</div>
+
+
                                     <label for="agreeGitWarsztaty" style="margin-top: 7px; letter-spacing: inherit; text-transform: none;"><small>
-                Klikając przycisk „Wyślij materiały” wyrażasz zgodę na otrzymywanie na podany adres e-mail newsletter’a zawierającego informacje o Gicie, Dockerze,
+                Klikając przycisk „Chcę darmowy pdf” wyrażasz zgodę na otrzymywanie na podany adres e-mail newsletter’a zawierającego informacje o Gicie, Dockerze,
                 Pipelinach CI&CD i naszych szkoleniach.
 Możesz zrezygnować z newsletter’a w każdym czasie wysyłając wiadomość na adres: kontakt@gitwarsztaty.pl lub klikając w link rezygnacyjny w stopce wiadomości marketingowej.
 Szczegółowe informacje o przetwarzaniu Twoich danych osobowych znajdziesz w <a href="{{ site.url }}/polityka-prywatnosci.pdf" target="_blank">Polityce Prywatności</a>.
