@@ -8,8 +8,6 @@ exports.handler = function (event, context, callback) {
     const SENDGRID_API_KEY = process.env.SENDGRID;
     console.log("SendGrid api key: " + SENDGRID_API_KEY.substring(0, 4) + "...");
 
-    const MAILERLITE_API_KEY = process.env.MAILERLITE;
-    console.log("MailerLite api key: " + MAILERLITE_API_KEY.substring(0, 4) + "...");
 
     const fetch = require("node-fetch");
     const atob = require("atob");
@@ -95,7 +93,7 @@ exports.handler = function (event, context, callback) {
             });
     }
     
-    function sendMaterialsWithSendgrid(){
+    function sendMaterialsWithSendgrid() {
         var sendMaterialsBody = {
             personalizations: [{to: [{email: eventBody.email}]}],
             from: {email: "kontakt@gitwarsztaty.pl", name: "GitWarsztaty"},
@@ -126,71 +124,6 @@ exports.handler = function (event, context, callback) {
             });
     }
     
-    function subscribe(){
-        var subscribeBody = {
-            email: eventBody.email,
-            fields: {
-                camefromurljekyll: eventBody.cameFromUrlJekyll,
-                camefromurl: eventBody.cameFromUrl,
-                camefromformlocation: eventBody.cameFromFormLocation,
-                requestpurpose: eventBody.requestPurpose,
-                agreegitwarsztatyinbox: eventBody.agreeGitWarsztatyInbox,
-                agreegitinbox: eventBody.agreeGitInbox,
-                tags: eventBody.tags
-            }
-        };
-
-        subscribeBody = JSON.stringify(subscribeBody);
-        console.log("Sending mailerlite subscribe request: " + subscribeBody);
-
-        fetch("https://api.mailerlite.com/api/v2/subscribers", {
-            method: 'post',
-            body: subscribeBody,
-            headers: {
-                'Content-Type': 'application/json',
-                'X-MailerLite-ApiKey': MAILERLITE_API_KEY
-            }
-        })
-            .then(res => checkStatus(res, true))
-            .then(response => {
-                console.log("Got response from mailerlite subscribe request:");
-                console.log(response)
-            })
-            .catch(error => {
-                console.error("Error catched during fetch mailerlite subscribe request");
-                console.error(error);
-                callback(new Error("Third party service doesn't work, could not send"));
-            });
-
-        setTimeout(function() {
-            var addToGroupBody = {
-                email: eventBody.email,
-            };
-            
-            addToGroupBody = JSON.stringify(addToGroupBody);
-            console.log("Sending mailerlite add to group request: " + addToGroupBody);
-            
-            fetch("https://api.mailerlite.com/api/v2/groups/102857664/subscribers", {
-                method: 'post',
-                body: addToGroupBody,
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-MailerLite-ApiKey': MAILERLITE_API_KEY
-                }
-            })
-                .then(res => checkStatus(res, true))
-                .then(response => {
-                    console.log("Got response from mailerlite add to group request:");
-                    console.log(response)
-                })
-                .catch(error => {
-                    console.error("Error catched during fetch mailerlite add to group request");
-                    console.error(error);
-                    callback(new Error("Third party service doesn't work, could not send"));
-                });
-        }, 250);
-    }
-
     try {
         try {
             // This will use SendGrid which often fails, but it's only informational for us, so we don't show failure to user
@@ -205,13 +138,8 @@ exports.handler = function (event, context, callback) {
         console.log("eventBody.agreeGitWarsztatyInbox:");
         console.log(eventBody.agreeGitWarsztatyInbox);
         
-        if (eventBody.agreeGitInbox == true || eventBody.agreeGitWarsztatyInbox == true ||
-            eventBody.agreeGitInbox == 'true' || eventBody.agreeGitWarsztatyInbox == 'true') {
-            subscribe(); // This will send materials with MailerLite if requestPurpose is materialy
-        } else {
-            if (eventBody.requestPurpose.toLowerCase() === "materialy")
-                sendMaterialsWithSendgrid();
-        }
+        if (eventBody.requestPurpose.toLowerCase() === "materialy")
+            sendMaterialsWithSendgrid();
 
         if (eventBody.requestPurpose.toLowerCase() === "kontakt") {
             // This will use SendGrid which often fails, but at this moment we know that user wanted to contact us
