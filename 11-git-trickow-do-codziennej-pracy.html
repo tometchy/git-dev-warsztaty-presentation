@@ -1,0 +1,209 @@
+---
+description: GitWarsztaty - Szkolenie Docker, szkolenie Git. Warsztaty otwarte i w firmie.
+default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w-krotszym-czasie
+---
+
+{% assign defaultShownAdvantageUpcase = page.default-shown-advantage | upcase %}
+
+<!doctype html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Basic Page Needs
+    ================================================== -->
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitWarsztaty - szkolenie wprowadzające do Dockera i Gita</title>
+    
+{% include head.html %}
+  
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+<link href="css/animate.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="style.css">
+<link href='css/googleapisfonts.css' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <script src="js/vue@2.6.0.js"></script>
+</head>
+
+<body>
+
+<nav id="top-menu" class="navbar navbar-default navbar-fixed-top navbar-top on onforce">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="max-height: 40px">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="{{ site.url }}" style="margin-top: 6px"><img src="img/logo-top.png" class="img-responsive"><!--<span>Grit</span>--></a> </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right"> <!-- nav-view -->
+        <!-- <li><a href="{{ site.url }}#o-warsztatach" class="page-scroll">Szkolenia</a></li> -->
+        <li><a href="{{ site.url }}#co-zyskasz" class="page-scroll">Szkolenia</a></li>
+        <li><a href="{{ site.url }}#prowadzacy" class="page-scroll">O nas</a></li>
+        <li><a href="{{ site.url }}/blog" class="page-scroll">Blog</a></li>
+        <li><a href="#kontakt" class="page-scroll">Kontakt</a></li>
+      </ul>
+    </div> 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+   
+      <!--nav icon--> 
+      <a id="nav-icon"> <span></span> <span></span> <span></span> </a> 
+      <!--nav icon end-->
+      
+      <ul id="nav-top" class="nav navbar-nav navbar-right"> <!-- nav-view -->
+        <!-- <li><a href="{{ site.url }}#o-warsztatach" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Szkolenia</a></li> -->
+        <li><a href="{{ site.url }}#co-zyskasz" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Szkolenia</a></li>
+        <li><a href="{{ site.url }}#prowadzacy" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">O nas</a></li>
+        <li><a href="{{ site.url }}/blog" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Blog</a></li>
+        <li><a href="#kontakt" class="page-scroll" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Kontakt</a></li>
+      </ul>        
+          <!--search form-->         
+<!--          <form method="get" action="/search" id="search">-->
+<!--            <input name="q" type="text" size="40" placeholder="Search..." />-->
+<!--          </form>-->
+          <!--/search form--> 
+          
+           <nav class="bottom-nav">
+<!--          <ul>-->
+<!--            <li><a href="#">FAQ</a></li>-->
+<!--            <li><a href="#">Privacy</a></li>-->
+<!--            <li><a href="#">Blog</a></li>-->
+<!--            <li><a href="#">Pricing</a></li>-->
+<!--          </ul>-->
+        </nav>
+          
+          <ul class="social-link">
+          <li><a href="https://twitter.com/share?text=GitWarsztaty+-+GIT+efektywnie+wykorzystany&amp;url=https://www.gitwarsztaty.pl" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.gitwarsztaty.pl" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/gitwarsztaty/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://gitwarsztaty.pl" onclick="window.open(this.href, 'share-linkedin','width=580,height=296');return false;"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<main id="app">
+
+<section id="co-zyskasz">
+  <div class="container">
+    <div class="row">
+      <!--section-title-->
+      <div class="section-title text-center wow fadeInUp easyReadText" style="margin-bottom: 20px">
+        <h1 class="subpageTitle" style="margin-bottom: 18px">11 Git Tricków do codziennej pracy</h1>
+        <h2 class="subpageTitle" style="margin-top: 0px; margin-bottom: 25px">Mocny zespół ma wiele asów w rękawie!</h2>
+        <h5 class="subpageTitle" style="margin-top: 0px; margin-bottom: 27px">
+              Pobierz darmowy PDF z poradami, które możesz zacząć używać od zaraz.
+        </h5>
+        <p style="margin-top: 20px; margin-bottom: 57px"> <img src="img/git-tricks-cover-from-dv-175.jpg" class="img-responsive"> </p>
+
+          {% assign paragraphMargin = "24px" %}
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+{% include free-materials.html %}
+
+{% include testimonials.html %}
+
+{% include contact.html %}
+
+{% include attention.html %}
+  
+{% include share.html %}
+  
+  <script type="text/x-template" id="modal-template">
+    <transition name="modal">
+      <div class="modal-mask">
+        <div class="modal-wrapper">
+          <div class="modal-container">
+
+            <div class="modal-header">
+              <slot name="header">
+              </slot>
+            </div>
+
+            <div class="modal-body">
+              <slot name="body">
+              </slot>
+            </div>
+
+            <div class="modal-footer">
+              <slot name="footer">
+                <button class="modal-default-button" @click="$emit('close')">
+                  OK
+                </button>
+              </slot>
+            </div>
+          </div>
+        </div>
+      </div>
+    </transition>
+  </script>
+
+  <div>
+    <modal v-if="showModal" @close="showModal = false">
+      <h3 slot="header" v-bind:class="(modalSuccess)?'successHeader ':'failureHeader'">{% raw %}{{ modalHeader }}{% endraw %}</h3>
+      <span slot="body" v-html="modalBody"></span>
+    </modal>
+  </div>
+  
+</main>
+
+{% include footer.html %}
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/jquery.waypoints.min.js"></script> 
+<!-- Custom Javascripts
+    ================================================== --> 
+<script type="text/javascript" src="js/main.js"></script> 
+<script src="js/wow.min.js"></script>
+
+<script>
+    function to_position(divid) {
+        $('html, body').animate({ scrollTop: $(divid).offset().top - 90 }, 'slow');
+    }
+    function to_height(height) {
+      $('html, body').animate({ scrollTop: height }, 'slow');
+    }
+</script>
+
+<script>
+new WOW().init();
+</script>
+
+{% include vueModelMainPage.html %}
+
+{% include analytics.html %}
+
+</body>
+</html>
