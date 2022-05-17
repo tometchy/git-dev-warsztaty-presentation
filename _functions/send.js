@@ -11,12 +11,29 @@ exports.handler = async (event, context) => {
         console.log('event http method: ' + event.httpMethod);
         console.log('event body: ' + event.body);
         console.log("SendGrid api key: " + SENDGRID_API_KEY.substring(0, 4) + "...");
-        console.log("email: " + eventBody.email);
-        console.log("agreeGitInbox: " + eventBody.agreeGitInbox);
-        console.log("agreeGitWarsztatyInbox : " + eventBody.agreeGitWarsztatyInbox);
         console.log("requestPurpose : " + eventBody.requestPurpose);
         console.log("cameFromUrlJekyll: " + eventBody.cameFromUrlJekyll);
         console.log("cameFromUrl: " + eventBody.cameFromUrl);
+
+        if (eventBody.requestPurpose.toLowerCase() === "i") {
+            try{
+                await processIrequest();
+            } catch {
+                console.error("Error during 'i' reqeust");
+                console.error(e);
+            }
+
+            console.log("'i' request success");
+            
+            return {
+                statusCode: 200,
+                body: JSON.stringify({ status: 'Ok' })
+            };
+        }
+
+        console.log("email: " + eventBody.email);
+        console.log("agreeGitInbox: " + eventBody.agreeGitInbox);
+        console.log("agreeGitWarsztatyInbox : " + eventBody.agreeGitWarsztatyInbox);
         console.log("cameFromFormLocation: " + eventBody.cameFromFormLocation);
 
         if (eventBody.tags == null)
@@ -73,6 +90,42 @@ exports.handler = async (event, context) => {
 
             return res;
         }
+    }
+
+    async function processIrequest() {
+        var irequestBody = {
+            personalizations: [{ to: [{ email: "tometchy@gmail.com" }] }],
+            from: { email: "kontakt@gitwarsztaty.pl" },
+            subject: "Nowy I request: " + eventBody.cameFromUrl,
+            content: [{
+                type: "text/plain",
+                value: "Nowy request " + eventBody.requestPurpose + "\n\n" +
+                    "Czas: " + eventBody.time + "\n\n" +
+                    "Url: " + eventBody.cameFromUrl + "\n\n" +
+                    "Url (Jekyll): " + eventBody.cameFromUrlJekyll + "\n\n"
+            }]
+        };
+
+        irequestBody = JSON.stringify(irequestBody);
+        console.log("Sending i request mail using sendgrid: " + irequestBody);
+
+        await fetch(SENDGRID_API_ENDPOINT, {
+            method: 'post',
+            body: irequestBody,
+            headers: {
+                "Accept": "application/json",
+                'Content-Type': 'application/json',
+                'Authorization': ('Bearer ' + SENDGRID_API_KEY)
+            }
+        })
+            .then(response => {
+                console.log("Got response for informing us email:");
+                console.log(response)
+            })
+            .catch(error => {
+                console.log("Error catched during informing us email");
+                console.error(error);
+            });
     }
 
     async function informUs(propagateFailure) {

@@ -1,4 +1,3 @@
-<!-- Google Analytics Tracking code -->
  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -8,4 +7,18 @@
   ga('create', '{{ site.google_analytics }}', 'auto');
   ga('send', 'pageview');
 
+  if(window.location.search.length > 0) {
+        try {
+            var requestDetailsJson = "{ " +
+                '"requestPurpose": "' + "i" + '",' +
+                '"cameFromUrl": "' + window.location.href + '",' +
+                '"cameFromUrlJekyll": "' + "{{ page.url }}" + '",' +
+                '"time": "' + new Date().toString() + '"' +
+                '}';
+
+            $.post('{{ site.url }}/.netlify/functions/send', requestDetailsJson);
+        }
+        catch (e) {
+        }
+  }
  </script>
