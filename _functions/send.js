@@ -78,7 +78,7 @@ exports.handler = async (event, context) => {
     async function informUs(propagateFailure) {
         var informUsBody = {
             personalizations: [{ to: [{ email: "kontakt@gitwarsztaty.pl" }] }],
-            from: { email: eventBody.email },
+            from: { email: "kontakt@gitwarsztaty.pl" },
             subject: "Nowy request o " + eventBody.requestPurpose + " od " + eventBody.email,
             content: [{
                 type: "text/plain",
