@@ -134,7 +134,7 @@ exports.handler = async (event, context) => {
             subject: "11 Git Tricków do codziennej pracy",
             content: [{
                 type: "text/html",
-                value: "<div>Cześć,<div><br>oto obiecany darmowy pdf - <a href=\"https://www.gitwarsztaty.pl/materialy/11-git-trickow-do-codziennej-pracy-gitwarsztatypl.pdf\">11 Git Tricków do codziennej pracy</a>.<br><br>Która porada spodobała Ci się najbardziej?</div><div>Zachęcamy do podzielenia się feedbackiem, wystarczy, że odpiszesz na tego maila.<br><br>Możesz od razu zacząć stosować nowe metody w praktyce... no może prawie od razu - najpierw prześlij je dalej pozostałym w Twojej firmie.</div><div><br>W końcu <b>razem tworzycie mocny zespół</b> 💪<br><br><i>Pozdrów zespół<br>Tomasz Skraskowski<br><a href=\"https://www.gitwarsztaty.pl\">GitWarsztaty.pl</a></i><br></div></div>"
+                value: "<div>Cześć,<div><br>przesyłam link do obiecanego pdfa - <a href=\"https://www.gitwarsztaty.pl/materialy/11-git-trickow-do-codziennej-pracy-gitwarsztatypl.pdf\">11 Git Tricków do codziennej pracy</a>.<br><br>Która porada spodobała Ci się najbardziej?</div><div>Zachęcam do podzielenia się feedbackiem, wystarczy, że odpiszesz mi na tego maila :)<br><br>Możesz od razu zacząć stosować nowe metody w praktyce... no może prawie od razu - najpierw prześlij je dalej pozostałym w Twojej firmie.</div><div><br>W końcu <b>razem tworzycie mocny zespół</b> 💪<br><br><i>Pozdrów zespół<br>Tomasz Skraskowski<br><a href=\"https://www.gitwarsztaty.pl\">GitWarsztaty.pl</a></i><br></div></div>"
             }]
         };
 
