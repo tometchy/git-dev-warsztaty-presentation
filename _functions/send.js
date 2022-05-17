@@ -26,7 +26,7 @@ exports.handler = async (event, context) => {
 
         try {
             // This will use SendGrid which often fails, but it's only informational for us, so we don't show failure to user
-            informUs(false);
+            await informUs(false);
         } catch (e) {
             console.log('Exception catched during informing us, but can be hidden for user, swallowing it');
             console.error(e);
@@ -38,12 +38,12 @@ exports.handler = async (event, context) => {
         console.log(eventBody.agreeGitWarsztatyInbox);
 
         if (eventBody.requestPurpose.toLowerCase() === "materialy")
-            sendMaterialsWithSendgrid();
+            await sendMaterialsWithSendgrid();
 
         if (eventBody.requestPurpose.toLowerCase() === "kontakt") {
             // This will use SendGrid which often fails, but at this moment we know that user wanted to contact us
             // so if sending contact details to us fails, then we should show failure to user
-            informUs(true);
+            await informUs(true);
         }
 
         return {
@@ -68,14 +68,14 @@ exports.handler = async (event, context) => {
 
             if (propagateFailure) {
                 console.log("Propagating failure from wrong response status to user");
-                callback(new Error("Third party service doesn't work, could not send"));
+                throw "Third party service doesn't work, could not send";
             }
 
             return res;
         }
     }
 
-    function informUs(propagateFailure) {
+    async function informUs(propagateFailure) {
         var informUsBody = {
             personalizations: [{ to: [{ email: "kontakt@gitwarsztaty.pl" }] }],
             from: { email: eventBody.email },
@@ -102,7 +102,7 @@ exports.handler = async (event, context) => {
         informUsBody = JSON.stringify(informUsBody);
         console.log("Sending inform us mail using sendgrid: " + informUsBody);
 
-        fetch(SENDGRID_API_ENDPOINT, {
+        await fetch(SENDGRID_API_ENDPOINT, {
             method: 'post',
             body: informUsBody,
             headers: {
@@ -122,12 +122,12 @@ exports.handler = async (event, context) => {
 
                 if (propagateFailure) {
                     console.log("Propagating inform us failure to user");
-                    callback(new Error("Third party service doesn't work, could not send"));
+                    throw "Third party service doesn't work, could not send";
                 }
             });
     }
 
-    function sendMaterialsWithSendgrid() {
+    async function sendMaterialsWithSendgrid() {
         var sendMaterialsBody = {
             personalizations: [{ to: [{ email: eventBody.email }] }],
             from: { email: "kontakt@gitwarsztaty.pl", name: "GitWarsztaty" },
@@ -141,7 +141,7 @@ exports.handler = async (event, context) => {
         sendMaterialsBody = JSON.stringify(sendMaterialsBody);
         console.log("Sending materials using sendgrid: " + sendMaterialsBody);
 
-        fetch(SENDGRID_API_ENDPOINT, {
+        await fetch(SENDGRID_API_ENDPOINT, {
             method: 'post',
             body: sendMaterialsBody,
             headers: { "Accept": "application/json", 'Content-Type': 'application/json', 'Authorization': ('Bearer ' + SENDGRID_API_KEY) }
@@ -154,7 +154,7 @@ exports.handler = async (event, context) => {
             .catch(error => {
                 console.log("Error catched during sending materials with sendgrid, propagating failure to user");
                 console.error(error);
-                callback(new Error("Third party service doesn't work, could not send"));
+                throw "Third party service doesn't work, could not send";
             });
     }
 };
