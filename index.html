@@ -356,7 +356,8 @@ description: GitWarsztaty - Szkolenie Docker, szkolenie Git. Warsztaty otwarte i
             <div class="modal-footer">
               <slot name="footer">
                 <button class="modal-default-button" @click="$emit('close')">
-                  OK
+                <slot name="close-footer-button">
+                </slot>
                 </button>
               </slot>
             </div>
@@ -370,6 +371,7 @@ description: GitWarsztaty - Szkolenie Docker, szkolenie Git. Warsztaty otwarte i
     <modal v-if="showModal" @close="showModal = false">
       <h3 slot="header" v-bind:class="(modalSuccess)?'successHeader ':'failureHeader'">{% raw %}{{ modalHeader }}{% endraw %}</h3>
       <span slot="body" v-html="modalBody"></span>
+      <span slot="close-footer-button" v-html="closeFooterButton"></span>
     </modal>
   </div>
   

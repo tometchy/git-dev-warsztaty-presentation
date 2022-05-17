@@ -7,6 +7,7 @@
         el: '#app',
         data: {
             inCompany: true,
+            modalWithOkButton: true,
             agreeGitInbox: true,
             agreeGitWarsztatyInbox: true,
             requestPurpose: "",
@@ -18,6 +19,7 @@
             who: "",
             whichCity: "",
             additionalInfo: "",
+            closeFooterButton: "OK",
             showModal: false,
             modalSuccess: true,
             modalHeader: "Trwa wysyłanie...",
@@ -31,6 +33,7 @@
                 self.modalSuccess = true;
                 self.modalHeader = "Trwa wysyłanie...";
                 self.modalBody = "Proszę czekać...";
+                self.closeFooterButton = "OK";
                 self.showModal = true;
                 const materialsSentHeader = "Wysłano materiały";
                 const materialsSentBody = "Jeżeli materiały nie dotrą w najbliższym czasie, sprawdź folder SPAM lub skontaktuj się z nami bezpośrednio.<br><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br>  Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a> <br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
@@ -48,6 +51,7 @@
                 self.modalSuccess = true;
                 self.modalHeader = "Trwa wysyłanie...";
                 self.modalBody = "Proszę czekać...";
+                self.closeFooterButton = "OK";
                 self.showModal = true;
                 const requestSentHeader = "Wysłono pomyślnie";
                 const requestSentBody = "Skontaktujemy się niezwłocznie. W razie problemów, skontaktuj się proszę z nami bezpośrednio. <br><br>Krzysztof Morcinek: <br><a class='phone' href='tel:737692782'>737 692 782</a><br> Tomasz Skraskowski: <br><a class='phone' href='tel:792228321'>792 228 321</a><br> E-mail: <br><a class='phone' href='mailto:kontakt@gitwarsztaty.pl?Subject=Warsztaty' target='_top'>kontakt@gitwarsztaty.pl</a>";
@@ -99,5 +103,15 @@
             app.modalHeader = requestSendingFailureHeader;
             app.modalBody = requestSendingFailureBody;
         }
+    }
+
+    if("{{ page.url }}".trim() == "/" || "{{ page.url }}".toLowerCase().includes("blog")) {
+        setTimeout(function(){
+            app.modalSuccess = true;
+            app.modalHeader = "Darmowy PDF z poradami, które możesz zacząć stosować od zaraz";
+            app.modalBody = '<a href="{{ site.url }}/11-git-trickow-do-codziennej-pracy?i=e540c"> <img src="img/git-tricks-cover-from-dv-175-raw.jpg" class="img-responsive" /> </a>';
+            app.closeFooterButton = "Dzięki, już mam";
+            app.showModal = true;
+        }, 7000);
     }
 </script>
