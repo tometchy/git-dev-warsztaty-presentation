@@ -164,41 +164,7 @@ default-shown-advantage: sprawna-obsluga-gita-pomaga-pisac-lepszej-jakosci-kod-w
   
 {% include share.html %}
   
-  <script type="text/x-template" id="modal-template">
-    <transition name="modal">
-      <div class="modal-mask">
-        <div class="modal-wrapper">
-          <div class="modal-container">
-
-            <div class="modal-header">
-              <slot name="header">
-              </slot>
-            </div>
-
-            <div class="modal-body">
-              <slot name="body">
-              </slot>
-            </div>
-
-            <div class="modal-footer">
-              <slot name="footer">
-                <button class="modal-default-button" @click="$emit('close')">
-                  OK
-                </button>
-              </slot>
-            </div>
-          </div>
-        </div>
-      </div>
-    </transition>
-  </script>
-
-  <div>
-    <modal v-if="showModal" @close="showModal = false">
-      <h3 slot="header" v-bind:class="(modalSuccess)?'successHeader ':'failureHeader'">{% raw %}{{ modalHeader }}{% endraw %}</h3>
-      <span slot="body" v-html="modalBody"></span>
-    </modal>
-  </div>
+{% include modal.html %}
   
 </main>
 
