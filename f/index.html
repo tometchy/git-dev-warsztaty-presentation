@@ -1,0 +1,38 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex">
+</head>
+
+<body>
+    <script>
+        try {
+            if (window.location.search.length > 0) {
+                var requestDetailsJson = "{ " +
+                    '"requestPurpose": "' + "i" + '",' +
+                    '"cameFromUrl": "' + window.location.href + '",' +
+                    '"cameFromUrlJekyll": "' + "{{ page.url }}" + '",' +
+                    '"time": "' + new Date().toString() + '"' +
+                    '}';
+
+                // $.post('{{ site.url }}/.netlify/functions/send', requestDetailsJson);
+                var request = new XMLHttpRequest();
+                request.open('POST', '{{ site.url }}/.netlify/functions/send', false);
+                request.send(requestDetailsJson);
+            }
+        }
+        catch (e) {
+        }
+
+        var forwardAddress = "{{ site.url }}/materialy/11-git-trickow-do-codziennej-pracy-gitwarsztatypl.pdf";
+        window.location.replace(forwardAddress);
+    </script>
+
+</body>
+
+</html>

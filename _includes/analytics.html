@@ -7,8 +7,8 @@
   ga('create', '{{ site.google_analytics }}', 'auto');
   ga('send', 'pageview');
 
-  if(window.location.search.length > 0) {
-        try {
+    try {
+        if (window.location.search.length > 0) {
             var requestDetailsJson = "{ " +
                 '"requestPurpose": "' + "i" + '",' +
                 '"cameFromUrl": "' + window.location.href + '",' +
@@ -18,7 +18,7 @@
 
             $.post('{{ site.url }}/.netlify/functions/send', requestDetailsJson);
         }
-        catch (e) {
-        }
-  }
+    }
+    catch (e) {
+    }
  </script>
