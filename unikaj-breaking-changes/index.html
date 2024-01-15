@@ -187,6 +187,67 @@ if (!user.fullName) {
 
         <section>
             <section>
+                <h3>Zadanie</h3>
+                
+                <p class="fragment">Teraz pokazujemy moduł "Onboarding" każdemu. Jak podzielić na kroki żeby było lepiej? "CAN_VIEW_ONBOARDING"</p>
+                <aside class="notes">
+                    
+
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3></h3>
+                
+                <p class="fragment">Co wy na to?</p>
+                <aside class="notes">
+                    cześć, ta nasza nowa integracja dla Modułu Marketingu już jest na STAGE (potwierdzili że działa), nie możemy tam nic zepsuć, trzeba będzie obok nowy endpoint napisać (nie duża zmiana).
+
+                    ja gadałem z Maćkiem, oni tego jeszcze nie użyli i mi potwierdził że nie pójdzie tam żaden ruch, możemy ten istniejący spokojnie szybko zmodyfikować - będzie szybciej.
+
+                    aside: na jakim kanale, czy to wszyscy widzieli.
+jak długa jest to zmiana, czy ten który decyduje to doprowadzi to do końca?
+jaki potencjalny fakap?
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Jak może wyglądać dzień z życia Integration Managera</h3>
+                
+                <ul>
+                    <li class="fragment">zamówienia (zespół) czekają aż skończymy "AI-2233" bo ich część jest już skończona</li>
+                    <li class="fragment">czy AI-7788 jest już na PROD i można iść z AI-9900</li>
+                    <li class="fragment">my czekamy z mergowaniem "AI-3344" aż coś tam</li>
+                    <li class="fragment">Jest bug AI-3344, czy mozemy pchac fixa na kolejne srodowiska</li>
+                    <li class="fragment">Nie możemy deployować na STAGE, bo zespół Marketingu jeszcze nie wdrożył MA-3344 i wszystko wybuchnie</li>
+                    <li class="fragment">I wiele więcej...</li>
+                </ul>
+                <aside class="notes">
+
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Feature Flagi</h3>
+                
+                <PRE class="fragment">
+if (featureFlags.canSendConfirmationEmails) {
+  // 
+}</PRE>
+                <aside class="notes">
+
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
                 <h3>Jak radzić sobie ze sprzątaniem po tym "tymczasowym" kodzie</h3>
 
                 <PRE class="fragment">// TODO: AI-4545 remove getFullName when BE deployed</PRE>
@@ -224,14 +285,6 @@ W jakich krokach zmigrować procesowanie eventu z formatu avro na jsona na kafce
                 </aside>
             </section>
 
-            <section>
-                <h3>WIP</h3>
-                
-                <aside class="notes">
-                    
-
-                </aside>
-            </section>
         </section>
 
         <section>
@@ -254,6 +307,7 @@ Zazwyczaj zyskujemy go od razu nie musząc się tyle synchronizować z innymi.
 Zmniejszamy ryzyko.
 Jest kilka strategii. (ile czasu to nam zabierze).
 
+częstotliwoś deploy'i na PROD majeje z czasem. większa ilość zależności, rotacja ludzie {}
                 </aside>
             </section>
         </section>
