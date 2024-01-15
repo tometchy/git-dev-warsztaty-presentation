@@ -1,0 +1,321 @@
+---
+cover: img/prezentacja.jpg
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Unikaj breaking changes</title>
+
+    <meta name="description" content="Prelekcja Krzysztofa Morcinek">
+    <meta name="author" content="Krzysztof Morcinek">
+
+    {% include head.html %}
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+        .alias-list li {
+            margin-bottom: 9px
+        }
+
+        .alias-list li {
+            font-size: 70%
+        }
+
+        .modifications-list li {
+            margin-bottom: 9px
+        }
+        
+        .good-terminal-list ul {
+            font-size: 61%;
+        }
+        
+        .good-terminal-list li {
+            margin-bottom: 15px
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Masz 3 środowiska, kilka mikroserwisów i jesteś na prodzie
+
+            </h2>
+            <p style="float: right;">... czyli jak nie wprowadzać breaking changes.</p>
+         </section>
+
+        <section>
+            <h3>Rozszerzenie endpointu o full name</h3>
+            <PRE>
+{
+    "id": "5",
+    "name": "Krzysztof",
+    "surname": "Morcinek"
+}</PRE>
+            <p class="fragment">kilkanascie sprintow dalej ...</p>
+            <p><PRE class="fragment">
+{
+    "id": "5",
+    "name": "Krzysztof",
+    "surname": "Morcinek",
+    "fullName": "Krzysztof Piotr Morcinek",
+    "middleName": "Piotr"
+}</PRE></p>
+            <p class="fragment">To proste, co może pójść nie tak ...</p>
+        </section>
+
+
+        <section>
+                <p>
+                    <img src="https://149842033.v2.pressablecdn.com/wp-content/uploads/2019/09/500-error-page-templates-1000x750.jpg" style="border:none; box-shadow:none; max-width: 500px;"/>
+                </p>
+                <p>(może trochę ładniejszy)</p>
+                <p class="fragment">Najnowszy FE wylądował wcześniej niż BE i nie dostał danych których oczekiwał</p>
+        </section>
+        
+
+        <section>
+            <h3>Frontend vs Backend jako przykład</h3>
+            <p class="fragment">2 repozytoria, 2 osobne deployujące się klocki z własnym cyklem życia
+            </p>
+            <p class="fragment">Kolejne:</p>
+            <ul>
+                <li class="fragment">różni zewnetrzne zależności (inne serwisy)</li>
+                <li class="fragment">różni ludzie w zespołach</li>
+                <li class="fragment">różni ludzie w zespołach zależnych</li>
+                <li class="fragment">różne technologie</li>
+                <li class="fragment">itd</li>
+            </ul>
+            <aside class="notes">
+            </aside>
+        </section>
+
+
+        <section>
+            <section>
+                <h3></h3>
+                <p class="fragment">Q: Jak rozwiązać problem?</p>
+            </section>
+
+            <section>
+                <h3>Deploy razem</h3>
+                <p class="fragment">Trzeba na każdym środowisku zrobić to razem, Dev->Stage, Stage->PROD</p>
+                <p class="fragment">One się nie pojawią dokładnie w tym samym czasie, np BE dłużej wstaje</p>
+                <p class="fragment">Coś się może wywalić</p>
+                <aside class="notes">
+
+                </aside>
+            </section>
+
+            <section>
+                <h3></h3>
+                <p class="fragment">Q: Co pomoże?</p>
+            </section>
+
+            <section>
+                <h3>Najpierw strona, która wystawia dane (BE - takie założenie)</h3>
+                <p class="fragment">Kroki:</p>
+                <ol>
+                    <li class="fragment">Najpierw deploy BE ...</li>
+                    <li class="fragment">... a za chwilę FE</li>
+                </ol>
+                <p class="fragment">Problemy:</p>
+                <ul>
+                    <li class="fragment">Może być inny kawałek kodu który najpierw oczekuje że FE się pierwszy zdeploy'uje</li>
+                    <li class="fragment">Trzeba jakoś o tym pamiętać</li>
+                </ul>
+                <aside class="notes">
+                    wspominam o tym bo to jest proste i wydaje sie ze bedzie działać
+                </aside>
+            </section>
+
+            <section>
+                <h3></h3>
+                <p class="fragment">Q: Jak inaczej?</p>
+            </section>
+
+            <section>
+                <h3>Obydwie strony niezależnie od siebie</h3>
+                <p class="fragment">Może nie zawsze być takie proste</p>
+                <PRE class="fragment">
+if (user.fullName) {
+  // nowa logika
+} else {
+  // stara logika
+}</PRE>
+
+                <p class="fragment">Nawet może się uprościć</p>
+                <PRE class="fragment">
+// dotychczas korzystaliśmy z getFullName(user)
+
+if (!user.fullName) {
+  user.fullName = getFullName(user);
+}
+
+// od teraz korzystamy z user.fullName</PRE>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Jak radzić sobie ze sprzątaniem po tym "tymczasowym" kodzie</h3>
+
+                <PRE class="fragment">// TODO: AI-4545 remove getFullName when BE deployed</PRE>
+                <PRE class="fragment">// FIXME: AI-4545 cleanup flags after "..."</PRE>
+                <PRE class="fragment">
+[Deprecated("AI-4545 remove getFullName when BE deployed")]
+getFullName() { }
+</PRE>
+                <aside class="notes">
+                </aside>
+            </section>
+
+            <section>
+                <h3>Gdzie umieścić</h3>
+
+                <p class="fragment">Najlepiej posprzątać od razu po skończeniu</p>
+                <p class="fragment">Jako subtask, może to trochę wydłużyć zamknięcie "Story", ale to jest IMHO dobre Definition Of Done</p>
+                <p class="fragment">Jeśli na siłę trzeba zamknąć "Story" to wyciągamy do taska na kolejny sprint</p>
+                <p class="fragment">Jeśli przez dłuższy czas chcemy obserwować działanie systemu to chcemy mieć możliwość przesuwania flagi</p>
+                <aside class="notes">
+                    wspominam o tym bo wiem, że część osób tutaj widzi problem, jak od strony procesowej z tym sobie radzić.
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Przykład gdy niby tylko wewnętrznie coś się zmienia</h3>
+                
+                <p><a href="https://krzysztofmorcinek.wordpress.com/2022/07/06/w-jakich-krokach-zmigrowac-procesowanie-eventu-z-formatu-avro-na-jsona-na-kafce/">
+W jakich krokach zmigrować procesowanie eventu z formatu avro na jsona na kafce
+</a>
+                <aside class="notes">
+                    kolaga myślał że obejdzie się bez feature flag, ale zrozumiał że w systemie LIVE na prod na pewno coś by mu wybuchnęło.    
+                </aside>
+            </section>
+
+            <section>
+                <h3>WIP</h3>
+                
+                <aside class="notes">
+                    
+
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Pytania różne</h3>
+                
+                <p>?</p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+            <section>
+                <h3>Podsumowanie</h3>
+                
+                <aside class="notes">
+                    
+Tak to może zająć więcej czasu kodowania.
+Zazwyczaj zyskujemy go od razu nie musząc się tyle synchronizować z innymi.
+Zmniejszamy ryzyko.
+Jest kilka strategii. (ile czasu to nam zabierze).
+
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <h3>Dziękuję za uwagę</h3>
+            <p>
+                <br>
+                <small>Życzę wszystkim najmniej stresów z integrowaniem się z zewnętrznymi zespołami</small>
+            </p>
+            <!-- <p>
+                <img src="img/wtf-code-review.png" style="border:none; box-shadow:none"/>
+            </p> -->
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                    return !document.body.classList;
+                }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+</script>
+
+{% include analytics.html %}
+
+</body>
+
+</html>
