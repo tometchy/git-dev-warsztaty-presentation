@@ -1,0 +1,390 @@
+---
+cover: img/prezentacja.jpg
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Jak stopniowo/pragmatycznie integrować się z np UberEats</title>
+
+    <meta name="description" content="Prelekcja Krzysztofa Morcinek na temat preprowadzania Code Review">
+    <meta name="author" content="Krzysztof Morcinek">
+
+    {% include head.html %}
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+        .alias-list li {
+            margin-bottom: 9px
+        }
+
+        .alias-list li {
+            font-size: 70%
+        }
+
+        .modifications-list li {
+            margin-bottom: 9px
+        }
+        
+        .good-terminal-list ul {
+            font-size: 61%;
+        }
+        
+        .good-terminal-list li {
+            margin-bottom: 15px
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Jak stopniowo/pragmatycznie integrować się z np. UberEats</h2>
+            <p style="float: right;">Feature'ów, które fajnie byłoby zaimplementować jest ogrom. Jak oddzielić kreską te które są "must have" i w jakiej kolejności je implementować. W jakiej kolejności dostarczać/testować i co ma w głowie ktoś, kto chce to wszystko złożyć, żeby zaczęło zarabiać.</p>
+         </section>
+
+        <section>
+            <h2 style="margin-bottom: 50px">Krzysztof Morcinek</h2>
+            <p>
+            <div>
+                <img src="img/krzysztof-morcinek-black.jpg" style="max-width: 300px; float: left; margin-top: 56px"/>
+            </div>
+            <div>
+                <ul style="line-height: 200%; padding-left: 27px">
+                    <li>@ Pragmatic Coders</li>
+                    <li>10 years in .NET stacks</li>
+                    <li>Last years in Java/Python/AWS</li>
+                    <li><a href="https://krzysztofmorcinek.wordpress.com/" target="_blank">krzysztofmorcinek.wordpress.com</a></li>
+                    <li>Screencast: <a href="https://www.youtube.com/watch?v=7_-FgbUsNM0&list=PLfVKkuw80D-kQPQ5ZjFf6jO3HmSavk6A-" target="_blank">Show me the code</a></li>
+                </ul>
+            </div>
+            </p>
+        </section>
+
+        <section>
+            <section>
+                <h3>Za dużo tego "pragmatyzmu"</h3>
+                <p class="fragment">"Właściwe narzędzie do właściwego problemu"</p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Co to jest Shadow Kitchen, Dark Kitchen</h3>
+                <!-- <p class="fragment">biznesowe componenty</p> -->
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Główni Aktorzy</h3>
+                <p class="fragment">biznesowe componenty</p>
+            </section>
+
+            <section>
+                <h3>Menu</h3>
+            </section>
+
+            <section>
+                <h3>Aggregator hub</h3>
+            </section>
+
+            <section>
+                <h3>Aggregator</h3>
+                <p class="fragment">UberEats</p>
+                <p class="fragment">Deliveroo</p>
+                <p class="fragment">Pyszne.pl</p>
+            </section>
+
+            <section>
+                <h3>Kuchnia</h3>
+            </section>
+
+            <section>
+                <h3>Niedostępność (tymczasowa) produktów</h3>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Flow</h3>
+                <p class="fragment">Restauracja --> Push Menu --> UberEats</p>
+                <p class="fragment">UberEats --> Callback Order --> Restauracja(realizacja zamówienia)</p>
+                <p class="fragment">Restauracja --> Confirm Order --> UberEats</p>
+                <p class="fragment">Restauracja --> Statusy --> UberEats</p>
+            </section>
+            <section>
+                <h3>payloads</h3>
+                <aside class="notes">
+                    Payloads and some code: https://github.com/kmorcinek/uber-eats-payloads
+                </aside>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>To były stabilne firmy (zazwyczaj)</h3>
+                <p class="fragment">dostaliśmy środowiska testowe</p>
+                <p class="fragment">czasem dokumentacja była dobra</p>
+                <p class="fragment">rzadko API było niestabilne over time</p>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Najprostszy przypadek E2E</h3>
+                <p class="fragment">przeklikać, pobawić się</p>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Jakie testy regresyjne?</h3>
+                <p class="fragment">Black box</p>
+                <p class="fragment">Wiremock</p>
+                <p class="fragment">Kafka: kolejki in memory -> test containers</p>
+            </section>
+
+            <section>
+                <h3>Kod</h3>
+                <p class="fragment">Payloady braliśmy z tego co rzeczywiście na testowym środowisku przechodziło</p>
+                <p class="fragment">Bez wycinania pól i upięniania - dokładnie oryginał</p>
+                <p class="fragment">w tym przypadku trzeba było przegenerowywać czasem idki, czasem sortowanie sie zmieniało etc</p>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h3>To api jest ciekawe ...</h3>
+                <p class="fragment">... bo można na przykład wybierać różne połówki dla pizzy</p>
+                <p class="fragment">Do brzegu!</p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Wejscie na PROD</h3>
+                <p>Jak?</p>
+                <p class="fragment">Context:</p>
+                <p class="fragment">Kilkanacie kuchni, kilkadziesiąt brandów</p>
+            </section>
+
+            <section>
+                <h3>Najprostsze lody</h3>
+            </section>
+
+            <section>
+                <h3>Ale nie była zaimplementowana "tymczasowa niedostępność"</h3>
+                <p class="fragment">Ludzie z "operations" obchodzili to</p>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Problem ustawienia callback url przez aggregator</h3>
+                <p class="fragment">Jak byście "zrobili" mailem żeby było dobrze?</p>
+            </section>
+
+            <section>
+                <p>
+                    <img src="img/Uber-eats-email.png" style="border:none; box-shadow:none; max-width: 500px;"/>
+                </p>
+            </section>
+
+            <section>
+                <p>
+                    <img src="img/Uber-eats-real-link.png" style="border:none; box-shadow:none; max-width: 500px;"/>
+                </p>
+            </section>
+
+            <section>
+                <p>
+                    Covid, Świeta, Indie
+                </p>
+            </section>
+
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Na początku integracji nie można uciekać od ręcznej roboty</h3>
+                <p class="fragment">czy na pewno nie można tego robić ręcznie?</p>
+                <p class="fragment">kilkanaście tysięcy linii w application-prod.yml</p>
+                <p class="fragment">stopniowe (na miesiące, lata) przechodzenie na bardziej automatyczne konfiguracje</p>
+                <p class="fragment">.</p>
+                <p class="fragment">"2" godziny planowania zaoszczędzi "2" tygodnie klepania</p>
+                <p class="fragment">godzina kodowania zaoszczędzi dzień dyskutowania</p>
+            </section>
+
+            <section>
+                <h3>Czy można zaakceptować zamówienie, którego nie można zrealizować?</h3>
+                <p class="fragment">Jak u Sławka Sobótki, gdzie nie można było zamówić jachtu</p>
+                <p class="fragment">Można, ogrywamy to inaczej, później. Telefony dzwonią i prostują sytuację</p>
+            </section>
+        </section>
+        
+        <section>
+            <section>
+                <h3>Error na PROD</h3>
+            </section>
+
+            <section>
+                <h3>Case1</h3>
+                <p class="fragment">uderzamy do Deliveroo z update'm dostępności </p>
+                <p class="fragment">... i wszystko failuje co minute i ta sfailowana kula rośnie</p>
+                <p class="fragment">...</p>
+                <p class="fragment">Uwaga PROD:</p>
+                <p class="fragment">Wstrzymujemy procesowanie</p>
+                <p class="fragment">próbujemy restart na czysto</p>
+                <p class="fragment">Fixujemy ASAP</p>
+            </section>
+
+            <section>
+                <h3>Case2</h3>
+                <p class="fragment">Wpadliśmy na blacklisted words za "Chubby Balls"</p>
+            </section>
+
+            <section>
+                <h3>Case3</h3>
+                <p class="fragment">Zbyt duże menu wywala całą applikację podczas procesowania</p>
+                <p class="fragment">"Last mile"</p>
+                <p class="fragment">Błędy na końcu processu są bardziej kosztowne niż na początku</p>
+                <p class="fragment">Rozdział na dwie aplikacje, gdy menu-processing leży to order-processing ciągle działa</p>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Czy można zaakceptować zamówienie, którego nie można zrealizować?</h3>
+                <p class="fragment">Jak u Sławka Sobótki, gdzie nie można było zamówić jachtu</p>
+                <p class="fragment">Można, ogrywamy to inaczej, później. Telefony dzwonią i prostują sytuację</p>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Czego nie robiliśmy / zrobiliśmy</h3>
+                <p class="fragment">Podczas wysyłania niedostępności koniecznie trzeba było podać maksymalny czas obowiązywania</p>
+                <p class="fragment">Nie robiliśmy z początku wszystkich callbacków na statusy</p>
+                <p class="fragment">Kto płaci za dostawę przez długi czas nie można było zrobić dobrze</p>
+                <p class="fragment">Nauczeni doświadczeniem kolejne integracje wygrzewaliśmy na prostych lodach Haagen Dazs</p>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Więc czasem coś nie będzie działać i dowiemy się na produkcji</h3>
+                <p class="fragment">Duże przywiązanie do monitoringu, metryk, dashboardów</p>
+                <p class="fragment">Alerty z grafany</p>
+                <p class="fragment">Ten biznes jest taki bardzo ręczny z natury</p>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Integracja w moim aktualnym projekcie</h3>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>AI ChatGpt buzzwords</h3>
+                <p class="fragment">wygenerował mi payloady</p>
+            </section>
+        </section>
+
+
+        <section>
+            <h3>Dziękuję za uwagę</h3>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                    return !document.body.classList;
+                }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+</script>
+
+{% include analytics.html %}
+
+</body>
+
+</html>
