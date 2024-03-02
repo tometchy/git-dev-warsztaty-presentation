@@ -1,0 +1,670 @@
+---
+cover: img/prezentacja.jpg
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Różne style prowadzenia Code Review w twoim zespole - prezentacja by Krzysztof Morcinek</title>
+
+    <meta name="description" content="Prelekcja Krzysztofa Morcinek na temat preprowadzania Code Review">
+    <meta name="author" content="Krzysztof Morcinek">
+
+    {% include head.html %}
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+        .alias-list li {
+            margin-bottom: 9px
+        }
+
+        .alias-list li {
+            font-size: 70%
+        }
+
+        .modifications-list li {
+            margin-bottom: 9px
+        }
+        
+        .good-terminal-list ul {
+            font-size: 61%;
+        }
+        
+        .good-terminal-list li {
+            margin-bottom: 15px
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Różne style prowadzenia <strong>Code Review</strong> w twoim zespole</h2>
+            <p style="float: right;">Praktycznie w każdym nowym zespole, w którym jestem Code Review wygląda zupełnie inaczej. Czego naprawdę oczekujemy od Code Review, jak bardzo ostrym lub pobłażliwym należy być i jak ładnie to wpiąć w Continous Integration.</p>
+         </section>
+
+        <section>
+            <h2 style="margin-bottom: 50px">Krzysztof Morcinek</h2>
+            <p>
+            <div>
+                <img src="img/profile_krzysztof_morcinek_2023.png" style="max-width: 280px; float: left; margin-top: 56px"/>
+            </div>
+            <div>
+                <ul style="line-height: 200%; padding-left: 27px; padding-top: 90px">
+                    <li>10 years in .NET stacks, 4 years in Java</li>
+                    <li><a href="https://krzysztofmorcinek.wordpress.com/" target="_blank">krzysztofmorcinek.wordpress.com</a></li>
+                    <li>Screencast: <a href="https://www.youtube.com/watch?v=7_-FgbUsNM0&list=PLfVKkuw80D-kQPQ5ZjFf6jO3HmSavk6A-" target="_blank">Show me the code</a></li>
+                </ul>
+            </div>
+            </p>
+        </section>
+
+
+        <section>
+            <h3>Mój kontekst</h3>
+            <p class="fragment"><q>it's better to ask forgiveness than permission</q>
+            </p>
+            <p class="fragment">projekty gdzie dostarcza się business value, a nie security critical - różne części kodu będą miały różne wymagania w Code Review
+            </p>
+            <p class="fragment">zespoły same się organizują</p>
+            <aside class="notes">
+                PM czy ktoś inny nie narzuca.                
+            </aside>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Po co robimy Code Review?</h3>
+                <p class="fragment">Szybsze / stabilniejsze dodawanie business value</p>
+                <aside class="notes">
+                    Wspomnieć o business value bo CR jawi się jako coś technicznego co ma właśnie dbać o jakość
+                    czy testuję ich cierpliwość.
+                </aside>
+            </section>
+            <section>
+                <h3>Osiągamy cele biznesowe poprzez</h3>
+                <p class="fragment">Spójny design</p>
+                <p class="fragment">Spójne standardy</p>
+                <p class="fragment">Minimalizacja bugów</p>
+                <p class="fragment">Dzielenie się wiedzą</p>
+                <aside class="notes">
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Różne rodzaje Code Review (procesowo)</h3>
+                <p>
+                    <img src="img/code-review-best-practices.png" style="border:none; box-shadow:none; max-width: 500px;"/>
+                </p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+            <section>
+                <h3>Lokalnie (jako jedyne) bo SVN i brak Merge Requestów</h3>
+                <p class="fragment">Przez tydzień commitowałem w SVN'ie</p>
+                <p class="fragment">Usiadł ze mną architekt i miał wypisane uwagi i przeszliśmy przez nie</p>
+                <ul>
+                    <li class="fragment">od razu można rozwiać wątpliwości</li>
+                    <li class="fragment">nie wszyscy widzą (można nie być otwartym na krytykę)</li>
+                </ul>
+                <p class="fragment">Poprawiałem</p>
+                <p class="fragment"></p>
+                <aside class="notes">
+                    celem szukanie błędów
+                </aside>
+            </section>
+
+            <section>
+                <h3>Ustalona hierarchia</h3>
+                <p class="fragment">wiadomo kto ma przejrzeć (approve dać) a kto się uczy</p>
+                <p class="fragment">wyszukanie problemów</p>
+                <p class="fragment">miałem niedosyt gdy ktoś stwierdzał że "good enough"</p>
+                <p class="fragment">wtedy mnie męczyło, że ja nie mogę robić CR komuś, tylko mi robią</p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+            <section>
+                <h3>Każdy może przeglądać, trzeba zebrać ileś okejek (approve)</h3>
+                <p class="fragment">Trzeba było mieć min 2 okejki w tym jedną od seniora</p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+            <section>
+                <h3>Każdy może przeglądać</h3>
+                <p class="fragment">nie ma nic wymuszonego, process jest lekki</p>
+                <p class="fragment">bez CR też przejdzie</p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Kiedy odpuścić CR</h3>
+                <ul>
+                    <li class="fragment">jakiś projekt na wymarciu gdzie nie chcemy inwestować swojego czasu</li>
+                    <li class="fragment">1 osoba w nowym projekcie i nikt nie kwapi się do przeglądania</li>
+                    <li class="fragment">2 osoby które ze sobą rozmawiają</li>
+                    <li class="fragment">... ale zawsze mogą wystawić MR jeśli tak chcą pogadać</li>
+                </ul>
+                <aside class="notes">
+                        
+                </aside>
+            </section>
+            <section>
+                <ul>
+                    <li class="fragment">olbrzymi rename - nikt nie chce tego przeglądać</li>
+                    <li class="fragment">olbrzymi rename i gdzieś logika się zmieniła</li>
+                    <li class="fragment">
+                        <img src="img/looks-fine.png" style="border:none; box-shadow:none; max-width: 600px"/>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    może ten rename został zrobiony po prostu z automatu i nie ma sensu tego przeglądać
+                    a jesli tam gdzies jest maly bug, bo przeciez nie duzy, to czy ktos ogladajacy takie ogromne cos jest w stanie to wychwycic?
+                </aside>
+            </section>
+
+
+        </section>
+
+        <section>
+            <section>
+                <h3>Ryzyko</h3>
+                <!-- li -->
+                <p class="fragment">zawsze się czeka</p>
+                <p class="fragment">można ugrząźć</p>
+                <p class="fragment">nie dostaje się jasnych wytycznych co zrobić</p>
+                <p class="fragment">dostaje się sprzeczne pomysły (a coś trzeba wybrać)</p>
+                <p class="fragment">(czas)</p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+            <section>
+                <h3>Jak unikać flame wars</h3>
+                <p class="fragment">
+                    <img src="img/flame-war-about-klamra.PNG" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <aside class="notes">
+                </aside>
+            </section>
+
+            <section>
+                <p class="fragment">Flame wars (tabs vs spaces)</p>
+                <p class="fragment">
+                    <img src="img/tabs-vs-spaces.jpg" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <p class="fragment">Wy sami wiecie co odpuścić. Zachęcam żeby czasem odpuszczać.</p>
+                <aside class="notes">
+                   ta jedna rzecz mozecie stąd wynieść i obejrzeć. 
+                </aside>
+            </section>
+
+
+        </section>
+
+        <section>
+            <section>
+                <h3>Automatyzacja Code Review</h3>
+                    <aside class="notes">
+                        przykład gdy jest duży commit i z niego wyciągamy różne rzeczy i najpierw wrzucamy na mastera.
+                        bo dałem komentarze "Should go straight to master".
+                    </aside>
+            </section>
+
+            <section>
+                <h3>Stylecop (prettier.io, checkstyle, i wiele innych)</h3>
+                <p>
+                    <img src="img/stylecop-logo.jfif" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <p class="fragment">
+                    <img src="img/couple-random-spaces-in-code-review.png" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+            <section>
+                <h3>Stylecop cd.</h3>
+                <p class="fragment">
+                    <img src="img/remove-this.PNG" style="border:none; box-shadow:none; max-width: 600px"/>
+                </p>
+                <p class="fragment">PrefixLocalCallsWithThis - przykład że coś trzeba wybrać i się stosować.
+                </p>
+                <p class="fragment">... w dowolną stronę (z <strong>thisem</strong>, albo bez <strong>thisa</strong>)
+                </p>
+                <aside class="notes">
+                        https://github.com/kmorcinek/dotnet-tools-settings
+                </aside>
+            </section>
+
+            <section>
+                <h3>Uniwersalne narzędzie do formatowania</h3>
+                <p><a href="https://prettier.io/">prettier.io</a>
+                </p>
+                <p class="fragment">
+                    Kolega ustawił indentation na 2 spacje - nigdy w życiu nie miałem takiego ustawienia. Ale dzięki temu że jest to wymuszone to nie narzekam i się przyzwyczaiłem.
+                </p>
+                <aside class="notes">
+                    dokładny link do tego commita (tamto repo nie istnieje, inne moze kiedys):
+                    https://gitlab.com/krzysztof.morcinek/conqueror-browser-spy/-/commit/b1a9449d2bacbbd050076591239e7da91fa88ec7
+                </aside>
+            </section>
+
+            <section>
+                <h3>Testy konwencji</h3>
+                <p>3 kawałki:</p>
+                <ul>
+                    <li class="fragment">pętla po wszystkich plikach w projekcie</li>
+                    <li class="fragment">szukanie problemów w jednym pliku</li>
+                    <li class="fragment">odpalenie tych <em>testów</em> podczas buildu</li>
+                </ul>
+                <p class="fragment">Przykład: wymóg aby wszystkie kolekcje były niemutowalne w C# (<em>IReadOnlyCollection&lt;&gt;</em>)</p>
+                <aside class="notes">
+                    wyobraź sobie kod w języku w którym piszesz właśnie projekt
+                </aside>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h3>Pomocne przy wrzucaniu nowego CR</h3>
+            </section>
+
+            <section>
+                <h3>GIT - oczyszczenie commitu przed wypushowaniem</h3>
+                <p>
+                    <ul>
+                        <li class="fragment">Fix typo</li>
+                        <li class="fragment">Poprawa formatowania</li>
+                        <li class="fragment">Zmiana namespace'u / folderu / pakietu</li>
+                        <li class="fragment">DEMO czyszczenia przed CR</li>
+                    <!--
+					link do repo pod demo.
+					https://github.com/kmorcinek/conqueror-browser-spy/
+					branch
+					origin/monday-example-start-working - od tego startujemy 
+					origin/monday-example - na tego brancha lokalnie i od tego startujemy 
+					origin/monday-example-original - czyli to jak ma wyglądać, pokażemy na koniec
+                    -->
+                    </ul>
+                </p>
+                <aside class="notes">
+                    nazwy nowych commitow:
+                    "No implicit any ..."
+                    "Cleanup bookmark"
+                    "własciwy feature"
+
+                    przykład gdy jest duży commit i z niego wyciągamy różne rzeczy i najpierw wrzucamy na mastera.
+                    bo dałem komentarze "Should go straight to master".
+
+                    conq i tam jest.
+
+                    wspomniane 7 zasad dobrego commit message.
+
+                    moze sie okazać że tylko jedna z tych rzeczy wywoła dyskusje, moze ktos ma lepszy pomysł. i można zmergować/testowac/integrować/dowiesc a rownolegle robimy cos co wyniklo w rozmowie. 
+                </aside>
+            </section>
+
+            <section>
+                <p>
+                    <img src="img/straight-to-master.PNG" style="border:none; box-shadow:none; max-width: 500px"/>
+                </p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+        </section>
+
+        <section>
+            <h3>Mam tego fixa na moim branchu</h3>
+            <p class="fragment">Ktoś znalazł buga i go poprawił, ale czeka z tym na CR całego taska którego robił ...
+            </p>
+            <p class="fragment">... w międzyczasie ktoś inny trafia na ten sam bug i:</p>
+            <ul>
+                <li class="fragment">Traci czas bo bug wydłuża mu development jego ficzera</li>
+                <li class="fragment">Traci czas debugując o co chodzi</li>
+                <li class="fragment">Traci czas fixując</li>
+            </ul>
+            <p class="fragment">Takie rzeczy od razu na <strong>mastera</strong></p>
+            <aside class="notes">
+               analogicznie gdyby to był jakiś refactoring, który jest mi potrzebny 
+            </aside>
+        </section>
+
+        <section>
+            <h3>Inne przykłady gdy komuś nasz fix może pomóc <strong>już!</strong> zamiast za 3 dni</h3>
+            <p>
+            </p>
+            <p class="fragment">Poprawka literówki w komentarzu - ktoś szukając znajdzie
+            </p>
+            <p class="fragment">Napisane fabryki do obiektów używanych do testowania - ktoś już może z nich skorzysta
+            </p>
+            <!-- <p class="fragment">
+            </p> -->
+            <aside class="notes">
+                
+            </aside>
+        </section>
+
+        <!-- <section>
+            <h3></h3>
+            <p>
+            </p>
+            <aside class="notes">
+                
+            </aside>
+        </section> -->
+
+        <section>
+            <h3>Przykład ustanawiania nowych standardów</h3>
+            <p class="fragment">
+                <img src="img/set-new-standard.PNG" style="border:none; box-shadow:none; max-width: 900px"/>
+            </p>
+            <aside class="notes">
+                
+            </aside>
+        </section>
+
+        <section>
+            <section>
+                <h3>Flow Code Review DEMO</h3>
+                <p>Gitlab
+                </p>
+                <p>Gitlab pipelines
+                </p>
+                <p>Slack
+                </p>
+                <aside class="notes">
+				    - Repo: https://gitlab.com/krzysztof.morcinek/conqueror-browser-spy
+                    - przygotowany commit z brancha feature/3/add-board
+                    - zrób squash
+                    - nowy branch 'feature/3/add-board-2'
+                    - stwórz MR
+                    - poczekaj aż przejdzie
+                    - wyślij na slacka z @here
+                    - cierpliwie czekamy i bierzemy się za coś innego.
+                    - dostać feedback do poprawy. // "there is type/enum for that"
+                    - opcje na gitlabie squash i FFonly
+                </aside>
+            </section>
+
+            <section>
+                <h3>Rozpisane kroki</h3>
+                <p>
+                    <ol>
+                        <li class="fragment">
+                     stwórz MR
+                        </li>
+                        <li class="fragment">
+                     poczekaj aż przejdzie
+                        </li>
+                        <li class="fragment">
+                     wyślij na slacka (z @here)
+                        </li>
+                        <li class="fragment">
+                     cierpliwie czekamy i bierzemy się za coś innego.
+                        </li>
+                        <li class="fragment">
+                     dostać feedback do poprawy. // "there is type/enum for that"
+                        </li>
+                        <li class="fragment">
+                     opcje na gitlabie squash i Fast Forward Only
+                        </li>
+                    </ol>
+                </p>
+                <aside class="notes">
+                    emoticony
+                </aside>
+            </section>
+
+            <section>
+                <img class="fragment" src="img/ff_only.png" style="border:none; box-shadow:none"/>
+                <aside class="notes">
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Dodatkowe informacje pomagające zrobić dobre Code Review</h3>
+                <p>Napisz czego oczekujesz po tym Code Review</p>
+                <p>Sam skomentuj miejsca gdzie będą pytania i wyjaśnij</p>
+                <aside class="notes">
+                    - Napisz czego oczekujesz - już to sugeruje że może coś należało wcześniej przedyskutować z kimś.
+                    - ale czasem dopiero w kodzie widać intencje i co rzeczywiście chcemy zrobić.
+                </aside>
+            </section>
+            <section>
+                <h3>Przykłady dopisków w commmitach</h3>
+                <PRE class="fragment">AI-2254 user to member access ...
+
+Based on tests:
+https://atlassian.net/wiki/spaces/CA/pages/196673888/...tests</PRE>
+                <PRE class="fragment">tests: AI-2254 user to member access ...
+
+foo() cannot be together with bar() in the same Promise.all(...) call,
+cause probably in the future assigning member to the user ...</PRE>
+                <PRE class="fragment">create SomethingError with more context
+    
+Also have the logic of finding and throwing Ex in one place similar to foo()</PRE>
+                <aside class="notes">
+                </aside>
+            </section>
+
+            <section>
+                <h3>...</h3>
+                <PRE class="fragment">When tests are failing we should see fails on status code, not parsing json errors</PRE>
+                <PRE class="fragment">When reading production logs it is not clear enough what is
+reason and what is more detailed reason.</PRE>
+                <PRE class="fragment">make HttpErrorResponse deprecated
+
+This way we help our IDE to suggest classes that should be not used anymore.
+We also have a clear statement that usages of this class should be step by step removed.</PRE>
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Do czego nie służy Code Review</h3>
+            </section>
+
+            <section>
+                <h3>Do wprowadzania np Clean Architecture</h3>
+                <p class="fragment">Bo niby mam ale jednak ludzie różnie piszą kod</p>
+                <p class="fragment">Ale można wprowadzić najpierw jeden test konwencji który przybliży i automatyzuje</p>
+                <img class="fragment" src="img/clean-architecture-folders-2.png" style="border:none; box-shadow:none"/>
+                <aside class="notes">
+                    to wymaga wytłumaczenia po co i jak.
+                    bo pewnie gdy ktos przekopiuje isteniejący kod to poprełni stare błędy.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Poprawiania literówek</h3>
+                <p class="fragment">Można się spalać, a ktoś po prostu tego nie zauważa</p>
+                <p class="fragment">Zasugerować używanie spellcheckera</p>
+                <p class="fragment">Opisać w dokumentacji w sekcji "Dev Setup", jakie narzędzie do spellchera zainstalować</p>
+                <p class="fragment">Stare literówki poprawić</p>
+                <img class="fragment" src="img/spellchecker-new-words.png" style="border:none; box-shadow:none"/>
+                <aside class="notes">
+
+                </aside>
+            </section>
+
+            <section>
+                <h3>Zmian w architekturze</h3>
+                <p class="fragment">Np ostatnio zaproponowałem rezygnacje z Event Sourcingu</p>
+                <p class="fragment">Nie chę w CR wrzucać wstawek typu "bez ES by tego problemu nie było"</p>
+                <aside class="notes">
+
+                </aside>
+            </section>
+
+            <section>
+                <h3>"Klepania" każdej zmiany</h3>
+                <p class="fragment">Jest kod, którego nikt nie chce przeglądać</p>
+                <p class="fragment">... bo to nie ma sensu, więc się nie zmuszajmy</p>
+                <aside class="notes">
+
+                </aside>
+            </section>
+
+            <section>
+                <h3>Rozwiązywania czegoś "przy okazji"</h3>
+                <p class="fragment">Skoro już tu jesteś to jeszcze to napraw</p>
+                <p class="fragment">Można odmówić</p>
+                <p class="fragment">Single Responsibility Principle</p>
+                <aside class="notes">
+
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Różne rodzaje Code Review (stopień formalizacji)</h3>
+                <p>
+                    <img src="img/code-review-best-practices.png" style="border:none; box-shadow:none; max-width: 500px;"/>
+                </p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+            <section>
+                <h3>Ciężkie procesy</h3>
+                <p>Wymagania odnośnie kto ma przeglądać i kto ma akceptować</p>
+                <p>Wymagania odnośnie <em>rozwiązywania</em> komentarzy</p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+            <section>
+                <h3>Lekkie procesy</h3>
+                <p>Bardziej trzeba się starać, żeby ktoś przejrzał i przyłożyć do wystawienia CR</p>
+                <p>Nie ma przymusu rozwiazywać wszystkiego dokładnie, często ludzie piszą że to jest wskazówka, ale rób jak chcesz</p>
+                <aside class="notes">
+                    
+                </aside>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h3>Mój ideał</h3>
+                <p class="fragment">Wypracowaujemy co idzie bez CR</p>
+                <p class="fragment">Pytamy o konkret</p>
+                <p class="fragment">Jako zespół wiemy po co to robimy, 5x why</p>
+                <aside class="notes">
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <h3>Dziękuję za uwagę</h3>
+            <p>
+                <br>
+                <small>Życzę wszystkim, najmniej stresów i najwięcej automatyzacji podczas Code Review</small>
+            </p>
+            <p>
+                <img src="img/wtf-code-review.png" style="border:none; box-shadow:none"/>
+            </p>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                    return !document.body.classList;
+                }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+</script>
+
+{% include analytics.html %}
+
+</body>
+
+</html>
