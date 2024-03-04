@@ -103,6 +103,7 @@ cover: img/prezentacja.jpg
             <h3>Historia z mojego punktu widzenia</h3>
             <p class="fragment">Przypadkowo wylądowałem w Javie</p>
             <p class="fragment">Java Junior potrafi pisać tylko prosto</p>
+            <p class="fragment">Pracowałem w 4 microserwisach</p>
           </section>
           <aside class="notes"></aside>
 
@@ -163,6 +164,21 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
+            <section>
+                <h3>Jak wyglądał taki projekt</h3>
+                <p class="fragment">Monolit "menu"+"kuchnia"</p>
+                <p class="fragment">część operacji między nimi ^ była poprzez kolejkę dla separacji</p>
+                <p class="fragment">Bez aggregatow, raczej płaskie encje wszystkie na tym samym poziomie</p>
+                <p class="fragment">Serwis domenowy, Serwis applikacyjny</p>
+                <p class="fragment">Warstwa Domain, Boundary (api), Infra (kolejki, baza, sqs, kafka etc)</p>
+                <p class="fragment">Brak wydzielonej warstwy applikacji</p>
+                <aside class="notes">
+
+                </aside>
+            </section>
+        </section>
+
+        <section>
           <section>
             <h3>Użyjmy biblioteki</h3>
             <p class="fragment">Kolega chciał spróbować z GraphQL</p>
@@ -181,6 +197,28 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
+            <section>
+                <h3>Czy powinniśmy wydzielić nowy microserwis?</h3>
+                <p class="fragment">Tak, ale teraz deadline, to musi poczekać</p>
+                <aside class="notes">
+
+                </aside>
+            </section>
+
+            <section>
+                <h3>Lessons Learned: świadomie pakujemy się w pewien problem wiedząc, że rozwiążemy go później</h3>
+                <p class="fragment">idealny czas: tego nie wie nikt</p>
+                <p class="fragment">wróżenie z kuli</p>
+                <p class="fragment">takie decyzje są bardzo zaleźne od kontekstu</p>
+                <aside class="notes">
+                    np przechodzą nowi ludzie, i jak to wpłynie na rozdzielanie na zespoły teraz.
+                </aside>
+            </section>
+        </section>
+
+
+
+        <section>
           <section>
             <h3>Performacne problem z Orderami</h3>
             <p class="fragment">Takie encje zawsze są grube</p>
@@ -194,6 +232,7 @@ cover: img/prezentacja.jpg
           <section>
             <h3>Rozwiązania tymczasowe</h3>
             <p class="fragment">tnijmy encje na mniejsze</p>
+            <p class="fragment">zabawa</p>
 
             <aside class="notes">to wymaga zmian modelu, optymalizacja</aside>
           </section>
@@ -227,7 +266,7 @@ cover: img/prezentacja.jpg
 
           <section>
             <h3>
-              Lessons learned: rozwiązanie performance'u na poziome
+              Lessons Learned: rozwiązanie performance'u na poziome
               architektury, specjalny microserwis
             </h3>
             <p class="fragment">To jest opcja dopiero od pewnej skali</p>
@@ -236,10 +275,68 @@ cover: img/prezentacja.jpg
 
         <section>
           <section>
-            <h3></h3>
-            <p class="fragment"></p>
+            <h3>Problemy z n+1</h3>
+            <pre class="fragment">
+@GetMapping()
+ResponseEntity<MenuDocument> getMenu(MenuId menuId) {
+    var menu = menuService.getMenu(menuId);
+
+    var menuDocument = MenuDocument.toDocument(menu);
+    return ResponseEntity.ok(menuDocument);
+}
+
+@Transactional
+@Component
+class MenuService {
+    Menu getMenu();
+}
+                </pre
+            >
           </section>
           <aside class="notes"></aside>
+
+          <section>
+            <h3>Tylko nie działa</h3>
+            <p class="fragment">Złe ustawienie czegoś (open-in-view=true by default)</p>
+            <aside class="notes">a moze na poczatku tak właśnie miało być</aside>
+
+          </section>
+
+          <section>
+            <h3>Chciałem stopniowo poprawiać</h3>
+            <p class="fragment">...</p>
+            <p class="fragment">pokazanie problem (ustawienie explicit) we wszystkich servicach</p>
+            <p class="fragment">zjeba na daily :)</p>
+
+            <aside class="notes">
+                jak Ola podeszła do nieoptymalizowania.
+
+            </aside>
+          </section>
+
+          <section>
+            <h3>Lessons Learned: nie warto wspominać na update'ach (daily) że się poprawia coś na boku</h3>
+            <aside class="notes">poprawiac tak, ale nie moze to zabierać czasu feature'ów</aside>
+          </section>
+
+          <section>
+            <h3>Lessons Learned: tylko z ludźmi naprawdę zmotywowanymi/bezkompromisowymi można zbudować wielkie coś</h3>
+            <aside class="notes">CW tez ma ambitnego szefa, mówię to z odległości, szukając analogii</aside>
+          </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h3>Czy to był łatwy projekt?</h3>
+                <p class="fragment">Kilka osób odeszło</p>
+                <p class="fragment">Narzekania na chaos, na PO od klienta, brak scruma</p>
+                <p class="fragment">Bycie na produkcji i szybki zwrost rekompensowały mi wszystko</p>
+            </section>
+
+            <aside class="notes">
+
+            </aside>
         </section>
 
         <section>
