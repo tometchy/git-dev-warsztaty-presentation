@@ -72,27 +72,156 @@ cover: img/prezentacja.jpg
          </section>
 
         <section>
-            <h2 style="margin-bottom: 50px">Krzysztof Morcinek</h2>
-            <p>
-            <div>
-                <img src="img/profile_krzysztof_morcinek_2023.png" style="max-width: 280px; float: left; margin-top: 56px"/>
-            </div>
-            </p>
+            <section>
+                <p class="fragment">Nie każdego projektu</p>
+                <p class="fragment">Moje obserwacje, ale zauważam że o podobnych rzeczach ludzie mówią na konferencja w kuchni</p>
+                <p class="fragment">Moje Lessons Learned</p>
+            </section>
+            <aside class="notes">
+
+            </aside>
         </section>
 
 
-        <!-- <section>
-            <h3>Mój kontekst</h3>
-            <p class="fragment"><q>it's better to ask forgiveness than permission</q>
-            </p>
-            <p class="fragment">projekty gdzie dostarcza się business value, a nie security critical - różne części kodu będą miały różne wymagania w Code Review
-            </p>
-            <p class="fragment">zespoły same się organizują</p>
+        <section>
+            <section>
+                <h3>Historia z mojego punktu widzenia</h3>
+                <p class="fragment">Przypadkowo wylądowałem w Javie</p>
+                <p class="fragment">Java Junior potrafi pisać tylko prosto</p>
+            </section>
             <aside class="notes">
-                PM czy ktoś inny nie narzuca.                
-            </aside>
-        </section> -->
 
+            </aside>
+
+            <section>
+                <h3>Pojęcia</h3>
+                <p class="fragment">Menu</p>
+                <p class="fragment">Kuchnia</p>
+                <p class="fragment">Aggregators-hub (pyszne, ubereats)</p>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Jak robiłem feature (dokładałem nowego CRUDa)</h3>
+                <ul>
+                    <li>POST</li>
+                    <li>GET</li>
+                    <li>GET list</li>
+                    <li>PUT</li>
+                    <li>DELETE</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>W jakiej kolejności?</h3>
+                <ul>
+                    <li class="fragment">GET list</li>
+                    <li class="fragment">POST</li>
+                    <li class="fragment">GET</li>
+                    <li class="fragment">(PUT)</li>
+                    <li class="fragment"><s>DELETE</s></li>
+                </ul>
+                <aside class="notes">
+                    Od razu integrować z FE,
+                    - BE nie musi był pół sprintu wcześniej. Bo jeśli integrację zaczniemy w połowie sprintu to może nie starczyć czasu.g
+                </aside>
+            </section>
+
+            <section>
+                <h3>Lessons Learned: BE i FE musi się zmieścić w jednym sprincie</h3>
+                <p class="fragment">Unikamy zmian kontraktu pod koniec, FE działa na żywym organiźmie</p>
+                <p class="fragment">BE też szybciej dostanie prawdziwe dane, może je np na początku tylko logować</p>
+                <aside class="notes">
+                    - BE nie musi był pół sprintu wcześniej. Bo jeśli integrację zaczniemy w połowie sprintu to może nie starczyć czasu.g
+                </aside>
+            </section>
+
+            <aside class="notes">
+
+            </aside>
+        </section>
+
+        <section>
+            <section>
+                <h3>Użyjmy biblioteki</h3>
+                <p class="fragment">Kolega chciał spróbować z GraphQL</p>
+                <p class="fragment">Bo mało wyzwań</p>
+                <p class="fragment">Zrobił prezentację</p>
+            </section>
+
+            <aside class="notes">
+
+            </aside>
+
+            <section>
+                <h3>Doszło do tech leada</h3>
+                <p class="fragment">Nie używamy bo to zbyt mało nam pomoże</p>
+                <p class="fragment">Właściwie to nie mamy takie problemu</p>
+                <p class="fragment">Szybko ucięte</p>
+            </section>
+
+        </section>
+
+
+        <section>
+            <section>
+                <h3>Performacne problem z Orderami</h3>
+                <p class="fragment">Takie encje zawsze są grube</p>
+                <p class="fragment">i jeszcze rosną</p>
+                <p class="fragment">korzystają z wspólnej uber bazy różne konteksty: "call center", "kuchnia"</p>
+            </section>
+
+            <section>
+                <h3>Rozwiązania tymczasowe</h3>
+                <p class="fragment">tnijmy encje na mniejsze</p>
+
+                <aside class="notes">
+                    to wymaga zmian modelu, optymalizacja
+                </aside>
+            </section>
+
+
+            <section>
+                <h3>Hirurgiczne cięcie</h3>
+                <p class="fragment">Nowy microserwis</p>
+                <p class="fragment">Nowa baza (może nosql)</p>
+                <p class="fragment">Przeczytanie kafki od nowa i zbudowanie wszystkiego co potrzeba</p>
+                <p class="fragment">Z "kuchni" można usuwać zbędne dane</p>
+
+                <aside class="notes">
+                    w starym było wszystko, w nowym możesz sobie przeczytać tylko to co chcesz.
+                </aside>
+            </section>
+
+
+            <section>
+                <h3>Kolejne optymalizacje?</h3>
+                <p class="fragment">Można inne tabele stworzyć pod inne przypadki użycia</p>
+                <p class="fragment">Jest już kod do czytania wszystkiego i tworzenia nowych tabel</p>
+
+                <aside class="notes">
+                </aside>
+            </section>
+
+            <section>
+                <h3>Lessons learned: rozwiązanie performance'u na poziome architektury, specjalny microserwis</h3>
+                <p class="fragment">To jest opcja dopiero od pewnej skali</p>
+            </section>
+
+        </section>
+
+
+        <section>
+            <section>
+                <h3></h3>
+                <p class="fragment"></p>
+            </section>
+            <aside class="notes">
+
+            </aside>
+        </section>
 
         <section>
             <section>
