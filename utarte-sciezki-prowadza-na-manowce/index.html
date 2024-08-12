@@ -80,6 +80,11 @@ cover: img/prezentacja.jpg
         <section>
           <h2>Hugo prezentuje</h2>
           <p class="fragment">
+            There are only two hard things in Computer Science: cache
+            invalidation and naming things
+          </p>
+
+          <p class="fragment">
             <img
               src="img/Hugo.png"
               style="border: none; box-shadow: none; max-width: 500px"
@@ -136,8 +141,7 @@ cover: img/prezentacja.jpg
             </a>
           </p>
           <p class="fragment">
-            Jaka jest najważniejsza rzecz która wkrótce nas ugryzie. Której
-            chcecie użyć.
+            Jaka jest najważniejsza rzecz która wkrótce nas ugryzie?
           </p>
           <p class="fragment">(Co nam da najwięszą korzyść?)</p>
         </section>
@@ -200,10 +204,9 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
-          <h2>REST</h2>
-          <p class="fragment">/client-entities/{}/</p>
-          <p class="fragment">/client-group/{}/client-entities/{}/</p>
-          <p class="fragment">/client-entities/{}</p>
+          <h2>REST uczepiliśmy się tych rzeczowników za bardzo</h2>
+          <p class="fragment">POST /deals/{}/ { "state":"APPROVE" }</p>
+          <p class="fragment">/deals/{}/approve</p>
           <a
             class="fragment"
             href="https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling"
@@ -224,7 +227,7 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
-          <h2>Draw Seven Red Lines</h2>
+          <h2>Nasza aplikacja</h2>
           <a
             class="fragment"
             href="https://aemarkets.dev.aws.aemarkets.com/deals/dc26eb26-a279-4132-8652-00ebcd2d4fc3"
@@ -242,285 +245,8 @@ cover: img/prezentacja.jpg
         </section>
 
         <section>
-          <h2>Jak stopniowo/pragmatycznie integrować się z np. UberEats</h2>
-          <p style="float: right">
-            Feature'ów, które fajnie byłoby zaimplementować jest ogrom. Jak
-            oddzielić kreską te które są "must have" i w jakiej kolejności je
-            implementować. W jakiej kolejności dostarczać/testować i co ma w
-            głowie ktoś, kto chce to wszystko złożyć, żeby zaczęło zarabiać.
-          </p>
-        </section>
-
-        <section>
-          <section>
-            <h3>Co to jest Shadow Kitchen, Dark Kitchen</h3>
-            <!-- <p class="fragment">biznesowe componenty</p> -->
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Główni Aktorzy</h3>
-            <p class="fragment">biznesowe componenty</p>
-          </section>
-
-          <section>
-            <h3>Menu</h3>
-          </section>
-
-          <section>
-            <h3>Aggregator hub</h3>
-          </section>
-
-          <section>
-            <h3>Aggregator</h3>
-            <p class="fragment">UberEats</p>
-            <p class="fragment">Deliveroo</p>
-            <p class="fragment">Pyszne.pl</p>
-          </section>
-
-          <section>
-            <h3>Kuchnia</h3>
-          </section>
-
-          <section>
-            <h3>Niedostępność (tymczasowa) produktów</h3>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Flow</h3>
-            <p class="fragment">Restauracja --> Push Menu --> UberEats</p>
-            <p class="fragment">
-              UberEats --> Callback Order --> Restauracja(realizacja zamówienia)
-            </p>
-            <p class="fragment">Restauracja --> Confirm Order --> UberEats</p>
-            <p class="fragment">Restauracja --> Statusy --> UberEats</p>
-          </section>
-          <section>
-            <h3>payloads</h3>
-            <aside class="notes">
-              Payloads and some code:
-              https://github.com/kmorcinek/uber-eats-payloads
-            </aside>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>To były stabilne firmy (zazwyczaj)</h3>
-            <p class="fragment">dostaliśmy środowiska testowe</p>
-            <p class="fragment">czasem dokumentacja była dobra</p>
-            <p class="fragment">rzadko API było niestabilne over time</p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Najprostszy przypadek E2E</h3>
-            <p class="fragment">przeklikać, pobawić się</p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Jakie testy regresyjne?</h3>
-            <p class="fragment">Black box</p>
-            <p class="fragment">Wiremock</p>
-            <p class="fragment">Kafka: kolejki in memory -> test containers</p>
-          </section>
-
-          <section>
-            <h3>Kod</h3>
-            <p class="fragment">
-              Payloady braliśmy z tego co rzeczywiście na testowym środowisku
-              przechodziło
-            </p>
-            <p class="fragment">
-              Bez wycinania pól i upięniania - dokładnie oryginał
-            </p>
-            <p class="fragment">
-              w tym przypadku trzeba było przegenerowywać czasem idki, czasem
-              sortowanie sie zmieniało etc
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>To api jest ciekawe ...</h3>
-            <p class="fragment">
-              ... bo można na przykład wybierać różne połówki dla pizzy
-            </p>
-            <p class="fragment">Do brzegu!</p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Wejscie na PROD</h3>
-            <p>Jak?</p>
-            <p class="fragment">Context:</p>
-            <p class="fragment">Kilkanacie kuchni, kilkadziesiąt brandów</p>
-          </section>
-
-          <section>
-            <h3>Najprostsze lody</h3>
-          </section>
-
-          <section>
-            <h3>Ale nie była zaimplementowana "tymczasowa niedostępność"</h3>
-            <p class="fragment">Ludzie z "operations" obchodzili to</p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Problem ustawienia callback url przez aggregator</h3>
-            <p class="fragment">
-              Jak byście "zrobili" mailem żeby było dobrze?
-            </p>
-          </section>
-
-          <section>
-            <p>
-              <img
-                src="img/Uber-eats-email.png"
-                style="border: none; box-shadow: none; max-width: 500px"
-              />
-            </p>
-          </section>
-
-          <section>
-            <p>
-              <img
-                src="img/Uber-eats-real-link.png"
-                style="border: none; box-shadow: none; max-width: 500px"
-              />
-            </p>
-          </section>
-
-          <section>
-            <p>Covid, Świeta, Indie</p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Na początku integracji nie można uciekać od ręcznej roboty</h3>
-            <p class="fragment">czy na pewno nie można tego robić ręcznie?</p>
-            <p class="fragment">
-              kilkanaście tysięcy linii w application-prod.yml
-            </p>
-            <p class="fragment">
-              stopniowe (na miesiące, lata) przechodzenie na bardziej
-              automatyczne konfiguracje
-            </p>
-          </section>
-
-          <section>
-            <h3>
-              Czy można zaakceptować zamówienie, którego nie można zrealizować?
-            </h3>
-            <p class="fragment">
-              Jak u Sławka Sobótki, gdzie nie można było zamówić jachtu
-            </p>
-            <p class="fragment">
-              Można, ogrywamy to inaczej, później. Telefony dzwonią i prostują
-              sytuację
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Error na PROD</h3>
-          </section>
-
-          <section>
-            <h3>Case1</h3>
-            <p class="fragment">uderzamy do Deliveroo z update'm dostępności</p>
-            <p class="fragment">
-              ... i wszystko failuje co minute i ta sfailowana kula rośnie
-            </p>
-            <p class="fragment">...</p>
-            <p class="fragment">Uwaga PROD:</p>
-            <p class="fragment">Wstrzymujemy procesowanie</p>
-            <p class="fragment">próbujemy restart na czysto</p>
-            <p class="fragment">Fixujemy ASAP</p>
-          </section>
-
-          <section>
-            <h3>Case2</h3>
-            <p class="fragment">
-              Wpadliśmy na blacklisted words za "Chubby Balls"
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Organizacja kodu dla różnych aggregatorów</h3>
-            <p class="fragment">jak?</p>
-            <p class="fragment">na ile reużywać kod.</p>
-            <p class="fragment">podobne ale nie to samo.</p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Czego nie robiliśmy / zrobiliśmy</h3>
-            <p class="fragment">
-              Podczas wysyłania niedostępności koniecznie trzeba było podać
-              maksymalny czas obowiązywania
-            </p>
-            <p class="fragment">
-              Nie robiliśmy z początku wszystkich callbacków na statusy
-            </p>
-            <p class="fragment">
-              Kto płaci za dostawę przez długi czas nie można było zrobić dobrze
-            </p>
-            <p class="fragment">
-              Nauczeni doświadczeniem kolejne integracje wygrzewaliśmy na
-              prostych lodach Haagen Dazs
-            </p>
-            <p class="fragment">
-              każdy dostawał sztućce. Ignorowaliśmy opcje "bez sztućców"
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>
-              Więc czasem coś nie będzie działać i dowiemy się na produkcji
-            </h3>
-            <p class="fragment">
-              Duże przywiązanie do monitoringu, metryk, dashboardów
-            </p>
-            <p class="fragment">Alerty z grafany</p>
-            <p class="fragment">Ten biznes jest taki bardzo ręczny z natury</p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>sven@demandthat.com</h3>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Integracja w moim aktualnym projekcie</h3>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>AI ChatGpt buzzwords</h3>
-            <p class="fragment">wygenerował mi payloady</p>
-          </section>
+          <h2>Musimy ograć edge case</h2>
+          <p style="float: right"></p>
         </section>
 
         <section>
