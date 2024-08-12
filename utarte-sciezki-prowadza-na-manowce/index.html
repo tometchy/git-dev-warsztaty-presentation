@@ -78,14 +78,34 @@ cover: img/prezentacja.jpg
     <div class="reveal">
       <div class="slides">
         <section>
+          <h2>Hugo prezentuje</h2>
+          <p class="fragment">
+            <img
+              src="img/Hugo.png"
+              style="border: none; box-shadow: none; max-width: 500px"
+            />
+          </p>
+        </section>
+
+        <section>
           <h2>Call for lightning talks</h2>
           <p class="fragment">
             Wolę krótsze formy. Przekonał mnie Paul Klipp i Wiktor
+          </p>
+          <p class="fragment">Będzie skakanie po tematach.</p>
+          <p class="fragment">
+            Szybsza forma pozwala szybciej dostarczyć wartość w formie
+            prezentacji czegoś na forum firmy
           </p>
         </section>
 
         <section>
           <h2>Moje opinie, context is king</h2>
+          <p class="fragment">
+            Coś działa w jednym kontekście, ale czy na pewno potrzebujemy tego
+            właśnie teraz
+          </p>
+          <p class="fragment">Ile to będzie $$$?</p>
         </section>
 
         <section>
@@ -127,8 +147,8 @@ cover: img/prezentacja.jpg
           <p class="fragment">Wdech wydech i czekamy, nie sugerujemy</p>
 
           <p class="fragment">
-            Najpierw musieliśmy poczekać aż nam przez pół godziny pokazywać nad
-            czym teraz się męczy. Wysłuchać.
+            Najpierw musieliśmy poczekać. Klient przez pół godziny pokazywał nad
+            czym teraz się męczy. Wysłuchać. To był inny system, ale wysłuchać.
           </p>
 
           <p class="fragment">
@@ -161,10 +181,64 @@ cover: img/prezentacja.jpg
           <p class="fragment">
             It pracujące dla klienta, utrzymujące inny system.
           </p>
-          <aside class="notes">
-            Payloads and some code:
-            https://github.com/kmorcinek/uber-eats-payloads
-          </aside>
+
+          <p class="fragment">Wysyłają klientów do nas.</p>
+
+          <p class="fragment">Wysyłamy nasze deale do nich.</p>
+
+          <p class="fragment">Co jest ważne, jak poprowadzić takie coś?</p>
+
+          <p class="fragment">...</p>
+
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>REST</h2>
+          <p class="fragment">/admin/client-entities/{}/</p>
+          <p class="fragment">/admin/client-group/{}/client-entities/{}/</p>
+        </section>
+
+        <section>
+          <h2>REST</h2>
+          <p class="fragment">/client-entities/{}/</p>
+          <p class="fragment">/client-group/{}/client-entities/{}/</p>
+          <p class="fragment">/client-entities/{}</p>
+          <a
+            class="fragment"
+            href="https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling"
+            >REST API Design - Resource Modeling
+          </a>
+        </section>
+
+        <section>
+          <h2>BE musi validować bo nie można ufać FE</h2>
+          <p class="fragment">Kiedy to jest prawdą</p>
+          <p class="fragment">
+            Sklep, który nie wziął cen z bazy tylko z payloadu
+          </p>
+
+          <p class="fragment">Kiedy to NIE jest prawdą</p>
+
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>Draw Seven Red Lines</h2>
+          <a
+            class="fragment"
+            href="https://aemarkets.dev.aws.aemarkets.com/deals/dc26eb26-a279-4132-8652-00ebcd2d4fc3"
+            >Nasza aplikacja
+          </a>
+          <p class="fragment">Moje obserwacje</p>
+          <p class="fragment">Czy klient powinien za to płacić?</p>
+          <p class="fragment">
+            Czy niektóre applikacje nie powinny startować inaczej, np FE heavy?
+          </p>
+          <p class="fragment">
+            To na forum PC moze trzeba przemyśleć, klient i tak zawsze powie że
+            ostatecznie to ma działać, to do nas należy wybór ścieżki
+          </p>
         </section>
 
         <section>
